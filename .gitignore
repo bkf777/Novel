@@ -1,0 +1,24 @@
+# ── macOS ────────────────────────────────
+.DS_Store
+.AppleDouble
+._*
+.Spotlight-V100
+.Trashes
+
+# ── 依赖 / 构建缓存 ───────────────────────
+node_modules/
+.build-deps/
+
+# ── Python 缓存 ───────────────────────────
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ── 站点构建产物 ───────────────────────────
+# 各项目根目录的 build-site.mjs 可完整重建 site-dist/
+site-dist/
+
+# ── 日志 / 临时 ───────────────────────────
+*.log
+*.tmp
