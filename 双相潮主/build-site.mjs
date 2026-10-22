@@ -16,7 +16,7 @@ const { marked } = require('/Users/ezreal/projects/小说创作/.build-deps/node
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const OUT = join(ROOT, 'site-dist');
-const SRC_MD = join(ROOT, '无尽杀戮_双灰雾潮主_小说企划设定白皮书.md');
+const SRC_MD = join(ROOT, '00_长篇小说企划', '无尽杀戮_双相潮主_小说企划设定白皮书.md');
 
 const SITE_TITLE = '《无尽杀戮：双相潮主》· 长篇小说企划与世界观设定白皮书';
 const BRAND_TITLE = '无尽杀戮：双相潮主';
