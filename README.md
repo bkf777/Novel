@@ -14,6 +14,7 @@
 | 《吃鬼的男孩》1.0 | [`吃鬼的男孩/`](吃鬼的男孩/) | IP 孵化 + 80 集短剧《掌中有深渊》 | 策划 / 大纲 / 样章完成 | [om0t5v5npbu9q](https://om0t5v5npbu9q.space.mcode.cn) |
 | 《吃鬼的男孩》2.0 | [`吃鬼的男孩-2.0/`](吃鬼的男孩-2.0/) | 同上，100 集 × 60-75 秒重写版 | 策划 / 大纲 / 样章 / 外貌设定完成 | ⬜ 尚未部署 |
 | 《末世火葬工》 | [`无尽杀戮/`](无尽杀戮/) | 100 集竖屏微短剧（原创改编） | 策划 / 大纲 / 样章 / 角色图完成 | [6imtaq47eiqly](https://6imtaq47eiqly.space.mcode.cn) |
+| 《无尽杀戮：双相潮主》 | [`双相潮主/`](双相潮主/) | 长篇小说企划设定白皮书（单页） | 世界观 / 人物矩阵 / 四卷大纲完成 | [bhp9ql9suum27](https://bhp9ql9suum27.space.mcode.cn) |
 
 > 《末世火葬工》改编自源著《无尽杀戮：我的火球有bug！》（是也，830 章 / 245 万字），口径为**保留机制重写故事** —— 只继承「以焚烧尸体为唯一攻击手段、从死者身上夺取力量」这一抽象骨架，其余全部原创。
 
@@ -163,6 +164,7 @@
 | 《注销通知》正式版 | https://u8v7fj0tk3eb1.space.mcode.cn | `454145235452282` | ✅ 当前，10 页 |
 | 《末世火葬工》 | https://6imtaq47eiqly.space.mcode.cn | `454635529519256` | ✅ 当前，10 页 |
 | 《吃鬼的男孩》1.0 | https://om0t5v5npbu9q.space.mcode.cn | — | ✅ 当前，8 页 |
+| 《无尽杀戮：双相潮主》白皮书 | https://bhp9ql9suum27.space.mcode.cn | `454753950536165` | ✅ 当前，单页，4 图 |
 | 《注销通知》旧单文件版 | https://yre5yf3ugjac6.space.mcode.cn | — | ⚠️ 过期，世界观/大纲/人物/文风基准四份仍是旧设定，待删除 |
 | 《吃鬼的男孩》早期误发页 | https://ui3n8hgto7dwo.space.mcode.cn | `454144782479835` | ⚠️ 仅占位页，正文页全 404 |
 | 《吃鬼的男孩》2.0 | — | — | ⬜ 尚未部署 |
@@ -173,17 +175,25 @@
 
 ## 构建与部署
 
-四个站点共用同一套构建脚本模式：**Markdown → 自包含静态站**（侧边导航 / 目录 / 全文搜索 / 深色主题 / 阅读进度）。
+五个站点共用同一套构建脚本模式：**Markdown → 自包含静态站**（侧边导航 / 目录 / 全文搜索 / 深色主题 / 阅读进度）。
 
 ```bash
 cd <项目目录> && node build-site.mjs     # 产物 → <项目目录>/site-dist/
 ```
 
 - 依赖 `marked`，装在上级 `.build-deps/`（不污染源码目录）
-- `无尽杀戮/vendor/mermaid.min.js` 已本地化，站点离线也能渲染图表
+- `无尽杀戮/vendor/mermaid.min.js` 已本地化，站点离线也能渲染图表；`双相潮主/vendor/mermaid.min.js` 同源复用（Mermaid 10.9.1，支持 `timeline`）
 - **改稿流程**：改 Markdown → 重跑 `node build-site.mjs` → 带 `node_id` **原地更新**（同一 URL，内容整体替换）
 - ⚠️ 改稿后**必须重跑构建脚本**，否则线上仍是旧内容
 - `site-dist/` 已加入 `.gitignore`，不入库；需部署时本地重建即可
+
+### Mermaid 配色坑（两个站点都踩过）
+
+Mermaid 渲染出的 SVG **内嵌 `<style>` 用 `#mermaid-xxx` ID 选择器**，特异性远高于站点 CSS 的类链，
+所以 `.doc .mermaid .node rect{fill:...}` 这类覆写**默认不生效** —— 必须加 `!important`。
+另外 Mermaid 10 的具名主题（`dark` / `default`）会**忽略传入的 `themeVariables`**，
+只有 `theme: 'base'` 才完全由 `themeVariables` 决定配色。
+故 `双相潮主/build-site.mjs` 采用：`theme:'base'` + CSS 变量（`--mg-*`）驱动，主题切换时重绘 SVG。
 
 ---
 
