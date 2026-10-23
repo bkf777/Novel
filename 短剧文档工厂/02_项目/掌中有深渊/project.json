@@ -1,0 +1,89 @@
+{
+  "project": {
+    "id": "zhangyou-shenyuan",
+    "title": "掌中有深渊",
+    "original_title": "吃鬼的男孩",
+    "platform": "待用户确认（D01 U1：首发平台优先级）",
+    "episode_count": 80,
+    "episode_count_range": "80~100",
+    "episode_duration_sec": 45,
+    "unit_size": 1,
+    "unit_count": 80,
+    "genre": ["都市玄幻", "悬疑惊悚", "扮猪吃虎", "极限打脸", "异能觉醒"],
+    "visual_style": "写实",
+    "compliance_scale": "zero_gore",
+    "aspect_ratio": "9:16",
+    "rhythm_model": "5-13-14-13",
+    "production_line": "v1_markdown_frozen"
+  },
+  "production_line": {
+    "mode": "v1_markdown_frozen",
+    "decided_by": "企划合规（bot_19406286feaf）",
+    "decided_at": "2026-10-22T18:40:00+08:00",
+    "status": "已裁定，待用户追认",
+    "rationale": "本项目在章程 v2.0（2026-10-22 18:20 生效）之前已完成 EP01 全部 15 份交付物并通过验收，落盘形态为 Markdown。章程 §四·五 要求「JSON 是唯一真源」，但该条的执行对象是新开工产线；对已冻结的存量做 MD→JSON 反向迁移，既违反 §四·五 第 3 条的单向原则，也会把 15 份含逐字裁决的成品（D04 锚点 A1~A8/B1~B10、D07 45.0 秒四段求和、D16 11 个硬切点、D10 §8.7 易崩点 22/23）重新改写，风险远大于收益。",
+    "scope": "本项目已落盘的 15 份 Markdown 交付物维持原状，不回填 JSON、不经 render-md.mjs 重新渲染。",
+    "applies_to": "《掌中有深渊》EP01 存量；本项目 EP02 及以后的新增集数、以及所有新开工项目，一律适用 v2.0 的 JSON 真源产线。",
+    "deviation_note": "本条为对章程 §四·五 的**显式偏离**，不是默认适用。偏离理由、范围、有效期均记录于本文件与《双相潮主》《掌中有深渊》两份 00_项目索引，并报用户追认。用户如裁定存量也须 JSON 化，企划合规执行迁移并重新校验渲染。"
+  },
+  "source_of_truth": {
+    "总案与过审指南": "/Users/ezreal/projects/小说创作/吃鬼的男孩/02_短剧策划/01_短剧总案策划与过审指南.md",
+    "80 集大纲": "/Users/ezreal/projects/小说创作/吃鬼的男孩/02_短剧策划/03_八十集分卷与分集核心大纲.md",
+    "人物档案": "/Users/ezreal/projects/小说创作/吃鬼的男孩/02_短剧策划/02_短剧人物设定档案.md",
+    "样章剧本": "/Users/ezreal/projects/小说创作/吃鬼的男孩/03_剧本样章/第01-08集_45秒超快节奏分镜剧本.md",
+    "note": "上游素材为只读输入，工厂不得改写。"
+  },
+  "decisions": {
+    "恐怖分级": "L1~L2 禁 L3（企划合规核定，见 D03 §3.1）",
+    "张陈身份": "身份栏保留「18 岁·金溪一中高三学生」底稿原文 + 强制加注三行（企划合规 2026-10-22 18:10 裁定）；台词/字幕层禁「高三/学生」；造型层不受影响，D10 不因方案 A 返工",
+    "R6 拆镜": "原「剖胸掏心」改三镜（符纹自内而外亮起／体前 ≥30cm 多面几何核／光带沿手背→前臂→胸口没入＋过曝 0.5s）；18~32s 段 4/4/6＝14s；「睁眼上浮＋符文场升起」不单独占时，与 R6-1 的 4 秒窗口并行；并行形态裁定＝两镜并置（D16 第 7 刀 19.6 已是此形态）",
+    "AI 标识": "第 34 条每集显著位置提示（不是只在片头）＋显式/隐式双标识；角标位右下，基线落画面高 72%~78%、右对齐、距右 ≥6% 画面宽、字号 ≥1.5%、不透明度 ≥50%、≥2 秒且每集常驻；黑场镜仍保留；图像卡与视频卡都必须约束",
+    "Blender": "已实机复核：/Applications/Blender.app = Blender 5.2.2 LTS（build 2026-09-15）；/opt/homebrew/bin/blender 在 PATH；扩展已装于 ~/Library/Application Support/Blender/5.2/extensions/user_default/minimax_h3。只走 --background。"
+  },
+  "resolved_legacy_items": [
+    { "id": "B2", "item": "本机未装 Blender", "status": "已作废", "resolution": "2026-10-22 18:33 实机复核确认已装 5.2.2 LTS + minimax_h3 扩展，D14 硬环境阻塞解除", "decided_by": "企划合规" },
+    { "id": "A8/B10", "item": "D12 须重述 A8/B10", "status": "不成立", "resolution": "A8/B10 已在 D10 §2.1/§2.2 锚点句内，D12 按编号引用即自动带上；逐卡重述全文会制造第二真源", "decided_by": "企划合规" }
+  ],
+  "delivered": [
+    { "doc": "D01", "file": "D01_创意接单卡.md", "version": "v2.0", "status": "已验收" },
+    { "doc": "D02", "file": "D02_项目企划书.md", "version": "v1.0", "status": "已验收" },
+    { "doc": "D03", "file": "D03_合规与过审清单.md", "version": "v1.0", "status": "已验收" },
+    { "doc": "D04", "file": "D04_人物设定档案.md", "version": "v1.3", "status": "已验收" },
+    { "doc": "D05", "file": "D05_世界观与设定圣经.md", "version": "v1.2", "status": "已验收" },
+    { "doc": "D06", "file": "D06_分集大纲.md", "version": "v1.2", "status": "已验收" },
+    { "doc": "D07", "file": "D07_逐集施工卡.md", "version": "v1.4", "status": "已验收" },
+    { "doc": "D08", "file": "D08_分集剧本.md", "version": "v1.0", "status": "已验收" },
+    { "doc": "D09", "file": "D09_对白表与角色语气卡.md", "version": "v1.0", "status": "已验收" },
+    { "doc": "D10", "file": "D10_视觉圣经.md", "version": "v2.2", "status": "已验收" },
+    { "doc": "D11", "file": "D11_分镜脚本.md", "version": "v1.0", "status": "已验收（258 行 / 36.1 KB；镜 001~012；45.0s 求和；R6 三镜未合并；006/007 共享 18.0~22.0s 窗口）" },
+    { "doc": "D12", "file": "D12_提示词卡库.md", "version": "v1.1", "status": "返修中（F1/F2/F3 未执行）" },
+    { "doc": "D15", "file": "D15_声音设计表.md", "version": "v1.0", "status": "已验收（359 行 / 46.1 KB；24 BGM 节点；12 镜 39 条音效全覆盖；8 条待回填槽位）" },
+    { "doc": "D16", "file": "D16_剪辑节奏表.md", "version": "v1.0", "status": "已验收（227 行 / 20.6 KB；11 切点全硬切；片头 0~2.0s 叠加于镜 001 起幅段；AI 标识全程常驻含黑场镜）" },
+    { "doc": "D18", "file": "D18_交付与质检清单.md", "version": "v1.0", "status": "已验收" }
+  ],
+  "in_flight": [
+    { "doc": "D12", "action": "返修 F1（VID-001~011 共 11 张视频卡补角标位/构图约束栏）/ F2（补 §1.4 通用负向词块）/ F3（「36 词」改「31 词」，基准 = D03 §6.3 的 16 词必含子集，D10 的 31 词是超集零删减）", "request_id": "zsyz-d12-fix-008 / zsyz-d12-fix3-010", "bot": "bot_db3fd3817800", "status": "queued" },
+    { "doc": "D13", "action": "场景白模说明书（EP01 两场景 · 8 项必建项）；Blender 环境已解阻，只走 --background", "request_id": "zsyz-ep01-wave3-007", "bot": "bot_e3df82ceee20", "status": "queued" },
+    { "doc": "D14", "action": "白模交接包（原阻塞于未装 Blender，环境已解阻，待 D13 落盘后开工）", "request_id": "—", "bot": "bot_e3df82ceee20", "status": "未开工" }
+  ],
+  "open_issues": [
+    { "id": "U1", "question": "首发平台优先级（总案只并列抖音/快手/小程序，未给主次）", "owner": "用户/制片总监", "impact": "备案路径、节目编号来源、片头标注格式、投流策略" },
+    { "id": "U2", "question": "预算档位／投资额度（总案未载）", "owner": "用户", "impact": "微短剧分类（一/二/三类）→ 审核路径与 D17 成本口径" },
+    { "id": "U3", "question": "生成成本上限", "owner": "用户", "impact": "镜量、并行度、是否外包、是否压缩集数" },
+    { "id": "U4", "question": "制作周期上限", "owner": "用户", "impact": "排期与外包决策" },
+    { "id": "S1", "question": "张陈年龄身份（企划合规建议方案 A＝18 岁·高中刚毕业）", "owner": "用户", "impact": "D04 身份栏最终口径 + EP05~EP09 在校身份依赖剧情" },
+    { "id": "S3", "question": "EP01 剧本 322 字 vs 目标 180~240 字（压缩优先级已采纳：冲击波展开→溃散轮廓→道具描写；R6 三镜与符文场不压）", "owner": "用户", "impact": "D08 定稿字数" },
+    { "id": "S6", "question": "AIGC 存量补备案是否已完成（2026-04-01 强制下线节点已过，未完成则全片下架）", "owner": "用户", "impact": "上线第一优先级" },
+    { "id": "S5", "question": "本项目是否「个人制作并上传」", "owner": "制片总监", "impact": "平台审核责任归属" }
+  ],
+  "legacy_notes": [
+    "样章 EP04~EP08 与大纲集号错位（−1），不影响 EP01。",
+    "篇章一第 04、08~18 集缺集名（不影响 EP01）。",
+    "EP01 全部尺寸为方案值（非实测）。",
+    "总集数 80 vs 80~100（D01 保留总案区间）。",
+    "归档/2026-10-22/掌中有深渊/ 为 17:31 快照，内部自洽、README 已披露，**不得再写入**；现行 SSOT = 02_项目/掌中有深渊/。"
+  ],
+  "files": {
+    "note": "本项目为 v1 Markdown 产线，交付物直接落本目录，文件名以现有文件为准，目录内同编号文件数必须＝1。"
+  }
+}
