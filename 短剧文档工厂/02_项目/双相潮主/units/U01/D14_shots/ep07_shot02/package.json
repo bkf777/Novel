@@ -1,0 +1,4004 @@
+{
+  "ep": 7,
+  "global_shot_no": 26,
+  "shot_id": 2,
+  "scene_code": "A-8",
+  "duration_sec": 13,
+  "package_path": "D14_shots/ep07_shot02/package.json",
+  "preflight": {
+    "schema_version": 4,
+    "source": {
+      "path": "D14_shots/ep07_shot02/preview_video.mp4",
+      "duration": 13.0,
+      "fps": 24.0,
+      "width": 1080,
+      "height": 1920,
+      "aspect_ratio": 0.5625,
+      "frames": 312,
+      "has_audio": false
+    },
+    "manifest_path": "D14_shots/ep07_shot02/manifest.json",
+    "timeline_plan": {
+      "source": {
+        "path": "D14_shots/ep07_shot02/preview_video.mp4",
+        "duration": 13.0,
+        "fps": 24.0,
+        "width": 1080,
+        "height": 1920,
+        "aspect_ratio": 0.5625,
+        "frames": 312,
+        "has_audio": false
+      },
+      "h3_fps": 24,
+      "num_frames": 311,
+      "generation_duration": 12.958333333333334,
+      "duration_delta": -0.041666666666666075,
+      "retime_percent": -0.3205128205128194,
+      "prepare_setpts_factor": 0.9967948717948718,
+      "conform_setpts_factor": 1.0032154340836013,
+      "requires_disclosure": true,
+      "strict_single_pass_recommended": true
+    },
+    "source_cut_candidates": [],
+    "structure_evidence_available": true,
+    "blender_structure_evidence": {
+      "camera_samples": [
+        {
+          "frame": 1,
+          "lens_mm": 85.0,
+          "location": [
+            40.3593,
+            -4.6771,
+            1.4378
+          ],
+          "rotation_quaternion_wxyz": [
+            0.68687,
+            0.61787,
+            -0.25593,
+            -0.28451
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 40,
+          "lens_mm": 85.0,
+          "location": [
+            40.3593,
+            -4.6771,
+            1.4378
+          ],
+          "rotation_quaternion_wxyz": [
+            0.68687,
+            0.61787,
+            -0.25593,
+            -0.28451
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 79,
+          "lens_mm": 85.0,
+          "location": [
+            40.3593,
+            -4.6771,
+            1.4378
+          ],
+          "rotation_quaternion_wxyz": [
+            0.68687,
+            0.61787,
+            -0.25593,
+            -0.28451
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 118,
+          "lens_mm": 85.0,
+          "location": [
+            40.3593,
+            -4.6771,
+            1.4378
+          ],
+          "rotation_quaternion_wxyz": [
+            0.68687,
+            0.61787,
+            -0.25593,
+            -0.28451
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 156,
+          "lens_mm": 85.0,
+          "location": [
+            40.3593,
+            -4.6771,
+            1.4378
+          ],
+          "rotation_quaternion_wxyz": [
+            0.68687,
+            0.61787,
+            -0.25593,
+            -0.28451
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 195,
+          "lens_mm": 85.0,
+          "location": [
+            40.3593,
+            -4.6771,
+            1.4378
+          ],
+          "rotation_quaternion_wxyz": [
+            0.68687,
+            0.61787,
+            -0.25593,
+            -0.28451
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 234,
+          "lens_mm": 85.0,
+          "location": [
+            40.3593,
+            -4.6771,
+            1.4378
+          ],
+          "rotation_quaternion_wxyz": [
+            0.68687,
+            0.61787,
+            -0.25593,
+            -0.28451
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 273,
+          "lens_mm": 85.0,
+          "location": [
+            40.3593,
+            -4.6771,
+            1.4378
+          ],
+          "rotation_quaternion_wxyz": [
+            0.68687,
+            0.61787,
+            -0.25593,
+            -0.28451
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 312,
+          "lens_mm": 85.0,
+          "location": [
+            40.3593,
+            -4.6771,
+            1.4378
+          ],
+          "rotation_quaternion_wxyz": [
+            0.68687,
+            0.61787,
+            -0.25593,
+            -0.28451
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "A-8_CHAR_Luchen_01",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "A-8_CHAR_Luchen_01",
+          "samples": [
+            {
+              "depth": 5.999,
+              "frame": 1,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                43.8,
+                0.4,
+                0.3
+              ]
+            },
+            {
+              "depth": 6.03438,
+              "frame": 40,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                43.87548,
+                0.37484,
+                0.3
+              ]
+            },
+            {
+              "depth": 6.06977,
+              "frame": 79,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                43.95097,
+                0.34968,
+                0.3
+              ]
+            },
+            {
+              "depth": 6.10515,
+              "frame": 118,
+              "pose": "stand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 0.76,
+                "center_y": 35.5,
+                "height": 69.97,
+                "width": 1.52
+              },
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                44.02645,
+                0.32452,
+                0.3
+              ]
+            },
+            {
+              "depth": 6.13963,
+              "frame": 156,
+              "pose": "stand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 3.25,
+                "center_y": 35.44,
+                "height": 69.56,
+                "width": 6.5
+              },
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                44.1,
+                0.3,
+                0.3
+              ]
+            },
+            {
+              "depth": 6.13963,
+              "frame": 195,
+              "pose": "stand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 3.25,
+                "center_y": 35.44,
+                "height": 69.56,
+                "width": 6.5
+              },
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                44.1,
+                0.3,
+                0.3
+              ]
+            },
+            {
+              "depth": 6.13963,
+              "frame": 234,
+              "pose": "stand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 3.25,
+                "center_y": 35.44,
+                "height": 69.56,
+                "width": 6.5
+              },
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                44.1,
+                0.3,
+                0.3
+              ]
+            },
+            {
+              "depth": 6.13963,
+              "frame": 273,
+              "pose": "stand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 3.25,
+                "center_y": 35.44,
+                "height": 69.56,
+                "width": 6.5
+              },
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                44.1,
+                0.3,
+                0.3
+              ]
+            },
+            {
+              "depth": 6.13963,
+              "frame": 312,
+              "pose": "stand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 3.25,
+                "center_y": 35.44,
+                "height": 69.56,
+                "width": 6.5
+              },
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                44.1,
+                0.3,
+                0.3
+              ]
+            }
+          ],
+          "source_id": "O001"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "A-8_CHAR_LuchenHand_02",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "A-8_CHAR_LuchenHand_02",
+          "samples": [
+            {
+              "depth": 5.74377,
+              "frame": 1,
+              "pose": "hand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 11.94,
+                "center_y": 38.98,
+                "height": 12.67,
+                "width": 10.42
+              },
+              "world_dimensions": [
+                0.1,
+                0.1,
+                0.3
+              ],
+              "world_location": [
+                44.05,
+                -0.25,
+                0.95
+              ]
+            },
+            {
+              "depth": 5.79471,
+              "frame": 40,
+              "pose": "hand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 11.74,
+                "center_y": 38.6,
+                "height": 12.55,
+                "width": 10.33
+              },
+              "world_dimensions": [
+                0.1,
+                0.1,
+                0.3
+              ],
+              "world_location": [
+                44.08145,
+                -0.20806,
+                0.95629
+              ]
+            },
+            {
+              "depth": 5.84565,
+              "frame": 79,
+              "pose": "hand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 11.54,
+                "center_y": 38.22,
+                "height": 12.43,
+                "width": 10.24
+              },
+              "world_dimensions": [
+                0.1,
+                0.1,
+                0.3
+              ],
+              "world_location": [
+                44.1129,
+                -0.16613,
+                0.96258
+              ]
+            },
+            {
+              "depth": 5.89659,
+              "frame": 118,
+              "pose": "hand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 11.34,
+                "center_y": 37.86,
+                "height": 12.32,
+                "width": 10.16
+              },
+              "world_dimensions": [
+                0.1,
+                0.1,
+                0.3
+              ],
+              "world_location": [
+                44.14436,
+                -0.12419,
+                0.96887
+              ]
+            },
+            {
+              "depth": 5.94622,
+              "frame": 156,
+              "pose": "hand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 11.15,
+                "center_y": 37.5,
+                "height": 12.21,
+                "width": 10.07
+              },
+              "world_dimensions": [
+                0.1,
+                0.1,
+                0.3
+              ],
+              "world_location": [
+                44.175,
+                -0.08333,
+                0.975
+              ]
+            },
+            {
+              "depth": 5.98896,
+              "frame": 195,
+              "pose": "hand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 10.99,
+                "center_y": 37.21,
+                "height": 12.12,
+                "width": 10.0
+              },
+              "world_dimensions": [
+                0.1,
+                0.1,
+                0.3
+              ],
+              "world_location": [
+                44.20128,
+                -0.04808,
+                0.98
+              ]
+            },
+            {
+              "depth": 5.99993,
+              "frame": 234,
+              "pose": "hand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 10.9,
+                "center_y": 37.19,
+                "height": 12.09,
+                "width": 9.98
+              },
+              "world_dimensions": [
+                0.1,
+                0.1,
+                0.3
+              ],
+              "world_location": [
+                44.20752,
+                -0.03872,
+                0.98
+              ]
+            },
+            {
+              "depth": 6.0109,
+              "frame": 273,
+              "pose": "hand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 10.82,
+                "center_y": 37.17,
+                "height": 12.07,
+                "width": 9.96
+              },
+              "world_dimensions": [
+                0.1,
+                0.1,
+                0.3
+              ],
+              "world_location": [
+                44.21376,
+                -0.02936,
+                0.98
+              ]
+            },
+            {
+              "depth": 6.02187,
+              "frame": 312,
+              "pose": "hand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 10.74,
+                "center_y": 37.15,
+                "height": 12.05,
+                "width": 9.95
+              },
+              "world_dimensions": [
+                0.1,
+                0.1,
+                0.3
+              ],
+              "world_location": [
+                44.22,
+                -0.02,
+                0.98
+              ]
+            }
+          ],
+          "source_id": "O002"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "A-8_CHAR_Yehongyi_03",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "A-8_CHAR_Yehongyi_03",
+          "samples": [
+            {
+              "depth": 6.45366,
+              "frame": 1,
+              "pose": "seated",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 19.72,
+                "center_y": 44.8,
+                "height": 46.86,
+                "width": 35.39
+              },
+              "world_dimensions": [
+                0.44,
+                0.34,
+                1.23
+              ],
+              "world_location": [
+                44.6,
+                0.2,
+                0.3
+              ]
+            },
+            {
+              "depth": 6.45366,
+              "frame": 40,
+              "pose": "seated",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 19.72,
+                "center_y": 44.8,
+                "height": 46.86,
+                "width": 35.39
+              },
+              "world_dimensions": [
+                0.44,
+                0.34,
+                1.23
+              ],
+              "world_location": [
+                44.6,
+                0.2,
+                0.3
+              ]
+            },
+            {
+              "depth": 6.45366,
+              "frame": 79,
+              "pose": "seated",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 19.72,
+                "center_y": 44.8,
+                "height": 46.86,
+                "width": 35.39
+              },
+              "world_dimensions": [
+                0.44,
+                0.34,
+                1.23
+              ],
+              "world_location": [
+                44.6,
+                0.2,
+                0.3
+              ]
+            },
+            {
+              "depth": 6.45366,
+              "frame": 118,
+              "pose": "seated",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 19.72,
+                "center_y": 44.8,
+                "height": 46.86,
+                "width": 35.39
+              },
+              "world_dimensions": [
+                0.44,
+                0.34,
+                1.23
+              ],
+              "world_location": [
+                44.6,
+                0.2,
+                0.3
+              ]
+            },
+            {
+              "depth": 6.45366,
+              "frame": 156,
+              "pose": "seated",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 19.72,
+                "center_y": 44.8,
+                "height": 46.86,
+                "width": 35.39
+              },
+              "world_dimensions": [
+                0.44,
+                0.34,
+                1.23
+              ],
+              "world_location": [
+                44.6,
+                0.2,
+                0.3
+              ]
+            },
+            {
+              "depth": 6.45366,
+              "frame": 195,
+              "pose": "seated",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 19.72,
+                "center_y": 44.8,
+                "height": 46.86,
+                "width": 35.39
+              },
+              "world_dimensions": [
+                0.44,
+                0.34,
+                1.23
+              ],
+              "world_location": [
+                44.6,
+                0.2,
+                0.3
+              ]
+            },
+            {
+              "depth": 6.45366,
+              "frame": 234,
+              "pose": "seated",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 19.72,
+                "center_y": 44.8,
+                "height": 46.86,
+                "width": 35.39
+              },
+              "world_dimensions": [
+                0.44,
+                0.34,
+                1.23
+              ],
+              "world_location": [
+                44.6,
+                0.2,
+                0.3
+              ]
+            },
+            {
+              "depth": 6.45366,
+              "frame": 273,
+              "pose": "seated",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 19.72,
+                "center_y": 44.8,
+                "height": 46.86,
+                "width": 35.39
+              },
+              "world_dimensions": [
+                0.44,
+                0.34,
+                1.23
+              ],
+              "world_location": [
+                44.6,
+                0.2,
+                0.3
+              ]
+            },
+            {
+              "depth": 6.45366,
+              "frame": 312,
+              "pose": "seated",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                85.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 19.72,
+                "center_y": 44.8,
+                "height": 46.86,
+                "width": 35.39
+              },
+              "world_dimensions": [
+                0.44,
+                0.34,
+                1.23
+              ],
+              "world_location": [
+                44.6,
+                0.2,
+                0.3
+              ]
+            }
+          ],
+          "source_id": "O003"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "A-8_EXT_InnerYard",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "A-8_EXT_InnerYard",
+          "samples": [
+            {
+              "depth": 12.11559,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 68.78,
+                "height": 62.44,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                36.0,
+                28.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 12.11559,
+              "frame": 40,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 68.78,
+                "height": 62.44,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                36.0,
+                28.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 12.11559,
+              "frame": 79,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 68.78,
+                "height": 62.44,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                36.0,
+                28.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 12.11559,
+              "frame": 118,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 68.78,
+                "height": 62.44,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                36.0,
+                28.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 12.11559,
+              "frame": 156,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 68.78,
+                "height": 62.44,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                36.0,
+                28.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 12.11559,
+              "frame": 195,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 68.78,
+                "height": 62.44,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                36.0,
+                28.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 12.11559,
+              "frame": 234,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 68.78,
+                "height": 62.44,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                36.0,
+                28.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 12.11559,
+              "frame": 273,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 68.78,
+                "height": 62.44,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                36.0,
+                28.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 12.11559,
+              "frame": 312,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 68.78,
+                "height": 62.44,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                36.0,
+                28.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O004"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "A-8_FX_AshPatch_01",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "A-8_FX_AshPatch_01",
+          "samples": [
+            {
+              "depth": 6.34673,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 8.54,
+                "center_y": 39.47,
+                "height": 1.1,
+                "width": 10.39
+              },
+              "world_dimensions": [
+                0.12,
+                0.1,
+                0.02
+              ],
+              "world_location": [
+                44.4,
+                0.25,
+                1.05
+              ]
+            },
+            {
+              "depth": 6.34673,
+              "frame": 40,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 8.54,
+                "center_y": 39.47,
+                "height": 1.1,
+                "width": 10.39
+              },
+              "world_dimensions": [
+                0.12,
+                0.1,
+                0.02
+              ],
+              "world_location": [
+                44.4,
+                0.25,
+                1.05
+              ]
+            },
+            {
+              "depth": 6.34673,
+              "frame": 79,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 8.54,
+                "center_y": 39.47,
+                "height": 1.1,
+                "width": 10.39
+              },
+              "world_dimensions": [
+                0.12,
+                0.1,
+                0.02
+              ],
+              "world_location": [
+                44.4,
+                0.25,
+                1.05
+              ]
+            },
+            {
+              "depth": 6.34673,
+              "frame": 118,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 8.54,
+                "center_y": 39.47,
+                "height": 1.1,
+                "width": 10.39
+              },
+              "world_dimensions": [
+                0.12,
+                0.1,
+                0.02
+              ],
+              "world_location": [
+                44.4,
+                0.25,
+                1.05
+              ]
+            },
+            {
+              "depth": 6.34673,
+              "frame": 156,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 8.54,
+                "center_y": 39.47,
+                "height": 1.1,
+                "width": 10.39
+              },
+              "world_dimensions": [
+                0.12,
+                0.1,
+                0.02
+              ],
+              "world_location": [
+                44.4,
+                0.25,
+                1.05
+              ]
+            },
+            {
+              "depth": 6.34673,
+              "frame": 195,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 8.54,
+                "center_y": 39.47,
+                "height": 1.1,
+                "width": 10.39
+              },
+              "world_dimensions": [
+                0.12,
+                0.1,
+                0.02
+              ],
+              "world_location": [
+                44.4,
+                0.25,
+                1.05
+              ]
+            },
+            {
+              "depth": 6.34673,
+              "frame": 234,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 8.54,
+                "center_y": 39.47,
+                "height": 1.1,
+                "width": 10.39
+              },
+              "world_dimensions": [
+                0.12,
+                0.1,
+                0.02
+              ],
+              "world_location": [
+                44.4,
+                0.25,
+                1.05
+              ]
+            },
+            {
+              "depth": 6.34673,
+              "frame": 273,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 8.54,
+                "center_y": 39.47,
+                "height": 1.1,
+                "width": 10.39
+              },
+              "world_dimensions": [
+                0.12,
+                0.1,
+                0.02
+              ],
+              "world_location": [
+                44.4,
+                0.25,
+                1.05
+              ]
+            },
+            {
+              "depth": 6.34673,
+              "frame": 312,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 8.54,
+                "center_y": 39.47,
+                "height": 1.1,
+                "width": 10.39
+              },
+              "world_dimensions": [
+                0.12,
+                0.1,
+                0.02
+              ],
+              "world_location": [
+                44.4,
+                0.25,
+                1.05
+              ]
+            }
+          ],
+          "source_id": "O005"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "A-8_FX_TwinFlame_01",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "A-8_FX_TwinFlame_01",
+          "samples": [
+            {
+              "depth": 6.06898,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 5.12,
+                "center_y": 28.42,
+                "height": 11.88,
+                "width": 10.23
+              },
+              "world_dimensions": [
+                0.18,
+                0.05,
+                0.3
+              ],
+              "world_location": [
+                44.2,
+                0.1,
+                1.35
+              ]
+            },
+            {
+              "depth": 6.06898,
+              "frame": 40,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 5.12,
+                "center_y": 28.42,
+                "height": 11.88,
+                "width": 10.23
+              },
+              "world_dimensions": [
+                0.18,
+                0.05,
+                0.3
+              ],
+              "world_location": [
+                44.2,
+                0.1,
+                1.35
+              ]
+            },
+            {
+              "depth": 6.06898,
+              "frame": 79,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 5.12,
+                "center_y": 28.42,
+                "height": 11.88,
+                "width": 10.23
+              },
+              "world_dimensions": [
+                0.18,
+                0.05,
+                0.3
+              ],
+              "world_location": [
+                44.2,
+                0.1,
+                1.35
+              ]
+            },
+            {
+              "depth": 6.06898,
+              "frame": 118,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 5.12,
+                "center_y": 28.42,
+                "height": 11.88,
+                "width": 10.23
+              },
+              "world_dimensions": [
+                0.18,
+                0.05,
+                0.3
+              ],
+              "world_location": [
+                44.2,
+                0.1,
+                1.35
+              ]
+            },
+            {
+              "depth": 6.06898,
+              "frame": 156,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 5.12,
+                "center_y": 28.42,
+                "height": 11.88,
+                "width": 10.23
+              },
+              "world_dimensions": [
+                0.18,
+                0.05,
+                0.3
+              ],
+              "world_location": [
+                44.2,
+                0.1,
+                1.35
+              ]
+            },
+            {
+              "depth": 6.06898,
+              "frame": 195,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 5.12,
+                "center_y": 28.42,
+                "height": 11.88,
+                "width": 10.23
+              },
+              "world_dimensions": [
+                0.18,
+                0.05,
+                0.3
+              ],
+              "world_location": [
+                44.2,
+                0.1,
+                1.35
+              ]
+            },
+            {
+              "depth": 6.06898,
+              "frame": 234,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 5.12,
+                "center_y": 28.42,
+                "height": 11.88,
+                "width": 10.23
+              },
+              "world_dimensions": [
+                0.18,
+                0.05,
+                0.3
+              ],
+              "world_location": [
+                44.2,
+                0.1,
+                1.35
+              ]
+            },
+            {
+              "depth": 6.06898,
+              "frame": 273,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 5.12,
+                "center_y": 28.42,
+                "height": 11.88,
+                "width": 10.23
+              },
+              "world_dimensions": [
+                0.18,
+                0.05,
+                0.3
+              ],
+              "world_location": [
+                44.2,
+                0.1,
+                1.35
+              ]
+            },
+            {
+              "depth": 6.06898,
+              "frame": 312,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 5.12,
+                "center_y": 28.42,
+                "height": 11.88,
+                "width": 10.23
+              },
+              "world_dimensions": [
+                0.18,
+                0.05,
+                0.3
+              ],
+              "world_location": [
+                44.2,
+                0.1,
+                1.35
+              ]
+            }
+          ],
+          "source_id": "O006"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "A-8_FX_WhiteSmoke_05",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "A-8_FX_WhiteSmoke_05",
+          "samples": [
+            {
+              "depth": 6.36418,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 5.92,
+                "center_y": 30.65,
+                "height": 7.13,
+                "width": 7.39
+              },
+              "world_dimensions": [
+                0.07695,
+                0.07868,
+                0.189
+              ],
+              "world_location": [
+                44.4,
+                0.34,
+                1.2
+              ]
+            },
+            {
+              "depth": 6.34585,
+              "frame": 40,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 6.36,
+                "center_y": 27.06,
+                "height": 9.94,
+                "width": 10.29
+              },
+              "world_dimensions": [
+                0.10691,
+                0.10932,
+                0.2626
+              ],
+              "world_location": [
+                44.4,
+                0.34,
+                1.2629
+              ]
+            },
+            {
+              "depth": 6.32753,
+              "frame": 79,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 6.8,
+                "center_y": 23.39,
+                "height": 12.82,
+                "width": 13.21
+              },
+              "world_dimensions": [
+                0.13688,
+                0.13996,
+                0.33619
+              ],
+              "world_location": [
+                44.4,
+                0.34,
+                1.32581
+              ]
+            },
+            {
+              "depth": 6.30921,
+              "frame": 118,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 7.66,
+                "center_y": 19.68,
+                "height": 15.75,
+                "width": 15.31
+              },
+              "world_dimensions": [
+                0.16684,
+                0.17059,
+                0.40979
+              ],
+              "world_location": [
+                44.4,
+                0.34,
+                1.38871
+              ]
+            },
+            {
+              "depth": 6.29136,
+              "frame": 156,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 8.59,
+                "center_y": 16.02,
+                "height": 18.66,
+                "width": 17.18
+              },
+              "world_dimensions": [
+                0.19603,
+                0.20045,
+                0.4815
+              ],
+              "world_location": [
+                44.4,
+                0.34,
+                1.45
+              ]
+            },
+            {
+              "depth": 6.27496,
+              "frame": 195,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 9.42,
+                "center_y": 12.56,
+                "height": 21.37,
+                "width": 18.85
+              },
+              "world_dimensions": [
+                0.22196,
+                0.22696,
+                0.54518
+              ],
+              "world_location": [
+                44.4,
+                0.34,
+                1.5096
+              ]
+            },
+            {
+              "depth": 6.26601,
+              "frame": 234,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 9.75,
+                "center_y": 10.78,
+                "height": 21.57,
+                "width": 19.5
+              },
+              "world_dimensions": [
+                0.23225,
+                0.23748,
+                0.57046
+              ],
+              "world_location": [
+                44.4,
+                0.34,
+                1.5564
+              ]
+            },
+            {
+              "depth": 6.25706,
+              "frame": 273,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 10.07,
+                "center_y": 9.95,
+                "height": 19.89,
+                "width": 20.15
+              },
+              "world_dimensions": [
+                0.24254,
+                0.248,
+                0.59573
+              ],
+              "world_location": [
+                44.4,
+                0.34,
+                1.6032
+              ]
+            },
+            {
+              "depth": 6.24811,
+              "frame": 312,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 10.4,
+                "center_y": 9.11,
+                "height": 18.21,
+                "width": 20.8
+              },
+              "world_dimensions": [
+                0.25283,
+                0.25852,
+                0.621
+              ],
+              "world_location": [
+                44.4,
+                0.34,
+                1.65
+              ]
+            }
+          ],
+          "source_id": "O007"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "A-8_PROP_DisposalPlatform_01",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "A-8_PROP_DisposalPlatform_01",
+          "samples": [
+            {
+              "depth": 6.68776,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 76.21,
+                "height": 47.58,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                6.0,
+                3.0,
+                0.3
+              ],
+              "world_location": [
+                45.0,
+                0.0,
+                0.15
+              ]
+            },
+            {
+              "depth": 6.68776,
+              "frame": 40,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 76.21,
+                "height": 47.58,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                6.0,
+                3.0,
+                0.3
+              ],
+              "world_location": [
+                45.0,
+                0.0,
+                0.15
+              ]
+            },
+            {
+              "depth": 6.68776,
+              "frame": 79,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 76.21,
+                "height": 47.58,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                6.0,
+                3.0,
+                0.3
+              ],
+              "world_location": [
+                45.0,
+                0.0,
+                0.15
+              ]
+            },
+            {
+              "depth": 6.68776,
+              "frame": 118,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 76.21,
+                "height": 47.58,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                6.0,
+                3.0,
+                0.3
+              ],
+              "world_location": [
+                45.0,
+                0.0,
+                0.15
+              ]
+            },
+            {
+              "depth": 6.68776,
+              "frame": 156,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 76.21,
+                "height": 47.58,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                6.0,
+                3.0,
+                0.3
+              ],
+              "world_location": [
+                45.0,
+                0.0,
+                0.15
+              ]
+            },
+            {
+              "depth": 6.68776,
+              "frame": 195,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 76.21,
+                "height": 47.58,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                6.0,
+                3.0,
+                0.3
+              ],
+              "world_location": [
+                45.0,
+                0.0,
+                0.15
+              ]
+            },
+            {
+              "depth": 6.68776,
+              "frame": 234,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 76.21,
+                "height": 47.58,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                6.0,
+                3.0,
+                0.3
+              ],
+              "world_location": [
+                45.0,
+                0.0,
+                0.15
+              ]
+            },
+            {
+              "depth": 6.68776,
+              "frame": 273,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 76.21,
+                "height": 47.58,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                6.0,
+                3.0,
+                0.3
+              ],
+              "world_location": [
+                45.0,
+                0.0,
+                0.15
+              ]
+            },
+            {
+              "depth": 6.68776,
+              "frame": 312,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 76.21,
+                "height": 47.58,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                6.0,
+                3.0,
+                0.3
+              ],
+              "world_location": [
+                45.0,
+                0.0,
+                0.15
+              ]
+            }
+          ],
+          "source_id": "O008"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "A-8_PROP_WristRestraint_01",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "A-8_PROP_WristRestraint_01",
+          "samples": [
+            {
+              "depth": 6.21313,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 2.04,
+                "center_y": 55.07,
+                "height": 2.02,
+                "width": 4.09
+              },
+              "world_dimensions": [
+                0.075,
+                0.075,
+                0.04
+              ],
+              "world_location": [
+                44.2,
+                0.2,
+                0.65
+              ]
+            },
+            {
+              "depth": 6.21313,
+              "frame": 40,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 2.04,
+                "center_y": 55.07,
+                "height": 2.02,
+                "width": 4.09
+              },
+              "world_dimensions": [
+                0.075,
+                0.075,
+                0.04
+              ],
+              "world_location": [
+                44.2,
+                0.2,
+                0.65
+              ]
+            },
+            {
+              "depth": 6.21313,
+              "frame": 79,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 2.04,
+                "center_y": 55.07,
+                "height": 2.02,
+                "width": 4.09
+              },
+              "world_dimensions": [
+                0.075,
+                0.075,
+                0.04
+              ],
+              "world_location": [
+                44.2,
+                0.2,
+                0.65
+              ]
+            },
+            {
+              "depth": 6.21313,
+              "frame": 118,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 2.04,
+                "center_y": 55.07,
+                "height": 2.02,
+                "width": 4.09
+              },
+              "world_dimensions": [
+                0.075,
+                0.075,
+                0.04
+              ],
+              "world_location": [
+                44.2,
+                0.2,
+                0.65
+              ]
+            },
+            {
+              "depth": 6.21313,
+              "frame": 156,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 2.04,
+                "center_y": 55.07,
+                "height": 2.02,
+                "width": 4.09
+              },
+              "world_dimensions": [
+                0.075,
+                0.075,
+                0.04
+              ],
+              "world_location": [
+                44.2,
+                0.2,
+                0.65
+              ]
+            },
+            {
+              "depth": 6.21313,
+              "frame": 195,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 2.04,
+                "center_y": 55.07,
+                "height": 2.02,
+                "width": 4.09
+              },
+              "world_dimensions": [
+                0.075,
+                0.075,
+                0.04
+              ],
+              "world_location": [
+                44.2,
+                0.2,
+                0.65
+              ]
+            },
+            {
+              "depth": 6.21313,
+              "frame": 234,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 2.04,
+                "center_y": 55.07,
+                "height": 2.02,
+                "width": 4.09
+              },
+              "world_dimensions": [
+                0.075,
+                0.075,
+                0.04
+              ],
+              "world_location": [
+                44.2,
+                0.2,
+                0.65
+              ]
+            },
+            {
+              "depth": 6.21313,
+              "frame": 273,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 2.04,
+                "center_y": 55.07,
+                "height": 2.02,
+                "width": 4.09
+              },
+              "world_dimensions": [
+                0.075,
+                0.075,
+                0.04
+              ],
+              "world_location": [
+                44.2,
+                0.2,
+                0.65
+              ]
+            },
+            {
+              "depth": 6.21313,
+              "frame": 312,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 2.04,
+                "center_y": 55.07,
+                "height": 2.02,
+                "width": 4.09
+              },
+              "world_dimensions": [
+                0.075,
+                0.075,
+                0.04
+              ],
+              "world_location": [
+                44.2,
+                0.2,
+                0.65
+              ]
+            }
+          ],
+          "source_id": "O009"
+        }
+      ],
+      "sample_frames": [
+        1,
+        40,
+        79,
+        118,
+        156,
+        195,
+        234,
+        273,
+        312
+      ],
+      "schema_version": 1
+    },
+    "requires_m3_cut_review": false,
+    "rule": "Cut candidates are evidence only; M3 decides real shot boundaries after full-video review."
+  },
+  "render_contract": {
+    "schema_version": 4,
+    "source": {
+      "path": "D14_shots/ep07_shot02/preview_video.mp4",
+      "duration": 13.0,
+      "fps": 24.0,
+      "width": 1080,
+      "height": 1920,
+      "aspect_ratio": 0.5625,
+      "frames": 312,
+      "has_audio": false
+    },
+    "watched_full_source": true,
+    "shot_count": 1,
+    "source_inventory": [
+      {
+        "source_id": "O001",
+        "source_name": "A-8_CHAR_Luchen_01",
+        "source_type": "MESH",
+        "root_name": "A-8_CHAR_Luchen_01",
+        "first_visible_seconds": 4.875,
+        "last_visible_seconds": 12.958,
+        "identity_cues": "name=A-8_CHAR_Luchen_01; type=MESH; root=A-8_CHAR_Luchen_01; dimensions=0.420,0.320,1.730",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O002",
+        "source_name": "A-8_CHAR_LuchenHand_02",
+        "source_type": "MESH",
+        "root_name": "A-8_CHAR_LuchenHand_02",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 12.958,
+        "identity_cues": "name=A-8_CHAR_LuchenHand_02; type=MESH; root=A-8_CHAR_LuchenHand_02; dimensions=0.100,0.100,0.300",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O003",
+        "source_name": "A-8_CHAR_Yehongyi_03",
+        "source_type": "MESH",
+        "root_name": "A-8_CHAR_Yehongyi_03",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 12.958,
+        "identity_cues": "name=A-8_CHAR_Yehongyi_03; type=MESH; root=A-8_CHAR_Yehongyi_03; dimensions=0.440,0.340,1.230",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O004",
+        "source_name": "A-8_EXT_InnerYard",
+        "source_type": "MESH",
+        "root_name": "A-8_EXT_InnerYard",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 12.958,
+        "identity_cues": "name=A-8_EXT_InnerYard; type=MESH; root=A-8_EXT_InnerYard; dimensions=36.000,28.000,0.400",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O005",
+        "source_name": "A-8_FX_AshPatch_01",
+        "source_type": "MESH",
+        "root_name": "A-8_FX_AshPatch_01",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 12.958,
+        "identity_cues": "name=A-8_FX_AshPatch_01; type=MESH; root=A-8_FX_AshPatch_01; dimensions=0.120,0.100,0.020",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O006",
+        "source_name": "A-8_FX_TwinFlame_01",
+        "source_type": "MESH",
+        "root_name": "A-8_FX_TwinFlame_01",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 12.958,
+        "identity_cues": "name=A-8_FX_TwinFlame_01; type=MESH; root=A-8_FX_TwinFlame_01; dimensions=0.180,0.050,0.300",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O007",
+        "source_name": "A-8_FX_WhiteSmoke_05",
+        "source_type": "MESH",
+        "root_name": "A-8_FX_WhiteSmoke_05",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 12.958,
+        "identity_cues": "name=A-8_FX_WhiteSmoke_05; type=MESH; root=A-8_FX_WhiteSmoke_05; dimensions=0.077,0.079,0.189",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O008",
+        "source_name": "A-8_PROP_DisposalPlatform_01",
+        "source_type": "MESH",
+        "root_name": "A-8_PROP_DisposalPlatform_01",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 12.958,
+        "identity_cues": "name=A-8_PROP_DisposalPlatform_01; type=MESH; root=A-8_PROP_DisposalPlatform_01; dimensions=6.000,3.000,0.300",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O009",
+        "source_name": "A-8_PROP_WristRestraint_01",
+        "source_type": "MESH",
+        "root_name": "A-8_PROP_WristRestraint_01",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 12.958,
+        "identity_cues": "name=A-8_PROP_WristRestraint_01; type=MESH; root=A-8_PROP_WristRestraint_01; dimensions=0.075,0.075,0.040",
+        "evidence_origin": "blender_manifest"
+      }
+    ],
+    "entities": [
+      {
+        "label": "Entity 01 CHAR Luchen",
+        "entity_class": "articulated",
+        "importance": "context",
+        "source_instance_ids": [
+          "O001"
+        ],
+        "instance_count": 1,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "male protagonist blockout",
+        "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+        "motion_contract": {
+          "mode": "static",
+          "action": "holds its source position for the whole shot",
+          "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+          "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+        }
+      },
+      {
+        "label": "Entity 02 CHAR LuchenHand",
+        "entity_class": "articulated",
+        "importance": "primary",
+        "source_instance_ids": [
+          "O002"
+        ],
+        "instance_count": 1,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "protagonist raised hand blockout",
+        "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+        "motion_contract": {
+          "mode": "locomotion",
+          "action": "travels 0.29m across the set during the shot",
+          "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+          "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+        }
+      },
+      {
+        "label": "Entity 03 CHAR Yehongyi",
+        "entity_class": "articulated",
+        "importance": "context",
+        "source_instance_ids": [
+          "O003"
+        ],
+        "instance_count": 1,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "female captive character blockout",
+        "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+        "motion_contract": {
+          "mode": "static",
+          "action": "holds its source position for the whole shot",
+          "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+          "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+        }
+      },
+      {
+        "label": "Entity 04 ENV A-8",
+        "entity_class": "environment",
+        "importance": "context",
+        "source_instance_ids": [
+          "O004",
+          "O008"
+        ],
+        "instance_count": 2,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "A-8 built environment shell enclosing the set: InnerYard, DisposalPlatform",
+        "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+        "motion_contract": {
+          "mode": "static",
+          "action": "holds its source position for the whole shot",
+          "continuity_requirement": "keep every instance and the column order exactly as in the source",
+          "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+        }
+      },
+      {
+        "label": "Entity 05 FX AshPatch",
+        "entity_class": "effect",
+        "importance": "context",
+        "source_instance_ids": [
+          "O005"
+        ],
+        "instance_count": 1,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "grey white patch on the captive forearm",
+        "structural_constraints": "keep the source volume and the attachment point; the effect never detaches from its source surface",
+        "motion_contract": {
+          "mode": "static",
+          "action": "holds its source position for the whole shot",
+          "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+          "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+        }
+      },
+      {
+        "label": "Entity 06 FX TwinFlame",
+        "entity_class": "effect",
+        "importance": "context",
+        "source_instance_ids": [
+          "O006"
+        ],
+        "instance_count": 1,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "black and white twin flame on the wrist",
+        "structural_constraints": "keep the source volume and the attachment point; the effect never detaches from its source surface",
+        "motion_contract": {
+          "mode": "static",
+          "action": "holds its source position for the whole shot",
+          "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+          "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+        }
+      },
+      {
+        "label": "Entity 07 FX WhiteSmoke",
+        "entity_class": "effect",
+        "importance": "context",
+        "source_instance_ids": [
+          "O007"
+        ],
+        "instance_count": 1,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "white smoke rising off the forearm",
+        "structural_constraints": "keep the source volume and the attachment point; the effect never detaches from its source surface",
+        "motion_contract": {
+          "mode": "effect_evolution",
+          "action": "develops and drifts as the effect unfolds",
+          "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+          "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+        }
+      },
+      {
+        "label": "Entity 08 PROP A-8",
+        "entity_class": "rigid",
+        "importance": "context",
+        "source_instance_ids": [
+          "O009"
+        ],
+        "instance_count": 1,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "A-8 set pieces and fittings: WristRestraint",
+        "structural_constraints": "each member keeps its own source footprint, size and placement",
+        "motion_contract": {
+          "mode": "static",
+          "action": "holds its source position for the whole shot",
+          "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+          "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+        }
+      }
+    ],
+    "interaction_contracts": [
+      {
+        "interaction_id": "IX_2601",
+        "source_instance_ids": [
+          "O001",
+          "O003",
+          "O006"
+        ],
+        "start_seconds": 0.0,
+        "end_seconds": 1.0,
+        "relation": "protagonist wrist held against the captive forearm surface",
+        "forbidden_change": "do not break the skin surface or add red liquid"
+      }
+    ],
+    "shots": [
+      {
+        "shot_id": 1,
+        "start_seconds": 0.0,
+        "end_seconds": 13.0,
+        "camera_contract": {
+          "motion_type": "static",
+          "tracked_target_entity": "Entity 02 CHAR LuchenHand",
+          "world_path": "camera travels from (40.36, -4.68, 1.44) to (40.36, -4.68, 1.44) on a 85mm lens, total path length 0.00m inside the blocked set",
+          "target_distance_trend": "stable",
+          "azimuth_trend": "stable",
+          "elevation_trend": "stable",
+          "focal_length_trend": "stable",
+          "screen_composition_rule": "近景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+          "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 近景 framing and the 固定 move exactly as blocked out"
+        },
+        "actions": "protagonist presses the right wrist close to her forearm, twin flame touches the skin, white smoke rises along the arm and clears, the skin underneath stays intact",
+        "layout_and_occlusion": "8 visible instances. Dominant InnerYard covers 100x62 percent at frame 50/69. Left to right: WristRestraint, TwinFlame, WhiteSmoke, AshPatch, LuchenHand.",
+        "lighting_spatial_logic": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+      }
+    ],
+    "anchors": [
+      {
+        "time_seconds": 0.0,
+        "source_frame": "D14_shots/ep07_shot02/source_anchor_frames/anchor_01.jpg",
+        "composition": {
+          "shot_scale": "close",
+          "frame_balance_and_depth": "depth spans 5.74m to 12.12m across 8 layers; nearest is LuchenHand, furthest is InnerYard"
+        },
+        "camera_relation": "camera at (40.36, -4.68, 1.44) on a 85.0mm lens, frame 1 of 312",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR Luchen",
+            "visibility": "offscreen",
+            "center_x_percent": null,
+            "center_y_percent": null,
+            "bbox_width_percent": null,
+            "bbox_height_percent": null,
+            "orientation": "off screen at this anchor",
+            "motion_state": "offscreen at this anchor",
+            "spatial_relations": "leaves the frame before this anchor"
+          },
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 02 CHAR LuchenHand",
+            "visibility": "visible",
+            "center_x_percent": 11.94,
+            "center_y_percent": 38.98,
+            "bbox_width_percent": 10.42,
+            "bbox_height_percent": 12.67,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of AshPatch, left of Yehongyi, behind all nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O003",
+            "entity_label": "Entity 03 CHAR Yehongyi",
+            "visibility": "visible",
+            "center_x_percent": 19.72,
+            "center_y_percent": 44.8,
+            "bbox_width_percent": 35.39,
+            "bbox_height_percent": 46.86,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of LuchenHand, left of InnerYard, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O004",
+            "entity_label": "Entity 04 ENV A-8",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 68.78,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 62.44,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Yehongyi, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O005",
+            "entity_label": "Entity 05 FX AshPatch",
+            "visibility": "visible",
+            "center_x_percent": 8.54,
+            "center_y_percent": 39.47,
+            "bbox_width_percent": 10.39,
+            "bbox_height_percent": 1.1,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WhiteSmoke, left of LuchenHand, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 06 FX TwinFlame",
+            "visibility": "visible",
+            "center_x_percent": 5.12,
+            "center_y_percent": 28.42,
+            "bbox_width_percent": 10.23,
+            "bbox_height_percent": 11.88,
+            "orientation": "vertical volume proxy, long axis standing up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WristRestraint, left of WhiteSmoke, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 07 FX WhiteSmoke",
+            "visibility": "visible",
+            "center_x_percent": 5.92,
+            "center_y_percent": 30.65,
+            "bbox_width_percent": 7.39,
+            "bbox_height_percent": 7.13,
+            "orientation": "vertical volume proxy, long axis standing up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of TwinFlame, left of AshPatch, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 04 ENV A-8",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 76.21,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 47.58,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Yehongyi, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 08 PROP A-8",
+            "visibility": "visible",
+            "center_x_percent": 2.04,
+            "center_y_percent": 55.07,
+            "bbox_width_percent": 4.09,
+            "bbox_height_percent": 2.02,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of TwinFlame, in front of nearer elements, middle frame height"
+          }
+        ],
+        "key_layout_and_occlusion": "8 visible instances. Dominant InnerYard covers 100x62 percent at frame 50/69. Left to right: WristRestraint, TwinFlame, WhiteSmoke, AshPatch, LuchenHand."
+      },
+      {
+        "time_seconds": 1.62,
+        "source_frame": "D14_shots/ep07_shot02/source_anchor_frames/anchor_02.jpg",
+        "composition": {
+          "shot_scale": "close",
+          "frame_balance_and_depth": "depth spans 5.79m to 12.12m across 8 layers; nearest is LuchenHand, furthest is InnerYard"
+        },
+        "camera_relation": "camera at (40.36, -4.68, 1.44) on a 85.0mm lens, frame 40 of 312",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR Luchen",
+            "visibility": "offscreen",
+            "center_x_percent": null,
+            "center_y_percent": null,
+            "bbox_width_percent": null,
+            "bbox_height_percent": null,
+            "orientation": "off screen at this anchor",
+            "motion_state": "offscreen at this anchor",
+            "spatial_relations": "leaves the frame before this anchor"
+          },
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 02 CHAR LuchenHand",
+            "visibility": "visible",
+            "center_x_percent": 11.74,
+            "center_y_percent": 38.6,
+            "bbox_width_percent": 10.33,
+            "bbox_height_percent": 12.55,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of AshPatch, left of Yehongyi, behind all nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O003",
+            "entity_label": "Entity 03 CHAR Yehongyi",
+            "visibility": "visible",
+            "center_x_percent": 19.72,
+            "center_y_percent": 44.8,
+            "bbox_width_percent": 35.39,
+            "bbox_height_percent": 46.86,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of LuchenHand, left of InnerYard, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O004",
+            "entity_label": "Entity 04 ENV A-8",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 68.78,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 62.44,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Yehongyi, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O005",
+            "entity_label": "Entity 05 FX AshPatch",
+            "visibility": "visible",
+            "center_x_percent": 8.54,
+            "center_y_percent": 39.47,
+            "bbox_width_percent": 10.39,
+            "bbox_height_percent": 1.1,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WhiteSmoke, left of LuchenHand, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 06 FX TwinFlame",
+            "visibility": "visible",
+            "center_x_percent": 5.12,
+            "center_y_percent": 28.42,
+            "bbox_width_percent": 10.23,
+            "bbox_height_percent": 11.88,
+            "orientation": "vertical volume proxy, long axis standing up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WristRestraint, left of WhiteSmoke, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 07 FX WhiteSmoke",
+            "visibility": "visible",
+            "center_x_percent": 6.36,
+            "center_y_percent": 27.06,
+            "bbox_width_percent": 10.29,
+            "bbox_height_percent": 9.94,
+            "orientation": "vertical volume proxy, long axis standing up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of TwinFlame, left of AshPatch, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 04 ENV A-8",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 76.21,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 47.58,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Yehongyi, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 08 PROP A-8",
+            "visibility": "visible",
+            "center_x_percent": 2.04,
+            "center_y_percent": 55.07,
+            "bbox_width_percent": 4.09,
+            "bbox_height_percent": 2.02,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of TwinFlame, in front of nearer elements, middle frame height"
+          }
+        ],
+        "key_layout_and_occlusion": "8 visible instances. Dominant InnerYard covers 100x62 percent at frame 50/69. Left to right: WristRestraint, TwinFlame, WhiteSmoke, AshPatch, LuchenHand."
+      },
+      {
+        "time_seconds": 3.24,
+        "source_frame": "D14_shots/ep07_shot02/source_anchor_frames/anchor_03.jpg",
+        "composition": {
+          "shot_scale": "close",
+          "frame_balance_and_depth": "depth spans 5.85m to 12.12m across 8 layers; nearest is LuchenHand, furthest is InnerYard"
+        },
+        "camera_relation": "camera at (40.36, -4.68, 1.44) on a 85.0mm lens, frame 79 of 312",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR Luchen",
+            "visibility": "offscreen",
+            "center_x_percent": null,
+            "center_y_percent": null,
+            "bbox_width_percent": null,
+            "bbox_height_percent": null,
+            "orientation": "off screen at this anchor",
+            "motion_state": "offscreen at this anchor",
+            "spatial_relations": "leaves the frame before this anchor"
+          },
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 02 CHAR LuchenHand",
+            "visibility": "visible",
+            "center_x_percent": 11.54,
+            "center_y_percent": 38.22,
+            "bbox_width_percent": 10.24,
+            "bbox_height_percent": 12.43,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of AshPatch, left of Yehongyi, behind all nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O003",
+            "entity_label": "Entity 03 CHAR Yehongyi",
+            "visibility": "visible",
+            "center_x_percent": 19.72,
+            "center_y_percent": 44.8,
+            "bbox_width_percent": 35.39,
+            "bbox_height_percent": 46.86,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of LuchenHand, left of InnerYard, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O004",
+            "entity_label": "Entity 04 ENV A-8",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 68.78,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 62.44,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Yehongyi, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O005",
+            "entity_label": "Entity 05 FX AshPatch",
+            "visibility": "visible",
+            "center_x_percent": 8.54,
+            "center_y_percent": 39.47,
+            "bbox_width_percent": 10.39,
+            "bbox_height_percent": 1.1,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WhiteSmoke, left of LuchenHand, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 06 FX TwinFlame",
+            "visibility": "visible",
+            "center_x_percent": 5.12,
+            "center_y_percent": 28.42,
+            "bbox_width_percent": 10.23,
+            "bbox_height_percent": 11.88,
+            "orientation": "vertical volume proxy, long axis standing up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WristRestraint, left of WhiteSmoke, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 07 FX WhiteSmoke",
+            "visibility": "visible",
+            "center_x_percent": 6.8,
+            "center_y_percent": 23.39,
+            "bbox_width_percent": 13.21,
+            "bbox_height_percent": 12.82,
+            "orientation": "vertical volume proxy, long axis standing up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of TwinFlame, left of AshPatch, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 04 ENV A-8",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 76.21,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 47.58,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Yehongyi, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 08 PROP A-8",
+            "visibility": "visible",
+            "center_x_percent": 2.04,
+            "center_y_percent": 55.07,
+            "bbox_width_percent": 4.09,
+            "bbox_height_percent": 2.02,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of TwinFlame, in front of nearer elements, middle frame height"
+          }
+        ],
+        "key_layout_and_occlusion": "8 visible instances. Dominant InnerYard covers 100x62 percent at frame 50/69. Left to right: WristRestraint, TwinFlame, WhiteSmoke, AshPatch, LuchenHand."
+      },
+      {
+        "time_seconds": 4.859,
+        "source_frame": "D14_shots/ep07_shot02/source_anchor_frames/anchor_04.jpg",
+        "composition": {
+          "shot_scale": "close",
+          "frame_balance_and_depth": "depth spans 5.90m to 12.12m across 9 layers; nearest is LuchenHand, furthest is InnerYard"
+        },
+        "camera_relation": "camera at (40.36, -4.68, 1.44) on a 85.0mm lens, frame 118 of 312",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR Luchen",
+            "visibility": "visible",
+            "center_x_percent": 0.76,
+            "center_y_percent": 35.5,
+            "bbox_width_percent": 1.52,
+            "bbox_height_percent": 69.97,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of WristRestraint, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 02 CHAR LuchenHand",
+            "visibility": "visible",
+            "center_x_percent": 11.34,
+            "center_y_percent": 37.86,
+            "bbox_width_percent": 10.16,
+            "bbox_height_percent": 12.32,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of AshPatch, left of Yehongyi, behind all nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O003",
+            "entity_label": "Entity 03 CHAR Yehongyi",
+            "visibility": "visible",
+            "center_x_percent": 19.72,
+            "center_y_percent": 44.8,
+            "bbox_width_percent": 35.39,
+            "bbox_height_percent": 46.86,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of LuchenHand, left of InnerYard, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O004",
+            "entity_label": "Entity 04 ENV A-8",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 68.78,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 62.44,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Yehongyi, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O005",
+            "entity_label": "Entity 05 FX AshPatch",
+            "visibility": "visible",
+            "center_x_percent": 8.54,
+            "center_y_percent": 39.47,
+            "bbox_width_percent": 10.39,
+            "bbox_height_percent": 1.1,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WhiteSmoke, left of LuchenHand, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 06 FX TwinFlame",
+            "visibility": "visible",
+            "center_x_percent": 5.12,
+            "center_y_percent": 28.42,
+            "bbox_width_percent": 10.23,
+            "bbox_height_percent": 11.88,
+            "orientation": "vertical volume proxy, long axis standing up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WristRestraint, left of WhiteSmoke, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 07 FX WhiteSmoke",
+            "visibility": "visible",
+            "center_x_percent": 7.66,
+            "center_y_percent": 19.68,
+            "bbox_width_percent": 15.31,
+            "bbox_height_percent": 15.75,
+            "orientation": "vertical volume proxy, long axis standing up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of TwinFlame, left of AshPatch, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 04 ENV A-8",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 76.21,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 47.58,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Yehongyi, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 08 PROP A-8",
+            "visibility": "visible",
+            "center_x_percent": 2.04,
+            "center_y_percent": 55.07,
+            "bbox_width_percent": 4.09,
+            "bbox_height_percent": 2.02,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Luchen, left of TwinFlame, in front of nearer elements, middle frame height"
+          }
+        ],
+        "key_layout_and_occlusion": "9 visible instances. Dominant InnerYard covers 100x62 percent at frame 50/69. Left to right: Luchen, WristRestraint, TwinFlame, WhiteSmoke, AshPatch."
+      },
+      {
+        "time_seconds": 6.479,
+        "source_frame": "D14_shots/ep07_shot02/source_anchor_frames/anchor_05.jpg",
+        "composition": {
+          "shot_scale": "close",
+          "frame_balance_and_depth": "depth spans 5.95m to 12.12m across 9 layers; nearest is LuchenHand, furthest is InnerYard"
+        },
+        "camera_relation": "camera at (40.36, -4.68, 1.44) on a 85.0mm lens, frame 156 of 312",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR Luchen",
+            "visibility": "visible",
+            "center_x_percent": 3.25,
+            "center_y_percent": 35.44,
+            "bbox_width_percent": 6.5,
+            "bbox_height_percent": 69.56,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WristRestraint, left of TwinFlame, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 02 CHAR LuchenHand",
+            "visibility": "visible",
+            "center_x_percent": 11.15,
+            "center_y_percent": 37.5,
+            "bbox_width_percent": 10.07,
+            "bbox_height_percent": 12.21,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WhiteSmoke, left of Yehongyi, behind all nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O003",
+            "entity_label": "Entity 03 CHAR Yehongyi",
+            "visibility": "visible",
+            "center_x_percent": 19.72,
+            "center_y_percent": 44.8,
+            "bbox_width_percent": 35.39,
+            "bbox_height_percent": 46.86,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of LuchenHand, left of InnerYard, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O004",
+            "entity_label": "Entity 04 ENV A-8",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 68.78,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 62.44,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Yehongyi, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O005",
+            "entity_label": "Entity 05 FX AshPatch",
+            "visibility": "visible",
+            "center_x_percent": 8.54,
+            "center_y_percent": 39.47,
+            "bbox_width_percent": 10.39,
+            "bbox_height_percent": 1.1,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of TwinFlame, left of WhiteSmoke, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 06 FX TwinFlame",
+            "visibility": "visible",
+            "center_x_percent": 5.12,
+            "center_y_percent": 28.42,
+            "bbox_width_percent": 10.23,
+            "bbox_height_percent": 11.88,
+            "orientation": "vertical volume proxy, long axis standing up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Luchen, left of AshPatch, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 07 FX WhiteSmoke",
+            "visibility": "visible",
+            "center_x_percent": 8.59,
+            "center_y_percent": 16.02,
+            "bbox_width_percent": 17.18,
+            "bbox_height_percent": 18.66,
+            "orientation": "vertical volume proxy, long axis standing up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of AshPatch, left of LuchenHand, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 04 ENV A-8",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 76.21,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 47.58,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Yehongyi, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 08 PROP A-8",
+            "visibility": "visible",
+            "center_x_percent": 2.04,
+            "center_y_percent": 55.07,
+            "bbox_width_percent": 4.09,
+            "bbox_height_percent": 2.02,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of Luchen, in front of nearer elements, middle frame height"
+          }
+        ],
+        "key_layout_and_occlusion": "9 visible instances. Dominant InnerYard covers 100x62 percent at frame 50/69. Left to right: WristRestraint, Luchen, TwinFlame, AshPatch, WhiteSmoke."
+      },
+      {
+        "time_seconds": 8.099,
+        "source_frame": "D14_shots/ep07_shot02/source_anchor_frames/anchor_06.jpg",
+        "composition": {
+          "shot_scale": "close",
+          "frame_balance_and_depth": "depth spans 5.99m to 12.12m across 9 layers; nearest is LuchenHand, furthest is InnerYard"
+        },
+        "camera_relation": "camera at (40.36, -4.68, 1.44) on a 85.0mm lens, frame 195 of 312",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR Luchen",
+            "visibility": "visible",
+            "center_x_percent": 3.25,
+            "center_y_percent": 35.44,
+            "bbox_width_percent": 6.5,
+            "bbox_height_percent": 69.56,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WristRestraint, left of TwinFlame, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 02 CHAR LuchenHand",
+            "visibility": "visible",
+            "center_x_percent": 10.99,
+            "center_y_percent": 37.21,
+            "bbox_width_percent": 10.0,
+            "bbox_height_percent": 12.12,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WhiteSmoke, left of Yehongyi, behind all nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O003",
+            "entity_label": "Entity 03 CHAR Yehongyi",
+            "visibility": "visible",
+            "center_x_percent": 19.72,
+            "center_y_percent": 44.8,
+            "bbox_width_percent": 35.39,
+            "bbox_height_percent": 46.86,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of LuchenHand, left of InnerYard, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O004",
+            "entity_label": "Entity 04 ENV A-8",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 68.78,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 62.44,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Yehongyi, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O005",
+            "entity_label": "Entity 05 FX AshPatch",
+            "visibility": "visible",
+            "center_x_percent": 8.54,
+            "center_y_percent": 39.47,
+            "bbox_width_percent": 10.39,
+            "bbox_height_percent": 1.1,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of TwinFlame, left of WhiteSmoke, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 06 FX TwinFlame",
+            "visibility": "visible",
+            "center_x_percent": 5.12,
+            "center_y_percent": 28.42,
+            "bbox_width_percent": 10.23,
+            "bbox_height_percent": 11.88,
+            "orientation": "vertical volume proxy, long axis standing up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Luchen, left of AshPatch, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 07 FX WhiteSmoke",
+            "visibility": "visible",
+            "center_x_percent": 9.42,
+            "center_y_percent": 12.56,
+            "bbox_width_percent": 18.85,
+            "bbox_height_percent": 21.37,
+            "orientation": "vertical volume proxy, long axis standing up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of AshPatch, left of LuchenHand, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 04 ENV A-8",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 76.21,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 47.58,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Yehongyi, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 08 PROP A-8",
+            "visibility": "visible",
+            "center_x_percent": 2.04,
+            "center_y_percent": 55.07,
+            "bbox_width_percent": 4.09,
+            "bbox_height_percent": 2.02,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of Luchen, in front of nearer elements, middle frame height"
+          }
+        ],
+        "key_layout_and_occlusion": "9 visible instances. Dominant InnerYard covers 100x62 percent at frame 50/69. Left to right: WristRestraint, Luchen, TwinFlame, AshPatch, WhiteSmoke."
+      },
+      {
+        "time_seconds": 9.719,
+        "source_frame": "D14_shots/ep07_shot02/source_anchor_frames/anchor_07.jpg",
+        "composition": {
+          "shot_scale": "close",
+          "frame_balance_and_depth": "depth spans 6.00m to 12.12m across 9 layers; nearest is LuchenHand, furthest is InnerYard"
+        },
+        "camera_relation": "camera at (40.36, -4.68, 1.44) on a 85.0mm lens, frame 234 of 312",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR Luchen",
+            "visibility": "visible",
+            "center_x_percent": 3.25,
+            "center_y_percent": 35.44,
+            "bbox_width_percent": 6.5,
+            "bbox_height_percent": 69.56,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WristRestraint, left of TwinFlame, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 02 CHAR LuchenHand",
+            "visibility": "visible",
+            "center_x_percent": 10.9,
+            "center_y_percent": 37.19,
+            "bbox_width_percent": 9.98,
+            "bbox_height_percent": 12.09,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WhiteSmoke, left of Yehongyi, behind all nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O003",
+            "entity_label": "Entity 03 CHAR Yehongyi",
+            "visibility": "visible",
+            "center_x_percent": 19.72,
+            "center_y_percent": 44.8,
+            "bbox_width_percent": 35.39,
+            "bbox_height_percent": 46.86,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of LuchenHand, left of InnerYard, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O004",
+            "entity_label": "Entity 04 ENV A-8",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 68.78,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 62.44,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Yehongyi, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O005",
+            "entity_label": "Entity 05 FX AshPatch",
+            "visibility": "visible",
+            "center_x_percent": 8.54,
+            "center_y_percent": 39.47,
+            "bbox_width_percent": 10.39,
+            "bbox_height_percent": 1.1,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of TwinFlame, left of WhiteSmoke, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 06 FX TwinFlame",
+            "visibility": "visible",
+            "center_x_percent": 5.12,
+            "center_y_percent": 28.42,
+            "bbox_width_percent": 10.23,
+            "bbox_height_percent": 11.88,
+            "orientation": "vertical volume proxy, long axis standing up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Luchen, left of AshPatch, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 07 FX WhiteSmoke",
+            "visibility": "visible",
+            "center_x_percent": 9.75,
+            "center_y_percent": 10.78,
+            "bbox_width_percent": 19.5,
+            "bbox_height_percent": 21.57,
+            "orientation": "vertical volume proxy, long axis standing up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of AshPatch, left of LuchenHand, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 04 ENV A-8",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 76.21,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 47.58,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Yehongyi, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 08 PROP A-8",
+            "visibility": "visible",
+            "center_x_percent": 2.04,
+            "center_y_percent": 55.07,
+            "bbox_width_percent": 4.09,
+            "bbox_height_percent": 2.02,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of Luchen, in front of nearer elements, middle frame height"
+          }
+        ],
+        "key_layout_and_occlusion": "9 visible instances. Dominant InnerYard covers 100x62 percent at frame 50/69. Left to right: WristRestraint, Luchen, TwinFlame, AshPatch, WhiteSmoke."
+      },
+      {
+        "time_seconds": 11.339,
+        "source_frame": "D14_shots/ep07_shot02/source_anchor_frames/anchor_08.jpg",
+        "composition": {
+          "shot_scale": "close",
+          "frame_balance_and_depth": "depth spans 6.01m to 12.12m across 9 layers; nearest is LuchenHand, furthest is InnerYard"
+        },
+        "camera_relation": "camera at (40.36, -4.68, 1.44) on a 85.0mm lens, frame 273 of 312",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR Luchen",
+            "visibility": "visible",
+            "center_x_percent": 3.25,
+            "center_y_percent": 35.44,
+            "bbox_width_percent": 6.5,
+            "bbox_height_percent": 69.56,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WristRestraint, left of TwinFlame, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 02 CHAR LuchenHand",
+            "visibility": "visible",
+            "center_x_percent": 10.82,
+            "center_y_percent": 37.17,
+            "bbox_width_percent": 9.96,
+            "bbox_height_percent": 12.07,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WhiteSmoke, left of Yehongyi, behind all nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O003",
+            "entity_label": "Entity 03 CHAR Yehongyi",
+            "visibility": "visible",
+            "center_x_percent": 19.72,
+            "center_y_percent": 44.8,
+            "bbox_width_percent": 35.39,
+            "bbox_height_percent": 46.86,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of LuchenHand, left of InnerYard, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O004",
+            "entity_label": "Entity 04 ENV A-8",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 68.78,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 62.44,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Yehongyi, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O005",
+            "entity_label": "Entity 05 FX AshPatch",
+            "visibility": "visible",
+            "center_x_percent": 8.54,
+            "center_y_percent": 39.47,
+            "bbox_width_percent": 10.39,
+            "bbox_height_percent": 1.1,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of TwinFlame, left of WhiteSmoke, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 06 FX TwinFlame",
+            "visibility": "visible",
+            "center_x_percent": 5.12,
+            "center_y_percent": 28.42,
+            "bbox_width_percent": 10.23,
+            "bbox_height_percent": 11.88,
+            "orientation": "vertical volume proxy, long axis standing up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Luchen, left of AshPatch, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 07 FX WhiteSmoke",
+            "visibility": "visible",
+            "center_x_percent": 10.07,
+            "center_y_percent": 9.95,
+            "bbox_width_percent": 20.15,
+            "bbox_height_percent": 19.89,
+            "orientation": "vertical volume proxy, long axis standing up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of AshPatch, left of LuchenHand, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 04 ENV A-8",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 76.21,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 47.58,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Yehongyi, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 08 PROP A-8",
+            "visibility": "visible",
+            "center_x_percent": 2.04,
+            "center_y_percent": 55.07,
+            "bbox_width_percent": 4.09,
+            "bbox_height_percent": 2.02,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of Luchen, in front of nearer elements, middle frame height"
+          }
+        ],
+        "key_layout_and_occlusion": "9 visible instances. Dominant InnerYard covers 100x62 percent at frame 50/69. Left to right: WristRestraint, Luchen, TwinFlame, AshPatch, WhiteSmoke."
+      },
+      {
+        "time_seconds": 12.958,
+        "source_frame": "D14_shots/ep07_shot02/source_anchor_frames/anchor_09.jpg",
+        "composition": {
+          "shot_scale": "close",
+          "frame_balance_and_depth": "depth spans 6.02m to 12.12m across 9 layers; nearest is LuchenHand, furthest is InnerYard"
+        },
+        "camera_relation": "camera at (40.36, -4.68, 1.44) on a 85.0mm lens, frame 312 of 312",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR Luchen",
+            "visibility": "visible",
+            "center_x_percent": 3.25,
+            "center_y_percent": 35.44,
+            "bbox_width_percent": 6.5,
+            "bbox_height_percent": 69.56,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WristRestraint, left of TwinFlame, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 02 CHAR LuchenHand",
+            "visibility": "visible",
+            "center_x_percent": 10.74,
+            "center_y_percent": 37.15,
+            "bbox_width_percent": 9.95,
+            "bbox_height_percent": 12.05,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WhiteSmoke, left of Yehongyi, behind all nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O003",
+            "entity_label": "Entity 03 CHAR Yehongyi",
+            "visibility": "visible",
+            "center_x_percent": 19.72,
+            "center_y_percent": 44.8,
+            "bbox_width_percent": 35.39,
+            "bbox_height_percent": 46.86,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of LuchenHand, left of InnerYard, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O004",
+            "entity_label": "Entity 04 ENV A-8",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 68.78,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 62.44,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Yehongyi, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O005",
+            "entity_label": "Entity 05 FX AshPatch",
+            "visibility": "visible",
+            "center_x_percent": 8.54,
+            "center_y_percent": 39.47,
+            "bbox_width_percent": 10.39,
+            "bbox_height_percent": 1.1,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of TwinFlame, left of WhiteSmoke, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 06 FX TwinFlame",
+            "visibility": "visible",
+            "center_x_percent": 5.12,
+            "center_y_percent": 28.42,
+            "bbox_width_percent": 10.23,
+            "bbox_height_percent": 11.88,
+            "orientation": "vertical volume proxy, long axis standing up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Luchen, left of AshPatch, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 07 FX WhiteSmoke",
+            "visibility": "visible",
+            "center_x_percent": 10.4,
+            "center_y_percent": 9.11,
+            "bbox_width_percent": 20.8,
+            "bbox_height_percent": 18.21,
+            "orientation": "vertical volume proxy, long axis standing up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of AshPatch, left of LuchenHand, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 04 ENV A-8",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 76.21,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 47.58,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of Yehongyi, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 08 PROP A-8",
+            "visibility": "visible",
+            "center_x_percent": 2.04,
+            "center_y_percent": 55.07,
+            "bbox_width_percent": 4.09,
+            "bbox_height_percent": 2.02,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of Luchen, in front of nearer elements, middle frame height"
+          }
+        ],
+        "key_layout_and_occlusion": "9 visible instances. Dominant InnerYard covers 100x62 percent at frame 50/69. Left to right: WristRestraint, Luchen, TwinFlame, AshPatch, WhiteSmoke."
+      }
+    ],
+    "m3_cut_review": {
+      "candidate_times": [],
+      "confirmed_real_cuts": [],
+      "reasoning": "No source cut candidate requires review."
+    }
+  },
+  "appearance": {
+    "schema_version": 6,
+    "watched_references": true,
+    "style_source_summary": "World style is taken from the shared unit style contract: cold industrial post-collapse realism for humans and props with a separated stylisation layer for bone pattern, twin flame, grey fog and altered bodies. No external appearance reference image was supplied for this unit, so no reference route is registered and every entity is styled from the world style alone.",
+    "reference_routes": [],
+    "global_style_bible": {
+      "world_and_era": "post-collapse industrial city ruins; concrete yards, sheet metal fences, disused military machine shops and a walled disposal line; human survivors and ceramic-pale altered beings share the same night; no readable signage and no modern branding",
+      "visual_language": "grounded industrial realism for humans and props with a separated stylisation layer for bone pattern, twin flame, grey fog and altered bodies; stylised elements never bleed into the human layer and no graphic injury detail anywhere",
+      "palette": "grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D with detail kept in the darks, plaster white #C6C2B8 for ceramic shells, pure-fire white #F5F7F8 and black #0B0B0C for the twin colour bone pattern, ember orange #E07B39 as the only warm accent",
+      "material_language": "real skin with pores and slight oil sheen, matte technical fabric with wear and dust, oxidised steel with dull reflections, cold ceramic shells on altered bodies; no wet gore surface and no red liquid in the whole frame",
+      "environment_design": "cement yard plates cut by fissures and pit openings, riveted steel frames, sheet metal fence runs with gate gaps, overhead pipe racks, stairwells and a single cold ceiling tube as the only interior light",
+      "prop_design": "functional utilitarian tooling with real weight and thickness: crowbars, ration crates, steel racks, cable reels, console terminals, rolled roller doors, restraint cuffs and an unlit shadow blade; all carry visible use marks",
+      "lighting_and_atmosphere": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+    },
+    "entity_appearances": {
+      "Entity 01 CHAR Luchen": {
+        "semantic_target": "male protagonist blockout",
+        "final_materials_and_detail": "real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings, contact shadow under the body",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      },
+      "Entity 02 CHAR LuchenHand": {
+        "semantic_target": "protagonist raised hand blockout",
+        "final_materials_and_detail": "real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings, contact shadow under the body",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      },
+      "Entity 03 CHAR Yehongyi": {
+        "semantic_target": "female captive character blockout",
+        "final_materials_and_detail": "real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings, contact shadow under the body",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      },
+      "Entity 04 ENV A-8": {
+        "semantic_target": "A-8 built environment shell enclosing the set: InnerYard, DisposalPlatform",
+        "final_materials_and_detail": "worn cement, oxidised steel and sheet metal with cold grey reflections, shadow detail kept readable in the dark areas",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      },
+      "Entity 05 FX AshPatch": {
+        "semantic_target": "grey white patch on the captive forearm",
+        "final_materials_and_detail": "stylised energy surface in the two permitted flame colours, or grey-white ceramic shell for altered bodies, never wet gore",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      },
+      "Entity 06 FX TwinFlame": {
+        "semantic_target": "black and white twin flame on the wrist",
+        "final_materials_and_detail": "stylised energy surface in the two permitted flame colours, or grey-white ceramic shell for altered bodies, never wet gore",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      },
+      "Entity 07 FX WhiteSmoke": {
+        "semantic_target": "white smoke rising off the forearm",
+        "final_materials_and_detail": "stylised energy surface in the two permitted flame colours, or grey-white ceramic shell for altered bodies, never wet gore",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      },
+      "Entity 08 PROP A-8": {
+        "semantic_target": "A-8 set pieces and fittings: WristRestraint",
+        "final_materials_and_detail": "utilitarian material with visible weight, thickness and use marks, cold grey metal and dull plastic, no gloss hero finish",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      }
+    },
+    "blockout_rejection": {
+      "all_visible_entities_must_be_finished": true,
+      "forbidden_final_look": "source construction proxy, default viewport material, incomplete proxy geometry, or any visibly unart-directed placeholder",
+      "ambiguous_proxy_fallback": "Choose a plausible finished World Style design inside the exact source bounds; never leave it semantically or materially generic."
+    },
+    "sound": "low breath of the twin flame with a thin airflow of rising white smoke"
+  },
+  "h3_prompt": {
+    "path": "D14_shots/ep07_shot02/h3_prompt.txt",
+    "char_count": 6341,
+    "within_budget": true,
+    "protected_content_valid": true,
+    "ready_to_submit": true
+  }
+}

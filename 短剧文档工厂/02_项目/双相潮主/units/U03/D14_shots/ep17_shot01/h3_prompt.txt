@@ -1,0 +1,50 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city…; grounded industrial realism….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O002>,I3=<O004>,I4=<O005>,I5=<O007>,I6=<O010>,I7=<O011>,I8=<O012>,I9=<O013>.
+<Entity 01 CHAR EncroachingShadowCrowd>=E1[articulated/context/static] members=I1;n=1;src=closing shadow crowd…; final=closing shadow crowd…; finish=real skin with pores and fine hair…; style=world_style_unit_contract.
+<Entity 02 CHAR Yehongyi>=E2[articulated/primary/static] members=I2;n=1;src=female fighter character…; final=female fighter character…; finish=real skin with pores and fine hair…; style=world_style_unit_contract.
+<Entity 03 ENV B-11>=E3[environment/context/static] members=I3-I5;n=3;src=B-11 built environment…; final=B-11 built environment shell…; finish=worn cement, oxidised steel and sheet…; style=world_style_unit_contract.
+<Entity 04 FX ResidualFireHead>=E4[effect/context/static] members=I6-I8;n=3;src=residual fire head still…; final=residual fire head still…; finish=stylised energy surface in the two…; style=world_style_unit_contract.
+<Entity 05 PROP B-11>=E5[rigid/context/static] members=I9;n=1;src=B-11 set pieces and…; final=B-11 set pieces and…; finish=utilitarian material with visible…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2;1:1;n=1.
+E3:I3-I5;1:1;n=3.
+E4:I6-I8;1:1;n=3.
+E5:I9;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as… | materials=real skin with pores and… | environment=a brick street cut by wheel… | props=functional utilitarian… | light=one cold overhead key over….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3,E4,E5=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3,E4,E5 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_6501@0.000-1.000s I1,I2,I9: rel=the shadow figures…; ban=do not open the gap and….
+[Shot 1] @0.000-12.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=dolly;target=E1;path=camera travels from (-15. 00, -0. 95, 2…;dist=decrease;azi=counterclockwise;elev=decrease;lens=stable;comp=远景 framing in 9:16 vertical…;ban=do not convert the linear camera… | Act=the residual fire still burns on the street and thirteen shadow figures press… | Layout=9 visible instances… | Light=one cold overhead key over the….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=wide;Comp=depth spans 13. 11m to 31…;Cam=camera at (-15. 00, -0…;Lay=9 visible instances… V=I1:33/43/67/14,I3:79/29/42/8,I4:50/43/100/11,I5:11/34/22/12,I6:81/43/16/11,I7:3/38/6/8,I8:77/38/10/8,I9:9/41/6/1 D=I2:v/4/42/5/8/o:upright body…/m:stationary across…/r:right of ResidualF…
+@1.495s F=wide;Comp=depth spans 12. 94m to 31…;Cam=camera at (-14. 89, -1…;Lay=9 visible instances… V=I1:34/43/67/14,I3:79/29/42/8,I4:50/43/100/11,I5:11/34/22/12,I6:82/43/17/11,I7:3/38/5/8,I8:77/38/11/8,I9:8/41/6/1 D=I2:v/4/41/5/8/o:upright body…/m:stationary across…/r:right of ResidualF…
+@2.990s F=wide;Comp=depth spans 12. 50m to 31…;Cam=camera at (-14. 59, -1…;Lay=9 visible instances… V=I1:34/43/68/14,I3:79/28/42/8,I4:50/43/100/11,I5:11/33/21/12,I6:83/43/17/11,I7:2/38/4/8,I8:78/38/11/8,I9:7/41/6/1 D=I2:v/2/41/5/8/o:upright body…/m:stationary across…/r:right of ResidualF…
+@4.484s F=wide;Comp=depth spans 11. 87m to 30…;Cam=camera at (-14. 16, -1…;Lay=9 visible instances… V=I1:34/42/68/15,I3:79/28/42/9,I4:50/42/100/11,I5:10/33/21/13,I6:84/42/18/12,I7:1/37/3/9,I8:79/37/11/9,I9:5/40/6/1 D=I2:v/1/41/3/9/o:upright body…/m:stationary across…/r:left of ResidualFi…
+@5.979s F=wide;Comp=depth spans 11. 18m to 29…;Cam=camera at (-13. 68, -2…;Lay=9 visible instances… V=I1:35/42/69/15,I3:79/27/41/9,I4:50/42/100/11,I5:10/32/20/13,I6:87/42/20/13,I7:1/37/1/9,I8:80/37/12/9,I9:3/40/6/1 D=I2:v/0/40/0/9/o:upright body…/m:stationary across…/r:left of ResidualFi…
+@7.474s F=wide;Comp=depth spans 10. 46m to 28…;Cam=camera at (-13. 19, -2…;Lay=7 visible instances… V=I1:35/42/71/16,I3:79/26/41/10,I4:50/42/100/11,I5:10/32/20/14,I6:89/41/21/13,I8:81/36/12/9,I9:2/39/4/1 O=I7 D=I2:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…
+@8.969s F=wide;Comp=depth spans 9. 83m to 28…;Cam=camera at (-12. 76, -3…;Lay=7 visible instances… V=I1:36/41/72/16,I3:79/26/41/10,I4:50/42/100/11,I5:10/31/19/14,I6:90/41/20/14,I8:82/36/13/10,I9:1/38/1/1 O=I7 D=I2:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…
+@10.464s F=wide;Comp=depth spans 9. 39m to 27…;Cam=camera at (-12. 46, -3…;Lay=6 visible instances… V=I1:36/41/73/16,I3:80/25/41/11,I4:50/42/100/11,I5:9/31/19/14,I6:91/40/18/15,I8:83/35/13/10 O=I7,I9 D=I2:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…
+@11.958s F=wide;Comp=depth spans 9. 22m to 27…;Cam=camera at (-12. 34, -3…;Lay=6 visible instances… V=I1:36/41/73/17,I3:80/25/41/11,I4:50/42/100/11,I5:9/31/19/14,I6:91/40/18/15,I8:83/35/13/10 O=I7,I9 D=I2:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+crushed brick under a boot step with wind…
+
+non_diegetic_music:
+N/A

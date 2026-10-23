@@ -1,0 +1,49 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city…; grounded industrial realism….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O002>,I3=<O003>,I4=<O007>,I5=<O008>,I6=<O011>.
+<Entity 01 CHAR Luchen>=E1[articulated/context/locomotion] members=I1;n=1;src=male protagonist blockout; final=male protagonist blockout; finish=real skin with pores and fine hair…; style=world_style_unit_contract.
+<Entity 02 CHAR Yehongyi>=E2[articulated/context/static] members=I2;n=1;src=female captive character…; final=female captive character…; finish=real skin with pores and fine hair…; style=world_style_unit_contract.
+<Entity 03 ENV A-7>=E3[environment/context/static] members=I3-I5;n=3;src=A-7 built environment…; final=A-7 built environment shell…; finish=worn cement, oxidised steel and sheet…; style=world_style_unit_contract.
+<Entity 04 PROP A-7>=E4[rigid/primary/static] members=I6;n=1;src=A-7 set pieces and…; final=A-7 set pieces and fittings…; finish=utilitarian material with visible…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2;1:1;n=1.
+E3:I3-I5;1:1;n=3.
+E4:I6;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as… | materials=real skin with pores and… | environment=cement yard plates cut by… | props=functional utilitarian… | light=one cold overhead key with….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3,E4=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E1:locomotion | Act=travels 0… | Keep=stay inside the source blockout bounds… | Ban=do not replace, duplicate or remove….
+[STATIC LOCK] E2,E3,E4 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_2401@0.000-0.550s I1,I2,I6: rel=crowbar strikes the…; ban=do not keep the cuff….
+[Shot 1] @0.000-8.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=crane;target=E4;path=camera travels from (45. 02, 2. 12, 3…;dist=stable;azi=counterclockwise;elev=decrease;lens=stable;comp=中景 framing in 9:16 vertical…;ban=do not hold a fixed high angle… | Act=crowbar strikes the cuff buckle on the captive wrist, the buckle pops, her… | Layout=3 visible instances… | Light=one cold overhead key with shadow….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 3. 10m to 4…;Cam=camera at (45. 02, 2…;Lay=3 visible instances… V=I2:99/28/3/35,I4:50/76/100/49,I5:72/34/56/44 O=I3 D=I1:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…,I6:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…
+@0.995s F=medium;Comp=depth spans 3. 11m to 4…;Cam=camera at (45. 05, 2…;Lay=3 visible instances… V=I2:99/29/2/36,I4:50/78/100/45,I5:72/36/56/42 O=I3 D=I1:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…,I6:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…
+@1.990s F=medium;Comp=depth spans 3. 14m to 4…;Cam=camera at (45. 12, 2…;Lay=3 visible instances… V=I2:100/32/0/37,I4:50/83/100/34,I5:72/42/55/38 O=I3 D=I1:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…,I6:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…
+@2.984s F=medium;Comp=depth spans 3. 25m to 4…;Cam=camera at (45. 23, 2…;Lay=3 visible instances… V=I2:99/37/2/38,I4:50/91/100/18,I5:71/49/57/31 O=I3 D=I1:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…,I6:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…
+@3.979s F=medium;Comp=depth spans 3. 18m to 4…;Cam=camera at (45. 34, 3…;Lay=3 visible instances… V=I2:96/43/7/36,I5:69/56/62/24 O=I3-I4 D=I1:v/99/48/2/50/o:upright body…/m:drifting frame…/r:right of Yehongyi…,I6:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…
+@4.974s F=medium;Comp=depth spans 3. 30m to 4…;Cam=camera at (45. 46, 3…;Lay=3 visible instances… V=I2:91/50/18/34,I5:65/65/70/18 O=I3-I4 D=I1:v/91/68/18/49/o:upright body…/m:drifting frame…/r:right of DisposalP…,I6:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…
+@5.969s F=medium;Comp=depth spans 3. 25m to 4…;Cam=camera at (45. 57, 3…;Lay=5 visible instances… V=I2:83/58/25/32,I3:97/80/6/41,I5:60/74/81/16 O=I4 D=I1:v/83/81/34/38/o:upright body…/m:drifting frame…/r:right of Yehongyi…,I6:v/98/64/4/2/o:compact block…/m:stationary across…/r:right of InnerYard…
+@6.964s F=medium;Comp=depth spans 4. 12m to 4…;Cam=camera at (45. 64, 3…;Lay=4 visible instances… V=I2:72/65/21/31,I3:91/83/17/34,I5:55/82/90/17 O=I4 D=I1:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…,I6:v/87/70/5/2/o:compact block…/m:stationary across…/r:right of Yehongyi…
+@7.958s F=medium;Comp=depth spans 4. 18m to 5…;Cam=camera at (45. 67, 4…;Lay=4 visible instances… V=I2:67/68/21/31,I3:89/84/22/32,I5:52/85/92/17 O=I4 D=I1:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…,I6:v/83/73/5/2/o:compact block…/m:stationary across…/r:right of Yehongyi…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+sharp click of the buckle popping open…
+
+non_diegetic_music:
+N/A

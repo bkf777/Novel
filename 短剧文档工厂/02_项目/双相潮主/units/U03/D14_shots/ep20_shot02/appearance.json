@@ -1,0 +1,39 @@
+{
+  "schema_version": 6,
+  "watched_references": true,
+  "style_source_summary": "World style is taken from the shared unit style contract: cold industrial post-collapse realism for humans and props with a separated stylisation layer for bone pattern, twin flame, grey fog and altered bodies. No external appearance reference image was supplied for this unit, so no reference route is registered and every entity is styled from the world style alone.",
+  "reference_routes": [],
+  "global_style_bible": {
+    "world_and_era": "post-collapse industrial city ruins; a walled mechanical factory compound with one gate, a brick street in front of it and an outskirts bone well being sunk outside the city; ration queues, name rosters and posted notices govern daily life; survivors and ceramic-pale altered ones share the same cold daylight and fog; no readable signage and no modern branding",
+    "visual_language": "grounded industrial realism for humans and props with a separated stylisation layer for the bone pattern, the ash motes, the twin flame, the white smoke and the projected interface text; stylised elements never spill across into the human layer and every body surface stays intact",
+    "palette": "grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D with detail kept in the darks, plaster white #C6C2B8 for ceramic shells, pure-fire white #F5F7F8 and black #0B0B0C for the twin colour bone pattern and the twin flame, weld and fire orange #E07B39 as the only warm accent, dark red #7A2027 reserved for the fighter's outfit and never for any liquid",
+    "material_language": "real skin with pores and slight oil sheen, matte technical fabric with wear and dust, oxidised steel with dull reflections, cold ceramic shells on altered bodies; every surface stays intact and no red liquid appears anywhere in the frame",
+    "environment_design": "a brick street cut by wheel ruts in front of a single gate with two steel posts, a gate wall with one open cross street at the far end, a registration desk and a triage table inside the gate, one steel table in the inner factory room with a name board on its north wall, and one wooden derrick over a square well mouth on the outskirts",
+    "prop_design": "functional utilitarian tooling with real weight and thickness: gate posts, threshold stone, a flagpole and its cloth, steel crates and tables, rosters and notices, a data tablet, a terminal, a sealed letter, a winch and its rope, a name board and vapour cores; all carry visible use marks",
+    "lighting_and_atmosphere": "one cold overhead key over the steel table with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the emergency lamps on the gate posts, the residual fire heads, the twin flame and the derrick lamp as the only moving light sources, and the grey fog pressing down over the street with the unlit crossing kept dark"
+  },
+  "entity_appearances": {
+    "Entity 01 CHAR QueueColumns": {
+      "semantic_target": "queue column blockout at the triage table",
+      "final_materials_and_detail": "real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings, contact shadow under the body",
+      "style_route": "world_style_unit_contract",
+      "source_visual_policy": "spatiotemporal_evidence_only",
+      "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+      "source_unsupported_additions": []
+    },
+    "Entity 02 PROP B-14": {
+      "semantic_target": "B-14 set pieces and fittings: TriageTable",
+      "final_materials_and_detail": "utilitarian material with visible weight, thickness and use marks, cold grey metal and dull plastic, no gloss hero finish",
+      "style_route": "world_style_unit_contract",
+      "source_visual_policy": "spatiotemporal_evidence_only",
+      "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+      "source_unsupported_additions": []
+    }
+  },
+  "blockout_rejection": {
+    "all_visible_entities_must_be_finished": true,
+    "forbidden_final_look": "source construction proxy, default viewport material, incomplete proxy geometry, or any visibly unart-directed placeholder",
+    "ambiguous_proxy_fallback": "Choose a plausible finished World Style design inside the exact source bounds; never leave it semantically or materially generic."
+  },
+  "sound": "a crate being moved on cement with a tablet prompt tone"
+}

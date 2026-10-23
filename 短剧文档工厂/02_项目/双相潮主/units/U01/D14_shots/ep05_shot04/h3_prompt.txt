@@ -1,0 +1,44 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated….
+[INSTANCE REGISTRY] I1=<O002>,I2=<O003>,I3=<O004>.
+<Entity 01 CHAR Yechengjun>=E1[articulated/primary/static] members=I1;n=1;src=male officer antagonist blockout; final=male officer antagonist blockout; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal…; style=world_style_unit_contract.
+<Entity 02 ENV A-6>=E2[environment/context/static] members=I2-I3;n=2;src=A-6 built environment shell enclosing the set: InnerYard…; final=A-6 built environment shell enclosing the set: InnerYard, PipeRack; finish=worn cement, oxidised steel and sheet metal with cold grey reflections, shadow…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I3;1:1;n=2.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D… | materials=real skin with pores and slight oil sheen, matte technical fabric… | environment=cement yard plates cut by fissures and pit openings, riveted steel… | props=functional utilitarian tooling with real weight and thickness… | light=one cold overhead key with shadow detail retained instead of….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-8.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E1;path=camera travels from (30. 21, 1. 59, 1. 49) to (30. 21, 1. 59, 1…;dist=stable;azi=stable;elev=stable;lens=stable;comp=近景 framing in 9:16 vertical, subject held in the frame centre band with head…;ban=do not add any camera move, zoom or handheld shake… | Act=profile of the officer at the terminal, collar buttoned, one eye silver single lens catching cold light, a hand in the dark… | Layout=3 visible instances. Dominant Yechengjun covers 30x70 percent at frame 15/65… | Light=one cold overhead key with shadow detail retained instead of crushed black….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=close;Comp=depth spans 3. 06m to 25. 93m across 3 layers…;Cam=camera at (30. 21, 1. 59, 1. 49) on a 85…;Lay=3 visible instances… V=I2:89/67/21/12,I3:8/91/15/19 D=I1:v/15/65/30/70/o:upright body proxy, head end up/m:stationary across this interval/r:right of PipeRack, left of InnerYard…
+@0.995s F=close;Comp=depth spans 3. 06m to 25. 93m across 3 layers…;Cam=camera at (30. 21, 1. 59, 1. 49) on a 85…;Lay=3 visible instances… V=I2:89/67/21/12,I3:8/91/15/19 D=I1:v/15/65/30/70/o:upright body proxy, head end up/m:stationary across this interval/r:right of PipeRack, left of InnerYard…
+@1.990s F=close;Comp=depth spans 3. 06m to 25. 93m across 3 layers…;Cam=camera at (30. 21, 1. 59, 1. 49) on a 85…;Lay=3 visible instances… V=I2:89/67/21/12,I3:8/91/15/19 D=I1:v/15/65/30/70/o:upright body proxy, head end up/m:stationary across this interval/r:right of PipeRack, left of InnerYard…
+@2.984s F=close;Comp=depth spans 3. 06m to 25. 93m across 3 layers…;Cam=camera at (30. 21, 1. 59, 1. 49) on a 85…;Lay=3 visible instances… V=I2:89/67/21/12,I3:8/91/15/19 D=I1:v/15/65/30/70/o:upright body proxy, head end up/m:stationary across this interval/r:right of PipeRack, left of InnerYard…
+@3.979s F=close;Comp=depth spans 3. 06m to 25. 93m across 3 layers…;Cam=camera at (30. 21, 1. 59, 1. 49) on a 85…;Lay=3 visible instances… V=I2:89/67/21/12,I3:8/91/15/19 D=I1:v/15/65/30/70/o:upright body proxy, head end up/m:stationary across this interval/r:right of PipeRack, left of InnerYard…
+@4.974s F=close;Comp=depth spans 3. 06m to 25. 93m across 3 layers…;Cam=camera at (30. 21, 1. 59, 1. 49) on a 85…;Lay=3 visible instances… V=I2:89/67/21/12,I3:8/91/15/19 D=I1:v/15/65/30/70/o:upright body proxy, head end up/m:stationary across this interval/r:right of PipeRack, left of InnerYard…
+@5.969s F=close;Comp=depth spans 3. 06m to 25. 93m across 3 layers…;Cam=camera at (30. 21, 1. 59, 1. 49) on a 85…;Lay=3 visible instances… V=I2:89/67/21/12,I3:8/91/15/19 D=I1:v/15/65/30/70/o:upright body proxy, head end up/m:stationary across this interval/r:right of PipeRack, left of InnerYard…
+@6.964s F=close;Comp=depth spans 3. 06m to 25. 93m across 3 layers…;Cam=camera at (30. 21, 1. 59, 1. 49) on a 85…;Lay=3 visible instances… V=I2:89/67/21/12,I3:8/91/15/19 D=I1:v/15/65/30/70/o:upright body proxy, head end up/m:stationary across this interval/r:right of PipeRack, left of InnerYard…
+@7.958s F=close;Comp=depth spans 3. 06m to 25. 93m across 3 layers…;Cam=camera at (30. 21, 1. 59, 1. 49) on a 85…;Lay=3 visible instances… V=I2:89/67/21/12,I3:8/91/15/19 D=I1:v/15/65/30/70/o:upright body proxy, head end up/m:stationary across this interval/r:right of PipeRack, left of InnerYard…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+metal squeak of a tightened crowbar grip with one low heartbeat
+
+non_diegetic_music:
+N/A

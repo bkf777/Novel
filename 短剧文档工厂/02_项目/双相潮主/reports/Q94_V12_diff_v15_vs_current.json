@@ -1,0 +1,661 @@
+{
+ "bands": {
+  "远景": [
+   8,
+   25
+  ],
+  "全景": [
+   5,
+   20
+  ],
+  "中远景": [
+   20,
+   40
+  ],
+  "中景": [
+   35,
+   65
+  ],
+  "中近景": [
+   45,
+   75
+  ],
+  "近景": [
+   55,
+   85
+  ],
+  "特写": [
+   70,
+   95
+  ],
+  "大特写": [
+   80,
+   98
+  ]
+ },
+ "empty_shot_pattern": "空镜|画面无人|无人在场|空画面",
+ "baseline": "reports/Q94_W1_W8_measurements_v15.json",
+ "rows": [
+  {
+   "unit": "U01",
+   "shot": "ep01_shot02",
+   "shot_size": "特写",
+   "band": [
+    70,
+    95
+   ],
+   "has_baseline": true,
+   "baseline_subject_max": 0.0,
+   "baseline_largest": {
+    "name": "A-1_EXT_Corridor",
+    "h": 100.0,
+    "kind": "EXT"
+   },
+   "baseline_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 EXT「A-1_EXT_Corridor」（占幅 100.0%），主体让位给环境"
+   ],
+   "current_subject_max": 0.0,
+   "current_largest": {
+    "name": "A-1_EXT_Corridor",
+    "h": 100.0,
+    "kind": "EXT"
+   },
+   "current_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 EXT「A-1_EXT_Corridor」（占幅 100.0%），主体让位给环境"
+   ],
+   "d12_evidence": {
+    "segments": [
+     "只给数据界面，画面内不出现人体、面孔与手",
+     "画面不出现任何人体"
+    ],
+    "negatives": []
+   },
+   "status": "仍失败"
+  },
+  {
+   "unit": "U01",
+   "shot": "ep03_shot01",
+   "shot_size": "远景",
+   "band": [
+    8,
+    25
+   ],
+   "has_baseline": true,
+   "baseline_subject_max": 0.0,
+   "baseline_largest": {
+    "name": "A-4_EXT_FactorySouthWall_01",
+    "h": 100.0,
+    "kind": "EXT"
+   },
+   "baseline_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 EXT「A-4_EXT_FactorySouthWall_01」（占幅 100.0%），主体让位给环境"
+   ],
+   "current_subject_max": 0.0,
+   "current_largest": {
+    "name": "A-4_EXT_FactorySouthWall_01",
+    "h": 100.0,
+    "kind": "EXT"
+   },
+   "current_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 EXT「A-4_EXT_FactorySouthWall_01」（占幅 100.0%），主体让位给环境"
+   ],
+   "d12_evidence": {
+    "segments": [
+     "不出现人物、异化体与火光"
+    ],
+    "negatives": []
+   },
+   "status": "仍失败"
+  },
+  {
+   "unit": "U01",
+   "shot": "ep03_shot02",
+   "shot_size": "特写",
+   "band": [
+    70,
+    95
+   ],
+   "has_baseline": true,
+   "baseline_subject_max": 0.0,
+   "baseline_largest": {
+    "name": "A-4_LGT_GreyFramePanel_01",
+    "h": 100.0,
+    "kind": "LGT"
+   },
+   "baseline_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 LGT「A-4_LGT_GreyFramePanel_01」（占幅 100.0%），主体让位给环境"
+   ],
+   "current_subject_max": 0.0,
+   "current_largest": {
+    "name": "A-4_LGT_GreyFramePanel_01",
+    "h": 100.0,
+    "kind": "LGT"
+   },
+   "current_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 LGT「A-4_LGT_GreyFramePanel_01」（占幅 100.0%），主体让位给环境"
+   ],
+   "d12_evidence": {
+    "segments": [
+     "只给数据界面，画面内不出现人体",
+     "画面不出现人体"
+    ],
+    "negatives": []
+   },
+   "status": "仍失败"
+  },
+  {
+   "unit": "U01",
+   "shot": "ep03_shot04",
+   "shot_size": "中景",
+   "band": [
+    35,
+    65
+   ],
+   "has_baseline": true,
+   "baseline_subject_max": 0.0,
+   "baseline_largest": {
+    "name": "A-4_LGT_StreetLamp_06",
+    "h": 100.0,
+    "kind": "LGT"
+   },
+   "baseline_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 LGT「A-4_LGT_StreetLamp_06」（占幅 100.0%），主体让位给环境"
+   ],
+   "current_subject_max": 0.0,
+   "current_largest": {
+    "name": "A-4_LGT_StreetLamp_06",
+    "h": 100.0,
+    "kind": "LGT"
+   },
+   "current_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 LGT「A-4_LGT_StreetLamp_06」（占幅 100.0%），主体让位给环境"
+   ],
+   "d12_evidence": {
+    "segments": [
+     "不出现人物"
+    ],
+    "negatives": []
+   },
+   "status": "仍失败"
+  },
+  {
+   "unit": "U01",
+   "shot": "ep04_shot03",
+   "shot_size": "中景",
+   "band": [
+    35,
+    65
+   ],
+   "has_baseline": true,
+   "baseline_subject_max": 0.0,
+   "baseline_largest": {
+    "name": "A-5_LGT_GreyFramePanel_01",
+    "h": 91.44,
+    "kind": "LGT"
+   },
+   "baseline_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 LGT「A-5_LGT_GreyFramePanel_01」（占幅 91.4%），主体让位给环境"
+   ],
+   "current_subject_max": 0.0,
+   "current_largest": {
+    "name": "A-5_LGT_GreyFramePanel_01",
+    "h": 91.44,
+    "kind": "LGT"
+   },
+   "current_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 LGT「A-5_LGT_GreyFramePanel_01」（占幅 91.4%），主体让位给环境"
+   ],
+   "d12_evidence": {
+    "segments": [],
+    "negatives": []
+   },
+   "status": "仍失败"
+  },
+  {
+   "unit": "U01",
+   "shot": "ep05_shot03",
+   "shot_size": "远景",
+   "band": [
+    8,
+    25
+   ],
+   "has_baseline": true,
+   "baseline_subject_max": 11.3,
+   "baseline_largest": {
+    "name": "A-6_EXT_InnerYard",
+    "h": 12.61,
+    "kind": "EXT"
+   },
+   "baseline_errors": [
+    "W3 画面最大对象是 EXT「A-6_EXT_InnerYard」（占幅 12.6%），主体让位给环境"
+   ],
+   "current_subject_max": 12.7,
+   "current_largest": {
+    "name": "A-6_CHAR_DisposalSilhouette",
+    "h": 12.7,
+    "kind": "CHAR"
+   },
+   "current_errors": [],
+   "d12_evidence": {
+    "segments": [
+     "不推近、不落到人体细节、不给面部"
+    ],
+    "negatives": []
+   },
+   "status": "已归零"
+  },
+  {
+   "unit": "U01",
+   "shot": "ep08_shot03",
+   "shot_size": "远景",
+   "band": [
+    8,
+    25
+   ],
+   "has_baseline": true,
+   "baseline_subject_max": 6.8,
+   "baseline_largest": {
+    "name": "A-9_EXT_SteelPlateWall_01",
+    "h": 7.65,
+    "kind": "EXT"
+   },
+   "baseline_errors": [
+    "W2 主体占幅 6.8% 落在「远景」区间 [8, 25] 之外",
+    "W3 画面最大对象是 EXT「A-9_EXT_SteelPlateWall_01」（占幅 7.7%），主体让位给环境"
+   ],
+   "current_subject_max": 16.5,
+   "current_largest": {
+    "name": "A-9_CHAR_RescuedQueueMember",
+    "h": 16.5,
+    "kind": "CHAR"
+   },
+   "current_errors": [],
+   "d12_evidence": {
+    "segments": [
+     "陆沉抬起右腕，黑白游龙纹在腕侧亮起，双色火焰贴着骨纹翻了一下，火焰只有黑与白两色",
+     "队列脸一律不入镜、不给伤处特写"
+    ],
+    "negatives": []
+   },
+   "status": "已归零"
+  },
+  {
+   "unit": "U02",
+   "shot": "ep11_shot02",
+   "shot_size": "中远景",
+   "band": [
+    20,
+    40
+   ],
+   "has_baseline": true,
+   "baseline_subject_max": 0.0,
+   "baseline_largest": {
+    "name": "B-3_EXT_FactoryHallShell.002",
+    "h": 50.29,
+    "kind": "EXT"
+   },
+   "baseline_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 EXT「B-3_EXT_FactoryHallShell.002」（占幅 50.3%），主体让位给环境"
+   ],
+   "current_subject_max": 0.0,
+   "current_largest": {
+    "name": "B-3_EXT_FactoryHallShell.002",
+    "h": 50.29,
+    "kind": "EXT"
+   },
+   "current_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 EXT「B-3_EXT_FactoryHallShell.002」（占幅 50.3%），主体让位给环境"
+   ],
+   "d12_evidence": {
+    "segments": [],
+    "negatives": []
+   },
+   "status": "仍失败"
+  },
+  {
+   "unit": "U02",
+   "shot": "ep12_shot01",
+   "shot_size": "特写",
+   "band": [
+    70,
+    95
+   ],
+   "has_baseline": true,
+   "baseline_subject_max": 0.0,
+   "baseline_largest": {
+    "name": "B-5_EXT_OldSheetMetalWall_01",
+    "h": 100.0,
+    "kind": "EXT"
+   },
+   "baseline_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 EXT「B-5_EXT_OldSheetMetalWall_01」（占幅 100.0%），主体让位给环境"
+   ],
+   "current_subject_max": 0.0,
+   "current_largest": {
+    "name": "B-5_EXT_OldSheetMetalWall_01",
+    "h": 100.0,
+    "kind": "EXT"
+   },
+   "current_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 EXT「B-5_EXT_OldSheetMetalWall_01」（占幅 100.0%），主体让位给环境"
+   ],
+   "d12_evidence": {
+    "segments": [
+     "画面只给铁皮墙与投影文字，不给发言人",
+     "画面只给铁皮墙与投影文字，不出现发言人"
+    ],
+    "negatives": []
+   },
+   "status": "仍失败"
+  },
+  {
+   "unit": "U02",
+   "shot": "ep13_shot04",
+   "shot_size": "中景",
+   "band": [
+    35,
+    65
+   ],
+   "has_baseline": true,
+   "baseline_subject_max": 0.0,
+   "baseline_largest": {
+    "name": "B-7_EXT_ReinforcedCloister_01",
+    "h": 100.0,
+    "kind": "EXT"
+   },
+   "baseline_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 EXT「B-7_EXT_ReinforcedCloister_01」（占幅 100.0%），主体让位给环境"
+   ],
+   "current_subject_max": 0.0,
+   "current_largest": {
+    "name": "B-7_EXT_ReinforcedCloister_01",
+    "h": 100.0,
+    "kind": "EXT"
+   },
+   "current_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 EXT「B-7_EXT_ReinforcedCloister_01」（占幅 100.0%），主体让位给环境"
+   ],
+   "d12_evidence": {
+    "segments": [
+     "不给拆用画面"
+    ],
+    "negatives": []
+   },
+   "status": "仍失败"
+  },
+  {
+   "unit": "U02",
+   "shot": "ep14_shot03",
+   "shot_size": "中景",
+   "band": [
+    35,
+    65
+   ],
+   "has_baseline": true,
+   "baseline_subject_max": 0.0,
+   "baseline_largest": {
+    "name": "B-8_EXT_FactoryHallShell",
+    "h": 100.0,
+    "kind": "EXT"
+   },
+   "baseline_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 EXT「B-8_EXT_FactoryHallShell」（占幅 100.0%），主体让位给环境"
+   ],
+   "current_subject_max": 0.0,
+   "current_largest": {
+    "name": "B-8_EXT_FactoryHallShell",
+    "h": 100.0,
+    "kind": "EXT"
+   },
+   "current_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 EXT「B-8_EXT_FactoryHallShell」（占幅 100.0%），主体让位给环境"
+   ],
+   "d12_evidence": {
+    "segments": [],
+    "negatives": []
+   },
+   "status": "仍失败"
+  },
+  {
+   "unit": "U02",
+   "shot": "ep16_shot01",
+   "shot_size": "中景",
+   "band": [
+    35,
+    65
+   ],
+   "has_baseline": true,
+   "baseline_subject_max": 0.0,
+   "baseline_largest": {
+    "name": "B-10_EXT_WestPlantShell",
+    "h": 98.68,
+    "kind": "EXT"
+   },
+   "baseline_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 EXT「B-10_EXT_WestPlantShell」（占幅 98.7%），主体让位给环境"
+   ],
+   "current_subject_max": 0.0,
+   "current_largest": {
+    "name": "B-10_EXT_WestPlantShell",
+    "h": 98.68,
+    "kind": "EXT"
+   },
+   "current_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 EXT「B-10_EXT_WestPlantShell」（占幅 98.7%），主体让位给环境"
+   ],
+   "d12_evidence": {
+    "segments": [],
+    "negatives": []
+   },
+   "status": "仍失败"
+  },
+  {
+   "unit": "U02",
+   "shot": "ep16_shot02",
+   "shot_size": "远景",
+   "band": [
+    8,
+    25
+   ],
+   "has_baseline": true,
+   "baseline_subject_max": 0.0,
+   "baseline_largest": {
+    "name": "B-10_EXT_WestPlantShell",
+    "h": 66.38,
+    "kind": "EXT"
+   },
+   "baseline_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 EXT「B-10_EXT_WestPlantShell」（占幅 66.4%），主体让位给环境"
+   ],
+   "current_subject_max": 0.0,
+   "current_largest": {
+    "name": "B-10_EXT_WestPlantShell",
+    "h": 66.38,
+    "kind": "EXT"
+   },
+   "current_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 EXT「B-10_EXT_WestPlantShell」（占幅 66.4%），主体让位给环境"
+   ],
+   "d12_evidence": {
+    "segments": [],
+    "negatives": []
+   },
+   "status": "仍失败"
+  },
+  {
+   "unit": "U03",
+   "shot": "ep19_shot01",
+   "shot_size": "中景",
+   "band": [
+    35,
+    65
+   ],
+   "has_baseline": false,
+   "baseline_subject_max": null,
+   "baseline_largest": null,
+   "baseline_errors": [],
+   "current_subject_max": 0.0,
+   "current_largest": {
+    "name": "B-13_PROP_Flagpole_01",
+    "h": 100.0,
+    "kind": "PROP"
+   },
+   "current_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 PROP「B-13_PROP_Flagpole_01」（占幅 100.0%），主体让位给环境"
+   ],
+   "d12_evidence": {
+    "segments": [
+     "金属件纹样保持抽象几何，不出现可辨徽记",
+     "本句为画外音／主观声，画面内只有门柱与两件金属件，不出现该角色、不给口型与面部"
+    ],
+    "negatives": []
+   },
+   "status": "新单元首测（无基线）"
+  },
+  {
+   "unit": "U03",
+   "shot": "ep23_shot01",
+   "shot_size": "特写",
+   "band": [
+    70,
+    95
+   ],
+   "has_baseline": false,
+   "baseline_subject_max": null,
+   "baseline_largest": null,
+   "baseline_errors": [],
+   "current_subject_max": 0.0,
+   "current_largest": {
+    "name": "B-18_PROP_SteelTable_01",
+    "h": 64.75,
+    "kind": "PROP"
+   },
+   "current_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 PROP「B-18_PROP_SteelTable_01」（占幅 64.8%），主体让位给环境"
+   ],
+   "d12_evidence": {
+    "segments": [
+     "不出现手与面部"
+    ],
+    "negatives": []
+   },
+   "status": "新单元首测（无基线）"
+  },
+  {
+   "unit": "U03",
+   "shot": "ep23_shot02",
+   "shot_size": "特写",
+   "band": [
+    70,
+    95
+   ],
+   "has_baseline": false,
+   "baseline_subject_max": null,
+   "baseline_largest": null,
+   "baseline_errors": [],
+   "current_subject_max": 0.0,
+   "current_largest": {
+    "name": "B-18_PROP_SteelTable_01",
+    "h": 67.08,
+    "kind": "PROP"
+   },
+   "current_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 PROP「B-18_PROP_SteelTable_01」（占幅 67.1%），主体让位给环境"
+   ],
+   "d12_evidence": {
+    "segments": [
+     "不出现手与面部"
+    ],
+    "negatives": []
+   },
+   "status": "新单元首测（无基线）"
+  },
+  {
+   "unit": "U03",
+   "shot": "ep23_shot03",
+   "shot_size": "特写",
+   "band": [
+    70,
+    95
+   ],
+   "has_baseline": false,
+   "baseline_subject_max": null,
+   "baseline_largest": null,
+   "baseline_errors": [],
+   "current_subject_max": 0.0,
+   "current_largest": {
+    "name": "B-18_PROP_SteelTable_01",
+    "h": 78.54,
+    "kind": "PROP"
+   },
+   "current_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 PROP「B-18_PROP_SteelTable_01」（占幅 78.5%），主体让位给环境"
+   ],
+   "d12_evidence": {
+    "segments": [
+     "交付栏翻到最后一页，只有批次编号和四个字：清退区域",
+     "13 秒单镜：交付栏翻到最后一页，交付栏翻到最后一页，只有批次编号和四个字：清退区域"
+    ],
+    "negatives": []
+   },
+   "status": "新单元首测（无基线）"
+  },
+  {
+   "unit": "U03",
+   "shot": "ep24_shot01",
+   "shot_size": "特写",
+   "band": [
+    70,
+    95
+   ],
+   "has_baseline": false,
+   "baseline_subject_max": null,
+   "baseline_largest": null,
+   "baseline_errors": [],
+   "current_subject_max": 0.0,
+   "current_largest": {
+    "name": "B-19_PROP_SteelTable_01",
+    "h": 64.96,
+    "kind": "PROP"
+   },
+   "current_errors": [
+    "W1 角色完全不在画幅内（占幅 0%）",
+    "W3 画面最大对象是 PROP「B-19_PROP_SteelTable_01」（占幅 65.0%），主体让位给环境"
+   ],
+   "d12_evidence": {
+    "segments": [
+     "不出现手与面部",
+     "本句为画外音／主观声，画面内只有钢桌上的两份单据，不出现该角色、不给口型与面部"
+    ],
+    "negatives": []
+   },
+   "status": "新单元首测（无基线）"
+  }
+ ]
+}

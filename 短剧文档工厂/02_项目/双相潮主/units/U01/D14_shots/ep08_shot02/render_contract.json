@@ -1,0 +1,303 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep08_shot02/preview_video.mp4",
+    "duration": 14.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 336,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "A-9_CHAR_Luchen_01",
+      "source_type": "MESH",
+      "root_name": "A-9_CHAR_Luchen_01",
+      "first_visible_seconds": 3.5,
+      "last_visible_seconds": 13.958,
+      "identity_cues": "name=A-9_CHAR_Luchen_01; type=MESH; root=A-9_CHAR_Luchen_01; dimensions=0.420,0.320,1.730",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR Luchen",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "male protagonist blockout",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "locomotion",
+        "action": "travels 0.97m across the set during the shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_3001",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "start_seconds": 0.0,
+      "end_seconds": 0.6,
+      "relation": "protagonist feet stand on the transverse steel rack top",
+      "forbidden_change": "do not place the protagonist back on the ground"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 14.0,
+      "camera_contract": {
+        "motion_type": "crane",
+        "tracked_target_entity": "Entity 01 CHAR Luchen",
+        "world_path": "camera travels from (33.17, 9.63, 2.19) to (33.17, 9.63, 3.59) on a 35mm lens, total path length 1.40m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "increase",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中远景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not hold a fixed high angle; the vertical travel must remain; keep the 中远景 framing and the 升降 move exactly as blocked out"
+      },
+      "actions": "protagonist steps onto the transverse steel rack and stands high, coat hem lifted by airflow, the column below tilts heads up but no face enters frame",
+      "layout_and_occlusion": "no instance visible in this anchor",
+      "lighting_spatial_logic": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep08_shot02/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "single depth layer visible"
+      },
+      "camera_relation": "camera at (33.17, 9.63, 2.19) on a 35.0mm lens, frame 1 of 336",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "no instance visible in this anchor"
+    },
+    {
+      "time_seconds": 1.745,
+      "source_frame": "D14_shots/ep08_shot02/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "single depth layer visible"
+      },
+      "camera_relation": "camera at (33.17, 9.63, 2.25) on a 35.0mm lens, frame 43 of 336",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "no instance visible in this anchor"
+    },
+    {
+      "time_seconds": 3.49,
+      "source_frame": "D14_shots/ep08_shot02/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 3.34m to 3.34m across 1 layers; nearest is Luchen, furthest is Luchen"
+      },
+      "camera_relation": "camera at (33.17, 9.63, 2.41) on a 35.0mm lens, frame 85 of 336",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 95.11,
+          "center_y_percent": 96.57,
+          "bbox_width_percent": 9.79,
+          "bbox_height_percent": 6.87,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "only visible instance in this frame"
+        }
+      ],
+      "key_layout_and_occlusion": "1 visible instances. Dominant Luchen covers 10x7 percent at frame 95/97. Left to right: Luchen."
+    },
+    {
+      "time_seconds": 5.234,
+      "source_frame": "D14_shots/ep08_shot02/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 3.63m to 3.63m across 1 layers; nearest is Luchen, furthest is Luchen"
+      },
+      "camera_relation": "camera at (33.17, 9.63, 2.64) on a 35.0mm lens, frame 127 of 336",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 93.8,
+          "center_y_percent": 88.75,
+          "bbox_width_percent": 12.39,
+          "bbox_height_percent": 22.5,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "only visible instance in this frame"
+        }
+      ],
+      "key_layout_and_occlusion": "1 visible instances. Dominant Luchen covers 12x22 percent at frame 94/89. Left to right: Luchen."
+    },
+    {
+      "time_seconds": 6.979,
+      "source_frame": "D14_shots/ep08_shot02/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 3.77m to 3.77m across 1 layers; nearest is Luchen, furthest is Luchen"
+      },
+      "camera_relation": "camera at (33.17, 9.63, 2.89) on a 35.0mm lens, frame 168 of 336",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 93.35,
+          "center_y_percent": 84.93,
+          "bbox_width_percent": 13.3,
+          "bbox_height_percent": 30.13,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "only visible instance in this frame"
+        }
+      ],
+      "key_layout_and_occlusion": "1 visible instances. Dominant Luchen covers 13x30 percent at frame 93/85. Left to right: Luchen."
+    },
+    {
+      "time_seconds": 8.724,
+      "source_frame": "D14_shots/ep08_shot02/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 3.75m to 3.75m across 1 layers; nearest is Luchen, furthest is Luchen"
+      },
+      "camera_relation": "camera at (33.17, 9.63, 3.15) on a 35.0mm lens, frame 210 of 336",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 93.62,
+          "center_y_percent": 85.55,
+          "bbox_width_percent": 12.76,
+          "bbox_height_percent": 28.9,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "only visible instance in this frame"
+        }
+      ],
+      "key_layout_and_occlusion": "1 visible instances. Dominant Luchen covers 13x29 percent at frame 94/86. Left to right: Luchen."
+    },
+    {
+      "time_seconds": 10.469,
+      "source_frame": "D14_shots/ep08_shot02/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 3.74m to 3.74m across 1 layers; nearest is Luchen, furthest is Luchen"
+      },
+      "camera_relation": "camera at (33.17, 9.63, 3.37) on a 35.0mm lens, frame 252 of 336",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 93.81,
+          "center_y_percent": 86.16,
+          "bbox_width_percent": 12.38,
+          "bbox_height_percent": 27.67,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "only visible instance in this frame"
+        }
+      ],
+      "key_layout_and_occlusion": "1 visible instances. Dominant Luchen covers 12x28 percent at frame 94/86. Left to right: Luchen."
+    },
+    {
+      "time_seconds": 12.214,
+      "source_frame": "D14_shots/ep08_shot02/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 3.74m to 3.74m across 1 layers; nearest is Luchen, furthest is Luchen"
+      },
+      "camera_relation": "camera at (33.17, 9.63, 3.53) on a 35.0mm lens, frame 294 of 336",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 93.92,
+          "center_y_percent": 86.63,
+          "bbox_width_percent": 12.16,
+          "bbox_height_percent": 26.74,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "only visible instance in this frame"
+        }
+      ],
+      "key_layout_and_occlusion": "1 visible instances. Dominant Luchen covers 12x27 percent at frame 94/87. Left to right: Luchen."
+    },
+    {
+      "time_seconds": 13.958,
+      "source_frame": "D14_shots/ep08_shot02/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 3.75m to 3.75m across 1 layers; nearest is Luchen, furthest is Luchen"
+      },
+      "camera_relation": "camera at (33.17, 9.63, 3.59) on a 35.0mm lens, frame 336 of 336",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 93.95,
+          "center_y_percent": 86.81,
+          "bbox_width_percent": 12.09,
+          "bbox_height_percent": 26.38,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "only visible instance in this frame"
+        }
+      ],
+      "key_layout_and_occlusion": "1 visible instances. Dominant Luchen covers 12x26 percent at frame 94/87. Left to right: Luchen."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

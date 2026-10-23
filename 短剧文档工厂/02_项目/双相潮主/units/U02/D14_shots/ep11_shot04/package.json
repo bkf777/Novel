@@ -1,0 +1,3441 @@
+{
+  "ep": 11,
+  "global_shot_no": 44,
+  "shot_id": 4,
+  "scene_code": "B-4",
+  "duration_sec": 8,
+  "package_path": "D14_shots/ep11_shot04/package.json",
+  "preflight": {
+    "schema_version": 4,
+    "source": {
+      "path": "D14_shots/ep11_shot04/preview_video.mp4",
+      "duration": 8.0,
+      "fps": 24.0,
+      "width": 1080,
+      "height": 1920,
+      "aspect_ratio": 0.5625,
+      "frames": 192,
+      "has_audio": false
+    },
+    "manifest_path": "D14_shots/ep11_shot04/manifest.json",
+    "timeline_plan": {
+      "source": {
+        "path": "D14_shots/ep11_shot04/preview_video.mp4",
+        "duration": 8.0,
+        "fps": 24.0,
+        "width": 1080,
+        "height": 1920,
+        "aspect_ratio": 0.5625,
+        "frames": 192,
+        "has_audio": false
+      },
+      "h3_fps": 24,
+      "num_frames": 192,
+      "generation_duration": 8.0,
+      "duration_delta": 0.0,
+      "retime_percent": 0.0,
+      "prepare_setpts_factor": 1.0,
+      "conform_setpts_factor": 1.0,
+      "requires_disclosure": false,
+      "strict_single_pass_recommended": true
+    },
+    "source_cut_candidates": [],
+    "structure_evidence_available": true,
+    "blender_structure_evidence": {
+      "camera_samples": [
+        {
+          "frame": 1,
+          "lens_mm": 50.0,
+          "location": [
+            -2.8,
+            2.5155,
+            -2.6
+          ],
+          "rotation_quaternion_wxyz": [
+            0.48815,
+            0.87276,
+            0.0,
+            0.0
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 25,
+          "lens_mm": 50.0,
+          "location": [
+            -2.8,
+            2.5155,
+            -2.6
+          ],
+          "rotation_quaternion_wxyz": [
+            0.48815,
+            0.87276,
+            0.0,
+            0.0
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 49,
+          "lens_mm": 50.0,
+          "location": [
+            -2.8,
+            2.5155,
+            -2.6
+          ],
+          "rotation_quaternion_wxyz": [
+            0.48815,
+            0.87276,
+            0.0,
+            0.0
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 73,
+          "lens_mm": 50.0,
+          "location": [
+            -2.8,
+            2.5155,
+            -2.6
+          ],
+          "rotation_quaternion_wxyz": [
+            0.48815,
+            0.87276,
+            0.0,
+            0.0
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 96,
+          "lens_mm": 50.0,
+          "location": [
+            -2.8,
+            2.5155,
+            -2.6
+          ],
+          "rotation_quaternion_wxyz": [
+            0.48815,
+            0.87276,
+            0.0,
+            0.0
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 120,
+          "lens_mm": 50.0,
+          "location": [
+            -2.8,
+            2.5155,
+            -2.6
+          ],
+          "rotation_quaternion_wxyz": [
+            0.48815,
+            0.87276,
+            0.0,
+            0.0
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 144,
+          "lens_mm": 50.0,
+          "location": [
+            -2.8,
+            2.5155,
+            -2.6
+          ],
+          "rotation_quaternion_wxyz": [
+            0.48815,
+            0.87276,
+            0.0,
+            0.0
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 168,
+          "lens_mm": 50.0,
+          "location": [
+            -2.8,
+            2.5155,
+            -2.6
+          ],
+          "rotation_quaternion_wxyz": [
+            0.48815,
+            0.87276,
+            0.0,
+            0.0
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 192,
+          "lens_mm": 50.0,
+          "location": [
+            -2.8,
+            2.5155,
+            -2.6
+          ],
+          "rotation_quaternion_wxyz": [
+            0.48815,
+            0.87276,
+            0.0,
+            0.0
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "B-4_CHAR_MarketQueuer_04",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-4_CHAR_MarketQueuer_04",
+          "samples": [
+            {
+              "depth": 5.25134,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 78.05,
+                "center_y": 28.2,
+                "height": 50.0,
+                "width": 43.89
+              },
+              "world_dimensions": [
+                4.1,
+                0.85,
+                1.73
+              ],
+              "world_location": [
+                -1.0,
+                6.3,
+                0.865
+              ]
+            },
+            {
+              "depth": 5.25134,
+              "frame": 25,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 78.05,
+                "center_y": 28.2,
+                "height": 50.0,
+                "width": 43.89
+              },
+              "world_dimensions": [
+                4.1,
+                0.85,
+                1.73
+              ],
+              "world_location": [
+                -1.0,
+                6.3,
+                0.865
+              ]
+            },
+            {
+              "depth": 5.25134,
+              "frame": 49,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 78.05,
+                "center_y": 28.2,
+                "height": 50.0,
+                "width": 43.89
+              },
+              "world_dimensions": [
+                4.1,
+                0.85,
+                1.73
+              ],
+              "world_location": [
+                -1.0,
+                6.3,
+                0.865
+              ]
+            },
+            {
+              "depth": 5.25134,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 78.05,
+                "center_y": 28.2,
+                "height": 50.0,
+                "width": 43.89
+              },
+              "world_dimensions": [
+                4.1,
+                0.85,
+                1.73
+              ],
+              "world_location": [
+                -1.0,
+                6.3,
+                0.865
+              ]
+            },
+            {
+              "depth": 5.25134,
+              "frame": 96,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 78.05,
+                "center_y": 28.2,
+                "height": 50.0,
+                "width": 43.89
+              },
+              "world_dimensions": [
+                4.1,
+                0.85,
+                1.73
+              ],
+              "world_location": [
+                -1.0,
+                6.3,
+                0.865
+              ]
+            },
+            {
+              "depth": 5.25134,
+              "frame": 120,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 78.05,
+                "center_y": 28.2,
+                "height": 50.0,
+                "width": 43.89
+              },
+              "world_dimensions": [
+                4.1,
+                0.85,
+                1.73
+              ],
+              "world_location": [
+                -1.0,
+                6.3,
+                0.865
+              ]
+            },
+            {
+              "depth": 5.25134,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 78.05,
+                "center_y": 28.2,
+                "height": 50.0,
+                "width": 43.89
+              },
+              "world_dimensions": [
+                4.1,
+                0.85,
+                1.73
+              ],
+              "world_location": [
+                -1.0,
+                6.3,
+                0.865
+              ]
+            },
+            {
+              "depth": 5.25134,
+              "frame": 168,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 78.05,
+                "center_y": 28.2,
+                "height": 50.0,
+                "width": 43.89
+              },
+              "world_dimensions": [
+                4.1,
+                0.85,
+                1.73
+              ],
+              "world_location": [
+                -1.0,
+                6.3,
+                0.865
+              ]
+            },
+            {
+              "depth": 5.25134,
+              "frame": 192,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 78.05,
+                "center_y": 28.2,
+                "height": 50.0,
+                "width": 43.89
+              },
+              "world_dimensions": [
+                4.1,
+                0.85,
+                1.73
+              ],
+              "world_location": [
+                -1.0,
+                6.3,
+                0.865
+              ]
+            }
+          ],
+          "source_id": "O001"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "B-4_CHAR_MarketTrader_03",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-4_CHAR_MarketTrader_03",
+          "samples": [
+            {
+              "depth": 4.69488,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 87.83,
+                "center_y": 19.43,
+                "height": 38.86,
+                "width": 24.35
+              },
+              "world_dimensions": [
+                0.5,
+                0.35,
+                1.72
+              ],
+              "world_location": [
+                -2.0,
+                5.9,
+                0.86
+              ]
+            },
+            {
+              "depth": 4.69488,
+              "frame": 25,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 87.83,
+                "center_y": 19.43,
+                "height": 38.86,
+                "width": 24.35
+              },
+              "world_dimensions": [
+                0.5,
+                0.35,
+                1.72
+              ],
+              "world_location": [
+                -2.0,
+                5.9,
+                0.86
+              ]
+            },
+            {
+              "depth": 4.69488,
+              "frame": 49,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 87.83,
+                "center_y": 19.43,
+                "height": 38.86,
+                "width": 24.35
+              },
+              "world_dimensions": [
+                0.5,
+                0.35,
+                1.72
+              ],
+              "world_location": [
+                -2.0,
+                5.9,
+                0.86
+              ]
+            },
+            {
+              "depth": 4.69488,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 87.83,
+                "center_y": 19.43,
+                "height": 38.86,
+                "width": 24.35
+              },
+              "world_dimensions": [
+                0.5,
+                0.35,
+                1.72
+              ],
+              "world_location": [
+                -2.0,
+                5.9,
+                0.86
+              ]
+            },
+            {
+              "depth": 4.69488,
+              "frame": 96,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 87.83,
+                "center_y": 19.43,
+                "height": 38.86,
+                "width": 24.35
+              },
+              "world_dimensions": [
+                0.5,
+                0.35,
+                1.72
+              ],
+              "world_location": [
+                -2.0,
+                5.9,
+                0.86
+              ]
+            },
+            {
+              "depth": 4.69488,
+              "frame": 120,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 87.83,
+                "center_y": 19.43,
+                "height": 38.86,
+                "width": 24.35
+              },
+              "world_dimensions": [
+                0.5,
+                0.35,
+                1.72
+              ],
+              "world_location": [
+                -2.0,
+                5.9,
+                0.86
+              ]
+            },
+            {
+              "depth": 4.69488,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 87.83,
+                "center_y": 19.43,
+                "height": 38.86,
+                "width": 24.35
+              },
+              "world_dimensions": [
+                0.5,
+                0.35,
+                1.72
+              ],
+              "world_location": [
+                -2.0,
+                5.9,
+                0.86
+              ]
+            },
+            {
+              "depth": 4.69488,
+              "frame": 168,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 87.83,
+                "center_y": 19.43,
+                "height": 38.86,
+                "width": 24.35
+              },
+              "world_dimensions": [
+                0.5,
+                0.35,
+                1.72
+              ],
+              "world_location": [
+                -2.0,
+                5.9,
+                0.86
+              ]
+            },
+            {
+              "depth": 4.69488,
+              "frame": 192,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 87.83,
+                "center_y": 19.43,
+                "height": 38.86,
+                "width": 24.35
+              },
+              "world_dimensions": [
+                0.5,
+                0.35,
+                1.72
+              ],
+              "world_location": [
+                -2.0,
+                5.9,
+                0.86
+              ]
+            }
+          ],
+          "source_id": "O002"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-4_EXT_MarketStreetBackdrop",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-4_EXT_MarketStreetBackdrop",
+          "samples": [
+            {
+              "depth": 13.24022,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                2.0,
+                28.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 13.24022,
+              "frame": 25,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                2.0,
+                28.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 13.24022,
+              "frame": 49,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                2.0,
+                28.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 13.24022,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                2.0,
+                28.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 13.24022,
+              "frame": 96,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                2.0,
+                28.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 13.24022,
+              "frame": 120,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                2.0,
+                28.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 13.24022,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                2.0,
+                28.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 13.24022,
+              "frame": 168,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                2.0,
+                28.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 13.24022,
+              "frame": 192,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                2.0,
+                28.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O003"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-4_EXT_MarketStreetBackdrop.002",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-4_EXT_MarketStreetBackdrop.002",
+          "samples": [
+            {
+              "depth": 13.24022,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                2.0,
+                28.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 13.24022,
+              "frame": 25,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                2.0,
+                28.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 13.24022,
+              "frame": 49,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                2.0,
+                28.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 13.24022,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                2.0,
+                28.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 13.24022,
+              "frame": 96,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                2.0,
+                28.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 13.24022,
+              "frame": 120,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                2.0,
+                28.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 13.24022,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                2.0,
+                28.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 13.24022,
+              "frame": 168,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                2.0,
+                28.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 13.24022,
+              "frame": 192,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                2.0,
+                28.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O004"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-4_EXT_MarketStreetBackdrop.003",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-4_EXT_MarketStreetBackdrop.003",
+          "samples": [
+            {
+              "depth": null,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                48.0,
+                2.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 25,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                48.0,
+                2.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 49,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                48.0,
+                2.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                48.0,
+                2.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 96,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                48.0,
+                2.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 120,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                48.0,
+                2.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                48.0,
+                2.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 168,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                48.0,
+                2.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 192,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                48.0,
+                2.0,
+                8.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O005"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "B-4_EXT_MarketStreetBackdrop.004",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-4_EXT_MarketStreetBackdrop.004",
+          "samples": [
+            {
+              "depth": 12.38815,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 49.26,
+                "height": 37.12,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                20.24634,
+                0.8436,
+                3.37439
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 12.38815,
+              "frame": 25,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 49.26,
+                "height": 37.12,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                20.24634,
+                0.8436,
+                3.37439
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 12.38815,
+              "frame": 49,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 49.26,
+                "height": 37.12,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                20.24634,
+                0.8436,
+                3.37439
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 12.38815,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 49.26,
+                "height": 37.12,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                20.24634,
+                0.8436,
+                3.37439
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 12.38815,
+              "frame": 96,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 49.26,
+                "height": 37.12,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                20.24634,
+                0.8436,
+                3.37439
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 12.38815,
+              "frame": 120,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 49.26,
+                "height": 37.12,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                20.24634,
+                0.8436,
+                3.37439
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 12.38815,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 49.26,
+                "height": 37.12,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                20.24634,
+                0.8436,
+                3.37439
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 12.38815,
+              "frame": 168,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 49.26,
+                "height": 37.12,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                20.24634,
+                0.8436,
+                3.37439
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 12.38815,
+              "frame": 192,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 49.26,
+                "height": 37.12,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                20.24634,
+                0.8436,
+                3.37439
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O006"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "B-4_EXT_MarketStreetGround",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-4_EXT_MarketStreetGround",
+          "samples": [
+            {
+              "depth": 11.12038,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 97.94,
+                "height": 1.29,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                48.0,
+                28.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 11.12038,
+              "frame": 25,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 97.94,
+                "height": 1.29,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                48.0,
+                28.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 11.12038,
+              "frame": 49,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 97.94,
+                "height": 1.29,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                48.0,
+                28.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 11.12038,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 97.94,
+                "height": 1.29,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                48.0,
+                28.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 11.12038,
+              "frame": 96,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 97.94,
+                "height": 1.29,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                48.0,
+                28.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 11.12038,
+              "frame": 120,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 97.94,
+                "height": 1.29,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                48.0,
+                28.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 11.12038,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 97.94,
+                "height": 1.29,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                48.0,
+                28.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 11.12038,
+              "frame": 168,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 97.94,
+                "height": 1.29,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                48.0,
+                28.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 11.12038,
+              "frame": 192,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 97.94,
+                "height": 1.29,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                48.0,
+                28.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O007"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "B-4_LGT_MarketLedBoard_01",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-4_LGT_MarketLedBoard_01",
+          "samples": [
+            {
+              "depth": 7.4843,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.49638,
+                0.02482,
+                0.26353
+              ],
+              "world_location": [
+                -3.0,
+                7.0,
+                5.1
+              ]
+            },
+            {
+              "depth": 7.06963,
+              "frame": 25,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                1.057,
+                0.05285,
+                0.56117
+              ],
+              "world_location": [
+                -3.0,
+                7.0,
+                5.1
+              ]
+            },
+            {
+              "depth": 6.65496,
+              "frame": 49,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 42.28,
+                "center_y": 4.82,
+                "height": 9.63,
+                "width": 62.45
+              },
+              "world_dimensions": [
+                1.61762,
+                0.08088,
+                0.85881
+              ],
+              "world_location": [
+                -3.0,
+                7.0,
+                5.1
+              ]
+            },
+            {
+              "depth": 6.24029,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 43.63,
+                "center_y": 15.01,
+                "height": 20.33,
+                "width": 87.26
+              },
+              "world_dimensions": [
+                2.17824,
+                0.10891,
+                1.15644
+              ],
+              "world_location": [
+                -3.0,
+                7.0,
+                5.1
+              ]
+            },
+            {
+              "depth": 6.01568,
+              "frame": 96,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 47.88,
+                "center_y": 22.31,
+                "height": 24.73,
+                "width": 95.75
+              },
+              "world_dimensions": [
+                2.48191,
+                0.1241,
+                1.31766
+              ],
+              "world_location": [
+                -3.0,
+                7.0,
+                5.1
+              ]
+            },
+            {
+              "depth": 6.01568,
+              "frame": 120,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 47.88,
+                "center_y": 22.31,
+                "height": 24.73,
+                "width": 95.75
+              },
+              "world_dimensions": [
+                2.48191,
+                0.1241,
+                1.31766
+              ],
+              "world_location": [
+                -3.0,
+                7.0,
+                5.1
+              ]
+            },
+            {
+              "depth": 6.01568,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 47.88,
+                "center_y": 22.31,
+                "height": 24.73,
+                "width": 95.75
+              },
+              "world_dimensions": [
+                2.48191,
+                0.1241,
+                1.31766
+              ],
+              "world_location": [
+                -3.0,
+                7.0,
+                5.1
+              ]
+            },
+            {
+              "depth": 6.01568,
+              "frame": 168,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 47.88,
+                "center_y": 22.31,
+                "height": 24.73,
+                "width": 95.75
+              },
+              "world_dimensions": [
+                2.48191,
+                0.1241,
+                1.31766
+              ],
+              "world_location": [
+                -3.0,
+                7.0,
+                5.1
+              ]
+            },
+            {
+              "depth": 6.01568,
+              "frame": 192,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 47.88,
+                "center_y": 22.31,
+                "height": 24.73,
+                "width": 95.75
+              },
+              "world_dimensions": [
+                2.48191,
+                0.1241,
+                1.31766
+              ],
+              "world_location": [
+                -3.0,
+                7.0,
+                5.1
+              ]
+            }
+          ],
+          "source_id": "O008"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "B-4_PROP_MarketStalls_02",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-4_PROP_MarketStalls_02",
+          "samples": [
+            {
+              "depth": 4.38173,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 20.14,
+                "center_y": 18.45,
+                "height": 36.89,
+                "width": 40.28
+              },
+              "world_dimensions": [
+                2.80047,
+                1.24406,
+                0.62383
+              ],
+              "world_location": [
+                -6.0,
+                5.0,
+                0.5
+              ]
+            },
+            {
+              "depth": 4.38173,
+              "frame": 25,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 20.14,
+                "center_y": 18.45,
+                "height": 36.89,
+                "width": 40.28
+              },
+              "world_dimensions": [
+                2.80047,
+                1.24406,
+                0.62383
+              ],
+              "world_location": [
+                -6.0,
+                5.0,
+                0.5
+              ]
+            },
+            {
+              "depth": 4.38173,
+              "frame": 49,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 20.14,
+                "center_y": 18.45,
+                "height": 36.89,
+                "width": 40.28
+              },
+              "world_dimensions": [
+                2.80047,
+                1.24406,
+                0.62383
+              ],
+              "world_location": [
+                -6.0,
+                5.0,
+                0.5
+              ]
+            },
+            {
+              "depth": 4.38173,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 20.14,
+                "center_y": 18.45,
+                "height": 36.89,
+                "width": 40.28
+              },
+              "world_dimensions": [
+                2.80047,
+                1.24406,
+                0.62383
+              ],
+              "world_location": [
+                -6.0,
+                5.0,
+                0.5
+              ]
+            },
+            {
+              "depth": 4.38173,
+              "frame": 96,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 20.14,
+                "center_y": 18.45,
+                "height": 36.89,
+                "width": 40.28
+              },
+              "world_dimensions": [
+                2.80047,
+                1.24406,
+                0.62383
+              ],
+              "world_location": [
+                -6.0,
+                5.0,
+                0.5
+              ]
+            },
+            {
+              "depth": 4.38173,
+              "frame": 120,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 20.14,
+                "center_y": 18.45,
+                "height": 36.89,
+                "width": 40.28
+              },
+              "world_dimensions": [
+                2.80047,
+                1.24406,
+                0.62383
+              ],
+              "world_location": [
+                -6.0,
+                5.0,
+                0.5
+              ]
+            },
+            {
+              "depth": 4.38173,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 20.14,
+                "center_y": 18.45,
+                "height": 36.89,
+                "width": 40.28
+              },
+              "world_dimensions": [
+                2.80047,
+                1.24406,
+                0.62383
+              ],
+              "world_location": [
+                -6.0,
+                5.0,
+                0.5
+              ]
+            },
+            {
+              "depth": 4.38173,
+              "frame": 168,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 20.14,
+                "center_y": 18.45,
+                "height": 36.89,
+                "width": 40.28
+              },
+              "world_dimensions": [
+                2.80047,
+                1.24406,
+                0.62383
+              ],
+              "world_location": [
+                -6.0,
+                5.0,
+                0.5
+              ]
+            },
+            {
+              "depth": 4.38173,
+              "frame": 192,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 20.14,
+                "center_y": 18.45,
+                "height": 36.89,
+                "width": 40.28
+              },
+              "world_dimensions": [
+                2.80047,
+                1.24406,
+                0.62383
+              ],
+              "world_location": [
+                -6.0,
+                5.0,
+                0.5
+              ]
+            }
+          ],
+          "source_id": "O009"
+        }
+      ],
+      "sample_frames": [
+        1,
+        25,
+        49,
+        73,
+        96,
+        120,
+        144,
+        168,
+        192
+      ],
+      "schema_version": 1
+    },
+    "requires_m3_cut_review": false,
+    "rule": "Cut candidates are evidence only; M3 decides real shot boundaries after full-video review."
+  },
+  "render_contract": {
+    "schema_version": 4,
+    "source": {
+      "path": "D14_shots/ep11_shot04/preview_video.mp4",
+      "duration": 8.0,
+      "fps": 24.0,
+      "width": 1080,
+      "height": 1920,
+      "aspect_ratio": 0.5625,
+      "frames": 192,
+      "has_audio": false
+    },
+    "watched_full_source": true,
+    "shot_count": 1,
+    "source_inventory": [
+      {
+        "source_id": "O001",
+        "source_name": "B-4_CHAR_MarketQueuer_04",
+        "source_type": "MESH",
+        "root_name": "B-4_CHAR_MarketQueuer_04",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 7.958,
+        "identity_cues": "name=B-4_CHAR_MarketQueuer_04; type=MESH; root=B-4_CHAR_MarketQueuer_04; dimensions=4.100,0.850,1.730",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O002",
+        "source_name": "B-4_CHAR_MarketTrader_03",
+        "source_type": "MESH",
+        "root_name": "B-4_CHAR_MarketTrader_03",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 7.958,
+        "identity_cues": "name=B-4_CHAR_MarketTrader_03; type=MESH; root=B-4_CHAR_MarketTrader_03; dimensions=0.500,0.350,1.720",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O006",
+        "source_name": "B-4_EXT_MarketStreetBackdrop.004",
+        "source_type": "MESH",
+        "root_name": "B-4_EXT_MarketStreetBackdrop.004",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 7.958,
+        "identity_cues": "name=B-4_EXT_MarketStreetBackdrop.004; type=MESH; root=B-4_EXT_MarketStreetBackdrop.004; dimensions=20.246,0.844,3.374",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O007",
+        "source_name": "B-4_EXT_MarketStreetGround",
+        "source_type": "MESH",
+        "root_name": "B-4_EXT_MarketStreetGround",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 7.958,
+        "identity_cues": "name=B-4_EXT_MarketStreetGround; type=MESH; root=B-4_EXT_MarketStreetGround; dimensions=48.000,28.000,0.100",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O008",
+        "source_name": "B-4_LGT_MarketLedBoard_01",
+        "source_type": "MESH",
+        "root_name": "B-4_LGT_MarketLedBoard_01",
+        "first_visible_seconds": 2.0,
+        "last_visible_seconds": 7.958,
+        "identity_cues": "name=B-4_LGT_MarketLedBoard_01; type=MESH; root=B-4_LGT_MarketLedBoard_01; dimensions=1.618,0.081,0.859",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O009",
+        "source_name": "B-4_PROP_MarketStalls_02",
+        "source_type": "MESH",
+        "root_name": "B-4_PROP_MarketStalls_02",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 7.958,
+        "identity_cues": "name=B-4_PROP_MarketStalls_02; type=MESH; root=B-4_PROP_MarketStalls_02; dimensions=2.800,1.244,0.624",
+        "evidence_origin": "blender_manifest"
+      }
+    ],
+    "entities": [
+      {
+        "label": "Entity 01 CHAR MarketQueuer",
+        "entity_class": "articulated",
+        "importance": "context",
+        "source_instance_ids": [
+          "O001"
+        ],
+        "instance_count": 1,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "market queue member blockout in two columns",
+        "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+        "motion_contract": {
+          "mode": "static",
+          "action": "holds its source position for the whole shot",
+          "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+          "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+        }
+      },
+      {
+        "label": "Entity 02 CHAR MarketTrader",
+        "entity_class": "articulated",
+        "importance": "context",
+        "source_instance_ids": [
+          "O002"
+        ],
+        "instance_count": 1,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "market stall trader blockout",
+        "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+        "motion_contract": {
+          "mode": "static",
+          "action": "holds its source position for the whole shot",
+          "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+          "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+        }
+      },
+      {
+        "label": "Entity 03 ENV B-4",
+        "entity_class": "environment",
+        "importance": "context",
+        "source_instance_ids": [
+          "O006",
+          "O007"
+        ],
+        "instance_count": 2,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "B-4 built environment shell enclosing the set: MarketStreetBackdrop, MarketStreetGround",
+        "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+        "motion_contract": {
+          "mode": "static",
+          "action": "holds its source position for the whole shot",
+          "continuity_requirement": "keep every instance and the column order exactly as in the source",
+          "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+        }
+      },
+      {
+        "label": "Entity 04 PROP MarketLedBoard",
+        "entity_class": "rigid",
+        "importance": "primary",
+        "source_instance_ids": [
+          "O008"
+        ],
+        "instance_count": 1,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "B-4 set pieces and fittings: MarketLedBoard",
+        "structural_constraints": "each member keeps its own source footprint, size and placement",
+        "motion_contract": {
+          "mode": "static",
+          "action": "holds its source position for the whole shot",
+          "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+          "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+        }
+      },
+      {
+        "label": "Entity 05 PROP B-4",
+        "entity_class": "rigid",
+        "importance": "context",
+        "source_instance_ids": [
+          "O009"
+        ],
+        "instance_count": 1,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "B-4 set pieces and fittings: MarketStalls",
+        "structural_constraints": "each member keeps its own source footprint, size and placement",
+        "motion_contract": {
+          "mode": "static",
+          "action": "holds its source position for the whole shot",
+          "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+          "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+        }
+      }
+    ],
+    "interaction_contracts": [
+      {
+        "interaction_id": "IX_4401",
+        "source_instance_ids": [
+          "O008",
+          "O009"
+        ],
+        "start_seconds": 0.0,
+        "end_seconds": 1.0,
+        "relation": "the led board lights up and the stall fronts below it light up one row after another in the depth",
+        "forbidden_change": "do not build the market as a full scene and do not stop the scroll with the first entry unreadable"
+      }
+    ],
+    "shots": [
+      {
+        "shot_id": 1,
+        "start_seconds": 0.0,
+        "end_seconds": 8.0,
+        "camera_contract": {
+          "motion_type": "static",
+          "tracked_target_entity": "Entity 04 PROP MarketLedBoard",
+          "world_path": "camera travels from (-2.80, 2.52, -2.60) to (-2.80, 2.52, -2.60) on a 50mm lens, total path length 0.00m inside the blocked set",
+          "target_distance_trend": "stable",
+          "azimuth_trend": "stable",
+          "elevation_trend": "stable",
+          "focal_length_trend": "stable",
+          "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+          "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 中景 framing and the 固定 move exactly as blocked out"
+        },
+        "actions": "the led board of the market street lights up and the first trading entry scrolls onto it with the Chinese item lines moving upward line by line; the stall fronts below the board light up one row after another in the depth, and street figures gather in front of the trading entry",
+        "layout_and_occlusion": "5 visible instances. Dominant MarketStreetBackdrop covers 100x37 percent at frame 50/49. Left to right: MarketStalls, MarketStreetBackdrop, MarketStreetGround, MarketQueuer, MarketTrader.",
+        "lighting_spatial_logic": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+      }
+    ],
+    "anchors": [
+      {
+        "time_seconds": 0.0,
+        "source_frame": "D14_shots/ep11_shot04/source_anchor_frames/anchor_01.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 4.38m to 12.39m across 5 layers; nearest is MarketStalls, furthest is MarketStreetBackdrop"
+        },
+        "camera_relation": "camera at (-2.80, 2.52, -2.60) on a 50.0mm lens, frame 1 of 192",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR MarketQueuer",
+            "visibility": "visible",
+            "center_x_percent": 78.05,
+            "center_y_percent": 28.2,
+            "bbox_width_percent": 43.89,
+            "bbox_height_percent": 50.0,
+            "orientation": "prone body proxy, long axis lying across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketStreetBackdrop, left of MarketTrader, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 02 CHAR MarketTrader",
+            "visibility": "visible",
+            "center_x_percent": 87.83,
+            "center_y_percent": 19.43,
+            "bbox_width_percent": 24.35,
+            "bbox_height_percent": 38.86,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketQueuer, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 03 ENV B-4",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 49.26,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 37.12,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketStalls, left of MarketQueuer, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 03 ENV B-4",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 97.94,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 1.29,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketStalls, left of MarketQueuer, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 04 PROP MarketLedBoard",
+            "visibility": "offscreen",
+            "center_x_percent": null,
+            "center_y_percent": null,
+            "bbox_width_percent": null,
+            "bbox_height_percent": null,
+            "orientation": "off screen at this anchor",
+            "motion_state": "offscreen at this anchor",
+            "spatial_relations": "leaves the frame before this anchor"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 05 PROP B-4",
+            "visibility": "visible",
+            "center_x_percent": 20.14,
+            "center_y_percent": 18.45,
+            "bbox_width_percent": 40.28,
+            "bbox_height_percent": 36.89,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of MarketStreetBackdrop, behind all nearer elements, upper frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "5 visible instances. Dominant MarketStreetBackdrop covers 100x37 percent at frame 50/49. Left to right: MarketStalls, MarketStreetBackdrop, MarketStreetGround, MarketQueuer, MarketTrader."
+      },
+      {
+        "time_seconds": 0.995,
+        "source_frame": "D14_shots/ep11_shot04/source_anchor_frames/anchor_02.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 4.38m to 12.39m across 5 layers; nearest is MarketStalls, furthest is MarketStreetBackdrop"
+        },
+        "camera_relation": "camera at (-2.80, 2.52, -2.60) on a 50.0mm lens, frame 25 of 192",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR MarketQueuer",
+            "visibility": "visible",
+            "center_x_percent": 78.05,
+            "center_y_percent": 28.2,
+            "bbox_width_percent": 43.89,
+            "bbox_height_percent": 50.0,
+            "orientation": "prone body proxy, long axis lying across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketStreetBackdrop, left of MarketTrader, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 02 CHAR MarketTrader",
+            "visibility": "visible",
+            "center_x_percent": 87.83,
+            "center_y_percent": 19.43,
+            "bbox_width_percent": 24.35,
+            "bbox_height_percent": 38.86,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketQueuer, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 03 ENV B-4",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 49.26,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 37.12,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketStalls, left of MarketQueuer, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 03 ENV B-4",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 97.94,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 1.29,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketStalls, left of MarketQueuer, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 04 PROP MarketLedBoard",
+            "visibility": "offscreen",
+            "center_x_percent": null,
+            "center_y_percent": null,
+            "bbox_width_percent": null,
+            "bbox_height_percent": null,
+            "orientation": "off screen at this anchor",
+            "motion_state": "offscreen at this anchor",
+            "spatial_relations": "leaves the frame before this anchor"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 05 PROP B-4",
+            "visibility": "visible",
+            "center_x_percent": 20.14,
+            "center_y_percent": 18.45,
+            "bbox_width_percent": 40.28,
+            "bbox_height_percent": 36.89,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of MarketStreetBackdrop, behind all nearer elements, upper frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "5 visible instances. Dominant MarketStreetBackdrop covers 100x37 percent at frame 50/49. Left to right: MarketStalls, MarketStreetBackdrop, MarketStreetGround, MarketQueuer, MarketTrader."
+      },
+      {
+        "time_seconds": 1.99,
+        "source_frame": "D14_shots/ep11_shot04/source_anchor_frames/anchor_03.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 4.38m to 12.39m across 6 layers; nearest is MarketStalls, furthest is MarketStreetBackdrop"
+        },
+        "camera_relation": "camera at (-2.80, 2.52, -2.60) on a 50.0mm lens, frame 49 of 192",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR MarketQueuer",
+            "visibility": "visible",
+            "center_x_percent": 78.05,
+            "center_y_percent": 28.2,
+            "bbox_width_percent": 43.89,
+            "bbox_height_percent": 50.0,
+            "orientation": "prone body proxy, long axis lying across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketStreetBackdrop, left of MarketTrader, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 02 CHAR MarketTrader",
+            "visibility": "visible",
+            "center_x_percent": 87.83,
+            "center_y_percent": 19.43,
+            "bbox_width_percent": 24.35,
+            "bbox_height_percent": 38.86,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketQueuer, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 03 ENV B-4",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 49.26,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 37.12,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 03 ENV B-4",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 97.94,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 1.29,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 04 PROP MarketLedBoard",
+            "visibility": "visible",
+            "center_x_percent": 42.28,
+            "center_y_percent": 4.82,
+            "bbox_width_percent": 62.45,
+            "bbox_height_percent": 9.63,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketStalls, left of MarketStreetBackdrop, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 05 PROP B-4",
+            "visibility": "visible",
+            "center_x_percent": 20.14,
+            "center_y_percent": 18.45,
+            "bbox_width_percent": 40.28,
+            "bbox_height_percent": 36.89,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of MarketLedBoard, behind all nearer elements, upper frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "6 visible instances. Dominant MarketStreetBackdrop covers 100x37 percent at frame 50/49. Left to right: MarketStalls, MarketLedBoard, MarketStreetBackdrop, MarketStreetGround, MarketQueuer."
+      },
+      {
+        "time_seconds": 2.984,
+        "source_frame": "D14_shots/ep11_shot04/source_anchor_frames/anchor_04.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 4.38m to 12.39m across 6 layers; nearest is MarketStalls, furthest is MarketStreetBackdrop"
+        },
+        "camera_relation": "camera at (-2.80, 2.52, -2.60) on a 50.0mm lens, frame 73 of 192",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR MarketQueuer",
+            "visibility": "visible",
+            "center_x_percent": 78.05,
+            "center_y_percent": 28.2,
+            "bbox_width_percent": 43.89,
+            "bbox_height_percent": 50.0,
+            "orientation": "prone body proxy, long axis lying across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketStreetBackdrop, left of MarketTrader, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 02 CHAR MarketTrader",
+            "visibility": "visible",
+            "center_x_percent": 87.83,
+            "center_y_percent": 19.43,
+            "bbox_width_percent": 24.35,
+            "bbox_height_percent": 38.86,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketQueuer, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 03 ENV B-4",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 49.26,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 37.12,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 03 ENV B-4",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 97.94,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 1.29,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 04 PROP MarketLedBoard",
+            "visibility": "visible",
+            "center_x_percent": 43.63,
+            "center_y_percent": 15.01,
+            "bbox_width_percent": 87.26,
+            "bbox_height_percent": 20.33,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketStalls, left of MarketStreetBackdrop, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 05 PROP B-4",
+            "visibility": "visible",
+            "center_x_percent": 20.14,
+            "center_y_percent": 18.45,
+            "bbox_width_percent": 40.28,
+            "bbox_height_percent": 36.89,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of MarketLedBoard, behind all nearer elements, upper frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "6 visible instances. Dominant MarketStreetBackdrop covers 100x37 percent at frame 50/49. Left to right: MarketStalls, MarketLedBoard, MarketStreetBackdrop, MarketStreetGround, MarketQueuer."
+      },
+      {
+        "time_seconds": 3.979,
+        "source_frame": "D14_shots/ep11_shot04/source_anchor_frames/anchor_05.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 4.38m to 12.39m across 6 layers; nearest is MarketStalls, furthest is MarketStreetBackdrop"
+        },
+        "camera_relation": "camera at (-2.80, 2.52, -2.60) on a 50.0mm lens, frame 96 of 192",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR MarketQueuer",
+            "visibility": "visible",
+            "center_x_percent": 78.05,
+            "center_y_percent": 28.2,
+            "bbox_width_percent": 43.89,
+            "bbox_height_percent": 50.0,
+            "orientation": "prone body proxy, long axis lying across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketStreetBackdrop, left of MarketTrader, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 02 CHAR MarketTrader",
+            "visibility": "visible",
+            "center_x_percent": 87.83,
+            "center_y_percent": 19.43,
+            "bbox_width_percent": 24.35,
+            "bbox_height_percent": 38.86,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketQueuer, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 03 ENV B-4",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 49.26,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 37.12,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 03 ENV B-4",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 97.94,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 1.29,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 04 PROP MarketLedBoard",
+            "visibility": "visible",
+            "center_x_percent": 47.88,
+            "center_y_percent": 22.31,
+            "bbox_width_percent": 95.75,
+            "bbox_height_percent": 24.73,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketStalls, left of MarketStreetBackdrop, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 05 PROP B-4",
+            "visibility": "visible",
+            "center_x_percent": 20.14,
+            "center_y_percent": 18.45,
+            "bbox_width_percent": 40.28,
+            "bbox_height_percent": 36.89,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of MarketLedBoard, behind all nearer elements, upper frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "6 visible instances. Dominant MarketStreetBackdrop covers 100x37 percent at frame 50/49. Left to right: MarketStalls, MarketLedBoard, MarketStreetBackdrop, MarketStreetGround, MarketQueuer."
+      },
+      {
+        "time_seconds": 4.974,
+        "source_frame": "D14_shots/ep11_shot04/source_anchor_frames/anchor_06.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 4.38m to 12.39m across 6 layers; nearest is MarketStalls, furthest is MarketStreetBackdrop"
+        },
+        "camera_relation": "camera at (-2.80, 2.52, -2.60) on a 50.0mm lens, frame 120 of 192",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR MarketQueuer",
+            "visibility": "visible",
+            "center_x_percent": 78.05,
+            "center_y_percent": 28.2,
+            "bbox_width_percent": 43.89,
+            "bbox_height_percent": 50.0,
+            "orientation": "prone body proxy, long axis lying across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketStreetBackdrop, left of MarketTrader, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 02 CHAR MarketTrader",
+            "visibility": "visible",
+            "center_x_percent": 87.83,
+            "center_y_percent": 19.43,
+            "bbox_width_percent": 24.35,
+            "bbox_height_percent": 38.86,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketQueuer, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 03 ENV B-4",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 49.26,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 37.12,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 03 ENV B-4",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 97.94,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 1.29,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 04 PROP MarketLedBoard",
+            "visibility": "visible",
+            "center_x_percent": 47.88,
+            "center_y_percent": 22.31,
+            "bbox_width_percent": 95.75,
+            "bbox_height_percent": 24.73,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketStalls, left of MarketStreetBackdrop, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 05 PROP B-4",
+            "visibility": "visible",
+            "center_x_percent": 20.14,
+            "center_y_percent": 18.45,
+            "bbox_width_percent": 40.28,
+            "bbox_height_percent": 36.89,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of MarketLedBoard, behind all nearer elements, upper frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "6 visible instances. Dominant MarketStreetBackdrop covers 100x37 percent at frame 50/49. Left to right: MarketStalls, MarketLedBoard, MarketStreetBackdrop, MarketStreetGround, MarketQueuer."
+      },
+      {
+        "time_seconds": 5.969,
+        "source_frame": "D14_shots/ep11_shot04/source_anchor_frames/anchor_07.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 4.38m to 12.39m across 6 layers; nearest is MarketStalls, furthest is MarketStreetBackdrop"
+        },
+        "camera_relation": "camera at (-2.80, 2.52, -2.60) on a 50.0mm lens, frame 144 of 192",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR MarketQueuer",
+            "visibility": "visible",
+            "center_x_percent": 78.05,
+            "center_y_percent": 28.2,
+            "bbox_width_percent": 43.89,
+            "bbox_height_percent": 50.0,
+            "orientation": "prone body proxy, long axis lying across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketStreetBackdrop, left of MarketTrader, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 02 CHAR MarketTrader",
+            "visibility": "visible",
+            "center_x_percent": 87.83,
+            "center_y_percent": 19.43,
+            "bbox_width_percent": 24.35,
+            "bbox_height_percent": 38.86,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketQueuer, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 03 ENV B-4",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 49.26,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 37.12,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 03 ENV B-4",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 97.94,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 1.29,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 04 PROP MarketLedBoard",
+            "visibility": "visible",
+            "center_x_percent": 47.88,
+            "center_y_percent": 22.31,
+            "bbox_width_percent": 95.75,
+            "bbox_height_percent": 24.73,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketStalls, left of MarketStreetBackdrop, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 05 PROP B-4",
+            "visibility": "visible",
+            "center_x_percent": 20.14,
+            "center_y_percent": 18.45,
+            "bbox_width_percent": 40.28,
+            "bbox_height_percent": 36.89,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of MarketLedBoard, behind all nearer elements, upper frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "6 visible instances. Dominant MarketStreetBackdrop covers 100x37 percent at frame 50/49. Left to right: MarketStalls, MarketLedBoard, MarketStreetBackdrop, MarketStreetGround, MarketQueuer."
+      },
+      {
+        "time_seconds": 6.964,
+        "source_frame": "D14_shots/ep11_shot04/source_anchor_frames/anchor_08.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 4.38m to 12.39m across 6 layers; nearest is MarketStalls, furthest is MarketStreetBackdrop"
+        },
+        "camera_relation": "camera at (-2.80, 2.52, -2.60) on a 50.0mm lens, frame 168 of 192",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR MarketQueuer",
+            "visibility": "visible",
+            "center_x_percent": 78.05,
+            "center_y_percent": 28.2,
+            "bbox_width_percent": 43.89,
+            "bbox_height_percent": 50.0,
+            "orientation": "prone body proxy, long axis lying across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketStreetBackdrop, left of MarketTrader, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 02 CHAR MarketTrader",
+            "visibility": "visible",
+            "center_x_percent": 87.83,
+            "center_y_percent": 19.43,
+            "bbox_width_percent": 24.35,
+            "bbox_height_percent": 38.86,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketQueuer, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 03 ENV B-4",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 49.26,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 37.12,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 03 ENV B-4",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 97.94,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 1.29,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 04 PROP MarketLedBoard",
+            "visibility": "visible",
+            "center_x_percent": 47.88,
+            "center_y_percent": 22.31,
+            "bbox_width_percent": 95.75,
+            "bbox_height_percent": 24.73,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketStalls, left of MarketStreetBackdrop, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 05 PROP B-4",
+            "visibility": "visible",
+            "center_x_percent": 20.14,
+            "center_y_percent": 18.45,
+            "bbox_width_percent": 40.28,
+            "bbox_height_percent": 36.89,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of MarketLedBoard, behind all nearer elements, upper frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "6 visible instances. Dominant MarketStreetBackdrop covers 100x37 percent at frame 50/49. Left to right: MarketStalls, MarketLedBoard, MarketStreetBackdrop, MarketStreetGround, MarketQueuer."
+      },
+      {
+        "time_seconds": 7.958,
+        "source_frame": "D14_shots/ep11_shot04/source_anchor_frames/anchor_09.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 4.38m to 12.39m across 6 layers; nearest is MarketStalls, furthest is MarketStreetBackdrop"
+        },
+        "camera_relation": "camera at (-2.80, 2.52, -2.60) on a 50.0mm lens, frame 192 of 192",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR MarketQueuer",
+            "visibility": "visible",
+            "center_x_percent": 78.05,
+            "center_y_percent": 28.2,
+            "bbox_width_percent": 43.89,
+            "bbox_height_percent": 50.0,
+            "orientation": "prone body proxy, long axis lying across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketStreetBackdrop, left of MarketTrader, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 02 CHAR MarketTrader",
+            "visibility": "visible",
+            "center_x_percent": 87.83,
+            "center_y_percent": 19.43,
+            "bbox_width_percent": 24.35,
+            "bbox_height_percent": 38.86,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketQueuer, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 03 ENV B-4",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 49.26,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 37.12,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 03 ENV B-4",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 97.94,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 1.29,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 04 PROP MarketLedBoard",
+            "visibility": "visible",
+            "center_x_percent": 47.88,
+            "center_y_percent": 22.31,
+            "bbox_width_percent": 95.75,
+            "bbox_height_percent": 24.73,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of MarketStalls, left of MarketStreetBackdrop, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 05 PROP B-4",
+            "visibility": "visible",
+            "center_x_percent": 20.14,
+            "center_y_percent": 18.45,
+            "bbox_width_percent": 40.28,
+            "bbox_height_percent": 36.89,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of MarketLedBoard, behind all nearer elements, upper frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "6 visible instances. Dominant MarketStreetBackdrop covers 100x37 percent at frame 50/49. Left to right: MarketStalls, MarketLedBoard, MarketStreetBackdrop, MarketStreetGround, MarketQueuer."
+      }
+    ],
+    "m3_cut_review": {
+      "candidate_times": [],
+      "confirmed_real_cuts": [],
+      "reasoning": "No source cut candidate requires review."
+    }
+  },
+  "appearance": {
+    "schema_version": 6,
+    "watched_references": true,
+    "style_source_summary": "World style is taken from the shared unit style contract: cold industrial post-collapse realism for humans and props with a separated stylisation layer for bone pattern, twin flame, grey fog and altered bodies. No external appearance reference image was supplied for this unit, so no reference route is registered and every entity is styled from the world style alone.",
+    "reference_routes": [],
+    "global_style_bible": {
+      "world_and_era": "post-collapse industrial city ruins; a walled factory district turned into a survival compound and the bone market street running beside it; ration queues, pinned duty rosters and projected notices govern daily life; human survivors and ceramic-pale altered beings share the same cold daylight and fog; no readable signage and no modern branding",
+      "visual_language": "grounded industrial realism for humans and props with a separated stylisation layer for the bone pattern, the black and white twin flame, white smoke, fire heads and projected interface text; stylised elements never spill across into the human layer and every body surface stays intact",
+      "palette": "grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D with detail kept in the darks, plaster white #C6C2B8 for ceramic shells, pure-fire white #F5F7F8 and black #0B0B0C for the twin colour bone pattern, weld and fire orange #E07B39 as the only warm accent, dark red #7A2027 reserved for the fighter's outfit and never for any liquid",
+      "material_language": "real skin with pores and slight oil sheen, matte technical fabric with wear and dust, oxidised steel with dull reflections, cold ceramic shells on altered bodies; every surface stays intact and no red liquid appears anywhere in the frame",
+      "environment_design": "cement yard plates cut by fire lines, riveted steel frames and steel racks, sheet metal and plyboard walls carrying pinned drawings and duty rosters, a single cold ceiling tube over the purification bench, market stall rows under a led board along a fog covered street, and one unlit stretch of road outside the factory gate",
+      "prop_design": "functional utilitarian tooling with real weight and thickness: welding rigs, steel racks, extraction lines and press slots, frosted energy blocks, duty rosters, nailed wooden boards, written notices, sealed safes and an unlit shadow blade; all carry visible use marks",
+      "lighting_and_atmosphere": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+    },
+    "entity_appearances": {
+      "Entity 01 CHAR MarketQueuer": {
+        "semantic_target": "market queue member blockout in two columns",
+        "final_materials_and_detail": "real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings, contact shadow under the body",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      },
+      "Entity 02 CHAR MarketTrader": {
+        "semantic_target": "market stall trader blockout",
+        "final_materials_and_detail": "real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings, contact shadow under the body",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      },
+      "Entity 03 ENV B-4": {
+        "semantic_target": "B-4 built environment shell enclosing the set: MarketStreetBackdrop, MarketStreetGround",
+        "final_materials_and_detail": "worn cement, oxidised steel and sheet metal with cold grey reflections, shadow detail kept readable in the dark areas",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      },
+      "Entity 04 PROP MarketLedBoard": {
+        "semantic_target": "B-4 set pieces and fittings: MarketLedBoard",
+        "final_materials_and_detail": "utilitarian material with visible weight, thickness and use marks, cold grey metal and dull plastic, no gloss hero finish",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      },
+      "Entity 05 PROP B-4": {
+        "semantic_target": "B-4 set pieces and fittings: MarketStalls",
+        "final_materials_and_detail": "utilitarian material with visible weight, thickness and use marks, cold grey metal and dull plastic, no gloss hero finish",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      }
+    },
+    "blockout_rejection": {
+      "all_visible_entities_must_be_finished": true,
+      "forbidden_final_look": "source construction proxy, default viewport material, incomplete proxy geometry, or any visibly unart-directed placeholder",
+      "ambiguous_proxy_fallback": "Choose a plausible finished World Style design inside the exact source bounds; never leave it semantically or materially generic."
+    },
+    "sound": "a scrolling chime from the led board with street noise swelling in the distance"
+  },
+  "h3_prompt": {
+    "path": "D14_shots/ep11_shot04/h3_prompt.txt",
+    "char_count": 6239,
+    "within_budget": true,
+    "protected_content_valid": true,
+    "ready_to_submit": true
+  }
+}

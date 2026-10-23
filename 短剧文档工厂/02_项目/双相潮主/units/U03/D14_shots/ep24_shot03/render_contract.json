@@ -1,0 +1,969 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep24_shot03/preview_video.mp4",
+    "duration": 13.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 312,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "B-19_CHAR_LuchenHand_01",
+      "source_type": "MESH",
+      "root_name": "B-19_CHAR_LuchenHand_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-19_CHAR_LuchenHand_01; type=MESH; root=B-19_CHAR_LuchenHand_01; dimensions=0.100,0.100,0.300",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O006",
+      "source_name": "B-19_EXT_FactoryInnerWall.002",
+      "source_type": "MESH",
+      "root_name": "B-19_EXT_FactoryInnerWall.002",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-19_EXT_FactoryInnerWall.002; type=MESH; root=B-19_EXT_FactoryInnerWall.002; dimensions=6.696,0.055,1.646",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O009",
+      "source_name": "B-19_PROP_BlackWhiteTwinFlame_09",
+      "source_type": "MESH",
+      "root_name": "B-19_PROP_BlackWhiteTwinFlame_09",
+      "first_visible_seconds": 3.25,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-19_PROP_BlackWhiteTwinFlame_09; type=MESH; root=B-19_PROP_BlackWhiteTwinFlame_09; dimensions=0.168,0.046,0.168",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O010",
+      "source_name": "B-19_PROP_NameBoard_01",
+      "source_type": "MESH",
+      "root_name": "B-19_PROP_NameBoard_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-19_PROP_NameBoard_01; type=MESH; root=B-19_PROP_NameBoard_01; dimensions=1.272,0.039,0.572",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O016",
+      "source_name": "B-19_PROP_VapourCore_01",
+      "source_type": "MESH",
+      "root_name": "B-19_PROP_VapourCore_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-19_PROP_VapourCore_01; type=MESH; root=B-19_PROP_VapourCore_01; dimensions=0.100,0.100,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O018",
+      "source_name": "B-19_PROP_WhiteSmoke_10",
+      "source_type": "MESH",
+      "root_name": "B-19_PROP_WhiteSmoke_10",
+      "first_visible_seconds": 3.25,
+      "last_visible_seconds": 8.083,
+      "identity_cues": "name=B-19_PROP_WhiteSmoke_10; type=MESH; root=B-19_PROP_WhiteSmoke_10; dimensions=0.097,0.086,0.342",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR LuchenHand",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "protagonist raised hand blockout",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV B-19",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O006"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-19 built environment shell enclosing the set: FactoryInnerWall",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 03 FX BlackWhiteTwinFlame",
+      "entity_class": "effect",
+      "importance": "context",
+      "source_instance_ids": [
+        "O009"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "black and white twin flame on the contact patch",
+      "structural_constraints": "keep the source volume and the attachment point; the effect never detaches from its source surface",
+      "motion_contract": {
+        "mode": "effect_evolution",
+        "action": "develops and drifts as the effect unfolds",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 04 PROP B-19",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O010",
+        "O016"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-19 set pieces and fittings: NameBoard, VapourCore",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 05 FX WhiteSmoke",
+      "entity_class": "effect",
+      "importance": "context",
+      "source_instance_ids": [
+        "O018"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "white smoke rising off the purified hand",
+      "structural_constraints": "keep the source volume and the attachment point; the effect never detaches from its source surface",
+      "motion_contract": {
+        "mode": "effect_evolution",
+        "action": "develops and drifts as the effect unfolds",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_9501",
+      "source_instance_ids": [
+        "O009",
+        "O010",
+        "O016",
+        "O018"
+      ],
+      "start_seconds": 0.0,
+      "end_seconds": 0.75,
+      "relation": "the vapour core is pressed against the board and the twin flame burns over the contact patch while one thread of white smoke rises",
+      "forbidden_change": "do not add a third flame colour and do not leave a broken surface on the hand"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 13.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 04 PROP B-19",
+        "world_path": "camera travels from (-1.82, 18.62, 2.20) to (-1.82, 18.62, 2.20) on a 85mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "近景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 近景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "the protagonist presses one vapour core against the name board and the grey patch retreats from the edge of the knuckles back to a pale tone; the black and white twin flame burns across and the result is one thread of white smoke and the normal skin tone of the back of the hand; the flame is only black and white",
+      "layout_and_occlusion": "4 visible instances. Dominant NameBoard covers 100x68 percent at frame 50/34. Left to right: VapourCore, LuchenHand, FactoryInnerWall, NameBoard.",
+      "lighting_spatial_logic": "one cold overhead key over the steel table with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the emergency lamps on the gate posts, the residual fire heads, the twin flame and the derrick lamp as the only moving light sources, and the grey fog pressing down over the street with the unlit crossing kept dark"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep24_shot03/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 1.07m to 1.29m across 4 layers; nearest is LuchenHand, furthest is FactoryInnerWall"
+      },
+      "camera_relation": "camera at (-1.82, 18.62, 2.20) on a 85.0mm lens, frame 1 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 4.59,
+          "center_y_percent": 57.88,
+          "bbox_width_percent": 9.17,
+          "bbox_height_percent": 70.53,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of VapourCore, left of FactoryInnerWall, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-19",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 15.63,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 31.26,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LuchenHand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 FX BlackWhiteTwinFlame",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 04 PROP B-19",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 34.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LuchenHand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O016",
+          "entity_label": "Entity 04 PROP B-19",
+          "visibility": "visible",
+          "center_x_percent": 2.34,
+          "center_y_percent": 89.49,
+          "bbox_width_percent": 4.68,
+          "bbox_height_percent": 21.01,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of LuchenHand, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O018",
+          "entity_label": "Entity 05 FX WhiteSmoke",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant NameBoard covers 100x68 percent at frame 50/34. Left to right: VapourCore, LuchenHand, FactoryInnerWall, NameBoard."
+    },
+    {
+      "time_seconds": 1.62,
+      "source_frame": "D14_shots/ep24_shot03/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 1.07m to 1.29m across 4 layers; nearest is LuchenHand, furthest is FactoryInnerWall"
+      },
+      "camera_relation": "camera at (-1.82, 18.62, 2.20) on a 85.0mm lens, frame 40 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 4.59,
+          "center_y_percent": 57.88,
+          "bbox_width_percent": 9.17,
+          "bbox_height_percent": 70.53,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of VapourCore, left of FactoryInnerWall, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-19",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 15.63,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 31.26,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LuchenHand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 FX BlackWhiteTwinFlame",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 04 PROP B-19",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 34.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LuchenHand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O016",
+          "entity_label": "Entity 04 PROP B-19",
+          "visibility": "visible",
+          "center_x_percent": 2.34,
+          "center_y_percent": 89.49,
+          "bbox_width_percent": 4.68,
+          "bbox_height_percent": 21.01,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of LuchenHand, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O018",
+          "entity_label": "Entity 05 FX WhiteSmoke",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant NameBoard covers 100x68 percent at frame 50/34. Left to right: VapourCore, LuchenHand, FactoryInnerWall, NameBoard."
+    },
+    {
+      "time_seconds": 3.24,
+      "source_frame": "D14_shots/ep24_shot03/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 1.04m to 1.29m across 6 layers; nearest is WhiteSmoke, furthest is FactoryInnerWall"
+      },
+      "camera_relation": "camera at (-1.82, 18.62, 2.20) on a 85.0mm lens, frame 79 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 4.59,
+          "center_y_percent": 57.88,
+          "bbox_width_percent": 9.17,
+          "bbox_height_percent": 70.53,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of VapourCore, left of BlackWhiteTwinFlame, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-19",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 15.63,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 31.26,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BlackWhiteTwinFlame, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 FX BlackWhiteTwinFlame",
+          "visibility": "visible",
+          "center_x_percent": 5.71,
+          "center_y_percent": 85.3,
+          "bbox_width_percent": 11.41,
+          "bbox_height_percent": 29.41,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LuchenHand, left of FactoryInnerWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 04 PROP B-19",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 34.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BlackWhiteTwinFlame, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O016",
+          "entity_label": "Entity 04 PROP B-19",
+          "visibility": "visible",
+          "center_x_percent": 2.34,
+          "center_y_percent": 89.49,
+          "bbox_width_percent": 4.68,
+          "bbox_height_percent": 21.01,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WhiteSmoke, left of LuchenHand, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O018",
+          "entity_label": "Entity 05 FX WhiteSmoke",
+          "visibility": "visible",
+          "center_x_percent": 1.08,
+          "center_y_percent": 24.19,
+          "bbox_width_percent": 2.15,
+          "bbox_height_percent": 48.37,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of VapourCore, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant NameBoard covers 100x68 percent at frame 50/34. Left to right: WhiteSmoke, VapourCore, LuchenHand, BlackWhiteTwinFlame, FactoryInnerWall."
+    },
+    {
+      "time_seconds": 4.859,
+      "source_frame": "D14_shots/ep24_shot03/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 1.03m to 1.29m across 6 layers; nearest is WhiteSmoke, furthest is FactoryInnerWall"
+      },
+      "camera_relation": "camera at (-1.82, 18.62, 2.20) on a 85.0mm lens, frame 118 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 4.59,
+          "center_y_percent": 57.88,
+          "bbox_width_percent": 9.17,
+          "bbox_height_percent": 70.53,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WhiteSmoke, left of BlackWhiteTwinFlame, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-19",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 15.63,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 31.26,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BlackWhiteTwinFlame, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 FX BlackWhiteTwinFlame",
+          "visibility": "visible",
+          "center_x_percent": 12.62,
+          "center_y_percent": 82.35,
+          "bbox_width_percent": 25.24,
+          "bbox_height_percent": 35.3,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LuchenHand, left of FactoryInnerWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 04 PROP B-19",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 34.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BlackWhiteTwinFlame, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O016",
+          "entity_label": "Entity 04 PROP B-19",
+          "visibility": "visible",
+          "center_x_percent": 2.34,
+          "center_y_percent": 89.49,
+          "bbox_width_percent": 4.68,
+          "bbox_height_percent": 21.01,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WhiteSmoke, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O018",
+          "entity_label": "Entity 05 FX WhiteSmoke",
+          "visibility": "visible",
+          "center_x_percent": 3.13,
+          "center_y_percent": 18.39,
+          "bbox_width_percent": 6.25,
+          "bbox_height_percent": 36.79,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of VapourCore, left of LuchenHand, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant NameBoard covers 100x68 percent at frame 50/34. Left to right: VapourCore, WhiteSmoke, LuchenHand, BlackWhiteTwinFlame, FactoryInnerWall."
+    },
+    {
+      "time_seconds": 6.479,
+      "source_frame": "D14_shots/ep24_shot03/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 1.01m to 1.29m across 6 layers; nearest is WhiteSmoke, furthest is FactoryInnerWall"
+      },
+      "camera_relation": "camera at (-1.82, 18.62, 2.20) on a 85.0mm lens, frame 156 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 4.59,
+          "center_y_percent": 57.88,
+          "bbox_width_percent": 9.17,
+          "bbox_height_percent": 70.53,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of VapourCore, left of WhiteSmoke, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-19",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 15.63,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 31.26,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BlackWhiteTwinFlame, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 FX BlackWhiteTwinFlame",
+          "visibility": "visible",
+          "center_x_percent": 12.62,
+          "center_y_percent": 82.35,
+          "bbox_width_percent": 25.24,
+          "bbox_height_percent": 35.3,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WhiteSmoke, left of FactoryInnerWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 04 PROP B-19",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 34.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BlackWhiteTwinFlame, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O016",
+          "entity_label": "Entity 04 PROP B-19",
+          "visibility": "visible",
+          "center_x_percent": 2.34,
+          "center_y_percent": 89.49,
+          "bbox_width_percent": 4.68,
+          "bbox_height_percent": 21.01,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of LuchenHand, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O018",
+          "entity_label": "Entity 05 FX WhiteSmoke",
+          "visibility": "visible",
+          "center_x_percent": 5.13,
+          "center_y_percent": 12.6,
+          "bbox_width_percent": 10.25,
+          "bbox_height_percent": 25.2,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LuchenHand, left of BlackWhiteTwinFlame, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant NameBoard covers 100x68 percent at frame 50/34. Left to right: VapourCore, LuchenHand, WhiteSmoke, BlackWhiteTwinFlame, FactoryInnerWall."
+    },
+    {
+      "time_seconds": 8.099,
+      "source_frame": "D14_shots/ep24_shot03/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 1.00m to 1.29m across 6 layers; nearest is WhiteSmoke, furthest is FactoryInnerWall"
+      },
+      "camera_relation": "camera at (-1.82, 18.62, 2.20) on a 85.0mm lens, frame 195 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 4.59,
+          "center_y_percent": 57.88,
+          "bbox_width_percent": 9.17,
+          "bbox_height_percent": 70.53,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of VapourCore, left of WhiteSmoke, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-19",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 15.63,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 31.26,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BlackWhiteTwinFlame, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 FX BlackWhiteTwinFlame",
+          "visibility": "visible",
+          "center_x_percent": 12.62,
+          "center_y_percent": 82.35,
+          "bbox_width_percent": 25.24,
+          "bbox_height_percent": 35.3,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WhiteSmoke, left of FactoryInnerWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 04 PROP B-19",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 34.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BlackWhiteTwinFlame, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O016",
+          "entity_label": "Entity 04 PROP B-19",
+          "visibility": "visible",
+          "center_x_percent": 2.34,
+          "center_y_percent": 89.49,
+          "bbox_width_percent": 4.68,
+          "bbox_height_percent": 21.01,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of LuchenHand, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O018",
+          "entity_label": "Entity 05 FX WhiteSmoke",
+          "visibility": "visible",
+          "center_x_percent": 6.74,
+          "center_y_percent": 6.59,
+          "bbox_width_percent": 13.47,
+          "bbox_height_percent": 13.18,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LuchenHand, left of BlackWhiteTwinFlame, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant NameBoard covers 100x68 percent at frame 50/34. Left to right: VapourCore, LuchenHand, WhiteSmoke, BlackWhiteTwinFlame, FactoryInnerWall."
+    },
+    {
+      "time_seconds": 9.719,
+      "source_frame": "D14_shots/ep24_shot03/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 1.06m to 1.29m across 5 layers; nearest is BlackWhiteTwinFlame, furthest is FactoryInnerWall"
+      },
+      "camera_relation": "camera at (-1.82, 18.62, 2.20) on a 85.0mm lens, frame 234 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 4.59,
+          "center_y_percent": 57.88,
+          "bbox_width_percent": 9.17,
+          "bbox_height_percent": 70.53,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of VapourCore, left of BlackWhiteTwinFlame, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-19",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 15.63,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 31.26,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BlackWhiteTwinFlame, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 FX BlackWhiteTwinFlame",
+          "visibility": "visible",
+          "center_x_percent": 12.62,
+          "center_y_percent": 82.35,
+          "bbox_width_percent": 25.24,
+          "bbox_height_percent": 35.3,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LuchenHand, left of FactoryInnerWall, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 04 PROP B-19",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 34.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BlackWhiteTwinFlame, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O016",
+          "entity_label": "Entity 04 PROP B-19",
+          "visibility": "visible",
+          "center_x_percent": 2.34,
+          "center_y_percent": 89.49,
+          "bbox_width_percent": 4.68,
+          "bbox_height_percent": 21.01,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of LuchenHand, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O018",
+          "entity_label": "Entity 05 FX WhiteSmoke",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant NameBoard covers 100x68 percent at frame 50/34. Left to right: VapourCore, LuchenHand, BlackWhiteTwinFlame, FactoryInnerWall, NameBoard."
+    },
+    {
+      "time_seconds": 11.339,
+      "source_frame": "D14_shots/ep24_shot03/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 1.06m to 1.29m across 5 layers; nearest is BlackWhiteTwinFlame, furthest is FactoryInnerWall"
+      },
+      "camera_relation": "camera at (-1.82, 18.62, 2.20) on a 85.0mm lens, frame 273 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 4.59,
+          "center_y_percent": 57.88,
+          "bbox_width_percent": 9.17,
+          "bbox_height_percent": 70.53,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of VapourCore, left of BlackWhiteTwinFlame, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-19",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 15.63,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 31.26,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BlackWhiteTwinFlame, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 FX BlackWhiteTwinFlame",
+          "visibility": "visible",
+          "center_x_percent": 12.62,
+          "center_y_percent": 82.35,
+          "bbox_width_percent": 25.24,
+          "bbox_height_percent": 35.3,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LuchenHand, left of FactoryInnerWall, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 04 PROP B-19",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 34.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BlackWhiteTwinFlame, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O016",
+          "entity_label": "Entity 04 PROP B-19",
+          "visibility": "visible",
+          "center_x_percent": 2.34,
+          "center_y_percent": 89.49,
+          "bbox_width_percent": 4.68,
+          "bbox_height_percent": 21.01,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of LuchenHand, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O018",
+          "entity_label": "Entity 05 FX WhiteSmoke",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant NameBoard covers 100x68 percent at frame 50/34. Left to right: VapourCore, LuchenHand, BlackWhiteTwinFlame, FactoryInnerWall, NameBoard."
+    },
+    {
+      "time_seconds": 12.958,
+      "source_frame": "D14_shots/ep24_shot03/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 1.06m to 1.29m across 5 layers; nearest is BlackWhiteTwinFlame, furthest is FactoryInnerWall"
+      },
+      "camera_relation": "camera at (-1.82, 18.62, 2.20) on a 85.0mm lens, frame 312 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 4.59,
+          "center_y_percent": 57.88,
+          "bbox_width_percent": 9.17,
+          "bbox_height_percent": 70.53,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of VapourCore, left of BlackWhiteTwinFlame, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-19",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 15.63,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 31.26,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BlackWhiteTwinFlame, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 FX BlackWhiteTwinFlame",
+          "visibility": "visible",
+          "center_x_percent": 12.62,
+          "center_y_percent": 82.35,
+          "bbox_width_percent": 25.24,
+          "bbox_height_percent": 35.3,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LuchenHand, left of FactoryInnerWall, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 04 PROP B-19",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 34.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BlackWhiteTwinFlame, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O016",
+          "entity_label": "Entity 04 PROP B-19",
+          "visibility": "visible",
+          "center_x_percent": 2.34,
+          "center_y_percent": 89.49,
+          "bbox_width_percent": 4.68,
+          "bbox_height_percent": 21.01,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of LuchenHand, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O018",
+          "entity_label": "Entity 05 FX WhiteSmoke",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant NameBoard covers 100x68 percent at frame 50/34. Left to right: VapourCore, LuchenHand, BlackWhiteTwinFlame, FactoryInnerWall, NameBoard."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

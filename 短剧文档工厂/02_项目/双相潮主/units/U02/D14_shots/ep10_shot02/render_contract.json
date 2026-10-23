@@ -1,0 +1,575 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep10_shot02/preview_video.mp4",
+    "duration": 13.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 312,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "B-2_CHAR_GreySpottedPatient_01",
+      "source_type": "MESH",
+      "root_name": "B-2_CHAR_GreySpottedPatient_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-2_CHAR_GreySpottedPatient_01; type=MESH; root=B-2_CHAR_GreySpottedPatient_01; dimensions=0.420,1.924,0.350",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O008",
+      "source_name": "B-2_EXT_FactoryYardGround",
+      "source_type": "MESH",
+      "root_name": "B-2_EXT_FactoryYardGround",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-2_EXT_FactoryYardGround; type=MESH; root=B-2_EXT_FactoryYardGround; dimensions=36.000,44.000,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O011",
+      "source_name": "B-2_PROP_SteelWorkbench_01",
+      "source_type": "MESH",
+      "root_name": "B-2_PROP_SteelWorkbench_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-2_PROP_SteelWorkbench_01; type=MESH; root=B-2_PROP_SteelWorkbench_01; dimensions=2.000,1.200,0.750",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR GreySpottedPatient",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "patient blockout with grey patched skin",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV B-2",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O008"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-2 built environment shell enclosing the set: FactoryYardGround",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 03 PROP B-2",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O011"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-2 set pieces and fittings: SteelWorkbench",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_3801",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "start_seconds": 0.0,
+      "end_seconds": 1.0,
+      "relation": "the twin flame clings to the patch of skin under the palm on the patient's arm",
+      "forbidden_change": "do not spread the flame beyond the contact patch and do not break the skin surface"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 13.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "none",
+        "world_path": "camera travels from (-8.48, 8.40, 1.20) to (-8.48, 8.40, 1.20) on a 50mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "近景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 近景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "a person lies on the steel work bench with grey patches covering the whole arm; the protagonist lays his right hand over it and the black and white twin flame ignites against the skin, the lit area confined to the patch under the palm; outside the flame the bench stays under cold hall light and the chest below rises and falls",
+      "layout_and_occlusion": "3 visible instances. Dominant GreySpottedPatient covers 72x70 percent at frame 64/65. Left to right: FactoryYardGround, SteelWorkbench, GreySpottedPatient.",
+      "lighting_spatial_logic": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep10_shot02/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 0.50m to 14.64m across 3 layers; nearest is GreySpottedPatient, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-8.48, 8.40, 1.20) on a 50.0mm lens, frame 1 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GreySpottedPatient",
+          "visibility": "visible",
+          "center_x_percent": 63.94,
+          "center_y_percent": 64.85,
+          "bbox_width_percent": 72.12,
+          "bbox_height_percent": 70.3,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 40.35,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 46.46,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreySpottedPatient, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 86.16,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 27.68,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreySpottedPatient, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GreySpottedPatient covers 72x70 percent at frame 64/65. Left to right: FactoryYardGround, SteelWorkbench, GreySpottedPatient."
+    },
+    {
+      "time_seconds": 1.62,
+      "source_frame": "D14_shots/ep10_shot02/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 0.50m to 14.64m across 3 layers; nearest is GreySpottedPatient, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-8.48, 8.40, 1.20) on a 50.0mm lens, frame 40 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GreySpottedPatient",
+          "visibility": "visible",
+          "center_x_percent": 63.94,
+          "center_y_percent": 64.85,
+          "bbox_width_percent": 72.12,
+          "bbox_height_percent": 70.3,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 40.35,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 46.46,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreySpottedPatient, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 86.16,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 27.68,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreySpottedPatient, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GreySpottedPatient covers 72x70 percent at frame 64/65. Left to right: FactoryYardGround, SteelWorkbench, GreySpottedPatient."
+    },
+    {
+      "time_seconds": 3.24,
+      "source_frame": "D14_shots/ep10_shot02/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 0.50m to 14.64m across 3 layers; nearest is GreySpottedPatient, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-8.48, 8.40, 1.20) on a 50.0mm lens, frame 79 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GreySpottedPatient",
+          "visibility": "visible",
+          "center_x_percent": 63.94,
+          "center_y_percent": 64.85,
+          "bbox_width_percent": 72.12,
+          "bbox_height_percent": 70.3,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 40.35,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 46.46,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreySpottedPatient, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 86.16,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 27.68,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreySpottedPatient, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GreySpottedPatient covers 72x70 percent at frame 64/65. Left to right: FactoryYardGround, SteelWorkbench, GreySpottedPatient."
+    },
+    {
+      "time_seconds": 4.859,
+      "source_frame": "D14_shots/ep10_shot02/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 0.50m to 14.64m across 3 layers; nearest is GreySpottedPatient, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-8.48, 8.40, 1.20) on a 50.0mm lens, frame 118 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GreySpottedPatient",
+          "visibility": "visible",
+          "center_x_percent": 63.94,
+          "center_y_percent": 64.85,
+          "bbox_width_percent": 72.12,
+          "bbox_height_percent": 70.3,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 40.35,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 46.46,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreySpottedPatient, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 86.16,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 27.68,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreySpottedPatient, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GreySpottedPatient covers 72x70 percent at frame 64/65. Left to right: FactoryYardGround, SteelWorkbench, GreySpottedPatient."
+    },
+    {
+      "time_seconds": 6.479,
+      "source_frame": "D14_shots/ep10_shot02/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 0.50m to 14.64m across 3 layers; nearest is GreySpottedPatient, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-8.48, 8.40, 1.20) on a 50.0mm lens, frame 156 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GreySpottedPatient",
+          "visibility": "visible",
+          "center_x_percent": 63.94,
+          "center_y_percent": 64.85,
+          "bbox_width_percent": 72.12,
+          "bbox_height_percent": 70.3,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 40.35,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 46.46,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreySpottedPatient, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 86.16,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 27.68,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreySpottedPatient, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GreySpottedPatient covers 72x70 percent at frame 64/65. Left to right: FactoryYardGround, SteelWorkbench, GreySpottedPatient."
+    },
+    {
+      "time_seconds": 8.099,
+      "source_frame": "D14_shots/ep10_shot02/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 0.50m to 14.64m across 3 layers; nearest is GreySpottedPatient, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-8.48, 8.40, 1.20) on a 50.0mm lens, frame 195 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GreySpottedPatient",
+          "visibility": "visible",
+          "center_x_percent": 63.94,
+          "center_y_percent": 64.85,
+          "bbox_width_percent": 72.12,
+          "bbox_height_percent": 70.3,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 40.35,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 46.46,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreySpottedPatient, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 86.16,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 27.68,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreySpottedPatient, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GreySpottedPatient covers 72x70 percent at frame 64/65. Left to right: FactoryYardGround, SteelWorkbench, GreySpottedPatient."
+    },
+    {
+      "time_seconds": 9.719,
+      "source_frame": "D14_shots/ep10_shot02/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 0.50m to 14.64m across 3 layers; nearest is GreySpottedPatient, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-8.48, 8.40, 1.20) on a 50.0mm lens, frame 234 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GreySpottedPatient",
+          "visibility": "visible",
+          "center_x_percent": 63.94,
+          "center_y_percent": 64.85,
+          "bbox_width_percent": 72.12,
+          "bbox_height_percent": 70.3,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 40.35,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 46.46,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreySpottedPatient, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 86.16,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 27.68,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreySpottedPatient, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GreySpottedPatient covers 72x70 percent at frame 64/65. Left to right: FactoryYardGround, SteelWorkbench, GreySpottedPatient."
+    },
+    {
+      "time_seconds": 11.339,
+      "source_frame": "D14_shots/ep10_shot02/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 0.50m to 14.64m across 3 layers; nearest is GreySpottedPatient, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-8.48, 8.40, 1.20) on a 50.0mm lens, frame 273 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GreySpottedPatient",
+          "visibility": "visible",
+          "center_x_percent": 63.94,
+          "center_y_percent": 64.85,
+          "bbox_width_percent": 72.12,
+          "bbox_height_percent": 70.3,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 40.35,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 46.46,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreySpottedPatient, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 86.16,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 27.68,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreySpottedPatient, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GreySpottedPatient covers 72x70 percent at frame 64/65. Left to right: FactoryYardGround, SteelWorkbench, GreySpottedPatient."
+    },
+    {
+      "time_seconds": 12.958,
+      "source_frame": "D14_shots/ep10_shot02/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 0.50m to 14.64m across 3 layers; nearest is GreySpottedPatient, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-8.48, 8.40, 1.20) on a 50.0mm lens, frame 312 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GreySpottedPatient",
+          "visibility": "visible",
+          "center_x_percent": 63.94,
+          "center_y_percent": 64.85,
+          "bbox_width_percent": 72.12,
+          "bbox_height_percent": 70.3,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 40.35,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 46.46,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreySpottedPatient, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 86.16,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 27.68,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreySpottedPatient, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GreySpottedPatient covers 72x70 percent at frame 64/65. Left to right: FactoryYardGround, SteelWorkbench, GreySpottedPatient."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

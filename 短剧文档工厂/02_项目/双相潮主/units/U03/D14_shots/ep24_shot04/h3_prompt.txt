@@ -1,0 +1,47 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O003>,I3=<O006>,I4=<O009>,I5=<O010>,I6=<O011>.
+<Entity 01 CHAR Luchen>=E1[articulated/primary/static] members=I1;n=1;src=protagonist blockout in black tactical coat; final=protagonist blockout in black tactical coat; finish=real skin with pores and fine hair, fabric with real drape and wear…; style=world_style_unit_contract.
+<Entity 02 ENV B-19>=E2[environment/context/static] members=I2-I3;n=2;src=B-19 built environment shell enclosing the set…; final=B-19 built environment shell enclosing the set…; finish=worn cement, oxidised steel and sheet metal with cold grey…; style=world_style_unit_contract.
+<Entity 03 PROP GreyFramePanel>=E3[rigid/context/static] members=I4;n=1;src=B-19 set pieces and fittings: GreyFramePanel; final=B-19 set pieces and fittings: GreyFramePanel; finish=utilitarian material with visible weight, thickness and use marks…; style=world_style_unit_contract.
+<Entity 04 PROP B-19>=E4[rigid/context/static] members=I5-I6;n=2;src=B-19 set pieces and fittings: NameBoard…; final=B-19 set pieces and fittings: NameBoard…; finish=utilitarian material with visible weight, thickness and use marks…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I3;1:1;n=2.
+E3:I4;1:1;n=1.
+E4:I5-I6;1:1;n=2.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink… | materials=real skin with pores and slight oil sheen, matte… | environment=a brick street cut by wheel ruts in front of a single… | props=functional utilitarian tooling with real weight and… | light=one cold overhead key over the steel table with shadow….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3,E4=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3,E4 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_9601@0.000-1.000s I1,I4,I5: rel=the fire in the purification zone burns…; ban=do not put the fire out and do not hide the….
+[Shot 1] @0.000-7.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E4;path=camera travels from (0. 50, 13. 35, 1. 02) to (0. 50, 13. 35, 1…;dist=stable;azi=stable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the frame centre…;ban=do not add any camera move, zoom or handheld shake… | Act=the protagonist does not argue back and looks at the last line of the name board for a long time… | Layout=6 visible instances. Dominant FactoryInnerWall covers 100x47 percent at frame 50/24… | Light=one cold overhead key over the steel table with shadow detail….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 5. 10m to 7. 22m across 6 layers…;Cam=camera at (0. 50, 13. 35, 1. 02) on a 50…;Lay=6 visible instances… V=I2:50/88/100/24,I3:50/24/100/47,I4:77/42/2/1,I5:36/29/72/39,I6:41/70/82/32 D=I1:v/3/67/6/50/o:upright body proxy…/m:stationary across this interval/r:left of NameBoard, behind all…
+@0.994s F=medium;Comp=depth spans 5. 10m to 7. 22m across 6 layers…;Cam=camera at (0. 50, 13. 35, 1. 02) on a 50…;Lay=6 visible instances… V=I2:50/88/100/24,I3:50/24/100/47,I4:77/42/6/2,I5:36/29/72/39,I6:41/70/82/32 D=I1:v/3/67/6/50/o:upright body proxy…/m:stationary across this interval/r:left of NameBoard, behind all…
+@1.988s F=medium;Comp=depth spans 5. 10m to 7. 22m across 6 layers…;Cam=camera at (0. 50, 13. 35, 1. 02) on a 50…;Lay=6 visible instances… V=I2:50/88/100/24,I3:50/24/100/47,I4:77/42/10/4,I5:36/29/72/39,I6:41/70/82/32 D=I1:v/3/67/6/50/o:upright body proxy…/m:stationary across this interval/r:left of NameBoard, behind all…
+@2.982s F=medium;Comp=depth spans 5. 10m to 7. 22m across 6 layers…;Cam=camera at (0. 50, 13. 35, 1. 02) on a 50…;Lay=6 visible instances… V=I2:50/88/100/24,I3:50/24/100/47,I4:77/42/15/6,I5:36/29/72/39,I6:41/70/82/32 D=I1:v/3/67/6/50/o:upright body proxy…/m:stationary across this interval/r:left of NameBoard, behind all…
+@3.976s F=medium;Comp=depth spans 5. 10m to 7. 22m across 6 layers…;Cam=camera at (0. 50, 13. 35, 1. 02) on a 50…;Lay=6 visible instances… V=I2:50/88/100/24,I3:50/24/100/47,I4:77/42/15/6,I5:36/29/72/39,I6:41/70/82/32 D=I1:v/3/67/6/50/o:upright body proxy…/m:stationary across this interval/r:left of NameBoard, behind all…
+@4.970s F=medium;Comp=depth spans 5. 10m to 7. 22m across 6 layers…;Cam=camera at (0. 50, 13. 35, 1. 02) on a 50…;Lay=6 visible instances… V=I2:50/88/100/24,I3:50/24/100/47,I4:77/42/15/6,I5:36/29/72/39,I6:41/70/82/32 D=I1:v/3/67/6/50/o:upright body proxy…/m:stationary across this interval/r:left of NameBoard, behind all…
+@5.964s F=medium;Comp=depth spans 5. 10m to 7. 22m across 6 layers…;Cam=camera at (0. 50, 13. 35, 1. 02) on a 50…;Lay=6 visible instances… V=I2:50/88/100/24,I3:50/24/100/47,I4:77/42/15/6,I5:36/29/72/39,I6:41/70/82/32 D=I1:v/3/67/6/50/o:upright body proxy…/m:stationary across this interval/r:left of NameBoard, behind all…
+@6.958s F=medium;Comp=depth spans 5. 10m to 7. 22m across 6 layers…;Cam=camera at (0. 50, 13. 35, 1. 02) on a 50…;Lay=6 visible instances… V=I2:50/88/100/24,I3:50/24/100/47,I4:77/42/15/6,I5:36/29/72/39,I6:41/70/82/32 D=I1:v/3/67/6/50/o:upright body proxy…/m:stationary across this interval/r:left of NameBoard, behind all…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+fire in the purification zone with footsteps of a shift change far off
+
+non_diegetic_music:
+N/A

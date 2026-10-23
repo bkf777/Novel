@@ -1,0 +1,967 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep11_shot04/preview_video.mp4",
+    "duration": 8.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 192,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "B-4_CHAR_MarketQueuer_04",
+      "source_type": "MESH",
+      "root_name": "B-4_CHAR_MarketQueuer_04",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=B-4_CHAR_MarketQueuer_04; type=MESH; root=B-4_CHAR_MarketQueuer_04; dimensions=4.100,0.850,1.730",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O002",
+      "source_name": "B-4_CHAR_MarketTrader_03",
+      "source_type": "MESH",
+      "root_name": "B-4_CHAR_MarketTrader_03",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=B-4_CHAR_MarketTrader_03; type=MESH; root=B-4_CHAR_MarketTrader_03; dimensions=0.500,0.350,1.720",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O006",
+      "source_name": "B-4_EXT_MarketStreetBackdrop.004",
+      "source_type": "MESH",
+      "root_name": "B-4_EXT_MarketStreetBackdrop.004",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=B-4_EXT_MarketStreetBackdrop.004; type=MESH; root=B-4_EXT_MarketStreetBackdrop.004; dimensions=20.246,0.844,3.374",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O007",
+      "source_name": "B-4_EXT_MarketStreetGround",
+      "source_type": "MESH",
+      "root_name": "B-4_EXT_MarketStreetGround",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=B-4_EXT_MarketStreetGround; type=MESH; root=B-4_EXT_MarketStreetGround; dimensions=48.000,28.000,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O008",
+      "source_name": "B-4_LGT_MarketLedBoard_01",
+      "source_type": "MESH",
+      "root_name": "B-4_LGT_MarketLedBoard_01",
+      "first_visible_seconds": 2.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=B-4_LGT_MarketLedBoard_01; type=MESH; root=B-4_LGT_MarketLedBoard_01; dimensions=1.618,0.081,0.859",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O009",
+      "source_name": "B-4_PROP_MarketStalls_02",
+      "source_type": "MESH",
+      "root_name": "B-4_PROP_MarketStalls_02",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=B-4_PROP_MarketStalls_02; type=MESH; root=B-4_PROP_MarketStalls_02; dimensions=2.800,1.244,0.624",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR MarketQueuer",
+      "entity_class": "articulated",
+      "importance": "context",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "market queue member blockout in two columns",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 CHAR MarketTrader",
+      "entity_class": "articulated",
+      "importance": "context",
+      "source_instance_ids": [
+        "O002"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "market stall trader blockout",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 03 ENV B-4",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O006",
+        "O007"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-4 built environment shell enclosing the set: MarketStreetBackdrop, MarketStreetGround",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 04 PROP MarketLedBoard",
+      "entity_class": "rigid",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O008"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-4 set pieces and fittings: MarketLedBoard",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 05 PROP B-4",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O009"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-4 set pieces and fittings: MarketStalls",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_4401",
+      "source_instance_ids": [
+        "O008",
+        "O009"
+      ],
+      "start_seconds": 0.0,
+      "end_seconds": 1.0,
+      "relation": "the led board lights up and the stall fronts below it light up one row after another in the depth",
+      "forbidden_change": "do not build the market as a full scene and do not stop the scroll with the first entry unreadable"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 8.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 04 PROP MarketLedBoard",
+        "world_path": "camera travels from (-2.80, 2.52, -2.60) to (-2.80, 2.52, -2.60) on a 50mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 中景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "the led board of the market street lights up and the first trading entry scrolls onto it with the Chinese item lines moving upward line by line; the stall fronts below the board light up one row after another in the depth, and street figures gather in front of the trading entry",
+      "layout_and_occlusion": "5 visible instances. Dominant MarketStreetBackdrop covers 100x37 percent at frame 50/49. Left to right: MarketStalls, MarketStreetBackdrop, MarketStreetGround, MarketQueuer, MarketTrader.",
+      "lighting_spatial_logic": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep11_shot04/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.38m to 12.39m across 5 layers; nearest is MarketStalls, furthest is MarketStreetBackdrop"
+      },
+      "camera_relation": "camera at (-2.80, 2.52, -2.60) on a 50.0mm lens, frame 1 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR MarketQueuer",
+          "visibility": "visible",
+          "center_x_percent": 78.05,
+          "center_y_percent": 28.2,
+          "bbox_width_percent": 43.89,
+          "bbox_height_percent": 50.0,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketStreetBackdrop, left of MarketTrader, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR MarketTrader",
+          "visibility": "visible",
+          "center_x_percent": 87.83,
+          "center_y_percent": 19.43,
+          "bbox_width_percent": 24.35,
+          "bbox_height_percent": 38.86,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketQueuer, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 ENV B-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 49.26,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 37.12,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketStalls, left of MarketQueuer, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 97.94,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.29,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketStalls, left of MarketQueuer, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP MarketLedBoard",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 05 PROP B-4",
+          "visibility": "visible",
+          "center_x_percent": 20.14,
+          "center_y_percent": 18.45,
+          "bbox_width_percent": 40.28,
+          "bbox_height_percent": 36.89,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of MarketStreetBackdrop, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant MarketStreetBackdrop covers 100x37 percent at frame 50/49. Left to right: MarketStalls, MarketStreetBackdrop, MarketStreetGround, MarketQueuer, MarketTrader."
+    },
+    {
+      "time_seconds": 0.995,
+      "source_frame": "D14_shots/ep11_shot04/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.38m to 12.39m across 5 layers; nearest is MarketStalls, furthest is MarketStreetBackdrop"
+      },
+      "camera_relation": "camera at (-2.80, 2.52, -2.60) on a 50.0mm lens, frame 25 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR MarketQueuer",
+          "visibility": "visible",
+          "center_x_percent": 78.05,
+          "center_y_percent": 28.2,
+          "bbox_width_percent": 43.89,
+          "bbox_height_percent": 50.0,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketStreetBackdrop, left of MarketTrader, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR MarketTrader",
+          "visibility": "visible",
+          "center_x_percent": 87.83,
+          "center_y_percent": 19.43,
+          "bbox_width_percent": 24.35,
+          "bbox_height_percent": 38.86,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketQueuer, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 ENV B-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 49.26,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 37.12,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketStalls, left of MarketQueuer, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 97.94,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.29,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketStalls, left of MarketQueuer, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP MarketLedBoard",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 05 PROP B-4",
+          "visibility": "visible",
+          "center_x_percent": 20.14,
+          "center_y_percent": 18.45,
+          "bbox_width_percent": 40.28,
+          "bbox_height_percent": 36.89,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of MarketStreetBackdrop, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant MarketStreetBackdrop covers 100x37 percent at frame 50/49. Left to right: MarketStalls, MarketStreetBackdrop, MarketStreetGround, MarketQueuer, MarketTrader."
+    },
+    {
+      "time_seconds": 1.99,
+      "source_frame": "D14_shots/ep11_shot04/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.38m to 12.39m across 6 layers; nearest is MarketStalls, furthest is MarketStreetBackdrop"
+      },
+      "camera_relation": "camera at (-2.80, 2.52, -2.60) on a 50.0mm lens, frame 49 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR MarketQueuer",
+          "visibility": "visible",
+          "center_x_percent": 78.05,
+          "center_y_percent": 28.2,
+          "bbox_width_percent": 43.89,
+          "bbox_height_percent": 50.0,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketStreetBackdrop, left of MarketTrader, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR MarketTrader",
+          "visibility": "visible",
+          "center_x_percent": 87.83,
+          "center_y_percent": 19.43,
+          "bbox_width_percent": 24.35,
+          "bbox_height_percent": 38.86,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketQueuer, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 ENV B-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 49.26,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 37.12,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 97.94,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.29,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP MarketLedBoard",
+          "visibility": "visible",
+          "center_x_percent": 42.28,
+          "center_y_percent": 4.82,
+          "bbox_width_percent": 62.45,
+          "bbox_height_percent": 9.63,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketStalls, left of MarketStreetBackdrop, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 05 PROP B-4",
+          "visibility": "visible",
+          "center_x_percent": 20.14,
+          "center_y_percent": 18.45,
+          "bbox_width_percent": 40.28,
+          "bbox_height_percent": 36.89,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of MarketLedBoard, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant MarketStreetBackdrop covers 100x37 percent at frame 50/49. Left to right: MarketStalls, MarketLedBoard, MarketStreetBackdrop, MarketStreetGround, MarketQueuer."
+    },
+    {
+      "time_seconds": 2.984,
+      "source_frame": "D14_shots/ep11_shot04/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.38m to 12.39m across 6 layers; nearest is MarketStalls, furthest is MarketStreetBackdrop"
+      },
+      "camera_relation": "camera at (-2.80, 2.52, -2.60) on a 50.0mm lens, frame 73 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR MarketQueuer",
+          "visibility": "visible",
+          "center_x_percent": 78.05,
+          "center_y_percent": 28.2,
+          "bbox_width_percent": 43.89,
+          "bbox_height_percent": 50.0,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketStreetBackdrop, left of MarketTrader, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR MarketTrader",
+          "visibility": "visible",
+          "center_x_percent": 87.83,
+          "center_y_percent": 19.43,
+          "bbox_width_percent": 24.35,
+          "bbox_height_percent": 38.86,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketQueuer, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 ENV B-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 49.26,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 37.12,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 97.94,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.29,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP MarketLedBoard",
+          "visibility": "visible",
+          "center_x_percent": 43.63,
+          "center_y_percent": 15.01,
+          "bbox_width_percent": 87.26,
+          "bbox_height_percent": 20.33,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketStalls, left of MarketStreetBackdrop, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 05 PROP B-4",
+          "visibility": "visible",
+          "center_x_percent": 20.14,
+          "center_y_percent": 18.45,
+          "bbox_width_percent": 40.28,
+          "bbox_height_percent": 36.89,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of MarketLedBoard, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant MarketStreetBackdrop covers 100x37 percent at frame 50/49. Left to right: MarketStalls, MarketLedBoard, MarketStreetBackdrop, MarketStreetGround, MarketQueuer."
+    },
+    {
+      "time_seconds": 3.979,
+      "source_frame": "D14_shots/ep11_shot04/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.38m to 12.39m across 6 layers; nearest is MarketStalls, furthest is MarketStreetBackdrop"
+      },
+      "camera_relation": "camera at (-2.80, 2.52, -2.60) on a 50.0mm lens, frame 96 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR MarketQueuer",
+          "visibility": "visible",
+          "center_x_percent": 78.05,
+          "center_y_percent": 28.2,
+          "bbox_width_percent": 43.89,
+          "bbox_height_percent": 50.0,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketStreetBackdrop, left of MarketTrader, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR MarketTrader",
+          "visibility": "visible",
+          "center_x_percent": 87.83,
+          "center_y_percent": 19.43,
+          "bbox_width_percent": 24.35,
+          "bbox_height_percent": 38.86,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketQueuer, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 ENV B-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 49.26,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 37.12,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 97.94,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.29,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP MarketLedBoard",
+          "visibility": "visible",
+          "center_x_percent": 47.88,
+          "center_y_percent": 22.31,
+          "bbox_width_percent": 95.75,
+          "bbox_height_percent": 24.73,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketStalls, left of MarketStreetBackdrop, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 05 PROP B-4",
+          "visibility": "visible",
+          "center_x_percent": 20.14,
+          "center_y_percent": 18.45,
+          "bbox_width_percent": 40.28,
+          "bbox_height_percent": 36.89,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of MarketLedBoard, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant MarketStreetBackdrop covers 100x37 percent at frame 50/49. Left to right: MarketStalls, MarketLedBoard, MarketStreetBackdrop, MarketStreetGround, MarketQueuer."
+    },
+    {
+      "time_seconds": 4.974,
+      "source_frame": "D14_shots/ep11_shot04/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.38m to 12.39m across 6 layers; nearest is MarketStalls, furthest is MarketStreetBackdrop"
+      },
+      "camera_relation": "camera at (-2.80, 2.52, -2.60) on a 50.0mm lens, frame 120 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR MarketQueuer",
+          "visibility": "visible",
+          "center_x_percent": 78.05,
+          "center_y_percent": 28.2,
+          "bbox_width_percent": 43.89,
+          "bbox_height_percent": 50.0,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketStreetBackdrop, left of MarketTrader, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR MarketTrader",
+          "visibility": "visible",
+          "center_x_percent": 87.83,
+          "center_y_percent": 19.43,
+          "bbox_width_percent": 24.35,
+          "bbox_height_percent": 38.86,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketQueuer, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 ENV B-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 49.26,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 37.12,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 97.94,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.29,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP MarketLedBoard",
+          "visibility": "visible",
+          "center_x_percent": 47.88,
+          "center_y_percent": 22.31,
+          "bbox_width_percent": 95.75,
+          "bbox_height_percent": 24.73,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketStalls, left of MarketStreetBackdrop, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 05 PROP B-4",
+          "visibility": "visible",
+          "center_x_percent": 20.14,
+          "center_y_percent": 18.45,
+          "bbox_width_percent": 40.28,
+          "bbox_height_percent": 36.89,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of MarketLedBoard, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant MarketStreetBackdrop covers 100x37 percent at frame 50/49. Left to right: MarketStalls, MarketLedBoard, MarketStreetBackdrop, MarketStreetGround, MarketQueuer."
+    },
+    {
+      "time_seconds": 5.969,
+      "source_frame": "D14_shots/ep11_shot04/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.38m to 12.39m across 6 layers; nearest is MarketStalls, furthest is MarketStreetBackdrop"
+      },
+      "camera_relation": "camera at (-2.80, 2.52, -2.60) on a 50.0mm lens, frame 144 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR MarketQueuer",
+          "visibility": "visible",
+          "center_x_percent": 78.05,
+          "center_y_percent": 28.2,
+          "bbox_width_percent": 43.89,
+          "bbox_height_percent": 50.0,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketStreetBackdrop, left of MarketTrader, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR MarketTrader",
+          "visibility": "visible",
+          "center_x_percent": 87.83,
+          "center_y_percent": 19.43,
+          "bbox_width_percent": 24.35,
+          "bbox_height_percent": 38.86,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketQueuer, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 ENV B-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 49.26,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 37.12,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 97.94,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.29,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP MarketLedBoard",
+          "visibility": "visible",
+          "center_x_percent": 47.88,
+          "center_y_percent": 22.31,
+          "bbox_width_percent": 95.75,
+          "bbox_height_percent": 24.73,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketStalls, left of MarketStreetBackdrop, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 05 PROP B-4",
+          "visibility": "visible",
+          "center_x_percent": 20.14,
+          "center_y_percent": 18.45,
+          "bbox_width_percent": 40.28,
+          "bbox_height_percent": 36.89,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of MarketLedBoard, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant MarketStreetBackdrop covers 100x37 percent at frame 50/49. Left to right: MarketStalls, MarketLedBoard, MarketStreetBackdrop, MarketStreetGround, MarketQueuer."
+    },
+    {
+      "time_seconds": 6.964,
+      "source_frame": "D14_shots/ep11_shot04/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.38m to 12.39m across 6 layers; nearest is MarketStalls, furthest is MarketStreetBackdrop"
+      },
+      "camera_relation": "camera at (-2.80, 2.52, -2.60) on a 50.0mm lens, frame 168 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR MarketQueuer",
+          "visibility": "visible",
+          "center_x_percent": 78.05,
+          "center_y_percent": 28.2,
+          "bbox_width_percent": 43.89,
+          "bbox_height_percent": 50.0,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketStreetBackdrop, left of MarketTrader, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR MarketTrader",
+          "visibility": "visible",
+          "center_x_percent": 87.83,
+          "center_y_percent": 19.43,
+          "bbox_width_percent": 24.35,
+          "bbox_height_percent": 38.86,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketQueuer, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 ENV B-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 49.26,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 37.12,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 97.94,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.29,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP MarketLedBoard",
+          "visibility": "visible",
+          "center_x_percent": 47.88,
+          "center_y_percent": 22.31,
+          "bbox_width_percent": 95.75,
+          "bbox_height_percent": 24.73,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketStalls, left of MarketStreetBackdrop, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 05 PROP B-4",
+          "visibility": "visible",
+          "center_x_percent": 20.14,
+          "center_y_percent": 18.45,
+          "bbox_width_percent": 40.28,
+          "bbox_height_percent": 36.89,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of MarketLedBoard, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant MarketStreetBackdrop covers 100x37 percent at frame 50/49. Left to right: MarketStalls, MarketLedBoard, MarketStreetBackdrop, MarketStreetGround, MarketQueuer."
+    },
+    {
+      "time_seconds": 7.958,
+      "source_frame": "D14_shots/ep11_shot04/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.38m to 12.39m across 6 layers; nearest is MarketStalls, furthest is MarketStreetBackdrop"
+      },
+      "camera_relation": "camera at (-2.80, 2.52, -2.60) on a 50.0mm lens, frame 192 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR MarketQueuer",
+          "visibility": "visible",
+          "center_x_percent": 78.05,
+          "center_y_percent": 28.2,
+          "bbox_width_percent": 43.89,
+          "bbox_height_percent": 50.0,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketStreetBackdrop, left of MarketTrader, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR MarketTrader",
+          "visibility": "visible",
+          "center_x_percent": 87.83,
+          "center_y_percent": 19.43,
+          "bbox_width_percent": 24.35,
+          "bbox_height_percent": 38.86,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketQueuer, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 ENV B-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 49.26,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 37.12,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 97.94,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.29,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketLedBoard, left of MarketQueuer, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP MarketLedBoard",
+          "visibility": "visible",
+          "center_x_percent": 47.88,
+          "center_y_percent": 22.31,
+          "bbox_width_percent": 95.75,
+          "bbox_height_percent": 24.73,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MarketStalls, left of MarketStreetBackdrop, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 05 PROP B-4",
+          "visibility": "visible",
+          "center_x_percent": 20.14,
+          "center_y_percent": 18.45,
+          "bbox_width_percent": 40.28,
+          "bbox_height_percent": 36.89,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of MarketLedBoard, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant MarketStreetBackdrop covers 100x37 percent at frame 50/49. Left to right: MarketStalls, MarketLedBoard, MarketStreetBackdrop, MarketStreetGround, MarketQueuer."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

@@ -1,0 +1,730 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep01_shot04/preview_video.mp4",
+    "duration": 7.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 168,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "A-1_CHAR_Luchen_01",
+      "source_type": "MESH",
+      "root_name": "A-1_CHAR_Luchen_01",
+      "first_visible_seconds": 4.958,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=A-1_CHAR_Luchen_01; type=MESH; root=A-1_CHAR_Luchen_01; dimensions=0.420,0.320,1.730",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O002",
+      "source_name": "A-1_EXT_Corridor",
+      "source_type": "MESH",
+      "root_name": "A-1_EXT_Corridor",
+      "first_visible_seconds": 3.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=A-1_EXT_Corridor; type=MESH; root=A-1_EXT_Corridor; dimensions=0.107,0.245,0.107",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O012",
+      "source_name": "A-1_LGT_CorridorSensorLight_02",
+      "source_type": "MESH",
+      "root_name": "A-1_LGT_CorridorSensorLight",
+      "first_visible_seconds": 5.958,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=A-1_LGT_CorridorSensorLight_02; type=MESH; root=A-1_LGT_CorridorSensorLight; dimensions=0.160,0.100,0.200",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O013",
+      "source_name": "A-1_LGT_CorridorSensorLight_03",
+      "source_type": "MESH",
+      "root_name": "A-1_LGT_CorridorSensorLight",
+      "first_visible_seconds": 3.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=A-1_LGT_CorridorSensorLight_03; type=MESH; root=A-1_LGT_CorridorSensorLight; dimensions=0.160,0.100,0.200",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O022",
+      "source_name": "A-1_PROP_StairwellWindow_01",
+      "source_type": "MESH",
+      "root_name": "A-1_PROP_StairwellWindow_01",
+      "first_visible_seconds": 3.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=A-1_PROP_StairwellWindow_01; type=MESH; root=A-1_PROP_StairwellWindow_01; dimensions=0.051,1.022,0.282",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR Luchen",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "male protagonist blockout",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "locomotion",
+        "action": "travels 1.44m across the set during the shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV A-1",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O002"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-1 built environment shell enclosing the set: Corridor",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 03 PROP A-1",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O012",
+        "O013",
+        "O022"
+      ],
+      "instance_count": 3,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-1 set pieces and fittings: CorridorSensorLight, StairwellWindow",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    }
+  ],
+  "interaction_contracts": [],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 7.0,
+      "camera_contract": {
+        "motion_type": "tracking",
+        "tracked_target_entity": "Entity 01 CHAR Luchen",
+        "world_path": "camera travels from (-2.31, -0.85, 4.15) to (-2.31, -4.85, 4.15) on a 24mm lens, total path length 4.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "counterclockwise",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "全景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not swap the follow move for an orbit or a frontal push; keep the 全景 framing and the 跟 move exactly as blocked out"
+      },
+      "actions": "room door leaf swings open, protagonist rushes out into the corridor, corridor lamps light one by one, figure climbs the stairs and recedes to the landing",
+      "layout_and_occlusion": "no instance visible in this anchor",
+      "lighting_spatial_logic": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep01_shot04/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "full",
+        "frame_balance_and_depth": "single depth layer visible"
+      },
+      "camera_relation": "camera at (-2.31, -0.85, 4.15) on a 24.0mm lens, frame 1 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O022",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "no instance visible in this anchor"
+    },
+    {
+      "time_seconds": 0.994,
+      "source_frame": "D14_shots/ep01_shot04/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "full",
+        "frame_balance_and_depth": "single depth layer visible"
+      },
+      "camera_relation": "camera at (-2.31, -1.07, 4.15) on a 24.0mm lens, frame 25 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O022",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "no instance visible in this anchor"
+    },
+    {
+      "time_seconds": 1.988,
+      "source_frame": "D14_shots/ep01_shot04/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "full",
+        "frame_balance_and_depth": "single depth layer visible"
+      },
+      "camera_relation": "camera at (-2.31, -1.65, 4.15) on a 24.0mm lens, frame 49 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O022",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "no instance visible in this anchor"
+    },
+    {
+      "time_seconds": 2.982,
+      "source_frame": "D14_shots/ep01_shot04/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "full",
+        "frame_balance_and_depth": "depth spans 4.45m to 5.81m across 3 layers; nearest is Corridor, furthest is CorridorSensorLight"
+      },
+      "camera_relation": "camera at (-2.31, -2.44, 4.15) on a 24.0mm lens, frame 73 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 1.75,
+          "center_y_percent": 92.74,
+          "bbox_width_percent": 3.5,
+          "bbox_height_percent": 4.15,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of StairwellWindow, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 4.11,
+          "center_y_percent": 71.59,
+          "bbox_width_percent": 3.76,
+          "bbox_height_percent": 2.96,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StairwellWindow, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O022",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 2.65,
+          "center_y_percent": 78.14,
+          "bbox_width_percent": 5.3,
+          "bbox_height_percent": 7.85,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Corridor, left of CorridorSensorLight, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant StairwellWindow covers 5x8 percent at frame 3/78. Left to right: Corridor, StairwellWindow, CorridorSensorLight."
+    },
+    {
+      "time_seconds": 3.976,
+      "source_frame": "D14_shots/ep01_shot04/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "full",
+        "frame_balance_and_depth": "depth spans 4.24m to 5.64m across 3 layers; nearest is Corridor, furthest is CorridorSensorLight"
+      },
+      "camera_relation": "camera at (-2.31, -3.26, 4.15) on a 24.0mm lens, frame 96 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 9.67,
+          "center_y_percent": 94.59,
+          "bbox_width_percent": 7.91,
+          "bbox_height_percent": 4.26,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of StairwellWindow, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 18.99,
+          "center_y_percent": 71.96,
+          "bbox_width_percent": 3.5,
+          "bbox_height_percent": 3.11,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StairwellWindow, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O022",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 10.23,
+          "center_y_percent": 78.22,
+          "bbox_width_percent": 20.45,
+          "bbox_height_percent": 7.2,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Corridor, left of CorridorSensorLight, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant StairwellWindow covers 20x7 percent at frame 10/78. Left to right: Corridor, StairwellWindow, CorridorSensorLight."
+    },
+    {
+      "time_seconds": 4.97,
+      "source_frame": "D14_shots/ep01_shot04/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "full",
+        "frame_balance_and_depth": "depth spans 3.18m to 5.47m across 4 layers; nearest is Luchen, furthest is CorridorSensorLight"
+      },
+      "camera_relation": "camera at (-2.31, -4.05, 4.15) on a 24.0mm lens, frame 120 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 3.68,
+          "center_y_percent": 98.31,
+          "bbox_width_percent": 7.36,
+          "bbox_height_percent": 3.38,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "drifting frame right in this interval",
+          "spatial_relations": "left of Corridor, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 16.03,
+          "center_y_percent": 95.9,
+          "bbox_width_percent": 7.9,
+          "bbox_height_percent": 4.13,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, left of StairwellWindow, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 30.63,
+          "center_y_percent": 72.42,
+          "bbox_width_percent": 3.22,
+          "bbox_height_percent": 3.24,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StairwellWindow, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O022",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 21.01,
+          "center_y_percent": 78.33,
+          "bbox_width_percent": 22.8,
+          "bbox_height_percent": 6.36,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Corridor, left of CorridorSensorLight, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant StairwellWindow covers 23x6 percent at frame 21/78. Left to right: Luchen, Corridor, StairwellWindow, CorridorSensorLight."
+    },
+    {
+      "time_seconds": 5.964,
+      "source_frame": "D14_shots/ep01_shot04/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "full",
+        "frame_balance_and_depth": "depth spans 3.61m to 5.36m across 5 layers; nearest is Luchen, furthest is CorridorSensorLight"
+      },
+      "camera_relation": "camera at (-2.31, -4.62, 4.15) on a 24.0mm lens, frame 144 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 17.69,
+          "center_y_percent": 95.58,
+          "bbox_width_percent": 26.54,
+          "bbox_height_percent": 8.85,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "drifting frame right in this interval",
+          "spatial_relations": "right of CorridorSensorLight, left of Corridor, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 19.39,
+          "center_y_percent": 96.13,
+          "bbox_width_percent": 7.63,
+          "bbox_height_percent": 3.83,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, left of StairwellWindow, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 0.57,
+          "center_y_percent": 75.24,
+          "bbox_width_percent": 1.14,
+          "bbox_height_percent": 3.74,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 37.96,
+          "center_y_percent": 72.69,
+          "bbox_width_percent": 2.96,
+          "bbox_height_percent": 3.3,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StairwellWindow, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O022",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 28.47,
+          "center_y_percent": 78.28,
+          "bbox_width_percent": 23.01,
+          "bbox_height_percent": 5.57,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Corridor, left of CorridorSensorLight, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant Luchen covers 27x9 percent at frame 18/96. Left to right: CorridorSensorLight, Luchen, Corridor, StairwellWindow, CorridorSensorLight."
+    },
+    {
+      "time_seconds": 6.958,
+      "source_frame": "D14_shots/ep01_shot04/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "full",
+        "frame_balance_and_depth": "depth spans 3.96m to 5.34m across 5 layers; nearest is Luchen, furthest is StairwellWindow"
+      },
+      "camera_relation": "camera at (-2.31, -4.85, 4.15) on a 24.0mm lens, frame 168 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 39.64,
+          "center_y_percent": 93.74,
+          "bbox_width_percent": 23.68,
+          "bbox_height_percent": 12.52,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StairwellWindow, left of CorridorSensorLight, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 20.54,
+          "center_y_percent": 96.0,
+          "bbox_width_percent": 7.48,
+          "bbox_height_percent": 3.67,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CorridorSensorLight, left of StairwellWindow, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 2.53,
+          "center_y_percent": 74.81,
+          "bbox_width_percent": 3.12,
+          "bbox_height_percent": 3.66,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Corridor, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 40.6,
+          "center_y_percent": 72.75,
+          "bbox_width_percent": 2.85,
+          "bbox_height_percent": 3.31,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O022",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 31.2,
+          "center_y_percent": 78.21,
+          "bbox_width_percent": 23.01,
+          "bbox_height_percent": 5.23,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Corridor, left of Luchen, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant Luchen covers 24x13 percent at frame 40/94. Left to right: CorridorSensorLight, Corridor, StairwellWindow, Luchen, CorridorSensorLight."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

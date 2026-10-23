@@ -1,0 +1,2839 @@
+{
+  "ep": 4,
+  "global_shot_no": 15,
+  "shot_id": 3,
+  "scene_code": "A-5",
+  "duration_sec": 12,
+  "package_path": "D14_shots/ep04_shot03/package.json",
+  "preflight": {
+    "schema_version": 4,
+    "source": {
+      "path": "D14_shots/ep04_shot03/preview_video.mp4",
+      "duration": 12.0,
+      "fps": 24.0,
+      "width": 1080,
+      "height": 1920,
+      "aspect_ratio": 0.5625,
+      "frames": 288,
+      "has_audio": false
+    },
+    "manifest_path": "D14_shots/ep04_shot03/manifest.json",
+    "timeline_plan": {
+      "source": {
+        "path": "D14_shots/ep04_shot03/preview_video.mp4",
+        "duration": 12.0,
+        "fps": 24.0,
+        "width": 1080,
+        "height": 1920,
+        "aspect_ratio": 0.5625,
+        "frames": 288,
+        "has_audio": false
+      },
+      "h3_fps": 24,
+      "num_frames": 294,
+      "generation_duration": 12.25,
+      "duration_delta": 0.25,
+      "retime_percent": 2.083333333333326,
+      "prepare_setpts_factor": 1.0208333333333333,
+      "conform_setpts_factor": 0.979591836734694,
+      "requires_disclosure": true,
+      "strict_single_pass_recommended": true
+    },
+    "source_cut_candidates": [],
+    "structure_evidence_available": true,
+    "blender_structure_evidence": {
+      "camera_samples": [
+        {
+          "frame": 1,
+          "lens_mm": 50.0,
+          "location": [
+            3.6,
+            4.8,
+            1.58
+          ],
+          "rotation_quaternion_wxyz": [
+            0.30719,
+            0.29248,
+            0.62446,
+            0.65586
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 37,
+          "lens_mm": 50.0,
+          "location": [
+            3.6,
+            4.8,
+            1.58
+          ],
+          "rotation_quaternion_wxyz": [
+            0.30719,
+            0.29248,
+            0.62446,
+            0.65586
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 73,
+          "lens_mm": 50.0,
+          "location": [
+            3.6,
+            4.8,
+            1.58
+          ],
+          "rotation_quaternion_wxyz": [
+            0.30719,
+            0.29248,
+            0.62446,
+            0.65586
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 109,
+          "lens_mm": 50.0,
+          "location": [
+            3.6,
+            4.8,
+            1.58
+          ],
+          "rotation_quaternion_wxyz": [
+            0.30719,
+            0.29248,
+            0.62446,
+            0.65586
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 144,
+          "lens_mm": 50.0,
+          "location": [
+            3.6,
+            4.8,
+            1.58
+          ],
+          "rotation_quaternion_wxyz": [
+            0.30719,
+            0.29248,
+            0.62446,
+            0.65586
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 180,
+          "lens_mm": 50.0,
+          "location": [
+            3.6,
+            4.8,
+            1.58
+          ],
+          "rotation_quaternion_wxyz": [
+            0.30719,
+            0.29248,
+            0.62446,
+            0.65586
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 216,
+          "lens_mm": 50.0,
+          "location": [
+            3.6,
+            4.8,
+            1.58
+          ],
+          "rotation_quaternion_wxyz": [
+            0.30719,
+            0.29248,
+            0.62446,
+            0.65586
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 252,
+          "lens_mm": 50.0,
+          "location": [
+            3.6,
+            4.8,
+            1.58
+          ],
+          "rotation_quaternion_wxyz": [
+            0.30719,
+            0.29248,
+            0.62446,
+            0.65586
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 288,
+          "lens_mm": 50.0,
+          "location": [
+            3.6,
+            4.8,
+            1.58
+          ],
+          "rotation_quaternion_wxyz": [
+            0.30719,
+            0.29248,
+            0.62446,
+            0.65586
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "A-5_EXT_BattleGround_01",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "A-5_EXT_BattleGround_01",
+          "samples": [
+            {
+              "depth": 10.60776,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 77.09,
+                "height": 45.82,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                20.0,
+                20.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                -0.2
+              ]
+            },
+            {
+              "depth": 10.60776,
+              "frame": 37,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 77.09,
+                "height": 45.82,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                20.0,
+                20.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                -0.2
+              ]
+            },
+            {
+              "depth": 10.60776,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 77.09,
+                "height": 45.82,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                20.0,
+                20.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                -0.2
+              ]
+            },
+            {
+              "depth": 10.60776,
+              "frame": 109,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 77.09,
+                "height": 45.82,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                20.0,
+                20.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                -0.2
+              ]
+            },
+            {
+              "depth": 10.60776,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 77.09,
+                "height": 45.82,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                20.0,
+                20.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                -0.2
+              ]
+            },
+            {
+              "depth": 10.60776,
+              "frame": 180,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 77.09,
+                "height": 45.82,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                20.0,
+                20.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                -0.2
+              ]
+            },
+            {
+              "depth": 10.60776,
+              "frame": 216,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 77.09,
+                "height": 45.82,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                20.0,
+                20.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                -0.2
+              ]
+            },
+            {
+              "depth": 10.60776,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 77.09,
+                "height": 45.82,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                20.0,
+                20.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                -0.2
+              ]
+            },
+            {
+              "depth": 10.60776,
+              "frame": 288,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 77.09,
+                "height": 45.82,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                20.0,
+                20.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                -0.2
+              ]
+            }
+          ],
+          "source_id": "O001"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "A-5_EXT_FactoryEastWall_01",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "A-5_EXT_FactoryEastWall_01",
+          "samples": [
+            {
+              "depth": null,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.2,
+                18.0,
+                12.0
+              ],
+              "world_location": [
+                12.0,
+                15.0,
+                6.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 37,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.2,
+                18.0,
+                12.0
+              ],
+              "world_location": [
+                12.0,
+                15.0,
+                6.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.2,
+                18.0,
+                12.0
+              ],
+              "world_location": [
+                12.0,
+                15.0,
+                6.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 109,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.2,
+                18.0,
+                12.0
+              ],
+              "world_location": [
+                12.0,
+                15.0,
+                6.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.2,
+                18.0,
+                12.0
+              ],
+              "world_location": [
+                12.0,
+                15.0,
+                6.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 180,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.2,
+                18.0,
+                12.0
+              ],
+              "world_location": [
+                12.0,
+                15.0,
+                6.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 216,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.2,
+                18.0,
+                12.0
+              ],
+              "world_location": [
+                12.0,
+                15.0,
+                6.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.2,
+                18.0,
+                12.0
+              ],
+              "world_location": [
+                12.0,
+                15.0,
+                6.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 288,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.2,
+                18.0,
+                12.0
+              ],
+              "world_location": [
+                12.0,
+                15.0,
+                6.0
+              ]
+            }
+          ],
+          "source_id": "O002"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "A-5_FX_AshDust_03",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "A-5_FX_AshDust_03",
+          "samples": [
+            {
+              "depth": 4.58247,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 5.74,
+                "center_y": 77.39,
+                "height": 31.44,
+                "width": 11.49
+              },
+              "world_dimensions": [
+                0.61829,
+                0.76659,
+                0.8085
+              ],
+              "world_location": [
+                0.6,
+                0.975,
+                0.12
+              ]
+            },
+            {
+              "depth": 4.50568,
+              "frame": 37,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 7.86,
+                "center_y": 71.05,
+                "height": 39.71,
+                "width": 15.71
+              },
+              "world_dimensions": [
+                0.8004,
+                0.99239,
+                1.04664
+              ],
+              "world_location": [
+                0.6,
+                0.975,
+                0.264
+              ]
+            },
+            {
+              "depth": 4.42889,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 10.04,
+                "center_y": 64.24,
+                "height": 48.42,
+                "width": 20.07
+              },
+              "world_dimensions": [
+                0.98252,
+                1.21818,
+                1.28478
+              ],
+              "world_location": [
+                0.6,
+                0.975,
+                0.408
+              ]
+            },
+            {
+              "depth": 4.36962,
+              "frame": 109,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 11.78,
+                "center_y": 57.59,
+                "height": 58.23,
+                "width": 23.57
+              },
+              "world_dimensions": [
+                1.12416,
+                1.3938,
+                1.47
+              ],
+              "world_location": [
+                0.6,
+                0.975,
+                0.51059
+              ]
+            },
+            {
+              "depth": 4.37164,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 11.79,
+                "center_y": 59.22,
+                "height": 58.16,
+                "width": 23.58
+              },
+              "world_dimensions": [
+                1.12416,
+                1.3938,
+                1.47
+              ],
+              "world_location": [
+                0.6,
+                0.975,
+                0.46941
+              ]
+            },
+            {
+              "depth": 4.37372,
+              "frame": 180,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 11.8,
+                "center_y": 60.9,
+                "height": 58.09,
+                "width": 23.59
+              },
+              "world_dimensions": [
+                1.12416,
+                1.3938,
+                1.47
+              ],
+              "world_location": [
+                0.6,
+                0.975,
+                0.42706
+              ]
+            },
+            {
+              "depth": 4.37579,
+              "frame": 216,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 11.8,
+                "center_y": 62.57,
+                "height": 58.02,
+                "width": 23.61
+              },
+              "world_dimensions": [
+                1.12416,
+                1.3938,
+                1.47
+              ],
+              "world_location": [
+                0.6,
+                0.975,
+                0.38471
+              ]
+            },
+            {
+              "depth": 4.37787,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 11.81,
+                "center_y": 64.24,
+                "height": 57.95,
+                "width": 23.62
+              },
+              "world_dimensions": [
+                1.12416,
+                1.3938,
+                1.47
+              ],
+              "world_location": [
+                0.6,
+                0.975,
+                0.34235
+              ]
+            },
+            {
+              "depth": 4.37995,
+              "frame": 288,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 11.82,
+                "center_y": 65.91,
+                "height": 57.89,
+                "width": 23.63
+              },
+              "world_dimensions": [
+                1.12416,
+                1.3938,
+                1.47
+              ],
+              "world_location": [
+                0.6,
+                0.975,
+                0.3
+              ]
+            }
+          ],
+          "source_id": "O003"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "A-5_FX_MistCore_01",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "A-5_FX_MistCore_01",
+          "samples": [
+            {
+              "depth": 4.93424,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 59.61,
+                "center_y": 56.72,
+                "height": 1.72,
+                "width": 3.8
+              },
+              "world_dimensions": [
+                0.054,
+                0.054,
+                0.054
+              ],
+              "world_location": [
+                -0.3,
+                1.8,
+                1.1
+              ]
+            },
+            {
+              "depth": 4.89159,
+              "frame": 37,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 58.07,
+                "center_y": 54.46,
+                "height": 2.29,
+                "width": 5.14
+              },
+              "world_dimensions": [
+                0.07242,
+                0.07242,
+                0.07242
+              ],
+              "world_location": [
+                -0.24977,
+                1.8,
+                1.18372
+              ]
+            },
+            {
+              "depth": 4.84894,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 56.5,
+                "center_y": 52.16,
+                "height": 2.83,
+                "width": 6.51
+              },
+              "world_dimensions": [
+                0.09084,
+                0.09084,
+                0.09084
+              ],
+              "world_location": [
+                -0.19953,
+                1.8,
+                1.26744
+              ]
+            },
+            {
+              "depth": 4.80629,
+              "frame": 109,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 54.91,
+                "center_y": 49.83,
+                "height": 3.37,
+                "width": 7.9
+              },
+              "world_dimensions": [
+                0.10926,
+                0.10926,
+                0.10926
+              ],
+              "world_location": [
+                -0.1493,
+                1.8,
+                1.35116
+              ]
+            },
+            {
+              "depth": 4.77304,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 53.62,
+                "center_y": 48.33,
+                "height": 3.44,
+                "width": 8.19
+              },
+              "world_dimensions": [
+                0.11256,
+                0.11256,
+                0.11256
+              ],
+              "world_location": [
+                -0.10937,
+                1.8,
+                1.40443
+              ]
+            },
+            {
+              "depth": 4.7515,
+              "frame": 180,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 52.73,
+                "center_y": 48.01,
+                "height": 2.86,
+                "width": 6.83
+              },
+              "world_dimensions": [
+                0.09342,
+                0.09342,
+                0.09342
+              ],
+              "world_location": [
+                -0.08203,
+                1.8,
+                1.41582
+              ]
+            },
+            {
+              "depth": 4.72996,
+              "frame": 216,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 51.83,
+                "center_y": 47.69,
+                "height": 2.28,
+                "width": 5.46
+              },
+              "world_dimensions": [
+                0.07428,
+                0.07428,
+                0.07428
+              ],
+              "world_location": [
+                -0.05468,
+                1.8,
+                1.42722
+              ]
+            },
+            {
+              "depth": 4.70843,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.92,
+                "center_y": 47.37,
+                "height": 1.69,
+                "width": 4.07
+              },
+              "world_dimensions": [
+                0.05514,
+                0.05514,
+                0.05514
+              ],
+              "world_location": [
+                -0.02734,
+                1.8,
+                1.43861
+              ]
+            },
+            {
+              "depth": 4.68689,
+              "frame": 288,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 47.04,
+                "height": 1.11,
+                "width": 2.67
+              },
+              "world_dimensions": [
+                0.036,
+                0.036,
+                0.036
+              ],
+              "world_location": [
+                0.0,
+                1.8,
+                1.45
+              ]
+            }
+          ],
+          "source_id": "O004"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "A-5_LGT_GreyFramePanel_01",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "A-5_LGT_GreyFramePanel_01",
+          "samples": [
+            {
+              "depth": 3.2497,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -47.49
+              ],
+              "screen_bbox_percent": {
+                "center_x": 49.74,
+                "center_y": 45.72,
+                "height": 91.44,
+                "width": 99.48
+              },
+              "world_dimensions": [
+                1.6,
+                0.02,
+                2.2
+              ],
+              "world_location": [
+                1.2,
+                2.6,
+                1.55
+              ]
+            },
+            {
+              "depth": 3.2497,
+              "frame": 37,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -47.49
+              ],
+              "screen_bbox_percent": {
+                "center_x": 49.74,
+                "center_y": 45.72,
+                "height": 91.44,
+                "width": 99.48
+              },
+              "world_dimensions": [
+                1.6,
+                0.02,
+                2.2
+              ],
+              "world_location": [
+                1.2,
+                2.6,
+                1.55
+              ]
+            },
+            {
+              "depth": 3.2497,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -47.49
+              ],
+              "screen_bbox_percent": {
+                "center_x": 49.74,
+                "center_y": 45.72,
+                "height": 91.44,
+                "width": 99.48
+              },
+              "world_dimensions": [
+                1.6,
+                0.02,
+                2.2
+              ],
+              "world_location": [
+                1.2,
+                2.6,
+                1.55
+              ]
+            },
+            {
+              "depth": 3.2497,
+              "frame": 109,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -47.49
+              ],
+              "screen_bbox_percent": {
+                "center_x": 49.74,
+                "center_y": 45.72,
+                "height": 91.44,
+                "width": 99.48
+              },
+              "world_dimensions": [
+                1.6,
+                0.02,
+                2.2
+              ],
+              "world_location": [
+                1.2,
+                2.6,
+                1.55
+              ]
+            },
+            {
+              "depth": 3.2497,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -47.49
+              ],
+              "screen_bbox_percent": {
+                "center_x": 49.74,
+                "center_y": 45.72,
+                "height": 91.44,
+                "width": 99.48
+              },
+              "world_dimensions": [
+                1.6,
+                0.02,
+                2.2
+              ],
+              "world_location": [
+                1.2,
+                2.6,
+                1.55
+              ]
+            },
+            {
+              "depth": 3.2497,
+              "frame": 180,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -47.49
+              ],
+              "screen_bbox_percent": {
+                "center_x": 49.74,
+                "center_y": 45.72,
+                "height": 91.44,
+                "width": 99.48
+              },
+              "world_dimensions": [
+                1.6,
+                0.02,
+                2.2
+              ],
+              "world_location": [
+                1.2,
+                2.6,
+                1.55
+              ]
+            },
+            {
+              "depth": 3.2497,
+              "frame": 216,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -47.49
+              ],
+              "screen_bbox_percent": {
+                "center_x": 49.74,
+                "center_y": 45.72,
+                "height": 91.44,
+                "width": 99.48
+              },
+              "world_dimensions": [
+                1.6,
+                0.02,
+                2.2
+              ],
+              "world_location": [
+                1.2,
+                2.6,
+                1.55
+              ]
+            },
+            {
+              "depth": 3.2497,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -47.49
+              ],
+              "screen_bbox_percent": {
+                "center_x": 49.74,
+                "center_y": 45.72,
+                "height": 91.44,
+                "width": 99.48
+              },
+              "world_dimensions": [
+                1.6,
+                0.02,
+                2.2
+              ],
+              "world_location": [
+                1.2,
+                2.6,
+                1.55
+              ]
+            },
+            {
+              "depth": 3.2497,
+              "frame": 288,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -47.49
+              ],
+              "screen_bbox_percent": {
+                "center_x": 49.74,
+                "center_y": 45.72,
+                "height": 91.44,
+                "width": 99.48
+              },
+              "world_dimensions": [
+                1.6,
+                0.02,
+                2.2
+              ],
+              "world_location": [
+                1.2,
+                2.6,
+                1.55
+              ]
+            }
+          ],
+          "source_id": "O005"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "A-5_LGT_RoadsideLamp_07",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "A-5_LGT_RoadsideLamp_07",
+          "samples": [
+            {
+              "depth": null,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                12.4,
+                8.05
+              ],
+              "world_location": [
+                18.5,
+                2.0,
+                0.1
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 37,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                12.4,
+                8.05
+              ],
+              "world_location": [
+                18.5,
+                2.0,
+                0.1
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                12.4,
+                8.05
+              ],
+              "world_location": [
+                18.5,
+                2.0,
+                0.1
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 109,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                12.4,
+                8.05
+              ],
+              "world_location": [
+                18.5,
+                2.0,
+                0.1
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                12.4,
+                8.05
+              ],
+              "world_location": [
+                18.5,
+                2.0,
+                0.1
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 180,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                12.4,
+                8.05
+              ],
+              "world_location": [
+                18.5,
+                2.0,
+                0.1
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 216,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                12.4,
+                8.05
+              ],
+              "world_location": [
+                18.5,
+                2.0,
+                0.1
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                12.4,
+                8.05
+              ],
+              "world_location": [
+                18.5,
+                2.0,
+                0.1
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 288,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                12.4,
+                8.05
+              ],
+              "world_location": [
+                18.5,
+                2.0,
+                0.1
+              ]
+            }
+          ],
+          "source_id": "O006"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "A-5_PROP_GroundBreakHole_01",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "A-5_PROP_GroundBreakHole_01",
+          "samples": [
+            {
+              "depth": 5.91872,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 3.65,
+                "center_y": 85.42,
+                "height": 14.28,
+                "width": 7.3
+              },
+              "world_dimensions": [
+                0.5,
+                0.5,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                -0.2
+              ]
+            },
+            {
+              "depth": 5.91872,
+              "frame": 37,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 3.65,
+                "center_y": 85.42,
+                "height": 14.28,
+                "width": 7.3
+              },
+              "world_dimensions": [
+                0.5,
+                0.5,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                -0.2
+              ]
+            },
+            {
+              "depth": 5.91872,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 3.65,
+                "center_y": 85.42,
+                "height": 14.28,
+                "width": 7.3
+              },
+              "world_dimensions": [
+                0.5,
+                0.5,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                -0.2
+              ]
+            },
+            {
+              "depth": 5.91872,
+              "frame": 109,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 3.65,
+                "center_y": 85.42,
+                "height": 14.28,
+                "width": 7.3
+              },
+              "world_dimensions": [
+                0.5,
+                0.5,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                -0.2
+              ]
+            },
+            {
+              "depth": 5.91872,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 3.65,
+                "center_y": 85.42,
+                "height": 14.28,
+                "width": 7.3
+              },
+              "world_dimensions": [
+                0.5,
+                0.5,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                -0.2
+              ]
+            },
+            {
+              "depth": 5.91872,
+              "frame": 180,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 3.65,
+                "center_y": 85.42,
+                "height": 14.28,
+                "width": 7.3
+              },
+              "world_dimensions": [
+                0.5,
+                0.5,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                -0.2
+              ]
+            },
+            {
+              "depth": 5.91872,
+              "frame": 216,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 3.65,
+                "center_y": 85.42,
+                "height": 14.28,
+                "width": 7.3
+              },
+              "world_dimensions": [
+                0.5,
+                0.5,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                -0.2
+              ]
+            },
+            {
+              "depth": 5.91872,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 3.65,
+                "center_y": 85.42,
+                "height": 14.28,
+                "width": 7.3
+              },
+              "world_dimensions": [
+                0.5,
+                0.5,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                -0.2
+              ]
+            },
+            {
+              "depth": 5.91872,
+              "frame": 288,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 3.65,
+                "center_y": 85.42,
+                "height": 14.28,
+                "width": 7.3
+              },
+              "world_dimensions": [
+                0.5,
+                0.5,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                -0.2
+              ]
+            }
+          ],
+          "source_id": "O007"
+        }
+      ],
+      "sample_frames": [
+        1,
+        37,
+        73,
+        109,
+        144,
+        180,
+        216,
+        252,
+        288
+      ],
+      "schema_version": 1
+    },
+    "requires_m3_cut_review": false,
+    "rule": "Cut candidates are evidence only; M3 decides real shot boundaries after full-video review."
+  },
+  "render_contract": {
+    "schema_version": 4,
+    "source": {
+      "path": "D14_shots/ep04_shot03/preview_video.mp4",
+      "duration": 12.0,
+      "fps": 24.0,
+      "width": 1080,
+      "height": 1920,
+      "aspect_ratio": 0.5625,
+      "frames": 288,
+      "has_audio": false
+    },
+    "watched_full_source": true,
+    "shot_count": 1,
+    "source_inventory": [
+      {
+        "source_id": "O001",
+        "source_name": "A-5_EXT_BattleGround_01",
+        "source_type": "MESH",
+        "root_name": "A-5_EXT_BattleGround_01",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 11.958,
+        "identity_cues": "name=A-5_EXT_BattleGround_01; type=MESH; root=A-5_EXT_BattleGround_01; dimensions=20.000,20.000,0.400",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O003",
+        "source_name": "A-5_FX_AshDust_03",
+        "source_type": "MESH",
+        "root_name": "A-5_FX_AshDust_03",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 11.958,
+        "identity_cues": "name=A-5_FX_AshDust_03; type=MESH; root=A-5_FX_AshDust_03; dimensions=0.618,0.767,0.808",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O004",
+        "source_name": "A-5_FX_MistCore_01",
+        "source_type": "MESH",
+        "root_name": "A-5_FX_MistCore_01",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 11.958,
+        "identity_cues": "name=A-5_FX_MistCore_01; type=MESH; root=A-5_FX_MistCore_01; dimensions=0.054,0.054,0.054",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O005",
+        "source_name": "A-5_LGT_GreyFramePanel_01",
+        "source_type": "MESH",
+        "root_name": "A-5_LGT_GreyFramePanel_01",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 11.958,
+        "identity_cues": "name=A-5_LGT_GreyFramePanel_01; type=MESH; root=A-5_LGT_GreyFramePanel_01; dimensions=1.600,0.020,2.200",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O007",
+        "source_name": "A-5_PROP_GroundBreakHole_01",
+        "source_type": "MESH",
+        "root_name": "A-5_PROP_GroundBreakHole_01",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 11.958,
+        "identity_cues": "name=A-5_PROP_GroundBreakHole_01; type=MESH; root=A-5_PROP_GroundBreakHole_01; dimensions=0.500,0.500,0.400",
+        "evidence_origin": "blender_manifest"
+      }
+    ],
+    "entities": [
+      {
+        "label": "Entity 01 ENV A-5",
+        "entity_class": "environment",
+        "importance": "context",
+        "source_instance_ids": [
+          "O001",
+          "O007"
+        ],
+        "instance_count": 2,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "A-5 built environment shell enclosing the set: BattleGround, GroundBreakHole",
+        "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+        "motion_contract": {
+          "mode": "static",
+          "action": "holds its source position for the whole shot",
+          "continuity_requirement": "keep every instance and the column order exactly as in the source",
+          "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+        }
+      },
+      {
+        "label": "Entity 02 FX AshDust",
+        "entity_class": "effect",
+        "importance": "context",
+        "source_instance_ids": [
+          "O003"
+        ],
+        "instance_count": 1,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "grey ash dust cloud",
+        "structural_constraints": "keep the source volume and the attachment point; the effect never detaches from its source surface",
+        "motion_contract": {
+          "mode": "effect_evolution",
+          "action": "develops and drifts as the effect unfolds",
+          "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+          "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+        }
+      },
+      {
+        "label": "Entity 03 FX MistCore",
+        "entity_class": "effect",
+        "importance": "primary",
+        "source_instance_ids": [
+          "O004"
+        ],
+        "instance_count": 1,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "cold white mist core grain",
+        "structural_constraints": "keep the source volume and the attachment point; the effect never detaches from its source surface",
+        "motion_contract": {
+          "mode": "effect_evolution",
+          "action": "develops and drifts as the effect unfolds",
+          "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+          "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+        }
+      },
+      {
+        "label": "Entity 04 PROP A-5",
+        "entity_class": "rigid",
+        "importance": "context",
+        "source_instance_ids": [
+          "O005"
+        ],
+        "instance_count": 1,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "A-5 set pieces and fittings: GreyFramePanel",
+        "structural_constraints": "each member keeps its own source footprint, size and placement",
+        "motion_contract": {
+          "mode": "static",
+          "action": "holds its source position for the whole shot",
+          "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+          "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+        }
+      }
+    ],
+    "interaction_contracts": [
+      {
+        "interaction_id": "IX_1501",
+        "source_instance_ids": [
+          "O004"
+        ],
+        "start_seconds": 0.35,
+        "end_seconds": 1.0,
+        "relation": "mist core lifts from the ash and sinks into the open palm",
+        "forbidden_change": "do not leave the core floating or add extra cores"
+      }
+    ],
+    "shots": [
+      {
+        "shot_id": 1,
+        "start_seconds": 0.0,
+        "end_seconds": 12.0,
+        "camera_contract": {
+          "motion_type": "static",
+          "tracked_target_entity": "Entity 03 FX MistCore",
+          "world_path": "camera travels from (3.60, 4.80, 1.58) to (3.60, 4.80, 1.58) on a 50mm lens, total path length 0.00m inside the blocked set",
+          "target_distance_trend": "increase",
+          "azimuth_trend": "stable",
+          "elevation_trend": "stable",
+          "focal_length_trend": "stable",
+          "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+          "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 中景 framing and the 固定 move exactly as blocked out"
+        },
+        "actions": "insect body breaks into grey ash dust, the dust hangs and settles, one mist core lifts out of the ash and sinks into the open palm",
+        "layout_and_occlusion": "5 visible instances. Dominant GreyFramePanel covers 99x91 percent at frame 50/46. Left to right: GroundBreakHole, AshDust, GreyFramePanel, BattleGround, MistCore.",
+        "lighting_spatial_logic": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+      }
+    ],
+    "anchors": [
+      {
+        "time_seconds": 0.0,
+        "source_frame": "D14_shots/ep04_shot03/source_anchor_frames/anchor_01.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 3.25m to 10.61m across 5 layers; nearest is GreyFramePanel, furthest is BattleGround"
+        },
+        "camera_relation": "camera at (3.60, 4.80, 1.58) on a 50.0mm lens, frame 1 of 288",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 ENV A-5",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 77.09,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 45.82,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GreyFramePanel, left of MistCore, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O003",
+            "entity_label": "Entity 02 FX AshDust",
+            "visibility": "visible",
+            "center_x_percent": 5.74,
+            "center_y_percent": 77.39,
+            "bbox_width_percent": 11.49,
+            "bbox_height_percent": 31.44,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GroundBreakHole, left of GreyFramePanel, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O004",
+            "entity_label": "Entity 03 FX MistCore",
+            "visibility": "visible",
+            "center_x_percent": 59.61,
+            "center_y_percent": 56.72,
+            "bbox_width_percent": 3.8,
+            "bbox_height_percent": 1.72,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of BattleGround, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O005",
+            "entity_label": "Entity 04 PROP A-5",
+            "visibility": "visible",
+            "center_x_percent": 49.74,
+            "center_y_percent": 45.72,
+            "bbox_width_percent": 99.48,
+            "bbox_height_percent": 91.44,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of AshDust, left of BattleGround, behind all nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 01 ENV A-5",
+            "visibility": "visible",
+            "center_x_percent": 3.65,
+            "center_y_percent": 85.42,
+            "bbox_width_percent": 7.3,
+            "bbox_height_percent": 14.28,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of AshDust, in front of nearer elements, lower frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "5 visible instances. Dominant GreyFramePanel covers 99x91 percent at frame 50/46. Left to right: GroundBreakHole, AshDust, GreyFramePanel, BattleGround, MistCore."
+      },
+      {
+        "time_seconds": 1.495,
+        "source_frame": "D14_shots/ep04_shot03/source_anchor_frames/anchor_02.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 3.25m to 10.61m across 5 layers; nearest is GreyFramePanel, furthest is BattleGround"
+        },
+        "camera_relation": "camera at (3.60, 4.80, 1.58) on a 50.0mm lens, frame 37 of 288",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 ENV A-5",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 77.09,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 45.82,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GreyFramePanel, left of MistCore, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O003",
+            "entity_label": "Entity 02 FX AshDust",
+            "visibility": "visible",
+            "center_x_percent": 7.86,
+            "center_y_percent": 71.05,
+            "bbox_width_percent": 15.71,
+            "bbox_height_percent": 39.71,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GroundBreakHole, left of GreyFramePanel, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O004",
+            "entity_label": "Entity 03 FX MistCore",
+            "visibility": "visible",
+            "center_x_percent": 58.07,
+            "center_y_percent": 54.46,
+            "bbox_width_percent": 5.14,
+            "bbox_height_percent": 2.29,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of BattleGround, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O005",
+            "entity_label": "Entity 04 PROP A-5",
+            "visibility": "visible",
+            "center_x_percent": 49.74,
+            "center_y_percent": 45.72,
+            "bbox_width_percent": 99.48,
+            "bbox_height_percent": 91.44,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of AshDust, left of BattleGround, behind all nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 01 ENV A-5",
+            "visibility": "visible",
+            "center_x_percent": 3.65,
+            "center_y_percent": 85.42,
+            "bbox_width_percent": 7.3,
+            "bbox_height_percent": 14.28,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of AshDust, in front of nearer elements, lower frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "5 visible instances. Dominant GreyFramePanel covers 99x91 percent at frame 50/46. Left to right: GroundBreakHole, AshDust, GreyFramePanel, BattleGround, MistCore."
+      },
+      {
+        "time_seconds": 2.99,
+        "source_frame": "D14_shots/ep04_shot03/source_anchor_frames/anchor_03.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 3.25m to 10.61m across 5 layers; nearest is GreyFramePanel, furthest is BattleGround"
+        },
+        "camera_relation": "camera at (3.60, 4.80, 1.58) on a 50.0mm lens, frame 73 of 288",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 ENV A-5",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 77.09,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 45.82,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GreyFramePanel, left of MistCore, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O003",
+            "entity_label": "Entity 02 FX AshDust",
+            "visibility": "visible",
+            "center_x_percent": 10.04,
+            "center_y_percent": 64.24,
+            "bbox_width_percent": 20.07,
+            "bbox_height_percent": 48.42,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GroundBreakHole, left of GreyFramePanel, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O004",
+            "entity_label": "Entity 03 FX MistCore",
+            "visibility": "visible",
+            "center_x_percent": 56.5,
+            "center_y_percent": 52.16,
+            "bbox_width_percent": 6.51,
+            "bbox_height_percent": 2.83,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of BattleGround, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O005",
+            "entity_label": "Entity 04 PROP A-5",
+            "visibility": "visible",
+            "center_x_percent": 49.74,
+            "center_y_percent": 45.72,
+            "bbox_width_percent": 99.48,
+            "bbox_height_percent": 91.44,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of AshDust, left of BattleGround, behind all nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 01 ENV A-5",
+            "visibility": "visible",
+            "center_x_percent": 3.65,
+            "center_y_percent": 85.42,
+            "bbox_width_percent": 7.3,
+            "bbox_height_percent": 14.28,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of AshDust, in front of nearer elements, lower frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "5 visible instances. Dominant GreyFramePanel covers 99x91 percent at frame 50/46. Left to right: GroundBreakHole, AshDust, GreyFramePanel, BattleGround, MistCore."
+      },
+      {
+        "time_seconds": 4.484,
+        "source_frame": "D14_shots/ep04_shot03/source_anchor_frames/anchor_04.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 3.25m to 10.61m across 5 layers; nearest is GreyFramePanel, furthest is BattleGround"
+        },
+        "camera_relation": "camera at (3.60, 4.80, 1.58) on a 50.0mm lens, frame 109 of 288",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 ENV A-5",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 77.09,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 45.82,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GreyFramePanel, left of MistCore, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O003",
+            "entity_label": "Entity 02 FX AshDust",
+            "visibility": "visible",
+            "center_x_percent": 11.78,
+            "center_y_percent": 57.59,
+            "bbox_width_percent": 23.57,
+            "bbox_height_percent": 58.23,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GroundBreakHole, left of GreyFramePanel, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O004",
+            "entity_label": "Entity 03 FX MistCore",
+            "visibility": "visible",
+            "center_x_percent": 54.91,
+            "center_y_percent": 49.83,
+            "bbox_width_percent": 7.9,
+            "bbox_height_percent": 3.37,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of BattleGround, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O005",
+            "entity_label": "Entity 04 PROP A-5",
+            "visibility": "visible",
+            "center_x_percent": 49.74,
+            "center_y_percent": 45.72,
+            "bbox_width_percent": 99.48,
+            "bbox_height_percent": 91.44,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of AshDust, left of BattleGround, behind all nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 01 ENV A-5",
+            "visibility": "visible",
+            "center_x_percent": 3.65,
+            "center_y_percent": 85.42,
+            "bbox_width_percent": 7.3,
+            "bbox_height_percent": 14.28,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of AshDust, in front of nearer elements, lower frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "5 visible instances. Dominant GreyFramePanel covers 99x91 percent at frame 50/46. Left to right: GroundBreakHole, AshDust, GreyFramePanel, BattleGround, MistCore."
+      },
+      {
+        "time_seconds": 5.979,
+        "source_frame": "D14_shots/ep04_shot03/source_anchor_frames/anchor_05.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 3.25m to 10.61m across 5 layers; nearest is GreyFramePanel, furthest is BattleGround"
+        },
+        "camera_relation": "camera at (3.60, 4.80, 1.58) on a 50.0mm lens, frame 144 of 288",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 ENV A-5",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 77.09,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 45.82,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GreyFramePanel, left of MistCore, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O003",
+            "entity_label": "Entity 02 FX AshDust",
+            "visibility": "visible",
+            "center_x_percent": 11.79,
+            "center_y_percent": 59.22,
+            "bbox_width_percent": 23.58,
+            "bbox_height_percent": 58.16,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GroundBreakHole, left of GreyFramePanel, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O004",
+            "entity_label": "Entity 03 FX MistCore",
+            "visibility": "visible",
+            "center_x_percent": 53.62,
+            "center_y_percent": 48.33,
+            "bbox_width_percent": 8.19,
+            "bbox_height_percent": 3.44,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of BattleGround, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O005",
+            "entity_label": "Entity 04 PROP A-5",
+            "visibility": "visible",
+            "center_x_percent": 49.74,
+            "center_y_percent": 45.72,
+            "bbox_width_percent": 99.48,
+            "bbox_height_percent": 91.44,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of AshDust, left of BattleGround, behind all nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 01 ENV A-5",
+            "visibility": "visible",
+            "center_x_percent": 3.65,
+            "center_y_percent": 85.42,
+            "bbox_width_percent": 7.3,
+            "bbox_height_percent": 14.28,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of AshDust, in front of nearer elements, lower frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "5 visible instances. Dominant GreyFramePanel covers 99x91 percent at frame 50/46. Left to right: GroundBreakHole, AshDust, GreyFramePanel, BattleGround, MistCore."
+      },
+      {
+        "time_seconds": 7.474,
+        "source_frame": "D14_shots/ep04_shot03/source_anchor_frames/anchor_06.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 3.25m to 10.61m across 5 layers; nearest is GreyFramePanel, furthest is BattleGround"
+        },
+        "camera_relation": "camera at (3.60, 4.80, 1.58) on a 50.0mm lens, frame 180 of 288",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 ENV A-5",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 77.09,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 45.82,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GreyFramePanel, left of MistCore, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O003",
+            "entity_label": "Entity 02 FX AshDust",
+            "visibility": "visible",
+            "center_x_percent": 11.8,
+            "center_y_percent": 60.9,
+            "bbox_width_percent": 23.59,
+            "bbox_height_percent": 58.09,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GroundBreakHole, left of GreyFramePanel, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O004",
+            "entity_label": "Entity 03 FX MistCore",
+            "visibility": "visible",
+            "center_x_percent": 52.73,
+            "center_y_percent": 48.01,
+            "bbox_width_percent": 6.83,
+            "bbox_height_percent": 2.86,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of BattleGround, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O005",
+            "entity_label": "Entity 04 PROP A-5",
+            "visibility": "visible",
+            "center_x_percent": 49.74,
+            "center_y_percent": 45.72,
+            "bbox_width_percent": 99.48,
+            "bbox_height_percent": 91.44,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of AshDust, left of BattleGround, behind all nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 01 ENV A-5",
+            "visibility": "visible",
+            "center_x_percent": 3.65,
+            "center_y_percent": 85.42,
+            "bbox_width_percent": 7.3,
+            "bbox_height_percent": 14.28,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of AshDust, in front of nearer elements, lower frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "5 visible instances. Dominant GreyFramePanel covers 99x91 percent at frame 50/46. Left to right: GroundBreakHole, AshDust, GreyFramePanel, BattleGround, MistCore."
+      },
+      {
+        "time_seconds": 8.969,
+        "source_frame": "D14_shots/ep04_shot03/source_anchor_frames/anchor_07.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 3.25m to 10.61m across 5 layers; nearest is GreyFramePanel, furthest is BattleGround"
+        },
+        "camera_relation": "camera at (3.60, 4.80, 1.58) on a 50.0mm lens, frame 216 of 288",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 ENV A-5",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 77.09,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 45.82,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GreyFramePanel, left of MistCore, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O003",
+            "entity_label": "Entity 02 FX AshDust",
+            "visibility": "visible",
+            "center_x_percent": 11.8,
+            "center_y_percent": 62.57,
+            "bbox_width_percent": 23.61,
+            "bbox_height_percent": 58.02,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GroundBreakHole, left of GreyFramePanel, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O004",
+            "entity_label": "Entity 03 FX MistCore",
+            "visibility": "visible",
+            "center_x_percent": 51.83,
+            "center_y_percent": 47.69,
+            "bbox_width_percent": 5.46,
+            "bbox_height_percent": 2.28,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of BattleGround, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O005",
+            "entity_label": "Entity 04 PROP A-5",
+            "visibility": "visible",
+            "center_x_percent": 49.74,
+            "center_y_percent": 45.72,
+            "bbox_width_percent": 99.48,
+            "bbox_height_percent": 91.44,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of AshDust, left of BattleGround, behind all nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 01 ENV A-5",
+            "visibility": "visible",
+            "center_x_percent": 3.65,
+            "center_y_percent": 85.42,
+            "bbox_width_percent": 7.3,
+            "bbox_height_percent": 14.28,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of AshDust, in front of nearer elements, lower frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "5 visible instances. Dominant GreyFramePanel covers 99x91 percent at frame 50/46. Left to right: GroundBreakHole, AshDust, GreyFramePanel, BattleGround, MistCore."
+      },
+      {
+        "time_seconds": 10.464,
+        "source_frame": "D14_shots/ep04_shot03/source_anchor_frames/anchor_08.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 3.25m to 10.61m across 5 layers; nearest is GreyFramePanel, furthest is BattleGround"
+        },
+        "camera_relation": "camera at (3.60, 4.80, 1.58) on a 50.0mm lens, frame 252 of 288",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 ENV A-5",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 77.09,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 45.82,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GreyFramePanel, left of MistCore, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O003",
+            "entity_label": "Entity 02 FX AshDust",
+            "visibility": "visible",
+            "center_x_percent": 11.81,
+            "center_y_percent": 64.24,
+            "bbox_width_percent": 23.62,
+            "bbox_height_percent": 57.95,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GroundBreakHole, left of GreyFramePanel, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O004",
+            "entity_label": "Entity 03 FX MistCore",
+            "visibility": "visible",
+            "center_x_percent": 50.92,
+            "center_y_percent": 47.37,
+            "bbox_width_percent": 4.07,
+            "bbox_height_percent": 1.69,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of BattleGround, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O005",
+            "entity_label": "Entity 04 PROP A-5",
+            "visibility": "visible",
+            "center_x_percent": 49.74,
+            "center_y_percent": 45.72,
+            "bbox_width_percent": 99.48,
+            "bbox_height_percent": 91.44,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of AshDust, left of BattleGround, behind all nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 01 ENV A-5",
+            "visibility": "visible",
+            "center_x_percent": 3.65,
+            "center_y_percent": 85.42,
+            "bbox_width_percent": 7.3,
+            "bbox_height_percent": 14.28,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of AshDust, in front of nearer elements, lower frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "5 visible instances. Dominant GreyFramePanel covers 99x91 percent at frame 50/46. Left to right: GroundBreakHole, AshDust, GreyFramePanel, BattleGround, MistCore."
+      },
+      {
+        "time_seconds": 11.958,
+        "source_frame": "D14_shots/ep04_shot03/source_anchor_frames/anchor_09.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 3.25m to 10.61m across 5 layers; nearest is GreyFramePanel, furthest is BattleGround"
+        },
+        "camera_relation": "camera at (3.60, 4.80, 1.58) on a 50.0mm lens, frame 288 of 288",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 ENV A-5",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 77.09,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 45.82,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GreyFramePanel, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O003",
+            "entity_label": "Entity 02 FX AshDust",
+            "visibility": "visible",
+            "center_x_percent": 11.82,
+            "center_y_percent": 65.91,
+            "bbox_width_percent": 23.63,
+            "bbox_height_percent": 57.89,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GroundBreakHole, left of GreyFramePanel, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O004",
+            "entity_label": "Entity 03 FX MistCore",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 47.04,
+            "bbox_width_percent": 2.67,
+            "bbox_height_percent": 1.11,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GreyFramePanel, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O005",
+            "entity_label": "Entity 04 PROP A-5",
+            "visibility": "visible",
+            "center_x_percent": 49.74,
+            "center_y_percent": 45.72,
+            "bbox_width_percent": 99.48,
+            "bbox_height_percent": 91.44,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of AshDust, left of BattleGround, behind all nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 01 ENV A-5",
+            "visibility": "visible",
+            "center_x_percent": 3.65,
+            "center_y_percent": 85.42,
+            "bbox_width_percent": 7.3,
+            "bbox_height_percent": 14.28,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of AshDust, in front of nearer elements, lower frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "5 visible instances. Dominant GreyFramePanel covers 99x91 percent at frame 50/46. Left to right: GroundBreakHole, AshDust, GreyFramePanel, BattleGround, MistCore."
+      }
+    ],
+    "m3_cut_review": {
+      "candidate_times": [],
+      "confirmed_real_cuts": [],
+      "reasoning": "No source cut candidate requires review."
+    }
+  },
+  "appearance": {
+    "schema_version": 6,
+    "watched_references": true,
+    "style_source_summary": "World style is taken from the shared unit style contract: cold industrial post-collapse realism for humans and props with a separated stylisation layer for bone pattern, twin flame, grey fog and altered bodies. No external appearance reference image was supplied for this unit, so no reference route is registered and every entity is styled from the world style alone.",
+    "reference_routes": [],
+    "global_style_bible": {
+      "world_and_era": "post-collapse industrial city ruins; concrete yards, sheet metal fences, disused military machine shops and a walled disposal line; human survivors and ceramic-pale altered beings share the same night; no readable signage and no modern branding",
+      "visual_language": "grounded industrial realism for humans and props with a separated stylisation layer for bone pattern, twin flame, grey fog and altered bodies; stylised elements never bleed into the human layer and no graphic injury detail anywhere",
+      "palette": "grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D with detail kept in the darks, plaster white #C6C2B8 for ceramic shells, pure-fire white #F5F7F8 and black #0B0B0C for the twin colour bone pattern, ember orange #E07B39 as the only warm accent",
+      "material_language": "real skin with pores and slight oil sheen, matte technical fabric with wear and dust, oxidised steel with dull reflections, cold ceramic shells on altered bodies; no wet gore surface and no red liquid in the whole frame",
+      "environment_design": "cement yard plates cut by fissures and pit openings, riveted steel frames, sheet metal fence runs with gate gaps, overhead pipe racks, stairwells and a single cold ceiling tube as the only interior light",
+      "prop_design": "functional utilitarian tooling with real weight and thickness: crowbars, ration crates, steel racks, cable reels, console terminals, rolled roller doors, restraint cuffs and an unlit shadow blade; all carry visible use marks",
+      "lighting_and_atmosphere": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+    },
+    "entity_appearances": {
+      "Entity 01 ENV A-5": {
+        "semantic_target": "A-5 built environment shell enclosing the set: BattleGround, GroundBreakHole",
+        "final_materials_and_detail": "worn cement, oxidised steel and sheet metal with cold grey reflections, shadow detail kept readable in the dark areas",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      },
+      "Entity 02 FX AshDust": {
+        "semantic_target": "grey ash dust cloud",
+        "final_materials_and_detail": "stylised energy surface in the two permitted flame colours, or grey-white ceramic shell for altered bodies, never wet gore",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      },
+      "Entity 03 FX MistCore": {
+        "semantic_target": "cold white mist core grain",
+        "final_materials_and_detail": "stylised energy surface in the two permitted flame colours, or grey-white ceramic shell for altered bodies, never wet gore",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      },
+      "Entity 04 PROP A-5": {
+        "semantic_target": "A-5 set pieces and fittings: GreyFramePanel",
+        "final_materials_and_detail": "utilitarian material with visible weight, thickness and use marks, cold grey metal and dull plastic, no gloss hero finish",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      }
+    },
+    "blockout_rejection": {
+      "all_visible_entities_must_be_finished": true,
+      "forbidden_final_look": "source construction proxy, default viewport material, incomplete proxy geometry, or any visibly unart-directed placeholder",
+      "ambiguous_proxy_fallback": "Choose a plausible finished World Style design inside the exact source bounds; never leave it semantically or materially generic."
+    },
+    "sound": "fine hiss of ash dispersing and one low resonance as the mist core sinks in"
+  },
+  "h3_prompt": {
+    "path": "D14_shots/ep04_shot03/h3_prompt.txt",
+    "char_count": 6143,
+    "within_budget": true,
+    "protected_content_valid": true,
+    "ready_to_submit": true
+  }
+}

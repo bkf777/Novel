@@ -1,0 +1,46 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O004>,I3=<O011>.
+<Entity 01 CHAR Suqingci>=E1[articulated/primary/static] members=I1;n=1;src=female scientist character blockout in white lab coat; final=female scientist character blockout in white lab coat; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal…; style=world_style_unit_contract.
+<Entity 02 ENV B-19>=E2[environment/context/static] members=I2;n=1;src=B-19 built environment shell enclosing the set…; final=B-19 built environment shell enclosing the set: FactoryInnerRoof; finish=worn cement, oxidised steel and sheet metal with cold grey reflections, shadow…; style=world_style_unit_contract.
+<Entity 03 FX PurifyFirePit>=E3[effect/context/static] members=I3;n=1;src=purification fire pit of the net fire; final=purification fire pit of the net fire; finish=stylised energy surface in the two permitted flame colours, or grey-white ceramic…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2;1:1;n=1.
+E3:I3;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D… | materials=real skin with pores and slight oil sheen, matte technical fabric… | environment=a brick street cut by wheel ruts in front of a single gate with… | props=functional utilitarian tooling with real weight and thickness… | light=one cold overhead key over the steel table with shadow detail….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_9401@0.000-1.000s I1: rel=the scientist stands at the name board and the…; ban=do not cover the bottom line and do not build a face.
+[Shot 1] @0.000-13.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=none;path=camera travels from (-6. 49, 16. 52, 1. 40) to (-6. 49, 16. 52, 1…;dist=stable;azi=stable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the frame centre band with head…;ban=do not add any camera move, zoom or handheld shake… | Act=the scientist works out one line of numbers in front of the name board and it is the limit of what the net fire can cover… | Layout=3 visible instances. Dominant FactoryInnerRoof covers 100x17 percent at frame 50/9… | Light=one cold overhead key over the steel table with shadow detail retained….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 2. 35m to 8. 10m across 3 layers…;Cam=camera at (-6. 49, 16. 52, 1. 40) on a 50…;Lay=3 visible instances… V=I2:50/9/100/17,I3:72/92/57/16 D=I1:v/95/75/10/49/o:upright body proxy, head end up/m:stationary across this interval/r:right of PurifyFirePit, in front of…
+@1.620s F=medium;Comp=depth spans 2. 35m to 8. 10m across 3 layers…;Cam=camera at (-6. 49, 16. 52, 1. 40) on a 50…;Lay=3 visible instances… V=I2:50/9/100/17,I3:72/92/57/16 D=I1:v/95/75/10/49/o:upright body proxy, head end up/m:stationary across this interval/r:right of PurifyFirePit, in front of…
+@3.240s F=medium;Comp=depth spans 2. 35m to 8. 10m across 3 layers…;Cam=camera at (-6. 49, 16. 52, 1. 40) on a 50…;Lay=3 visible instances… V=I2:50/9/100/17,I3:72/92/57/16 D=I1:v/95/75/10/49/o:upright body proxy, head end up/m:stationary across this interval/r:right of PurifyFirePit, in front of…
+@4.859s F=medium;Comp=depth spans 2. 35m to 8. 10m across 3 layers…;Cam=camera at (-6. 49, 16. 52, 1. 40) on a 50…;Lay=3 visible instances… V=I2:50/9/100/17,I3:72/92/57/16 D=I1:v/95/75/10/49/o:upright body proxy, head end up/m:stationary across this interval/r:right of PurifyFirePit, in front of…
+@6.479s F=medium;Comp=depth spans 2. 35m to 8. 10m across 3 layers…;Cam=camera at (-6. 49, 16. 52, 1. 40) on a 50…;Lay=3 visible instances… V=I2:50/9/100/17,I3:72/92/57/16 D=I1:v/95/75/10/49/o:upright body proxy, head end up/m:stationary across this interval/r:right of PurifyFirePit, in front of…
+@8.099s F=medium;Comp=depth spans 2. 35m to 8. 10m across 3 layers…;Cam=camera at (-6. 49, 16. 52, 1. 40) on a 50…;Lay=3 visible instances… V=I2:50/9/100/17,I3:72/92/57/16 D=I1:v/95/75/10/49/o:upright body proxy, head end up/m:stationary across this interval/r:right of PurifyFirePit, in front of…
+@9.719s F=medium;Comp=depth spans 2. 35m to 8. 10m across 3 layers…;Cam=camera at (-6. 49, 16. 52, 1. 40) on a 50…;Lay=3 visible instances… V=I2:50/9/100/17,I3:72/92/57/16 D=I1:v/95/75/10/49/o:upright body proxy, head end up/m:stationary across this interval/r:right of PurifyFirePit, in front of…
+@11.339s F=medium;Comp=depth spans 2. 35m to 8. 10m across 3 layers…;Cam=camera at (-6. 49, 16. 52, 1. 40) on a 50…;Lay=3 visible instances… V=I2:50/9/100/17,I3:72/92/57/16 D=I1:v/95/75/10/49/o:upright body proxy, head end up/m:stationary across this interval/r:right of PurifyFirePit, in front of…
+@12.958s F=medium;Comp=depth spans 2. 35m to 8. 10m across 3 layers…;Cam=camera at (-6. 49, 16. 52, 1. 40) on a 50…;Lay=3 visible instances… V=I2:50/9/100/17,I3:72/92/57/16 D=I1:v/95/75/10/49/o:upright body proxy, head end up/m:stationary across this interval/r:right of PurifyFirePit, in front of…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+a piece of chalk writing on a board with pages being turned over
+
+non_diegetic_music:
+N/A

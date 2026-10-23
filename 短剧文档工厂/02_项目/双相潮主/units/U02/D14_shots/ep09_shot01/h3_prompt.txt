@@ -1,0 +1,46 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O006>,I3=<O007>,I4=<O008>,I5=<O009>,I6=<O014>.
+<Entity 01 CHAR WelderWorker>=E1[articulated/primary/static] members=I1;n=1;src=worker blockout welding the barrier gate; final=worker blockout welding the barrier gate; finish=real skin with pores and fine hair, fabric with real drape and wear…; style=world_style_unit_contract.
+<Entity 02 ENV B-1>=E2[environment/context/static] members=I2-I4;n=3;src=B-1 built environment shell enclosing the set…; final=B-1 built environment shell enclosing the set…; finish=worn cement, oxidised steel and sheet metal with cold grey…; style=world_style_unit_contract.
+<Entity 03 PROP B-1>=E3[rigid/context/static] members=I5-I6;n=2;src=B-1 set pieces and fittings: MainRollerDoor…; final=B-1 set pieces and fittings: MainRollerDoor…; finish=utilitarian material with visible weight, thickness and use marks…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I4;1:1;n=3.
+E3:I5-I6;1:1;n=2.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink… | materials=real skin with pores and slight oil sheen, matte… | environment=cement yard plates cut by fire lines, riveted steel… | props=functional utilitarian tooling with real weight and… | light=one cold overhead key over the purification bench with….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_3301@0.000-1.000s I1,I6: rel=the welding torch stays against the door…; ban=do not move the seam off the door leaf and do….
+[Shot 1] @0.000-12.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=dolly;target=E3;path=camera travels from (5. 15, 6. 38, 0. 37) to (3. 48, 4. 06, 0…;dist=decrease;azi=clockwise;elev=decrease;lens=stable;comp=中远景 framing in 9:16 vertical, subject held in the frame centre…;ban=do not convert the linear camera move into an orbit or a… | Act=a welding torch arcs against the rusted roller door leaf and the weld seam grows from nothing into one… | Layout=6 visible instances. Dominant FactorySouthFacade covers 100x9 percent at frame 50/4… | Light=one cold overhead key over the purification bench with shadow….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium_full;Comp=depth spans 7. 87m to 27. 19m across 6 layers…;Cam=camera at (5. 15, 6. 38, 0. 37) on a 35…;Lay=6 visible instances… V=I2:50/4/100/9,I3:50/49/100/7,I4:88/32/25/20,I5:74/18/17/26,I6:64/35/8/17 D=I1:v/93/38/13/22/o:upright body proxy…/m:stationary across this interval/r:right of WestPlantShell…
+@1.495s F=medium_full;Comp=depth spans 7. 75m to 27. 06m across 6 layers…;Cam=camera at (5. 08, 6. 28, 0. 36) on a 35…;Lay=6 visible instances… V=I2:50/4/100/8,I3:50/49/100/7,I4:88/32/24/21,I5:75/18/18/26,I6:64/34/8/17 D=I1:v/94/37/13/23/o:upright body proxy…/m:stationary across this interval/r:right of WestPlantShell…
+@2.990s F=medium_full;Comp=depth spans 7. 42m to 26. 74m across 6 layers…;Cam=camera at (4. 89, 6. 01, 0. 34) on a 35…;Lay=6 visible instances… V=I2:50/3/100/7,I3:50/49/100/7,I4:88/31/24/21,I5:76/17/18/27,I6:64/34/9/18 D=I1:v/95/37/11/24/o:upright body proxy…/m:stationary across this interval/r:right of WestPlantShell…
+@4.484s F=medium_full;Comp=depth spans 6. 96m to 26. 28m across 6 layers…;Cam=camera at (4. 62, 5. 64, 0. 31) on a 35…;Lay=6 visible instances… V=I2:50/2/100/5,I3:50/49/100/8,I4:88/31/24/22,I5:77/15/19/29,I6:65/33/9/19 D=I1:v/96/36/8/25/o:upright body proxy…/m:stationary across this interval/r:right of WestPlantShell…
+@5.979s F=medium_full;Comp=depth spans 6. 45m to 25. 76m across 6 layers…;Cam=camera at (4. 32, 5. 22, 0. 28) on a 35…;Lay=6 visible instances… V=I2:50/1/100/2,I3:50/49/100/8,I4:88/30/23/22,I5:79/14/21/28,I6:67/31/10/21 D=I1:v/97/35/5/27/o:upright body proxy…/m:stationary across this interval/r:right of WestPlantShell…
+@7.474s F=medium_full;Comp=depth spans 5. 92m to 25. 23m across 5 layers…;Cam=camera at (4. 01, 4. 80, 0. 25) on a 35…;Lay=5 visible instances… V=I3:50/50/100/9,I4:89/30/23/23,I5:82/13/22/26,I6:68/30/11/23 O=I2 D=I1:v/99/33/1/30/o:upright body proxy…/m:stationary across this interval/r:right of WestPlantShell…
+@8.969s F=medium_full;Comp=depth spans 5. 47m to 24. 77m across 4 layers…;Cam=camera at (3. 74, 4. 42, 0. 22) on a 35…;Lay=4 visible instances… V=I3:50/50/100/10,I4:89/29/22/24,I5:84/12/24/24,I6:70/28/12/25 O=I2 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this…
+@10.464s F=medium_full;Comp=depth spans 5. 14m to 24. 45m across 4 layers…;Cam=camera at (3. 55, 4. 16, 0. 20) on a 35…;Lay=4 visible instances… V=I3:50/50/100/11,I4:89/29/22/24,I5:86/11/25/23,I6:71/26/12/27 O=I2 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this…
+@11.958s F=medium_full;Comp=depth spans 5. 02m to 24. 32m across 4 layers…;Cam=camera at (3. 48, 4. 06, 0. 19) on a 35…;Lay=4 visible instances… V=I3:50/50/100/11,I4:89/29/22/24,I5:86/11/26/22,I6:71/26/12/27 O=I2 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+welding arc hum with a spitting crackle and sparks ticking on the cement…
+
+non_diegetic_music:
+N/A

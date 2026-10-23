@@ -1,0 +1,4324 @@
+{
+  "ep": 16,
+  "global_shot_no": 63,
+  "shot_id": 3,
+  "scene_code": "B-10",
+  "duration_sec": 12,
+  "package_path": "D14_shots/ep16_shot03/package.json",
+  "preflight": {
+    "schema_version": 4,
+    "source": {
+      "path": "D14_shots/ep16_shot03/preview_video.mp4",
+      "duration": 12.0,
+      "fps": 24.0,
+      "width": 1080,
+      "height": 1920,
+      "aspect_ratio": 0.5625,
+      "frames": 288,
+      "has_audio": false
+    },
+    "manifest_path": "D14_shots/ep16_shot03/manifest.json",
+    "timeline_plan": {
+      "source": {
+        "path": "D14_shots/ep16_shot03/preview_video.mp4",
+        "duration": 12.0,
+        "fps": 24.0,
+        "width": 1080,
+        "height": 1920,
+        "aspect_ratio": 0.5625,
+        "frames": 288,
+        "has_audio": false
+      },
+      "h3_fps": 24,
+      "num_frames": 294,
+      "generation_duration": 12.25,
+      "duration_delta": 0.25,
+      "retime_percent": 2.083333333333326,
+      "prepare_setpts_factor": 1.0208333333333333,
+      "conform_setpts_factor": 0.979591836734694,
+      "requires_disclosure": true,
+      "strict_single_pass_recommended": true
+    },
+    "source_cut_candidates": [],
+    "structure_evidence_available": true,
+    "blender_structure_evidence": {
+      "camera_samples": [
+        {
+          "frame": 1,
+          "lens_mm": 35.0,
+          "location": [
+            -14.0,
+            -12.7209,
+            2.0945
+          ],
+          "rotation_quaternion_wxyz": [
+            0.0,
+            -0.0,
+            -0.65743,
+            -0.75352
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 37,
+          "lens_mm": 35.0,
+          "location": [
+            -14.0,
+            -12.63439,
+            2.0945
+          ],
+          "rotation_quaternion_wxyz": [
+            0.0,
+            -0.0,
+            -0.65819,
+            -0.75286
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 73,
+          "lens_mm": 35.0,
+          "location": [
+            -14.0,
+            -12.40644,
+            2.0945
+          ],
+          "rotation_quaternion_wxyz": [
+            0.0,
+            -0.0,
+            -0.66018,
+            -0.75111
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 109,
+          "lens_mm": 35.0,
+          "location": [
+            -14.0,
+            -12.08441,
+            2.0945
+          ],
+          "rotation_quaternion_wxyz": [
+            0.0,
+            -0.0,
+            -0.66299,
+            -0.74862
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 144,
+          "lens_mm": 35.0,
+          "location": [
+            -14.0,
+            -11.72613,
+            2.0945
+          ],
+          "rotation_quaternion_wxyz": [
+            0.0,
+            -0.0,
+            -0.66611,
+            -0.74585
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 180,
+          "lens_mm": 35.0,
+          "location": [
+            -14.0,
+            -11.35739,
+            2.0945
+          ],
+          "rotation_quaternion_wxyz": [
+            0.0,
+            -0.0,
+            -0.66931,
+            -0.74298
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 216,
+          "lens_mm": 35.0,
+          "location": [
+            -14.0,
+            -11.03536,
+            2.0945
+          ],
+          "rotation_quaternion_wxyz": [
+            0.0,
+            -0.0,
+            -0.67209,
+            -0.74047
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 252,
+          "lens_mm": 35.0,
+          "location": [
+            -14.0,
+            -10.80741,
+            2.0945
+          ],
+          "rotation_quaternion_wxyz": [
+            0.0,
+            -0.0,
+            -0.67405,
+            -0.73868
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 288,
+          "lens_mm": 35.0,
+          "location": [
+            -14.0,
+            -10.7209,
+            2.0945
+          ],
+          "rotation_quaternion_wxyz": [
+            0.0,
+            -0.0,
+            -0.6748,
+            -0.738
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-10_CHAR_Luchen_01",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-10_CHAR_Luchen_01",
+          "samples": [
+            {
+              "depth": null,
+              "frame": 1,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -15.4,
+                -11.6,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 37,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -15.37491,
+                -11.34913,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 73,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -15.34983,
+                -11.09826,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 109,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -15.32474,
+                -10.84739,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 144,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -15.30035,
+                -10.60349,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 180,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -15.27526,
+                -10.35261,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 216,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -15.25017,
+                -10.10174,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 252,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -15.22509,
+                -9.85087,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 288,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -15.2,
+                -9.6,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O001"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "B-10_CHAR_QueueMember_03",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-10_CHAR_QueueMember_03",
+          "samples": [
+            {
+              "depth": 2.00934,
+              "frame": 1,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -15.0,
+                -14.6,
+                0.0
+              ]
+            },
+            {
+              "depth": 2.09312,
+              "frame": 37,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -15.0,
+                -14.6,
+                0.0
+              ]
+            },
+            {
+              "depth": 2.31407,
+              "frame": 73,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -15.0,
+                -14.6,
+                0.0
+              ]
+            },
+            {
+              "depth": 2.62662,
+              "frame": 109,
+              "pose": "stand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 97.3,
+                "center_y": 75.49,
+                "height": 49.01,
+                "width": 5.41
+              },
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -15.0,
+                -14.6,
+                0.0
+              ]
+            },
+            {
+              "depth": 2.97487,
+              "frame": 144,
+              "pose": "stand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 94.87,
+                "center_y": 75.17,
+                "height": 49.66,
+                "width": 10.27
+              },
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -15.0,
+                -14.6,
+                0.0
+              ]
+            },
+            {
+              "depth": 3.33376,
+              "frame": 180,
+              "pose": "stand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 92.86,
+                "center_y": 75.0,
+                "height": 50.01,
+                "width": 14.28
+              },
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -15.0,
+                -14.6,
+                0.0
+              ]
+            },
+            {
+              "depth": 3.64753,
+              "frame": 216,
+              "pose": "stand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 91.41,
+                "center_y": 74.71,
+                "height": 49.68,
+                "width": 17.18
+              },
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -15.0,
+                -14.6,
+                0.0
+              ]
+            },
+            {
+              "depth": 3.8698,
+              "frame": 252,
+              "pose": "stand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 90.52,
+                "center_y": 73.21,
+                "height": 46.69,
+                "width": 18.96
+              },
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -15.0,
+                -14.6,
+                0.0
+              ]
+            },
+            {
+              "depth": 3.95419,
+              "frame": 288,
+              "pose": "stand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 90.2,
+                "center_y": 72.71,
+                "height": 45.65,
+                "width": 19.59
+              },
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -15.0,
+                -14.6,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O002"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-10_CHAR_Rescuee_02",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-10_CHAR_Rescuee_02",
+          "samples": [
+            {
+              "depth": null,
+              "frame": 1,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -16.3,
+                -11.2,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 37,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -16.27491,
+                -11.07456,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 73,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -16.24982,
+                -10.94913,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 109,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -16.22474,
+                -10.82369,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 144,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -16.20035,
+                -10.70174,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 180,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -16.17526,
+                -10.57631,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 216,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -16.15018,
+                -10.45087,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 252,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -16.12509,
+                -10.32544,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 288,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -50.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                -16.1,
+                -10.2,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O003"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-10_EXT_FactoryHallShell",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-10_EXT_FactoryHallShell",
+          "samples": [
+            {
+              "depth": null,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.5,
+                24.5,
+                12.3
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 37,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.5,
+                24.5,
+                12.3
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.5,
+                24.5,
+                12.3
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 109,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.5,
+                24.5,
+                12.3
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.5,
+                24.5,
+                12.3
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 180,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.5,
+                24.5,
+                12.3
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 216,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.5,
+                24.5,
+                12.3
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.5,
+                24.5,
+                12.3
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 288,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.5,
+                24.5,
+                12.3
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O004"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-10_EXT_FactorySouthFacade",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-10_EXT_FactorySouthFacade",
+          "samples": [
+            {
+              "depth": null,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 37,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 109,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 180,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 216,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 288,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O005"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "B-10_EXT_FactoryYardGround",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-10_EXT_FactoryYardGround",
+          "samples": [
+            {
+              "depth": 11.4657,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 55.05,
+                "height": 0.83,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                36.0,
+                48.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 11.55022,
+              "frame": 37,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 55.11,
+                "height": 0.83,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                36.0,
+                48.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 11.7729,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 55.28,
+                "height": 0.81,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                36.0,
+                48.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 12.08744,
+              "frame": 109,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 55.54,
+                "height": 0.79,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                36.0,
+                48.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 12.43728,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 55.85,
+                "height": 0.77,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                36.0,
+                48.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 12.79712,
+              "frame": 180,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 56.21,
+                "height": 0.75,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                36.0,
+                48.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 13.11116,
+              "frame": 216,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 56.54,
+                "height": 0.73,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                36.0,
+                48.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 13.33329,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 56.79,
+                "height": 0.72,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                36.0,
+                48.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 13.41755,
+              "frame": 288,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 56.88,
+                "height": 0.72,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                36.0,
+                48.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O006"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-10_EXT_PerimeterWall",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-10_EXT_PerimeterWall",
+          "samples": [
+            {
+              "depth": 7.34672,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.12,
+                20.0,
+                2.2
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 7.43244,
+              "frame": 37,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.12,
+                20.0,
+                2.2
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 7.6584,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.12,
+                20.0,
+                2.2
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 7.97776,
+              "frame": 109,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.12,
+                20.0,
+                2.2
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 8.33323,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.12,
+                20.0,
+                2.2
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 8.69917,
+              "frame": 180,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.12,
+                20.0,
+                2.2
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 9.01878,
+              "frame": 216,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.12,
+                20.0,
+                2.2
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 9.24499,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.12,
+                20.0,
+                2.2
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 9.33084,
+              "frame": 288,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.12,
+                20.0,
+                2.2
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O007"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-10_EXT_WestPlantShell",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-10_EXT_WestPlantShell",
+          "samples": [
+            {
+              "depth": 5.2562,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.3,
+                15.3,
+                6.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 5.34522,
+              "frame": 37,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.3,
+                15.3,
+                6.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 5.57989,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.3,
+                15.3,
+                6.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 5.91166,
+              "frame": 109,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.3,
+                15.3,
+                6.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.28108,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.3,
+                15.3,
+                6.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.66152,
+              "frame": 180,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.3,
+                15.3,
+                6.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.99391,
+              "frame": 216,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.3,
+                15.3,
+                6.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 7.22924,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.3,
+                15.3,
+                6.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 7.31856,
+              "frame": 288,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.3,
+                15.3,
+                6.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O008"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-10_EXT_WestPlantShell.002",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-10_EXT_WestPlantShell.002",
+          "samples": [
+            {
+              "depth": 5.2562,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.3,
+                15.3,
+                6.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 5.34522,
+              "frame": 37,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.3,
+                15.3,
+                6.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 5.57989,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.3,
+                15.3,
+                6.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 5.91166,
+              "frame": 109,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.3,
+                15.3,
+                6.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.28108,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.3,
+                15.3,
+                6.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.66152,
+              "frame": 180,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.3,
+                15.3,
+                6.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.99391,
+              "frame": 216,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.3,
+                15.3,
+                6.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 7.22924,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.3,
+                15.3,
+                6.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 7.31856,
+              "frame": 288,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.3,
+                15.3,
+                6.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O009"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-10_EXT_WestPlantShell.003",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-10_EXT_WestPlantShell.003",
+          "samples": [
+            {
+              "depth": 6.66612,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                6.0,
+                20.0,
+                0.25
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.76186,
+              "frame": 37,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                6.0,
+                20.0,
+                0.25
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 7.01424,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                6.0,
+                20.0,
+                0.25
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 7.37096,
+              "frame": 109,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                6.0,
+                20.0,
+                0.25
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 7.76804,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                6.0,
+                20.0,
+                0.25
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 8.17684,
+              "frame": 180,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                6.0,
+                20.0,
+                0.25
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 8.5339,
+              "frame": 216,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                6.0,
+                20.0,
+                0.25
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 8.78665,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                6.0,
+                20.0,
+                0.25
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 8.88257,
+              "frame": 288,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                6.0,
+                20.0,
+                0.25
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O010"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-10_PROP_FireHead_01",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-10_PROP_FireHead_01",
+          "samples": [
+            {
+              "depth": 1.38856,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.9,
+                0.9,
+                2.4
+              ],
+              "world_location": [
+                -25.5,
+                -14.0,
+                1.2
+              ]
+            },
+            {
+              "depth": 1.47286,
+              "frame": 37,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.9,
+                0.9,
+                2.4
+              ],
+              "world_location": [
+                -25.5,
+                -14.0,
+                1.2
+              ]
+            },
+            {
+              "depth": 1.69517,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.9,
+                0.9,
+                2.4
+              ],
+              "world_location": [
+                -25.5,
+                -14.0,
+                1.2
+              ]
+            },
+            {
+              "depth": 2.00967,
+              "frame": 109,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.9,
+                0.9,
+                2.4
+              ],
+              "world_location": [
+                -25.5,
+                -14.0,
+                1.2
+              ]
+            },
+            {
+              "depth": 2.36012,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.9,
+                0.9,
+                2.4
+              ],
+              "world_location": [
+                -25.5,
+                -14.0,
+                1.2
+              ]
+            },
+            {
+              "depth": 2.72134,
+              "frame": 180,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.9,
+                0.9,
+                2.4
+              ],
+              "world_location": [
+                -25.5,
+                -14.0,
+                1.2
+              ]
+            },
+            {
+              "depth": 3.03717,
+              "frame": 216,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.9,
+                0.9,
+                2.4
+              ],
+              "world_location": [
+                -25.5,
+                -14.0,
+                1.2
+              ]
+            },
+            {
+              "depth": 3.26092,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.9,
+                0.9,
+                2.4
+              ],
+              "world_location": [
+                -25.5,
+                -14.0,
+                1.2
+              ]
+            },
+            {
+              "depth": 3.34587,
+              "frame": 288,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.9,
+                0.9,
+                2.4
+              ],
+              "world_location": [
+                -25.5,
+                -14.0,
+                1.2
+              ]
+            }
+          ],
+          "source_id": "O011"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-10_PROP_FireLine_01",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-10_PROP_FireLine_01",
+          "samples": [
+            {
+              "depth": null,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.4,
+                0.6,
+                0.14
+              ],
+              "world_location": [
+                -19.0,
+                -7.5,
+                0.07
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 37,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.4,
+                0.6,
+                0.14
+              ],
+              "world_location": [
+                -19.0,
+                -7.5,
+                0.07
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.4,
+                0.6,
+                0.14
+              ],
+              "world_location": [
+                -19.0,
+                -7.5,
+                0.07
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 109,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.4,
+                0.6,
+                0.14
+              ],
+              "world_location": [
+                -19.0,
+                -7.5,
+                0.07
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.4,
+                0.6,
+                0.14
+              ],
+              "world_location": [
+                -19.0,
+                -7.5,
+                0.07
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 180,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.4,
+                0.6,
+                0.14
+              ],
+              "world_location": [
+                -19.0,
+                -7.5,
+                0.07
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 216,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.4,
+                0.6,
+                0.14
+              ],
+              "world_location": [
+                -19.0,
+                -7.5,
+                0.07
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.4,
+                0.6,
+                0.14
+              ],
+              "world_location": [
+                -19.0,
+                -7.5,
+                0.07
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 288,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.4,
+                0.6,
+                0.14
+              ],
+              "world_location": [
+                -19.0,
+                -7.5,
+                0.07
+              ]
+            }
+          ],
+          "source_id": "O012"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "B-10_PROP_FireLine_01.001",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-10_PROP_FireLine_01.001",
+          "samples": [
+            {
+              "depth": 1.29408,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.4,
+                0.6,
+                0.14
+              ],
+              "world_location": [
+                -16.0,
+                -13.75,
+                0.07
+              ]
+            },
+            {
+              "depth": 1.37605,
+              "frame": 37,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.4,
+                0.6,
+                0.14
+              ],
+              "world_location": [
+                -16.0,
+                -13.75,
+                0.07
+              ]
+            },
+            {
+              "depth": 1.59224,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.4,
+                0.6,
+                0.14
+              ],
+              "world_location": [
+                -16.0,
+                -13.75,
+                0.07
+              ]
+            },
+            {
+              "depth": 1.89809,
+              "frame": 109,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.4,
+                0.6,
+                0.14
+              ],
+              "world_location": [
+                -16.0,
+                -13.75,
+                0.07
+              ]
+            },
+            {
+              "depth": 2.23894,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.4,
+                0.6,
+                0.14
+              ],
+              "world_location": [
+                -16.0,
+                -13.75,
+                0.07
+              ]
+            },
+            {
+              "depth": 2.59027,
+              "frame": 180,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.4,
+                0.6,
+                0.14
+              ],
+              "world_location": [
+                -16.0,
+                -13.75,
+                0.07
+              ]
+            },
+            {
+              "depth": 2.89749,
+              "frame": 216,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.4,
+                0.6,
+                0.14
+              ],
+              "world_location": [
+                -16.0,
+                -13.75,
+                0.07
+              ]
+            },
+            {
+              "depth": 3.11514,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 68.85,
+                "center_y": 98.54,
+                "height": 2.91,
+                "width": 62.3
+              },
+              "world_dimensions": [
+                4.4,
+                0.6,
+                0.14
+              ],
+              "world_location": [
+                -16.0,
+                -13.75,
+                0.07
+              ]
+            },
+            {
+              "depth": 3.19778,
+              "frame": 288,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 69.03,
+                "center_y": 97.97,
+                "height": 4.06,
+                "width": 61.95
+              },
+              "world_dimensions": [
+                4.4,
+                0.6,
+                0.14
+              ],
+              "world_location": [
+                -16.0,
+                -13.75,
+                0.07
+              ]
+            }
+          ],
+          "source_id": "O013"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-10_PROP_GapOpening_06",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-10_PROP_GapOpening_06",
+          "samples": [
+            {
+              "depth": null,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.14,
+                1.14,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -11.5,
+                1.1
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 37,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.14,
+                1.14,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -11.5,
+                1.1
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.14,
+                1.14,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -11.5,
+                1.1
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 109,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.14,
+                1.14,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -11.5,
+                1.1
+              ]
+            },
+            {
+              "depth": 0.08068,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.14,
+                1.14,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -11.5,
+                1.1
+              ]
+            },
+            {
+              "depth": 0.31493,
+              "frame": 180,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.14,
+                1.14,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -11.5,
+                1.1
+              ]
+            },
+            {
+              "depth": 0.6282,
+              "frame": 216,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.14,
+                1.14,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -11.5,
+                1.1
+              ]
+            },
+            {
+              "depth": 0.8502,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.14,
+                1.14,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -11.5,
+                1.1
+              ]
+            },
+            {
+              "depth": 0.93451,
+              "frame": 288,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.14,
+                1.14,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -11.5,
+                1.1
+              ]
+            }
+          ],
+          "source_id": "O014"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-10_PROP_SteelRack_01",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-10_PROP_SteelRack_01",
+          "samples": [
+            {
+              "depth": 0.90674,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                2.0,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -12.5,
+                1.1
+              ]
+            },
+            {
+              "depth": 0.9907,
+              "frame": 37,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                2.0,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -12.5,
+                1.1
+              ]
+            },
+            {
+              "depth": 1.21214,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                2.0,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -12.5,
+                1.1
+              ]
+            },
+            {
+              "depth": 1.52542,
+              "frame": 109,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                2.0,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -12.5,
+                1.1
+              ]
+            },
+            {
+              "depth": 1.25342,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                2.0,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -12.5,
+                1.1
+              ]
+            },
+            {
+              "depth": 1.23989,
+              "frame": 180,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                2.0,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -12.5,
+                1.1
+              ]
+            },
+            {
+              "depth": 1.55385,
+              "frame": 216,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                2.0,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -12.5,
+                1.1
+              ]
+            },
+            {
+              "depth": 1.77632,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                2.0,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -12.5,
+                1.1
+              ]
+            },
+            {
+              "depth": 1.8608,
+              "frame": 288,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                2.0,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -12.5,
+                1.1
+              ]
+            }
+          ],
+          "source_id": "O015"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-10_PROP_SteelRack_01.001",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-10_PROP_SteelRack_01.001",
+          "samples": [
+            {
+              "depth": null,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                2.0,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -9.5,
+                1.1
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 37,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                2.0,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -9.5,
+                1.1
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 73,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                2.0,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -9.5,
+                1.1
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 109,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                2.0,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -9.5,
+                1.1
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 144,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                2.0,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -9.5,
+                1.1
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 180,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                2.0,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -9.5,
+                1.1
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 216,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                2.0,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -9.5,
+                1.1
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                2.0,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -9.5,
+                1.1
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 288,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                2.0,
+                2.2
+              ],
+              "world_location": [
+                -16.0,
+                -9.5,
+                1.1
+              ]
+            }
+          ],
+          "source_id": "O016"
+        }
+      ],
+      "sample_frames": [
+        1,
+        37,
+        73,
+        109,
+        144,
+        180,
+        216,
+        252,
+        288
+      ],
+      "schema_version": 1
+    },
+    "requires_m3_cut_review": false,
+    "rule": "Cut candidates are evidence only; M3 decides real shot boundaries after full-video review."
+  },
+  "render_contract": {
+    "schema_version": 4,
+    "source": {
+      "path": "D14_shots/ep16_shot03/preview_video.mp4",
+      "duration": 12.0,
+      "fps": 24.0,
+      "width": 1080,
+      "height": 1920,
+      "aspect_ratio": 0.5625,
+      "frames": 288,
+      "has_audio": false
+    },
+    "watched_full_source": true,
+    "shot_count": 1,
+    "source_inventory": [
+      {
+        "source_id": "O002",
+        "source_name": "B-10_CHAR_QueueMember_03",
+        "source_type": "MESH",
+        "root_name": "B-10_CHAR_QueueMember_03",
+        "first_visible_seconds": 4.5,
+        "last_visible_seconds": 11.958,
+        "identity_cues": "name=B-10_CHAR_QueueMember_03; type=MESH; root=B-10_CHAR_QueueMember_03; dimensions=0.420,0.320,1.730",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O006",
+        "source_name": "B-10_EXT_FactoryYardGround",
+        "source_type": "MESH",
+        "root_name": "B-10_EXT_FactoryYardGround",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 11.958,
+        "identity_cues": "name=B-10_EXT_FactoryYardGround; type=MESH; root=B-10_EXT_FactoryYardGround; dimensions=36.000,48.000,0.100",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O013",
+        "source_name": "B-10_PROP_FireLine_01.001",
+        "source_type": "MESH",
+        "root_name": "B-10_PROP_FireLine_01.001",
+        "first_visible_seconds": 10.458,
+        "last_visible_seconds": 11.958,
+        "identity_cues": "name=B-10_PROP_FireLine_01.001; type=MESH; root=B-10_PROP_FireLine_01.001; dimensions=4.400,0.600,0.140",
+        "evidence_origin": "blender_manifest"
+      }
+    ],
+    "entities": [
+      {
+        "label": "Entity 01 CHAR QueueMember",
+        "entity_class": "articulated",
+        "importance": "primary",
+        "source_instance_ids": [
+          "O002"
+        ],
+        "instance_count": 1,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "queue member blockout in silhouette",
+        "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+        "motion_contract": {
+          "mode": "static",
+          "action": "holds its source position for the whole shot",
+          "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+          "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+        }
+      },
+      {
+        "label": "Entity 02 ENV B-10",
+        "entity_class": "environment",
+        "importance": "context",
+        "source_instance_ids": [
+          "O006"
+        ],
+        "instance_count": 1,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "B-10 built environment shell enclosing the set: FactoryYardGround",
+        "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+        "motion_contract": {
+          "mode": "static",
+          "action": "holds its source position for the whole shot",
+          "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+          "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+        }
+      },
+      {
+        "label": "Entity 03 PROP B-10",
+        "entity_class": "rigid",
+        "importance": "context",
+        "source_instance_ids": [
+          "O013"
+        ],
+        "instance_count": 1,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "B-10 set pieces and fittings: FireLine_01",
+        "structural_constraints": "each member keeps its own source footprint, size and placement",
+        "motion_contract": {
+          "mode": "static",
+          "action": "holds its source position for the whole shot",
+          "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+          "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+        }
+      }
+    ],
+    "interaction_contracts": [],
+    "shots": [
+      {
+        "shot_id": 1,
+        "start_seconds": 0.0,
+        "end_seconds": 12.0,
+        "camera_contract": {
+          "motion_type": "tracking",
+          "tracked_target_entity": "none",
+          "world_path": "camera travels from (-14.00, -12.72, 2.09) to (-14.00, -10.72, 2.09) on a 35mm lens, total path length 2.00m inside the blocked set",
+          "target_distance_trend": "stable",
+          "azimuth_trend": "variable",
+          "elevation_trend": "stable",
+          "focal_length_trend": "stable",
+          "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+          "forbidden_reinterpretations": "do not swap the follow move for an orbit or a frontal push; keep the 中景 framing and the 跟 move exactly as blocked out"
+        },
+        "actions": "two steel racks are lifted up across the front of the fire line and a gap is left between them; the trapped people pass through that gap one at a time, the line holding together in the smoke, while the protagonist pulls the last one out of the workshop",
+        "layout_and_occlusion": "1 visible instances. Dominant FactoryYardGround covers 100x1 percent at frame 50/55. Left to right: FactoryYardGround.",
+        "lighting_spatial_logic": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+      }
+    ],
+    "anchors": [
+      {
+        "time_seconds": 0.0,
+        "source_frame": "D14_shots/ep16_shot03/source_anchor_frames/anchor_01.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 11.47m to 11.47m across 1 layers; nearest is FactoryYardGround, furthest is FactoryYardGround"
+        },
+        "camera_relation": "camera at (-14.00, -12.72, 2.09) on a 35.0mm lens, frame 1 of 288",
+        "tracked_instances": [
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 01 CHAR QueueMember",
+            "visibility": "offscreen",
+            "center_x_percent": null,
+            "center_y_percent": null,
+            "bbox_width_percent": null,
+            "bbox_height_percent": null,
+            "orientation": "off screen at this anchor",
+            "motion_state": "offscreen at this anchor",
+            "spatial_relations": "leaves the frame before this anchor"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 02 ENV B-10",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 55.05,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 0.83,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "only visible instance in this frame"
+          },
+          {
+            "source_id": "O013",
+            "entity_label": "Entity 03 PROP B-10",
+            "visibility": "offscreen",
+            "center_x_percent": null,
+            "center_y_percent": null,
+            "bbox_width_percent": null,
+            "bbox_height_percent": null,
+            "orientation": "off screen at this anchor",
+            "motion_state": "offscreen at this anchor",
+            "spatial_relations": "leaves the frame before this anchor"
+          }
+        ],
+        "key_layout_and_occlusion": "1 visible instances. Dominant FactoryYardGround covers 100x1 percent at frame 50/55. Left to right: FactoryYardGround."
+      },
+      {
+        "time_seconds": 1.495,
+        "source_frame": "D14_shots/ep16_shot03/source_anchor_frames/anchor_02.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 11.55m to 11.55m across 1 layers; nearest is FactoryYardGround, furthest is FactoryYardGround"
+        },
+        "camera_relation": "camera at (-14.00, -12.63, 2.09) on a 35.0mm lens, frame 37 of 288",
+        "tracked_instances": [
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 01 CHAR QueueMember",
+            "visibility": "offscreen",
+            "center_x_percent": null,
+            "center_y_percent": null,
+            "bbox_width_percent": null,
+            "bbox_height_percent": null,
+            "orientation": "off screen at this anchor",
+            "motion_state": "offscreen at this anchor",
+            "spatial_relations": "leaves the frame before this anchor"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 02 ENV B-10",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 55.11,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 0.83,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "only visible instance in this frame"
+          },
+          {
+            "source_id": "O013",
+            "entity_label": "Entity 03 PROP B-10",
+            "visibility": "offscreen",
+            "center_x_percent": null,
+            "center_y_percent": null,
+            "bbox_width_percent": null,
+            "bbox_height_percent": null,
+            "orientation": "off screen at this anchor",
+            "motion_state": "offscreen at this anchor",
+            "spatial_relations": "leaves the frame before this anchor"
+          }
+        ],
+        "key_layout_and_occlusion": "1 visible instances. Dominant FactoryYardGround covers 100x1 percent at frame 50/55. Left to right: FactoryYardGround."
+      },
+      {
+        "time_seconds": 2.99,
+        "source_frame": "D14_shots/ep16_shot03/source_anchor_frames/anchor_03.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 11.77m to 11.77m across 1 layers; nearest is FactoryYardGround, furthest is FactoryYardGround"
+        },
+        "camera_relation": "camera at (-14.00, -12.41, 2.09) on a 35.0mm lens, frame 73 of 288",
+        "tracked_instances": [
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 01 CHAR QueueMember",
+            "visibility": "offscreen",
+            "center_x_percent": null,
+            "center_y_percent": null,
+            "bbox_width_percent": null,
+            "bbox_height_percent": null,
+            "orientation": "off screen at this anchor",
+            "motion_state": "offscreen at this anchor",
+            "spatial_relations": "leaves the frame before this anchor"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 02 ENV B-10",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 55.28,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 0.81,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "only visible instance in this frame"
+          },
+          {
+            "source_id": "O013",
+            "entity_label": "Entity 03 PROP B-10",
+            "visibility": "offscreen",
+            "center_x_percent": null,
+            "center_y_percent": null,
+            "bbox_width_percent": null,
+            "bbox_height_percent": null,
+            "orientation": "off screen at this anchor",
+            "motion_state": "offscreen at this anchor",
+            "spatial_relations": "leaves the frame before this anchor"
+          }
+        ],
+        "key_layout_and_occlusion": "1 visible instances. Dominant FactoryYardGround covers 100x1 percent at frame 50/55. Left to right: FactoryYardGround."
+      },
+      {
+        "time_seconds": 4.484,
+        "source_frame": "D14_shots/ep16_shot03/source_anchor_frames/anchor_04.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 2.63m to 12.09m across 2 layers; nearest is QueueMember, furthest is FactoryYardGround"
+        },
+        "camera_relation": "camera at (-14.00, -12.08, 2.09) on a 35.0mm lens, frame 109 of 288",
+        "tracked_instances": [
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 01 CHAR QueueMember",
+            "visibility": "visible",
+            "center_x_percent": 97.3,
+            "center_y_percent": 75.49,
+            "bbox_width_percent": 5.41,
+            "bbox_height_percent": 49.01,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 02 ENV B-10",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 55.54,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 0.79,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of QueueMember, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O013",
+            "entity_label": "Entity 03 PROP B-10",
+            "visibility": "offscreen",
+            "center_x_percent": null,
+            "center_y_percent": null,
+            "bbox_width_percent": null,
+            "bbox_height_percent": null,
+            "orientation": "off screen at this anchor",
+            "motion_state": "offscreen at this anchor",
+            "spatial_relations": "leaves the frame before this anchor"
+          }
+        ],
+        "key_layout_and_occlusion": "2 visible instances. Dominant QueueMember covers 5x49 percent at frame 97/75. Left to right: FactoryYardGround, QueueMember."
+      },
+      {
+        "time_seconds": 5.979,
+        "source_frame": "D14_shots/ep16_shot03/source_anchor_frames/anchor_05.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 2.97m to 12.44m across 2 layers; nearest is QueueMember, furthest is FactoryYardGround"
+        },
+        "camera_relation": "camera at (-14.00, -11.73, 2.09) on a 35.0mm lens, frame 144 of 288",
+        "tracked_instances": [
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 01 CHAR QueueMember",
+            "visibility": "visible",
+            "center_x_percent": 94.87,
+            "center_y_percent": 75.17,
+            "bbox_width_percent": 10.27,
+            "bbox_height_percent": 49.66,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 02 ENV B-10",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 55.85,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 0.77,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of QueueMember, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O013",
+            "entity_label": "Entity 03 PROP B-10",
+            "visibility": "offscreen",
+            "center_x_percent": null,
+            "center_y_percent": null,
+            "bbox_width_percent": null,
+            "bbox_height_percent": null,
+            "orientation": "off screen at this anchor",
+            "motion_state": "offscreen at this anchor",
+            "spatial_relations": "leaves the frame before this anchor"
+          }
+        ],
+        "key_layout_and_occlusion": "2 visible instances. Dominant QueueMember covers 10x50 percent at frame 95/75. Left to right: FactoryYardGround, QueueMember."
+      },
+      {
+        "time_seconds": 7.474,
+        "source_frame": "D14_shots/ep16_shot03/source_anchor_frames/anchor_06.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 3.33m to 12.80m across 2 layers; nearest is QueueMember, furthest is FactoryYardGround"
+        },
+        "camera_relation": "camera at (-14.00, -11.36, 2.09) on a 35.0mm lens, frame 180 of 288",
+        "tracked_instances": [
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 01 CHAR QueueMember",
+            "visibility": "visible",
+            "center_x_percent": 92.86,
+            "center_y_percent": 75.0,
+            "bbox_width_percent": 14.28,
+            "bbox_height_percent": 50.01,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 02 ENV B-10",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 56.21,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 0.75,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of QueueMember, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O013",
+            "entity_label": "Entity 03 PROP B-10",
+            "visibility": "offscreen",
+            "center_x_percent": null,
+            "center_y_percent": null,
+            "bbox_width_percent": null,
+            "bbox_height_percent": null,
+            "orientation": "off screen at this anchor",
+            "motion_state": "offscreen at this anchor",
+            "spatial_relations": "leaves the frame before this anchor"
+          }
+        ],
+        "key_layout_and_occlusion": "2 visible instances. Dominant QueueMember covers 14x50 percent at frame 93/75. Left to right: FactoryYardGround, QueueMember."
+      },
+      {
+        "time_seconds": 8.969,
+        "source_frame": "D14_shots/ep16_shot03/source_anchor_frames/anchor_07.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 3.65m to 13.11m across 2 layers; nearest is QueueMember, furthest is FactoryYardGround"
+        },
+        "camera_relation": "camera at (-14.00, -11.04, 2.09) on a 35.0mm lens, frame 216 of 288",
+        "tracked_instances": [
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 01 CHAR QueueMember",
+            "visibility": "visible",
+            "center_x_percent": 91.41,
+            "center_y_percent": 74.71,
+            "bbox_width_percent": 17.18,
+            "bbox_height_percent": 49.68,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 02 ENV B-10",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 56.54,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 0.73,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of QueueMember, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O013",
+            "entity_label": "Entity 03 PROP B-10",
+            "visibility": "offscreen",
+            "center_x_percent": null,
+            "center_y_percent": null,
+            "bbox_width_percent": null,
+            "bbox_height_percent": null,
+            "orientation": "off screen at this anchor",
+            "motion_state": "offscreen at this anchor",
+            "spatial_relations": "leaves the frame before this anchor"
+          }
+        ],
+        "key_layout_and_occlusion": "2 visible instances. Dominant QueueMember covers 17x50 percent at frame 91/75. Left to right: FactoryYardGround, QueueMember."
+      },
+      {
+        "time_seconds": 10.464,
+        "source_frame": "D14_shots/ep16_shot03/source_anchor_frames/anchor_08.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 3.12m to 13.33m across 3 layers; nearest is FireLine_01, furthest is FactoryYardGround"
+        },
+        "camera_relation": "camera at (-14.00, -10.81, 2.09) on a 35.0mm lens, frame 252 of 288",
+        "tracked_instances": [
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 01 CHAR QueueMember",
+            "visibility": "visible",
+            "center_x_percent": 90.52,
+            "center_y_percent": 73.21,
+            "bbox_width_percent": 18.96,
+            "bbox_height_percent": 46.69,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of FireLine_01, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 02 ENV B-10",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 56.79,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 0.72,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of FireLine_01, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O013",
+            "entity_label": "Entity 03 PROP B-10",
+            "visibility": "visible",
+            "center_x_percent": 68.85,
+            "center_y_percent": 98.54,
+            "bbox_width_percent": 62.3,
+            "bbox_height_percent": 2.91,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of FactoryYardGround, left of QueueMember, behind all nearer elements, lower frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "3 visible instances. Dominant QueueMember covers 19x47 percent at frame 91/73. Left to right: FactoryYardGround, FireLine_01, QueueMember."
+      },
+      {
+        "time_seconds": 11.958,
+        "source_frame": "D14_shots/ep16_shot03/source_anchor_frames/anchor_09.jpg",
+        "composition": {
+          "shot_scale": "medium",
+          "frame_balance_and_depth": "depth spans 3.20m to 13.42m across 3 layers; nearest is FireLine_01, furthest is FactoryYardGround"
+        },
+        "camera_relation": "camera at (-14.00, -10.72, 2.09) on a 35.0mm lens, frame 288 of 288",
+        "tracked_instances": [
+          {
+            "source_id": "O002",
+            "entity_label": "Entity 01 CHAR QueueMember",
+            "visibility": "visible",
+            "center_x_percent": 90.2,
+            "center_y_percent": 72.71,
+            "bbox_width_percent": 19.59,
+            "bbox_height_percent": 45.65,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of FireLine_01, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O006",
+            "entity_label": "Entity 02 ENV B-10",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 56.88,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 0.72,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of FireLine_01, in front of nearer elements, middle frame height"
+          },
+          {
+            "source_id": "O013",
+            "entity_label": "Entity 03 PROP B-10",
+            "visibility": "visible",
+            "center_x_percent": 69.03,
+            "center_y_percent": 97.97,
+            "bbox_width_percent": 61.95,
+            "bbox_height_percent": 4.06,
+            "orientation": "horizontal volume proxy, long axis running across frame",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of FactoryYardGround, left of QueueMember, behind all nearer elements, lower frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "3 visible instances. Dominant QueueMember covers 20x46 percent at frame 90/73. Left to right: FactoryYardGround, FireLine_01, QueueMember."
+      }
+    ],
+    "m3_cut_review": {
+      "candidate_times": [],
+      "confirmed_real_cuts": [],
+      "reasoning": "No source cut candidate requires review."
+    }
+  },
+  "appearance": {
+    "schema_version": 6,
+    "watched_references": true,
+    "style_source_summary": "World style is taken from the shared unit style contract: cold industrial post-collapse realism for humans and props with a separated stylisation layer for bone pattern, twin flame, grey fog and altered bodies. No external appearance reference image was supplied for this unit, so no reference route is registered and every entity is styled from the world style alone.",
+    "reference_routes": [],
+    "global_style_bible": {
+      "world_and_era": "post-collapse industrial city ruins; a walled factory district turned into a survival compound and the bone market street running beside it; ration queues, pinned duty rosters and projected notices govern daily life; human survivors and ceramic-pale altered beings share the same cold daylight and fog; no readable signage and no modern branding",
+      "visual_language": "grounded industrial realism for humans and props with a separated stylisation layer for the bone pattern, the black and white twin flame, white smoke, fire heads and projected interface text; stylised elements never spill across into the human layer and every body surface stays intact",
+      "palette": "grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D with detail kept in the darks, plaster white #C6C2B8 for ceramic shells, pure-fire white #F5F7F8 and black #0B0B0C for the twin colour bone pattern, weld and fire orange #E07B39 as the only warm accent, dark red #7A2027 reserved for the fighter's outfit and never for any liquid",
+      "material_language": "real skin with pores and slight oil sheen, matte technical fabric with wear and dust, oxidised steel with dull reflections, cold ceramic shells on altered bodies; every surface stays intact and no red liquid appears anywhere in the frame",
+      "environment_design": "cement yard plates cut by fire lines, riveted steel frames and steel racks, sheet metal and plyboard walls carrying pinned drawings and duty rosters, a single cold ceiling tube over the purification bench, market stall rows under a led board along a fog covered street, and one unlit stretch of road outside the factory gate",
+      "prop_design": "functional utilitarian tooling with real weight and thickness: welding rigs, steel racks, extraction lines and press slots, frosted energy blocks, duty rosters, nailed wooden boards, written notices, sealed safes and an unlit shadow blade; all carry visible use marks",
+      "lighting_and_atmosphere": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+    },
+    "entity_appearances": {
+      "Entity 01 CHAR QueueMember": {
+        "semantic_target": "queue member blockout in silhouette",
+        "final_materials_and_detail": "real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings, contact shadow under the body",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      },
+      "Entity 02 ENV B-10": {
+        "semantic_target": "B-10 built environment shell enclosing the set: FactoryYardGround",
+        "final_materials_and_detail": "worn cement, oxidised steel and sheet metal with cold grey reflections, shadow detail kept readable in the dark areas",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      },
+      "Entity 03 PROP B-10": {
+        "semantic_target": "B-10 set pieces and fittings: FireLine_01",
+        "final_materials_and_detail": "utilitarian material with visible weight, thickness and use marks, cold grey metal and dull plastic, no gloss hero finish",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      }
+    },
+    "blockout_rejection": {
+      "all_visible_entities_must_be_finished": true,
+      "forbidden_final_look": "source construction proxy, default viewport material, incomplete proxy geometry, or any visibly unart-directed placeholder",
+      "ambiguous_proxy_fallback": "Choose a plausible finished World Style design inside the exact source bounds; never leave it semantically or materially generic."
+    },
+    "sound": "many running feet with the strain call of people lifting the racks and a beam breaking"
+  },
+  "h3_prompt": {
+    "path": "D14_shots/ep16_shot03/h3_prompt.txt",
+    "char_count": 6329,
+    "within_budget": true,
+    "protected_content_valid": true,
+    "ready_to_submit": true
+  }
+}

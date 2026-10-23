@@ -1,0 +1,796 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep08_shot01/preview_video.mp4",
+    "duration": 12.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 288,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "A-9_CHAR_DarkRedOutfit_01",
+      "source_type": "MESH",
+      "root_name": "A-9_CHAR_DarkRedOutfit_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-9_CHAR_DarkRedOutfit_01; type=MESH; root=A-9_CHAR_DarkRedOutfit_01; dimensions=0.450,0.300,1.200",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O002",
+      "source_name": "A-9_CHAR_LongStraightHair_01",
+      "source_type": "MESH",
+      "root_name": "A-9_CHAR_LongStraightHair_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-9_CHAR_LongStraightHair_01; type=MESH; root=A-9_CHAR_LongStraightHair_01; dimensions=0.300,0.200,0.250",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O004",
+      "source_name": "A-9_EXT_InnerYard",
+      "source_type": "MESH",
+      "root_name": "A-9_EXT_InnerYard",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-9_EXT_InnerYard; type=MESH; root=A-9_EXT_InnerYard; dimensions=36.000,28.000,0.400",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O005",
+      "source_name": "A-9_EXT_SteelPlateFloor_01",
+      "source_type": "MESH",
+      "root_name": "A-9_EXT_SteelPlateFloor_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-9_EXT_SteelPlateFloor_01; type=MESH; root=A-9_EXT_SteelPlateFloor_01; dimensions=10.000,6.000,0.020",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O006",
+      "source_name": "A-9_PROP_ShadowBlade_01",
+      "source_type": "MESH",
+      "root_name": "A-9_PROP_ShadowBlade_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-9_PROP_ShadowBlade_01; type=MESH; root=A-9_PROP_ShadowBlade_01; dimensions=0.050,0.050,0.900",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 PROP A-9",
+      "entity_class": "rigid",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O001",
+        "O002",
+        "O006"
+      ],
+      "instance_count": 3,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-9 set pieces and fittings: DarkRedOutfit, LongStraightHair, ShadowBlade",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 02 ENV A-9",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O004",
+        "O005"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-9 built environment shell enclosing the set: InnerYard, SteelPlateFloor",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_2901",
+      "source_instance_ids": [
+        "O006"
+      ],
+      "start_seconds": 0.0,
+      "end_seconds": 1.0,
+      "relation": "shadow blade reversed into the steel plate ground",
+      "forbidden_change": "do not lift the blade or light its edge"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 12.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "none",
+        "world_path": "camera travels from (47.67, -7.04, 0.89) to (47.67, -7.04, 0.89) on a 50mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 中景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "the captive kneels on one knee on the steel plate, dark red outfit reads dark under cold light, the shadow blade is reversed into the ground with no edge glow",
+      "layout_and_occlusion": "5 visible instances. Dominant SteelPlateFloor covers 100x48 percent at frame 50/56. Left to right: LongStraightHair, ShadowBlade, DarkRedOutfit, InnerYard, SteelPlateFloor.",
+      "lighting_spatial_logic": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep08_shot01/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.58m to 16.36m across 5 layers; nearest is LongStraightHair, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (47.67, -7.04, 0.89) on a 50.0mm lens, frame 1 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 9.47,
+          "center_y_percent": 29.38,
+          "bbox_width_percent": 18.94,
+          "bbox_height_percent": 50.57,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ShadowBlade, left of InnerYard, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 1.11,
+          "center_y_percent": 53.71,
+          "bbox_width_percent": 2.23,
+          "bbox_height_percent": 12.79,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ShadowBlade, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 35.41,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 25.15,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkRedOutfit, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.45,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 47.69,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkRedOutfit, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 6.92,
+          "center_y_percent": 32.91,
+          "bbox_width_percent": 6.23,
+          "bbox_height_percent": 30.33,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LongStraightHair, left of DarkRedOutfit, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant SteelPlateFloor covers 100x48 percent at frame 50/56. Left to right: LongStraightHair, ShadowBlade, DarkRedOutfit, InnerYard, SteelPlateFloor."
+    },
+    {
+      "time_seconds": 1.495,
+      "source_frame": "D14_shots/ep08_shot01/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.58m to 16.36m across 5 layers; nearest is LongStraightHair, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (47.67, -7.04, 0.89) on a 50.0mm lens, frame 37 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 9.47,
+          "center_y_percent": 29.38,
+          "bbox_width_percent": 18.94,
+          "bbox_height_percent": 50.57,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ShadowBlade, left of InnerYard, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 1.11,
+          "center_y_percent": 53.71,
+          "bbox_width_percent": 2.23,
+          "bbox_height_percent": 12.79,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ShadowBlade, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 35.41,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 25.15,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkRedOutfit, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.45,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 47.69,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkRedOutfit, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 6.92,
+          "center_y_percent": 32.91,
+          "bbox_width_percent": 6.23,
+          "bbox_height_percent": 30.33,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LongStraightHair, left of DarkRedOutfit, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant SteelPlateFloor covers 100x48 percent at frame 50/56. Left to right: LongStraightHair, ShadowBlade, DarkRedOutfit, InnerYard, SteelPlateFloor."
+    },
+    {
+      "time_seconds": 2.99,
+      "source_frame": "D14_shots/ep08_shot01/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.58m to 16.36m across 5 layers; nearest is LongStraightHair, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (47.67, -7.04, 0.89) on a 50.0mm lens, frame 73 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 9.47,
+          "center_y_percent": 29.38,
+          "bbox_width_percent": 18.94,
+          "bbox_height_percent": 50.57,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ShadowBlade, left of InnerYard, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 1.11,
+          "center_y_percent": 53.71,
+          "bbox_width_percent": 2.23,
+          "bbox_height_percent": 12.79,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ShadowBlade, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 35.41,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 25.15,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkRedOutfit, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.45,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 47.69,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkRedOutfit, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 6.92,
+          "center_y_percent": 32.91,
+          "bbox_width_percent": 6.23,
+          "bbox_height_percent": 30.33,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LongStraightHair, left of DarkRedOutfit, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant SteelPlateFloor covers 100x48 percent at frame 50/56. Left to right: LongStraightHair, ShadowBlade, DarkRedOutfit, InnerYard, SteelPlateFloor."
+    },
+    {
+      "time_seconds": 4.484,
+      "source_frame": "D14_shots/ep08_shot01/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.58m to 16.36m across 5 layers; nearest is LongStraightHair, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (47.67, -7.04, 0.89) on a 50.0mm lens, frame 109 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 9.47,
+          "center_y_percent": 29.38,
+          "bbox_width_percent": 18.94,
+          "bbox_height_percent": 50.57,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ShadowBlade, left of InnerYard, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 1.11,
+          "center_y_percent": 53.71,
+          "bbox_width_percent": 2.23,
+          "bbox_height_percent": 12.79,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ShadowBlade, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 35.41,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 25.15,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkRedOutfit, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.45,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 47.69,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkRedOutfit, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 6.92,
+          "center_y_percent": 32.91,
+          "bbox_width_percent": 6.23,
+          "bbox_height_percent": 30.33,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LongStraightHair, left of DarkRedOutfit, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant SteelPlateFloor covers 100x48 percent at frame 50/56. Left to right: LongStraightHair, ShadowBlade, DarkRedOutfit, InnerYard, SteelPlateFloor."
+    },
+    {
+      "time_seconds": 5.979,
+      "source_frame": "D14_shots/ep08_shot01/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.58m to 16.36m across 5 layers; nearest is LongStraightHair, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (47.67, -7.04, 0.89) on a 50.0mm lens, frame 144 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 9.47,
+          "center_y_percent": 29.38,
+          "bbox_width_percent": 18.94,
+          "bbox_height_percent": 50.57,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ShadowBlade, left of InnerYard, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 1.11,
+          "center_y_percent": 53.71,
+          "bbox_width_percent": 2.23,
+          "bbox_height_percent": 12.79,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ShadowBlade, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 35.41,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 25.15,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkRedOutfit, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.45,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 47.69,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkRedOutfit, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 6.92,
+          "center_y_percent": 32.91,
+          "bbox_width_percent": 6.23,
+          "bbox_height_percent": 30.33,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LongStraightHair, left of DarkRedOutfit, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant SteelPlateFloor covers 100x48 percent at frame 50/56. Left to right: LongStraightHair, ShadowBlade, DarkRedOutfit, InnerYard, SteelPlateFloor."
+    },
+    {
+      "time_seconds": 7.474,
+      "source_frame": "D14_shots/ep08_shot01/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.58m to 16.36m across 5 layers; nearest is LongStraightHair, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (47.67, -7.04, 0.89) on a 50.0mm lens, frame 180 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 9.47,
+          "center_y_percent": 29.38,
+          "bbox_width_percent": 18.94,
+          "bbox_height_percent": 50.57,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ShadowBlade, left of InnerYard, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 1.11,
+          "center_y_percent": 53.71,
+          "bbox_width_percent": 2.23,
+          "bbox_height_percent": 12.79,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ShadowBlade, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 35.41,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 25.15,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkRedOutfit, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.45,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 47.69,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkRedOutfit, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 6.92,
+          "center_y_percent": 32.91,
+          "bbox_width_percent": 6.23,
+          "bbox_height_percent": 30.33,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LongStraightHair, left of DarkRedOutfit, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant SteelPlateFloor covers 100x48 percent at frame 50/56. Left to right: LongStraightHair, ShadowBlade, DarkRedOutfit, InnerYard, SteelPlateFloor."
+    },
+    {
+      "time_seconds": 8.969,
+      "source_frame": "D14_shots/ep08_shot01/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.58m to 16.36m across 5 layers; nearest is LongStraightHair, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (47.67, -7.04, 0.89) on a 50.0mm lens, frame 216 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 9.47,
+          "center_y_percent": 29.38,
+          "bbox_width_percent": 18.94,
+          "bbox_height_percent": 50.57,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ShadowBlade, left of InnerYard, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 1.11,
+          "center_y_percent": 53.71,
+          "bbox_width_percent": 2.23,
+          "bbox_height_percent": 12.79,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ShadowBlade, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 35.41,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 25.15,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkRedOutfit, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.45,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 47.69,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkRedOutfit, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 6.92,
+          "center_y_percent": 32.91,
+          "bbox_width_percent": 6.23,
+          "bbox_height_percent": 30.33,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LongStraightHair, left of DarkRedOutfit, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant SteelPlateFloor covers 100x48 percent at frame 50/56. Left to right: LongStraightHair, ShadowBlade, DarkRedOutfit, InnerYard, SteelPlateFloor."
+    },
+    {
+      "time_seconds": 10.464,
+      "source_frame": "D14_shots/ep08_shot01/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.58m to 16.36m across 5 layers; nearest is LongStraightHair, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (47.67, -7.04, 0.89) on a 50.0mm lens, frame 252 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 9.47,
+          "center_y_percent": 29.38,
+          "bbox_width_percent": 18.94,
+          "bbox_height_percent": 50.57,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ShadowBlade, left of InnerYard, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 1.11,
+          "center_y_percent": 53.71,
+          "bbox_width_percent": 2.23,
+          "bbox_height_percent": 12.79,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ShadowBlade, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 35.41,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 25.15,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkRedOutfit, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.45,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 47.69,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkRedOutfit, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 6.92,
+          "center_y_percent": 32.91,
+          "bbox_width_percent": 6.23,
+          "bbox_height_percent": 30.33,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LongStraightHair, left of DarkRedOutfit, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant SteelPlateFloor covers 100x48 percent at frame 50/56. Left to right: LongStraightHair, ShadowBlade, DarkRedOutfit, InnerYard, SteelPlateFloor."
+    },
+    {
+      "time_seconds": 11.958,
+      "source_frame": "D14_shots/ep08_shot01/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.58m to 16.36m across 5 layers; nearest is LongStraightHair, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (47.67, -7.04, 0.89) on a 50.0mm lens, frame 288 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 9.47,
+          "center_y_percent": 29.38,
+          "bbox_width_percent": 18.94,
+          "bbox_height_percent": 50.57,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ShadowBlade, left of InnerYard, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 1.11,
+          "center_y_percent": 53.71,
+          "bbox_width_percent": 2.23,
+          "bbox_height_percent": 12.79,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ShadowBlade, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 35.41,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 25.15,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkRedOutfit, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.45,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 47.69,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkRedOutfit, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 PROP A-9",
+          "visibility": "visible",
+          "center_x_percent": 6.92,
+          "center_y_percent": 32.91,
+          "bbox_width_percent": 6.23,
+          "bbox_height_percent": 30.33,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LongStraightHair, left of DarkRedOutfit, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant SteelPlateFloor covers 100x48 percent at frame 50/56. Left to right: LongStraightHair, ShadowBlade, DarkRedOutfit, InnerYard, SteelPlateFloor."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

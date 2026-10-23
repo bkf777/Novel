@@ -1,0 +1,606 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep12_shot04/preview_video.mp4",
+    "duration": 7.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 168,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "B-5_CHAR_CleanedPatient_03",
+      "source_type": "MESH",
+      "root_name": "B-5_CHAR_CleanedPatient_03",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-5_CHAR_CleanedPatient_03; type=MESH; root=B-5_CHAR_CleanedPatient_03; dimensions=2.900,1.450,1.750",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O009",
+      "source_name": "B-5_EXT_OldSheetMetalWall_01",
+      "source_type": "MESH",
+      "root_name": "B-5_EXT_OldSheetMetalWall_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-5_EXT_OldSheetMetalWall_01; type=MESH; root=B-5_EXT_OldSheetMetalWall_01; dimensions=7.000,0.120,3.600",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O011",
+      "source_name": "B-5_LGT_CitywideNoticeProjection_01",
+      "source_type": "MESH",
+      "root_name": "B-5_LGT_CitywideNoticeProjection_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-5_LGT_CitywideNoticeProjection_01; type=MESH; root=B-5_LGT_CitywideNoticeProjection_01; dimensions=6.400,0.020,2.400",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O013",
+      "source_name": "B-5_LGT_GreyFramePanel_01",
+      "source_type": "MESH",
+      "root_name": "B-5_LGT_GreyFramePanel_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-5_LGT_GreyFramePanel_01; type=MESH; root=B-5_LGT_GreyFramePanel_01; dimensions=0.600,0.020,0.450",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR CleanedPatient",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "purified patient blockout with rolled sleeves",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 PROP B-5",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O009",
+        "O011",
+        "O013"
+      ],
+      "instance_count": 3,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-5 set pieces and fittings: OldSheetMetalWall, CitywideNoticeProjection, GreyFramePanel",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    }
+  ],
+  "interaction_contracts": [],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 7.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 01 CHAR CleanedPatient",
+        "world_path": "camera travels from (3.29, 8.85, 0.79) to (3.29, 8.85, 0.79) on a 50mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 中景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "the protagonist turns and gathers the purified patients, and a few of them close into a half circle in the cold white light with their sleeves rolled up; a readout field in one corner shows the normalisation readout at 1.2% as he looks up toward the supply road outside the gate",
+      "layout_and_occlusion": "4 visible instances. Dominant OldSheetMetalWall covers 74x50 percent at frame 63/25. Left to right: OldSheetMetalWall, CitywideNoticeProjection, CleanedPatient, GreyFramePanel.",
+      "lighting_spatial_logic": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep12_shot04/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 6.33m to 9.19m across 4 layers; nearest is CleanedPatient, furthest is OldSheetMetalWall"
+      },
+      "camera_relation": "camera at (3.29, 8.85, 0.79) on a 50.0mm lens, frame 1 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR CleanedPatient",
+          "visibility": "visible",
+          "center_x_percent": 66.58,
+          "center_y_percent": 31.55,
+          "bbox_width_percent": 66.84,
+          "bbox_height_percent": 50.1,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CitywideNoticeProjection, left of GreyFramePanel, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 62.96,
+          "center_y_percent": 24.83,
+          "bbox_width_percent": 74.09,
+          "bbox_height_percent": 49.65,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CitywideNoticeProjection, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 65.7,
+          "center_y_percent": 19.96,
+          "bbox_width_percent": 68.59,
+          "bbox_height_percent": 39.92,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of OldSheetMetalWall, left of CleanedPatient, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 67.21,
+          "center_y_percent": 21.64,
+          "bbox_width_percent": 19.24,
+          "bbox_height_percent": 8.27,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CleanedPatient, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant OldSheetMetalWall covers 74x50 percent at frame 63/25. Left to right: OldSheetMetalWall, CitywideNoticeProjection, CleanedPatient, GreyFramePanel."
+    },
+    {
+      "time_seconds": 0.994,
+      "source_frame": "D14_shots/ep12_shot04/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 6.33m to 9.19m across 4 layers; nearest is CleanedPatient, furthest is OldSheetMetalWall"
+      },
+      "camera_relation": "camera at (3.29, 8.85, 0.79) on a 50.0mm lens, frame 25 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR CleanedPatient",
+          "visibility": "visible",
+          "center_x_percent": 66.58,
+          "center_y_percent": 31.55,
+          "bbox_width_percent": 66.84,
+          "bbox_height_percent": 50.1,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CitywideNoticeProjection, left of GreyFramePanel, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 62.96,
+          "center_y_percent": 24.83,
+          "bbox_width_percent": 74.09,
+          "bbox_height_percent": 49.65,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CitywideNoticeProjection, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 65.7,
+          "center_y_percent": 19.96,
+          "bbox_width_percent": 68.59,
+          "bbox_height_percent": 39.92,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of OldSheetMetalWall, left of CleanedPatient, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 67.21,
+          "center_y_percent": 21.64,
+          "bbox_width_percent": 19.24,
+          "bbox_height_percent": 8.27,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CleanedPatient, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant OldSheetMetalWall covers 74x50 percent at frame 63/25. Left to right: OldSheetMetalWall, CitywideNoticeProjection, CleanedPatient, GreyFramePanel."
+    },
+    {
+      "time_seconds": 1.988,
+      "source_frame": "D14_shots/ep12_shot04/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 6.33m to 9.19m across 4 layers; nearest is CleanedPatient, furthest is OldSheetMetalWall"
+      },
+      "camera_relation": "camera at (3.29, 8.85, 0.79) on a 50.0mm lens, frame 49 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR CleanedPatient",
+          "visibility": "visible",
+          "center_x_percent": 66.58,
+          "center_y_percent": 31.55,
+          "bbox_width_percent": 66.84,
+          "bbox_height_percent": 50.1,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CitywideNoticeProjection, left of GreyFramePanel, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 62.96,
+          "center_y_percent": 24.83,
+          "bbox_width_percent": 74.09,
+          "bbox_height_percent": 49.65,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CitywideNoticeProjection, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 65.7,
+          "center_y_percent": 19.96,
+          "bbox_width_percent": 68.59,
+          "bbox_height_percent": 39.92,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of OldSheetMetalWall, left of CleanedPatient, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 67.21,
+          "center_y_percent": 21.64,
+          "bbox_width_percent": 19.24,
+          "bbox_height_percent": 8.27,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CleanedPatient, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant OldSheetMetalWall covers 74x50 percent at frame 63/25. Left to right: OldSheetMetalWall, CitywideNoticeProjection, CleanedPatient, GreyFramePanel."
+    },
+    {
+      "time_seconds": 2.982,
+      "source_frame": "D14_shots/ep12_shot04/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 6.33m to 9.19m across 4 layers; nearest is CleanedPatient, furthest is OldSheetMetalWall"
+      },
+      "camera_relation": "camera at (3.29, 8.85, 0.79) on a 50.0mm lens, frame 73 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR CleanedPatient",
+          "visibility": "visible",
+          "center_x_percent": 66.58,
+          "center_y_percent": 31.55,
+          "bbox_width_percent": 66.84,
+          "bbox_height_percent": 50.1,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CitywideNoticeProjection, left of GreyFramePanel, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 62.96,
+          "center_y_percent": 24.83,
+          "bbox_width_percent": 74.09,
+          "bbox_height_percent": 49.65,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CitywideNoticeProjection, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 65.7,
+          "center_y_percent": 19.96,
+          "bbox_width_percent": 68.59,
+          "bbox_height_percent": 39.92,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of OldSheetMetalWall, left of CleanedPatient, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 67.21,
+          "center_y_percent": 21.64,
+          "bbox_width_percent": 19.24,
+          "bbox_height_percent": 8.27,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CleanedPatient, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant OldSheetMetalWall covers 74x50 percent at frame 63/25. Left to right: OldSheetMetalWall, CitywideNoticeProjection, CleanedPatient, GreyFramePanel."
+    },
+    {
+      "time_seconds": 3.976,
+      "source_frame": "D14_shots/ep12_shot04/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 6.33m to 9.19m across 4 layers; nearest is CleanedPatient, furthest is OldSheetMetalWall"
+      },
+      "camera_relation": "camera at (3.29, 8.85, 0.79) on a 50.0mm lens, frame 96 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR CleanedPatient",
+          "visibility": "visible",
+          "center_x_percent": 66.58,
+          "center_y_percent": 31.55,
+          "bbox_width_percent": 66.84,
+          "bbox_height_percent": 50.1,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CitywideNoticeProjection, left of GreyFramePanel, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 62.96,
+          "center_y_percent": 24.83,
+          "bbox_width_percent": 74.09,
+          "bbox_height_percent": 49.65,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CitywideNoticeProjection, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 65.7,
+          "center_y_percent": 19.96,
+          "bbox_width_percent": 68.59,
+          "bbox_height_percent": 39.92,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of OldSheetMetalWall, left of CleanedPatient, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 67.21,
+          "center_y_percent": 21.64,
+          "bbox_width_percent": 19.24,
+          "bbox_height_percent": 8.27,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CleanedPatient, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant OldSheetMetalWall covers 74x50 percent at frame 63/25. Left to right: OldSheetMetalWall, CitywideNoticeProjection, CleanedPatient, GreyFramePanel."
+    },
+    {
+      "time_seconds": 4.97,
+      "source_frame": "D14_shots/ep12_shot04/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 6.33m to 9.19m across 4 layers; nearest is CleanedPatient, furthest is OldSheetMetalWall"
+      },
+      "camera_relation": "camera at (3.29, 8.85, 0.79) on a 50.0mm lens, frame 120 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR CleanedPatient",
+          "visibility": "visible",
+          "center_x_percent": 66.58,
+          "center_y_percent": 31.55,
+          "bbox_width_percent": 66.84,
+          "bbox_height_percent": 50.1,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CitywideNoticeProjection, left of GreyFramePanel, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 62.96,
+          "center_y_percent": 24.83,
+          "bbox_width_percent": 74.09,
+          "bbox_height_percent": 49.65,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CitywideNoticeProjection, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 65.7,
+          "center_y_percent": 19.96,
+          "bbox_width_percent": 68.59,
+          "bbox_height_percent": 39.92,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of OldSheetMetalWall, left of CleanedPatient, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 67.21,
+          "center_y_percent": 21.64,
+          "bbox_width_percent": 19.24,
+          "bbox_height_percent": 8.27,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CleanedPatient, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant OldSheetMetalWall covers 74x50 percent at frame 63/25. Left to right: OldSheetMetalWall, CitywideNoticeProjection, CleanedPatient, GreyFramePanel."
+    },
+    {
+      "time_seconds": 5.964,
+      "source_frame": "D14_shots/ep12_shot04/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 6.33m to 9.19m across 4 layers; nearest is CleanedPatient, furthest is OldSheetMetalWall"
+      },
+      "camera_relation": "camera at (3.29, 8.85, 0.79) on a 50.0mm lens, frame 144 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR CleanedPatient",
+          "visibility": "visible",
+          "center_x_percent": 66.58,
+          "center_y_percent": 31.55,
+          "bbox_width_percent": 66.84,
+          "bbox_height_percent": 50.1,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CitywideNoticeProjection, left of GreyFramePanel, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 62.96,
+          "center_y_percent": 24.83,
+          "bbox_width_percent": 74.09,
+          "bbox_height_percent": 49.65,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CitywideNoticeProjection, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 65.7,
+          "center_y_percent": 19.96,
+          "bbox_width_percent": 68.59,
+          "bbox_height_percent": 39.92,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of OldSheetMetalWall, left of CleanedPatient, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 67.21,
+          "center_y_percent": 21.64,
+          "bbox_width_percent": 19.24,
+          "bbox_height_percent": 8.27,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CleanedPatient, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant OldSheetMetalWall covers 74x50 percent at frame 63/25. Left to right: OldSheetMetalWall, CitywideNoticeProjection, CleanedPatient, GreyFramePanel."
+    },
+    {
+      "time_seconds": 6.958,
+      "source_frame": "D14_shots/ep12_shot04/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 6.33m to 9.19m across 4 layers; nearest is CleanedPatient, furthest is OldSheetMetalWall"
+      },
+      "camera_relation": "camera at (3.29, 8.85, 0.79) on a 50.0mm lens, frame 168 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR CleanedPatient",
+          "visibility": "visible",
+          "center_x_percent": 66.58,
+          "center_y_percent": 31.55,
+          "bbox_width_percent": 66.84,
+          "bbox_height_percent": 50.1,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CitywideNoticeProjection, left of GreyFramePanel, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 62.96,
+          "center_y_percent": 24.83,
+          "bbox_width_percent": 74.09,
+          "bbox_height_percent": 49.65,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CitywideNoticeProjection, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 65.7,
+          "center_y_percent": 19.96,
+          "bbox_width_percent": 68.59,
+          "bbox_height_percent": 39.92,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of OldSheetMetalWall, left of CleanedPatient, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 PROP B-5",
+          "visibility": "visible",
+          "center_x_percent": 67.21,
+          "center_y_percent": 21.64,
+          "bbox_width_percent": 19.24,
+          "bbox_height_percent": 8.27,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CleanedPatient, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant OldSheetMetalWall covers 74x50 percent at frame 63/25. Left to right: OldSheetMetalWall, CitywideNoticeProjection, CleanedPatient, GreyFramePanel."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

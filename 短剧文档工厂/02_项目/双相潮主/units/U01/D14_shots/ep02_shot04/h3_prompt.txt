@@ -1,0 +1,43 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated stylisation….
+[INSTANCE REGISTRY] I1=<O002>,I2=<O004>,I3=<O006>,I4=<O012>.
+<Entity 01 CHAR LuchenHand>=E1[articulated/primary/static] members=I1;n=1;src=protagonist raised hand blockout; final=protagonist raised hand blockout; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings…; style=world_style_unit_contract.
+<Entity 02 ENV A-3>=E2[environment/context/static] members=I2-I3;n=2;src=A-3 built environment shell enclosing the set: OuterGravelGround…; final=A-3 built environment shell enclosing the set: OuterGravelGround, RoadShoulder; finish=worn cement, oxidised steel and sheet metal with cold grey reflections, shadow detail kept…; style=world_style_unit_contract.
+<Entity 03 PROP A-3>=E3[rigid/context/static] members=I4;n=1;src=A-3 set pieces and fittings: ClockTower; final=A-3 set pieces and fittings: ClockTower; finish=utilitarian material with visible weight, thickness and use marks, cold grey metal and dull…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I3;1:1;n=2.
+E3:I4;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse realism for humans… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D with detail… | materials=real skin with pores and slight oil sheen, matte technical fabric with wear and… | environment=cement yard plates cut by fissures and pit openings, riveted steel frames… | props=functional utilitarian tooling with real weight and thickness: crowbars, ration… | light=one cold overhead key with shadow detail retained instead of crushed black….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-5.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=none;path=camera travels from (20. 90, 5. 06, 0. 63) to (20. 90, 5. 06, 0. 63) on a 24mm lens, total path length 0…;dist=stable;azi=stable;elev=stable;lens=stable;comp=远景 framing in 9:16 vertical, subject held in the frame centre band with head room above…;ban=do not add any camera move, zoom or handheld shake… | Act=protagonist raises the wrist, the watch dial lights against the night, distant clock tower silhouette stands against the cold sky | Layout=4 visible instances. Dominant RoadShoulder covers 64x4 percent at frame 32/72… | Light=one cold overhead key with shadow detail retained instead of crushed black, cold grey….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=wide;Comp=depth spans 1. 37m to 170. 74m across 4 layers…;Cam=camera at (20.90, 5.06, 0.63) on a 24.0mm lens, frame 1 of 120;Lay=4 visible instances… V=I2:96/72/7/4,I3:32/72/64/4,I4:50/57/8/16 D=I1:v/100/33/1/17/o:upright body proxy, head end up/m:stationary across this interval/r:right of OuterGravelGround, behind all nearer…
+@0.992s F=wide;Comp=depth spans 1. 38m to 170. 74m across 4 layers…;Cam=camera at (20.90, 5.06, 0.63) on a 24.0mm lens, frame 25 of 120;Lay=4 visible instances… V=I2:96/72/7/4,I3:32/72/64/4,I4:50/57/8/16 D=I1:v/99/32/1/17/o:upright body proxy, head end up/m:stationary across this interval/r:right of OuterGravelGround, behind all nearer…
+@1.983s F=wide;Comp=depth spans 1. 39m to 170. 74m across 4 layers…;Cam=camera at (20.90, 5.06, 0.63) on a 24.0mm lens, frame 49 of 120;Lay=4 visible instances… V=I2:96/72/7/4,I3:32/72/64/4,I4:50/57/8/16 D=I1:v/99/30/1/17/o:upright body proxy, head end up/m:rising in this interval/r:right of OuterGravelGround, behind all nearer…
+@2.975s F=wide;Comp=depth spans 1. 40m to 170. 74m across 4 layers…;Cam=camera at (20.90, 5.06, 0.63) on a 24.0mm lens, frame 72 of 120;Lay=4 visible instances… V=I2:96/72/7/4,I3:32/72/64/4,I4:50/57/8/16 D=I1:v/99/28/2/17/o:upright body proxy, head end up/m:rising in this interval/r:right of OuterGravelGround, behind all nearer…
+@3.967s F=wide;Comp=depth spans 1. 40m to 170. 74m across 4 layers…;Cam=camera at (20.90, 5.06, 0.63) on a 24.0mm lens, frame 96 of 120;Lay=4 visible instances… V=I2:96/72/7/4,I3:32/72/64/4,I4:50/57/8/16 D=I1:v/99/27/2/17/o:upright body proxy, head end up/m:stationary across this interval/r:right of OuterGravelGround, behind all nearer…
+@4.958s F=wide;Comp=depth spans 1. 40m to 170. 74m across 4 layers…;Cam=camera at (20.90, 5.06, 0.63) on a 24.0mm lens, frame 120 of 120;Lay=4 visible instances… V=I2:96/72/7/4,I3:32/72/64/4,I4:50/57/8/16 D=I1:v/99/27/2/17/o:upright body proxy, head end up/m:stationary across this interval/r:right of OuterGravelGround, behind all nearer…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+eleven bell strikes with the tail echoing across the open ground
+
+non_diegetic_music:
+N/A

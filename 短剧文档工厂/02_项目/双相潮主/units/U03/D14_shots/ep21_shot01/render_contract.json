@@ -1,0 +1,798 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep21_shot01/preview_video.mp4",
+    "duration": 12.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 288,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "B-15_CHAR_LongQueue_05",
+      "source_type": "MESH",
+      "root_name": "B-15_CHAR_LongQueue_05",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-15_CHAR_LongQueue_05; type=MESH; root=B-15_CHAR_LongQueue_05; dimensions=8.460,13.940,1.750",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O006",
+      "source_name": "B-15_PROP_MedicineCrate_01",
+      "source_type": "MESH",
+      "root_name": "B-15_PROP_MedicineCrate_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-15_PROP_MedicineCrate_01; type=MESH; root=B-15_PROP_MedicineCrate_01; dimensions=0.700,0.500,0.400",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O007",
+      "source_name": "B-15_PROP_NetFireSlot_01",
+      "source_type": "MESH",
+      "root_name": "B-15_PROP_NetFireSlot_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-15_PROP_NetFireSlot_01; type=MESH; root=B-15_PROP_NetFireSlot_01; dimensions=1.200,1.200,0.020",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O008",
+      "source_name": "B-15_PROP_NoticeWall_03",
+      "source_type": "MESH",
+      "root_name": "B-15_PROP_NoticeWall_03",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-15_PROP_NoticeWall_03; type=MESH; root=B-15_PROP_NoticeWall_03; dimensions=1.731,0.023,0.692",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O009",
+      "source_name": "B-15_PROP_TriageTable_01",
+      "source_type": "MESH",
+      "root_name": "B-15_PROP_TriageTable_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-15_PROP_TriageTable_01; type=MESH; root=B-15_PROP_TriageTable_01; dimensions=2.951,0.830,0.588",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR LongQueue",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "long queue blockout bending twice before the triage table",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 PROP B-15",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O006",
+        "O007",
+        "O008",
+        "O009"
+      ],
+      "instance_count": 4,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-15 set pieces and fittings: MedicineCrate, NetFireSlot, NoticeWall, TriageTable",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_8101",
+      "source_instance_ids": [
+        "O001",
+        "O007",
+        "O009"
+      ],
+      "start_seconds": 0.0,
+      "end_seconds": 1.0,
+      "relation": "the queue bends twice before it reaches the triage table and the net fire slot stays at the head",
+      "forbidden_change": "do not straighten the bends and do not give any queued person a face"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 12.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 01 CHAR LongQueue",
+        "world_path": "camera travels from (4.41, -4.02, 7.79) to (4.41, -4.02, 7.79) on a 24mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "远景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 远景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "the queue in front of the triage table bends twice and the grey patches have doubled since two days ago; the grey patch is only visible on the cuffs and the backs of hands and the queued people are silhouettes all the way",
+      "layout_and_occlusion": "5 visible instances. Dominant NoticeWall covers 32x15 percent at frame 23/82. Left to right: LongQueue, TriageTable, NetFireSlot, NoticeWall, MedicineCrate.",
+      "lighting_spatial_logic": "one cold overhead key over the steel table with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the emergency lamps on the gate posts, the residual fire heads, the twin flame and the derrick lamp as the only moving light sources, and the grey fog pressing down over the street with the unlit crossing kept dark"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep21_shot01/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 4.61m to 11.58m across 5 layers; nearest is LongQueue, furthest is MedicineCrate"
+      },
+      "camera_relation": "camera at (4.41, -4.02, 7.79) on a 24.0mm lens, frame 1 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR LongQueue",
+          "visibility": "visible",
+          "center_x_percent": 0.1,
+          "center_y_percent": 91.73,
+          "bbox_width_percent": 0.19,
+          "bbox_height_percent": 16.53,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of TriageTable, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 23.98,
+          "center_y_percent": 60.1,
+          "bbox_width_percent": 9.33,
+          "bbox_height_percent": 4.88,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of NoticeWall, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 12.52,
+          "center_y_percent": 77.43,
+          "bbox_width_percent": 21.6,
+          "bbox_height_percent": 11.13,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TriageTable, left of NoticeWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 23.01,
+          "center_y_percent": 82.18,
+          "bbox_width_percent": 31.95,
+          "bbox_height_percent": 15.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of NetFireSlot, left of MedicineCrate, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 11.06,
+          "center_y_percent": 68.06,
+          "bbox_width_percent": 22.12,
+          "bbox_height_percent": 15.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LongQueue, left of NetFireSlot, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant NoticeWall covers 32x15 percent at frame 23/82. Left to right: LongQueue, TriageTable, NetFireSlot, NoticeWall, MedicineCrate."
+    },
+    {
+      "time_seconds": 1.495,
+      "source_frame": "D14_shots/ep21_shot01/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 4.61m to 11.58m across 5 layers; nearest is LongQueue, furthest is MedicineCrate"
+      },
+      "camera_relation": "camera at (4.41, -4.02, 7.79) on a 24.0mm lens, frame 37 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR LongQueue",
+          "visibility": "visible",
+          "center_x_percent": 0.1,
+          "center_y_percent": 91.73,
+          "bbox_width_percent": 0.19,
+          "bbox_height_percent": 16.53,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of TriageTable, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 23.98,
+          "center_y_percent": 60.1,
+          "bbox_width_percent": 9.33,
+          "bbox_height_percent": 4.88,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of NoticeWall, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 12.52,
+          "center_y_percent": 77.43,
+          "bbox_width_percent": 21.6,
+          "bbox_height_percent": 11.13,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TriageTable, left of NoticeWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 23.01,
+          "center_y_percent": 82.18,
+          "bbox_width_percent": 31.95,
+          "bbox_height_percent": 15.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of NetFireSlot, left of MedicineCrate, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 11.06,
+          "center_y_percent": 68.06,
+          "bbox_width_percent": 22.12,
+          "bbox_height_percent": 15.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LongQueue, left of NetFireSlot, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant NoticeWall covers 32x15 percent at frame 23/82. Left to right: LongQueue, TriageTable, NetFireSlot, NoticeWall, MedicineCrate."
+    },
+    {
+      "time_seconds": 2.99,
+      "source_frame": "D14_shots/ep21_shot01/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 4.61m to 11.58m across 5 layers; nearest is LongQueue, furthest is MedicineCrate"
+      },
+      "camera_relation": "camera at (4.41, -4.02, 7.79) on a 24.0mm lens, frame 73 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR LongQueue",
+          "visibility": "visible",
+          "center_x_percent": 0.1,
+          "center_y_percent": 91.73,
+          "bbox_width_percent": 0.19,
+          "bbox_height_percent": 16.53,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of TriageTable, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 23.98,
+          "center_y_percent": 60.1,
+          "bbox_width_percent": 9.33,
+          "bbox_height_percent": 4.88,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of NoticeWall, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 12.52,
+          "center_y_percent": 77.43,
+          "bbox_width_percent": 21.6,
+          "bbox_height_percent": 11.13,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TriageTable, left of NoticeWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 23.01,
+          "center_y_percent": 82.18,
+          "bbox_width_percent": 31.95,
+          "bbox_height_percent": 15.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of NetFireSlot, left of MedicineCrate, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 11.06,
+          "center_y_percent": 68.06,
+          "bbox_width_percent": 22.12,
+          "bbox_height_percent": 15.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LongQueue, left of NetFireSlot, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant NoticeWall covers 32x15 percent at frame 23/82. Left to right: LongQueue, TriageTable, NetFireSlot, NoticeWall, MedicineCrate."
+    },
+    {
+      "time_seconds": 4.484,
+      "source_frame": "D14_shots/ep21_shot01/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 4.61m to 11.58m across 5 layers; nearest is LongQueue, furthest is MedicineCrate"
+      },
+      "camera_relation": "camera at (4.41, -4.02, 7.79) on a 24.0mm lens, frame 109 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR LongQueue",
+          "visibility": "visible",
+          "center_x_percent": 0.1,
+          "center_y_percent": 91.73,
+          "bbox_width_percent": 0.19,
+          "bbox_height_percent": 16.53,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of TriageTable, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 23.98,
+          "center_y_percent": 60.1,
+          "bbox_width_percent": 9.33,
+          "bbox_height_percent": 4.88,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of NoticeWall, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 12.52,
+          "center_y_percent": 77.43,
+          "bbox_width_percent": 21.6,
+          "bbox_height_percent": 11.13,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TriageTable, left of NoticeWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 23.01,
+          "center_y_percent": 82.18,
+          "bbox_width_percent": 31.95,
+          "bbox_height_percent": 15.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of NetFireSlot, left of MedicineCrate, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 11.06,
+          "center_y_percent": 68.06,
+          "bbox_width_percent": 22.12,
+          "bbox_height_percent": 15.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LongQueue, left of NetFireSlot, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant NoticeWall covers 32x15 percent at frame 23/82. Left to right: LongQueue, TriageTable, NetFireSlot, NoticeWall, MedicineCrate."
+    },
+    {
+      "time_seconds": 5.979,
+      "source_frame": "D14_shots/ep21_shot01/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 4.61m to 11.58m across 5 layers; nearest is LongQueue, furthest is MedicineCrate"
+      },
+      "camera_relation": "camera at (4.41, -4.02, 7.79) on a 24.0mm lens, frame 144 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR LongQueue",
+          "visibility": "visible",
+          "center_x_percent": 0.1,
+          "center_y_percent": 91.73,
+          "bbox_width_percent": 0.19,
+          "bbox_height_percent": 16.53,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of TriageTable, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 23.98,
+          "center_y_percent": 60.1,
+          "bbox_width_percent": 9.33,
+          "bbox_height_percent": 4.88,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of NoticeWall, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 12.52,
+          "center_y_percent": 77.43,
+          "bbox_width_percent": 21.6,
+          "bbox_height_percent": 11.13,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TriageTable, left of NoticeWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 23.01,
+          "center_y_percent": 82.18,
+          "bbox_width_percent": 31.95,
+          "bbox_height_percent": 15.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of NetFireSlot, left of MedicineCrate, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 11.06,
+          "center_y_percent": 68.06,
+          "bbox_width_percent": 22.12,
+          "bbox_height_percent": 15.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LongQueue, left of NetFireSlot, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant NoticeWall covers 32x15 percent at frame 23/82. Left to right: LongQueue, TriageTable, NetFireSlot, NoticeWall, MedicineCrate."
+    },
+    {
+      "time_seconds": 7.474,
+      "source_frame": "D14_shots/ep21_shot01/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 4.61m to 11.58m across 5 layers; nearest is LongQueue, furthest is MedicineCrate"
+      },
+      "camera_relation": "camera at (4.41, -4.02, 7.79) on a 24.0mm lens, frame 180 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR LongQueue",
+          "visibility": "visible",
+          "center_x_percent": 0.1,
+          "center_y_percent": 91.73,
+          "bbox_width_percent": 0.19,
+          "bbox_height_percent": 16.53,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of TriageTable, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 23.98,
+          "center_y_percent": 60.1,
+          "bbox_width_percent": 9.33,
+          "bbox_height_percent": 4.88,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of NoticeWall, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 12.52,
+          "center_y_percent": 77.43,
+          "bbox_width_percent": 21.6,
+          "bbox_height_percent": 11.13,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TriageTable, left of NoticeWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 23.01,
+          "center_y_percent": 82.18,
+          "bbox_width_percent": 31.95,
+          "bbox_height_percent": 15.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of NetFireSlot, left of MedicineCrate, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 11.06,
+          "center_y_percent": 68.06,
+          "bbox_width_percent": 22.12,
+          "bbox_height_percent": 15.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LongQueue, left of NetFireSlot, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant NoticeWall covers 32x15 percent at frame 23/82. Left to right: LongQueue, TriageTable, NetFireSlot, NoticeWall, MedicineCrate."
+    },
+    {
+      "time_seconds": 8.969,
+      "source_frame": "D14_shots/ep21_shot01/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 4.61m to 11.58m across 5 layers; nearest is LongQueue, furthest is MedicineCrate"
+      },
+      "camera_relation": "camera at (4.41, -4.02, 7.79) on a 24.0mm lens, frame 216 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR LongQueue",
+          "visibility": "visible",
+          "center_x_percent": 0.1,
+          "center_y_percent": 91.73,
+          "bbox_width_percent": 0.19,
+          "bbox_height_percent": 16.53,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of TriageTable, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 23.98,
+          "center_y_percent": 60.1,
+          "bbox_width_percent": 9.33,
+          "bbox_height_percent": 4.88,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of NoticeWall, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 12.52,
+          "center_y_percent": 77.43,
+          "bbox_width_percent": 21.6,
+          "bbox_height_percent": 11.13,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TriageTable, left of NoticeWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 23.01,
+          "center_y_percent": 82.18,
+          "bbox_width_percent": 31.95,
+          "bbox_height_percent": 15.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of NetFireSlot, left of MedicineCrate, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 11.06,
+          "center_y_percent": 68.06,
+          "bbox_width_percent": 22.12,
+          "bbox_height_percent": 15.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LongQueue, left of NetFireSlot, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant NoticeWall covers 32x15 percent at frame 23/82. Left to right: LongQueue, TriageTable, NetFireSlot, NoticeWall, MedicineCrate."
+    },
+    {
+      "time_seconds": 10.464,
+      "source_frame": "D14_shots/ep21_shot01/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 4.61m to 11.58m across 5 layers; nearest is LongQueue, furthest is MedicineCrate"
+      },
+      "camera_relation": "camera at (4.41, -4.02, 7.79) on a 24.0mm lens, frame 252 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR LongQueue",
+          "visibility": "visible",
+          "center_x_percent": 0.1,
+          "center_y_percent": 91.73,
+          "bbox_width_percent": 0.19,
+          "bbox_height_percent": 16.53,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of TriageTable, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 23.98,
+          "center_y_percent": 60.1,
+          "bbox_width_percent": 9.33,
+          "bbox_height_percent": 4.88,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of NoticeWall, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 12.52,
+          "center_y_percent": 77.43,
+          "bbox_width_percent": 21.6,
+          "bbox_height_percent": 11.13,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TriageTable, left of NoticeWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 23.01,
+          "center_y_percent": 82.18,
+          "bbox_width_percent": 31.95,
+          "bbox_height_percent": 15.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of NetFireSlot, left of MedicineCrate, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 11.06,
+          "center_y_percent": 68.06,
+          "bbox_width_percent": 22.12,
+          "bbox_height_percent": 15.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LongQueue, left of NetFireSlot, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant NoticeWall covers 32x15 percent at frame 23/82. Left to right: LongQueue, TriageTable, NetFireSlot, NoticeWall, MedicineCrate."
+    },
+    {
+      "time_seconds": 11.958,
+      "source_frame": "D14_shots/ep21_shot01/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 4.61m to 11.58m across 5 layers; nearest is LongQueue, furthest is MedicineCrate"
+      },
+      "camera_relation": "camera at (4.41, -4.02, 7.79) on a 24.0mm lens, frame 288 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR LongQueue",
+          "visibility": "visible",
+          "center_x_percent": 0.1,
+          "center_y_percent": 91.73,
+          "bbox_width_percent": 0.19,
+          "bbox_height_percent": 16.53,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of TriageTable, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 23.98,
+          "center_y_percent": 60.1,
+          "bbox_width_percent": 9.33,
+          "bbox_height_percent": 4.88,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of NoticeWall, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 12.52,
+          "center_y_percent": 77.43,
+          "bbox_width_percent": 21.6,
+          "bbox_height_percent": 11.13,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TriageTable, left of NoticeWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 23.01,
+          "center_y_percent": 82.18,
+          "bbox_width_percent": 31.95,
+          "bbox_height_percent": 15.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of NetFireSlot, left of MedicineCrate, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-15",
+          "visibility": "visible",
+          "center_x_percent": 11.06,
+          "center_y_percent": 68.06,
+          "bbox_width_percent": 22.12,
+          "bbox_height_percent": 15.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LongQueue, left of NetFireSlot, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant NoticeWall covers 32x15 percent at frame 23/82. Left to right: LongQueue, TriageTable, NetFireSlot, NoticeWall, MedicineCrate."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

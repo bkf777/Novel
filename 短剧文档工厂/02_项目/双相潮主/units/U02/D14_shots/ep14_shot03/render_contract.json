@@ -1,0 +1,1273 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep14_shot03/preview_video.mp4",
+    "duration": 13.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 312,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "B-8_EXT_FactoryHallShell",
+      "source_type": "MESH",
+      "root_name": "B-8_EXT_FactoryHallShell",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-8_EXT_FactoryHallShell; type=MESH; root=B-8_EXT_FactoryHallShell; dimensions=0.250,24.000,12.000",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O002",
+      "source_name": "B-8_EXT_FactoryHallShell.002",
+      "source_type": "MESH",
+      "root_name": "B-8_EXT_FactoryHallShell.002",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-8_EXT_FactoryHallShell.002; type=MESH; root=B-8_EXT_FactoryHallShell.002; dimensions=30.000,0.250,12.000",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O006",
+      "source_name": "B-8_EXT_FactoryYardGround",
+      "source_type": "MESH",
+      "root_name": "B-8_EXT_FactoryYardGround",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-8_EXT_FactoryYardGround; type=MESH; root=B-8_EXT_FactoryYardGround; dimensions=36.000,44.000,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O007",
+      "source_name": "B-8_EXT_MeetingRoomShell",
+      "source_type": "MESH",
+      "root_name": "B-8_EXT_MeetingRoomShell",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-8_EXT_MeetingRoomShell; type=MESH; root=B-8_EXT_MeetingRoomShell; dimensions=8.000,5.000,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O009",
+      "source_name": "B-8_EXT_MeetingRoomShell.003",
+      "source_type": "MESH",
+      "root_name": "B-8_EXT_MeetingRoomShell.003",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-8_EXT_MeetingRoomShell.003; type=MESH; root=B-8_EXT_MeetingRoomShell.003; dimensions=0.100,5.000,3.200",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O012",
+      "source_name": "B-8_EXT_MeetingRoomShell.006",
+      "source_type": "MESH",
+      "root_name": "B-8_EXT_MeetingRoomShell.006",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-8_EXT_MeetingRoomShell.006; type=MESH; root=B-8_EXT_MeetingRoomShell.006; dimensions=8.000,0.100,3.200",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O013",
+      "source_name": "B-8_LGT_CommitteeScreen_03",
+      "source_type": "MESH",
+      "root_name": "B-8_LGT_CommitteeScreen_03",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-8_LGT_CommitteeScreen_03; type=MESH; root=B-8_LGT_CommitteeScreen_03; dimensions=1.600,0.300,1.350",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O014",
+      "source_name": "B-8_PROP_QuotaRoster_01",
+      "source_type": "MESH",
+      "root_name": "B-8_PROP_QuotaRoster_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-8_PROP_QuotaRoster_01; type=MESH; root=B-8_PROP_QuotaRoster_01; dimensions=0.800,0.550,0.010",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O015",
+      "source_name": "B-8_PROP_SteelTable_01",
+      "source_type": "MESH",
+      "root_name": "B-8_PROP_SteelTable_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-8_PROP_SteelTable_01; type=MESH; root=B-8_PROP_SteelTable_01; dimensions=2.800,1.400,0.760",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 ENV B-8",
+      "entity_class": "environment",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O001",
+        "O002",
+        "O006",
+        "O007",
+        "O009",
+        "O012"
+      ],
+      "instance_count": 6,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-8 built environment shell enclosing the set: FactoryHallShell, FactoryYardGround, MeetingRoomShell",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 02 PROP B-8",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O013",
+        "O014",
+        "O015"
+      ],
+      "instance_count": 3,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-8 set pieces and fittings: CommitteeScreen, QuotaRoster, SteelTable",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_5501",
+      "source_instance_ids": [
+        "O013",
+        "O014"
+      ],
+      "start_seconds": 0.0,
+      "end_seconds": 1.0,
+      "relation": "the blank signature space of the machine factory row stays empty while the cost column on the screen stops at the last entry",
+      "forbidden_change": "do not fill the signature space and do not close the last cost entry"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 13.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 02 PROP B-8",
+        "world_path": "camera travels from (-3.20, 18.80, 1.58) to (-3.20, 18.80, 1.58) on a 50mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 中景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "a quota roster lies open on the meeting table and the row for the machine factory has nobody signing it, the blank signature space pressed into the paper; across the table the committee screen lights up in cold gold with a column of cost entries, the last entry left unclosed",
+      "layout_and_occlusion": "9 visible instances. Dominant SteelTable covers 99x50 percent at frame 50/75. Left to right: FactoryYardGround, CommitteeScreen, FactoryHallShell, FactoryHallShell, MeetingRoomShell.",
+      "lighting_spatial_logic": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep14_shot03/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.13m to 19.17m across 9 layers; nearest is QuotaRoster, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-3.20, 18.80, 1.58) on a 50.0mm lens, frame 1 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 15.86,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 31.73,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CommitteeScreen, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 29.32,
+          "center_y_percent": 22.75,
+          "bbox_width_percent": 7.23,
+          "bbox_height_percent": 45.5,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryHallShell, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 1.62,
+          "center_y_percent": 41.36,
+          "bbox_width_percent": 0.04,
+          "bbox_height_percent": 0.72,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CommitteeScreen, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 78.4,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 43.21,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, left of SteelTable, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 36.57,
+          "center_y_percent": 33.53,
+          "bbox_width_percent": 73.13,
+          "bbox_height_percent": 67.06,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryHallShell, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 85.9,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 28.2,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QuotaRoster, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 7.83,
+          "center_y_percent": 49.65,
+          "bbox_width_percent": 15.66,
+          "bbox_height_percent": 31.83,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 85.68,
+          "center_y_percent": 66.69,
+          "bbox_width_percent": 28.64,
+          "bbox_height_percent": 11.77,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelTable, left of MeetingRoomShell, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O015",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.42,
+          "center_y_percent": 75.06,
+          "bbox_width_percent": 99.15,
+          "bbox_height_percent": 49.87,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, left of QuotaRoster, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant SteelTable covers 99x50 percent at frame 50/75. Left to right: FactoryYardGround, CommitteeScreen, FactoryHallShell, FactoryHallShell, MeetingRoomShell."
+    },
+    {
+      "time_seconds": 1.62,
+      "source_frame": "D14_shots/ep14_shot03/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.13m to 19.17m across 9 layers; nearest is QuotaRoster, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-3.20, 18.80, 1.58) on a 50.0mm lens, frame 40 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 15.86,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 31.73,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CommitteeScreen, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 29.32,
+          "center_y_percent": 22.75,
+          "bbox_width_percent": 7.23,
+          "bbox_height_percent": 45.5,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryHallShell, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 1.62,
+          "center_y_percent": 41.36,
+          "bbox_width_percent": 0.04,
+          "bbox_height_percent": 0.72,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CommitteeScreen, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 78.4,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 43.21,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, left of SteelTable, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 36.57,
+          "center_y_percent": 33.53,
+          "bbox_width_percent": 73.13,
+          "bbox_height_percent": 67.06,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryHallShell, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 85.9,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 28.2,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QuotaRoster, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 7.83,
+          "center_y_percent": 49.65,
+          "bbox_width_percent": 15.66,
+          "bbox_height_percent": 31.83,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 85.68,
+          "center_y_percent": 66.69,
+          "bbox_width_percent": 28.64,
+          "bbox_height_percent": 11.77,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelTable, left of MeetingRoomShell, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O015",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.42,
+          "center_y_percent": 75.06,
+          "bbox_width_percent": 99.15,
+          "bbox_height_percent": 49.87,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, left of QuotaRoster, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant SteelTable covers 99x50 percent at frame 50/75. Left to right: FactoryYardGround, CommitteeScreen, FactoryHallShell, FactoryHallShell, MeetingRoomShell."
+    },
+    {
+      "time_seconds": 3.24,
+      "source_frame": "D14_shots/ep14_shot03/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.13m to 19.17m across 9 layers; nearest is QuotaRoster, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-3.20, 18.80, 1.58) on a 50.0mm lens, frame 79 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 15.86,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 31.73,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CommitteeScreen, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 29.32,
+          "center_y_percent": 22.75,
+          "bbox_width_percent": 7.23,
+          "bbox_height_percent": 45.5,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryHallShell, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 1.62,
+          "center_y_percent": 41.36,
+          "bbox_width_percent": 0.04,
+          "bbox_height_percent": 0.72,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CommitteeScreen, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 78.4,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 43.21,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, left of SteelTable, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 36.57,
+          "center_y_percent": 33.53,
+          "bbox_width_percent": 73.13,
+          "bbox_height_percent": 67.06,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryHallShell, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 85.9,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 28.2,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QuotaRoster, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 7.83,
+          "center_y_percent": 49.65,
+          "bbox_width_percent": 15.66,
+          "bbox_height_percent": 31.83,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 85.68,
+          "center_y_percent": 66.69,
+          "bbox_width_percent": 28.64,
+          "bbox_height_percent": 11.77,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelTable, left of MeetingRoomShell, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O015",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.42,
+          "center_y_percent": 75.06,
+          "bbox_width_percent": 99.15,
+          "bbox_height_percent": 49.87,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, left of QuotaRoster, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant SteelTable covers 99x50 percent at frame 50/75. Left to right: FactoryYardGround, CommitteeScreen, FactoryHallShell, FactoryHallShell, MeetingRoomShell."
+    },
+    {
+      "time_seconds": 4.859,
+      "source_frame": "D14_shots/ep14_shot03/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.13m to 19.17m across 9 layers; nearest is QuotaRoster, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-3.20, 18.80, 1.58) on a 50.0mm lens, frame 118 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 15.86,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 31.73,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CommitteeScreen, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 29.32,
+          "center_y_percent": 22.75,
+          "bbox_width_percent": 7.23,
+          "bbox_height_percent": 45.5,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryHallShell, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 1.62,
+          "center_y_percent": 41.36,
+          "bbox_width_percent": 0.04,
+          "bbox_height_percent": 0.72,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CommitteeScreen, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 78.4,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 43.21,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, left of SteelTable, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 36.57,
+          "center_y_percent": 33.53,
+          "bbox_width_percent": 73.13,
+          "bbox_height_percent": 67.06,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryHallShell, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 85.9,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 28.2,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QuotaRoster, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 7.83,
+          "center_y_percent": 49.65,
+          "bbox_width_percent": 15.66,
+          "bbox_height_percent": 31.83,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 85.68,
+          "center_y_percent": 66.69,
+          "bbox_width_percent": 28.64,
+          "bbox_height_percent": 11.77,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelTable, left of MeetingRoomShell, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O015",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.42,
+          "center_y_percent": 75.06,
+          "bbox_width_percent": 99.15,
+          "bbox_height_percent": 49.87,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, left of QuotaRoster, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant SteelTable covers 99x50 percent at frame 50/75. Left to right: FactoryYardGround, CommitteeScreen, FactoryHallShell, FactoryHallShell, MeetingRoomShell."
+    },
+    {
+      "time_seconds": 6.479,
+      "source_frame": "D14_shots/ep14_shot03/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.13m to 19.17m across 9 layers; nearest is QuotaRoster, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-3.20, 18.80, 1.58) on a 50.0mm lens, frame 156 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 15.86,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 31.73,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CommitteeScreen, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 29.32,
+          "center_y_percent": 22.75,
+          "bbox_width_percent": 7.23,
+          "bbox_height_percent": 45.5,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryHallShell, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 1.62,
+          "center_y_percent": 41.36,
+          "bbox_width_percent": 0.04,
+          "bbox_height_percent": 0.72,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CommitteeScreen, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 78.4,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 43.21,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, left of SteelTable, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 36.57,
+          "center_y_percent": 33.53,
+          "bbox_width_percent": 73.13,
+          "bbox_height_percent": 67.06,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryHallShell, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 85.9,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 28.2,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QuotaRoster, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 7.83,
+          "center_y_percent": 49.65,
+          "bbox_width_percent": 15.66,
+          "bbox_height_percent": 31.83,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 85.68,
+          "center_y_percent": 66.69,
+          "bbox_width_percent": 28.64,
+          "bbox_height_percent": 11.77,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelTable, left of MeetingRoomShell, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O015",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.42,
+          "center_y_percent": 75.06,
+          "bbox_width_percent": 99.15,
+          "bbox_height_percent": 49.87,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, left of QuotaRoster, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant SteelTable covers 99x50 percent at frame 50/75. Left to right: FactoryYardGround, CommitteeScreen, FactoryHallShell, FactoryHallShell, MeetingRoomShell."
+    },
+    {
+      "time_seconds": 8.099,
+      "source_frame": "D14_shots/ep14_shot03/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.13m to 19.17m across 9 layers; nearest is QuotaRoster, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-3.20, 18.80, 1.58) on a 50.0mm lens, frame 195 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 15.86,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 31.73,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CommitteeScreen, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 29.32,
+          "center_y_percent": 22.75,
+          "bbox_width_percent": 7.23,
+          "bbox_height_percent": 45.5,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryHallShell, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 1.62,
+          "center_y_percent": 41.36,
+          "bbox_width_percent": 0.04,
+          "bbox_height_percent": 0.72,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CommitteeScreen, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 78.4,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 43.21,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, left of SteelTable, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 36.57,
+          "center_y_percent": 33.53,
+          "bbox_width_percent": 73.13,
+          "bbox_height_percent": 67.06,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryHallShell, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 85.9,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 28.2,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QuotaRoster, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 7.83,
+          "center_y_percent": 49.65,
+          "bbox_width_percent": 15.66,
+          "bbox_height_percent": 31.83,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 85.68,
+          "center_y_percent": 66.69,
+          "bbox_width_percent": 28.64,
+          "bbox_height_percent": 11.77,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelTable, left of MeetingRoomShell, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O015",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.42,
+          "center_y_percent": 75.06,
+          "bbox_width_percent": 99.15,
+          "bbox_height_percent": 49.87,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, left of QuotaRoster, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant SteelTable covers 99x50 percent at frame 50/75. Left to right: FactoryYardGround, CommitteeScreen, FactoryHallShell, FactoryHallShell, MeetingRoomShell."
+    },
+    {
+      "time_seconds": 9.719,
+      "source_frame": "D14_shots/ep14_shot03/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.13m to 19.17m across 9 layers; nearest is QuotaRoster, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-3.20, 18.80, 1.58) on a 50.0mm lens, frame 234 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 15.86,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 31.73,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CommitteeScreen, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 29.32,
+          "center_y_percent": 22.75,
+          "bbox_width_percent": 7.23,
+          "bbox_height_percent": 45.5,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryHallShell, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 1.62,
+          "center_y_percent": 41.36,
+          "bbox_width_percent": 0.04,
+          "bbox_height_percent": 0.72,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CommitteeScreen, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 78.4,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 43.21,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, left of SteelTable, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 36.57,
+          "center_y_percent": 33.53,
+          "bbox_width_percent": 73.13,
+          "bbox_height_percent": 67.06,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryHallShell, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 85.9,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 28.2,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QuotaRoster, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 7.83,
+          "center_y_percent": 49.65,
+          "bbox_width_percent": 15.66,
+          "bbox_height_percent": 31.83,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 85.68,
+          "center_y_percent": 66.69,
+          "bbox_width_percent": 28.64,
+          "bbox_height_percent": 11.77,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelTable, left of MeetingRoomShell, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O015",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.42,
+          "center_y_percent": 75.06,
+          "bbox_width_percent": 99.15,
+          "bbox_height_percent": 49.87,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, left of QuotaRoster, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant SteelTable covers 99x50 percent at frame 50/75. Left to right: FactoryYardGround, CommitteeScreen, FactoryHallShell, FactoryHallShell, MeetingRoomShell."
+    },
+    {
+      "time_seconds": 11.339,
+      "source_frame": "D14_shots/ep14_shot03/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.13m to 19.17m across 9 layers; nearest is QuotaRoster, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-3.20, 18.80, 1.58) on a 50.0mm lens, frame 273 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 15.86,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 31.73,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CommitteeScreen, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 29.32,
+          "center_y_percent": 22.75,
+          "bbox_width_percent": 7.23,
+          "bbox_height_percent": 45.5,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryHallShell, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 1.62,
+          "center_y_percent": 41.36,
+          "bbox_width_percent": 0.04,
+          "bbox_height_percent": 0.72,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CommitteeScreen, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 78.4,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 43.21,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, left of SteelTable, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 36.57,
+          "center_y_percent": 33.53,
+          "bbox_width_percent": 73.13,
+          "bbox_height_percent": 67.06,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryHallShell, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 85.9,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 28.2,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QuotaRoster, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 7.83,
+          "center_y_percent": 49.65,
+          "bbox_width_percent": 15.66,
+          "bbox_height_percent": 31.83,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 85.68,
+          "center_y_percent": 66.69,
+          "bbox_width_percent": 28.64,
+          "bbox_height_percent": 11.77,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelTable, left of MeetingRoomShell, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O015",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.42,
+          "center_y_percent": 75.06,
+          "bbox_width_percent": 99.15,
+          "bbox_height_percent": 49.87,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, left of QuotaRoster, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant SteelTable covers 99x50 percent at frame 50/75. Left to right: FactoryYardGround, CommitteeScreen, FactoryHallShell, FactoryHallShell, MeetingRoomShell."
+    },
+    {
+      "time_seconds": 12.958,
+      "source_frame": "D14_shots/ep14_shot03/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.13m to 19.17m across 9 layers; nearest is QuotaRoster, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-3.20, 18.80, 1.58) on a 50.0mm lens, frame 312 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 15.86,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 31.73,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CommitteeScreen, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 29.32,
+          "center_y_percent": 22.75,
+          "bbox_width_percent": 7.23,
+          "bbox_height_percent": 45.5,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryHallShell, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 1.62,
+          "center_y_percent": 41.36,
+          "bbox_width_percent": 0.04,
+          "bbox_height_percent": 0.72,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CommitteeScreen, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 78.4,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 43.21,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, left of SteelTable, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 36.57,
+          "center_y_percent": 33.53,
+          "bbox_width_percent": 73.13,
+          "bbox_height_percent": 67.06,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryHallShell, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 01 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 85.9,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 28.2,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QuotaRoster, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 7.83,
+          "center_y_percent": 49.65,
+          "bbox_width_percent": 15.66,
+          "bbox_height_percent": 31.83,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 85.68,
+          "center_y_percent": 66.69,
+          "bbox_width_percent": 28.64,
+          "bbox_height_percent": 11.77,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelTable, left of MeetingRoomShell, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O015",
+          "entity_label": "Entity 02 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.42,
+          "center_y_percent": 75.06,
+          "bbox_width_percent": 99.15,
+          "bbox_height_percent": 49.87,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, left of QuotaRoster, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant SteelTable covers 99x50 percent at frame 50/75. Left to right: FactoryYardGround, CommitteeScreen, FactoryHallShell, FactoryHallShell, MeetingRoomShell."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

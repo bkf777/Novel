@@ -1,0 +1,47 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and….
+[INSTANCE REGISTRY] I1=<O002>,I2=<O007>,I3=<O008>,I4=<O011>,I5=<O012>.
+<Entity 01 CHAR Suqingci>=E1[articulated/primary/locomotion] members=I1;n=1;src=female scientist character blockout…; final=female scientist character blockout in…; finish=real skin with pores and fine hair, fabric with real…; style=world_style_unit_contract.
+<Entity 02 ENV B-2>=E2[environment/context/static] members=I2-I3;n=2;src=B-2 built environment shell…; final=B-2 built environment shell enclosing…; finish=worn cement, oxidised steel and sheet metal with…; style=world_style_unit_contract.
+<Entity 03 PROP B-2>=E3[rigid/context/static] members=I4-I5;n=2;src=B-2 set pieces and fittings…; final=B-2 set pieces and fittings: DataTablet…; finish=utilitarian material with visible weight, thickness…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I3;1:1;n=2.
+E3:I4-I5;1:1;n=2.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global… | materials=real skin with pores and slight oil sheen… | environment=cement yard plates cut by fire lines… | props=functional utilitarian tooling with real… | light=one cold overhead key over the….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E1:locomotion | Act=travels 0.35m across the set during the shot | Keep=stay inside the source blockout bounds for the full shot | Ban=do not replace, duplicate or remove this instance.
+[STATIC LOCK] E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_4001@0.300-1.000s I1,I4: rel=the scientist crouches and…; ban=do not shorten the pattern and do….
+[Shot 1] @0.000-8.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=none;path=camera travels from (-4. 52, 10. 70, 1. 57) to (-4. 52, 10…;dist=stable;azi=stable;elev=stable;lens=stable;comp=近景 framing in 9:16 vertical, subject held in the…;ban=do not add any camera move, zoom or handheld… | Act=the black and white bone pattern runs from the wrist bone across the forearm and… | Layout=5 visible instances… | Light=one cold overhead key over the purification….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=close;Comp=depth spans 4. 09m to 14…;Cam=camera at (-4. 52, 10. 70, 1…;Lay=5 visible instances… V=I2:2/14/4/27,I3:50/61/100/69,I4:42/63/18/14,I5:50/69/100/62 D=I1:v/44/64/56/70/o:upright body proxy…/m:stationary across this…/r:right of DataTablet…
+@0.995s F=close;Comp=depth spans 4. 13m to 14…;Cam=camera at (-4. 52, 10. 70, 1…;Lay=5 visible instances… V=I2:2/14/4/27,I3:50/61/100/69,I4:42/63/18/14,I5:50/69/100/62 D=I1:v/43/63/55/69/o:upright body proxy…/m:stationary across this…/r:right of DataTablet…
+@1.990s F=close;Comp=depth spans 4. 18m to 14…;Cam=camera at (-4. 52, 10. 70, 1…;Lay=5 visible instances… V=I2:2/14/4/27,I3:50/61/100/69,I4:42/63/18/14,I5:50/69/100/62 D=I1:v/43/63/55/68/o:upright body proxy…/m:stationary across this…/r:right of DataTablet…
+@2.984s F=close;Comp=depth spans 4. 22m to 14…;Cam=camera at (-4. 52, 10. 70, 1…;Lay=5 visible instances… V=I2:2/14/4/27,I3:50/61/100/69,I4:42/63/18/14,I5:50/69/100/62 D=I1:v/42/62/54/68/o:upright body proxy…/m:drifting frame left in…/r:right of DataTablet…
+@3.979s F=close;Comp=depth spans 4. 26m to 14…;Cam=camera at (-4. 52, 10. 70, 1…;Lay=5 visible instances… V=I2:2/14/4/27,I3:50/61/100/69,I4:42/63/18/14,I5:50/69/100/62 D=I1:v/41/62/53/67/o:upright body proxy…/m:drifting frame left in…/r:right of FactorySouthFaca…
+@4.974s F=close;Comp=depth spans 4. 30m to 14…;Cam=camera at (-4. 52, 10. 70, 1…;Lay=5 visible instances… V=I2:2/14/4/27,I3:50/61/100/69,I4:42/63/18/14,I5:50/69/100/62 D=I1:v/41/61/53/66/o:upright body proxy…/m:drifting frame left in…/r:right of FactorySouthFaca…
+@5.969s F=close;Comp=depth spans 4. 35m to 14…;Cam=camera at (-4. 52, 10. 70, 1…;Lay=5 visible instances… V=I2:2/14/4/27,I3:50/61/100/69,I4:42/63/18/14,I5:50/69/100/62 D=I1:v/40/60/52/66/o:upright body proxy…/m:drifting frame left in…/r:right of FactorySouthFaca…
+@6.964s F=close;Comp=depth spans 4. 39m to 14…;Cam=camera at (-4. 52, 10. 70, 1…;Lay=5 visible instances… V=I2:2/14/4/27,I3:50/61/100/69,I4:42/63/18/14,I5:50/69/100/62 D=I1:v/40/60/52/65/o:upright body proxy…/m:drifting frame left in…/r:right of FactorySouthFaca…
+@7.958s F=close;Comp=depth spans 4. 43m to 14…;Cam=camera at (-4. 52, 10. 70, 1…;Lay=5 visible instances… V=I2:2/14/4/27,I3:50/61/100/69,I4:42/63/18/14,I5:50/69/100/62 D=I1:v/39/59/51/64/o:upright body proxy…/m:stationary across this…/r:right of FactorySouthFaca…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+paper turning with a low machine hum turning over in the…
+
+non_diegetic_music:
+N/A

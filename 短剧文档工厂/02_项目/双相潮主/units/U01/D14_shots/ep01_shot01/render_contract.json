@@ -1,0 +1,921 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep01_shot01/preview_video.mp4",
+    "duration": 13.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 312,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "A-1_CHAR_Luchen_01",
+      "source_type": "MESH",
+      "root_name": "A-1_CHAR_Luchen_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 3.25,
+      "identity_cues": "name=A-1_CHAR_Luchen_01; type=MESH; root=A-1_CHAR_Luchen_01; dimensions=0.420,1.924,0.350",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O003",
+      "source_name": "A-1_EXT_RentalRoom",
+      "source_type": "MESH",
+      "root_name": "A-1_EXT_RentalRoom",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=A-1_EXT_RentalRoom; type=MESH; root=A-1_EXT_RentalRoom; dimensions=4.200,3.600,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O007",
+      "source_name": "A-1_EXT_RentalRoom.005",
+      "source_type": "MESH",
+      "root_name": "A-1_EXT_RentalRoom.005",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=A-1_EXT_RentalRoom.005; type=MESH; root=A-1_EXT_RentalRoom.005; dimensions=0.048,1.245,0.830",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O010",
+      "source_name": "A-1_LGT_GreyFramePanel_01",
+      "source_type": "MESH",
+      "root_name": "A-1_LGT_GreyFramePanel_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=A-1_LGT_GreyFramePanel_01; type=MESH; root=A-1_LGT_GreyFramePanel_01; dimensions=0.472,0.013,0.308",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O011",
+      "source_name": "A-1_PROP_Bed_01",
+      "source_type": "MESH",
+      "root_name": "A-1_PROP_Bed_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=A-1_PROP_Bed_01; type=MESH; root=A-1_PROP_Bed_01; dimensions=1.000,2.000,0.450",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O012",
+      "source_name": "A-1_PROP_CardboardColumn_01",
+      "source_type": "MESH",
+      "root_name": "A-1_PROP_CardboardColumn_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=A-1_PROP_CardboardColumn_01; type=MESH; root=A-1_PROP_CardboardColumn_01; dimensions=0.481,0.481,0.704",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR Luchen",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "male protagonist blockout",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "articulation",
+        "action": "changes body pose while keeping floor contact",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV A-1",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O003",
+        "O007"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-1 built environment shell enclosing the set: RentalRoom",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 03 PROP A-1",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O010",
+        "O011",
+        "O012"
+      ],
+      "instance_count": 3,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-1 set pieces and fittings: GreyFramePanel, Bed, CardboardColumn",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    }
+  ],
+  "interaction_contracts": [],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 13.0,
+      "camera_contract": {
+        "motion_type": "dolly",
+        "tracked_target_entity": "Entity 01 CHAR Luchen",
+        "world_path": "camera travels from (0.59, -1.27, 1.08) to (0.25, -1.09, 1.02) on a 35mm lens, total path length 0.39m inside the blocked set",
+        "target_distance_trend": "increase",
+        "azimuth_trend": "clockwise",
+        "elevation_trend": "decrease",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not convert the linear camera move into an orbit or a zoom; keep the 中景 framing and the 推 move exactly as blocked out"
+      },
+      "actions": "protagonist wakes prone on the bed, presses the mattress and sits up; grey frame panel brightens column by column at frame centre",
+      "layout_and_occlusion": "6 visible instances. Dominant RentalRoom covers 100x37 percent at frame 50/82. Left to right: RentalRoom, CardboardColumn, GreyFramePanel, RentalRoom, Bed.",
+      "lighting_spatial_logic": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep01_shot01/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.78m to 2.98m across 6 layers; nearest is GreyFramePanel, furthest is RentalRoom"
+      },
+      "camera_relation": "camera at (0.59, -1.27, 1.08) on a 35.0mm lens, frame 1 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 78.67,
+          "center_y_percent": 59.3,
+          "bbox_width_percent": 42.66,
+          "bbox_height_percent": 29.48,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Bed, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 81.65,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 36.71,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of Bed, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 37.02,
+          "center_y_percent": 27.83,
+          "bbox_width_percent": 68.78,
+          "bbox_height_percent": 30.84,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CardboardColumn, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 43.79,
+          "center_y_percent": 45.33,
+          "bbox_width_percent": 46.69,
+          "bbox_height_percent": 16.96,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CardboardColumn, left of RentalRoom, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 73.95,
+          "center_y_percent": 77.4,
+          "bbox_width_percent": 52.09,
+          "bbox_height_percent": 45.2,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RentalRoom, left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 42.73,
+          "center_y_percent": 55.01,
+          "bbox_width_percent": 40.4,
+          "bbox_height_percent": 28.38,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RentalRoom, left of GreyFramePanel, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant RentalRoom covers 100x37 percent at frame 50/82. Left to right: RentalRoom, CardboardColumn, GreyFramePanel, RentalRoom, Bed."
+    },
+    {
+      "time_seconds": 1.62,
+      "source_frame": "D14_shots/ep01_shot01/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.76m to 2.97m across 6 layers; nearest is GreyFramePanel, furthest is RentalRoom"
+      },
+      "camera_relation": "camera at (0.58, -1.26, 1.07) on a 35.0mm lens, frame 40 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 89.94,
+          "center_y_percent": 52.39,
+          "bbox_width_percent": 20.13,
+          "bbox_height_percent": 34.77,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Bed, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 81.68,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 36.65,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of Bed, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 36.93,
+          "center_y_percent": 27.69,
+          "bbox_width_percent": 69.2,
+          "bbox_height_percent": 31.04,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CardboardColumn, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 43.73,
+          "center_y_percent": 45.28,
+          "bbox_width_percent": 47.15,
+          "bbox_height_percent": 17.12,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CardboardColumn, left of RentalRoom, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 73.95,
+          "center_y_percent": 77.41,
+          "bbox_width_percent": 52.11,
+          "bbox_height_percent": 45.18,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RentalRoom, left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 42.69,
+          "center_y_percent": 55.05,
+          "bbox_width_percent": 40.65,
+          "bbox_height_percent": 28.56,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RentalRoom, left of GreyFramePanel, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant RentalRoom covers 100x37 percent at frame 50/82. Left to right: RentalRoom, CardboardColumn, GreyFramePanel, RentalRoom, Bed."
+    },
+    {
+      "time_seconds": 3.24,
+      "source_frame": "D14_shots/ep01_shot01/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.71m to 2.92m across 6 layers; nearest is GreyFramePanel, furthest is RentalRoom"
+      },
+      "camera_relation": "camera at (0.54, -1.24, 1.07) on a 35.0mm lens, frame 79 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 99.3,
+          "center_y_percent": 41.69,
+          "bbox_width_percent": 1.41,
+          "bbox_height_percent": 49.97,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Bed, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 81.75,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 36.49,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of Bed, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 36.67,
+          "center_y_percent": 27.3,
+          "bbox_width_percent": 70.32,
+          "bbox_height_percent": 31.58,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CardboardColumn, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 43.56,
+          "center_y_percent": 45.16,
+          "bbox_width_percent": 48.4,
+          "bbox_height_percent": 17.57,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CardboardColumn, left of RentalRoom, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 73.93,
+          "center_y_percent": 77.44,
+          "bbox_width_percent": 52.15,
+          "bbox_height_percent": 45.11,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RentalRoom, left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 42.58,
+          "center_y_percent": 55.16,
+          "bbox_width_percent": 41.32,
+          "bbox_height_percent": 29.05,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RentalRoom, left of GreyFramePanel, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant RentalRoom covers 100x36 percent at frame 50/82. Left to right: RentalRoom, CardboardColumn, GreyFramePanel, RentalRoom, Bed."
+    },
+    {
+      "time_seconds": 4.859,
+      "source_frame": "D14_shots/ep01_shot01/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.65m to 2.86m across 5 layers; nearest is GreyFramePanel, furthest is RentalRoom"
+      },
+      "camera_relation": "camera at (0.49, -1.21, 1.06) on a 35.0mm lens, frame 118 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 81.86,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 36.27,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of Bed, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 36.29,
+          "center_y_percent": 26.73,
+          "bbox_width_percent": 71.97,
+          "bbox_height_percent": 32.39,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CardboardColumn, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 43.31,
+          "center_y_percent": 44.97,
+          "bbox_width_percent": 50.27,
+          "bbox_height_percent": 18.25,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CardboardColumn, left of RentalRoom, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 73.9,
+          "center_y_percent": 77.49,
+          "bbox_width_percent": 52.21,
+          "bbox_height_percent": 45.02,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RentalRoom, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 42.43,
+          "center_y_percent": 55.32,
+          "bbox_width_percent": 42.29,
+          "bbox_height_percent": 29.77,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RentalRoom, left of GreyFramePanel, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant RentalRoom covers 100x36 percent at frame 50/82. Left to right: RentalRoom, CardboardColumn, GreyFramePanel, RentalRoom, Bed."
+    },
+    {
+      "time_seconds": 6.479,
+      "source_frame": "D14_shots/ep01_shot01/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.58m to 2.79m across 5 layers; nearest is GreyFramePanel, furthest is RentalRoom"
+      },
+      "camera_relation": "camera at (0.42, -1.18, 1.05) on a 35.0mm lens, frame 156 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 81.99,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 36.01,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of Bed, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 36.4,
+          "center_y_percent": 26.06,
+          "bbox_width_percent": 72.8,
+          "bbox_height_percent": 33.33,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CardboardColumn, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 43.0,
+          "center_y_percent": 44.74,
+          "bbox_width_percent": 52.54,
+          "bbox_height_percent": 19.07,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CardboardColumn, left of RentalRoom, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 73.86,
+          "center_y_percent": 77.55,
+          "bbox_width_percent": 52.28,
+          "bbox_height_percent": 44.91,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RentalRoom, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 42.24,
+          "center_y_percent": 55.51,
+          "bbox_width_percent": 43.44,
+          "bbox_height_percent": 30.61,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RentalRoom, left of GreyFramePanel, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant RentalRoom covers 100x36 percent at frame 50/82. Left to right: RentalRoom, CardboardColumn, GreyFramePanel, RentalRoom, Bed."
+    },
+    {
+      "time_seconds": 8.099,
+      "source_frame": "D14_shots/ep01_shot01/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.51m to 2.84m across 5 layers; nearest is GreyFramePanel, furthest is RentalRoom"
+      },
+      "camera_relation": "camera at (0.36, -1.15, 1.04) on a 35.0mm lens, frame 195 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 78.08,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 27.65,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of Bed, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 36.68,
+          "center_y_percent": 25.34,
+          "bbox_width_percent": 73.36,
+          "bbox_height_percent": 34.36,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CardboardColumn, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 42.65,
+          "center_y_percent": 44.48,
+          "bbox_width_percent": 55.1,
+          "bbox_height_percent": 19.99,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CardboardColumn, left of RentalRoom, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 73.82,
+          "center_y_percent": 77.61,
+          "bbox_width_percent": 52.35,
+          "bbox_height_percent": 44.79,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RentalRoom, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 42.04,
+          "center_y_percent": 55.71,
+          "bbox_width_percent": 44.68,
+          "bbox_height_percent": 31.52,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RentalRoom, left of GreyFramePanel, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant RentalRoom covers 100x28 percent at frame 50/78. Left to right: RentalRoom, CardboardColumn, GreyFramePanel, RentalRoom, Bed."
+    },
+    {
+      "time_seconds": 9.719,
+      "source_frame": "D14_shots/ep01_shot01/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.45m to 2.77m across 5 layers; nearest is GreyFramePanel, furthest is RentalRoom"
+      },
+      "camera_relation": "camera at (0.31, -1.12, 1.03) on a 35.0mm lens, frame 234 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 78.88,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 28.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of Bed, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 36.94,
+          "center_y_percent": 24.66,
+          "bbox_width_percent": 73.87,
+          "bbox_height_percent": 35.32,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CardboardColumn, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 42.32,
+          "center_y_percent": 44.23,
+          "bbox_width_percent": 57.54,
+          "bbox_height_percent": 20.88,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CardboardColumn, left of RentalRoom, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 73.79,
+          "center_y_percent": 77.66,
+          "bbox_width_percent": 52.42,
+          "bbox_height_percent": 44.68,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RentalRoom, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 41.86,
+          "center_y_percent": 55.9,
+          "bbox_width_percent": 45.83,
+          "bbox_height_percent": 32.37,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RentalRoom, left of GreyFramePanel, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant RentalRoom covers 100x29 percent at frame 50/79. Left to right: RentalRoom, CardboardColumn, GreyFramePanel, RentalRoom, Bed."
+    },
+    {
+      "time_seconds": 11.339,
+      "source_frame": "D14_shots/ep01_shot01/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.40m to 2.73m across 5 layers; nearest is GreyFramePanel, furthest is RentalRoom"
+      },
+      "camera_relation": "camera at (0.27, -1.10, 1.02) on a 35.0mm lens, frame 273 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 79.48,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 29.57,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of Bed, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 37.12,
+          "center_y_percent": 24.16,
+          "bbox_width_percent": 74.25,
+          "bbox_height_percent": 36.02,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CardboardColumn, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 42.07,
+          "center_y_percent": 44.04,
+          "bbox_width_percent": 59.41,
+          "bbox_height_percent": 21.55,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CardboardColumn, left of RentalRoom, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 73.76,
+          "center_y_percent": 77.7,
+          "bbox_width_percent": 52.48,
+          "bbox_height_percent": 44.6,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RentalRoom, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 41.72,
+          "center_y_percent": 56.05,
+          "bbox_width_percent": 46.68,
+          "bbox_height_percent": 33.0,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RentalRoom, left of GreyFramePanel, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant RentalRoom covers 100x30 percent at frame 50/79. Left to right: RentalRoom, CardboardColumn, GreyFramePanel, RentalRoom, Bed."
+    },
+    {
+      "time_seconds": 12.958,
+      "source_frame": "D14_shots/ep01_shot01/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.38m to 2.71m across 5 layers; nearest is GreyFramePanel, furthest is RentalRoom"
+      },
+      "camera_relation": "camera at (0.25, -1.09, 1.02) on a 35.0mm lens, frame 312 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 79.71,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 29.9,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of Bed, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV A-1",
+          "visibility": "visible",
+          "center_x_percent": 37.2,
+          "center_y_percent": 23.97,
+          "bbox_width_percent": 74.39,
+          "bbox_height_percent": 36.3,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of CardboardColumn, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 41.97,
+          "center_y_percent": 43.96,
+          "bbox_width_percent": 60.15,
+          "bbox_height_percent": 21.82,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of CardboardColumn, left of RentalRoom, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 73.75,
+          "center_y_percent": 77.72,
+          "bbox_width_percent": 52.5,
+          "bbox_height_percent": 44.57,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RentalRoom, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-1",
+          "visibility": "visible",
+          "center_x_percent": 41.67,
+          "center_y_percent": 56.1,
+          "bbox_width_percent": 47.01,
+          "bbox_height_percent": 33.24,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RentalRoom, left of GreyFramePanel, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant RentalRoom covers 100x30 percent at frame 50/80. Left to right: RentalRoom, CardboardColumn, GreyFramePanel, RentalRoom, Bed."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

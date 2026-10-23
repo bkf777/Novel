@@ -1,0 +1,623 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep14_shot04/preview_video.mp4",
+    "duration": 7.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 168,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "B-8_CHAR_Luchen_01",
+      "source_type": "MESH",
+      "root_name": "B-8_CHAR_Luchen_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-8_CHAR_Luchen_01; type=MESH; root=B-8_CHAR_Luchen_01; dimensions=0.420,0.320,1.730",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O008",
+      "source_name": "B-8_EXT_MeetingRoomShell",
+      "source_type": "MESH",
+      "root_name": "B-8_EXT_MeetingRoomShell",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-8_EXT_MeetingRoomShell; type=MESH; root=B-8_EXT_MeetingRoomShell; dimensions=8.000,5.000,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O013",
+      "source_name": "B-8_EXT_MeetingRoomShell.006",
+      "source_type": "MESH",
+      "root_name": "B-8_EXT_MeetingRoomShell.006",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-8_EXT_MeetingRoomShell.006; type=MESH; root=B-8_EXT_MeetingRoomShell.006; dimensions=3.346,0.042,1.339",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O018",
+      "source_name": "B-8_PROP_SteelTable_01",
+      "source_type": "MESH",
+      "root_name": "B-8_PROP_SteelTable_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-8_PROP_SteelTable_01; type=MESH; root=B-8_PROP_SteelTable_01; dimensions=2.800,1.400,0.760",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR Luchen",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "protagonist blockout in black tactical coat",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV B-8",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O008",
+        "O013"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-8 built environment shell enclosing the set: MeetingRoomShell",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 03 PROP B-8",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O018"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-8 set pieces and fittings: SteelTable",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 7.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "none",
+        "world_path": "camera travels from (-8.58, 19.08, 2.18) to (-8.58, 19.08, 2.18) on a 85mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "近景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 近景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "a city defence map lies open at the far end of the meeting table, the machine factory marked on it; the tip of a pen rests on that name and a family heir seal is pressed beside it, while the protagonist's shoulder and back fill one near side of the frame and a readout field in one corner shows the normalisation readout at 1.3%",
+      "layout_and_occlusion": "4 visible instances. Dominant MeetingRoomShell covers 100x59 percent at frame 50/70. Left to right: Luchen, MeetingRoomShell, MeetingRoomShell, SteelTable.",
+      "lighting_spatial_logic": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep14_shot04/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 1.93m to 4.93m across 4 layers; nearest is Luchen, furthest is MeetingRoomShell"
+      },
+      "camera_relation": "camera at (-8.58, 19.08, 2.18) on a 85.0mm lens, frame 1 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 4.65,
+          "center_y_percent": 65.02,
+          "bbox_width_percent": 9.3,
+          "bbox_height_percent": 69.97,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of MeetingRoomShell, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 70.39,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 59.21,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 11.43,
+          "center_y_percent": 31.29,
+          "bbox_width_percent": 22.87,
+          "bbox_height_percent": 62.59,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O018",
+          "entity_label": "Entity 03 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.22,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 47.56,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant MeetingRoomShell covers 100x59 percent at frame 50/70. Left to right: Luchen, MeetingRoomShell, MeetingRoomShell, SteelTable."
+    },
+    {
+      "time_seconds": 0.994,
+      "source_frame": "D14_shots/ep14_shot04/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 1.93m to 4.93m across 4 layers; nearest is Luchen, furthest is MeetingRoomShell"
+      },
+      "camera_relation": "camera at (-8.58, 19.08, 2.18) on a 85.0mm lens, frame 25 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 4.65,
+          "center_y_percent": 65.02,
+          "bbox_width_percent": 9.3,
+          "bbox_height_percent": 69.97,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of MeetingRoomShell, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 70.39,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 59.21,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 11.43,
+          "center_y_percent": 31.29,
+          "bbox_width_percent": 22.87,
+          "bbox_height_percent": 62.59,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O018",
+          "entity_label": "Entity 03 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.22,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 47.56,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant MeetingRoomShell covers 100x59 percent at frame 50/70. Left to right: Luchen, MeetingRoomShell, MeetingRoomShell, SteelTable."
+    },
+    {
+      "time_seconds": 1.988,
+      "source_frame": "D14_shots/ep14_shot04/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 1.93m to 4.93m across 4 layers; nearest is Luchen, furthest is MeetingRoomShell"
+      },
+      "camera_relation": "camera at (-8.58, 19.08, 2.18) on a 85.0mm lens, frame 49 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 4.65,
+          "center_y_percent": 65.02,
+          "bbox_width_percent": 9.3,
+          "bbox_height_percent": 69.97,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of MeetingRoomShell, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 70.39,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 59.21,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 11.43,
+          "center_y_percent": 31.29,
+          "bbox_width_percent": 22.87,
+          "bbox_height_percent": 62.59,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O018",
+          "entity_label": "Entity 03 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.22,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 47.56,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant MeetingRoomShell covers 100x59 percent at frame 50/70. Left to right: Luchen, MeetingRoomShell, MeetingRoomShell, SteelTable."
+    },
+    {
+      "time_seconds": 2.982,
+      "source_frame": "D14_shots/ep14_shot04/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 1.93m to 4.93m across 4 layers; nearest is Luchen, furthest is MeetingRoomShell"
+      },
+      "camera_relation": "camera at (-8.58, 19.08, 2.18) on a 85.0mm lens, frame 73 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 4.65,
+          "center_y_percent": 65.02,
+          "bbox_width_percent": 9.3,
+          "bbox_height_percent": 69.97,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of MeetingRoomShell, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 70.39,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 59.21,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 11.43,
+          "center_y_percent": 31.29,
+          "bbox_width_percent": 22.87,
+          "bbox_height_percent": 62.59,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O018",
+          "entity_label": "Entity 03 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.22,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 47.56,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant MeetingRoomShell covers 100x59 percent at frame 50/70. Left to right: Luchen, MeetingRoomShell, MeetingRoomShell, SteelTable."
+    },
+    {
+      "time_seconds": 3.976,
+      "source_frame": "D14_shots/ep14_shot04/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 1.93m to 4.93m across 4 layers; nearest is Luchen, furthest is MeetingRoomShell"
+      },
+      "camera_relation": "camera at (-8.58, 19.08, 2.18) on a 85.0mm lens, frame 96 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 4.65,
+          "center_y_percent": 65.02,
+          "bbox_width_percent": 9.3,
+          "bbox_height_percent": 69.97,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of MeetingRoomShell, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 70.39,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 59.21,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 11.43,
+          "center_y_percent": 31.29,
+          "bbox_width_percent": 22.87,
+          "bbox_height_percent": 62.59,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O018",
+          "entity_label": "Entity 03 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.22,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 47.56,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant MeetingRoomShell covers 100x59 percent at frame 50/70. Left to right: Luchen, MeetingRoomShell, MeetingRoomShell, SteelTable."
+    },
+    {
+      "time_seconds": 4.97,
+      "source_frame": "D14_shots/ep14_shot04/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 1.93m to 4.93m across 4 layers; nearest is Luchen, furthest is MeetingRoomShell"
+      },
+      "camera_relation": "camera at (-8.58, 19.08, 2.18) on a 85.0mm lens, frame 120 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 4.65,
+          "center_y_percent": 65.02,
+          "bbox_width_percent": 9.3,
+          "bbox_height_percent": 69.97,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of MeetingRoomShell, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 70.39,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 59.21,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 11.43,
+          "center_y_percent": 31.29,
+          "bbox_width_percent": 22.87,
+          "bbox_height_percent": 62.59,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O018",
+          "entity_label": "Entity 03 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.22,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 47.56,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant MeetingRoomShell covers 100x59 percent at frame 50/70. Left to right: Luchen, MeetingRoomShell, MeetingRoomShell, SteelTable."
+    },
+    {
+      "time_seconds": 5.964,
+      "source_frame": "D14_shots/ep14_shot04/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 1.93m to 4.93m across 4 layers; nearest is Luchen, furthest is MeetingRoomShell"
+      },
+      "camera_relation": "camera at (-8.58, 19.08, 2.18) on a 85.0mm lens, frame 144 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 4.65,
+          "center_y_percent": 65.02,
+          "bbox_width_percent": 9.3,
+          "bbox_height_percent": 69.97,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of MeetingRoomShell, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 70.39,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 59.21,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 11.43,
+          "center_y_percent": 31.29,
+          "bbox_width_percent": 22.87,
+          "bbox_height_percent": 62.59,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O018",
+          "entity_label": "Entity 03 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.22,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 47.56,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant MeetingRoomShell covers 100x59 percent at frame 50/70. Left to right: Luchen, MeetingRoomShell, MeetingRoomShell, SteelTable."
+    },
+    {
+      "time_seconds": 6.958,
+      "source_frame": "D14_shots/ep14_shot04/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 1.93m to 4.93m across 4 layers; nearest is Luchen, furthest is MeetingRoomShell"
+      },
+      "camera_relation": "camera at (-8.58, 19.08, 2.18) on a 85.0mm lens, frame 168 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 4.65,
+          "center_y_percent": 65.02,
+          "bbox_width_percent": 9.3,
+          "bbox_height_percent": 69.97,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of MeetingRoomShell, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 70.39,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 59.21,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 02 ENV B-8",
+          "visibility": "visible",
+          "center_x_percent": 11.43,
+          "center_y_percent": 31.29,
+          "bbox_width_percent": 22.87,
+          "bbox_height_percent": 62.59,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, left of MeetingRoomShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O018",
+          "entity_label": "Entity 03 PROP B-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.22,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 47.56,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MeetingRoomShell, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant MeetingRoomShell covers 100x59 percent at frame 50/70. Left to right: Luchen, MeetingRoomShell, MeetingRoomShell, SteelTable."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

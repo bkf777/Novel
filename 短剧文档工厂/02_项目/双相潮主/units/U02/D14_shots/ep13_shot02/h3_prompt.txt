@@ -1,0 +1,46 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O006>,I3=<O007>,I4=<O008>.
+<Entity 01 CHAR MarketQueuer>=E1[articulated/primary/static] members=I1;n=1;src=market queue member blockout in two columns; final=market queue member blockout in two columns; finish=real skin with pores and fine hair, fabric with real drape and wear…; style=world_style_unit_contract.
+<Entity 02 ENV B-6>=E2[environment/context/static] members=I2-I3;n=2;src=B-6 built environment shell enclosing the set…; final=B-6 built environment shell enclosing the set…; finish=worn cement, oxidised steel and sheet metal with cold grey…; style=world_style_unit_contract.
+<Entity 03 PROP B-6>=E3[rigid/context/static] members=I4;n=1;src=B-6 set pieces and fittings: MarketLedBoard; final=B-6 set pieces and fittings: MarketLedBoard; finish=utilitarian material with visible weight, thickness and use marks…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I3;1:1;n=2.
+E3:I4;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink… | materials=real skin with pores and slight oil sheen, matte… | environment=cement yard plates cut by fire lines, riveted steel… | props=functional utilitarian tooling with real weight and… | light=one cold overhead key over the purification bench with….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_5001@0.300-1.000s I1: rel=the shadow blade lies across the front…; ban=do not light the blade edge and do not let the….
+[Shot 1] @0.000-14.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=none;path=camera travels from (1. 22, -0. 12, 5. 28) to (1. 22, -0. 12, 5…;dist=stable;azi=stable;elev=stable;lens=stable;comp=中远景 framing in 9:16 vertical, subject held in the frame centre…;ban=do not add any camera move, zoom or handheld shake… | Act=vapour cores, steel stock and reagents are laid out on the counter one piece at a time and the line walks… | Layout=4 visible instances. Dominant MarketStreetBackdrop covers 100x24 percent at frame 50/46… | Light=one cold overhead key over the purification bench with shadow….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium_full;Comp=depth spans 7. 62m to 14. 71m across 4 layers…;Cam=camera at (1. 22, -0. 12, 5. 28) on a 35…;Lay=4 visible instances… V=I2:50/46/100/24,I3:50/72/100/1,I4:5/89/10/21 D=I1:v/0/85/0/30/o:compact body proxy…/m:stationary across this interval/r:left of MarketLedBoard, in…
+@1.745s F=medium_full;Comp=depth spans 7. 62m to 14. 71m across 4 layers…;Cam=camera at (1. 22, -0. 12, 5. 28) on a 35…;Lay=4 visible instances… V=I2:50/46/100/24,I3:50/72/100/1,I4:5/89/10/21 D=I1:v/0/85/0/30/o:compact body proxy…/m:stationary across this interval/r:left of MarketLedBoard, in…
+@3.490s F=medium_full;Comp=depth spans 7. 62m to 14. 71m across 4 layers…;Cam=camera at (1. 22, -0. 12, 5. 28) on a 35…;Lay=4 visible instances… V=I2:50/46/100/24,I3:50/72/100/1,I4:5/89/10/21 D=I1:v/0/85/0/30/o:compact body proxy…/m:stationary across this interval/r:left of MarketLedBoard, in…
+@5.234s F=medium_full;Comp=depth spans 7. 62m to 14. 71m across 4 layers…;Cam=camera at (1. 22, -0. 12, 5. 28) on a 35…;Lay=4 visible instances… V=I2:50/46/100/24,I3:50/72/100/1,I4:5/89/10/21 D=I1:v/0/85/0/30/o:compact body proxy…/m:stationary across this interval/r:left of MarketLedBoard, in…
+@6.979s F=medium_full;Comp=depth spans 7. 62m to 14. 71m across 4 layers…;Cam=camera at (1. 22, -0. 12, 5. 28) on a 35…;Lay=4 visible instances… V=I2:50/46/100/24,I3:50/72/100/1,I4:5/89/10/21 D=I1:v/0/85/0/30/o:compact body proxy…/m:stationary across this interval/r:left of MarketLedBoard, in…
+@8.724s F=medium_full;Comp=depth spans 7. 62m to 14. 71m across 4 layers…;Cam=camera at (1. 22, -0. 12, 5. 28) on a 35…;Lay=4 visible instances… V=I2:50/46/100/24,I3:50/72/100/1,I4:5/89/10/21 D=I1:v/0/85/0/30/o:compact body proxy…/m:stationary across this interval/r:left of MarketLedBoard, in…
+@10.469s F=medium_full;Comp=depth spans 7. 62m to 14. 71m across 4 layers…;Cam=camera at (1. 22, -0. 12, 5. 28) on a 35…;Lay=4 visible instances… V=I2:50/46/100/24,I3:50/72/100/1,I4:5/89/10/21 D=I1:v/0/85/0/30/o:compact body proxy…/m:stationary across this interval/r:left of MarketLedBoard, in…
+@12.214s F=medium_full;Comp=depth spans 7. 62m to 14. 71m across 4 layers…;Cam=camera at (1. 22, -0. 12, 5. 28) on a 35…;Lay=4 visible instances… V=I2:50/46/100/24,I3:50/72/100/1,I4:5/89/10/21 D=I1:v/0/85/0/30/o:compact body proxy…/m:stationary across this interval/r:left of MarketLedBoard, in…
+@13.958s F=medium_full;Comp=depth spans 7. 62m to 14. 71m across 4 layers…;Cam=camera at (1. 22, -0. 12, 5. 28) on a 35…;Lay=4 visible instances… V=I2:50/46/100/24,I3:50/72/100/1,I4:5/89/10/21 D=I1:v/0/85/0/30/o:compact body proxy…/m:stationary across this interval/r:left of MarketLedBoard, in…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+dull placement of vapour cores, steel and reagent on the counter with the…
+
+non_diegetic_music:
+N/A

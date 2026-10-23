@@ -1,0 +1,2942 @@
+{
+  "ep": 8,
+  "global_shot_no": 30,
+  "shot_id": 2,
+  "scene_code": "A-9",
+  "duration_sec": 14,
+  "package_path": "D14_shots/ep08_shot02/package.json",
+  "preflight": {
+    "schema_version": 4,
+    "source": {
+      "path": "D14_shots/ep08_shot02/preview_video.mp4",
+      "duration": 14.0,
+      "fps": 24.0,
+      "width": 1080,
+      "height": 1920,
+      "aspect_ratio": 0.5625,
+      "frames": 336,
+      "has_audio": false
+    },
+    "manifest_path": "D14_shots/ep08_shot02/manifest.json",
+    "timeline_plan": {
+      "source": {
+        "path": "D14_shots/ep08_shot02/preview_video.mp4",
+        "duration": 14.0,
+        "fps": 24.0,
+        "width": 1080,
+        "height": 1920,
+        "aspect_ratio": 0.5625,
+        "frames": 336,
+        "has_audio": false
+      },
+      "h3_fps": 24,
+      "num_frames": 328,
+      "generation_duration": 13.666666666666666,
+      "duration_delta": -0.3333333333333339,
+      "retime_percent": -2.3809523809523836,
+      "prepare_setpts_factor": 0.9761904761904762,
+      "conform_setpts_factor": 1.024390243902439,
+      "requires_disclosure": true,
+      "strict_single_pass_recommended": true
+    },
+    "source_cut_candidates": [],
+    "structure_evidence_available": true,
+    "blender_structure_evidence": {
+      "camera_samples": [
+        {
+          "frame": 1,
+          "lens_mm": 35.0,
+          "location": [
+            33.1658,
+            9.627,
+            2.1921
+          ],
+          "rotation_quaternion_wxyz": [
+            0.32714,
+            0.62188,
+            0.6297,
+            0.33126
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 43,
+          "lens_mm": 35.0,
+          "location": [
+            33.1658,
+            9.627,
+            2.2526
+          ],
+          "rotation_quaternion_wxyz": [
+            0.33085,
+            0.61991,
+            0.62771,
+            0.33501
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 85,
+          "lens_mm": 35.0,
+          "location": [
+            33.1658,
+            9.627,
+            2.41203
+          ],
+          "rotation_quaternion_wxyz": [
+            0.34058,
+            0.61462,
+            0.62235,
+            0.34487
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 127,
+          "lens_mm": 35.0,
+          "location": [
+            33.1658,
+            9.627,
+            2.63727
+          ],
+          "rotation_quaternion_wxyz": [
+            0.35418,
+            0.60688,
+            0.61452,
+            0.35864
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 168,
+          "lens_mm": 35.0,
+          "location": [
+            33.1658,
+            9.627,
+            2.88897
+          ],
+          "rotation_quaternion_wxyz": [
+            0.36917,
+            0.59788,
+            0.6054,
+            0.37381
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 210,
+          "lens_mm": 35.0,
+          "location": [
+            33.1658,
+            9.627,
+            3.14693
+          ],
+          "rotation_quaternion_wxyz": [
+            0.38429,
+            0.58828,
+            0.59568,
+            0.38913
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 252,
+          "lens_mm": 35.0,
+          "location": [
+            33.1658,
+            9.627,
+            3.37217
+          ],
+          "rotation_quaternion_wxyz": [
+            0.39729,
+            0.57958,
+            0.58687,
+            0.40229
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 294,
+          "lens_mm": 35.0,
+          "location": [
+            33.1658,
+            9.627,
+            3.5316
+          ],
+          "rotation_quaternion_wxyz": [
+            0.40638,
+            0.57324,
+            0.58045,
+            0.41149
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 336,
+          "lens_mm": 35.0,
+          "location": [
+            33.1658,
+            9.627,
+            3.5921
+          ],
+          "rotation_quaternion_wxyz": [
+            0.4098,
+            0.5708,
+            0.57798,
+            0.41495
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "A-9_CHAR_Luchen_01",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "A-9_CHAR_Luchen_01",
+          "samples": [
+            {
+              "depth": 2.65335,
+              "frame": 1,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -139.284
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                29.0,
+                10.75,
+                0.0
+              ]
+            },
+            {
+              "depth": 3.00343,
+              "frame": 43,
+              "pose": "stand",
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -139.284
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                29.0,
+                10.75,
+                0.616
+              ]
+            },
+            {
+              "depth": 3.33667,
+              "frame": 85,
+              "pose": "stand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -139.284
+              ],
+              "screen_bbox_percent": {
+                "center_x": 95.11,
+                "center_y": 96.57,
+                "height": 6.87,
+                "width": 9.79
+              },
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                29.0,
+                10.75,
+                1.232
+              ]
+            },
+            {
+              "depth": 3.63497,
+              "frame": 127,
+              "pose": "stand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -139.284
+              ],
+              "screen_bbox_percent": {
+                "center_x": 93.8,
+                "center_y": 88.75,
+                "height": 22.5,
+                "width": 12.39
+              },
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                29.0,
+                10.75,
+                1.848
+              ]
+            },
+            {
+              "depth": 3.77322,
+              "frame": 168,
+              "pose": "stand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -139.284
+              ],
+              "screen_bbox_percent": {
+                "center_x": 93.35,
+                "center_y": 84.93,
+                "height": 30.13,
+                "width": 13.3
+              },
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                29.0,
+                10.75,
+                2.2
+              ]
+            },
+            {
+              "depth": 3.751,
+              "frame": 210,
+              "pose": "stand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -139.284
+              ],
+              "screen_bbox_percent": {
+                "center_x": 93.62,
+                "center_y": 85.55,
+                "height": 28.9,
+                "width": 12.76
+              },
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                29.0,
+                10.75,
+                2.2
+              ]
+            },
+            {
+              "depth": 3.7433,
+              "frame": 252,
+              "pose": "stand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -139.284
+              ],
+              "screen_bbox_percent": {
+                "center_x": 93.81,
+                "center_y": 86.16,
+                "height": 27.67,
+                "width": 12.38
+              },
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                29.0,
+                10.75,
+                2.2
+              ]
+            },
+            {
+              "depth": 3.74465,
+              "frame": 294,
+              "pose": "stand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -139.284
+              ],
+              "screen_bbox_percent": {
+                "center_x": 93.92,
+                "center_y": 86.63,
+                "height": 26.74,
+                "width": 12.16
+              },
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                29.0,
+                10.75,
+                2.2
+              ]
+            },
+            {
+              "depth": 3.74667,
+              "frame": 336,
+              "pose": "stand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -139.284
+              ],
+              "screen_bbox_percent": {
+                "center_x": 93.95,
+                "center_y": 86.81,
+                "height": 26.38,
+                "width": 12.09
+              },
+              "world_dimensions": [
+                0.42,
+                0.32,
+                1.73
+              ],
+              "world_location": [
+                29.0,
+                10.75,
+                2.2
+              ]
+            }
+          ],
+          "source_id": "O001"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "A-9_CHAR_RescuedQueueMember_01",
+          "object_type": "MESH",
+          "parent_name": "A-9_CHAR_RescuedQueueMember",
+          "root_name": "A-9_CHAR_RescuedQueueMember",
+          "samples": [
+            {
+              "depth": null,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                36.525,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 43,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                36.525,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 85,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                36.525,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 127,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                36.525,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 168,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                36.525,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 210,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                36.525,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                36.525,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 294,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                36.525,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 336,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                36.525,
+                10.8,
+                0.875
+              ]
+            }
+          ],
+          "source_id": "O002"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "A-9_CHAR_RescuedQueueMember_02",
+          "object_type": "MESH",
+          "parent_name": "A-9_CHAR_RescuedQueueMember",
+          "root_name": "A-9_CHAR_RescuedQueueMember",
+          "samples": [
+            {
+              "depth": null,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                37.375,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 43,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                37.375,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 85,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                37.375,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 127,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                37.375,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 168,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                37.375,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 210,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                37.375,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                37.375,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 294,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                37.375,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 336,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                37.375,
+                10.8,
+                0.875
+              ]
+            }
+          ],
+          "source_id": "O003"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "A-9_CHAR_RescuedQueueMember_03",
+          "object_type": "MESH",
+          "parent_name": "A-9_CHAR_RescuedQueueMember",
+          "root_name": "A-9_CHAR_RescuedQueueMember",
+          "samples": [
+            {
+              "depth": null,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                38.225,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 43,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                38.225,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 85,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                38.225,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 127,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                38.225,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 168,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                38.225,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 210,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                38.225,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                38.225,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 294,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                38.225,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 336,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                38.225,
+                10.8,
+                0.875
+              ]
+            }
+          ],
+          "source_id": "O004"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "A-9_CHAR_RescuedQueueMember_04",
+          "object_type": "MESH",
+          "parent_name": "A-9_CHAR_RescuedQueueMember",
+          "root_name": "A-9_CHAR_RescuedQueueMember",
+          "samples": [
+            {
+              "depth": null,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                39.075,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 43,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                39.075,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 85,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                39.075,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 127,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                39.075,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 168,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                39.075,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 210,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                39.075,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                39.075,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 294,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                39.075,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 336,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                39.075,
+                10.8,
+                0.875
+              ]
+            }
+          ],
+          "source_id": "O005"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "A-9_CHAR_RescuedQueueMember_05",
+          "object_type": "MESH",
+          "parent_name": "A-9_CHAR_RescuedQueueMember",
+          "root_name": "A-9_CHAR_RescuedQueueMember",
+          "samples": [
+            {
+              "depth": null,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                39.925,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 43,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                39.925,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 85,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                39.925,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 127,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                39.925,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 168,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                39.925,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 210,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                39.925,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                39.925,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 294,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                39.925,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 336,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                39.925,
+                10.8,
+                0.875
+              ]
+            }
+          ],
+          "source_id": "O006"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "A-9_CHAR_RescuedQueueMember_06",
+          "object_type": "MESH",
+          "parent_name": "A-9_CHAR_RescuedQueueMember",
+          "root_name": "A-9_CHAR_RescuedQueueMember",
+          "samples": [
+            {
+              "depth": null,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                40.775,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 43,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                40.775,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 85,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                40.775,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 127,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                40.775,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 168,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                40.775,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 210,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                40.775,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                40.775,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 294,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                40.775,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 336,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                40.775,
+                10.8,
+                0.875
+              ]
+            }
+          ],
+          "source_id": "O007"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "A-9_CHAR_RescuedQueueMember_07",
+          "object_type": "MESH",
+          "parent_name": "A-9_CHAR_RescuedQueueMember",
+          "root_name": "A-9_CHAR_RescuedQueueMember",
+          "samples": [
+            {
+              "depth": null,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                41.625,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 43,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                41.625,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 85,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                41.625,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 127,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                41.625,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 168,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                41.625,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 210,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                41.625,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                41.625,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 294,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                41.625,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 336,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                41.625,
+                10.8,
+                0.875
+              ]
+            }
+          ],
+          "source_id": "O008"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "A-9_CHAR_RescuedQueueMember_08",
+          "object_type": "MESH",
+          "parent_name": "A-9_CHAR_RescuedQueueMember",
+          "root_name": "A-9_CHAR_RescuedQueueMember",
+          "samples": [
+            {
+              "depth": null,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                42.475,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 43,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                42.475,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 85,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                42.475,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 127,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                42.475,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 168,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                42.475,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 210,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                42.475,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                42.475,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 294,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                42.475,
+                10.8,
+                0.875
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 336,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.6,
+                0.6,
+                1.75
+              ],
+              "world_location": [
+                42.475,
+                10.8,
+                0.875
+              ]
+            }
+          ],
+          "source_id": "O009"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "A-9_EXT_InnerYard",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "A-9_EXT_InnerYard",
+          "samples": [
+            {
+              "depth": 6.29664,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                36.0,
+                28.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.349,
+              "frame": 43,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                36.0,
+                28.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.48841,
+              "frame": 85,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                36.0,
+                28.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.68892,
+              "frame": 127,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                36.0,
+                28.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.91793,
+              "frame": 168,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                36.0,
+                28.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 7.1581,
+              "frame": 210,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                36.0,
+                28.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 7.3723,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                36.0,
+                28.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 7.52638,
+              "frame": 294,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                36.0,
+                28.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 7.58538,
+              "frame": 336,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                36.0,
+                28.0,
+                0.4
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O010"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "A-9_PROP_TransverseSteelRack_01",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "A-9_PROP_TransverseSteelRack_01",
+          "samples": [
+            {
+              "depth": 2.80237,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.0,
+                1.5,
+                2.2
+              ],
+              "world_location": [
+                29.0,
+                10.75,
+                1.1
+              ]
+            },
+            {
+              "depth": 2.80739,
+              "frame": 43,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.0,
+                1.5,
+                2.2
+              ],
+              "world_location": [
+                29.0,
+                10.75,
+                1.1
+              ]
+            },
+            {
+              "depth": 2.82447,
+              "frame": 85,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.0,
+                1.5,
+                2.2
+              ],
+              "world_location": [
+                29.0,
+                10.75,
+                1.1
+              ]
+            },
+            {
+              "depth": 2.85837,
+              "frame": 127,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.0,
+                1.5,
+                2.2
+              ],
+              "world_location": [
+                29.0,
+                10.75,
+                1.1
+              ]
+            },
+            {
+              "depth": 2.91022,
+              "frame": 168,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.0,
+                1.5,
+                2.2
+              ],
+              "world_location": [
+                29.0,
+                10.75,
+                1.1
+              ]
+            },
+            {
+              "depth": 2.97912,
+              "frame": 210,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.0,
+                1.5,
+                2.2
+              ],
+              "world_location": [
+                29.0,
+                10.75,
+                1.1
+              ]
+            },
+            {
+              "depth": 3.05264,
+              "frame": 252,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.0,
+                1.5,
+                2.2
+              ],
+              "world_location": [
+                29.0,
+                10.75,
+                1.1
+              ]
+            },
+            {
+              "depth": 3.11231,
+              "frame": 294,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.0,
+                1.5,
+                2.2
+              ],
+              "world_location": [
+                29.0,
+                10.75,
+                1.1
+              ]
+            },
+            {
+              "depth": 3.13662,
+              "frame": 336,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                4.0,
+                1.5,
+                2.2
+              ],
+              "world_location": [
+                29.0,
+                10.75,
+                1.1
+              ]
+            }
+          ],
+          "source_id": "O011"
+        }
+      ],
+      "sample_frames": [
+        1,
+        43,
+        85,
+        127,
+        168,
+        210,
+        252,
+        294,
+        336
+      ],
+      "schema_version": 1
+    },
+    "requires_m3_cut_review": false,
+    "rule": "Cut candidates are evidence only; M3 decides real shot boundaries after full-video review."
+  },
+  "render_contract": {
+    "schema_version": 4,
+    "source": {
+      "path": "D14_shots/ep08_shot02/preview_video.mp4",
+      "duration": 14.0,
+      "fps": 24.0,
+      "width": 1080,
+      "height": 1920,
+      "aspect_ratio": 0.5625,
+      "frames": 336,
+      "has_audio": false
+    },
+    "watched_full_source": true,
+    "shot_count": 1,
+    "source_inventory": [
+      {
+        "source_id": "O001",
+        "source_name": "A-9_CHAR_Luchen_01",
+        "source_type": "MESH",
+        "root_name": "A-9_CHAR_Luchen_01",
+        "first_visible_seconds": 3.5,
+        "last_visible_seconds": 13.958,
+        "identity_cues": "name=A-9_CHAR_Luchen_01; type=MESH; root=A-9_CHAR_Luchen_01; dimensions=0.420,0.320,1.730",
+        "evidence_origin": "blender_manifest"
+      }
+    ],
+    "entities": [
+      {
+        "label": "Entity 01 CHAR Luchen",
+        "entity_class": "articulated",
+        "importance": "primary",
+        "source_instance_ids": [
+          "O001"
+        ],
+        "instance_count": 1,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "male protagonist blockout",
+        "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+        "motion_contract": {
+          "mode": "locomotion",
+          "action": "travels 0.97m across the set during the shot",
+          "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+          "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+        }
+      }
+    ],
+    "interaction_contracts": [
+      {
+        "interaction_id": "IX_3001",
+        "source_instance_ids": [
+          "O001"
+        ],
+        "start_seconds": 0.0,
+        "end_seconds": 0.6,
+        "relation": "protagonist feet stand on the transverse steel rack top",
+        "forbidden_change": "do not place the protagonist back on the ground"
+      }
+    ],
+    "shots": [
+      {
+        "shot_id": 1,
+        "start_seconds": 0.0,
+        "end_seconds": 14.0,
+        "camera_contract": {
+          "motion_type": "crane",
+          "tracked_target_entity": "Entity 01 CHAR Luchen",
+          "world_path": "camera travels from (33.17, 9.63, 2.19) to (33.17, 9.63, 3.59) on a 35mm lens, total path length 1.40m inside the blocked set",
+          "target_distance_trend": "stable",
+          "azimuth_trend": "stable",
+          "elevation_trend": "increase",
+          "focal_length_trend": "stable",
+          "screen_composition_rule": "中远景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+          "forbidden_reinterpretations": "do not hold a fixed high angle; the vertical travel must remain; keep the 中远景 framing and the 升降 move exactly as blocked out"
+        },
+        "actions": "protagonist steps onto the transverse steel rack and stands high, coat hem lifted by airflow, the column below tilts heads up but no face enters frame",
+        "layout_and_occlusion": "no instance visible in this anchor",
+        "lighting_spatial_logic": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+      }
+    ],
+    "anchors": [
+      {
+        "time_seconds": 0.0,
+        "source_frame": "D14_shots/ep08_shot02/source_anchor_frames/anchor_01.jpg",
+        "composition": {
+          "shot_scale": "medium_full",
+          "frame_balance_and_depth": "single depth layer visible"
+        },
+        "camera_relation": "camera at (33.17, 9.63, 2.19) on a 35.0mm lens, frame 1 of 336",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR Luchen",
+            "visibility": "offscreen",
+            "center_x_percent": null,
+            "center_y_percent": null,
+            "bbox_width_percent": null,
+            "bbox_height_percent": null,
+            "orientation": "off screen at this anchor",
+            "motion_state": "offscreen at this anchor",
+            "spatial_relations": "leaves the frame before this anchor"
+          }
+        ],
+        "key_layout_and_occlusion": "no instance visible in this anchor"
+      },
+      {
+        "time_seconds": 1.745,
+        "source_frame": "D14_shots/ep08_shot02/source_anchor_frames/anchor_02.jpg",
+        "composition": {
+          "shot_scale": "medium_full",
+          "frame_balance_and_depth": "single depth layer visible"
+        },
+        "camera_relation": "camera at (33.17, 9.63, 2.25) on a 35.0mm lens, frame 43 of 336",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR Luchen",
+            "visibility": "offscreen",
+            "center_x_percent": null,
+            "center_y_percent": null,
+            "bbox_width_percent": null,
+            "bbox_height_percent": null,
+            "orientation": "off screen at this anchor",
+            "motion_state": "offscreen at this anchor",
+            "spatial_relations": "leaves the frame before this anchor"
+          }
+        ],
+        "key_layout_and_occlusion": "no instance visible in this anchor"
+      },
+      {
+        "time_seconds": 3.49,
+        "source_frame": "D14_shots/ep08_shot02/source_anchor_frames/anchor_03.jpg",
+        "composition": {
+          "shot_scale": "medium_full",
+          "frame_balance_and_depth": "depth spans 3.34m to 3.34m across 1 layers; nearest is Luchen, furthest is Luchen"
+        },
+        "camera_relation": "camera at (33.17, 9.63, 2.41) on a 35.0mm lens, frame 85 of 336",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR Luchen",
+            "visibility": "visible",
+            "center_x_percent": 95.11,
+            "center_y_percent": 96.57,
+            "bbox_width_percent": 9.79,
+            "bbox_height_percent": 6.87,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "only visible instance in this frame"
+          }
+        ],
+        "key_layout_and_occlusion": "1 visible instances. Dominant Luchen covers 10x7 percent at frame 95/97. Left to right: Luchen."
+      },
+      {
+        "time_seconds": 5.234,
+        "source_frame": "D14_shots/ep08_shot02/source_anchor_frames/anchor_04.jpg",
+        "composition": {
+          "shot_scale": "medium_full",
+          "frame_balance_and_depth": "depth spans 3.63m to 3.63m across 1 layers; nearest is Luchen, furthest is Luchen"
+        },
+        "camera_relation": "camera at (33.17, 9.63, 2.64) on a 35.0mm lens, frame 127 of 336",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR Luchen",
+            "visibility": "visible",
+            "center_x_percent": 93.8,
+            "center_y_percent": 88.75,
+            "bbox_width_percent": 12.39,
+            "bbox_height_percent": 22.5,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "only visible instance in this frame"
+          }
+        ],
+        "key_layout_and_occlusion": "1 visible instances. Dominant Luchen covers 12x22 percent at frame 94/89. Left to right: Luchen."
+      },
+      {
+        "time_seconds": 6.979,
+        "source_frame": "D14_shots/ep08_shot02/source_anchor_frames/anchor_05.jpg",
+        "composition": {
+          "shot_scale": "medium_full",
+          "frame_balance_and_depth": "depth spans 3.77m to 3.77m across 1 layers; nearest is Luchen, furthest is Luchen"
+        },
+        "camera_relation": "camera at (33.17, 9.63, 2.89) on a 35.0mm lens, frame 168 of 336",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR Luchen",
+            "visibility": "visible",
+            "center_x_percent": 93.35,
+            "center_y_percent": 84.93,
+            "bbox_width_percent": 13.3,
+            "bbox_height_percent": 30.13,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "only visible instance in this frame"
+          }
+        ],
+        "key_layout_and_occlusion": "1 visible instances. Dominant Luchen covers 13x30 percent at frame 93/85. Left to right: Luchen."
+      },
+      {
+        "time_seconds": 8.724,
+        "source_frame": "D14_shots/ep08_shot02/source_anchor_frames/anchor_06.jpg",
+        "composition": {
+          "shot_scale": "medium_full",
+          "frame_balance_and_depth": "depth spans 3.75m to 3.75m across 1 layers; nearest is Luchen, furthest is Luchen"
+        },
+        "camera_relation": "camera at (33.17, 9.63, 3.15) on a 35.0mm lens, frame 210 of 336",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR Luchen",
+            "visibility": "visible",
+            "center_x_percent": 93.62,
+            "center_y_percent": 85.55,
+            "bbox_width_percent": 12.76,
+            "bbox_height_percent": 28.9,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "only visible instance in this frame"
+          }
+        ],
+        "key_layout_and_occlusion": "1 visible instances. Dominant Luchen covers 13x29 percent at frame 94/86. Left to right: Luchen."
+      },
+      {
+        "time_seconds": 10.469,
+        "source_frame": "D14_shots/ep08_shot02/source_anchor_frames/anchor_07.jpg",
+        "composition": {
+          "shot_scale": "medium_full",
+          "frame_balance_and_depth": "depth spans 3.74m to 3.74m across 1 layers; nearest is Luchen, furthest is Luchen"
+        },
+        "camera_relation": "camera at (33.17, 9.63, 3.37) on a 35.0mm lens, frame 252 of 336",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR Luchen",
+            "visibility": "visible",
+            "center_x_percent": 93.81,
+            "center_y_percent": 86.16,
+            "bbox_width_percent": 12.38,
+            "bbox_height_percent": 27.67,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "only visible instance in this frame"
+          }
+        ],
+        "key_layout_and_occlusion": "1 visible instances. Dominant Luchen covers 12x28 percent at frame 94/86. Left to right: Luchen."
+      },
+      {
+        "time_seconds": 12.214,
+        "source_frame": "D14_shots/ep08_shot02/source_anchor_frames/anchor_08.jpg",
+        "composition": {
+          "shot_scale": "medium_full",
+          "frame_balance_and_depth": "depth spans 3.74m to 3.74m across 1 layers; nearest is Luchen, furthest is Luchen"
+        },
+        "camera_relation": "camera at (33.17, 9.63, 3.53) on a 35.0mm lens, frame 294 of 336",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR Luchen",
+            "visibility": "visible",
+            "center_x_percent": 93.92,
+            "center_y_percent": 86.63,
+            "bbox_width_percent": 12.16,
+            "bbox_height_percent": 26.74,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "only visible instance in this frame"
+          }
+        ],
+        "key_layout_and_occlusion": "1 visible instances. Dominant Luchen covers 12x27 percent at frame 94/87. Left to right: Luchen."
+      },
+      {
+        "time_seconds": 13.958,
+        "source_frame": "D14_shots/ep08_shot02/source_anchor_frames/anchor_09.jpg",
+        "composition": {
+          "shot_scale": "medium_full",
+          "frame_balance_and_depth": "depth spans 3.75m to 3.75m across 1 layers; nearest is Luchen, furthest is Luchen"
+        },
+        "camera_relation": "camera at (33.17, 9.63, 3.59) on a 35.0mm lens, frame 336 of 336",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR Luchen",
+            "visibility": "visible",
+            "center_x_percent": 93.95,
+            "center_y_percent": 86.81,
+            "bbox_width_percent": 12.09,
+            "bbox_height_percent": 26.38,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "only visible instance in this frame"
+          }
+        ],
+        "key_layout_and_occlusion": "1 visible instances. Dominant Luchen covers 12x26 percent at frame 94/87. Left to right: Luchen."
+      }
+    ],
+    "m3_cut_review": {
+      "candidate_times": [],
+      "confirmed_real_cuts": [],
+      "reasoning": "No source cut candidate requires review."
+    }
+  },
+  "appearance": {
+    "schema_version": 6,
+    "watched_references": true,
+    "style_source_summary": "World style is taken from the shared unit style contract: cold industrial post-collapse realism for humans and props with a separated stylisation layer for bone pattern, twin flame, grey fog and altered bodies. No external appearance reference image was supplied for this unit, so no reference route is registered and every entity is styled from the world style alone.",
+    "reference_routes": [],
+    "global_style_bible": {
+      "world_and_era": "post-collapse industrial city ruins; concrete yards, sheet metal fences, disused military machine shops and a walled disposal line; human survivors and ceramic-pale altered beings share the same night; no readable signage and no modern branding",
+      "visual_language": "grounded industrial realism for humans and props with a separated stylisation layer for bone pattern, twin flame, grey fog and altered bodies; stylised elements never bleed into the human layer and no graphic injury detail anywhere",
+      "palette": "grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D with detail kept in the darks, plaster white #C6C2B8 for ceramic shells, pure-fire white #F5F7F8 and black #0B0B0C for the twin colour bone pattern, ember orange #E07B39 as the only warm accent",
+      "material_language": "real skin with pores and slight oil sheen, matte technical fabric with wear and dust, oxidised steel with dull reflections, cold ceramic shells on altered bodies; no wet gore surface and no red liquid in the whole frame",
+      "environment_design": "cement yard plates cut by fissures and pit openings, riveted steel frames, sheet metal fence runs with gate gaps, overhead pipe racks, stairwells and a single cold ceiling tube as the only interior light",
+      "prop_design": "functional utilitarian tooling with real weight and thickness: crowbars, ration crates, steel racks, cable reels, console terminals, rolled roller doors, restraint cuffs and an unlit shadow blade; all carry visible use marks",
+      "lighting_and_atmosphere": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+    },
+    "entity_appearances": {
+      "Entity 01 CHAR Luchen": {
+        "semantic_target": "male protagonist blockout",
+        "final_materials_and_detail": "real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings, contact shadow under the body",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      }
+    },
+    "blockout_rejection": {
+      "all_visible_entities_must_be_finished": true,
+      "forbidden_final_look": "source construction proxy, default viewport material, incomplete proxy geometry, or any visibly unart-directed placeholder",
+      "ambiguous_proxy_fallback": "Choose a plausible finished World Style design inside the exact source bounds; never leave it semantically or materially generic."
+    },
+    "sound": "dull metallic thud of a boot on the steel rack with a light rack sway"
+  },
+  "h3_prompt": {
+    "path": "D14_shots/ep08_shot02/h3_prompt.txt",
+    "char_count": 5927,
+    "within_budget": true,
+    "protected_content_valid": true,
+    "ready_to_submit": true
+  }
+}

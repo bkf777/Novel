@@ -1,0 +1,42 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated stylisation….
+[INSTANCE REGISTRY] I1=<O001>.
+<Entity 01 CHAR GuardCaptain>=E1[articulated/primary/articulation] members=I1;n=1;src=guard captain blockout; final=guard captain blockout; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse realism for humans… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D with detail… | materials=real skin with pores and slight oil sheen, matte technical fabric with wear and… | environment=cement yard plates cut by fissures and pit openings, riveted steel frames… | props=functional utilitarian tooling with real weight and thickness: crowbars, ration… | light=one cold overhead key with shadow detail retained instead of crushed black….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E1:articulation | Act=lowers from a standing posture into a crouch or kneel | Keep=stay inside the source blockout bounds for the full shot | Ban=do not replace, duplicate or remove this instance.
+[INTERACTIONS]
+IX_2201@0.000-0.450s I1: rel=crowbar swept out of the captain's hand and bounced on the…; ban=do not keep the crowbar in the hand after the sweep.
+[Shot 1] @0.000-13.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=handheld;target=E1;path=camera travels from (33. 64, 1. 14, 1. 50) to (33. 63, 1. 15, 1. 52) on a 35mm lens, total path length 0…;dist=increase;azi=stable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the frame centre band with head room above…;ban=do not stabilise the handheld rig or move onto the face… | Act=one strike knocks the guard captain back half a metre, he slides and drops to one knee, the crowbar is swept out of hand and bounces on the concrete | Layout=1 visible instances. Dominant GuardCaptain covers 15x50 percent at frame 7/55. Left to right: GuardCaptain. | Light=one cold overhead key with shadow detail retained instead of crushed black, cold grey….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 3. 57m to 3. 57m across 1 layers…;Cam=camera at (33.64, 1.14, 1.50) on a 35.0mm lens, frame 1 of 312;Lay=1 visible instances… D=I1:v/7/55/15/50/o:upright body proxy, head end up/m:stationary across this interval/r:only visible instance in this frame
+@1.620s F=medium;Comp=depth spans 3. 21m to 3. 21m across 1 layers…;Cam=camera at (33.56, 1.14, 1.48) on a 35.0mm lens, frame 40 of 312;Lay=1 visible instances… D=I1:v/7/60/13/49/o:upright body proxy, head end up/m:stationary across this interval/r:only visible instance in this frame
+@3.240s F=medium;Comp=depth spans 2. 94m to 2. 94m across 1 layers…;Cam=camera at (33.63, 1.20, 1.50) on a 35.0mm lens, frame 79 of 312;Lay=1 visible instances… D=I1:v/2/67/5/48/o:upright body proxy, head end up/m:stationary across this interval/r:only visible instance in this frame
+@4.859s F=medium;Comp=depth spans 2. 69m to 2. 69m across 1 layers…;Cam=camera at (33.58, 1.18, 1.52) on a 35.0mm lens, frame 118 of 312;Lay=1 visible instances… D=I1:v/2/73/4/47/o:upright body proxy, head end up/m:stationary across this interval/r:only visible instance in this frame
+@6.479s F=medium;Comp=depth spans 2. 73m to 2. 73m across 1 layers…;Cam=camera at (33.61, 1.12, 1.50) on a 35.0mm lens, frame 156 of 312;Lay=1 visible instances… D=I1:v/3/72/6/46/o:upright body proxy, head end up/m:stationary across this interval/r:only visible instance in this frame
+@8.099s F=medium;Comp=depth spans 2. 71m to 2. 71m across 1 layers…;Cam=camera at (33.61, 1.16, 1.48) on a 35.0mm lens, frame 195 of 312;Lay=1 visible instances… D=I1:v/2/71/4/47/o:upright body proxy, head end up/m:stationary across this interval/r:only visible instance in this frame
+@9.719s F=medium;Comp=depth spans 2. 67m to 2. 67m across 1 layers…;Cam=camera at (33.58, 1.20, 1.49) on a 35.0mm lens, frame 234 of 312;Lay=1 visible instances… D=I1:v/1/72/2/48/o:upright body proxy, head end up/m:stationary across this interval/r:only visible instance in this frame
+@11.339s F=medium;Comp=depth spans 2. 74m to 2. 74m across 1 layers…;Cam=camera at (33.63, 1.15, 1.52) on a 35.0mm lens, frame 273 of 312;Lay=1 visible instances… D=I1:v/2/72/4/46/o:upright body proxy, head end up/m:stationary across this interval/r:only visible instance in this frame
+@12.958s F=medium;Comp=depth spans 2. 74m to 2. 74m across 1 layers…;Cam=camera at (33.63, 1.15, 1.52) on a 35.0mm lens, frame 312 of 312;Lay=1 visible instances… D=I1:v/2/72/4/46/o:upright body proxy, head end up/m:stationary across this interval/r:only visible instance in this frame
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+dull armour impact then a sharp metal bounce of the dropped crowbar
+
+non_diegetic_music:
+N/A

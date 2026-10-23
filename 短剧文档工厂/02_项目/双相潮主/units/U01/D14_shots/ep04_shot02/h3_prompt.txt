@@ -1,0 +1,48 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O002>,I3=<O005>,I4=<O012>,I5=<O013>.
+<Entity 01 CHAR LuchenHand>=E1[articulated/context/static] members=I1;n=1;src=protagonist raised hand blockout; final=protagonist raised hand blockout; finish=real skin with pores and fine hair, fabric with real drape and wear…; style=world_style_unit_contract.
+<Entity 02 ENV A-5>=E2[environment/context/static] members=I2,I4;n=2;src=A-5 built environment shell enclosing the set…; final=A-5 built environment shell enclosing the set…; finish=worn cement, oxidised steel and sheet metal with cold grey…; style=world_style_unit_contract.
+<Entity 03 FX ConcreteDebris>=E3[effect/context/static] members=I3;n=1;src=concrete debris chunks; final=concrete debris chunks; finish=stylised energy surface in the two permitted flame colours, or…; style=world_style_unit_contract.
+<Entity 04 PROP A-5>=E4[rigid/primary/static] members=I5;n=1;src=A-5 set pieces and fittings: SteelCrowbar; final=A-5 set pieces and fittings: SteelCrowbar; finish=utilitarian material with visible weight, thickness and use marks…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2,I4;1:1;n=2.
+E3:I3;1:1;n=1.
+E4:I5;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink… | materials=real skin with pores and slight oil sheen, matte… | environment=cement yard plates cut by fissures and pit openings… | props=functional utilitarian tooling with real weight and… | light=one cold overhead key with shadow detail retained….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3,E4=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3,E4 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_1401@0.000-1.000s I5: rel=crowbar bar crosses the tentacle limb at…; ban=do not show wound detail or extra contact points.
+[Shot 1] @0.000-12.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=handheld;target=E4;path=camera travels from (0. 92, 1. 21, 1. 24) to (0. 89, 1. 21, 1…;dist=stable;azi=stable;elev=stable;lens=stable;comp=特写 framing in 9:16 vertical, subject held in the frame centre…;ban=do not stabilise the handheld rig or move onto the face… | Act=crowbar bar crosses the tentacle limb, first contact throws sparks, second contact breaks the tip off… | Layout=3 visible instances. Dominant BattleGround covers 100x61 percent at frame 50/30… | Light=one cold overhead key with shadow detail retained instead of….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=extreme_close;Comp=depth spans 1. 26m to 1. 91m across 3 layers…;Cam=camera at (0. 92, 1. 21, 1. 24) on a 85…;Lay=3 visible instances… V=I2:50/30/100/61,I3:25/55/51/34,I4:10/0/20/1 O=I1 D=I5:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this…
+@1.495s F=extreme_close;Comp=depth spans 0. 46m to 1. 92m across 4 layers…;Cam=camera at (0. 89, 1. 20, 1. 26) on a 85…;Lay=4 visible instances… V=I1:97/59/6/82,I2:50/34/100/67,I3:24/63/48/34,I4:9/3/18/6 D=I5:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this…
+@2.990s F=extreme_close;Comp=depth spans 1. 24m to 1. 89m across 3 layers…;Cam=camera at (0. 84, 1. 23, 1. 24) on a 85…;Lay=3 visible instances… V=I2:50/34/100/69,I3:16/65/31/35,I4:4/3/7/6 O=I1 D=I5:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this…
+@4.484s F=extreme_close;Comp=depth spans 0. 68m to 1. 89m across 3 layers…;Cam=camera at (0. 88, 1. 27, 1. 22) on a 85…;Lay=3 visible instances… V=I2:50/30/100/60,I3:14/54/28/35 O=I1,I4 D=I5:v/98/41/3/15/o:vertical volume proxy…/m:stationary across this interval/r:right of BattleGround, behind…
+@5.979s F=extreme_close;Comp=depth spans 1. 27m to 1. 92m across 2 layers…;Cam=camera at (0. 92, 1. 27, 1. 23) on a 85…;Lay=2 visible instances… V=I2:50/28/100/56,I3:17/49/34/34 O=I1,I4 D=I5:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this…
+@7.474s F=extreme_close;Comp=depth spans 1. 27m to 1. 92m across 3 layers…;Cam=camera at (0. 88, 1. 24, 1. 26) on a 85…;Lay=3 visible instances… V=I2:50/32/100/65,I3:18/61/36/34,I4:5/2/11/4 O=I1 D=I5:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this…
+@8.969s F=extreme_close;Comp=depth spans 1. 24m to 1. 89m across 3 layers…;Cam=camera at (0. 84, 1. 20, 1. 25) on a 85…;Lay=3 visible instances… V=I2:50/36/100/71,I3:20/69/39/35,I4:6/4/12/8 O=I1 D=I5:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this…
+@10.464s F=extreme_close;Comp=depth spans 0. 36m to 1. 89m across 4 layers…;Cam=camera at (0. 89, 1. 21, 1. 22) on a 85…;Lay=4 visible instances… V=I1:82/97/36/7,I2:50/32/100/64,I3:23/59/47/35,I4:8/1/17/2 D=I5:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this…
+@11.958s F=extreme_close;Comp=depth spans 0. 44m to 1. 89m across 4 layers…;Cam=camera at (0. 89, 1. 21, 1. 22) on a 85…;Lay=4 visible instances… V=I1:81/73/38/53,I2:50/32/100/64,I3:23/59/47/35,I4:8/1/17/2 D=I5:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+three short metal impacts plus the fine hiss of scattered sparks
+
+non_diegetic_music:
+N/A

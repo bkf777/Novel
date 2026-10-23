@@ -1,0 +1,51 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial…; grounded industrial….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O002>,I3=<O003>,I4=<O004>,I5=<O005>,I6=<O006>,I7=<O007>,I8=<O008>,I9=<O009>,I10=<O010>,I11=<O011>.
+<Entity 01 ENV B-10>=E1[environment/context/static] members=I1-I5;n=5;src=B-10 built environme…; final=B-10 built environment…; finish=worn cement, oxidised steel…; style=world_style_unit_con….
+<Entity 02 FX FireHead>=E2[effect/primary/effect_evolution] members=I6;n=1;src=fire head flaring…; final=fire head flaring in…; finish=stylised energy surface in…; style=world_style_unit_con….
+<Entity 03 PROP FireHead_01>=E3[rigid/context/static] members=I7-I8;n=2;src=B-10 set pieces…; final=B-10 set pieces and…; finish=utilitarian material with…; style=world_style_unit_con….
+<Entity 04 FX FireLine>=E4[effect/context/static] members=I9;n=1;src=fire line running…; final=fire line running…; finish=stylised energy surface in…; style=world_style_unit_con….
+<Entity 05 PROP B-10>=E5[rigid/context/static] members=I10-I11;n=2;src=B-10 set pieces…; final=B-10 set pieces and…; finish=utilitarian material with…; style=world_style_unit_con….
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1-I5;1:1;n=5.
+E2:I6;1:1;n=1.
+E3:I7-I8;1:1;n=2.
+E4:I9;1:1;n=1.
+E5:I10-I11;1:1;n=2.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey… | materials=real skin with pores and… | environment=cement yard plates cut by… | props=functional utilitarian… | light=one cold overhead key….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3,E4,E5=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E2:effect_evolution | Act=develops and drifts as… | Keep=stay inside the source… | Ban=do not replace, duplicate….
+[STATIC LOCK] E1,E3,E4,E5 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-14.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E2;path=camera travels from (-29…;dist=decrease;azi=stable;elev=stable;lens=stable;comp=远景 framing in 9:16…;ban=do not add any camera… | Act=three fire heads flare up at different positions across the yard, one beyond… | Layout=11 visible instances… | Light=one cold overhead key over the….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=wide;Comp=depth spans 8…;Cam=camera at (-29…;Lay=11 visible instanc… V=I1:50/32/100/34,I2:67/33/66/33,I3:50/69/100/47,I4:53/54/95/25,I5:53/33/95/66,I7:65/48/2/2,I8:36/46/1/1,I9:42/51/27/2,I10:89/53/22/3,I11:81/43/11/10 D=I6:v/20/50/4/4/o:vertical v…/m:stationary ac…/r:left of FireH…
+@1.745s F=wide;Comp=depth spans 8…;Cam=camera at (-29…;Lay=11 visible instanc… V=I1:50/32/100/34,I2:67/33/66/33,I3:50/69/100/47,I4:53/54/95/25,I5:53/33/95/66,I7:65/48/5/5,I8:36/46/3/3,I9:42/51/27/2,I10:89/53/22/3,I11:81/43/11/10 D=I6:v/20/51/8/9/o:vertical v…/m:stationary ac…/r:left of FireH…
+@3.490s F=wide;Comp=depth spans 8…;Cam=camera at (-29…;Lay=11 visible instanc… V=I1:50/32/100/34,I2:67/33/66/33,I3:50/69/100/47,I4:53/54/95/25,I5:53/33/95/66,I7:65/48/8/8,I8:36/46/5/5,I9:42/51/27/2,I10:89/53/22/3,I11:81/43/11/10 D=I6:v/20/51/13/14/o:vertical v…/m:stationary ac…/r:left of FireH…
+@5.234s F=wide;Comp=depth spans 8…;Cam=camera at (-29…;Lay=11 visible instanc… V=I1:50/32/100/34,I2:67/33/66/33,I3:50/69/100/47,I4:53/54/95/25,I5:53/33/95/66,I7:65/48/11/11,I8:36/46/7/7,I9:42/51/27/2,I10:89/53/22/3,I11:81/43/11/10 D=I6:v/20/51/17/19/o:vertical v…/m:stationary ac…/r:left of FireH…
+@6.979s F=wide;Comp=depth spans 8…;Cam=camera at (-29…;Lay=11 visible instanc… V=I1:50/32/100/34,I2:67/33/66/33,I3:50/69/100/47,I4:53/54/95/25,I5:53/33/95/66,I7:65/48/11/12,I8:36/46/7/7,I9:42/51/27/2,I10:89/53/22/3,I11:81/43/11/10 D=I6:v/20/51/18/20/o:vertical v…/m:stationary ac…/r:left of FireH…
+@8.724s F=wide;Comp=depth spans 8…;Cam=camera at (-29…;Lay=11 visible instanc… V=I1:50/32/100/34,I2:67/33/66/33,I3:50/69/100/47,I4:53/54/95/25,I5:53/33/95/66,I7:65/48/11/12,I8:36/46/7/7,I9:42/51/27/2,I10:89/53/22/3,I11:81/43/11/10 D=I6:v/20/51/18/20/o:vertical v…/m:stationary ac…/r:left of FireH…
+@10.469s F=wide;Comp=depth spans 8…;Cam=camera at (-29…;Lay=11 visible instanc… V=I1:50/32/100/34,I2:67/33/66/33,I3:50/69/100/47,I4:53/54/95/25,I5:53/33/95/66,I7:65/48/11/12,I8:36/46/7/7,I9:42/51/27/2,I10:89/53/22/3,I11:81/43/11/10 D=I6:v/20/51/18/20/o:vertical v…/m:stationary ac…/r:left of FireH…
+@12.214s F=wide;Comp=depth spans 8…;Cam=camera at (-29…;Lay=11 visible instanc… V=I1:50/32/100/34,I2:67/33/66/33,I3:50/69/100/47,I4:53/54/95/25,I5:53/33/95/66,I7:65/48/11/12,I8:36/46/7/7,I9:42/51/27/2,I10:89/53/22/3,I11:81/43/11/10 D=I6:v/20/51/18/20/o:vertical v…/m:stationary ac…/r:left of FireH…
+@13.958s F=wide;Comp=depth spans 8…;Cam=camera at (-29…;Lay=11 visible instanc… V=I1:50/32/100/34,I2:67/33/66/33,I3:50/69/100/47,I4:53/54/95/25,I5:53/33/95/66,I7:65/48/11/12,I8:36/46/7/7,I9:42/51/27/2,I10:89/53/22/3,I11:81/43/11/10 D=I6:v/20/51/18/20/o:vertical v…/m:stationary ac…/r:left of FireH…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+fire bursting open with metal impacts…
+
+non_diegetic_music:
+N/A

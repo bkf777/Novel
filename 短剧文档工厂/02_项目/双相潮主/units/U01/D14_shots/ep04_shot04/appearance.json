@@ -1,0 +1,47 @@
+{
+  "schema_version": 6,
+  "watched_references": true,
+  "style_source_summary": "World style is taken from the shared unit style contract: cold industrial post-collapse realism for humans and props with a separated stylisation layer for bone pattern, twin flame, grey fog and altered bodies. No external appearance reference image was supplied for this unit, so no reference route is registered and every entity is styled from the world style alone.",
+  "reference_routes": [],
+  "global_style_bible": {
+    "world_and_era": "post-collapse industrial city ruins; concrete yards, sheet metal fences, disused military machine shops and a walled disposal line; human survivors and ceramic-pale altered beings share the same night; no readable signage and no modern branding",
+    "visual_language": "grounded industrial realism for humans and props with a separated stylisation layer for bone pattern, twin flame, grey fog and altered bodies; stylised elements never bleed into the human layer and no graphic injury detail anywhere",
+    "palette": "grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D with detail kept in the darks, plaster white #C6C2B8 for ceramic shells, pure-fire white #F5F7F8 and black #0B0B0C for the twin colour bone pattern, ember orange #E07B39 as the only warm accent",
+    "material_language": "real skin with pores and slight oil sheen, matte technical fabric with wear and dust, oxidised steel with dull reflections, cold ceramic shells on altered bodies; no wet gore surface and no red liquid in the whole frame",
+    "environment_design": "cement yard plates cut by fissures and pit openings, riveted steel frames, sheet metal fence runs with gate gaps, overhead pipe racks, stairwells and a single cold ceiling tube as the only interior light",
+    "prop_design": "functional utilitarian tooling with real weight and thickness: crowbars, ration crates, steel racks, cable reels, console terminals, rolled roller doors, restraint cuffs and an unlit shadow blade; all carry visible use marks",
+    "lighting_and_atmosphere": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+  },
+  "entity_appearances": {
+    "Entity 01 CHAR Luchen": {
+      "semantic_target": "male protagonist blockout",
+      "final_materials_and_detail": "real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings, contact shadow under the body",
+      "style_route": "world_style_unit_contract",
+      "source_visual_policy": "spatiotemporal_evidence_only",
+      "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+      "source_unsupported_additions": []
+    },
+    "Entity 02 ENV A-5": {
+      "semantic_target": "A-5 built environment shell enclosing the set: FactoryEastWall, ServiceRoad, EastHighWindow",
+      "final_materials_and_detail": "worn cement, oxidised steel and sheet metal with cold grey reflections, shadow detail kept readable in the dark areas",
+      "style_route": "world_style_unit_contract",
+      "source_visual_policy": "spatiotemporal_evidence_only",
+      "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+      "source_unsupported_additions": []
+    },
+    "Entity 03 PROP A-5": {
+      "semantic_target": "A-5 set pieces and fittings: InteriorWindowBay, GreyFramePanel, RoadsideLamp, ArmouredVehicle",
+      "final_materials_and_detail": "utilitarian material with visible weight, thickness and use marks, cold grey metal and dull plastic, no gloss hero finish",
+      "style_route": "world_style_unit_contract",
+      "source_visual_policy": "spatiotemporal_evidence_only",
+      "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+      "source_unsupported_additions": []
+    }
+  },
+  "blockout_rejection": {
+    "all_visible_entities_must_be_finished": true,
+    "forbidden_final_look": "source construction proxy, default viewport material, incomplete proxy geometry, or any visibly unart-directed placeholder",
+    "ambiguous_proxy_fallback": "Choose a plausible finished World Style design inside the exact source bounds; never leave it semantically or materially generic."
+  },
+  "sound": "one short notification beep with distant engine rumble approaching"
+}

@@ -1,0 +1,511 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep18_shot04/preview_video.mp4",
+    "duration": 7.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 168,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O002",
+      "source_name": "B-12_CHAR_LuchenHand_02",
+      "source_type": "MESH",
+      "root_name": "B-12_CHAR_LuchenHand_02",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-12_CHAR_LuchenHand_02; type=MESH; root=B-12_CHAR_LuchenHand_02; dimensions=0.100,0.100,0.300",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O009",
+      "source_name": "B-12_PROP_AshDeposit_03",
+      "source_type": "MESH",
+      "root_name": "B-12_PROP_AshDeposit_03",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-12_PROP_AshDeposit_03; type=MESH; root=B-12_PROP_AshDeposit_03; dimensions=3.000,11.850,0.020",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O011",
+      "source_name": "B-12_PROP_IdentityPlate_01",
+      "source_type": "MESH",
+      "root_name": "B-12_PROP_IdentityPlate_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-12_PROP_IdentityPlate_01; type=MESH; root=B-12_PROP_IdentityPlate_01; dimensions=0.220,0.160,0.030",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR LuchenHand",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O002"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "protagonist raised hand blockout",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 PROP B-12",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O009",
+        "O011"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-12 set pieces and fittings: AshDeposit, IdentityPlate",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_7201",
+      "source_instance_ids": [
+        "O002",
+        "O011"
+      ],
+      "start_seconds": 0.2,
+      "end_seconds": 0.9,
+      "relation": "the hand takes the two metal pieces off the brick face one by one",
+      "forbidden_change": "do not put a third object on the brick face and do not add any red liquid"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 7.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 02 PROP B-12",
+        "world_path": "camera travels from (0.21, -5.64, 0.78) to (0.21, -5.64, 0.78) on a 85mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "特写 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 特写 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "where the ash settled only two metal pieces are left, an identity plate and an enemy chief emblem, each lying alone on the brick face; the protagonist bends down and takes the two pieces one by one into his hand; a readout field in one corner shows the normalisation readout at 1.4%",
+      "layout_and_occlusion": "3 visible instances. Dominant AshDeposit covers 100x70 percent at frame 50/35. Left to right: AshDeposit, IdentityPlate, LuchenHand.",
+      "lighting_spatial_logic": "one cold overhead key over the steel table with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the emergency lamps on the gate posts, the residual fire heads, the twin flame and the derrick lamp as the only moving light sources, and the grey fog pressing down over the street with the unlit crossing kept dark"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep18_shot04/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 0.87m to 5.48m across 3 layers; nearest is LuchenHand, furthest is AshDeposit"
+      },
+      "camera_relation": "camera at (0.21, -5.64, 0.78) on a 85.0mm lens, frame 1 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 96.74,
+          "center_y_percent": 58.56,
+          "bbox_width_percent": 6.53,
+          "bbox_height_percent": 82.87,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of IdentityPlate, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 35.07,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 70.13,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of IdentityPlate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 89.09,
+          "center_y_percent": 84.91,
+          "bbox_width_percent": 21.82,
+          "bbox_height_percent": 30.18,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshDeposit, left of LuchenHand, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant AshDeposit covers 100x70 percent at frame 50/35. Left to right: AshDeposit, IdentityPlate, LuchenHand."
+    },
+    {
+      "time_seconds": 0.994,
+      "source_frame": "D14_shots/ep18_shot04/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 0.87m to 5.48m across 3 layers; nearest is LuchenHand, furthest is AshDeposit"
+      },
+      "camera_relation": "camera at (0.21, -5.64, 0.78) on a 85.0mm lens, frame 25 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 96.74,
+          "center_y_percent": 58.56,
+          "bbox_width_percent": 6.53,
+          "bbox_height_percent": 82.87,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of IdentityPlate, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 35.07,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 70.13,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of IdentityPlate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 89.09,
+          "center_y_percent": 84.91,
+          "bbox_width_percent": 21.82,
+          "bbox_height_percent": 30.18,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshDeposit, left of LuchenHand, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant AshDeposit covers 100x70 percent at frame 50/35. Left to right: AshDeposit, IdentityPlate, LuchenHand."
+    },
+    {
+      "time_seconds": 1.988,
+      "source_frame": "D14_shots/ep18_shot04/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 0.87m to 5.48m across 3 layers; nearest is LuchenHand, furthest is AshDeposit"
+      },
+      "camera_relation": "camera at (0.21, -5.64, 0.78) on a 85.0mm lens, frame 49 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 96.74,
+          "center_y_percent": 58.56,
+          "bbox_width_percent": 6.53,
+          "bbox_height_percent": 82.87,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of IdentityPlate, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 35.07,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 70.13,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of IdentityPlate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 89.09,
+          "center_y_percent": 84.91,
+          "bbox_width_percent": 21.82,
+          "bbox_height_percent": 30.18,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshDeposit, left of LuchenHand, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant AshDeposit covers 100x70 percent at frame 50/35. Left to right: AshDeposit, IdentityPlate, LuchenHand."
+    },
+    {
+      "time_seconds": 2.982,
+      "source_frame": "D14_shots/ep18_shot04/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 0.87m to 5.48m across 3 layers; nearest is LuchenHand, furthest is AshDeposit"
+      },
+      "camera_relation": "camera at (0.21, -5.64, 0.78) on a 85.0mm lens, frame 73 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 96.74,
+          "center_y_percent": 58.56,
+          "bbox_width_percent": 6.53,
+          "bbox_height_percent": 82.87,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of IdentityPlate, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 35.07,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 70.13,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of IdentityPlate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 89.09,
+          "center_y_percent": 84.91,
+          "bbox_width_percent": 21.82,
+          "bbox_height_percent": 30.18,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshDeposit, left of LuchenHand, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant AshDeposit covers 100x70 percent at frame 50/35. Left to right: AshDeposit, IdentityPlate, LuchenHand."
+    },
+    {
+      "time_seconds": 3.976,
+      "source_frame": "D14_shots/ep18_shot04/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 0.87m to 5.48m across 3 layers; nearest is LuchenHand, furthest is AshDeposit"
+      },
+      "camera_relation": "camera at (0.21, -5.64, 0.78) on a 85.0mm lens, frame 96 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 96.74,
+          "center_y_percent": 58.56,
+          "bbox_width_percent": 6.53,
+          "bbox_height_percent": 82.87,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of IdentityPlate, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 35.07,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 70.13,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of IdentityPlate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 89.09,
+          "center_y_percent": 84.91,
+          "bbox_width_percent": 21.82,
+          "bbox_height_percent": 30.18,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshDeposit, left of LuchenHand, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant AshDeposit covers 100x70 percent at frame 50/35. Left to right: AshDeposit, IdentityPlate, LuchenHand."
+    },
+    {
+      "time_seconds": 4.97,
+      "source_frame": "D14_shots/ep18_shot04/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 0.87m to 5.48m across 3 layers; nearest is LuchenHand, furthest is AshDeposit"
+      },
+      "camera_relation": "camera at (0.21, -5.64, 0.78) on a 85.0mm lens, frame 120 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 96.74,
+          "center_y_percent": 58.56,
+          "bbox_width_percent": 6.53,
+          "bbox_height_percent": 82.87,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of IdentityPlate, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 35.07,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 70.13,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of IdentityPlate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 89.09,
+          "center_y_percent": 84.91,
+          "bbox_width_percent": 21.82,
+          "bbox_height_percent": 30.18,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshDeposit, left of LuchenHand, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant AshDeposit covers 100x70 percent at frame 50/35. Left to right: AshDeposit, IdentityPlate, LuchenHand."
+    },
+    {
+      "time_seconds": 5.964,
+      "source_frame": "D14_shots/ep18_shot04/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 0.87m to 5.48m across 3 layers; nearest is LuchenHand, furthest is AshDeposit"
+      },
+      "camera_relation": "camera at (0.21, -5.64, 0.78) on a 85.0mm lens, frame 144 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 96.74,
+          "center_y_percent": 58.56,
+          "bbox_width_percent": 6.53,
+          "bbox_height_percent": 82.87,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of IdentityPlate, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 35.07,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 70.13,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of IdentityPlate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 89.09,
+          "center_y_percent": 84.91,
+          "bbox_width_percent": 21.82,
+          "bbox_height_percent": 30.18,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshDeposit, left of LuchenHand, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant AshDeposit covers 100x70 percent at frame 50/35. Left to right: AshDeposit, IdentityPlate, LuchenHand."
+    },
+    {
+      "time_seconds": 6.958,
+      "source_frame": "D14_shots/ep18_shot04/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 0.87m to 5.48m across 3 layers; nearest is LuchenHand, furthest is AshDeposit"
+      },
+      "camera_relation": "camera at (0.21, -5.64, 0.78) on a 85.0mm lens, frame 168 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 96.74,
+          "center_y_percent": 58.56,
+          "bbox_width_percent": 6.53,
+          "bbox_height_percent": 82.87,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of IdentityPlate, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 35.07,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 70.13,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of IdentityPlate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 89.09,
+          "center_y_percent": 84.91,
+          "bbox_width_percent": 21.82,
+          "bbox_height_percent": 30.18,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshDeposit, left of LuchenHand, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant AshDeposit covers 100x70 percent at frame 50/35. Left to right: AshDeposit, IdentityPlate, LuchenHand."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

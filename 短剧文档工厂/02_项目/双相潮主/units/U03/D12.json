@@ -1,0 +1,1824 @@
+{
+  "doc_id": "D12",
+  "unit": "U03",
+  "version": "v1.4",
+  "status": "in_review",
+  "cards": [
+    {
+      "card_id": "C-201",
+      "ep": 17,
+      "shot_id": 1,
+      "image_prompt": "远景，平视，24mm，推，9:16 竖屏。24mm 广角，主体在画框中占比小、居中，环境占满上下画面。废弃军工机械厂厂门外街面与门禁区：厂门与门柱、门外一段被烧过的街面、应急灯与残余火光；工业冷光加青灰雾气。厂门外的余火还在烧，十几条影子从灰雾里压过来，把街面围成半圈；叶红衣独自站在半圈缺口处，影刃横在身前，刃面不反光，街面上只留下一道暗色；排队与包围者一律作剪影，面部不入画。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "12 秒单镜：镜头自远景缓慢推进；厂门外余火还在烧，十几条影子从灰雾里压过来围成半圈；叶红衣独自站在半圈缺口处，影刃横在身前不动，刃面不反光；包围者只作剪影，面部一律不入镜。；台词：叶红衣「这条路我封了。谁都别想过。」；音效：脚步踩碎砖；风穿过厂门豁口。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no face of the crowd",
+        "no close-up of the crowd",
+        "no weapon raised against the protagonist",
+        "no gore",
+        "no blood",
+        "no visible text of any kind in frame",
+        "no sign board",
+        "no screen with content",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "角色域 seed 固定 YHY:110201；场景光效域 seed 110521；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 12
+      },
+      "consistency_refs": {
+        "char_ids": [
+          "YHY"
+        ],
+        "motifs": [],
+        "palette": [
+          "灰雾青灰",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [
+        "影刃",
+        "暗红衣"
+      ],
+      "source": "both"
+    },
+    {
+      "card_id": "C-202",
+      "ep": 17,
+      "shot_id": 2,
+      "image_prompt": "全景，平视，35mm，固定，9:16 竖屏。35mm，主体占画面中段，四周留出环境纵深。废弃军工机械厂厂门外街面与门禁区：厂门与门柱、门外一段被烧过的街面、应急灯与残余火光；工业冷光加青灰雾气。影刃切过街面，最前排的影子一个个溃散为灰烬光尘，落灰积在砖缝里；街面上只留下一道暗色，刃身不反光；溃散只作光尘与落灰，不给人体细节。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "13 秒单镜：影刃切过街面，最前排的影子逐个溃散为灰烬光尘；落灰积在砖缝里；落灰自半空沉下、积进砖缝；街面只留下一道暗色，刃身全程不反光；不给人体细节。；台词：叶承钧「收队。目标不在这里。」；音效：碎裂声连成一片，随后安静下来。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "third flame color",
+        "red flame",
+        "orange flame",
+        "multi-colored fire",
+        "any fire color other than black and white",
+        "no flesh disintegration close-up",
+        "no bone fragments",
+        "no blood",
+        "no gore",
+        "no third flame color",
+        "no visible text of any kind in frame",
+        "no sign board",
+        "no screen with content",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "角色域 seed 固定 YHY:110201；场景光效域 seed 110521；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 32,
+        "guidance": 6.5,
+        "duration_sec": 13
+      },
+      "consistency_refs": {
+        "char_ids": [
+          "YHY"
+        ],
+        "motifs": [],
+        "palette": [
+          "灰雾青灰",
+          "墨灰暗部",
+          "石膏灰白"
+        ]
+      },
+      "char_descriptions": [
+        "影刃"
+      ],
+      "source": "both"
+    },
+    {
+      "card_id": "C-203",
+      "ep": 17,
+      "shot_id": 3,
+      "image_prompt": "中景，平视，50mm，固定，9:16 竖屏。50mm 中焦，主体放大居中，纵深压缩。废弃军工机械厂厂门外街面与门禁区：厂门与门柱、门外一段被烧过的街面、应急灯与残余火光；工业冷光加青灰雾气。剩下的影子退向街口暗处，主谋被逼到路口，退路一寸寸断掉；街口只剩暗处与被截断的路；主谋只作剪影，不给面部。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "13 秒单镜：剩下的影子逐个退向街口暗处；主谋被逼到路口、退路一寸寸断掉；街口只剩暗处与被截断的路；主谋只作剪影，面部一律不入镜。；台词：叶红衣「退路我断了。你跑不掉。」；音效：远处脚步散开；风穿过街口。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no face of the retreating crowd",
+        "no close-up of the leader",
+        "no gore",
+        "no blood",
+        "no visible text of any kind in frame",
+        "no sign board",
+        "no screen with content",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "角色域 seed 固定 YHY:110201；场景光效域 seed 110521；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 13
+      },
+      "consistency_refs": {
+        "char_ids": [
+          "YHY"
+        ],
+        "motifs": [],
+        "palette": [
+          "灰雾青灰",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [
+        "暗红衣"
+      ],
+      "source": "both"
+    },
+    {
+      "card_id": "C-204",
+      "ep": 17,
+      "shot_id": 4,
+      "image_prompt": "中景，仰视，50mm，升降，9:16 竖屏。50mm 中焦，主体放大居中，纵深压缩。废弃军工机械厂厂门外街面与门禁区：厂门与门柱、门外一段被烧过的街面、应急灯与残余火光；工业冷光加青灰雾气。厂门阴影里走出一个人，右腕骨上的黑白骨纹一路亮起来，整条街面被压住；视野一角的读数栏显示同屏中文「归一度 1.4%」；骨纹只走体表发光与轮廓光，不破体。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "7 秒单镜：镜头自中景随人物抬升；厂门阴影里走出一个人，右腕骨上的黑白骨纹一路亮起来；整条街面被压住，读数栏保持「归一度 1.4%」可读；骨纹只走体表发光与轮廓光、不破体。；台词：陆沉「我救下的人，谁也带不走。」；音效：低频嗡鸣；街面碎石轻跳。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "third flame color",
+        "red flame",
+        "orange flame",
+        "multi-colored fire",
+        "any fire color other than black and white",
+        "no skin breakage",
+        "no bone protruding through skin",
+        "no blood",
+        "no gore",
+        "no third flame color",
+        "no garbled text",
+        "no English-only text",
+        "no fake random glyphs",
+        "red alert overlay",
+        "handwritten text on the interface",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "角色域 seed 固定 LC:110101；场景光效域 seed 110521；面板与界面域 seed 110501；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 32,
+        "guidance": 6.5,
+        "duration_sec": 7
+      },
+      "consistency_refs": {
+        "char_ids": [
+          "LC"
+        ],
+        "motifs": [
+          "M02"
+        ],
+        "palette": [
+          "净火白",
+          "净火黑",
+          "灰雾青灰",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [
+        "右手腕黑白游龙骨纹"
+      ],
+      "source": "both"
+    },
+    {
+      "card_id": "C-205",
+      "ep": 18,
+      "shot_id": 1,
+      "image_prompt": "全景，平视，35mm，推，9:16 竖屏。35mm，主体占画面中段，四周留出环境纵深。废弃军工机械厂厂门外街面与门禁区：厂门阴影、贴墙阴影带、厂内应急灯自门缝漏出；冷调低照度，街面留出影刃穿行的空当。骨威全开，骨纹自右腕骨一路亮到小臂，白光顺着街面铺开，灰雾被压得下沉；街面碎石在震动里跳起；骨纹只走体表发光，不破体不见皮下骨骼。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "12 秒单镜：镜头自全景缓慢推进；骨纹自右腕骨一路亮到小臂，白光顺着街面铺开，灰雾被压得下沉；街面碎石在震动里跳起；骨纹全程贴附皮肤表面发光、不破体；本句为画外音／主观声，画幅内只有腕骨纹路这一局部，无面部、无口型、无身份锚点。；台词：陆沉「原来能这么用。」；音效：低频嗡鸣；街面碎石在震动里跳。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "third flame color",
+        "red flame",
+        "orange flame",
+        "multi-colored fire",
+        "any fire color other than black and white",
+        "no skin puncture",
+        "no bone under the skin",
+        "no third flame color",
+        "no blood",
+        "no gore",
+        "no visible text of any kind in frame",
+        "no sign board",
+        "no screen with content",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "角色域 seed 固定 LC:110101；场景光效域 seed 110522；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 32,
+        "guidance": 6.5,
+        "duration_sec": 12
+      },
+      "consistency_refs": {
+        "char_ids": [
+          "LC"
+        ],
+        "motifs": [
+          "M01",
+          "M02"
+        ],
+        "palette": [
+          "净火白",
+          "净火黑",
+          "灰雾青灰",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [
+        "右手腕黑白游龙骨纹"
+      ],
+      "source": "both"
+    },
+    {
+      "card_id": "C-206",
+      "ep": 18,
+      "shot_id": 2,
+      "image_prompt": "中远景，平视，35mm，固定，9:16 竖屏。35mm，主体占画面中段，四周留出环境纵深。废弃军工机械厂厂门外街面与门禁区：厂门阴影、贴墙阴影带、厂内应急灯自门缝漏出；冷调低照度，街面留出影刃穿行的空当。压下来的范围内，围上来的人一个个溃散为灰烬光尘；消解由近及远，人形轮廓逐个散成发亮的灰点；只作光尘与轮廓散解，不给人体细节。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "13 秒单镜：消解由近及远推进，围上来的人逐个散成发亮的灰点；人形轮廓一路散成灰烬光尘并向上飘散；全程不给人体细节与残骸。；台词：陆沉「都退到墙后。别站在街上。」；音效：碎裂声由近及远，最后一声落下后没有人声。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "third flame color",
+        "red flame",
+        "orange flame",
+        "multi-colored fire",
+        "any fire color other than black and white",
+        "no flesh disintegration close-up",
+        "no bone fragments",
+        "no blood",
+        "no gore",
+        "no visible text of any kind in frame",
+        "no sign board",
+        "no screen with content",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "无角色域 seed；场景光效域 seed 110522；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 32,
+        "guidance": 6.5,
+        "duration_sec": 13
+      },
+      "consistency_refs": {
+        "char_ids": [],
+        "motifs": [],
+        "palette": [
+          "石膏灰白",
+          "灰雾青灰",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [],
+      "source": "both"
+    },
+    {
+      "card_id": "C-207",
+      "ep": 18,
+      "shot_id": 3,
+      "image_prompt": "特写，俯视，50mm，固定，9:16 竖屏。50mm 中焦，主体放大居中，纵深压缩。废弃军工机械厂厂门外街面与门禁区：厂门阴影、贴墙阴影带、厂内应急灯自门缝漏出；冷调低照度，街面留出影刃穿行的空当。苏清辞把数据板架在钢箱上，屏上频谱一条条平下去，多余的心跳信号全部消失；街面安静下来，落灰被风推成一道一道；数据板屏上文字层一律中文。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "13 秒单镜：苏清辞把数据板架稳在钢箱上，屏上频谱一条条平下去，多余的心跳信号全部消失；街面安静下来，落灰被风推成一道一道；屏上文字保持中文正写、逐字可读。；台词：苏清辞「厂区外找不到多余的心跳信号了。」；音效：数据板提示音；风推落灰的细响。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no garbled text",
+        "no English-only text",
+        "no fake random glyphs",
+        "no face in frame",
+        "no gore",
+        "red alert overlay",
+        "handwritten text on the interface",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "角色域 seed 固定 SQC:110301；场景光效域 seed 110522；面板与界面域 seed 110501；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 13
+      },
+      "consistency_refs": {
+        "char_ids": [
+          "SQC"
+        ],
+        "motifs": [],
+        "palette": [
+          "骨白",
+          "灰雾青灰",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [
+        "数据板",
+        "白色科研风衣"
+      ],
+      "source": "both"
+    },
+    {
+      "card_id": "C-208",
+      "ep": 18,
+      "shot_id": 4,
+      "image_prompt": "特写，俯视，85mm，固定，9:16 竖屏。85mm 长焦，主体放大靠前，背景压平。废弃军工机械厂厂门外街面与门禁区：厂门阴影、贴墙阴影带、厂内应急灯自门缝漏出；冷调低照度，街面留出影刃穿行的空当。灰烬落定处只剩两件金属件：身份铭牌与敌酋纹章，单独落在砖面上；陆沉弯腰把两件一件件取下握在手里；视野一角的读数栏显示同屏中文「归一度 1.4%」。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "7 秒单镜：灰烬落定后砖面上只剩两件金属件；陆沉弯腰把身份铭牌与敌酋纹章一件件取下、握在手里；读数栏保持「归一度 1.4%」可读；不给金属件上的可辨徽记。；台词：陆沉「叶家的东西。我收下了。」；音效：金属件离地的轻响。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no readable real-world insignia",
+        "no real-world national flags",
+        "no real corporate logos",
+        "no gore",
+        "no blood",
+        "no garbled text",
+        "no English-only text",
+        "no fake random glyphs",
+        "red alert overlay",
+        "handwritten text on the interface",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "角色域 seed 固定 LC:110101；场景光效域 seed 110522；面板与界面域 seed 110501；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 7
+      },
+      "consistency_refs": {
+        "char_ids": [
+          "LC"
+        ],
+        "motifs": [],
+        "palette": [
+          "灰雾青灰",
+          "墨灰暗部",
+          "骨白"
+        ]
+      },
+      "char_descriptions": [
+        "黑色战术风衣"
+      ],
+      "source": "both"
+    },
+    {
+      "card_id": "C-209",
+      "ep": 19,
+      "shot_id": 1,
+      "image_prompt": "中景，平视，50mm，固定，9:16 竖屏。50mm 中焦，主体放大居中，纵深压缩。废弃军工机械厂门柱与旗位：门柱、贴上门柱的两件金属件、一面立起的旗；灰雾里只剩轮廓，照明压到最低。身份铭牌与敌酋纹章被挂上门柱，只挂两件金属件，门柱上没有别的东西；门柱在灰雾里只剩轮廓；金属件上的纹样为抽象几何，不带任何可辨徽记。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "12 秒单镜：镜头固定不动；身份铭牌与敌酋纹章被挂上门柱，只挂两件金属件；门柱在灰雾里只剩轮廓；金属件纹样保持抽象几何，不出现可辨徽记；本句为画外音／主观声，画面内只有门柱与两件金属件，不出现该角色、不给口型与面部。；台词：陆沉「叶家的名，挂我门上。」；音效：铁件碰铁件的声响；旗布抖动声。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no readable real-world insignia",
+        "no real-world national flags",
+        "no real corporate logos",
+        "no sign board with text",
+        "no gore",
+        "no visible text of any kind in frame",
+        "no sign board",
+        "no screen with content",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "无角色域 seed；场景光效域 seed 110523；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 12
+      },
+      "consistency_refs": {
+        "char_ids": [],
+        "motifs": [],
+        "palette": [
+          "灰雾青灰",
+          "墨灰暗部",
+          "骨白"
+        ]
+      },
+      "char_descriptions": [],
+      "source": "both"
+    },
+    {
+      "card_id": "C-210",
+      "ep": 19,
+      "shot_id": 2,
+      "image_prompt": "中景，仰视，50mm，升降，9:16 竖屏。50mm 中焦，主体放大居中，纵深压缩。废弃军工机械厂门柱与旗位：门柱、贴上门柱的两件金属件、一面立起的旗；灰雾里只剩轮廓，照明压到最低。叶红衣把旗杆压进门槛石缝，杆身立直，旗面在灰雾里展开；旗面上一行字：踏入此线者死；字为中文正写、逐字可读。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "13 秒单镜：镜头自中景随旗杆抬升；叶红衣把旗杆压进门槛石缝，杆身立直，旗面在灰雾里展开；旗面上一行字：踏入此线者死；旗面那行中文「踏入此线者死」保持正写、逐字可读；旗面不作飘飞乱动。；台词：叶红衣「谁敢对陆沉露獠牙，我必先摘下他的身份铭牌。」；音效：旗杆压进石缝的闷响；旗布抖动声。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "real-world national flags",
+        "real-world country emblems",
+        "real corporate logos",
+        "real-world military insignia",
+        "real-world currency symbols",
+        "real-world ethnic or religious dress",
+        "recognizable real-world landmark",
+        "no garbled text",
+        "no English-only text",
+        "no religious iconography",
+        "no gore",
+        "no blood",
+        "no fake random glyphs",
+        "red alert overlay",
+        "handwritten text on the interface",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "角色域 seed 固定 YHY:110201；场景光效域 seed 110523；面板与界面域 seed 110501；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 13
+      },
+      "consistency_refs": {
+        "char_ids": [
+          "YHY"
+        ],
+        "motifs": [],
+        "palette": [
+          "灰雾青灰",
+          "墨灰暗部",
+          "暗红"
+        ]
+      },
+      "char_descriptions": [
+        "暗红色劲装",
+        "黑长直发"
+      ],
+      "source": "both"
+    },
+    {
+      "card_id": "C-211",
+      "ep": 19,
+      "shot_id": 3,
+      "image_prompt": "近景，过肩，85mm，固定，9:16 竖屏。85mm 长焦，主体放大靠前，背景压平。废弃军工机械厂门柱与旗位：门柱、贴上门柱的两件金属件、一面立起的旗；灰雾里只剩轮廓，照明压到最低。苏清辞把铭牌编号抄进数据板，抄完又核了一遍；陆沉站在门内一侧看着旗面，没有接话；数据板屏上编号为中文正写、逐字可读。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "13 秒单镜：苏清辞把铭牌编号一笔笔抄进数据板，抄完又核了一遍；陆沉站在门内一侧看着旗面、没有接话；屏上编号保持中文正写、逐字可读；不给面部特写。；台词：苏清辞「编号抄好了。今晚之后，这一块牌子的编号会传遍全城。」；音效：笔尖划过数据板；远处风。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no garbled text",
+        "no English-only text",
+        "no fake random glyphs",
+        "no close-up of any face",
+        "no gore",
+        "red alert overlay",
+        "handwritten text on the interface",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "角色域 seed 固定 SQC:110301／LC:110101；场景光效域 seed 110523；面板与界面域 seed 110501；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 13
+      },
+      "consistency_refs": {
+        "char_ids": [
+          "SQC",
+          "LC"
+        ],
+        "motifs": [],
+        "palette": [
+          "骨白",
+          "灰雾青灰",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [
+        "数据板",
+        "白色科研风衣",
+        "黑色战术风衣"
+      ],
+      "source": "both"
+    },
+    {
+      "card_id": "C-212",
+      "ep": 19,
+      "shot_id": 4,
+      "image_prompt": "远景，平视，24mm，推，9:16 竖屏。24mm 广角，主体在画框中占比小、居中，环境占满上下画面。废弃军工机械厂门柱与旗位：门柱、贴上门柱的两件金属件、一面立起的旗；灰雾里只剩轮廓，照明压到最低。厂门外的灰雾里车辙从四面压过来，天还没亮，队伍已经沿着车辙排到厂门外；排队的人一律作剪影；视野一角的读数栏显示同屏中文「归一度 1.4%」。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "7 秒单镜：镜头自远景推近厂门；灰雾里车辙从四面压过来，队伍已经沿着车辙排到厂门外；排队者一律作剪影，面部不入镜；读数栏保持「归一度 1.4%」可读。；台词：陆沉「开门。」；音效：车辙声从四面压过来；无数脚步声。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no face of the queue",
+        "no close-up of the crowd",
+        "no gore",
+        "no blood",
+        "no garbled text",
+        "no English-only text",
+        "no fake random glyphs",
+        "red alert overlay",
+        "handwritten text on the interface",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "角色域 seed 固定 LC:110101；场景光效域 seed 110523；面板与界面域 seed 110501；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 7
+      },
+      "consistency_refs": {
+        "char_ids": [
+          "LC"
+        ],
+        "motifs": [
+          "M02"
+        ],
+        "palette": [
+          "灰雾青灰",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [
+        "右手腕黑白游龙骨纹"
+      ],
+      "source": "both"
+    },
+    {
+      "card_id": "C-213",
+      "ep": 20,
+      "shot_id": 1,
+      "image_prompt": "远景，俯视，24mm，固定，9:16 竖屏。24mm 广角，主体在画框中占比小、居中，环境占满上下画面。废弃军工机械厂门禁与分诊区：门柱两侧的通道、分诊台、两列排队区；工业冷光加青灰雾气，排队的人一律作剪影。队伍从厂门一直排到路口，车辙压进灰雾里，轮印叠着轮印；排队的人一律作剪影，队形一路拐进灰雾深处；门两边各留一列排队通道位，喊话者不入画。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "12 秒单镜：镜头自远景俯视；队伍从厂门一直排到路口，车辙压进灰雾里、轮印叠着轮印；排队的人一律作剪影，队形一路拐进灰雾深处；门两边各留一列排队通道位，喊话者不入画；本句为画外音／主观声，画面内只有队伍与剪影，不出现喊话者、不给口型与面部。；台词：叶红衣「门两边站好。一个一个进，别挤。」；音效：车轮碾地；孩子哭声；没有交谈声。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no face of the queue",
+        "no close-up of the crowd",
+        "no gore",
+        "no blood",
+        "no visible text of any kind in frame",
+        "no sign board",
+        "no screen with content",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "无角色域 seed；场景光效域 seed 110524；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 12
+      },
+      "consistency_refs": {
+        "char_ids": [],
+        "motifs": [],
+        "palette": [
+          "灰雾青灰",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [],
+      "source": "both"
+    },
+    {
+      "card_id": "C-214",
+      "ep": 20,
+      "shot_id": 2,
+      "image_prompt": "中景，平视，50mm，固定，9:16 竖屏。50mm 中焦，主体放大居中，纵深压缩。废弃军工机械厂门禁与分诊区：门柱两侧的通道、分诊台、两列排队区；工业冷光加青灰雾气，排队的人一律作剪影。苏清辞在分诊台前按灰斑轻重分出两列，净火排在最前面；两列之间留出一条通道，队头是净火位；灰斑只在袖口与手背上可见。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "13 秒单镜：苏清辞在分诊台前按灰斑轻重把队伍分出两列，净火排在最前面；两列之间留出一条通道，队头始终是净火位；灰斑只在袖口与手背上可见；不给面部特写。；台词：苏清辞「净火只能先排最重的一批。剩下的按号等。」；音效：纸张翻动；人声压得很低。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no visible open skin lesion",
+        "no gore",
+        "no blood",
+        "no close-up of any face",
+        "no visible text of any kind in frame",
+        "no sign board",
+        "no screen with content",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "角色域 seed 固定 SQC:110301；场景光效域 seed 110524；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 13
+      },
+      "consistency_refs": {
+        "char_ids": [
+          "SQC"
+        ],
+        "motifs": [],
+        "palette": [
+          "骨白",
+          "灰雾青灰",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [
+        "白色科研风衣",
+        "数据板"
+      ],
+      "source": "both"
+    },
+    {
+      "card_id": "C-215",
+      "ep": 20,
+      "shot_id": 3,
+      "image_prompt": "特写，俯视，50mm，固定，9:16 竖屏。50mm 中焦，主体放大居中，纵深压缩。废弃军工机械厂门禁与分诊区：门柱两侧的通道、分诊台、两列排队区；工业冷光加青灰雾气，排队的人一律作剪影。死士营第一次按名册点人，笔尖一列列往下走；陆沉走到登记位前把名册接过来翻到最后一页；名册栏位一律中文正写、逐字可读。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "13 秒单镜：死士营第一次按名册点人，笔尖一列列往下走；陆沉走到登记位前把名册接过来、翻到最后一页；名册栏位保持中文正写、逐字可读；不给面部特写。；台词：叶红衣「棚区不够了。口粮按人头见底，弹药也见底。」／陆沉「先记名字。别的以后再说。」；音效：笔尖划过纸面；纸页翻动。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no garbled text",
+        "no English-only text",
+        "no fake random glyphs",
+        "no close-up of any face",
+        "no gore",
+        "red alert overlay",
+        "handwritten text on the interface",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "角色域 seed 固定 LC:110101／YHY:110201；场景光效域 seed 110524；面板与界面域 seed 110501；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 13
+      },
+      "consistency_refs": {
+        "char_ids": [
+          "LC",
+          "YHY"
+        ],
+        "motifs": [],
+        "palette": [
+          "骨白",
+          "灰雾青灰",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [
+        "黑色战术风衣",
+        "暗红衣"
+      ],
+      "source": "both"
+    },
+    {
+      "card_id": "C-216",
+      "ep": 20,
+      "shot_id": 4,
+      "image_prompt": "中景，平视，50mm，固定，9:16 竖屏。50mm 中焦，主体放大居中，纵深压缩。废弃军工机械厂门禁与分诊区：门柱两侧的通道、分诊台、两列排队区；工业冷光加青灰雾气，排队的人一律作剪影。门禁改成两班，叶红衣的刃没有离手；天亮时灰雾没有散，街面上还是灰的；视野一角的读数栏显示同屏中文「归一度 1.4%」。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "7 秒单镜：门禁改成两班，叶红衣的刃没有离手；天亮时灰雾没有散，街面上还是灰的；读数栏保持「归度 1.4%」可读；刃身不反光。；本镜无台词；音效：远处火堆声；风。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no third flame color",
+        "no blood",
+        "no gore",
+        "no daylight",
+        "no warm sunlight",
+        "no garbled text",
+        "no English-only text",
+        "no fake random glyphs",
+        "red alert overlay",
+        "handwritten text on the interface",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "角色域 seed 固定 YHY:110201；场景光效域 seed 110524；面板与界面域 seed 110501；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 7
+      },
+      "consistency_refs": {
+        "char_ids": [
+          "YHY"
+        ],
+        "motifs": [],
+        "palette": [
+          "灰雾青灰",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [
+        "影刃"
+      ],
+      "source": "both"
+    },
+    {
+      "card_id": "C-217",
+      "ep": 21,
+      "shot_id": 1,
+      "image_prompt": "远景，俯视，24mm，固定，9:16 竖屏。24mm 广角，主体在画框中占比小、居中，环境占满上下画面。废弃军工机械厂告示位与街口：门边贴出的告示、贴满布告的墙面、街口通道；冷调低照度，灰雾压在街面。分诊台前的队伍拐了两个弯，灰斑比两天前多了一倍；灰斑只在袖口与手背上可见，排队的人一律作剪影；灰斑边缘清晰，不扩散到衣物之外。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "12 秒单镜：分诊台前的队伍拐过两个弯；灰斑比两天前多了一倍，只在袖口与手背上可见；排队的人一律作剪影，面部不入镜；灰斑只在袖口与手背上可见；灰斑边缘清晰，不扩散到衣物之外；本句为画外音／主观声，画面内只有拐弯的长队与剪影，不出现该角色、不给口型与面部。；台词：陆沉「排到哪儿是个头。」；音效：咳嗽声；纸张翻动；人声压得很低。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no visible open skin lesion",
+        "no face of the queue",
+        "no close-up of the crowd",
+        "no gore",
+        "no blood",
+        "no visible text of any kind in frame",
+        "no sign board",
+        "no screen with content",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "无角色域 seed；场景光效域 seed 110525；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 12
+      },
+      "consistency_refs": {
+        "char_ids": [],
+        "motifs": [],
+        "palette": [
+          "灰雾青灰",
+          "墨灰暗部",
+          "病态青"
+        ]
+      },
+      "char_descriptions": [],
+      "source": "both"
+    },
+    {
+      "card_id": "C-218",
+      "ep": 21,
+      "shot_id": 2,
+      "image_prompt": "中景，平视，50mm，固定，9:16 竖屏。50mm 中焦，主体放大居中，纵深压缩。废弃军工机械厂告示位与街口：门边贴出的告示、贴满布告的墙面、街口通道；冷调低照度，灰雾压在街面。逾期的人动作变慢，灰斑从边缘往外扩，街上的人绕着他们走；异化者只作遮挡，不给面部；灰斑以霜灰与白烟收边，边缘保持完整。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "13 秒单镜：逾期的人动作变慢，灰斑自边缘往外扩；街上的人绕着他们走；异化者只作遮挡，不给面部；灰斑以霜灰与白烟收边，边缘保持完整。；台词：苏清辞「逾期两天以上的，净火已经不够排了。」；音效：拖沓脚步声；人声压得很低。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no open wounds",
+        "no blood",
+        "no gore",
+        "no face of the mutated",
+        "no skin decay close-up",
+        "no visible text of any kind in frame",
+        "no sign board",
+        "no screen with content",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "无角色域 seed；场景光效域 seed 110525；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 13
+      },
+      "consistency_refs": {
+        "char_ids": [],
+        "motifs": [],
+        "palette": [
+          "灰雾青灰",
+          "墨灰暗部",
+          "病态青"
+        ]
+      },
+      "char_descriptions": [],
+      "source": "both"
+    },
+    {
+      "card_id": "C-219",
+      "ep": 21,
+      "shot_id": 3,
+      "image_prompt": "特写，平视，50mm，固定，9:16 竖屏。50mm 中焦，主体放大居中，纵深压缩。废弃军工机械厂告示位与街口：门边贴出的告示、贴满布告的墙面、街口通道；冷调低照度，灰雾压在街面。厂门贴出新的告示：药剂按量分配，安全屋名额暂停发放；陆沉把净火净化排到最前，苏清辞按剩余药剂分诊；告示为中文正写、逐字可读。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "13 秒单镜：厂门贴出新的告示：药剂按量分配，安全屋名额暂停发放；告示正文保持中文正写、逐字可读；陆沉把净火净化排到最前，苏清辞按剩余药剂分诊；两人动作幅度小，不给面部特写。；台词：叶红衣「告示别撕。谁撕，我让他自己排后头。」／陆沉「最重的先来。剩下的，编号记住。」；音效：纸张贴上墙面的摩擦声；队伍挪动声。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no garbled text",
+        "no English-only text",
+        "no religious iconography",
+        "no close-up of any face",
+        "no gore",
+        "no fake random glyphs",
+        "red alert overlay",
+        "handwritten text on the interface",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "角色域 seed 固定 LC:110101／SQC:110301；场景光效域 seed 110525；面板与界面域 seed 110501；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 13
+      },
+      "consistency_refs": {
+        "char_ids": [
+          "LC",
+          "SQC"
+        ],
+        "motifs": [],
+        "palette": [
+          "骨白",
+          "灰雾青灰",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [
+        "白色科研风衣",
+        "数据板",
+        "黑色战术风衣"
+      ],
+      "source": "both"
+    },
+    {
+      "card_id": "C-220",
+      "ep": 21,
+      "shot_id": 4,
+      "image_prompt": "中远景，平视，35mm，固定，9:16 竖屏。35mm，主体占画面中段，四周留出环境纵深。废弃军工机械厂告示位与街口：门边贴出的告示、贴满布告的墙面、街口通道；冷调低照度，灰雾压在街面。街口走过一列人，步子齐得像一列，袖口上是几何徽记；徽记是抽象几何，看不出任何宗教符号；视野一角的读数栏显示同屏中文「归一度 1.4%」。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "7 秒单镜：街口走过一列人，步子齐整；袖口上的徽记是抽象几何，看不出任何宗教符号；读数栏保持「归一度 1.4%」可读；不给面部特写。；本镜无台词；音效：整齐脚步声由远及近。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "religious iconography",
+        "crosses and crucifixes",
+        "halos",
+        "rosaries and prayer beads",
+        "altars",
+        "ritual robes and priestly vestments",
+        "prayer gestures",
+        "chanting",
+        "religious processions",
+        "candle-lit shrines",
+        "sacred statuary",
+        "no face of the marching column",
+        "no gore",
+        "no garbled text",
+        "no English-only text",
+        "no fake random glyphs",
+        "red alert overlay",
+        "handwritten text on the interface",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "无角色域 seed；场景光效域 seed 110525；面板与界面域 seed 110501；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 7
+      },
+      "consistency_refs": {
+        "char_ids": [],
+        "motifs": [],
+        "palette": [
+          "灰雾青灰",
+          "墨灰暗部",
+          "叶家青灰"
+        ]
+      },
+      "char_descriptions": [],
+      "source": "both"
+    },
+    {
+      "card_id": "C-221",
+      "ep": 22,
+      "shot_id": 1,
+      "image_prompt": "远景，平视，24mm，固定，9:16 竖屏。24mm 广角，主体在画框中占比小、居中，环境占满上下画面。城郊骨井井口：井架、转动绞盘、井口返出的灰雾；照明只靠井架顶灯，井架在灰雾里只剩轮廓。城郊骨井的井架上绞盘在转，井口开始返出灰雾，作业的人只余剪影；井架在灰雾里只剩轮廓；井口返雾不含任何人体。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "12 秒单镜：井架上的绞盘持续转动，井口开始返出灰雾；作业的人只余剪影，面部不入镜；井架在灰雾里只剩轮廓；井口返雾只有雾体；本句为画外音／主观声，画面内只有井架、绞盘与返雾，不出现该角色、不给口型与面部。；台词：叶红衣「灰雾往上返。」；音效：远处绞盘转动声；风声。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no face of the workers",
+        "no close-up of the workers",
+        "no body in the well",
+        "no gore",
+        "no blood",
+        "no visible text of any kind in frame",
+        "no sign board",
+        "no screen with content",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "无角色域 seed；场景光效域 seed 110526；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 12
+      },
+      "consistency_refs": {
+        "char_ids": [],
+        "motifs": [],
+        "palette": [
+          "灰雾青灰",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [],
+      "source": "both"
+    },
+    {
+      "card_id": "C-222",
+      "ep": 22,
+      "shot_id": 2,
+      "image_prompt": "特写，俯视，50mm，固定，9:16 竖屏。50mm 中焦，主体放大居中，纵深压缩。城郊骨井井口：井架、转动绞盘、井口返出的灰雾；照明只靠井架顶灯，井架在灰雾里只剩轮廓。数据板上跳出一段持续低频，方向标指向城郊；屏幕上一段波形保持不落；屏上文字与符号一律中文正写、逐字可读。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "13 秒单镜：数据板上跳出一段持续低频，方向标指向城郊；屏幕上一段波形保持不落、幅度稳定；屏上文字与符号保持中文正写、逐字可读；不拍持有者的面部。；台词：苏清辞「有一段持续低频，方向在城郊，节律对上了凿井。」；音效：数据板提示音；低频嗡鸣。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no garbled text",
+        "no English-only text",
+        "no fake random glyphs",
+        "no face in frame",
+        "no gore",
+        "red alert overlay",
+        "handwritten text on the interface",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "角色域 seed 固定 SQC:110301；场景光效域 seed 110526；面板与界面域 seed 110501；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 13
+      },
+      "consistency_refs": {
+        "char_ids": [
+          "SQC"
+        ],
+        "motifs": [],
+        "palette": [
+          "骨白",
+          "云顶冷白",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [
+        "数据板"
+      ],
+      "source": "both"
+    },
+    {
+      "card_id": "C-223",
+      "ep": 22,
+      "shot_id": 3,
+      "image_prompt": "中远景，平视，35mm，固定，9:16 竖屏。35mm，主体占画面中段，四周留出环境纵深。城郊骨井井口：井架、转动绞盘、井口返出的灰雾；照明只靠井架顶灯，井架在灰雾里只剩轮廓。叶红衣带人出城查过一趟，只找到空井架和返上来的灰雾；井壁上一道新的凿痕还在掉灰，绞盘的绳缠得更深了一层；人一律只作远景轮廓。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "13 秒单镜：镜头固定不动；井壁上一道新的凿痕还在掉灰，绞盘的绳缠得更深了一层；返上来的灰雾贴着井口；同行的人只作远景轮廓，不给面部。；台词：叶红衣「人撤了。井还在凿。」；音效：灰粉簌簌落下；风。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no face of the party",
+        "no close-up of any face",
+        "no body in the well",
+        "no gore",
+        "no blood",
+        "no visible text of any kind in frame",
+        "no sign board",
+        "no screen with content",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "角色域 seed 固定 YHY:110201；场景光效域 seed 110526；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 13
+      },
+      "consistency_refs": {
+        "char_ids": [
+          "YHY"
+        ],
+        "motifs": [],
+        "palette": [
+          "灰雾青灰",
+          "墨灰暗部",
+          "暗红"
+        ]
+      },
+      "char_descriptions": [
+        "暗红色劲装",
+        "黑长直发"
+      ],
+      "source": "both"
+    },
+    {
+      "card_id": "C-224",
+      "ep": 22,
+      "shot_id": 4,
+      "image_prompt": "特写，平视，50mm，固定，9:16 竖屏。50mm 中焦，主体放大居中，纵深压缩。废弃军工机械厂厂内拖回位：厂内地面、拖回的人形轮廓、摊开的终端与密信；冷白工业灯低照度。厂内，城西方向拖回一名信使，终端还亮着；死士营从终端里取出一封未拆的密信，纸面没有署名；信纸内容不外露，只给未拆状态。视野一角的读数栏显示同屏中文「归一度 1.4%」。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "7 秒单镜：镜头自特写起；城西方向拖回一名信使、终端还亮着；死士营从终端里取出一封未拆的密信；信纸保持未拆状态，纸面没有署名；不给拖回者的面部。；台词：陆沉「念。」；音效：终端提示音；纸面摩擦声。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no face of the messenger",
+        "no readable private document text",
+        "no gore",
+        "no blood",
+        "no garbled text",
+        "no English-only text",
+        "no fake random glyphs",
+        "red alert overlay",
+        "handwritten text on the interface",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "无角色域 seed；场景光效域 seed 110527；面板与界面域 seed 110501；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 7
+      },
+      "consistency_refs": {
+        "char_ids": [],
+        "motifs": [],
+        "palette": [
+          "灰雾青灰",
+          "墨灰暗部",
+          "冷银"
+        ]
+      },
+      "char_descriptions": [],
+      "source": "both"
+    },
+    {
+      "card_id": "C-225",
+      "ep": 23,
+      "shot_id": 1,
+      "image_prompt": "特写，俯视，50mm，固定，9:16 竖屏。50mm 中焦，主体放大居中，纵深压缩。废弃军工机械厂内一张钢桌：钢桌面、摊开的合同与名单板；冷白工业灯自高位落下，桌面文件区为唯一亮面。一封密信在钢桌上摊开，排版是合同的样子，条款分栏排列；纸面没有署名；条款栏位为中文正写、逐字可读。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "12 秒单镜：镜头固定不动；一封密信摊开在桌上，排版是合同的样子，条款分栏排列；纸面没有署名；条款栏位为中文正写、逐字可读；不出现手与面部。；台词：陆沉「从头念。」；音效：纸页翻动；厂外风压过屋顶。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no garbled text",
+        "no English-only text",
+        "no fake random glyphs",
+        "no readable real-world insignia",
+        "no gore",
+        "red alert overlay",
+        "handwritten text on the interface",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "无角色域 seed；场景光效域 seed 110528；面板与界面域 seed 110501；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 12
+      },
+      "consistency_refs": {
+        "char_ids": [],
+        "motifs": [],
+        "palette": [
+          "骨白",
+          "冷银",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [],
+      "source": "both"
+    },
+    {
+      "card_id": "C-226",
+      "ep": 23,
+      "shot_id": 2,
+      "image_prompt": "特写，俯视，50mm，固定，9:16 竖屏。50mm 中焦，主体放大居中，纵深压缩。废弃军工机械厂内一张钢桌：钢桌面、摊开的合同与名单板；冷白工业灯自高位落下，桌面文件区为唯一亮面。条款写着：云顶财阀按批次拨付安全屋配额与药剂，雾盟按批次交付高阶雾核；两行条款逐行落在纸面上；纸面正文保持中文正写、逐字可读。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "13 秒单镜：镜头固定不动；云顶财阀按批次拨付安全屋配额与药剂、雾盟按批次交付高阶雾核两行条款逐行落在纸面上；纸面正文保持中文正写、逐字可读；不出现手与面部。；台词：苏清辞「一方出药和名额，一方出雾核。这是生意，不是救人。」；音效：纸页翻动；厂外风。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no garbled text",
+        "no English-only text",
+        "no fake random glyphs",
+        "no real corporate logos",
+        "no gore",
+        "red alert overlay",
+        "handwritten text on the interface",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "无角色域 seed；场景光效域 seed 110528；面板与界面域 seed 110501；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 13
+      },
+      "consistency_refs": {
+        "char_ids": [],
+        "motifs": [],
+        "palette": [
+          "骨白",
+          "云顶冷白",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [],
+      "source": "both"
+    },
+    {
+      "card_id": "C-227",
+      "ep": 23,
+      "shot_id": 3,
+      "image_prompt": "特写，俯视，50mm，固定，9:16 竖屏。50mm 中焦，主体放大居中，纵深压缩。废弃军工机械厂内一张钢桌：钢桌面、摊开的合同与名单板；冷白工业灯自高位落下，桌面文件区为唯一亮面。交付栏翻到最后一页，只有批次编号和四个字：清退区域；整页没有一个人的名字，栏位是区域，不是人；苏清辞把自己的救治排班表摊在旁边，两张纸上的区域对上了。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "13 秒单镜：交付栏翻到最后一页，交付栏翻到最后一页，只有批次编号和四个字：清退区域；整页没有一个人的名字，栏位是区域，不是人；救治排班表摊在旁边，两张纸上的区域对上；纸面保持中文正写、逐字可读。；台词：苏清辞「被清退的这一片，正是机械厂要接的那一片。」；音效：纸页翻动；笔尖点纸。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no garbled text",
+        "no English-only text",
+        "no fake random glyphs",
+        "no personal names on the document",
+        "no gore",
+        "red alert overlay",
+        "handwritten text on the interface",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "无角色域 seed；场景光效域 seed 110528；面板与界面域 seed 110501；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 13
+      },
+      "consistency_refs": {
+        "char_ids": [],
+        "motifs": [],
+        "palette": [
+          "骨白",
+          "冷银",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [],
+      "source": "both"
+    },
+    {
+      "card_id": "C-228",
+      "ep": 23,
+      "shot_id": 4,
+      "image_prompt": "近景，平视，85mm，固定，9:16 竖屏。85mm 长焦，主体放大靠前，背景压平。废弃军工机械厂内一张钢桌：钢桌面、摊开的合同与名单板；冷白工业灯自高位落下，桌面文件区为唯一亮面。陆沉把密信摊在面板上逐行读完，指腹在最后一行停住；视野一角的读数栏显示同屏中文「归一度 1.4%」；骨纹只走体表发光，不破体。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "7 秒单镜：陆沉把密信摊在面板上逐行读完，指腹在最后一行停住；读数栏保持「归一度 1.4%」可读；骨纹只走体表发光、不破体；不给面部特写。；本镜无台词；音效：纸张与面板轻擦声；厂外风。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no skin breakage",
+        "no bone protruding through skin",
+        "no garbled text",
+        "no close-up of any face",
+        "no gore",
+        "no English-only text",
+        "no fake random glyphs",
+        "red alert overlay",
+        "handwritten text on the interface",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "角色域 seed 固定 LC:110101；场景光效域 seed 110528；面板与界面域 seed 110501；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 7
+      },
+      "consistency_refs": {
+        "char_ids": [
+          "LC"
+        ],
+        "motifs": [
+          "M02"
+        ],
+        "palette": [
+          "灰雾青灰",
+          "墨灰暗部",
+          "冷银"
+        ]
+      },
+      "char_descriptions": [
+        "右手腕黑白游龙骨纹"
+      ],
+      "source": "both"
+    },
+    {
+      "card_id": "C-229",
+      "ep": 24,
+      "shot_id": 1,
+      "image_prompt": "特写，俯视，50mm，固定，9:16 竖屏。50mm 中焦，主体放大居中，纵深压缩。废弃军工机械厂净化区与名单板：净化区地面、名单板与其立架、净化用火堆位置；工业冷光加净化处白光，背景压暗。钢桌上并排摊着两样东西：交易条款，和骨井凿进的进度；两样东西并排占满画面中部；纸面文字保持中文正写、逐字可读。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "12 秒单镜：镜头固定不动；钢桌上并排摊着交易条款与骨井凿进的进度两样东西；两样东西并排占满画面中部；纸面文字保持中文正写、逐字可读；不出现手与面部；本句为画外音／主观声，画面内只有钢桌上的两份单据，不出现该角色、不给口型与面部。；台词：陆沉「两笔账并成一笔。」；音效：净化区的火声；名单板上的粉笔响。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no garbled text",
+        "no English-only text",
+        "no fake random glyphs",
+        "no real corporate logos",
+        "no gore",
+        "red alert overlay",
+        "handwritten text on the interface",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "无角色域 seed；场景光效域 seed 110529；面板与界面域 seed 110501；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 12
+      },
+      "consistency_refs": {
+        "char_ids": [],
+        "motifs": [],
+        "palette": [
+          "骨白",
+          "冷银",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [],
+      "source": "both"
+    },
+    {
+      "card_id": "C-230",
+      "ep": 24,
+      "shot_id": 2,
+      "image_prompt": "中景，平视，50mm，固定，9:16 竖屏。50mm 中焦，主体放大居中，纵深压缩。废弃军工机械厂净化区与名单板：净化区地面、名单板与其立架、净化用火堆位置；工业冷光加净化处白光，背景压暗。苏清辞在名单板前算出一行数字，是净火能覆盖的极限；名单板上的名字排成几列，数字写在最下一行；名单板上的名字与数字保持中文正写、逐字可读。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "13 秒单镜：苏清辞在名单板前算出一行数字；名单板上的名字排成几列，数字写在最下一行；名字与数字保持中文正写、逐字可读；不拍面部。；台词：苏清辞「按现在的净化速度，全城的灰斑要净到什么时候，我算不出来。」／陆沉「那就从今夜起不熄净火。名单上最重的那一批先来。」；音效：粉笔在板上写字；名单翻页声。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "no garbled text",
+        "no English-only text",
+        "no fake random glyphs",
+        "no face in frame",
+        "no gore",
+        "red alert overlay",
+        "handwritten text on the interface",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "角色域 seed 固定 SQC:110301；场景光效域 seed 110529；面板与界面域 seed 110501；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 30,
+        "guidance": 6.5,
+        "duration_sec": 13
+      },
+      "consistency_refs": {
+        "char_ids": [
+          "SQC"
+        ],
+        "motifs": [],
+        "palette": [
+          "骨白",
+          "灰雾青灰",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [
+        "数据板"
+      ],
+      "source": "both"
+    },
+    {
+      "card_id": "C-231",
+      "ep": 24,
+      "shot_id": 3,
+      "image_prompt": "近景，平视，85mm，固定，9:16 竖屏。85mm 长焦，主体放大靠前，背景压平。废弃军工机械厂净化区与名单板：净化区地面、名单板与其立架、净化用火堆位置；工业冷光加净化处白光，背景压暗。陆沉把一枚雾核按在名单板上，灰斑从指节边缘退成浅色；黑白双焰烧过，净化结果是一缕白烟和恢复正常的手背颜色；火焰只有黑与白两色。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "13 秒单镜：陆沉把一枚雾核按在名单板上；黑白双焰自指节边缘烧过，灰斑从指节边缘退成浅色；净化结果是一缕白烟和恢复正常的手背颜色；火焰只有黑与白两色，不出现第三种颜色。；台词：叶红衣「门禁我再压一遍。今夜起，进来的每一个名字都算在陆沉头上。」；音效：双焰的低频呼响；一缕白烟散开的轻响。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "third flame color",
+        "red flame",
+        "orange flame",
+        "multi-colored fire",
+        "any fire color other than black and white",
+        "no burn wound",
+        "no blister",
+        "no charred skin",
+        "no blood",
+        "no gore",
+        "net fire illuminating more than a small contact patch of skin",
+        "no visible text of any kind in frame",
+        "no sign board",
+        "no screen with content",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "角色域 seed 固定 LC:110101；场景光效域 seed 110529；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 32,
+        "guidance": 6.5,
+        "duration_sec": 13
+      },
+      "consistency_refs": {
+        "char_ids": [
+          "LC"
+        ],
+        "motifs": [
+          "M01",
+          "M02"
+        ],
+        "palette": [
+          "净火白",
+          "净火黑",
+          "骨白",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [
+        "右手腕黑白游龙骨纹",
+        "双相净火(黑白火焰)"
+      ],
+      "source": "both"
+    },
+    {
+      "card_id": "C-232",
+      "ep": 24,
+      "shot_id": 4,
+      "image_prompt": "中景，平视，50mm，固定，9:16 竖屏。50mm 中焦，主体放大居中，纵深压缩。废弃军工机械厂净化区与名单板：净化区地面、名单板与其立架、净化用火堆位置；工业冷光加净化处白光，背景压暗。陆沉没有反驳，把名单板上的最后一行看了很久；净化区的火一直烧到天亮，名单又长了一截；视野一角的读数栏显示同屏中文「归一度 1.4%」。右下角 72%~78% 画面高度留净空供 AI 角标，底部 15% 留字幕带。写实电影感，冷调低照度，轻胶片颗粒，高动态范围，暗部保留细节不做死黑。",
+      "video_prompt": "7 秒单镜：陆沉没有反驳，把名单板上的最后一行看了很久；净化区的火一直烧到天亮，名单又长了一截；读数栏保持「归一度 1.4%」可读；火焰只有黑与白两色。；本镜无台词；音效：火声；远处换班脚步。；右下角 AI 生成角标常驻不遮挡。",
+      "negatives": [
+        "gore",
+        "blood",
+        "blood splatter",
+        "red liquid",
+        "open wounds",
+        "internal organs",
+        "dismembered limbs",
+        "corpse piles",
+        "rotting flesh",
+        "exposed bone",
+        "eyes and eyeballs",
+        "jump scares",
+        "extreme close-up of a screaming face",
+        "third flame color",
+        "red flame",
+        "orange flame",
+        "multi-colored fire",
+        "any fire color other than black and white",
+        "no third flame color",
+        "no red flame",
+        "no skin breakage",
+        "no gore",
+        "no blood",
+        "no garbled text",
+        "no English-only text",
+        "no fake random glyphs",
+        "red alert overlay",
+        "handwritten text on the interface",
+        "AI 生成角标须常驻：基线落在画面高 72%~78%、右对齐、距画面右缘 ≥6% 画面宽、字号 ≥画面高 1.5%、不透明度 ≥50%，黑场镜亦保留，角标文字「AI 生成」，不得被主体、字幕或特效遮挡、裁切或变形",
+        "画面内文字一律中文并逐字可读；出现外文或字母缩写时同屏必须配中文；不得出现乱码字形",
+        "画面内不得出现任何贬称、侮辱性或宗教化文字"
+      ],
+      "params": {
+        "model": "H3（图生视频；首帧＝本卡 image_prompt 产出图）",
+        "aspect": "9:16",
+        "seed_strategy": "角色域 seed 固定 LC:110101；场景光效域 seed 110529；面板与界面域 seed 110501；同角色跨集复用同一 seed 家族；换 seed 必须重述全部锚点句",
+        "steps": 32,
+        "guidance": 6.5,
+        "duration_sec": 7
+      },
+      "consistency_refs": {
+        "char_ids": [
+          "LC"
+        ],
+        "motifs": [
+          "M02"
+        ],
+        "palette": [
+          "净火白",
+          "净火黑",
+          "灰雾青灰",
+          "墨灰暗部"
+        ]
+      },
+      "char_descriptions": [
+        "右手腕黑白游龙骨纹"
+      ],
+      "source": "both"
+    }
+  ]
+}

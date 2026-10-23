@@ -1,0 +1,92 @@
+{
+  "scene_code": "A-5",
+  "size_m": [
+    20.0,
+    20.0,
+    2.2
+  ],
+  "ground_center_m": [
+    0.3,
+    1.075
+  ],
+  "floor_z": -0.2,
+  "props": [
+    {
+      "name": "A-5_EXT_BattleGround_01",
+      "kind": "box",
+      "center_m": [
+        0.0,
+        0.0,
+        -0.2
+      ],
+      "size_m": [
+        20.0,
+        20.0,
+        0.4
+      ],
+      "role": "primary"
+    },
+    {
+      "name": "A-5_FX_AshDust_03",
+      "kind": "proxy",
+      "center_m": [
+        0.6,
+        0.975,
+        0.12
+      ],
+      "size_m": [
+        0.618,
+        0.767,
+        0.808
+      ],
+      "role": "set"
+    },
+    {
+      "name": "A-5_FX_MistCore_01",
+      "kind": "proxy",
+      "center_m": [
+        -0.3,
+        1.8,
+        1.1
+      ],
+      "size_m": [
+        0.054,
+        0.054,
+        0.054
+      ],
+      "role": "set"
+    },
+    {
+      "name": "A-5_LGT_GreyFramePanel_01",
+      "kind": "proxy",
+      "center_m": [
+        1.2,
+        2.6,
+        1.55
+      ],
+      "size_m": [
+        1.6,
+        0.02,
+        2.2
+      ],
+      "role": "set"
+    },
+    {
+      "name": "A-5_PROP_GroundBreakHole_01",
+      "kind": "box",
+      "center_m": [
+        0.0,
+        0.0,
+        -0.2
+      ],
+      "size_m": [
+        0.5,
+        0.5,
+        0.4
+      ],
+      "role": "set"
+    }
+  ],
+  "walls": [],
+  "wall_thickness_m": 0.15
+}

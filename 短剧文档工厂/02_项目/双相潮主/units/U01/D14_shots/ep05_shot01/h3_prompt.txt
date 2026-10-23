@@ -1,0 +1,47 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial…; grounded industrial….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O002>,I3=<O003>,I4=<O004>,I5=<O005>,I6=<O006>,I7=<O007>,I8=<O009>,I9=<O011>,I10=<O015>,I11=<O016>.
+<Entity 01 CHAR EscortQueueMember>=E1[articulated/primary/locomotion] members=I1-I4;n=4;src=escort officer…; final=escort officer…; finish=real skin with pores…; style=world_style_u….
+<Entity 02 ENV A-6>=E2[environment/context/static] members=I5-I9;n=5;src=A-6 built envir…; final=A-6 built environ…; finish=worn cement, oxidised…; style=world_style_u….
+<Entity 03 PROP A-6>=E3[rigid/context/static] members=I10-I11;n=2;src=A-6 set pieces…; final=A-6 set pieces…; finish=utilitarian material…; style=world_style_u….
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1-I4;1:1;n=4.
+E2:I5-I9;1:1;n=5.
+E3:I10-I11;1:1;n=2.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey… | materials=real skin with pores and… | environment=cement yard plates cut by… | props=functional utilitarian… | light=one cold overhead key….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E1:locomotion | Act=travels 3… | Keep=keep every instance and… | Ban=do not merge, split….
+[STATIC LOCK] E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-12.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E1;path=camera travels from (30…;dist=increase;azi=stable;elev=stable;lens=stable;comp=中远景 framing in 9:16…;ban=do not add any camera… | Act=armour column headlamps sweep the steel fence, escorts march a column in… | Layout=11 visible instances… | Light=one cold overhead key with….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium_full;Comp=depth spans 6…;Cam=camera at (3…;Lay=11 visible i… V=I5:95/73/0/4,I6:81/87/37/26,I7:16/63/31/6,I8:48/56/1/14,I9:24/54/8/27,I10:11/52/23/15,I11:19/51/39/13 D=I1:v/23/69/19/24/o:uprigh…/m:stationa…/r:right of…,I2:v/40/70/19/25/o:uprigh…/m:stationa…/r:right of…,I3:v/59/71/19/26/o:uprigh…/m:stationa…/r:right of…,I4:v/81/73/19/28/o:uprigh…/m:stationa…/r:right of…
+@1.495s F=medium_full;Comp=depth spans 6…;Cam=camera at (3…;Lay=11 visible i… V=I5:95/73/0/4,I6:81/87/37/26,I7:16/63/31/6,I8:48/56/1/14,I9:24/54/8/27,I10:11/52/23/15,I11:19/51/39/13 D=I1:v/35/70/19/24/o:uprigh…/m:stationa…/r:right of…,I2:v/53/71/19/26/o:uprigh…/m:stationa…/r:right of…,I3:v/74/72/19/27/o:uprigh…/m:stationa…/r:right of…,I4:v/94/74/13/29/o:uprigh…/m:stationa…/r:right of…
+@2.990s F=medium_full;Comp=depth spans 6…;Cam=camera at (3…;Lay=10 visible i… V=I5:95/73/0/4,I6:81/87/37/26,I7:16/63/31/6,I8:48/56/1/14,I9:24/54/8/27,I10:11/52/23/15,I11:19/51/39/13 D=I1:v/47/70/19/25/o:uprigh…/m:stationa…/r:right of…,I2:v/67/72/19/27/o:uprigh…/m:stationa…/r:right of…,I3:v/90/73/19/29/o:uprigh…/m:stationa…/r:right of…,I4:o/o/o:off sc…/m:offscree…/r:leaves t…
+@4.484s F=medium_full;Comp=depth spans 6…;Cam=camera at (3…;Lay=10 visible i… V=I5:95/73/0/4,I6:81/87/37/26,I7:16/63/31/6,I8:48/56/1/14,I9:24/54/8/27,I10:11/52/23/15,I11:19/51/39/13 D=I1:v/61/71/19/26/o:uprigh…/m:stationa…/r:right of…,I2:v/83/73/19/28/o:uprigh…/m:stationa…/r:right of…,I3:v/98/75/3/30/o:uprigh…/m:stationa…/r:right of…,I4:o/o/o:off sc…/m:offscree…/r:leaves t…
+@5.979s F=medium_full;Comp=depth spans 6…;Cam=camera at (3…;Lay=9 visible in… V=I5:95/73/0/4,I6:81/87/37/26,I7:16/63/31/6,I8:48/56/1/14,I9:24/54/8/27,I10:11/52/23/15,I11:19/51/39/13 D=I1:v/75/72/19/27/o:uprigh…/m:stationa…/r:right of…,I2:v/94/74/11/29/o:uprigh…/m:stationa…/r:right of…,I3:o/o/o:off sc…/m:offscree…/r:leaves t…,I4:o/o/o:off sc…/m:offscree…/r:leaves t…
+@7.474s F=medium_full;Comp=depth spans 6…;Cam=camera at (3…;Lay=8 visible in… V=I5:95/73/0/4,I6:81/87/37/26,I7:16/63/31/6,I8:48/56/1/14,I9:24/54/8/27,I10:11/52/23/15,I11:19/51/39/13 D=I1:v/91/74/18/29/o:uprigh…/m:stationa…/r:right of…,I2:o/o/o:off sc…/m:offscree…/r:leaves t…,I3:o/o/o:off sc…/m:offscree…/r:leaves t…,I4:o/o/o:off sc…/m:offscree…/r:leaves t…
+@8.969s F=medium_full;Comp=depth spans 6…;Cam=camera at (3…;Lay=8 visible in… V=I5:95/73/0/4,I6:81/87/37/26,I7:16/63/31/6,I8:48/56/1/14,I9:24/54/8/27,I10:11/52/23/15,I11:19/51/39/13 D=I1:v/99/75/1/30/o:uprigh…/m:stationa…/r:right of…,I2:o/o/o:off sc…/m:offscree…/r:leaves t…,I3:o/o/o:off sc…/m:offscree…/r:leaves t…,I4:o/o/o:off sc…/m:offscree…/r:leaves t…
+@10.464s F=medium_full;Comp=depth spans 9…;Cam=camera at (3…;Lay=7 visible in… V=I5:95/73/0/4,I6:81/87/37/26,I7:16/63/31/6,I8:48/56/1/14,I9:24/54/8/27,I10:11/52/23/15,I11:19/51/39/13 D=I1:o/o/o:off sc…/m:offscree…/r:leaves t…,I2:o/o/o:off sc…/m:offscree…/r:leaves t…,I3:o/o/o:off sc…/m:offscree…/r:leaves t…,I4:o/o/o:off sc…/m:offscree…/r:leaves t…
+@11.958s F=medium_full;Comp=depth spans 9…;Cam=camera at (3…;Lay=7 visible in… V=I5:95/73/0/4,I6:81/87/37/26,I7:16/63/31/6,I8:48/56/1/14,I9:24/54/8/27,I10:11/52/23/15,I11:19/51/39/13 D=I1:o/o/o:off sc…/m:offscree…/r:leaves t…,I2:o/o/o:off sc…/m:offscree…/r:leaves t…,I3:o/o/o:off sc…/m:offscree…/r:leaves t…,I4:o/o/o:off sc…/m:offscree…/r:leaves t…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+diesel engine growl with an iron gate…
+
+non_diegetic_music:
+N/A

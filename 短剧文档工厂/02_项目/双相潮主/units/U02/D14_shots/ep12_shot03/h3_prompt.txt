@@ -1,0 +1,46 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O010>,I3=<O014>.
+<Entity 01 CHAR DeathCampMember>=E1[articulated/primary/static] members=I1;n=1;src=death camp member blockout inside the door frame; final=death camp member blockout inside the door frame; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal…; style=world_style_unit_contract.
+<Entity 02 ENV B-5>=E2[environment/context/static] members=I2;n=1;src=B-5 built environment shell enclosing the set…; final=B-5 built environment shell enclosing the set: FactoryYardGround; finish=worn cement, oxidised steel and sheet metal with cold grey reflections, shadow…; style=world_style_unit_contract.
+<Entity 03 PROP B-5>=E3[rigid/context/static] members=I3;n=1;src=B-5 set pieces and fittings: MainRollerDoor; final=B-5 set pieces and fittings: MainRollerDoor; finish=utilitarian material with visible weight, thickness and use marks, cold grey metal…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2;1:1;n=1.
+E3:I3;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D… | materials=real skin with pores and slight oil sheen, matte technical fabric… | environment=cement yard plates cut by fire lines, riveted steel frames and… | props=functional utilitarian tooling with real weight and thickness… | light=one cold overhead key over the purification bench with shadow….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-12.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=none;path=camera travels from (-4. 70, 4. 68, 0. 29) to (-4. 70, 4. 68, 0…;dist=stable;azi=stable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the frame centre band with head…;ban=do not add any camera move, zoom or handheld shake… | Act=the people of the camp stand inside the gate looking out with their bodies crowded into the door frame… | Layout=3 visible instances. Dominant MainRollerDoor covers 60x49 percent at frame 30/24… | Light=one cold overhead key over the purification bench with shadow detail….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 5. 21m to 34. 00m across 3 layers…;Cam=camera at (-4. 70, 4. 68, 0. 29) on a 50…;Lay=3 visible instances… V=I2:83/42/35/1,I3:30/24/60/49 D=I1:v/6/24/11/49/o:upright body proxy, head end up/m:stationary across this interval/r:left of MainRollerDoor, behind all…
+@1.495s F=medium;Comp=depth spans 5. 21m to 34. 00m across 3 layers…;Cam=camera at (-4. 70, 4. 68, 0. 29) on a 50…;Lay=3 visible instances… V=I2:83/42/35/1,I3:30/24/60/49 D=I1:v/6/24/11/49/o:upright body proxy, head end up/m:stationary across this interval/r:left of MainRollerDoor, behind all…
+@2.990s F=medium;Comp=depth spans 5. 21m to 34. 00m across 3 layers…;Cam=camera at (-4. 70, 4. 68, 0. 29) on a 50…;Lay=3 visible instances… V=I2:83/42/35/1,I3:30/24/60/49 D=I1:v/6/24/11/49/o:upright body proxy, head end up/m:stationary across this interval/r:left of MainRollerDoor, behind all…
+@4.484s F=medium;Comp=depth spans 5. 21m to 34. 00m across 3 layers…;Cam=camera at (-4. 70, 4. 68, 0. 29) on a 50…;Lay=3 visible instances… V=I2:83/42/35/1,I3:30/24/60/49 D=I1:v/6/24/11/49/o:upright body proxy, head end up/m:stationary across this interval/r:left of MainRollerDoor, behind all…
+@5.979s F=medium;Comp=depth spans 5. 21m to 34. 00m across 3 layers…;Cam=camera at (-4. 70, 4. 68, 0. 29) on a 50…;Lay=3 visible instances… V=I2:83/42/35/1,I3:30/24/60/49 D=I1:v/6/24/11/49/o:upright body proxy, head end up/m:stationary across this interval/r:left of MainRollerDoor, behind all…
+@7.474s F=medium;Comp=depth spans 5. 21m to 34. 00m across 3 layers…;Cam=camera at (-4. 70, 4. 68, 0. 29) on a 50…;Lay=3 visible instances… V=I2:83/42/35/1,I3:30/24/60/49 D=I1:v/6/24/11/49/o:upright body proxy, head end up/m:stationary across this interval/r:left of MainRollerDoor, behind all…
+@8.969s F=medium;Comp=depth spans 5. 21m to 34. 00m across 3 layers…;Cam=camera at (-4. 70, 4. 68, 0. 29) on a 50…;Lay=3 visible instances… V=I2:83/42/35/1,I3:30/24/60/49 D=I1:v/6/24/11/49/o:upright body proxy, head end up/m:stationary across this interval/r:left of MainRollerDoor, behind all…
+@10.464s F=medium;Comp=depth spans 5. 21m to 34. 00m across 3 layers…;Cam=camera at (-4. 70, 4. 68, 0. 29) on a 50…;Lay=3 visible instances… V=I2:83/42/35/1,I3:30/24/60/49 D=I1:v/6/24/11/49/o:upright body proxy, head end up/m:stationary across this interval/r:left of MainRollerDoor, behind all…
+@11.958s F=medium;Comp=depth spans 5. 21m to 34. 00m across 3 layers…;Cam=camera at (-4. 70, 4. 68, 0. 29) on a 50…;Lay=3 visible instances… V=I2:83/42/35/1,I3:30/24/60/49 D=I1:v/6/24/11/49/o:upright body proxy, head end up/m:stationary across this interval/r:left of MainRollerDoor, behind all…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+a distant broadcast swelling while the murmur inside the hall drops to a low level
+
+non_diegetic_music:
+N/A

@@ -1,0 +1,46 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O002>,I3=<O003>,I4=<O004>,I5=<O008>,I6=<O011>.
+<Entity 01 CHAR DisposalSilhouette>=E1[articulated/context/static] members=I1-I3;n=3;src=processed person silhouette on the platform; final=processed person silhouette on the platform; finish=real skin with pores and fine hair, fabric with real drape and wear…; style=world_style_unit_contract.
+<Entity 02 ENV A-6>=E2[environment/context/static] members=I4,I6;n=2;src=A-6 built environment shell enclosing the set…; final=A-6 built environment shell enclosing the set…; finish=worn cement, oxidised steel and sheet metal with cold grey…; style=world_style_unit_contract.
+<Entity 03 PROP DisposalLightRing>=E3[rigid/primary/static] members=I5;n=1;src=A-6 set pieces and fittings: DisposalLightRing; final=A-6 set pieces and fittings: DisposalLightRing; finish=utilitarian material with visible weight, thickness and use marks…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1-I3;1:1;n=3.
+E2:I4,I6;1:1;n=2.
+E3:I5;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink… | materials=real skin with pores and slight oil sheen, matte… | environment=cement yard plates cut by fissures and pit openings… | props=functional utilitarian tooling with real weight and… | light=one cold overhead key with shadow detail retained….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-12.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E3;path=camera travels from (29. 90, 3. 81, 0. 06) to (29. 90, 3. 81, 0…;dist=decrease;azi=stable;elev=stable;lens=stable;comp=远景 framing in 9:16 vertical, subject held in the frame centre…;ban=do not add any camera move, zoom or handheld shake… | Act=the disposal platform far in frame lights a ring of white lamps, only silhouettes of the processed remain… | Layout=6 visible instances. Dominant InnerYard covers 100x13 percent at frame 50/51… | Light=one cold overhead key with shadow detail retained instead of….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=wide;Comp=depth spans 14. 00m to 19. 92m across 6 layers…;Cam=camera at (29. 90, 3. 81, 0. 06) on a 35…;Lay=6 visible instances… V=I1:7/36/10/13,I2:4/37/9/12,I3:3/37/6/11,I4:50/51/100/13,I6:17/43/34/2 D=I5:v/4/41/5/0/o:compact block proxy…/m:stationary across this interval/r:right of DisposalSilhouette…
+@1.495s F=wide;Comp=depth spans 14. 00m to 19. 92m across 6 layers…;Cam=camera at (29. 90, 3. 81, 0. 06) on a 35…;Lay=6 visible instances… V=I1:7/36/10/13,I2:4/37/9/12,I3:3/37/6/11,I4:50/51/100/13,I6:17/43/34/2 D=I5:v/8/41/16/1/o:compact block proxy…/m:stationary across this interval/r:right of DisposalSilhouette…
+@2.990s F=wide;Comp=depth spans 14. 00m to 19. 92m across 6 layers…;Cam=camera at (29. 90, 3. 81, 0. 06) on a 35…;Lay=6 visible instances… V=I1:7/36/10/13,I2:4/37/9/12,I3:3/37/6/11,I4:50/51/100/13,I6:17/43/34/2 D=I5:v/13/41/25/1/o:compact block proxy…/m:stationary across this interval/r:right of DisposalSilhouette…
+@4.484s F=wide;Comp=depth spans 14. 00m to 19. 92m across 6 layers…;Cam=camera at (29. 90, 3. 81, 0. 06) on a 35…;Lay=6 visible instances… V=I1:7/36/10/13,I2:4/37/9/12,I3:3/37/6/11,I4:50/51/100/13,I6:17/43/34/2 D=I5:v/15/41/30/2/o:compact block proxy…/m:stationary across this interval/r:right of DisposalSilhouette…
+@5.979s F=wide;Comp=depth spans 14. 00m to 19. 92m across 6 layers…;Cam=camera at (29. 90, 3. 81, 0. 06) on a 35…;Lay=6 visible instances… V=I1:7/36/10/13,I2:4/37/9/12,I3:3/37/6/11,I4:50/51/100/13,I6:17/43/34/2 D=I5:v/17/41/35/2/o:compact block proxy…/m:stationary across this interval/r:right of DisposalPlatform…
+@7.474s F=wide;Comp=depth spans 14. 00m to 19. 92m across 6 layers…;Cam=camera at (29. 90, 3. 81, 0. 06) on a 35…;Lay=6 visible instances… V=I1:7/36/10/13,I2:4/37/9/12,I3:3/37/6/11,I4:50/51/100/13,I6:17/43/34/2 D=I5:v/20/41/39/2/o:compact block proxy…/m:stationary across this interval/r:right of DisposalPlatform…
+@8.969s F=wide;Comp=depth spans 14. 00m to 19. 92m across 6 layers…;Cam=camera at (29. 90, 3. 81, 0. 06) on a 35…;Lay=6 visible instances… V=I1:7/36/10/13,I2:4/37/9/12,I3:3/37/6/11,I4:50/51/100/13,I6:17/43/34/2 D=I5:v/22/41/44/2/o:compact block proxy…/m:stationary across this interval/r:right of DisposalPlatform…
+@10.464s F=wide;Comp=depth spans 14. 00m to 19. 92m across 6 layers…;Cam=camera at (29. 90, 3. 81, 0. 06) on a 35…;Lay=6 visible instances… V=I1:7/36/10/13,I2:4/37/9/12,I3:3/37/6/11,I4:50/51/100/13,I6:17/43/34/2 D=I5:v/24/41/49/3/o:compact block proxy…/m:stationary across this interval/r:right of DisposalPlatform…
+@11.958s F=wide;Comp=depth spans 14. 00m to 19. 92m across 6 layers…;Cam=camera at (29. 90, 3. 81, 0. 06) on a 35…;Lay=6 visible instances… V=I1:7/36/10/13,I2:4/37/9/12,I3:3/37/6/11,I4:50/51/100/13,I6:17/43/34/2 D=I5:v/27/41/54/3/o:compact block proxy…/m:stationary across this interval/r:right of DisposalPlatform…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+white lamp hum and low mechanical operation under the line reading
+
+non_diegetic_music:
+N/A

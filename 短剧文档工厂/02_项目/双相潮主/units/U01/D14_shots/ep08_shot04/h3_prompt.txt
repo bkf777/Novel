@@ -1,0 +1,48 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O002>,I3=<O005>,I4=<O006>,I5=<O007>,I6=<O008>.
+<Entity 01 CHAR Luchen>=E1[articulated/context/static] members=I1;n=1;src=male protagonist blockout; final=male protagonist blockout; finish=real skin with pores and fine hair, fabric with real…; style=world_style_unit_contract.
+<Entity 02 ENV A-9>=E2[environment/context/static] members=I2-I3;n=2;src=A-9 built environment shell…; final=A-9 built environment shell enclosing…; finish=worn cement, oxidised steel and sheet metal with…; style=world_style_unit_contract.
+<Entity 03 PROP A-9>=E3[rigid/context/static] members=I4-I5;n=2;src=A-9 set pieces and fittings…; final=A-9 set pieces and fittings…; finish=utilitarian material with visible weight, thickness…; style=world_style_unit_contract.
+<Entity 04 FX DistantArmourColumn>=E4[effect/primary/effect_evolution] members=I6;n=1;src=distant armour column light spots; final=distant armour column light spots; finish=stylised energy surface in the two permitted flame…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I3;1:1;n=2.
+E3:I4-I5;1:1;n=2.
+E4:I6;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global… | materials=real skin with pores and slight oil sheen… | environment=cement yard plates cut by fissures and pit… | props=functional utilitarian tooling with real… | light=one cold overhead key with shadow detail….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3,E4=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E4:effect_evolution | Act=develops and drifts as the effect unfolds | Keep=stay inside the source blockout bounds for the full shot | Ban=do not replace, duplicate or remove this instance.
+[STATIC LOCK] E1,E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-7.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E4;path=camera travels from (44. 20, 4. 90, 1. 74) to (44. 20, 4…;dist=increase;azi=stable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the…;ban=do not add any camera move, zoom or handheld… | Act=a row of moving headlamp spots travels along the far regional road, vehicle bodies… | Layout=6 visible instances… | Light=one cold overhead key with shadow detail….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 5. 09m to 71…;Cam=camera at (44. 20, 4. 90, 1…;Lay=6 visible instances… V=I1:1/74/3/50,I2:50/78/100/6,I3:50/52/100/0,I4:76/51/23/17,I5:64/44/73/16 D=I6:v/87/50/26/1/o:horizontal volume…/m:stationary across this…/r:right of GreyFramePanel…
+@0.994s F=medium;Comp=depth spans 5. 09m to 71…;Cam=camera at (44. 20, 4. 90, 1…;Lay=6 visible instances… V=I1:1/74/3/50,I2:50/78/100/6,I3:50/52/100/0,I4:76/51/23/17,I5:64/44/73/16 D=I6:v/92/50/17/1/o:horizontal volume…/m:stationary across this…/r:right of GreyFramePanel…
+@1.988s F=medium;Comp=depth spans 5. 09m to 71…;Cam=camera at (44. 20, 4. 90, 1…;Lay=6 visible instances… V=I1:1/74/3/50,I2:50/78/100/6,I3:50/52/100/0,I4:76/51/23/17,I5:64/44/73/16 D=I6:v/96/50/7/1/o:horizontal volume…/m:stationary across this…/r:right of GreyFramePanel…
+@2.982s F=medium;Comp=depth spans 5. 09m to 71…;Cam=camera at (44. 20, 4. 90, 1…;Lay=5 visible instances… V=I1:1/74/3/50,I2:50/78/100/6,I3:50/52/100/0,I4:76/51/23/17,I5:64/44/73/16 D=I6:o/o/o:off screen at…/m:offscreen at this anchor/r:leaves the frame before…
+@3.976s F=medium;Comp=depth spans 5. 09m to 71…;Cam=camera at (44. 20, 4. 90, 1…;Lay=5 visible instances… V=I1:1/74/3/50,I2:50/78/100/6,I3:50/52/100/0,I4:76/51/23/17,I5:64/44/73/16 D=I6:o/o/o:off screen at…/m:offscreen at this anchor/r:leaves the frame before…
+@4.970s F=medium;Comp=depth spans 5. 09m to 71…;Cam=camera at (44. 20, 4. 90, 1…;Lay=5 visible instances… V=I1:1/74/3/50,I2:50/78/100/6,I3:50/52/100/0,I4:76/51/23/17,I5:64/44/73/16 D=I6:o/o/o:off screen at…/m:offscreen at this anchor/r:leaves the frame before…
+@5.964s F=medium;Comp=depth spans 5. 09m to 71…;Cam=camera at (44. 20, 4. 90, 1…;Lay=5 visible instances… V=I1:1/74/3/50,I2:50/78/100/6,I3:50/52/100/0,I4:76/51/23/17,I5:64/44/73/16 D=I6:o/o/o:off screen at…/m:offscreen at this anchor/r:leaves the frame before…
+@6.958s F=medium;Comp=depth spans 5. 09m to 71…;Cam=camera at (44. 20, 4. 90, 1…;Lay=5 visible instances… V=I1:1/74/3/50,I2:50/78/100/6,I3:50/52/100/0,I4:76/51/23/17,I5:64/44/73/16 D=I6:o/o/o:off screen at…/m:offscreen at this anchor/r:leaves the frame before…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+armour engine sound approaching from far away with one…
+
+non_diegetic_music:
+N/A

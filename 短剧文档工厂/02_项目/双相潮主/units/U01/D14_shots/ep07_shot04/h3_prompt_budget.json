@@ -1,0 +1,481 @@
+{
+  "schema_version": 6,
+  "official_online_submission_character_limit": 7000,
+  "target_character_budget": 6500,
+  "prompt_characters": 6183,
+  "within_budget": true,
+  "protected_content_valid": true,
+  "ready_to_submit": true,
+  "invariant_errors": [],
+  "compression_factor": 0.55,
+  "source_text_characters": 20637,
+  "compacted_field_count": 76,
+  "compacted_fields": [
+    {
+      "path": "appearance.global_style_bible.world_and_era",
+      "original_characters": 244,
+      "final_characters": 36,
+      "field_limit": 45
+    },
+    {
+      "path": "appearance.global_style_bible.visual_language",
+      "original_characters": 231,
+      "final_characters": 43,
+      "field_limit": 45
+    },
+    {
+      "path": "appearance.entity_appearances.Entity 01 CHAR Yehongyi.final_materials_and_detail",
+      "original_characters": 120,
+      "final_characters": 53,
+      "field_limit": 55
+    },
+    {
+      "path": "contract.entities[1].source_role",
+      "original_characters": 74,
+      "final_characters": 28,
+      "field_limit": 39
+    },
+    {
+      "path": "appearance.entity_appearances.Entity 02 ENV A-8.semantic_target",
+      "original_characters": 74,
+      "final_characters": 38,
+      "field_limit": 42
+    },
+    {
+      "path": "appearance.entity_appearances.Entity 02 ENV A-8.final_materials_and_detail",
+      "original_characters": 117,
+      "final_characters": 49,
+      "field_limit": 55
+    },
+    {
+      "path": "appearance.entity_appearances.Entity 03 FX AshPatch.final_materials_and_detail",
+      "original_characters": 122,
+      "final_characters": 51,
+      "field_limit": 55
+    },
+    {
+      "path": "contract.entities[3].source_role",
+      "original_characters": 56,
+      "final_characters": 28,
+      "field_limit": 39
+    },
+    {
+      "path": "appearance.entity_appearances.Entity 04 PROP A-8.semantic_target",
+      "original_characters": 56,
+      "final_characters": 41,
+      "field_limit": 42
+    },
+    {
+      "path": "appearance.entity_appearances.Entity 04 PROP A-8.final_materials_and_detail",
+      "original_characters": 121,
+      "final_characters": 52,
+      "field_limit": 55
+    },
+    {
+      "path": "appearance.style_source_summary",
+      "original_characters": 368,
+      "final_characters": 57,
+      "field_limit": 60
+    },
+    {
+      "path": "appearance.global_style_bible.palette",
+      "original_characters": 259,
+      "final_characters": 41,
+      "field_limit": 45
+    },
+    {
+      "path": "appearance.global_style_bible.material_language",
+      "original_characters": 219,
+      "final_characters": 42,
+      "field_limit": 45
+    },
+    {
+      "path": "appearance.global_style_bible.environment_design",
+      "original_characters": 203,
+      "final_characters": 43,
+      "field_limit": 45
+    },
+    {
+      "path": "appearance.global_style_bible.prop_design",
+      "original_characters": 224,
+      "final_characters": 41,
+      "field_limit": 45
+    },
+    {
+      "path": "appearance.global_style_bible.lighting_and_atmosphere",
+      "original_characters": 244,
+      "final_characters": 41,
+      "field_limit": 45
+    },
+    {
+      "path": "contract.interaction_contracts[0].relation",
+      "original_characters": 58,
+      "final_characters": 28,
+      "field_limit": 34
+    },
+    {
+      "path": "contract.shots[0].camera_contract.world_path",
+      "original_characters": 127,
+      "final_characters": 59,
+      "field_limit": 60
+    },
+    {
+      "path": "contract.shots[0].camera_contract.screen_composition_rule",
+      "original_characters": 190,
+      "final_characters": 49,
+      "field_limit": 52
+    },
+    {
+      "path": "contract.shots[0].camera_contract.forbidden_reinterpretations",
+      "original_characters": 110,
+      "final_characters": 45,
+      "field_limit": 49
+    },
+    {
+      "path": "contract.shots[0].actions",
+      "original_characters": 166,
+      "final_characters": 80,
+      "field_limit": 85
+    },
+    {
+      "path": "contract.shots[0].layout_and_occlusion",
+      "original_characters": 164,
+      "final_characters": 20,
+      "field_limit": 78
+    },
+    {
+      "path": "contract.shots[0].lighting_spatial_logic",
+      "original_characters": 244,
+      "final_characters": 41,
+      "field_limit": 50
+    },
+    {
+      "path": "contract.anchors[0].composition.frame_balance_and_depth",
+      "original_characters": 93,
+      "final_characters": 25,
+      "field_limit": 38
+    },
+    {
+      "path": "contract.anchors[0].camera_relation",
+      "original_characters": 63,
+      "final_characters": 29,
+      "field_limit": 35
+    },
+    {
+      "path": "contract.anchors[0].key_layout_and_occlusion",
+      "original_characters": 164,
+      "final_characters": 20,
+      "field_limit": 35
+    },
+    {
+      "path": "contract.anchors[0].tracked_instances[0].orientation",
+      "original_characters": 31,
+      "final_characters": 19,
+      "field_limit": 20
+    },
+    {
+      "path": "contract.anchors[0].tracked_instances[0].motion_state",
+      "original_characters": 31,
+      "final_characters": 23,
+      "field_limit": 26
+    },
+    {
+      "path": "contract.anchors[0].tracked_instances[0].spatial_relations",
+      "original_characters": 91,
+      "final_characters": 26,
+      "field_limit": 26
+    },
+    {
+      "path": "contract.anchors[1].composition.frame_balance_and_depth",
+      "original_characters": 93,
+      "final_characters": 25,
+      "field_limit": 38
+    },
+    {
+      "path": "contract.anchors[1].camera_relation",
+      "original_characters": 64,
+      "final_characters": 29,
+      "field_limit": 35
+    },
+    {
+      "path": "contract.anchors[1].key_layout_and_occlusion",
+      "original_characters": 164,
+      "final_characters": 20,
+      "field_limit": 35
+    },
+    {
+      "path": "contract.anchors[1].tracked_instances[0].orientation",
+      "original_characters": 31,
+      "final_characters": 19,
+      "field_limit": 20
+    },
+    {
+      "path": "contract.anchors[1].tracked_instances[0].motion_state",
+      "original_characters": 31,
+      "final_characters": 23,
+      "field_limit": 26
+    },
+    {
+      "path": "contract.anchors[1].tracked_instances[0].spatial_relations",
+      "original_characters": 90,
+      "final_characters": 24,
+      "field_limit": 26
+    },
+    {
+      "path": "contract.anchors[2].composition.frame_balance_and_depth",
+      "original_characters": 93,
+      "final_characters": 25,
+      "field_limit": 38
+    },
+    {
+      "path": "contract.anchors[2].camera_relation",
+      "original_characters": 64,
+      "final_characters": 29,
+      "field_limit": 35
+    },
+    {
+      "path": "contract.anchors[2].key_layout_and_occlusion",
+      "original_characters": 164,
+      "final_characters": 20,
+      "field_limit": 35
+    },
+    {
+      "path": "contract.anchors[2].tracked_instances[0].orientation",
+      "original_characters": 31,
+      "final_characters": 19,
+      "field_limit": 20
+    },
+    {
+      "path": "contract.anchors[2].tracked_instances[0].motion_state",
+      "original_characters": 31,
+      "final_characters": 23,
+      "field_limit": 26
+    },
+    {
+      "path": "contract.anchors[2].tracked_instances[0].spatial_relations",
+      "original_characters": 88,
+      "final_characters": 24,
+      "field_limit": 26
+    },
+    {
+      "path": "contract.anchors[3].composition.frame_balance_and_depth",
+      "original_characters": 93,
+      "final_characters": 25,
+      "field_limit": 38
+    },
+    {
+      "path": "contract.anchors[3].camera_relation",
+      "original_characters": 64,
+      "final_characters": 29,
+      "field_limit": 35
+    },
+    {
+      "path": "contract.anchors[3].key_layout_and_occlusion",
+      "original_characters": 164,
+      "final_characters": 20,
+      "field_limit": 35
+    },
+    {
+      "path": "contract.anchors[3].tracked_instances[0].orientation",
+      "original_characters": 31,
+      "final_characters": 19,
+      "field_limit": 20
+    },
+    {
+      "path": "contract.anchors[3].tracked_instances[0].motion_state",
+      "original_characters": 36,
+      "final_characters": 23,
+      "field_limit": 26
+    },
+    {
+      "path": "contract.anchors[3].tracked_instances[0].spatial_relations",
+      "original_characters": 69,
+      "final_characters": 23,
+      "field_limit": 26
+    },
+    {
+      "path": "contract.anchors[4].composition.frame_balance_and_depth",
+      "original_characters": 93,
+      "final_characters": 25,
+      "field_limit": 38
+    },
+    {
+      "path": "contract.anchors[4].camera_relation",
+      "original_characters": 64,
+      "final_characters": 29,
+      "field_limit": 35
+    },
+    {
+      "path": "contract.anchors[4].key_layout_and_occlusion",
+      "original_characters": 164,
+      "final_characters": 20,
+      "field_limit": 35
+    },
+    {
+      "path": "contract.anchors[4].tracked_instances[0].orientation",
+      "original_characters": 31,
+      "final_characters": 19,
+      "field_limit": 20
+    },
+    {
+      "path": "contract.anchors[4].tracked_instances[0].motion_state",
+      "original_characters": 36,
+      "final_characters": 23,
+      "field_limit": 26
+    },
+    {
+      "path": "contract.anchors[4].tracked_instances[0].spatial_relations",
+      "original_characters": 69,
+      "final_characters": 23,
+      "field_limit": 26
+    },
+    {
+      "path": "contract.anchors[5].composition.frame_balance_and_depth",
+      "original_characters": 93,
+      "final_characters": 25,
+      "field_limit": 38
+    },
+    {
+      "path": "contract.anchors[5].camera_relation",
+      "original_characters": 65,
+      "final_characters": 29,
+      "field_limit": 35
+    },
+    {
+      "path": "contract.anchors[5].key_layout_and_occlusion",
+      "original_characters": 164,
+      "final_characters": 20,
+      "field_limit": 35
+    },
+    {
+      "path": "contract.anchors[5].tracked_instances[0].orientation",
+      "original_characters": 31,
+      "final_characters": 19,
+      "field_limit": 20
+    },
+    {
+      "path": "contract.anchors[5].tracked_instances[0].motion_state",
+      "original_characters": 36,
+      "final_characters": 23,
+      "field_limit": 26
+    },
+    {
+      "path": "contract.anchors[5].tracked_instances[0].spatial_relations",
+      "original_characters": 69,
+      "final_characters": 23,
+      "field_limit": 26
+    },
+    {
+      "path": "contract.anchors[6].composition.frame_balance_and_depth",
+      "original_characters": 93,
+      "final_characters": 25,
+      "field_limit": 38
+    },
+    {
+      "path": "contract.anchors[6].camera_relation",
+      "original_characters": 65,
+      "final_characters": 29,
+      "field_limit": 35
+    },
+    {
+      "path": "contract.anchors[6].key_layout_and_occlusion",
+      "original_characters": 164,
+      "final_characters": 20,
+      "field_limit": 35
+    },
+    {
+      "path": "contract.anchors[6].tracked_instances[0].orientation",
+      "original_characters": 31,
+      "final_characters": 19,
+      "field_limit": 20
+    },
+    {
+      "path": "contract.anchors[6].tracked_instances[0].motion_state",
+      "original_characters": 36,
+      "final_characters": 23,
+      "field_limit": 26
+    },
+    {
+      "path": "contract.anchors[6].tracked_instances[0].spatial_relations",
+      "original_characters": 69,
+      "final_characters": 23,
+      "field_limit": 26
+    },
+    {
+      "path": "contract.anchors[7].composition.frame_balance_and_depth",
+      "original_characters": 93,
+      "final_characters": 25,
+      "field_limit": 38
+    },
+    {
+      "path": "contract.anchors[7].camera_relation",
+      "original_characters": 65,
+      "final_characters": 29,
+      "field_limit": 35
+    },
+    {
+      "path": "contract.anchors[7].key_layout_and_occlusion",
+      "original_characters": 167,
+      "final_characters": 20,
+      "field_limit": 35
+    },
+    {
+      "path": "contract.anchors[7].tracked_instances[0].orientation",
+      "original_characters": 25,
+      "final_characters": 14,
+      "field_limit": 20
+    },
+    {
+      "path": "contract.anchors[7].tracked_instances[0].spatial_relations",
+      "original_characters": 35,
+      "final_characters": 24,
+      "field_limit": 26
+    },
+    {
+      "path": "contract.anchors[8].composition.frame_balance_and_depth",
+      "original_characters": 93,
+      "final_characters": 25,
+      "field_limit": 38
+    },
+    {
+      "path": "contract.anchors[8].camera_relation",
+      "original_characters": 65,
+      "final_characters": 29,
+      "field_limit": 35
+    },
+    {
+      "path": "contract.anchors[8].key_layout_and_occlusion",
+      "original_characters": 167,
+      "final_characters": 20,
+      "field_limit": 35
+    },
+    {
+      "path": "contract.anchors[8].tracked_instances[0].orientation",
+      "original_characters": 25,
+      "final_characters": 14,
+      "field_limit": 20
+    },
+    {
+      "path": "contract.anchors[8].tracked_instances[0].spatial_relations",
+      "original_characters": 35,
+      "final_characters": 24,
+      "field_limit": 26
+    },
+    {
+      "path": "appearance.sound",
+      "original_characters": 70,
+      "final_characters": 54,
+      "field_limit": 60
+    }
+  ],
+  "protected_content": [
+    "all shot labels and continuity rules",
+    "all source instance ids, entity assignments, exact counts, and one-to-one conservation rules",
+    "all entity labels, semantic targets, finish maps, and retention entries",
+    "all temporal anchors with per-instance visibility and screen-space metrics, plus primary/dynamic orientation and motion",
+    "all dynamic per-entity motion contracts plus a complete static-entity lock",
+    "camera motion decomposition and interaction/contact contracts",
+    "reference routing, blockout rejection, and global-style sections",
+    "complete per-reference safe attributes, risk blocks, and structure exclusions"
+  ]
+}

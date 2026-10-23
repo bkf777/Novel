@@ -1,0 +1,44 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated stylisation….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O005>.
+<Entity 01 CHAR GateQueue>=E1[articulated/primary/static] members=I1;n=1;src=crowd blockout waiting at the factory gate; final=crowd blockout waiting at the factory gate; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings…; style=world_style_unit_contract.
+<Entity 02 ENV B-5>=E2[environment/context/static] members=I2;n=1;src=B-5 built environment shell enclosing the set: FactoryYardGround; final=B-5 built environment shell enclosing the set: FactoryYardGround; finish=worn cement, oxidised steel and sheet metal with cold grey reflections, shadow detail kept…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse realism for humans… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D with detail… | materials=real skin with pores and slight oil sheen, matte technical fabric with wear and… | environment=cement yard plates cut by fire lines, riveted steel frames and steel racks… | props=functional utilitarian tooling with real weight and thickness: welding rigs… | light=one cold overhead key over the purification bench with shadow detail retained….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_4601@0.250-1.000s I1: rel=the order squad takes the tail of the waiting line away in…; ban=do not bring the line close to camera and do not show any face.
+[Shot 1] @0.000-13.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E1;path=camera travels from (-7. 20, -19. 44, 2. 84) to (-7. 20, -19. 44, 2. 84) on a 35mm lens, total path length 0…;dist=stable;azi=stable;elev=stable;lens=stable;comp=远景 framing in 9:16 vertical, subject held in the frame centre band with head room above…;ban=do not add any camera move, zoom or handheld shake… | Act=the road outside the factory is held as a distant band with the people waiting for medicine in one line… | Layout=2 visible instances. Dominant FactoryYardGround covers 100x1 percent at frame 50/65. Left to right: GateQueue, FactoryYardGround. | Light=one cold overhead key over the purification bench with shadow detail retained instead of….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=wide;Comp=depth spans 10. 63m to 14. 67m across 2 layers…;Cam=camera at (-7.20, -19.44, 2.84) on a 35.0mm lens, frame 1 of 312;Lay=2 visible instances… V=I2:50/65/100/1 D=I1:v/1/64/3/16/o:prone body proxy, long axis lying…/m:stationary across this interval/r:left of FactoryYardGround, behind all nearer…
+@1.620s F=wide;Comp=depth spans 10. 63m to 14. 67m across 2 layers…;Cam=camera at (-7.20, -19.44, 2.84) on a 35.0mm lens, frame 40 of 312;Lay=2 visible instances… V=I2:50/65/100/1 D=I1:v/1/64/3/16/o:prone body proxy, long axis lying…/m:stationary across this interval/r:left of FactoryYardGround, behind all nearer…
+@3.240s F=wide;Comp=depth spans 10. 63m to 14. 67m across 2 layers…;Cam=camera at (-7.20, -19.44, 2.84) on a 35.0mm lens, frame 79 of 312;Lay=2 visible instances… V=I2:50/65/100/1 D=I1:v/1/64/3/16/o:prone body proxy, long axis lying…/m:stationary across this interval/r:left of FactoryYardGround, behind all nearer…
+@4.859s F=wide;Comp=depth spans 10. 63m to 14. 67m across 2 layers…;Cam=camera at (-7. 20, -19. 44, 2. 84) on a 35…;Lay=2 visible instances… V=I2:50/65/100/1 D=I1:v/1/64/3/16/o:prone body proxy, long axis lying…/m:stationary across this interval/r:left of FactoryYardGround, behind all nearer…
+@6.479s F=wide;Comp=depth spans 10. 63m to 14. 67m across 2 layers…;Cam=camera at (-7. 20, -19. 44, 2. 84) on a 35…;Lay=2 visible instances… V=I2:50/65/100/1 D=I1:v/1/64/3/16/o:prone body proxy, long axis lying…/m:stationary across this interval/r:left of FactoryYardGround, behind all nearer…
+@8.099s F=wide;Comp=depth spans 10. 63m to 14. 67m across 2 layers…;Cam=camera at (-7. 20, -19. 44, 2. 84) on a 35…;Lay=2 visible instances… V=I2:50/65/100/1 D=I1:v/1/64/3/16/o:prone body proxy, long axis lying…/m:stationary across this interval/r:left of FactoryYardGround, behind all nearer…
+@9.719s F=wide;Comp=depth spans 10. 63m to 14. 67m across 2 layers…;Cam=camera at (-7. 20, -19. 44, 2. 84) on a 35…;Lay=2 visible instances… V=I2:50/65/100/1 D=I1:v/1/64/3/16/o:prone body proxy, long axis lying…/m:stationary across this interval/r:left of FactoryYardGround, behind all nearer…
+@11.339s F=wide;Comp=depth spans 10. 63m to 14. 67m across 2 layers…;Cam=camera at (-7. 20, -19. 44, 2. 84) on a 35…;Lay=2 visible instances… V=I2:50/65/100/1 D=I1:v/1/64/3/16/o:prone body proxy, long axis lying…/m:stationary across this interval/r:left of FactoryYardGround, behind all nearer…
+@12.958s F=wide;Comp=depth spans 10. 63m to 14. 67m across 2 layers…;Cam=camera at (-7. 20, -19. 44, 2. 84) on a 35…;Lay=2 visible instances… V=I2:50/65/100/1 D=I1:v/1/64/3/16/o:prone body proxy, long axis lying…/m:stationary across this interval/r:left of FactoryYardGround, behind all nearer…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+a distant broadcast hum with the even footfalls of the order squad
+
+non_diegetic_music:
+N/A

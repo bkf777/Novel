@@ -1,0 +1,1295 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep03_shot04/preview_video.mp4",
+    "duration": 9.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 216,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "A-4_EXT_FactoryGround_01",
+      "source_type": "MESH",
+      "root_name": "A-4_EXT_FactoryGround_01",
+      "first_visible_seconds": 5.583,
+      "last_visible_seconds": 8.958,
+      "identity_cues": "name=A-4_EXT_FactoryGround_01; type=MESH; root=A-4_EXT_FactoryGround_01; dimensions=32.000,24.000,0.400",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O003",
+      "source_name": "A-4_FX_ChitinTentacle_07",
+      "source_type": "MESH",
+      "root_name": "A-4_FX_ChitinTentacle_07",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 8.958,
+      "identity_cues": "name=A-4_FX_ChitinTentacle_07; type=MESH; root=A-4_FX_ChitinTentacle_07; dimensions=0.311,0.154,0.333",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O004",
+      "source_name": "A-4_FX_ConcreteDebris_01",
+      "source_type": "MESH",
+      "root_name": "A-4_FX_ConcreteDebris",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 8.958,
+      "identity_cues": "name=A-4_FX_ConcreteDebris_01; type=MESH; root=A-4_FX_ConcreteDebris; dimensions=0.120,0.120,0.080",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O005",
+      "source_name": "A-4_FX_ConcreteDebris_02",
+      "source_type": "MESH",
+      "root_name": "A-4_FX_ConcreteDebris",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.708,
+      "identity_cues": "name=A-4_FX_ConcreteDebris_02; type=MESH; root=A-4_FX_ConcreteDebris; dimensions=0.120,0.120,0.080",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O006",
+      "source_name": "A-4_FX_ConcreteDebris_03",
+      "source_type": "MESH",
+      "root_name": "A-4_FX_ConcreteDebris",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 4.458,
+      "identity_cues": "name=A-4_FX_ConcreteDebris_03; type=MESH; root=A-4_FX_ConcreteDebris; dimensions=0.120,0.120,0.080",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O007",
+      "source_name": "A-4_FX_ConcreteDebris_04",
+      "source_type": "MESH",
+      "root_name": "A-4_FX_ConcreteDebris",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 1.125,
+      "identity_cues": "name=A-4_FX_ConcreteDebris_04; type=MESH; root=A-4_FX_ConcreteDebris; dimensions=0.120,0.120,0.080",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O009",
+      "source_name": "A-4_LGT_StreetLamp_06",
+      "source_type": "MESH",
+      "root_name": "A-4_LGT_StreetLamp_06",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 8.958,
+      "identity_cues": "name=A-4_LGT_StreetLamp_06; type=MESH; root=A-4_LGT_StreetLamp_06; dimensions=12.600,12.400,8.050",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O011",
+      "source_name": "A-4_PROP_GroundBreakHole_03",
+      "source_type": "MESH",
+      "root_name": "A-4_PROP_GroundBreakHole_03",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 8.958,
+      "identity_cues": "name=A-4_PROP_GroundBreakHole_03; type=MESH; root=A-4_PROP_GroundBreakHole_03; dimensions=0.500,0.500,0.400",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O012",
+      "source_name": "A-4_PROP_GroundFissure_02",
+      "source_type": "MESH",
+      "root_name": "A-4_PROP_GroundFissure_02",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 4.458,
+      "identity_cues": "name=A-4_PROP_GroundFissure_02; type=MESH; root=A-4_PROP_GroundFissure_02; dimensions=18.300,0.300,0.060",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 ENV A-4",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O001",
+        "O011",
+        "O012"
+      ],
+      "instance_count": 3,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-4 built environment shell enclosing the set: FactoryGround, GroundBreakHole, GroundFissure",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 02 FX ChitinTentacle",
+      "entity_class": "effect",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O003"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "chitin tentacle of the burrow insect",
+      "structural_constraints": "keep the source volume and the attachment point; the effect never detaches from its source surface",
+      "motion_contract": {
+        "mode": "effect_evolution",
+        "action": "develops and drifts as the effect unfolds",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 03 FX ConcreteDebris",
+      "entity_class": "effect",
+      "importance": "context",
+      "source_instance_ids": [
+        "O004",
+        "O005",
+        "O006",
+        "O007"
+      ],
+      "instance_count": 4,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "concrete debris chunks",
+      "structural_constraints": "keep the source volume and the attachment point; the effect never detaches from its source surface",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 04 PROP A-4",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O009"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-4 set pieces and fittings: StreetLamp",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 9.0,
+      "camera_contract": {
+        "motion_type": "crane",
+        "tracked_target_entity": "Entity 02 FX ChitinTentacle",
+        "world_path": "camera travels from (1.20, 1.80, 3.40) to (0.90, 1.40, 1.10) on a 35mm lens, total path length 2.35m inside the blocked set",
+        "target_distance_trend": "decrease",
+        "azimuth_trend": "stable",
+        "elevation_trend": "decrease",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not hold a fixed high angle; the vertical travel must remain; keep the 中景 framing and the 升降 move exactly as blocked out"
+      },
+      "actions": "cement ground cracks open, one chitin tentacle pushes up out of the gap and debris jumps, the camera descends and finally settles on the crack edge",
+      "layout_and_occlusion": "8 visible instances. Dominant StreetLamp covers 100x100 percent at frame 50/50. Left to right: ConcreteDebris, ConcreteDebris, ConcreteDebris, ConcreteDebris, GroundBreakHole.",
+      "lighting_spatial_logic": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep03_shot04/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.61m to 5.96m across 8 layers; nearest is ConcreteDebris, furthest is GroundFissure"
+      },
+      "camera_relation": "camera at (1.20, 1.80, 3.40) on a 35.0mm lens, frame 1 of 216",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX ChitinTentacle",
+          "visibility": "visible",
+          "center_x_percent": 37.94,
+          "center_y_percent": 58.69,
+          "bbox_width_percent": 11.9,
+          "bbox_height_percent": 8.03,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, left of StreetLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 33.19,
+          "center_y_percent": 46.12,
+          "bbox_width_percent": 7.8,
+          "bbox_height_percent": 4.66,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of GroundBreakHole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 22.56,
+          "center_y_percent": 50.5,
+          "bbox_width_percent": 8.18,
+          "bbox_height_percent": 4.79,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 11.38,
+          "center_y_percent": 55.1,
+          "bbox_width_percent": 8.59,
+          "bbox_height_percent": 4.93,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 2.06,
+          "center_y_percent": 59.95,
+          "bbox_width_percent": 4.12,
+          "bbox_height_percent": 5.07,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ConcreteDebris, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 04 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ChitinTentacle, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 37.16,
+          "center_y_percent": 46.48,
+          "bbox_width_percent": 30.35,
+          "bbox_height_percent": 18.85,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ChitinTentacle, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ChitinTentacle, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "8 visible instances. Dominant StreetLamp covers 100x100 percent at frame 50/50. Left to right: ConcreteDebris, ConcreteDebris, ConcreteDebris, ConcreteDebris, GroundBreakHole."
+    },
+    {
+      "time_seconds": 1.12,
+      "source_frame": "D14_shots/ep03_shot04/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.50m to 5.92m across 8 layers; nearest is ConcreteDebris, furthest is GroundFissure"
+      },
+      "camera_relation": "camera at (1.19, 1.78, 3.30) on a 35.0mm lens, frame 28 of 216",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX ChitinTentacle",
+          "visibility": "visible",
+          "center_x_percent": 37.37,
+          "center_y_percent": 59.36,
+          "bbox_width_percent": 12.7,
+          "bbox_height_percent": 8.95,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, left of StreetLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 32.73,
+          "center_y_percent": 47.05,
+          "bbox_width_percent": 8.01,
+          "bbox_height_percent": 4.77,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of GroundBreakHole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 21.8,
+          "center_y_percent": 51.53,
+          "bbox_width_percent": 8.41,
+          "bbox_height_percent": 4.92,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 10.26,
+          "center_y_percent": 56.25,
+          "bbox_width_percent": 8.85,
+          "bbox_height_percent": 5.07,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 1.37,
+          "center_y_percent": 61.24,
+          "bbox_width_percent": 2.74,
+          "bbox_height_percent": 5.23,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ConcreteDebris, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 04 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ChitinTentacle, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 36.8,
+          "center_y_percent": 47.5,
+          "bbox_width_percent": 31.08,
+          "bbox_height_percent": 19.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ChitinTentacle, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ChitinTentacle, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "8 visible instances. Dominant StreetLamp covers 100x100 percent at frame 50/50. Left to right: ConcreteDebris, ConcreteDebris, ConcreteDebris, ConcreteDebris, GroundBreakHole."
+    },
+    {
+      "time_seconds": 2.24,
+      "source_frame": "D14_shots/ep03_shot04/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.33m to 5.81m across 7 layers; nearest is ConcreteDebris, furthest is GroundFissure"
+      },
+      "camera_relation": "camera at (1.15, 1.74, 3.04) on a 35.0mm lens, frame 55 of 216",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX ChitinTentacle",
+          "visibility": "visible",
+          "center_x_percent": 34.98,
+          "center_y_percent": 58.92,
+          "bbox_width_percent": 16.52,
+          "bbox_height_percent": 13.74,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of GroundBreakHole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 31.39,
+          "center_y_percent": 49.29,
+          "bbox_width_percent": 8.59,
+          "bbox_height_percent": 5.09,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ChitinTentacle, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 19.59,
+          "center_y_percent": 54.05,
+          "bbox_width_percent": 9.07,
+          "bbox_height_percent": 5.29,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 7.02,
+          "center_y_percent": 59.12,
+          "bbox_width_percent": 9.6,
+          "bbox_height_percent": 5.49,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ConcreteDebris, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 04 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 35.79,
+          "center_y_percent": 49.99,
+          "bbox_width_percent": 33.17,
+          "bbox_height_percent": 20.53,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ChitinTentacle, left of StreetLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "7 visible instances. Dominant StreetLamp covers 100x100 percent at frame 50/50. Left to right: ConcreteDebris, ConcreteDebris, ConcreteDebris, ChitinTentacle, GroundBreakHole."
+    },
+    {
+      "time_seconds": 3.359,
+      "source_frame": "D14_shots/ep03_shot04/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.95m to 5.64m across 7 layers; nearest is ConcreteDebris, furthest is GroundFissure"
+      },
+      "camera_relation": "camera at (1.10, 1.67, 2.67) on a 35.0mm lens, frame 82 of 216",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX ChitinTentacle",
+          "visibility": "visible",
+          "center_x_percent": 31.11,
+          "center_y_percent": 57.56,
+          "bbox_width_percent": 22.65,
+          "bbox_height_percent": 21.68,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of GroundBreakHole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 29.2,
+          "center_y_percent": 51.82,
+          "bbox_width_percent": 9.57,
+          "bbox_height_percent": 5.62,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ChitinTentacle, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 15.89,
+          "center_y_percent": 57.03,
+          "bbox_width_percent": 10.2,
+          "bbox_height_percent": 5.9,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 3.48,
+          "center_y_percent": 62.66,
+          "bbox_width_percent": 6.95,
+          "bbox_height_percent": 6.21,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ConcreteDebris, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 04 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 34.15,
+          "center_y_percent": 53.0,
+          "bbox_width_percent": 36.65,
+          "bbox_height_percent": 22.58,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ChitinTentacle, left of StreetLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "7 visible instances. Dominant StreetLamp covers 100x100 percent at frame 50/50. Left to right: ConcreteDebris, ConcreteDebris, ConcreteDebris, ChitinTentacle, GroundBreakHole."
+    },
+    {
+      "time_seconds": 4.479,
+      "source_frame": "D14_shots/ep03_shot04/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.55m to 5.45m across 6 layers; nearest is ConcreteDebris, furthest is GroundFissure"
+      },
+      "camera_relation": "camera at (1.05, 1.60, 2.26) on a 35.0mm lens, frame 108 of 216",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX ChitinTentacle",
+          "visibility": "visible",
+          "center_x_percent": 25.07,
+          "center_y_percent": 52.44,
+          "bbox_width_percent": 32.56,
+          "bbox_height_percent": 35.1,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 26.27,
+          "center_y_percent": 53.44,
+          "bbox_width_percent": 10.9,
+          "bbox_height_percent": 6.32,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ChitinTentacle, left of GroundBreakHole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 10.82,
+          "center_y_percent": 59.2,
+          "bbox_width_percent": 11.77,
+          "bbox_height_percent": 6.74,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ChitinTentacle, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 0.08,
+          "center_y_percent": 65.57,
+          "bbox_width_percent": 0.15,
+          "bbox_height_percent": 7.21,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ConcreteDebris, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 04 PROP A-4",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 31.98,
+          "center_y_percent": 55.42,
+          "bbox_width_percent": 41.34,
+          "bbox_height_percent": 25.29,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of GroundFissure, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant GroundFissure covers 100x100 percent at frame 50/50. Left to right: ConcreteDebris, ConcreteDebris, ChitinTentacle, ConcreteDebris, GroundBreakHole."
+    },
+    {
+      "time_seconds": 5.599,
+      "source_frame": "D14_shots/ep03_shot04/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.28m to 12.38m across 6 layers; nearest is ChitinTentacle, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (1.00, 1.53, 1.83) on a 35.0mm lens, frame 135 of 216",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 0.35,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.69,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX ChitinTentacle",
+          "visibility": "visible",
+          "center_x_percent": 19.96,
+          "center_y_percent": 38.11,
+          "bbox_width_percent": 39.92,
+          "bbox_height_percent": 61.08,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 22.47,
+          "center_y_percent": 53.29,
+          "bbox_width_percent": 12.67,
+          "bbox_height_percent": 7.16,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ChitinTentacle, left of GroundBreakHole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 5.51,
+          "center_y_percent": 59.65,
+          "bbox_width_percent": 11.02,
+          "bbox_height_percent": 7.79,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ChitinTentacle, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 04 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 0.28,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.57,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 29.24,
+          "center_y_percent": 56.55,
+          "bbox_width_percent": 47.43,
+          "bbox_height_percent": 28.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of FactoryGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant ChitinTentacle covers 40x61 percent at frame 20/38. Left to right: ConcreteDebris, ChitinTentacle, ConcreteDebris, GroundBreakHole, FactoryGround."
+    },
+    {
+      "time_seconds": 6.719,
+      "source_frame": "D14_shots/ep03_shot04/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.70m to 12.68m across 6 layers; nearest is ChitinTentacle, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (0.95, 1.46, 1.46) on a 35.0mm lens, frame 162 of 216",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 1.84,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 3.68,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX ChitinTentacle",
+          "visibility": "visible",
+          "center_x_percent": 19.14,
+          "center_y_percent": 31.02,
+          "bbox_width_percent": 38.28,
+          "bbox_height_percent": 62.05,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of GroundBreakHole, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 18.36,
+          "center_y_percent": 50.93,
+          "bbox_width_percent": 14.63,
+          "bbox_height_percent": 7.95,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ChitinTentacle, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 2.33,
+          "center_y_percent": 57.73,
+          "bbox_width_percent": 4.67,
+          "bbox_height_percent": 8.84,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 04 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 0.72,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.45,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 26.67,
+          "center_y_percent": 55.91,
+          "bbox_width_percent": 53.34,
+          "bbox_height_percent": 31.9,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ChitinTentacle, left of FactoryGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant ChitinTentacle covers 38x62 percent at frame 19/31. Left to right: ConcreteDebris, ConcreteDebris, ChitinTentacle, GroundBreakHole, FactoryGround."
+    },
+    {
+      "time_seconds": 7.839,
+      "source_frame": "D14_shots/ep03_shot04/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.41m to 12.88m across 5 layers; nearest is ChitinTentacle, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (0.91, 1.42, 1.20) on a 35.0mm lens, frame 189 of 216",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 2.75,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 5.49,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX ChitinTentacle",
+          "visibility": "visible",
+          "center_x_percent": 18.48,
+          "center_y_percent": 27.87,
+          "bbox_width_percent": 36.96,
+          "bbox_height_percent": 55.74,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of GroundBreakHole, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 14.89,
+          "center_y_percent": 47.51,
+          "bbox_width_percent": 16.3,
+          "bbox_height_percent": 8.5,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ChitinTentacle, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 04 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 0.95,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.9,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 26.86,
+          "center_y_percent": 54.2,
+          "bbox_width_percent": 53.71,
+          "bbox_height_percent": 34.34,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ChitinTentacle, left of FactoryGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant ChitinTentacle covers 37x56 percent at frame 18/28. Left to right: ConcreteDebris, ChitinTentacle, GroundBreakHole, FactoryGround, StreetLamp."
+    },
+    {
+      "time_seconds": 8.958,
+      "source_frame": "D14_shots/ep03_shot04/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.35m to 12.96m across 5 layers; nearest is ChitinTentacle, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (0.90, 1.40, 1.10) on a 35.0mm lens, frame 216 of 216",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 3.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 6.12,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX ChitinTentacle",
+          "visibility": "visible",
+          "center_x_percent": 18.23,
+          "center_y_percent": 27.07,
+          "bbox_width_percent": 36.47,
+          "bbox_height_percent": 54.14,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of GroundBreakHole, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 13.43,
+          "center_y_percent": 45.73,
+          "bbox_width_percent": 17.01,
+          "bbox_height_percent": 8.7,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ChitinTentacle, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 04 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 1.02,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 2.03,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 26.94,
+          "center_y_percent": 53.21,
+          "bbox_width_percent": 53.88,
+          "bbox_height_percent": 35.26,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ChitinTentacle, left of FactoryGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant ChitinTentacle covers 36x54 percent at frame 18/27. Left to right: ConcreteDebris, ChitinTentacle, GroundBreakHole, FactoryGround, StreetLamp."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

@@ -1,0 +1,49 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city…; grounded industrial realism….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O002>,I3=<O003>,I4=<O004>,I5=<O005>,I6=<O006>,I7=<O011>,I8=<O012>.
+<Entity 01 CHAR Luchen>=E1[articulated/primary/static] members=I1;n=1;src=male protagonist blockout; final=male protagonist blockout; finish=real skin with pores and fine hair…; style=world_style_unit_contract.
+<Entity 02 CHAR LuchenHand>=E2[articulated/context/locomotion] members=I2;n=1;src=protagonist raised hand…; final=protagonist raised hand…; finish=real skin with pores and fine hair…; style=world_style_unit_contract.
+<Entity 03 CHAR RescuedQueueMember>=E3[articulated/context/static] members=I3-I6;n=4;src=rescued captive standing…; final=rescued captive standing in…; finish=real skin with pores and fine hair…; style=world_style_unit_contract.
+<Entity 04 ENV A-9>=E4[environment/context/static] members=I7-I8;n=2;src=A-9 built environment…; final=A-9 built environment shell…; finish=worn cement, oxidised steel and sheet…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2;1:1;n=1.
+E3:I3-I6;1:1;n=4.
+E4:I7-I8;1:1;n=2.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as… | materials=real skin with pores and… | environment=cement yard plates cut by… | props=functional utilitarian… | light=one cold overhead key with….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3,E4=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E2:locomotion | Act=travels 0… | Keep=stay inside the source blockout bounds… | Ban=do not replace, duplicate or remove….
+[STATIC LOCK] E1,E3,E4 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_3101@0.500-1.000s I1: rel=bone pattern flares…; ban=do not move the flare to….
+[Shot 1] @0.000-12.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E3;path=camera travels from (47. 48, 14. 61, 3…;dist=stable;azi=stable;elev=stable;lens=stable;comp=远景 framing in 9:16 vertical…;ban=do not add any camera move, zoom… | Act=rescued captives stand in a column along the steel plate wall receding into… | Layout=8 visible instances… | Light=one cold overhead key with shadow….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=wide;Comp=depth spans 8. 12m to 22…;Cam=camera at (47. 48, 14…;Lay=8 visible instances… V=I3:7/73/10/12,I4:4/74/8/13,I5:2/76/5/15,I6:0/78/0/16,I7:23/67/46/1,I8:34/63/1/8 D=I1:v/23/58/4/7/o:upright body…/m:stationary across…/r:right of LuchenHan…,I2:v/21/57/1/1/o:upright body…/m:stationary across…/r:right of RescuedQu…
+@1.495s F=wide;Comp=depth spans 8. 12m to 22…;Cam=camera at (47. 48, 14…;Lay=8 visible instances… V=I3:7/73/10/12,I4:4/74/8/13,I5:2/76/5/15,I6:0/78/0/16,I7:23/67/46/1,I8:34/63/1/8 D=I1:v/23/58/4/7/o:upright body…/m:stationary across…/r:right of LuchenHan…,I2:v/21/57/1/1/o:upright body…/m:stationary across…/r:right of RescuedQu…
+@2.990s F=wide;Comp=depth spans 8. 12m to 22…;Cam=camera at (47. 48, 14…;Lay=8 visible instances… V=I3:7/73/10/12,I4:4/74/8/13,I5:2/76/5/15,I6:0/78/0/16,I7:23/67/46/1,I8:34/63/1/8 D=I1:v/23/58/4/7/o:upright body…/m:stationary across…/r:right of LuchenHan…,I2:v/21/57/1/1/o:upright body…/m:stationary across…/r:right of RescuedQu…
+@4.484s F=wide;Comp=depth spans 8. 12m to 22…;Cam=camera at (47. 48, 14…;Lay=8 visible instances… V=I3:7/73/10/12,I4:4/74/8/13,I5:2/76/5/15,I6:0/78/0/16,I7:23/67/46/1,I8:34/63/1/8 D=I1:v/23/58/4/7/o:upright body…/m:stationary across…/r:right of LuchenHan…,I2:v/21/57/1/1/o:upright body…/m:stationary across…/r:right of RescuedQu…
+@5.979s F=wide;Comp=depth spans 8. 12m to 22…;Cam=camera at (47. 48, 14…;Lay=8 visible instances… V=I3:7/73/10/12,I4:4/74/8/13,I5:2/76/5/15,I6:0/78/0/16,I7:23/67/46/1,I8:34/63/1/8 D=I1:v/23/58/4/7/o:upright body…/m:stationary across…/r:right of LuchenHan…,I2:v/21/57/1/1/o:upright body…/m:stationary across…/r:right of RescuedQu…
+@7.474s F=wide;Comp=depth spans 8. 12m to 22…;Cam=camera at (47. 48, 14…;Lay=8 visible instances… V=I3:7/73/10/12,I4:4/74/8/13,I5:2/76/5/15,I6:0/78/0/16,I7:23/67/46/1,I8:34/63/1/8 D=I1:v/23/58/4/7/o:upright body…/m:stationary across…/r:right of LuchenHan…,I2:v/21/57/1/1/o:upright body…/m:stationary across…/r:right of RescuedQu…
+@8.969s F=wide;Comp=depth spans 8. 12m to 22…;Cam=camera at (47. 48, 14…;Lay=8 visible instances… V=I3:7/73/10/12,I4:4/74/8/13,I5:2/76/5/15,I6:0/78/0/16,I7:23/67/46/1,I8:34/63/1/8 D=I1:v/23/58/4/7/o:upright body…/m:stationary across…/r:right of LuchenHan…,I2:v/21/56/1/1/o:upright body…/m:stationary across…/r:right of RescuedQu…
+@10.464s F=wide;Comp=depth spans 8. 12m to 22…;Cam=camera at (47. 48, 14…;Lay=8 visible instances… V=I3:7/73/10/12,I4:4/74/8/13,I5:2/76/5/15,I6:0/78/0/16,I7:23/67/46/1,I8:34/63/1/8 D=I1:v/23/58/4/7/o:upright body…/m:stationary across…/r:right of LuchenHan…,I2:v/21/56/1/1/o:upright body…/m:stationary across…/r:right of RescuedQu…
+@11.958s F=wide;Comp=depth spans 8. 12m to 22…;Cam=camera at (47. 48, 14…;Lay=8 visible instances… V=I3:7/73/10/12,I4:4/74/8/13,I5:2/76/5/15,I6:0/78/0/16,I7:23/67/46/1,I8:34/63/1/8 D=I1:v/23/58/4/7/o:upright body…/m:stationary across…/r:right of LuchenHan…,I2:v/21/55/1/1/o:upright body…/m:stationary across…/r:right of RescuedQu…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+one footstep after another on steel plate…
+
+non_diegetic_music:
+N/A

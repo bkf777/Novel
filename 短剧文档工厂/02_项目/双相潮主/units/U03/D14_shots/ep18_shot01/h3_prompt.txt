@@ -1,0 +1,46 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O002>,I3=<O004>,I4=<O007>,I5=<O008>,I6=<O009>,I7=<O010>.
+<Entity 01 CHAR LuchenHand>=E1[articulated/primary/static] members=I1;n=1;src=protagonist raised hand blockout; final=protagonist raised hand blockout; finish=real skin with pores and fine hair, fabric with real…; style=world_style_unit_contract.
+<Entity 02 ENV B-12>=E2[environment/context/static] members=I2-I3;n=2;src=B-12 built environment shell…; final=B-12 built environment shell enclosing…; finish=worn cement, oxidised steel and sheet metal with…; style=world_style_unit_contract.
+<Entity 03 PROP B-12>=E3[rigid/context/static] members=I4-I7;n=4;src=B-12 set pieces and fittings…; final=B-12 set pieces and fittings: AshDeposit…; finish=utilitarian material with visible weight, thickness…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I3;1:1;n=2.
+E3:I4-I7;1:1;n=4.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global… | materials=real skin with pores and slight oil sheen… | environment=a brick street cut by wheel ruts in front… | props=functional utilitarian tooling with real… | light=one cold overhead key over the steel table….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_6901@0.000-1.000s I1,I3: rel=the white band spreads along…; ban=do not show a mouth or a face and….
+[Shot 1] @0.000-12.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=dolly;target=E1;path=camera travels from (-1. 85, -7. 46, 1. 73) to (-0. 86, -4…;dist=decrease;azi=clockwise;elev=decrease;lens=stable;comp=全景 framing in 9:16 vertical, subject held in the…;ban=do not convert the linear camera move into an… | Act=the bone will is fully open and the pattern runs from the right wrist bone up… | Layout=7 visible instances… | Light=one cold overhead key over the steel table with….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=full;Comp=depth spans 2. 74m to 19…;Cam=camera at (-1. 85, -7. 46, 1…;Lay=7 visible instances… V=I2:32/59/52/6,I3:50/52/100/8,I4:61/97/79/7,I5:84/56/32/2,I6:74/80/28/8,I7:35/65/71/4 D=I1:v/70/51/5/6/o:upright body proxy…/m:stationary across this…/r:right of AshDeposit…
+@1.495s F=full;Comp=depth spans 2. 62m to 18…;Cam=camera at (-1. 81, -7. 34, 1…;Lay=7 visible instances… V=I2:32/60/53/6,I3:50/52/100/8,I4:60/98/80/5,I5:84/56/31/2,I6:75/81/29/8,I7:36/66/71/4 D=I1:v/71/51/5/6/o:upright body proxy…/m:stationary across this…/r:right of AshDeposit…
+@2.990s F=full;Comp=depth spans 3. 63m to 18…;Cam=camera at (-1. 70, -7. 02, 1…;Lay=6 visible instances… V=I2:31/60/55/7,I3:50/52/100/8,I5:85/56/30/2,I6:77/84/32/9,I7:36/66/72/4 O=I4 D=I1:v/72/52/5/6/o:upright body proxy…/m:stationary across this…/r:right of StreetGround…
+@4.484s F=full;Comp=depth spans 3. 15m to 18…;Cam=camera at (-1. 54, -6. 57, 1…;Lay=6 visible instances… V=I2:30/61/59/7,I3:50/53/100/8,I5:86/57/27/3,I6:81/90/37/12,I7:37/68/74/5 O=I4 D=I1:v/75/52/6/7/o:upright body proxy…/m:stationary across this…/r:right of StreetGround…
+@5.979s F=full;Comp=depth spans 2. 62m to 17…;Cam=camera at (-1. 36, -6. 07, 1…;Lay=6 visible instances… V=I2:30/62/60/8,I3:50/53/100/9,I5:88/58/24/3,I6:82/95/35/10,I7:38/69/76/6 O=I4 D=I1:v/78/52/6/8/o:upright body proxy…/m:stationary across this…/r:right of StreetGround…
+@7.474s F=full;Comp=depth spans 2. 07m to 17…;Cam=camera at (-1. 18, -5. 56, 1…;Lay=6 visible instances… V=I2:30/63/61/9,I3:50/53/100/9,I5:90/59/20/4,I6:84/100/31/0,I7:39/72/78/7 O=I4 D=I1:v/83/52/8/9/o:upright body proxy…/m:stationary across this…/r:right of StreetGround…
+@8.969s F=full;Comp=depth spans 2. 91m to 16…;Cam=camera at (-1. 02, -5. 11, 1…;Lay=5 visible instances… V=I2:31/64/62/10,I3:50/53/100/10,I5:93/61/14/5,I7:41/74/81/8 O=I4,I6 D=I1:v/88/53/9/10/o:upright body proxy…/m:stationary across this…/r:right of StreetGround…
+@10.464s F=full;Comp=depth spans 2. 57m to 16…;Cam=camera at (-0. 91, -4. 79, 1…;Lay=5 visible instances… V=I2:31/65/62/11,I3:50/53/100/10,I5:95/62/9/6,I7:42/76/83/10 O=I4,I6 D=I1:v/93/53/10/12/o:upright body proxy…/m:stationary across this…/r:right of StreetGround…
+@11.958s F=full;Comp=depth spans 2. 44m to 16…;Cam=camera at (-0. 86, -4. 67, 1…;Lay=5 visible instances… V=I2:31/65/63/11,I3:50/53/100/10,I5:96/63/7/6,I7:42/77/84/10 O=I4,I6 D=I1:v/95/53/10/13/o:upright body proxy…/m:stationary across this…/r:right of StreetGround…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+a low hum deepening with stones jumping in the vibration…
+
+non_diegetic_music:
+N/A

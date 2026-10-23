@@ -1,0 +1,618 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep16_shot04/preview_video.mp4",
+    "duration": 7.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 168,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O002",
+      "source_name": "B-10_CHAR_Yehongyi_01",
+      "source_type": "MESH",
+      "root_name": "B-10_CHAR_Yehongyi_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-10_CHAR_Yehongyi_01; type=MESH; root=B-10_CHAR_Yehongyi_01; dimensions=0.420,0.320,1.730",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O003",
+      "source_name": "B-10_EXT_FactoryHallShell",
+      "source_type": "MESH",
+      "root_name": "B-10_EXT_FactoryHallShell",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-10_EXT_FactoryHallShell; type=MESH; root=B-10_EXT_FactoryHallShell; dimensions=30.500,24.500,12.300",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O005",
+      "source_name": "B-10_EXT_FactoryYardGround",
+      "source_type": "MESH",
+      "root_name": "B-10_EXT_FactoryYardGround",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-10_EXT_FactoryYardGround; type=MESH; root=B-10_EXT_FactoryYardGround; dimensions=36.000,48.000,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O009",
+      "source_name": "B-10_PROP_DarkJunction_02",
+      "source_type": "MESH",
+      "root_name": "B-10_PROP_DarkJunction_02",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-10_PROP_DarkJunction_02; type=MESH; root=B-10_PROP_DarkJunction_02; dimensions=4.570,3.710,3.400",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR Yehongyi",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O002"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "female fighter character blockout in dark red outfit",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV B-10",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O003",
+        "O005",
+        "O009"
+      ],
+      "instance_count": 3,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-10 built environment shell enclosing the set: FactoryHallShell, FactoryYardGround, DarkJunction",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_6401",
+      "source_instance_ids": [
+        "O002",
+        "O009"
+      ],
+      "start_seconds": 0.0,
+      "end_seconds": 1.0,
+      "relation": "the shadow blade lies across the centre of the unlit junction between the fighter and the leader standing on the far side",
+      "forbidden_change": "do not light the blade edge and do not bring the leader's face into view"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 7.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "none",
+        "world_path": "camera travels from (1.65, -9.25, 0.19) to (1.65, -9.25, 0.19) on a 50mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 中景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "a stretch outside the factory gate has no light and the fighter stands at the junction, her dark red outfit reading as outline only; the shadow blade lies across the centre of the junction with its edge unlit and the assassin leader stands on the far side over trodden out fire sparks; daylight turns black and the grey fog sky presses down over the factory while a corner readout shows the normalisation readout at 1.4%",
+      "layout_and_occlusion": "4 visible instances. Dominant FactoryHallShell covers 100x40 percent at frame 50/20. Left to right: Yehongyi, DarkJunction, FactoryHallShell, FactoryYardGround.",
+      "lighting_spatial_logic": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep16_shot04/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.46m to 22.82m across 4 layers; nearest is Yehongyi, furthest is FactoryHallShell"
+      },
+      "camera_relation": "camera at (1.65, -9.25, 0.19) on a 50.0mm lens, frame 1 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 4.8,
+          "center_y_percent": 25.3,
+          "bbox_width_percent": 9.59,
+          "bbox_height_percent": 50.6,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DarkJunction, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 20.25,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 40.5,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkJunction, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 42.26,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 5.84,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkJunction, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 21.78,
+          "center_y_percent": 24.62,
+          "bbox_width_percent": 43.57,
+          "bbox_height_percent": 49.25,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, left of FactoryHallShell, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant FactoryHallShell covers 100x40 percent at frame 50/20. Left to right: Yehongyi, DarkJunction, FactoryHallShell, FactoryYardGround."
+    },
+    {
+      "time_seconds": 0.994,
+      "source_frame": "D14_shots/ep16_shot04/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.46m to 22.82m across 4 layers; nearest is Yehongyi, furthest is FactoryHallShell"
+      },
+      "camera_relation": "camera at (1.65, -9.25, 0.19) on a 50.0mm lens, frame 25 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 4.8,
+          "center_y_percent": 25.3,
+          "bbox_width_percent": 9.59,
+          "bbox_height_percent": 50.6,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DarkJunction, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 20.25,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 40.5,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkJunction, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 42.26,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 5.84,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkJunction, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 21.78,
+          "center_y_percent": 24.62,
+          "bbox_width_percent": 43.57,
+          "bbox_height_percent": 49.25,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, left of FactoryHallShell, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant FactoryHallShell covers 100x40 percent at frame 50/20. Left to right: Yehongyi, DarkJunction, FactoryHallShell, FactoryYardGround."
+    },
+    {
+      "time_seconds": 1.988,
+      "source_frame": "D14_shots/ep16_shot04/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.46m to 22.82m across 4 layers; nearest is Yehongyi, furthest is FactoryHallShell"
+      },
+      "camera_relation": "camera at (1.65, -9.25, 0.19) on a 50.0mm lens, frame 49 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 4.8,
+          "center_y_percent": 25.3,
+          "bbox_width_percent": 9.59,
+          "bbox_height_percent": 50.6,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DarkJunction, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 20.25,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 40.5,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkJunction, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 42.26,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 5.84,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkJunction, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 21.78,
+          "center_y_percent": 24.62,
+          "bbox_width_percent": 43.57,
+          "bbox_height_percent": 49.25,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, left of FactoryHallShell, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant FactoryHallShell covers 100x40 percent at frame 50/20. Left to right: Yehongyi, DarkJunction, FactoryHallShell, FactoryYardGround."
+    },
+    {
+      "time_seconds": 2.982,
+      "source_frame": "D14_shots/ep16_shot04/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.46m to 22.82m across 4 layers; nearest is Yehongyi, furthest is FactoryHallShell"
+      },
+      "camera_relation": "camera at (1.65, -9.25, 0.19) on a 50.0mm lens, frame 73 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 4.8,
+          "center_y_percent": 25.3,
+          "bbox_width_percent": 9.59,
+          "bbox_height_percent": 50.6,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DarkJunction, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 20.25,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 40.5,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkJunction, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 42.26,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 5.84,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkJunction, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 21.78,
+          "center_y_percent": 24.62,
+          "bbox_width_percent": 43.57,
+          "bbox_height_percent": 49.25,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, left of FactoryHallShell, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant FactoryHallShell covers 100x40 percent at frame 50/20. Left to right: Yehongyi, DarkJunction, FactoryHallShell, FactoryYardGround."
+    },
+    {
+      "time_seconds": 3.976,
+      "source_frame": "D14_shots/ep16_shot04/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.46m to 22.82m across 4 layers; nearest is Yehongyi, furthest is FactoryHallShell"
+      },
+      "camera_relation": "camera at (1.65, -9.25, 0.19) on a 50.0mm lens, frame 96 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 4.8,
+          "center_y_percent": 25.3,
+          "bbox_width_percent": 9.59,
+          "bbox_height_percent": 50.6,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DarkJunction, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 20.25,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 40.5,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkJunction, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 42.26,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 5.84,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkJunction, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 21.78,
+          "center_y_percent": 24.62,
+          "bbox_width_percent": 43.57,
+          "bbox_height_percent": 49.25,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, left of FactoryHallShell, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant FactoryHallShell covers 100x40 percent at frame 50/20. Left to right: Yehongyi, DarkJunction, FactoryHallShell, FactoryYardGround."
+    },
+    {
+      "time_seconds": 4.97,
+      "source_frame": "D14_shots/ep16_shot04/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.46m to 22.82m across 4 layers; nearest is Yehongyi, furthest is FactoryHallShell"
+      },
+      "camera_relation": "camera at (1.65, -9.25, 0.19) on a 50.0mm lens, frame 120 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 4.8,
+          "center_y_percent": 25.3,
+          "bbox_width_percent": 9.59,
+          "bbox_height_percent": 50.6,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DarkJunction, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 20.25,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 40.5,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkJunction, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 42.26,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 5.84,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkJunction, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 21.78,
+          "center_y_percent": 24.62,
+          "bbox_width_percent": 43.57,
+          "bbox_height_percent": 49.25,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, left of FactoryHallShell, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant FactoryHallShell covers 100x40 percent at frame 50/20. Left to right: Yehongyi, DarkJunction, FactoryHallShell, FactoryYardGround."
+    },
+    {
+      "time_seconds": 5.964,
+      "source_frame": "D14_shots/ep16_shot04/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.46m to 22.82m across 4 layers; nearest is Yehongyi, furthest is FactoryHallShell"
+      },
+      "camera_relation": "camera at (1.65, -9.25, 0.19) on a 50.0mm lens, frame 144 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 4.8,
+          "center_y_percent": 25.3,
+          "bbox_width_percent": 9.59,
+          "bbox_height_percent": 50.6,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DarkJunction, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 20.25,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 40.5,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkJunction, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 42.26,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 5.84,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkJunction, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 21.78,
+          "center_y_percent": 24.62,
+          "bbox_width_percent": 43.57,
+          "bbox_height_percent": 49.25,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, left of FactoryHallShell, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant FactoryHallShell covers 100x40 percent at frame 50/20. Left to right: Yehongyi, DarkJunction, FactoryHallShell, FactoryYardGround."
+    },
+    {
+      "time_seconds": 6.958,
+      "source_frame": "D14_shots/ep16_shot04/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.46m to 22.82m across 4 layers; nearest is Yehongyi, furthest is FactoryHallShell"
+      },
+      "camera_relation": "camera at (1.65, -9.25, 0.19) on a 50.0mm lens, frame 168 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 4.8,
+          "center_y_percent": 25.3,
+          "bbox_width_percent": 9.59,
+          "bbox_height_percent": 50.6,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DarkJunction, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 20.25,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 40.5,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkJunction, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 42.26,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 5.84,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DarkJunction, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 21.78,
+          "center_y_percent": 24.62,
+          "bbox_width_percent": 43.57,
+          "bbox_height_percent": 49.25,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, left of FactoryHallShell, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant FactoryHallShell covers 100x40 percent at frame 50/20. Left to right: Yehongyi, DarkJunction, FactoryHallShell, FactoryYardGround."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

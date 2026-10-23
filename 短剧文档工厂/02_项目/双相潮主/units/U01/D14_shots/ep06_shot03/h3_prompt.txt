@@ -1,0 +1,47 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O003>,I3=<O004>,I4=<O005>,I5=<O006>.
+<Entity 01 CHAR Luchen>=E1[articulated/primary/locomotion] members=I1;n=1;src=male protagonist blockout; final=male protagonist blockout; finish=real skin with pores and fine hair, fabric with real drape and wear…; style=world_style_unit_contract.
+<Entity 02 ENV A-7>=E2[environment/context/static] members=I2-I3;n=2;src=A-7 built environment shell enclosing the set…; final=A-7 built environment shell enclosing the set…; finish=worn cement, oxidised steel and sheet metal with cold grey…; style=world_style_unit_contract.
+<Entity 03 PROP A-7>=E3[rigid/context/static] members=I4-I5;n=2;src=A-7 set pieces and fittings: ApprovalConsole…; final=A-7 set pieces and fittings: ApprovalConsole…; finish=utilitarian material with visible weight, thickness and use marks…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I3;1:1;n=2.
+E3:I4-I5;1:1;n=2.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink… | materials=real skin with pores and slight oil sheen, matte… | environment=cement yard plates cut by fissures and pit openings… | props=functional utilitarian tooling with real weight and… | light=one cold overhead key with shadow detail retained….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E1:locomotion | Act=travels 0.44m across the set during the shot | Keep=stay inside the source blockout bounds for the full shot | Ban=do not replace, duplicate or remove this instance.
+[STATIC LOCK] E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-13.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=none;path=camera travels from (32. 06, -3. 27, 2. 26) to (32. 06, -3. 27, 2…;dist=stable;azi=stable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the frame centre…;ban=do not add any camera move, zoom or handheld shake… | Act=protagonist lunges half a step, swings the crowbar sideways and pins the officer to the steel plate on… | Layout=5 visible instances. Dominant ApprovalConsole covers 100x36 percent at frame 50/82… | Light=one cold overhead key with shadow detail retained instead of….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 5. 00m to 19. 06m across 5 layers…;Cam=camera at (32. 06, -3. 27, 2. 26) on a 50…;Lay=5 visible instances… V=I2:70/77/61/47,I3:39/45/1/16,I4:50/82/100/36,I5:47/60/47/21 D=I1:v/90/75/21/49/o:upright body proxy…/m:stationary across this interval/r:right of InnerYard, behind all…
+@1.620s F=medium;Comp=depth spans 5. 13m to 19. 06m across 5 layers…;Cam=camera at (32. 06, -3. 27, 2. 26) on a 50…;Lay=5 visible instances… V=I2:70/77/61/47,I3:39/45/1/16,I4:50/82/100/36,I5:47/60/47/21 D=I1:v/99/75/2/49/o:upright body proxy…/m:stationary across this interval/r:right of InnerYard, behind all…
+@3.240s F=medium;Comp=depth spans 5. 25m to 19. 06m across 4 layers…;Cam=camera at (32. 06, -3. 27, 2. 26) on a 50…;Lay=4 visible instances… V=I2:70/77/61/47,I3:39/45/1/16,I4:50/82/100/36,I5:47/60/47/21 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this…
+@4.859s F=medium;Comp=depth spans 5. 25m to 19. 06m across 4 layers…;Cam=camera at (32. 06, -3. 27, 2. 26) on a 50…;Lay=4 visible instances… V=I2:70/77/61/47,I3:39/45/1/16,I4:50/82/100/36,I5:47/60/47/21 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this…
+@6.479s F=medium;Comp=depth spans 5. 25m to 19. 06m across 4 layers…;Cam=camera at (32. 06, -3. 27, 2. 26) on a 50…;Lay=4 visible instances… V=I2:70/77/61/47,I3:39/45/1/16,I4:50/82/100/36,I5:47/60/47/21 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this…
+@8.099s F=medium;Comp=depth spans 5. 25m to 19. 06m across 4 layers…;Cam=camera at (32. 06, -3. 27, 2. 26) on a 50…;Lay=4 visible instances… V=I2:70/77/61/47,I3:39/45/1/16,I4:50/82/100/36,I5:47/60/47/21 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this…
+@9.719s F=medium;Comp=depth spans 5. 25m to 19. 06m across 4 layers…;Cam=camera at (32. 06, -3. 27, 2. 26) on a 50…;Lay=4 visible instances… V=I2:70/77/61/47,I3:39/45/1/16,I4:50/82/100/36,I5:47/60/47/21 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this…
+@11.339s F=medium;Comp=depth spans 5. 25m to 19. 06m across 4 layers…;Cam=camera at (32. 06, -3. 27, 2. 26) on a 50…;Lay=4 visible instances… V=I2:70/77/61/47,I3:39/45/1/16,I4:50/82/100/36,I5:47/60/47/21 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this…
+@12.958s F=medium;Comp=depth spans 5. 25m to 19. 06m across 4 layers…;Cam=camera at (32. 06, -3. 27, 2. 26) on a 50…;Lay=4 visible instances… V=I2:70/77/61/47,I3:39/45/1/16,I4:50/82/100/36,I5:47/60/47/21 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+burst of the bar striking steel with terminal alarm buzzing
+
+non_diegetic_music:
+N/A

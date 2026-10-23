@@ -1,0 +1,48 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O004>,I3=<O008>,I4=<O009>,I5=<O010>,I6=<O011>,I7=<O016>.
+<Entity 01 CHAR Yehongyi>=E1[articulated/primary/static] members=I1;n=1;src=female fighter character blockout in…; final=female fighter character blockout in…; finish=real skin with pores and fine hair, fabric with real…; style=world_style_unit_contract.
+<Entity 02 ENV B-9>=E2[environment/context/static] members=I2-I4;n=3;src=B-9 built environment shell…; final=B-9 built environment shell enclosing…; finish=worn cement, oxidised steel and sheet metal with…; style=world_style_unit_contract.
+<Entity 03 PROP B-9>=E3[rigid/context/static] members=I5-I6;n=2;src=B-9 set pieces and fittings…; final=B-9 set pieces and fittings…; finish=utilitarian material with visible weight, thickness…; style=world_style_unit_contract.
+<Entity 04 PROP UnexpectedShadow>=E4[rigid/context/static] members=I7;n=1;src=B-9 set pieces and fittings…; final=B-9 set pieces and fittings…; finish=utilitarian material with visible weight, thickness…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I4;1:1;n=3.
+E3:I5-I6;1:1;n=2.
+E4:I7;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global… | materials=real skin with pores and slight oil sheen… | environment=cement yard plates cut by fire lines… | props=functional utilitarian tooling with real… | light=one cold overhead key over the….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3,E4=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3,E4 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_6001@0.400-1.000s I1: rel=the shadow blade is drawn half…; ban=do not light the blade edge and do….
+[Shot 1] @0.000-8.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E4;path=camera travels from (-1. 20, 17. 41, 2. 26) to (-1. 20, 17…;dist=decrease;azi=stable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the…;ban=do not add any camera move, zoom or handheld… | Act=after the lights are cut the factory yard keeps only the low level of the… | Layout=7 visible instances… | Light=one cold overhead key over the purification….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 4. 41m to 6…;Cam=camera at (-1. 20, 17. 41, 2…;Lay=7 visible instances… V=I2:50/16/100/32,I3:50/81/100/1,I4:50/64/100/32,I5:28/51/9/3,I6:23/62/20/9,I7:3/63/6/2 D=I1:v/2/79/4/42/o:upright body proxy…/m:stationary across this…/r:left of UnexpectedShadow…
+@0.995s F=medium;Comp=depth spans 4. 41m to 6…;Cam=camera at (-1. 20, 17. 41, 2…;Lay=7 visible instances… V=I2:50/16/100/32,I3:50/81/100/1,I4:50/64/100/32,I5:28/51/9/3,I6:23/62/20/9,I7:15/63/30/8 D=I1:v/2/79/4/42/o:upright body proxy…/m:stationary across this…/r:left of UnexpectedShadow…
+@1.990s F=medium;Comp=depth spans 4. 41m to 6…;Cam=camera at (-1. 20, 17. 41, 2…;Lay=7 visible instances… V=I2:50/16/100/32,I3:50/81/100/1,I4:50/64/100/32,I5:28/51/9/3,I6:23/62/20/9,I7:27/63/54/13 D=I1:v/2/79/4/42/o:upright body proxy…/m:stationary across this…/r:left of GreyFramePanel…
+@2.984s F=medium;Comp=depth spans 4. 41m to 6…;Cam=camera at (-1. 20, 17. 41, 2…;Lay=7 visible instances… V=I2:50/16/100/32,I3:50/81/100/1,I4:50/64/100/32,I5:28/51/9/3,I6:23/62/20/9,I7:39/63/78/19 D=I1:v/2/79/4/42/o:upright body proxy…/m:stationary across this…/r:left of GreyFramePanel…
+@3.979s F=medium;Comp=depth spans 4. 41m to 6…;Cam=camera at (-1. 20, 17. 41, 2…;Lay=7 visible instances… V=I2:50/16/100/32,I3:50/81/100/1,I4:50/64/100/32,I5:28/51/9/3,I6:23/62/20/9,I7:50/63/100/24 D=I1:v/2/79/4/42/o:upright body proxy…/m:stationary across this…/r:left of GreyFramePanel…
+@4.974s F=medium;Comp=depth spans 4. 41m to 6…;Cam=camera at (-1. 20, 17. 41, 2…;Lay=7 visible instances… V=I2:50/16/100/32,I3:50/81/100/1,I4:50/64/100/32,I5:28/51/9/3,I6:23/62/20/9,I7:50/63/100/24 D=I1:v/2/79/4/42/o:upright body proxy…/m:stationary across this…/r:left of GreyFramePanel…
+@5.969s F=medium;Comp=depth spans 4. 41m to 6…;Cam=camera at (-1. 20, 17. 41, 2…;Lay=7 visible instances… V=I2:50/16/100/32,I3:50/81/100/1,I4:50/64/100/32,I5:28/51/9/3,I6:23/62/20/9,I7:50/63/100/24 D=I1:v/2/79/4/42/o:upright body proxy…/m:stationary across this…/r:left of GreyFramePanel…
+@6.964s F=medium;Comp=depth spans 4. 41m to 6…;Cam=camera at (-1. 20, 17. 41, 2…;Lay=7 visible instances… V=I2:50/16/100/32,I3:50/81/100/1,I4:50/64/100/32,I5:28/51/9/3,I6:23/62/20/9,I7:50/63/100/24 D=I1:v/2/79/4/42/o:upright body proxy…/m:stationary across this…/r:left of GreyFramePanel…
+@7.958s F=medium;Comp=depth spans 4. 41m to 6…;Cam=camera at (-1. 20, 17. 41, 2…;Lay=7 visible instances… V=I2:50/16/100/32,I3:50/81/100/1,I4:50/64/100/32,I5:28/51/9/3,I6:23/62/20/9,I7:50/63/100/24 D=I1:v/2/79/4/42/o:upright body proxy…/m:stationary across this…/r:left of GreyFramePanel…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+one soft click of the light switch and the clatter of…
+
+non_diegetic_music:
+N/A

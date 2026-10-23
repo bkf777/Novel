@@ -1,0 +1,44 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated stylisation….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O004>.
+<Entity 01 CHAR Luchen>=E1[articulated/primary/locomotion] members=I1;n=1;src=protagonist blockout in black tactical coat; final=protagonist blockout in black tactical coat; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings…; style=world_style_unit_contract.
+<Entity 02 ENV B-11>=E2[environment/context/static] members=I2;n=1;src=B-11 built environment shell enclosing the set: StreetGround; final=B-11 built environment shell enclosing the set: StreetGround; finish=worn cement, oxidised steel and sheet metal with cold grey reflections, shadow detail kept…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse realism for humans… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D with detail… | materials=real skin with pores and slight oil sheen, matte technical fabric with wear and… | environment=a brick street cut by wheel ruts in front of a single gate with two steel posts… | props=functional utilitarian tooling with real weight and thickness: gate posts… | light=one cold overhead key over the steel table with shadow detail retained instead….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E1:locomotion | Act=travels 0.52m across the set during the shot | Keep=stay inside the source blockout bounds for the full shot | Ban=do not replace, duplicate or remove this instance.
+[STATIC LOCK] E2 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_6801@0.000-1.000s I1: rel=the figure walks out of the gate shadow and the corner…; ban=do not hide the corner readout and do not build a face for the figure.
+[Shot 1] @0.000-7.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=crane;target=E1;path=camera travels from (-2. 59, -5. 04, 1. 09) to (-2. 59, -5. 04, 2. 09) on a 50mm lens, total path length 1…;dist=increase;azi=stable;elev=increase;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the frame centre band with head room above…;ban=do not hold a fixed high angle; the vertical travel must remain… | Act=one figure walks out of the gate shadow and the black and white bone pattern on the right wrist bone lights up all the way along the forearm… | Layout=2 visible instances. Dominant StreetGround covers 100x10 percent at frame 50/85. Left to right: StreetGround, Luchen. | Light=one cold overhead key over the steel table with shadow detail retained instead of crushed….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 4. 92m to 16. 51m across 2 layers…;Cam=camera at (-2.59, -5.04, 1.09) on a 50.0mm lens, frame 1 of 168;Lay=2 visible instances… V=I2:50/85/100/10 D=I1:v/92/77/17/46/o:upright body proxy, head end up/m:stationary across this interval/r:right of StreetGround, behind all nearer…
+@0.994s F=medium;Comp=depth spans 4. 77m to 16. 56m across 2 layers…;Cam=camera at (-2.59, -5.04, 1.15) on a 50.0mm lens, frame 25 of 168;Lay=2 visible instances… V=I2:50/83/100/11 D=I1:v/94/77/13/47/o:upright body proxy, head end up/m:stationary across this interval/r:right of StreetGround, behind all nearer…
+@1.988s F=medium;Comp=depth spans 4. 63m to 16. 68m across 2 layers…;Cam=camera at (-2.59, -5.04, 1.29) on a 50.0mm lens, frame 49 of 168;Lay=2 visible instances… V=I2:50/79/100/12 D=I1:v/96/76/9/48/o:upright body proxy, head end up/m:stationary across this interval/r:right of StreetGround, behind all nearer…
+@2.982s F=medium;Comp=depth spans 4. 50m to 16. 82m across 2 layers…;Cam=camera at (-2.59, -5.04, 1.49) on a 50.0mm lens, frame 73 of 168;Lay=2 visible instances… V=I2:50/73/100/13 D=I1:v/98/75/4/50/o:upright body proxy, head end up/m:drifting down frame in this interval/r:right of StreetGround, behind all nearer…
+@3.976s F=medium;Comp=depth spans 16. 93m to 16. 93m across 1 layers…;Cam=camera at (-2.59, -5.04, 1.70) on a 50.0mm lens, frame 96 of 168;Lay=1 visible instances… V=I2:50/67/100/14 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@4.970s F=medium;Comp=depth spans 17. 01m to 17. 01m across 1 layers…;Cam=camera at (-2.59, -5.04, 1.89) on a 50.0mm lens, frame 120 of 168;Lay=1 visible instances… V=I2:50/61/100/16 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@5.964s F=medium;Comp=depth spans 17. 05m to 17. 05m across 1 layers…;Cam=camera at (-2.59, -5.04, 2.04) on a 50.0mm lens, frame 144 of 168;Lay=1 visible instances… V=I2:50/57/100/17 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@6.958s F=medium;Comp=depth spans 17. 06m to 17. 06m across 1 layers…;Cam=camera at (-2.59, -5.04, 2.09) on a 50.0mm lens, frame 168 of 168;Lay=1 visible instances… V=I2:50/55/100/17 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+a low hum with loose stones hopping on the street
+
+non_diegetic_music:
+N/A

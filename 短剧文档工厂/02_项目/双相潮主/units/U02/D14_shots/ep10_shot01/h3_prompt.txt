@@ -1,0 +1,49 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city…; grounded industrial realism….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O002>,I3=<O003>,I4=<O008>,I5=<O011>,I6=<O013>.
+<Entity 01 CHAR Luchen>=E1[articulated/context/locomotion] members=I1;n=1;src=protagonist blockout in…; final=protagonist blockout in…; finish=real skin with pores and fine hair…; style=world_style_unit_contract.
+<Entity 02 CHAR Suqingci>=E2[articulated/primary/static] members=I2;n=1;src=female scientist…; final=female scientist character…; finish=real skin with pores and fine hair…; style=world_style_unit_contract.
+<Entity 03 ENV B-2>=E3[environment/context/static] members=I3-I4;n=2;src=B-2 built environment…; final=B-2 built environment shell…; finish=worn cement, oxidised steel and sheet…; style=world_style_unit_contract.
+<Entity 04 PROP B-2>=E4[rigid/context/static] members=I5-I6;n=2;src=B-2 set pieces and…; final=B-2 set pieces and fittings…; finish=utilitarian material with visible…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2;1:1;n=1.
+E3:I3-I4;1:1;n=2.
+E4:I5-I6;1:1;n=2.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as… | materials=real skin with pores and… | environment=cement yard plates cut by… | props=functional utilitarian… | light=one cold overhead key over….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3,E4=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E1:locomotion | Act=travels 0… | Keep=stay inside the source blockout bounds… | Ban=do not replace, duplicate or remove….
+[STATIC LOCK] E2,E3,E4 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-11.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=tracking;target=E2;path=camera travels from (-4. 32, 11. 39, 2…;dist=stable;azi=clockwise;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical…;ban=do not swap the follow move for… | Act=under the single cold white industrial lamp the scientist walks toward the… | Layout=4 visible instances… | Light=one cold overhead key over the….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 3. 74m to 10…;Cam=camera at (-4. 32, 11…;Lay=4 visible instances… V=I4:50/72/100/42,I5:31/63/61/38,I6:42/84/84/31 O=I3 D=I1:v/65/77/35/46/o:upright body…/m:stationary across…/r:right of FactoryYa…,I2:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…
+@1.370s F=medium;Comp=depth spans 3. 73m to 10…;Cam=camera at (-4. 33, 11…;Lay=4 visible instances… V=I4:50/73/100/45,I5:30/63/60/38,I6:41/84/83/31 O=I3 D=I1:v/67/77/36/46/o:upright body…/m:stationary across…/r:right of FactoryYa…,I2:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…
+@2.740s F=medium;Comp=depth spans 3. 67m to 10…;Cam=camera at (-4. 38, 11…;Lay=4 visible instances… V=I4:50/75/100/49,I5:28/63/57/39,I6:41/85/81/31 O=I3 D=I1:v/69/77/36/46/o:upright body…/m:stationary across…/r:right of FactoryYa…,I2:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…
+@4.109s F=medium;Comp=depth spans 3. 57m to 9…;Cam=camera at (-4. 44, 11…;Lay=4 visible instances… V=I4:50/75/100/49,I5:26/63/52/40,I6:40/85/79/31 O=I3 D=I1:v/72/77/38/46/o:upright body…/m:stationary across…/r:right of FactoryYa…,I2:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…
+@5.479s F=medium;Comp=depth spans 3. 45m to 9…;Cam=camera at (-4. 51, 10…;Lay=4 visible instances… V=I4:50/75/100/50,I5:24/63/48/42,I6:39/85/77/30 O=I3 D=I1:v/75/77/39/47/o:upright body…/m:stationary across…/r:right of FactoryYa…,I2:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…
+@6.849s F=medium;Comp=depth spans 3. 34m to 8…;Cam=camera at (-4. 59, 10…;Lay=5 visible instances… V=I3:100/11/0/21,I4:50/75/100/50,I5:21/63/43/43,I6:38/85/76/30 D=I1:v/79/77/41/47/o:upright body…/m:stationary across…/r:right of FactoryYa…,I2:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…
+@8.219s F=medium;Comp=depth spans 3. 26m to 8…;Cam=camera at (-4. 65, 10…;Lay=5 visible instances… V=I3:97/10/5/21,I4:50/75/100/50,I5:19/64/39/44,I6:37/85/74/30 D=I1:v/81/77/37/47/o:upright body…/m:stationary across…/r:right of FactoryYa…,I2:o/o/o:off screen at…/m:offscreen at…/r:leaves the frame…
+@9.589s F=medium;Comp=depth spans 3. 21m to 8…;Cam=camera at (-4. 70, 10…;Lay=6 visible instances… V=I3:96/10/8/20,I4:50/75/100/50,I5:18/64/36/45,I6:37/85/74/29 D=I1:v/83/76/34/47/o:upright body…/m:stationary across…/r:right of FactoryYa…,I2:v/97/75/5/50/o:upright body…/m:stationary across…/r:right of FactoryHa…
+@10.958s F=medium;Comp=depth spans 3. 22m to 8…;Cam=camera at (-4. 72, 10…;Lay=6 visible instances… V=I3:95/10/10/20,I4:50/75/100/50,I5:18/64/35/46,I6:37/85/74/29 D=I1:v/85/76/31/47/o:upright body…/m:stationary across…/r:right of FactoryYa…,I2:v/92/75/15/50/o:upright body…/m:stationary across…/r:right of Luchen…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+urgent footsteps on cement with the…
+
+non_diegetic_music:
+N/A

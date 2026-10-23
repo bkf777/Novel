@@ -1,0 +1,44 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O005>,I3=<O009>.
+<Entity 01 ENV A-1>=E1[environment/context/static] members=I1-I2;n=2;src=A-1 built environment shell enclosing the set: Corridor…; final=A-1 built environment shell enclosing the set: Corridor…; finish=worn cement, oxidised steel and sheet metal with cold grey reflections, shadow…; style=world_style_unit_contract.
+<Entity 02 PROP A-1>=E2[rigid/primary/static] members=I3;n=1;src=A-1 set pieces and fittings: GreyFramePanel; final=A-1 set pieces and fittings: GreyFramePanel; finish=utilitarian material with visible weight, thickness and use marks, cold grey metal…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1-I2;1:1;n=2.
+E2:I3;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D… | materials=real skin with pores and slight oil sheen, matte technical fabric… | environment=cement yard plates cut by fissures and pit openings, riveted steel… | props=functional utilitarian tooling with real weight and thickness… | light=one cold overhead key with shadow detail retained instead of….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-13.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=dolly;target=E2;path=camera travels from (-1. 00, 0. 70, 1. 16) to (-1. 00, 0. 46, 1…;dist=stable;azi=stable;elev=stable;lens=stable;comp=特写 framing in 9:16 vertical, subject held in the frame centre band with head…;ban=do not convert the linear camera move into an orbit or a zoom… | Act=grey frame panel fills the frame, corner tick marks stay fixed, bottom ticker scrolls upward | Layout=3 visible instances. Dominant RentalRoom covers 100x100 percent at frame 50/50… | Light=one cold overhead key with shadow detail retained instead of crushed black….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=extreme_close;Comp=depth spans 1. 20m to 5. 60m across 3 layers…;Cam=camera at (-1. 00, 0. 70, 1. 16) on a 50…;Lay=3 visible instances… V=I1:4/50/9/100,I2:50/50/100/100 D=I3:v/50/50/100/100/o:compact block proxy, near…/m:stationary across this interval/r:right of Corridor, behind all nearer…
+@1.620s F=extreme_close;Comp=depth spans 1. 19m to 5. 59m across 3 layers…;Cam=camera at (-1. 00, 0. 69, 1. 16) on a 50…;Lay=3 visible instances… V=I1:4/50/9/100,I2:50/50/100/100 D=I3:v/50/50/100/100/o:compact block proxy, near…/m:stationary across this interval/r:right of Corridor, behind all nearer…
+@3.240s F=extreme_close;Comp=depth spans 1. 16m to 5. 56m across 3 layers…;Cam=camera at (-1. 00, 0. 66, 1. 16) on a 50…;Lay=3 visible instances… V=I1:4/50/9/100,I2:50/50/100/100 D=I3:v/50/50/100/100/o:compact block proxy, near…/m:stationary across this interval/r:right of Corridor, behind all nearer…
+@4.859s F=extreme_close;Comp=depth spans 1. 12m to 5. 52m across 3 layers…;Cam=camera at (-1. 00, 0. 62, 1. 16) on a 50…;Lay=3 visible instances… V=I1:4/50/8/100,I2:50/50/100/100 D=I3:v/50/50/100/100/o:compact block proxy, near…/m:stationary across this interval/r:right of Corridor, behind all nearer…
+@6.479s F=extreme_close;Comp=depth spans 1. 08m to 5. 48m across 3 layers…;Cam=camera at (-1. 00, 0. 58, 1. 16) on a 50…;Lay=3 visible instances… V=I1:4/50/8/100,I2:50/50/100/100 D=I3:v/50/50/100/100/o:compact block proxy, near…/m:stationary across this interval/r:right of Corridor, behind all nearer…
+@8.099s F=extreme_close;Comp=depth spans 1. 04m to 5. 44m across 3 layers…;Cam=camera at (-1. 00, 0. 54, 1. 16) on a 50…;Lay=3 visible instances… V=I1:4/50/8/100,I2:50/50/100/100 D=I3:v/50/50/100/100/o:compact block proxy, near…/m:stationary across this interval/r:right of Corridor, behind all nearer…
+@9.719s F=extreme_close;Comp=depth spans 1. 00m to 5. 40m across 3 layers…;Cam=camera at (-1. 00, 0. 50, 1. 16) on a 50…;Lay=3 visible instances… V=I1:4/50/8/100,I2:50/50/100/100 D=I3:v/50/50/100/100/o:compact block proxy, near…/m:stationary across this interval/r:right of Corridor, behind all nearer…
+@11.339s F=extreme_close;Comp=depth spans 0. 97m to 5. 37m across 3 layers…;Cam=camera at (-1. 00, 0. 47, 1. 16) on a 50…;Lay=3 visible instances… V=I1:4/50/8/100,I2:50/50/100/100 D=I3:v/50/50/100/100/o:compact block proxy, near…/m:stationary across this interval/r:right of Corridor, behind all nearer…
+@12.958s F=extreme_close;Comp=depth spans 0. 96m to 5. 36m across 3 layers…;Cam=camera at (-1. 00, 0. 46, 1. 16) on a 50…;Lay=3 visible instances… V=I1:4/50/8/100,I2:50/50/100/100 D=I3:v/50/50/100/100/o:compact block proxy, near…/m:stationary across this interval/r:right of Corridor, behind all nearer…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+low frequency hum continues with one short panel refresh beep
+
+non_diegetic_music:
+N/A

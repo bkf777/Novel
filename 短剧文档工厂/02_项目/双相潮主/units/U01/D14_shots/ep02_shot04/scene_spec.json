@@ -1,0 +1,77 @@
+{
+  "scene_code": "A-3",
+  "size_m": [
+    8.0,
+    22.0,
+    40.0
+  ],
+  "ground_center_m": [
+    -6.16,
+    37.815
+  ],
+  "floor_z": -0.02,
+  "props": [
+    {
+      "name": "A-3_CHAR_LuchenHand_02",
+      "kind": "human_proxy",
+      "center_m": [
+        20.66,
+        6.46,
+        1.12
+      ],
+      "size_m": [
+        0.1,
+        0.1,
+        0.3
+      ],
+      "role": "primary"
+    },
+    {
+      "name": "A-3_EXT_OuterGravelGround_01",
+      "kind": "box",
+      "center_m": [
+        21.0,
+        3.0,
+        -0.02
+      ],
+      "size_m": [
+        6.0,
+        22.0,
+        0.04
+      ],
+      "role": "set"
+    },
+    {
+      "name": "A-3_EXT_RoadShoulder_01",
+      "kind": "box",
+      "center_m": [
+        15.0,
+        0.0,
+        -0.02
+      ],
+      "size_m": [
+        6.0,
+        20.0,
+        0.04
+      ],
+      "role": "set"
+    },
+    {
+      "name": "A-3_PROP_ClockTower_01",
+      "kind": "box",
+      "center_m": [
+        -81.3,
+        141.8,
+        20.0
+      ],
+      "size_m": [
+        8.0,
+        8.0,
+        40.0
+      ],
+      "role": "set"
+    }
+  ],
+  "walls": [],
+  "wall_thickness_m": 0.15
+}

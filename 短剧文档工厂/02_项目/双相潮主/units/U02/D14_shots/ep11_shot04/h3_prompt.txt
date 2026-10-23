@@ -1,0 +1,50 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O002>,I3=<O006>,I4=<O007>,I5=<O008>,I6=<O009>.
+<Entity 01 CHAR MarketQueuer>=E1[articulated/context/static] members=I1;n=1;src=market queue member blockout in two…; final=market queue member blockout in two…; finish=real skin with pores and fine hair, fabric with real…; style=world_style_unit_contract.
+<Entity 02 CHAR MarketTrader>=E2[articulated/context/static] members=I2;n=1;src=market stall trader blockout; final=market stall trader blockout; finish=real skin with pores and fine hair, fabric with real…; style=world_style_unit_contract.
+<Entity 03 ENV B-4>=E3[environment/context/static] members=I3-I4;n=2;src=B-4 built environment shell…; final=B-4 built environment shell enclosing…; finish=worn cement, oxidised steel and sheet metal with…; style=world_style_unit_contract.
+<Entity 04 PROP MarketLedBoard>=E4[rigid/primary/static] members=I5;n=1;src=B-4 set pieces and fittings…; final=B-4 set pieces and fittings…; finish=utilitarian material with visible weight, thickness…; style=world_style_unit_contract.
+<Entity 05 PROP B-4>=E5[rigid/context/static] members=I6;n=1;src=B-4 set pieces and fittings…; final=B-4 set pieces and fittings: MarketStalls; finish=utilitarian material with visible weight, thickness…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2;1:1;n=1.
+E3:I3-I4;1:1;n=2.
+E4:I5;1:1;n=1.
+E5:I6;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global… | materials=real skin with pores and slight oil sheen… | environment=cement yard plates cut by fire lines… | props=functional utilitarian tooling with real… | light=one cold overhead key over the….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3,E4,E5=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3,E4,E5 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_4401@0.000-1.000s I5,I6: rel=the led board lights up and the…; ban=do not build the market as a full….
+[Shot 1] @0.000-8.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E4;path=camera travels from (-2. 80, 2. 52, -2. 60) to (-2. 80, 2…;dist=stable;azi=stable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the…;ban=do not add any camera move, zoom or handheld… | Act=the led board of the market street lights up and the first trading entry scrolls… | Layout=5 visible instances… | Light=one cold overhead key over the purification….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 4. 38m to 12…;Cam=camera at (-2. 80, 2. 52, -2…;Lay=5 visible instances… V=I1:78/28/44/50,I2:88/19/24/39,I3:50/49/100/37,I4:50/98/100/1,I6:20/18/40/37 D=I5:o/o/o:off screen at…/m:offscreen at this anchor/r:leaves the frame before…
+@0.995s F=medium;Comp=depth spans 4. 38m to 12…;Cam=camera at (-2. 80, 2. 52, -2…;Lay=5 visible instances… V=I1:78/28/44/50,I2:88/19/24/39,I3:50/49/100/37,I4:50/98/100/1,I6:20/18/40/37 D=I5:o/o/o:off screen at…/m:offscreen at this anchor/r:leaves the frame before…
+@1.990s F=medium;Comp=depth spans 4. 38m to 12…;Cam=camera at (-2. 80, 2. 52, -2…;Lay=6 visible instances… V=I1:78/28/44/50,I2:88/19/24/39,I3:50/49/100/37,I4:50/98/100/1,I6:20/18/40/37 D=I5:v/42/5/62/10/o:horizontal volume…/m:stationary across this…/r:right of MarketStalls…
+@2.984s F=medium;Comp=depth spans 4. 38m to 12…;Cam=camera at (-2. 80, 2. 52, -2…;Lay=6 visible instances… V=I1:78/28/44/50,I2:88/19/24/39,I3:50/49/100/37,I4:50/98/100/1,I6:20/18/40/37 D=I5:v/44/15/87/20/o:horizontal volume…/m:stationary across this…/r:right of MarketStalls…
+@3.979s F=medium;Comp=depth spans 4. 38m to 12…;Cam=camera at (-2. 80, 2. 52, -2…;Lay=6 visible instances… V=I1:78/28/44/50,I2:88/19/24/39,I3:50/49/100/37,I4:50/98/100/1,I6:20/18/40/37 D=I5:v/48/22/96/25/o:horizontal volume…/m:stationary across this…/r:right of MarketStalls…
+@4.974s F=medium;Comp=depth spans 4. 38m to 12…;Cam=camera at (-2. 80, 2. 52, -2…;Lay=6 visible instances… V=I1:78/28/44/50,I2:88/19/24/39,I3:50/49/100/37,I4:50/98/100/1,I6:20/18/40/37 D=I5:v/48/22/96/25/o:horizontal volume…/m:stationary across this…/r:right of MarketStalls…
+@5.969s F=medium;Comp=depth spans 4. 38m to 12…;Cam=camera at (-2. 80, 2. 52, -2…;Lay=6 visible instances… V=I1:78/28/44/50,I2:88/19/24/39,I3:50/49/100/37,I4:50/98/100/1,I6:20/18/40/37 D=I5:v/48/22/96/25/o:horizontal volume…/m:stationary across this…/r:right of MarketStalls…
+@6.964s F=medium;Comp=depth spans 4. 38m to 12…;Cam=camera at (-2. 80, 2. 52, -2…;Lay=6 visible instances… V=I1:78/28/44/50,I2:88/19/24/39,I3:50/49/100/37,I4:50/98/100/1,I6:20/18/40/37 D=I5:v/48/22/96/25/o:horizontal volume…/m:stationary across this…/r:right of MarketStalls…
+@7.958s F=medium;Comp=depth spans 4. 38m to 12…;Cam=camera at (-2. 80, 2. 52, -2…;Lay=6 visible instances… V=I1:78/28/44/50,I2:88/19/24/39,I3:50/49/100/37,I4:50/98/100/1,I6:20/18/40/37 D=I5:v/48/22/96/25/o:horizontal volume…/m:stationary across this…/r:right of MarketStalls…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+a scrolling chime from the led board with street noise…
+
+non_diegetic_music:
+N/A

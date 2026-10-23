@@ -1,0 +1,62 @@
+{
+  "scene_code": "B-5",
+  "size_m": [
+    36.0,
+    58.0,
+    3.6
+  ],
+  "ground_center_m": [
+    5.0,
+    0.227
+  ],
+  "floor_z": 0.0,
+  "props": [
+    {
+      "name": "B-5_EXT_FactoryYardGround",
+      "kind": "box",
+      "center_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size_m": [
+        36.0,
+        58.0,
+        0.1
+      ],
+      "role": "primary"
+    },
+    {
+      "name": "B-5_EXT_OldSheetMetalWall_01",
+      "kind": "box",
+      "center_m": [
+        7.5,
+        0.3,
+        1.8
+      ],
+      "size_m": [
+        7.0,
+        0.12,
+        3.6
+      ],
+      "role": "set"
+    },
+    {
+      "name": "B-5_LGT_CitywideNoticeProjection_01",
+      "kind": "proxy",
+      "center_m": [
+        7.5,
+        0.38,
+        1.7
+      ],
+      "size_m": [
+        0.64,
+        0.002,
+        0.24
+      ],
+      "role": "set"
+    }
+  ],
+  "walls": [],
+  "wall_thickness_m": 0.15
+}

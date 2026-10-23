@@ -1,0 +1,43 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated stylisation….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O009>,I3=<O011>,I4=<O013>.
+<Entity 01 CHAR CleanedPatient>=E1[articulated/primary/static] members=I1;n=1;src=purified patient blockout with rolled sleeves; final=purified patient blockout with rolled sleeves; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings…; style=world_style_unit_contract.
+<Entity 02 PROP B-5>=E2[rigid/context/static] members=I2-I4;n=3;src=B-5 set pieces and fittings: OldSheetMetalWall…; final=B-5 set pieces and fittings: OldSheetMetalWall, CitywideNoticeProjection…; finish=utilitarian material with visible weight, thickness and use marks, cold grey metal and dull…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I4;1:1;n=3.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse realism for humans… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D with detail… | materials=real skin with pores and slight oil sheen, matte technical fabric with wear and… | environment=cement yard plates cut by fire lines, riveted steel frames and steel racks… | props=functional utilitarian tooling with real weight and thickness: welding rigs… | light=one cold overhead key over the purification bench with shadow detail retained….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-7.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E1;path=camera travels from (3. 29, 8. 85, 0. 79) to (3. 29, 8. 85, 0. 79) on a 50mm lens, total path length 0…;dist=stable;azi=stable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the frame centre band with head room above…;ban=do not add any camera move, zoom or handheld shake… | Act=the protagonist turns and gathers the purified patients, and a few of them close into a half circle in the cold white light with their sleeves rolled up… | Layout=4 visible instances. Dominant OldSheetMetalWall covers 74x50 percent at frame 63/25… | Light=one cold overhead key over the purification bench with shadow detail retained instead of….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 6. 33m to 9. 19m across 4 layers…;Cam=camera at (3.29, 8.85, 0.79) on a 50.0mm lens, frame 1 of 168;Lay=4 visible instances… V=I2:63/25/74/50,I3:66/20/69/40,I4:67/22/19/8 D=I1:v/67/32/67/50/o:prone body proxy, long axis lying…/m:stationary across this interval/r:right of CitywideNoticeProjection, left of…
+@0.994s F=medium;Comp=depth spans 6. 33m to 9. 19m across 4 layers…;Cam=camera at (3.29, 8.85, 0.79) on a 50.0mm lens, frame 25 of 168;Lay=4 visible instances… V=I2:63/25/74/50,I3:66/20/69/40,I4:67/22/19/8 D=I1:v/67/32/67/50/o:prone body proxy, long axis lying…/m:stationary across this interval/r:right of CitywideNoticeProjection, left of…
+@1.988s F=medium;Comp=depth spans 6. 33m to 9. 19m across 4 layers…;Cam=camera at (3.29, 8.85, 0.79) on a 50.0mm lens, frame 49 of 168;Lay=4 visible instances… V=I2:63/25/74/50,I3:66/20/69/40,I4:67/22/19/8 D=I1:v/67/32/67/50/o:prone body proxy, long axis lying…/m:stationary across this interval/r:right of CitywideNoticeProjection, left of…
+@2.982s F=medium;Comp=depth spans 6. 33m to 9. 19m across 4 layers…;Cam=camera at (3.29, 8.85, 0.79) on a 50.0mm lens, frame 73 of 168;Lay=4 visible instances… V=I2:63/25/74/50,I3:66/20/69/40,I4:67/22/19/8 D=I1:v/67/32/67/50/o:prone body proxy, long axis lying…/m:stationary across this interval/r:right of CitywideNoticeProjection, left of…
+@3.976s F=medium;Comp=depth spans 6. 33m to 9. 19m across 4 layers…;Cam=camera at (3.29, 8.85, 0.79) on a 50.0mm lens, frame 96 of 168;Lay=4 visible instances… V=I2:63/25/74/50,I3:66/20/69/40,I4:67/22/19/8 D=I1:v/67/32/67/50/o:prone body proxy, long axis lying…/m:stationary across this interval/r:right of CitywideNoticeProjection, left of…
+@4.970s F=medium;Comp=depth spans 6. 33m to 9. 19m across 4 layers…;Cam=camera at (3.29, 8.85, 0.79) on a 50.0mm lens, frame 120 of 168;Lay=4 visible instances… V=I2:63/25/74/50,I3:66/20/69/40,I4:67/22/19/8 D=I1:v/67/32/67/50/o:prone body proxy, long axis lying…/m:stationary across this interval/r:right of CitywideNoticeProjection, left of…
+@5.964s F=medium;Comp=depth spans 6. 33m to 9. 19m across 4 layers…;Cam=camera at (3.29, 8.85, 0.79) on a 50.0mm lens, frame 144 of 168;Lay=4 visible instances… V=I2:63/25/74/50,I3:66/20/69/40,I4:67/22/19/8 D=I1:v/67/32/67/50/o:prone body proxy, long axis lying…/m:stationary across this interval/r:right of CitywideNoticeProjection, left of…
+@6.958s F=medium;Comp=depth spans 6. 33m to 9. 19m across 4 layers…;Cam=camera at (3.29, 8.85, 0.79) on a 50.0mm lens, frame 168 of 168;Lay=4 visible instances… V=I2:63/25/74/50,I3:66/20/69/40,I4:67/22/19/8 D=I1:v/67/32/67/50/o:prone body proxy, long axis lying…/m:stationary across this interval/r:right of CitywideNoticeProjection, left of…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+the distant broadcast pausing for a beat with feet shifting inside the hall
+
+non_diegetic_music:
+N/A

@@ -1,0 +1,62 @@
+{
+  "scene_code": "A-1",
+  "size_m": [
+    5.4,
+    6.2,
+    2.7
+  ],
+  "ground_center_m": [
+    -0.333,
+    -0.167
+  ],
+  "floor_z": 0.0,
+  "props": [
+    {
+      "name": "A-1_EXT_Corridor",
+      "kind": "box",
+      "center_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size_m": [
+        2.7,
+        6.2,
+        2.7
+      ],
+      "role": "primary"
+    },
+    {
+      "name": "A-1_EXT_RentalRoom.004",
+      "kind": "box",
+      "center_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size_m": [
+        5.4,
+        0.15,
+        2.6
+      ],
+      "role": "set"
+    },
+    {
+      "name": "A-1_LGT_GreyFramePanel_01",
+      "kind": "proxy",
+      "center_m": [
+        -1.0,
+        -0.5,
+        1.16
+      ],
+      "size_m": [
+        0.7,
+        0.02,
+        0.95
+      ],
+      "role": "set"
+    }
+  ],
+  "walls": [],
+  "wall_thickness_m": 0.15
+}

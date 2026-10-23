@@ -1,0 +1,917 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep19_shot01/preview_video.mp4",
+    "duration": 12.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 288,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O003",
+      "source_name": "B-13_EXT_StreetGround",
+      "source_type": "MESH",
+      "root_name": "B-13_EXT_StreetGround",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-13_EXT_StreetGround; type=MESH; root=B-13_EXT_StreetGround; dimensions=40.000,36.000,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O006",
+      "source_name": "B-13_PROP_EnemyChiefEmblem_01",
+      "source_type": "MESH",
+      "root_name": "B-13_PROP_EnemyChiefEmblem_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-13_PROP_EnemyChiefEmblem_01; type=MESH; root=B-13_PROP_EnemyChiefEmblem_01; dimensions=0.240,0.240,0.030",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O007",
+      "source_name": "B-13_PROP_Flagpole_01",
+      "source_type": "MESH",
+      "root_name": "B-13_PROP_Flagpole_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-13_PROP_Flagpole_01; type=MESH; root=B-13_PROP_Flagpole_01; dimensions=0.500,0.500,7.200",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O008",
+      "source_name": "B-13_PROP_IdentityPlate_01",
+      "source_type": "MESH",
+      "root_name": "B-13_PROP_IdentityPlate_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-13_PROP_IdentityPlate_01; type=MESH; root=B-13_PROP_IdentityPlate_01; dimensions=0.220,0.160,0.030",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O010",
+      "source_name": "B-13_PROP_SteelGatePost_02",
+      "source_type": "MESH",
+      "root_name": "B-13_PROP_SteelGatePost",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-13_PROP_SteelGatePost_02; type=MESH; root=B-13_PROP_SteelGatePost; dimensions=0.460,0.460,6.200",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O011",
+      "source_name": "B-13_PROP_ThresholdStone_02",
+      "source_type": "MESH",
+      "root_name": "B-13_PROP_ThresholdStone_02",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-13_PROP_ThresholdStone_02; type=MESH; root=B-13_PROP_ThresholdStone_02; dimensions=8.200,0.600,0.300",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 ENV B-13",
+      "entity_class": "environment",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O003"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-13 built environment shell enclosing the set: StreetGround",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 PROP B-13",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O006",
+        "O007",
+        "O008",
+        "O010",
+        "O011"
+      ],
+      "instance_count": 5,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-13 set pieces and fittings: EnemyChiefEmblem, Flagpole, IdentityPlate, SteelGatePost, ThresholdStone",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_7301",
+      "source_instance_ids": [
+        "O006",
+        "O008",
+        "O010"
+      ],
+      "start_seconds": 0.0,
+      "end_seconds": 1.0,
+      "relation": "the two metal pieces hang flat on the gate post face and nothing else is hung there",
+      "forbidden_change": "do not hang a third object and do not put a readable badge on the metal"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 12.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 02 PROP B-13",
+        "world_path": "camera travels from (1.30, -3.40, 1.55) to (1.30, -3.40, 1.55) on a 50mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 中景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "the identity plate and the enemy chief emblem are hung on the steel gate post, only these two metal pieces hang there and nothing else is on the post; the post reads as outline only in the grey fog; the pattern on the metal is abstract geometry with no readable emblem",
+      "layout_and_occlusion": "6 visible instances. Dominant SteelGatePost covers 41x100 percent at frame 46/50. Left to right: SteelGatePost, StreetGround, ThresholdStone, IdentityPlate, EnemyChiefEmblem.",
+      "lighting_spatial_logic": "one cold overhead key over the steel table with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the emergency lamps on the gate posts, the residual fire heads, the twin flame and the derrick lamp as the only moving light sources, and the grey fog pressing down over the street with the unlit crossing kept dark"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep19_shot01/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.51m to 13.76m across 6 layers; nearest is ThresholdStone, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (1.30, -3.40, 1.55) on a 50.0mm lens, frame 1 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.22,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 26.35,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of IdentityPlate, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 52.51,
+          "center_y_percent": 54.99,
+          "bbox_width_percent": 22.81,
+          "bbox_height_percent": 1.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of IdentityPlate, left of Flagpole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 88.57,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 22.87,
+          "bbox_height_percent": 100.0,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EnemyChiefEmblem, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 52.37,
+          "center_y_percent": 40.63,
+          "bbox_width_percent": 19.19,
+          "bbox_height_percent": 2.05,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of EnemyChiefEmblem, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 46.21,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 40.72,
+          "bbox_height_percent": 100.0,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of StreetGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 99.4,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of IdentityPlate, behind all nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant SteelGatePost covers 41x100 percent at frame 46/50. Left to right: SteelGatePost, StreetGround, ThresholdStone, IdentityPlate, EnemyChiefEmblem."
+    },
+    {
+      "time_seconds": 1.495,
+      "source_frame": "D14_shots/ep19_shot01/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.51m to 13.76m across 6 layers; nearest is ThresholdStone, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (1.30, -3.40, 1.55) on a 50.0mm lens, frame 37 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.22,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 26.35,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of IdentityPlate, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 52.51,
+          "center_y_percent": 54.99,
+          "bbox_width_percent": 22.81,
+          "bbox_height_percent": 1.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of IdentityPlate, left of Flagpole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 88.57,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 22.87,
+          "bbox_height_percent": 100.0,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EnemyChiefEmblem, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 52.37,
+          "center_y_percent": 40.63,
+          "bbox_width_percent": 19.19,
+          "bbox_height_percent": 2.05,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of EnemyChiefEmblem, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 46.21,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 40.72,
+          "bbox_height_percent": 100.0,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of StreetGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 99.4,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of IdentityPlate, behind all nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant SteelGatePost covers 41x100 percent at frame 46/50. Left to right: SteelGatePost, StreetGround, ThresholdStone, IdentityPlate, EnemyChiefEmblem."
+    },
+    {
+      "time_seconds": 2.99,
+      "source_frame": "D14_shots/ep19_shot01/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.51m to 13.76m across 6 layers; nearest is ThresholdStone, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (1.30, -3.40, 1.55) on a 50.0mm lens, frame 73 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.22,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 26.35,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of IdentityPlate, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 52.51,
+          "center_y_percent": 54.99,
+          "bbox_width_percent": 22.81,
+          "bbox_height_percent": 1.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of IdentityPlate, left of Flagpole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 88.57,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 22.87,
+          "bbox_height_percent": 100.0,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EnemyChiefEmblem, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 52.37,
+          "center_y_percent": 40.63,
+          "bbox_width_percent": 19.19,
+          "bbox_height_percent": 2.05,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of EnemyChiefEmblem, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 46.21,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 40.72,
+          "bbox_height_percent": 100.0,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of StreetGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 99.4,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of IdentityPlate, behind all nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant SteelGatePost covers 41x100 percent at frame 46/50. Left to right: SteelGatePost, StreetGround, ThresholdStone, IdentityPlate, EnemyChiefEmblem."
+    },
+    {
+      "time_seconds": 4.484,
+      "source_frame": "D14_shots/ep19_shot01/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.51m to 13.76m across 6 layers; nearest is ThresholdStone, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (1.30, -3.40, 1.55) on a 50.0mm lens, frame 109 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.22,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 26.35,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of IdentityPlate, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 52.51,
+          "center_y_percent": 54.99,
+          "bbox_width_percent": 22.81,
+          "bbox_height_percent": 1.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of IdentityPlate, left of Flagpole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 88.57,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 22.87,
+          "bbox_height_percent": 100.0,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EnemyChiefEmblem, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 52.37,
+          "center_y_percent": 40.63,
+          "bbox_width_percent": 19.19,
+          "bbox_height_percent": 2.05,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of EnemyChiefEmblem, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 46.21,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 40.72,
+          "bbox_height_percent": 100.0,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of StreetGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 99.4,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of IdentityPlate, behind all nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant SteelGatePost covers 41x100 percent at frame 46/50. Left to right: SteelGatePost, StreetGround, ThresholdStone, IdentityPlate, EnemyChiefEmblem."
+    },
+    {
+      "time_seconds": 5.979,
+      "source_frame": "D14_shots/ep19_shot01/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.51m to 13.76m across 6 layers; nearest is ThresholdStone, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (1.30, -3.40, 1.55) on a 50.0mm lens, frame 144 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.22,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 26.35,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of IdentityPlate, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 52.51,
+          "center_y_percent": 54.99,
+          "bbox_width_percent": 22.81,
+          "bbox_height_percent": 1.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of IdentityPlate, left of Flagpole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 88.57,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 22.87,
+          "bbox_height_percent": 100.0,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EnemyChiefEmblem, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 52.37,
+          "center_y_percent": 40.63,
+          "bbox_width_percent": 19.19,
+          "bbox_height_percent": 2.05,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of EnemyChiefEmblem, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 46.21,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 40.72,
+          "bbox_height_percent": 100.0,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of StreetGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 99.4,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of IdentityPlate, behind all nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant SteelGatePost covers 41x100 percent at frame 46/50. Left to right: SteelGatePost, StreetGround, ThresholdStone, IdentityPlate, EnemyChiefEmblem."
+    },
+    {
+      "time_seconds": 7.474,
+      "source_frame": "D14_shots/ep19_shot01/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.51m to 13.76m across 6 layers; nearest is ThresholdStone, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (1.30, -3.40, 1.55) on a 50.0mm lens, frame 180 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.22,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 26.35,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of IdentityPlate, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 52.51,
+          "center_y_percent": 54.99,
+          "bbox_width_percent": 22.81,
+          "bbox_height_percent": 1.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of IdentityPlate, left of Flagpole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 88.57,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 22.87,
+          "bbox_height_percent": 100.0,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EnemyChiefEmblem, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 52.37,
+          "center_y_percent": 40.63,
+          "bbox_width_percent": 19.19,
+          "bbox_height_percent": 2.05,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of EnemyChiefEmblem, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 46.21,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 40.72,
+          "bbox_height_percent": 100.0,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of StreetGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 99.4,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of IdentityPlate, behind all nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant SteelGatePost covers 41x100 percent at frame 46/50. Left to right: SteelGatePost, StreetGround, ThresholdStone, IdentityPlate, EnemyChiefEmblem."
+    },
+    {
+      "time_seconds": 8.969,
+      "source_frame": "D14_shots/ep19_shot01/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.51m to 13.76m across 6 layers; nearest is ThresholdStone, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (1.30, -3.40, 1.55) on a 50.0mm lens, frame 216 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.22,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 26.35,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of IdentityPlate, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 52.51,
+          "center_y_percent": 54.99,
+          "bbox_width_percent": 22.81,
+          "bbox_height_percent": 1.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of IdentityPlate, left of Flagpole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 88.57,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 22.87,
+          "bbox_height_percent": 100.0,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EnemyChiefEmblem, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 52.37,
+          "center_y_percent": 40.63,
+          "bbox_width_percent": 19.19,
+          "bbox_height_percent": 2.05,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of EnemyChiefEmblem, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 46.21,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 40.72,
+          "bbox_height_percent": 100.0,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of StreetGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 99.4,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of IdentityPlate, behind all nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant SteelGatePost covers 41x100 percent at frame 46/50. Left to right: SteelGatePost, StreetGround, ThresholdStone, IdentityPlate, EnemyChiefEmblem."
+    },
+    {
+      "time_seconds": 10.464,
+      "source_frame": "D14_shots/ep19_shot01/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.51m to 13.76m across 6 layers; nearest is ThresholdStone, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (1.30, -3.40, 1.55) on a 50.0mm lens, frame 252 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.22,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 26.35,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of IdentityPlate, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 52.51,
+          "center_y_percent": 54.99,
+          "bbox_width_percent": 22.81,
+          "bbox_height_percent": 1.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of IdentityPlate, left of Flagpole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 88.57,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 22.87,
+          "bbox_height_percent": 100.0,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EnemyChiefEmblem, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 52.37,
+          "center_y_percent": 40.63,
+          "bbox_width_percent": 19.19,
+          "bbox_height_percent": 2.05,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of EnemyChiefEmblem, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 46.21,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 40.72,
+          "bbox_height_percent": 100.0,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of StreetGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 99.4,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of IdentityPlate, behind all nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant SteelGatePost covers 41x100 percent at frame 46/50. Left to right: SteelGatePost, StreetGround, ThresholdStone, IdentityPlate, EnemyChiefEmblem."
+    },
+    {
+      "time_seconds": 11.958,
+      "source_frame": "D14_shots/ep19_shot01/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.51m to 13.76m across 6 layers; nearest is ThresholdStone, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (1.30, -3.40, 1.55) on a 50.0mm lens, frame 288 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.22,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 26.35,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of IdentityPlate, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 52.51,
+          "center_y_percent": 54.99,
+          "bbox_width_percent": 22.81,
+          "bbox_height_percent": 1.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of IdentityPlate, left of Flagpole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 88.57,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 22.87,
+          "bbox_height_percent": 100.0,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EnemyChiefEmblem, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 52.37,
+          "center_y_percent": 40.63,
+          "bbox_width_percent": 19.19,
+          "bbox_height_percent": 2.05,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of EnemyChiefEmblem, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 46.21,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 40.72,
+          "bbox_height_percent": 100.0,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of StreetGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 99.4,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of IdentityPlate, behind all nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant SteelGatePost covers 41x100 percent at frame 46/50. Left to right: SteelGatePost, StreetGround, ThresholdStone, IdentityPlate, EnemyChiefEmblem."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

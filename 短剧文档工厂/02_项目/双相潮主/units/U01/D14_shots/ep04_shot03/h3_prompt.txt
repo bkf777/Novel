@@ -1,0 +1,50 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city…; grounded industrial realism….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O003>,I3=<O004>,I4=<O005>,I5=<O007>.
+<Entity 01 ENV A-5>=E1[environment/context/static] members=I1,I5;n=2;src=A-5 built environment…; final=A-5 built environment shell…; finish=worn cement, oxidised steel and sheet…; style=world_style_unit_contract.
+<Entity 02 FX AshDust>=E2[effect/context/effect_evolution] members=I2;n=1;src=grey ash dust cloud; final=grey ash dust cloud; finish=stylised energy surface in the two…; style=world_style_unit_contract.
+<Entity 03 FX MistCore>=E3[effect/primary/effect_evolution] members=I3;n=1;src=cold white mist core grain; final=cold white mist core grain; finish=stylised energy surface in the two…; style=world_style_unit_contract.
+<Entity 04 PROP A-5>=E4[rigid/context/static] members=I4;n=1;src=A-5 set pieces and…; final=A-5 set pieces and fittings…; finish=utilitarian material with visible…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1,I5;1:1;n=2.
+E2:I2;1:1;n=1.
+E3:I3;1:1;n=1.
+E4:I4;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as… | materials=real skin with pores and… | environment=cement yard plates cut by… | props=functional utilitarian… | light=one cold overhead key with….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3,E4=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E2:effect_evolution | Act=develops and drifts as the effect… | Keep=stay inside the source blockout bounds… | Ban=do not replace, duplicate or remove….
+E3:effect_evolution | Act=develops and drifts as the effect… | Keep=stay inside the source blockout bounds… | Ban=do not replace, duplicate or remove….
+[STATIC LOCK] E1,E4 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_1501@0.350-1.000s I3: rel=mist core lifts from…; ban=do not leave the core….
+[Shot 1] @0.000-12.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E3;path=camera travels from (3. 60, 4. 80, 1…;dist=increase;azi=stable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical…;ban=do not add any camera move, zoom… | Act=insect body breaks into grey ash dust, the dust hangs and settles, one mist… | Layout=5 visible instances… | Light=one cold overhead key with shadow….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 3. 25m to 10…;Cam=camera at (3. 60, 4…;Lay=5 visible instances… V=I1:50/77/100/46,I4:50/46/99/91,I5:4/85/7/14 D=I2:v/6/77/11/31/o:compact block…/m:stationary across…/r:right of GroundBre…,I3:v/60/57/4/2/o:compact block…/m:stationary across…/r:right of BattleGro…
+@1.495s F=medium;Comp=depth spans 3. 25m to 10…;Cam=camera at (3. 60, 4…;Lay=5 visible instances… V=I1:50/77/100/46,I4:50/46/99/91,I5:4/85/7/14 D=I2:v/8/71/16/40/o:compact block…/m:stationary across…/r:right of GroundBre…,I3:v/58/54/5/2/o:compact block…/m:stationary across…/r:right of BattleGro…
+@2.990s F=medium;Comp=depth spans 3. 25m to 10…;Cam=camera at (3. 60, 4…;Lay=5 visible instances… V=I1:50/77/100/46,I4:50/46/99/91,I5:4/85/7/14 D=I2:v/10/64/20/48/o:compact block…/m:stationary across…/r:right of GroundBre…,I3:v/56/52/7/3/o:compact block…/m:stationary across…/r:right of BattleGro…
+@4.484s F=medium;Comp=depth spans 3. 25m to 10…;Cam=camera at (3. 60, 4…;Lay=5 visible instances… V=I1:50/77/100/46,I4:50/46/99/91,I5:4/85/7/14 D=I2:v/12/58/24/58/o:compact block…/m:stationary across…/r:right of GroundBre…,I3:v/55/50/8/3/o:compact block…/m:stationary across…/r:right of BattleGro…
+@5.979s F=medium;Comp=depth spans 3. 25m to 10…;Cam=camera at (3. 60, 4…;Lay=5 visible instances… V=I1:50/77/100/46,I4:50/46/99/91,I5:4/85/7/14 D=I2:v/12/59/24/58/o:compact block…/m:stationary across…/r:right of GroundBre…,I3:v/54/48/8/3/o:compact block…/m:stationary across…/r:right of BattleGro…
+@7.474s F=medium;Comp=depth spans 3. 25m to 10…;Cam=camera at (3. 60, 4…;Lay=5 visible instances… V=I1:50/77/100/46,I4:50/46/99/91,I5:4/85/7/14 D=I2:v/12/61/24/58/o:compact block…/m:stationary across…/r:right of GroundBre…,I3:v/53/48/7/3/o:compact block…/m:stationary across…/r:right of BattleGro…
+@8.969s F=medium;Comp=depth spans 3. 25m to 10…;Cam=camera at (3. 60, 4…;Lay=5 visible instances… V=I1:50/77/100/46,I4:50/46/99/91,I5:4/85/7/14 D=I2:v/12/63/24/58/o:compact block…/m:stationary across…/r:right of GroundBre…,I3:v/52/48/5/2/o:compact block…/m:stationary across…/r:right of BattleGro…
+@10.464s F=medium;Comp=depth spans 3. 25m to 10…;Cam=camera at (3. 60, 4…;Lay=5 visible instances… V=I1:50/77/100/46,I4:50/46/99/91,I5:4/85/7/14 D=I2:v/12/64/24/58/o:compact block…/m:stationary across…/r:right of GroundBre…,I3:v/51/47/4/2/o:compact block…/m:stationary across…/r:right of BattleGro…
+@11.958s F=medium;Comp=depth spans 3. 25m to 10…;Cam=camera at (3. 60, 4…;Lay=5 visible instances… V=I1:50/77/100/46,I4:50/46/99/91,I5:4/85/7/14 D=I2:v/12/66/24/58/o:compact block…/m:stationary across…/r:right of GroundBre…,I3:v/50/47/3/1/o:compact block…/m:stationary across…/r:right of GreyFrame…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+fine hiss of ash dispersing and one low…
+
+non_diegetic_music:
+N/A

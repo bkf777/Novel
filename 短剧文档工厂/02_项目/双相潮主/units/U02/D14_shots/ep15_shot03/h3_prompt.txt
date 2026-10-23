@@ -1,0 +1,44 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O009>.
+<Entity 01 CHAR Suqingci>=E1[articulated/context/static] members=I1;n=1;src=female scientist character blockout in white lab coat; final=female scientist character blockout in white lab coat; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal…; style=world_style_unit_contract.
+<Entity 02 PROP B-9>=E2[rigid/primary/static] members=I2;n=1;src=B-9 set pieces and fittings: DataTablet; final=B-9 set pieces and fittings: DataTablet; finish=utilitarian material with visible weight, thickness and use marks, cold grey metal…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D… | materials=real skin with pores and slight oil sheen, matte technical fabric… | environment=cement yard plates cut by fire lines, riveted steel frames and… | props=functional utilitarian tooling with real weight and thickness… | light=one cold overhead key over the purification bench with shadow….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-11.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E2;path=camera travels from (-5. 00, 13. 54, 1. 33) to (-5. 00, 13. 54, 1…;dist=stable;azi=stable;elev=stable;lens=stable;comp=特写 framing in 9:16 vertical, subject held in the frame centre band with head…;ban=do not add any camera move, zoom or handheld shake… | Act=the data tablet is supported in the palm of the scientist and the spectrum on its screen jumps with uneven noise, the peaks… | Layout=2 visible instances. Dominant DataTablet covers 100x69 percent at frame 50/34. Left to right: DataTablet, Suqingci. | Light=one cold overhead key over the purification bench with shadow detail….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=extreme_close;Comp=depth spans 0. 53m to 0. 55m across 2 layers…;Cam=camera at (-5. 00, 13. 54, 1. 33) on a 50…;Lay=2 visible instances… V=I1:50/44/75/82 D=I2:v/50/34/100/69/o:compact block proxy, near…/m:stationary across this interval/r:left of Suqingci, behind all nearer…
+@1.370s F=extreme_close;Comp=depth spans 0. 53m to 0. 55m across 2 layers…;Cam=camera at (-5. 00, 13. 54, 1. 33) on a 50…;Lay=2 visible instances… V=I1:50/44/75/82 D=I2:v/50/34/100/69/o:compact block proxy, near…/m:stationary across this interval/r:left of Suqingci, behind all nearer…
+@2.740s F=extreme_close;Comp=depth spans 0. 53m to 0. 55m across 2 layers…;Cam=camera at (-5. 00, 13. 54, 1. 33) on a 50…;Lay=2 visible instances… V=I1:50/44/75/82 D=I2:v/50/34/100/69/o:compact block proxy, near…/m:stationary across this interval/r:left of Suqingci, behind all nearer…
+@4.109s F=extreme_close;Comp=depth spans 0. 53m to 0. 55m across 2 layers…;Cam=camera at (-5. 00, 13. 54, 1. 33) on a 50…;Lay=2 visible instances… V=I1:50/44/75/82 D=I2:v/50/34/100/69/o:compact block proxy, near…/m:stationary across this interval/r:left of Suqingci, behind all nearer…
+@5.479s F=extreme_close;Comp=depth spans 0. 53m to 0. 55m across 2 layers…;Cam=camera at (-5. 00, 13. 54, 1. 33) on a 50…;Lay=2 visible instances… V=I1:50/44/75/82 D=I2:v/50/34/100/69/o:compact block proxy, near…/m:stationary across this interval/r:left of Suqingci, behind all nearer…
+@6.849s F=extreme_close;Comp=depth spans 0. 53m to 0. 55m across 2 layers…;Cam=camera at (-5. 00, 13. 54, 1. 33) on a 50…;Lay=2 visible instances… V=I1:50/44/75/82 D=I2:v/50/34/100/69/o:compact block proxy, near…/m:stationary across this interval/r:left of Suqingci, behind all nearer…
+@8.219s F=extreme_close;Comp=depth spans 0. 53m to 0. 55m across 2 layers…;Cam=camera at (-5. 00, 13. 54, 1. 33) on a 50…;Lay=2 visible instances… V=I1:50/44/75/82 D=I2:v/50/34/100/69/o:compact block proxy, near…/m:stationary across this interval/r:left of Suqingci, behind all nearer…
+@9.589s F=extreme_close;Comp=depth spans 0. 53m to 0. 55m across 2 layers…;Cam=camera at (-5. 00, 13. 54, 1. 33) on a 50…;Lay=2 visible instances… V=I1:50/44/75/82 D=I2:v/50/34/100/69/o:compact block proxy, near…/m:stationary across this interval/r:left of Suqingci, behind all nearer…
+@10.958s F=extreme_close;Comp=depth spans 0. 53m to 0. 55m across 2 layers…;Cam=camera at (-5. 00, 13. 54, 1. 33) on a 50…;Lay=2 visible instances… V=I1:50/44/75/82 D=I2:v/50/34/100/69/o:compact block proxy, near…/m:stationary across this interval/r:left of Suqingci, behind all nearer…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+the electronic buzz of the tablet with the hall noise falling away
+
+non_diegetic_music:
+N/A

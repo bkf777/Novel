@@ -1,0 +1,45 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated stylisation….
+[INSTANCE REGISTRY] I1=<O002>,I2=<O005>.
+<Entity 01 CHAR LuchenHand>=E1[articulated/primary/locomotion] members=I1;n=1;src=protagonist raised hand blockout; final=protagonist raised hand blockout; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings…; style=world_style_unit_contract.
+<Entity 02 FX TwinFlame>=E2[effect/context/static] members=I2;n=1;src=black and white twin flame on the wrist; final=black and white twin flame on the wrist; finish=stylised energy surface in the two permitted flame colours, or grey-white ceramic shell for…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse realism for humans… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D with detail… | materials=real skin with pores and slight oil sheen, matte technical fabric with wear and… | environment=cement yard plates cut by fissures and pit openings, riveted steel frames… | props=functional utilitarian tooling with real weight and thickness: crowbars, ration… | light=one cold overhead key with shadow detail retained instead of crushed black….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E1:locomotion | Act=travels 0.27m across the set during the shot | Keep=stay inside the source blockout bounds for the full shot | Ban=do not replace, duplicate or remove this instance.
+[STATIC LOCK] E2 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_1101@0.000-1.000s I2: rel=bone pattern and twin flame stay bound to the right wrist skin; ban=do not move the pattern off the wrist or add flame to the body.
+[Shot 1] @0.000-12.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E1;path=camera travels from (1. 70, 1. 27, 1. 51) to (1. 70, 1. 27, 1. 51) on a 85mm lens, total path length 0…;dist=increase;azi=stable;elev=stable;lens=stable;comp=近景 framing in 9:16 vertical, subject held in the frame centre band with head room above…;ban=do not add any camera move, zoom or handheld shake… | Act=first black and white bone line creeps from wrist toward the back of the hand, twin flame ignites at the wrist, raised wrist tilts and the flame leans… | Layout=2 visible instances. Dominant LuchenHand covers 40x70 percent at frame 80/36. Left to right: LuchenHand, TwinFlame. | Light=one cold overhead key with shadow detail retained instead of crushed black, cold grey….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=close;Comp=depth spans 0. 13m to 1. 12m across 2 layers…;Cam=camera at (1.70, 1.27, 1.51) on a 85.0mm lens, frame 1 of 288;Lay=2 visible instances… V=I2:85/33/31/66 D=I1:v/80/36/40/70/o:upright body proxy, head end up/m:stationary across this interval/r:left of TwinFlame, in front of nearer elements…
+@1.495s F=close;Comp=depth spans 0. 13m to 1. 06m across 2 layers…;Cam=camera at (1.70, 1.27, 1.51) on a 85.0mm lens, frame 37 of 288;Lay=2 visible instances… V=I2:85/33/31/66 D=I1:v/80/23/39/46/o:upright body proxy, head end up/m:stationary across this interval/r:left of TwinFlame, in front of nearer elements…
+@2.990s F=close;Comp=depth spans 0. 13m to 1. 00m across 2 layers…;Cam=camera at (1.70, 1.27, 1.51) on a 85.0mm lens, frame 73 of 288;Lay=2 visible instances… V=I2:85/33/31/66 D=I1:v/81/9/38/18/o:upright body proxy, head end up/m:stationary across this interval/r:left of TwinFlame, in front of nearer elements…
+@4.484s F=close;Comp=depth spans 0. 13m to 0. 13m across 1 layers…;Cam=camera at (1.70, 1.27, 1.51) on a 85.0mm lens, frame 109 of 288;Lay=1 visible instances… V=I2:85/33/31/66 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@5.979s F=close;Comp=depth spans 0. 13m to 0. 13m across 1 layers…;Cam=camera at (1.70, 1.27, 1.51) on a 85.0mm lens, frame 144 of 288;Lay=1 visible instances… V=I2:85/33/31/66 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@7.474s F=close;Comp=depth spans 0. 13m to 0. 13m across 1 layers…;Cam=camera at (1.70, 1.27, 1.51) on a 85.0mm lens, frame 180 of 288;Lay=1 visible instances… V=I2:85/33/31/66 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@8.969s F=close;Comp=depth spans 0. 13m to 0. 13m across 1 layers…;Cam=camera at (1.70, 1.27, 1.51) on a 85.0mm lens, frame 216 of 288;Lay=1 visible instances… V=I2:85/33/31/66 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@10.464s F=close;Comp=depth spans 0. 13m to 0. 13m across 1 layers…;Cam=camera at (1.70, 1.27, 1.51) on a 85.0mm lens, frame 252 of 288;Lay=1 visible instances… V=I2:85/33/31/66 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@11.958s F=close;Comp=depth spans 0. 13m to 0. 13m across 1 layers…;Cam=camera at (1.70, 1.27, 1.51) on a 85.0mm lens, frame 288 of 288;Lay=1 visible instances… V=I2:85/33/31/66 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+low breath of the twin flame igniting and thin night wind over the bone pattern
+
+non_diegetic_music:
+N/A

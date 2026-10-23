@@ -1,0 +1,52 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial…; grounded industrial….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O006>,I3=<O009>,I4=<O010>,I5=<O016>,I6=<O018>.
+<Entity 01 CHAR LuchenHand>=E1[articulated/primary/static] members=I1;n=1;src=protagonist raised…; final=protagonist raised…; finish=real skin with pores and…; style=world_style_unit_con….
+<Entity 02 ENV B-19>=E2[environment/context/static] members=I2;n=1;src=B-19 built environme…; final=B-19 built environment…; finish=worn cement, oxidised steel…; style=world_style_unit_con….
+<Entity 03 FX BlackWhiteTwinFlame>=E3[effect/context/effect_evolution] members=I3;n=1;src=black and white…; final=black and white twin…; finish=stylised energy surface in…; style=world_style_unit_con….
+<Entity 04 PROP B-19>=E4[rigid/context/static] members=I4-I5;n=2;src=B-19 set pieces…; final=B-19 set pieces and…; finish=utilitarian material with…; style=world_style_unit_con….
+<Entity 05 FX WhiteSmoke>=E5[effect/context/effect_evolution] members=I6;n=1;src=white smoke rising…; final=white smoke rising…; finish=stylised energy surface in…; style=world_style_unit_con….
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2;1:1;n=1.
+E3:I3;1:1;n=1.
+E4:I4-I5;1:1;n=2.
+E5:I6;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey… | materials=real skin with pores and… | environment=a brick street cut by… | props=functional utilitarian… | light=one cold overhead key….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3,E4,E5=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E3:effect_evolution | Act=develops and drifts as… | Keep=stay inside the source… | Ban=do not replace, duplicate….
+E5:effect_evolution | Act=develops and drifts as… | Keep=stay inside the source… | Ban=do not replace, duplicate….
+[STATIC LOCK] E1,E2,E4 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_9501@0.000-0.750s I3,I4,I5,I6: rel=the vapour core…; ban=do not add a third….
+[Shot 1] @0.000-13.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E4;path=camera travels from (-1. 82, 18…;dist=stable;azi=stable;elev=stable;lens=stable;comp=近景 framing in 9:16…;ban=do not add any camera… | Act=the protagonist presses one vapour core against the name board and the grey… | Layout=4 visible instances… | Light=one cold overhead key over the….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=close;Comp=depth spans 1…;Cam=camera at (-1…;Lay=4 visible instance… V=I2:50/16/100/31,I4:50/34/100/68,I5:2/89/5/21 D=I1:v/5/58/9/71/o:upright bo…/m:stationary ac…/r:right of Vapo…,I3:o/o/o:off screen…/m:offscreen at…/r:leaves the fr…,I6:o/o/o:off screen…/m:offscreen at…/r:leaves the fr…
+@1.620s F=close;Comp=depth spans 1…;Cam=camera at (-1…;Lay=4 visible instance… V=I2:50/16/100/31,I4:50/34/100/68,I5:2/89/5/21 D=I1:v/5/58/9/71/o:upright bo…/m:stationary ac…/r:right of Vapo…,I3:o/o/o:off screen…/m:offscreen at…/r:leaves the fr…,I6:o/o/o:off screen…/m:offscreen at…/r:leaves the fr…
+@3.240s F=close;Comp=depth spans 1…;Cam=camera at (-1…;Lay=6 visible instance… V=I2:50/16/100/31,I4:50/34/100/68,I5:2/89/5/21 D=I1:v/5/58/9/71/o:upright bo…/m:stationary ac…/r:right of Vapo…,I3:v/6/85/11/29/o:compact bl…/m:stationary ac…/r:right of Luch…,I6:v/1/24/2/48/o:vertical v…/m:stationary ac…/r:left of Vapou…
+@4.859s F=close;Comp=depth spans 1…;Cam=camera at (-1…;Lay=6 visible instance… V=I2:50/16/100/31,I4:50/34/100/68,I5:2/89/5/21 D=I1:v/5/58/9/71/o:upright bo…/m:stationary ac…/r:right of Whit…,I3:v/13/82/25/35/o:compact bl…/m:stationary ac…/r:right of Luch…,I6:v/3/18/6/37/o:vertical v…/m:stationary ac…/r:right of Vapo…
+@6.479s F=close;Comp=depth spans 1…;Cam=camera at (-1…;Lay=6 visible instance… V=I2:50/16/100/31,I4:50/34/100/68,I5:2/89/5/21 D=I1:v/5/58/9/71/o:upright bo…/m:stationary ac…/r:right of Vapo…,I3:v/13/82/25/35/o:compact bl…/m:stationary ac…/r:right of Whit…,I6:v/5/13/10/25/o:vertical v…/m:stationary ac…/r:right of Luch…
+@8.099s F=close;Comp=depth spans 1…;Cam=camera at (-1…;Lay=6 visible instance… V=I2:50/16/100/31,I4:50/34/100/68,I5:2/89/5/21 D=I1:v/5/58/9/71/o:upright bo…/m:stationary ac…/r:right of Vapo…,I3:v/13/82/25/35/o:compact bl…/m:stationary ac…/r:right of Whit…,I6:v/7/7/13/13/o:vertical v…/m:stationary ac…/r:right of Luch…
+@9.719s F=close;Comp=depth spans 1…;Cam=camera at (-1…;Lay=5 visible instance… V=I2:50/16/100/31,I4:50/34/100/68,I5:2/89/5/21 D=I1:v/5/58/9/71/o:upright bo…/m:stationary ac…/r:right of Vapo…,I3:v/13/82/25/35/o:compact bl…/m:stationary ac…/r:right of Luch…,I6:o/o/o:off screen…/m:offscreen at…/r:leaves the fr…
+@11.339s F=close;Comp=depth spans 1…;Cam=camera at (-1…;Lay=5 visible instance… V=I2:50/16/100/31,I4:50/34/100/68,I5:2/89/5/21 D=I1:v/5/58/9/71/o:upright bo…/m:stationary ac…/r:right of Vapo…,I3:v/13/82/25/35/o:compact bl…/m:stationary ac…/r:right of Luch…,I6:o/o/o:off screen…/m:offscreen at…/r:leaves the fr…
+@12.958s F=close;Comp=depth spans 1…;Cam=camera at (-1…;Lay=5 visible instance… V=I2:50/16/100/31,I4:50/34/100/68,I5:2/89/5/21 D=I1:v/5/58/9/71/o:upright bo…/m:stationary ac…/r:right of Vapo…,I3:v/13/82/25/35/o:compact bl…/m:stationary ac…/r:right of Luch…,I6:o/o/o:off screen…/m:offscreen at…/r:leaves the fr…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+a low breath of the twin flame with a…
+
+non_diegetic_music:
+N/A

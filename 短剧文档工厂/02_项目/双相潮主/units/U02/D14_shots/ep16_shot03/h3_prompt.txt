@@ -1,0 +1,46 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated….
+[INSTANCE REGISTRY] I1=<O002>,I2=<O006>,I3=<O013>.
+<Entity 01 CHAR QueueMember>=E1[articulated/primary/static] members=I1;n=1;src=queue member blockout in silhouette; final=queue member blockout in silhouette; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal…; style=world_style_unit_contract.
+<Entity 02 ENV B-10>=E2[environment/context/static] members=I2;n=1;src=B-10 built environment shell enclosing the set…; final=B-10 built environment shell enclosing the set: FactoryYardGround; finish=worn cement, oxidised steel and sheet metal with cold grey reflections, shadow…; style=world_style_unit_contract.
+<Entity 03 PROP B-10>=E3[rigid/context/static] members=I3;n=1;src=B-10 set pieces and fittings: FireLine_01; final=B-10 set pieces and fittings: FireLine_01; finish=utilitarian material with visible weight, thickness and use marks, cold grey metal…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2;1:1;n=1.
+E3:I3;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D… | materials=real skin with pores and slight oil sheen, matte technical fabric… | environment=cement yard plates cut by fire lines, riveted steel frames and… | props=functional utilitarian tooling with real weight and thickness… | light=one cold overhead key over the purification bench with shadow….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-12.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=tracking;target=none;path=camera travels from (-14. 00, -12. 72, 2. 09) to (-14. 00, -10. 72, 2…;dist=stable;azi=variable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the frame centre band with head…;ban=do not swap the follow move for an orbit or a frontal push… | Act=two steel racks are lifted up across the front of the fire line and a gap is left between them… | Layout=1 visible instances. Dominant FactoryYardGround covers 100x1 percent at frame 50/55. Left to right: FactoryYardGround. | Light=one cold overhead key over the purification bench with shadow detail….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 11. 47m to 11. 47m across 1 layers…;Cam=camera at (-14. 00, -12. 72, 2. 09) on a 35…;Lay=1 visible instances… V=I2:50/55/100/1 O=I3 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@1.495s F=medium;Comp=depth spans 11. 55m to 11. 55m across 1 layers…;Cam=camera at (-14. 00, -12. 63, 2. 09) on a 35…;Lay=1 visible instances… V=I2:50/55/100/1 O=I3 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@2.990s F=medium;Comp=depth spans 11. 77m to 11. 77m across 1 layers…;Cam=camera at (-14. 00, -12. 41, 2. 09) on a 35…;Lay=1 visible instances… V=I2:50/55/100/1 O=I3 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@4.484s F=medium;Comp=depth spans 2. 63m to 12. 09m across 2 layers…;Cam=camera at (-14. 00, -12. 08, 2. 09) on a 35…;Lay=2 visible instances… V=I2:50/56/100/1 O=I3 D=I1:v/97/75/5/49/o:upright body proxy, head end up/m:stationary across this interval/r:right of FactoryYardGround, behind…
+@5.979s F=medium;Comp=depth spans 2. 97m to 12. 44m across 2 layers…;Cam=camera at (-14. 00, -11. 73, 2. 09) on a 35…;Lay=2 visible instances… V=I2:50/56/100/1 O=I3 D=I1:v/95/75/10/50/o:upright body proxy, head end up/m:stationary across this interval/r:right of FactoryYardGround, behind…
+@7.474s F=medium;Comp=depth spans 3. 33m to 12. 80m across 2 layers…;Cam=camera at (-14. 00, -11. 36, 2. 09) on a 35…;Lay=2 visible instances… V=I2:50/56/100/1 O=I3 D=I1:v/93/75/14/50/o:upright body proxy, head end up/m:stationary across this interval/r:right of FactoryYardGround, behind…
+@8.969s F=medium;Comp=depth spans 3. 65m to 13. 11m across 2 layers…;Cam=camera at (-14. 00, -11. 04, 2. 09) on a 35…;Lay=2 visible instances… V=I2:50/57/100/1 O=I3 D=I1:v/91/75/17/50/o:upright body proxy, head end up/m:stationary across this interval/r:right of FactoryYardGround, behind…
+@10.464s F=medium;Comp=depth spans 3. 12m to 13. 33m across 3 layers…;Cam=camera at (-14. 00, -10. 81, 2. 09) on a 35…;Lay=3 visible instances… V=I2:50/57/100/1,I3:69/99/62/3 D=I1:v/91/73/19/47/o:upright body proxy, head end up/m:stationary across this interval/r:right of FireLine_01, in front of…
+@11.958s F=medium;Comp=depth spans 3. 20m to 13. 42m across 3 layers…;Cam=camera at (-14. 00, -10. 72, 2. 09) on a 35…;Lay=3 visible instances… V=I2:50/57/100/1,I3:69/98/62/4 D=I1:v/90/73/20/46/o:upright body proxy, head end up/m:stationary across this interval/r:right of FireLine_01, in front of…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+many running feet with the strain call of people lifting the racks and a beam breaking
+
+non_diegetic_music:
+N/A

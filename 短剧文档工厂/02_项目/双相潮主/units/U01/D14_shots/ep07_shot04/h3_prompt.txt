@@ -1,0 +1,49 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and….
+[INSTANCE REGISTRY] I1=<O002>,I2=<O003>,I3=<O004>,I4=<O005>,I5=<O006>,I6=<O007>.
+<Entity 01 CHAR Yehongyi>=E1[articulated/primary/articulation] members=I1;n=1;src=female captive character blockout; final=female captive character blockout; finish=real skin with pores and fine hair, fabric with real…; style=world_style_unit_contract.
+<Entity 02 ENV A-8>=E2[environment/context/static] members=I2,I4;n=2;src=A-8 built environment shell…; final=A-8 built environment shell enclosing…; finish=worn cement, oxidised steel and sheet metal with…; style=world_style_unit_contract.
+<Entity 03 FX AshPatch>=E3[effect/context/static] members=I3;n=1;src=grey white patch on the captive forearm; final=grey white patch on the captive forearm; finish=stylised energy surface in the two permitted flame…; style=world_style_unit_contract.
+<Entity 04 PROP A-8>=E4[rigid/context/static] members=I5-I6;n=2;src=A-8 set pieces and fittings…; final=A-8 set pieces and fittings: ShadowBlade…; finish=utilitarian material with visible weight, thickness…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2,I4;1:1;n=2.
+E3:I3;1:1;n=1.
+E4:I5-I6;1:1;n=2.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global… | materials=real skin with pores and slight oil sheen… | environment=cement yard plates cut by fissures and pit… | props=functional utilitarian tooling with real… | light=one cold overhead key with shadow detail….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3,E4=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E1:articulation | Act=changes body pose while keeping floor contact | Keep=stay inside the source blockout bounds for the full shot | Ban=do not replace, duplicate or remove this instance.
+[STATIC LOCK] E2,E3,E4 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_2801@0.000-1.000s I1,I5: rel=shadow blade gripped in the…; ban=do not add blade glow or extra blades.
+[Shot 1] @0.000-8.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E1;path=camera travels from (42. 55, -1. 86, 0. 65) to (42. 55, -1…;dist=increase;azi=stable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the…;ban=do not add any camera move, zoom or handheld… | Act=the captive forearm returns to normal skin tone, she grips the shadow blade and… | Layout=6 visible instances… | Light=one cold overhead key with shadow detail….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 2. 60m to 13…;Cam=camera at (42. 55, -1. 86, 0…;Lay=6 visible instances… V=I2:86/58/28/45,I3:44/11/14/2,I4:50/56/100/34,I5:97/23/6/47,I6:33/31/10/2 D=I1:v/59/25/47/50/o:upright body proxy…/m:stationary across this…/r:right of DisposalPlatform…
+@0.995s F=medium;Comp=depth spans 2. 60m to 13…;Cam=camera at (42. 55, -1. 86, 0…;Lay=6 visible instances… V=I2:86/58/28/45,I3:44/11/14/2,I4:50/56/100/34,I5:97/23/6/47,I6:33/31/10/2 D=I1:v/46/25/47/50/o:upright body proxy…/m:stationary across this…/r:right of AshPatch, left…
+@1.990s F=medium;Comp=depth spans 2. 60m to 13…;Cam=camera at (42. 55, -1. 86, 0…;Lay=6 visible instances… V=I2:86/58/28/45,I3:44/11/14/2,I4:50/56/100/34,I5:97/23/6/47,I6:33/31/10/2 D=I1:v/34/25/46/50/o:upright body proxy…/m:stationary across this…/r:right of WristRestraint…
+@2.984s F=medium;Comp=depth spans 2. 60m to 13…;Cam=camera at (42. 55, -1. 86, 0…;Lay=6 visible instances… V=I2:86/58/28/45,I3:44/11/14/2,I4:50/56/100/34,I5:97/23/6/47,I6:33/31/10/2 D=I1:v/22/25/44/49/o:upright body proxy…/m:drifting frame left in…/r:left of WristRestraint…
+@3.979s F=medium;Comp=depth spans 2. 60m to 13…;Cam=camera at (42. 55, -1. 86, 0…;Lay=6 visible instances… V=I2:86/58/28/45,I3:44/11/14/2,I4:50/56/100/34,I5:97/23/6/47,I6:33/31/10/2 D=I1:v/16/25/32/49/o:upright body proxy…/m:drifting frame left in…/r:left of WristRestraint…
+@4.974s F=medium;Comp=depth spans 2. 60m to 13…;Cam=camera at (42. 55, -1. 86, 0…;Lay=6 visible instances… V=I2:86/58/28/45,I3:44/11/14/2,I4:50/56/100/34,I5:97/23/6/47,I6:33/31/10/2 D=I1:v/10/25/20/50/o:upright body proxy…/m:drifting frame left in…/r:left of WristRestraint…
+@5.969s F=medium;Comp=depth spans 2. 60m to 13…;Cam=camera at (42. 55, -1. 86, 0…;Lay=6 visible instances… V=I2:86/58/28/45,I3:44/11/14/2,I4:50/56/100/34,I5:97/23/6/47,I6:33/31/10/2 D=I1:v/3/25/7/50/o:upright body proxy…/m:drifting frame left in…/r:left of WristRestraint…
+@6.964s F=medium;Comp=depth spans 2. 60m to 13…;Cam=camera at (42. 55, -1. 86, 0…;Lay=5 visible instances… V=I2:86/58/28/45,I3:44/11/14/2,I4:50/56/100/34,I5:97/23/6/47,I6:33/31/10/2 D=I1:o/o/o:off screen at…/m:offscreen at this anchor/r:leaves the frame before…
+@7.958s F=medium;Comp=depth spans 2. 60m to 13…;Cam=camera at (42. 55, -1. 86, 0…;Lay=5 visible instances… V=I2:86/58/28/45,I3:44/11/14/2,I4:50/56/100/34,I5:97/23/6/47,I6:33/31/10/2 D=I1:o/o/o:off screen at…/m:offscreen at this anchor/r:leaves the frame before…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+soft metal click of the blade entering the hand and a…
+
+non_diegetic_music:
+N/A

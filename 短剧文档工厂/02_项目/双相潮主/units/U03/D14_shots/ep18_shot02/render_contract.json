@@ -1,0 +1,831 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep18_shot02/preview_video.mp4",
+    "duration": 13.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 312,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "B-12_CHAR_SuppressedCrowd_02",
+      "source_type": "MESH",
+      "root_name": "B-12_CHAR_SuppressedCrowd_02",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-12_CHAR_SuppressedCrowd_02; type=MESH; root=B-12_CHAR_SuppressedCrowd_02; dimensions=5.260,6.940,1.750",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O002",
+      "source_name": "B-12_EXT_FactoryGateWall",
+      "source_type": "MESH",
+      "root_name": "B-12_EXT_FactoryGateWall",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-12_EXT_FactoryGateWall; type=MESH; root=B-12_EXT_FactoryGateWall; dimensions=40.000,0.400,4.800",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O004",
+      "source_name": "B-12_EXT_StreetGround",
+      "source_type": "MESH",
+      "root_name": "B-12_EXT_StreetGround",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-12_EXT_StreetGround; type=MESH; root=B-12_EXT_StreetGround; dimensions=40.000,36.000,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O008",
+      "source_name": "B-12_PROP_AshMoteBurst_03",
+      "source_type": "MESH",
+      "root_name": "B-12_PROP_AshMoteBurst_03",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-12_PROP_AshMoteBurst_03; type=MESH; root=B-12_PROP_AshMoteBurst_03; dimensions=1.220,0.540,0.137",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O011",
+      "source_name": "B-12_PROP_WallShadowBand_01",
+      "source_type": "MESH",
+      "root_name": "B-12_PROP_WallShadowBand_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-12_PROP_WallShadowBand_01; type=MESH; root=B-12_PROP_WallShadowBand_01; dimensions=9.000,0.600,0.020",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR SuppressedCrowd",
+      "entity_class": "articulated",
+      "importance": "context",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "suppressed crowd blockout in two columns along the street",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV B-12",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O002",
+        "O004"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-12 built environment shell enclosing the set: FactoryGateWall, StreetGround",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 03 FX AshMoteBurst",
+      "entity_class": "effect",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O008"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "glowing ash motes left where a figure dispersed",
+      "structural_constraints": "keep the source volume and the attachment point; the effect never detaches from its source surface",
+      "motion_contract": {
+        "mode": "effect_evolution",
+        "action": "develops and drifts as the effect unfolds",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 04 PROP B-12",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O011"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-12 set pieces and fittings: WallShadowBand",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_7001",
+      "source_instance_ids": [
+        "O001",
+        "O008"
+      ],
+      "start_seconds": 0.0,
+      "end_seconds": 1.0,
+      "relation": "the people inside the pressed down range come apart into lit motes from near to far",
+      "forbidden_change": "do not change the near to far order and do not show any body detail"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 13.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 03 FX AshMoteBurst",
+        "world_path": "camera travels from (-4.53, -9.33, 0.06) to (-4.53, -9.33, 0.06) on a 35mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "decrease",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中远景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 中远景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "inside the pressed down range the people who came forward disperse one by one into glowing ash motes; the dispersal runs from near to far and the human outlines come apart into lit dots; only motes and outlines come apart, no body detail is shown",
+      "layout_and_occlusion": "5 visible instances. Dominant FactoryGateWall covers 100x39 percent at frame 50/19. Left to right: FactoryGateWall, StreetGround, WallShadowBand, AshMoteBurst, SuppressedCrowd.",
+      "lighting_spatial_logic": "one cold overhead key over the steel table with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the emergency lamps on the gate posts, the residual fire heads, the twin flame and the derrick lamp as the only moving light sources, and the grey fog pressing down over the street with the unlit crossing kept dark"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep18_shot02/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 3.53m to 21.60m across 5 layers; nearest is AshMoteBurst, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-4.53, -9.33, 0.06) on a 35.0mm lens, frame 1 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR SuppressedCrowd",
+          "visibility": "visible",
+          "center_x_percent": 94.76,
+          "center_y_percent": 19.52,
+          "bbox_width_percent": 10.47,
+          "bbox_height_percent": 39.03,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshMoteBurst, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 19.39,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 38.78,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WallShadowBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 38.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WallShadowBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 FX AshMoteBurst",
+          "visibility": "visible",
+          "center_x_percent": 91.73,
+          "center_y_percent": 25.33,
+          "bbox_width_percent": 16.55,
+          "bbox_height_percent": 6.76,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WallShadowBand, left of SuppressedCrowd, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.89,
+          "center_y_percent": 38.02,
+          "bbox_width_percent": 98.22,
+          "bbox_height_percent": 0.38,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryGateWall, left of AshMoteBurst, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryGateWall covers 100x39 percent at frame 50/19. Left to right: FactoryGateWall, StreetGround, WallShadowBand, AshMoteBurst, SuppressedCrowd."
+    },
+    {
+      "time_seconds": 1.62,
+      "source_frame": "D14_shots/ep18_shot02/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 3.47m to 21.60m across 5 layers; nearest is AshMoteBurst, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-4.53, -9.33, 0.06) on a 35.0mm lens, frame 40 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR SuppressedCrowd",
+          "visibility": "visible",
+          "center_x_percent": 94.76,
+          "center_y_percent": 19.52,
+          "bbox_width_percent": 10.47,
+          "bbox_height_percent": 39.03,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshMoteBurst, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 19.39,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 38.78,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WallShadowBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 38.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WallShadowBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 FX AshMoteBurst",
+          "visibility": "visible",
+          "center_x_percent": 90.24,
+          "center_y_percent": 22.99,
+          "bbox_width_percent": 19.52,
+          "bbox_height_percent": 14.26,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WallShadowBand, left of SuppressedCrowd, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.89,
+          "center_y_percent": 38.02,
+          "bbox_width_percent": 98.22,
+          "bbox_height_percent": 0.38,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryGateWall, left of AshMoteBurst, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryGateWall covers 100x39 percent at frame 50/19. Left to right: FactoryGateWall, StreetGround, WallShadowBand, AshMoteBurst, SuppressedCrowd."
+    },
+    {
+      "time_seconds": 3.24,
+      "source_frame": "D14_shots/ep18_shot02/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 3.41m to 21.60m across 5 layers; nearest is AshMoteBurst, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-4.53, -9.33, 0.06) on a 35.0mm lens, frame 79 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR SuppressedCrowd",
+          "visibility": "visible",
+          "center_x_percent": 94.76,
+          "center_y_percent": 19.52,
+          "bbox_width_percent": 10.47,
+          "bbox_height_percent": 39.03,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshMoteBurst, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 19.39,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 38.78,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WallShadowBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 38.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WallShadowBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 FX AshMoteBurst",
+          "visibility": "visible",
+          "center_x_percent": 88.78,
+          "center_y_percent": 19.3,
+          "bbox_width_percent": 22.44,
+          "bbox_height_percent": 24.05,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WallShadowBand, left of SuppressedCrowd, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.89,
+          "center_y_percent": 38.02,
+          "bbox_width_percent": 98.22,
+          "bbox_height_percent": 0.38,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryGateWall, left of AshMoteBurst, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryGateWall covers 100x39 percent at frame 50/19. Left to right: FactoryGateWall, StreetGround, WallShadowBand, AshMoteBurst, SuppressedCrowd."
+    },
+    {
+      "time_seconds": 4.859,
+      "source_frame": "D14_shots/ep18_shot02/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 3.35m to 21.60m across 5 layers; nearest is AshMoteBurst, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-4.53, -9.33, 0.06) on a 35.0mm lens, frame 118 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR SuppressedCrowd",
+          "visibility": "visible",
+          "center_x_percent": 94.76,
+          "center_y_percent": 19.52,
+          "bbox_width_percent": 10.47,
+          "bbox_height_percent": 39.03,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshMoteBurst, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 19.39,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 38.78,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WallShadowBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 38.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WallShadowBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 FX AshMoteBurst",
+          "visibility": "visible",
+          "center_x_percent": 87.35,
+          "center_y_percent": 16.18,
+          "bbox_width_percent": 25.3,
+          "bbox_height_percent": 32.37,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WallShadowBand, left of SuppressedCrowd, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.89,
+          "center_y_percent": 38.02,
+          "bbox_width_percent": 98.22,
+          "bbox_height_percent": 0.38,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryGateWall, left of AshMoteBurst, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryGateWall covers 100x39 percent at frame 50/19. Left to right: FactoryGateWall, StreetGround, WallShadowBand, AshMoteBurst, SuppressedCrowd."
+    },
+    {
+      "time_seconds": 6.479,
+      "source_frame": "D14_shots/ep18_shot02/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 3.29m to 21.60m across 5 layers; nearest is AshMoteBurst, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-4.53, -9.33, 0.06) on a 35.0mm lens, frame 156 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR SuppressedCrowd",
+          "visibility": "visible",
+          "center_x_percent": 94.76,
+          "center_y_percent": 19.52,
+          "bbox_width_percent": 10.47,
+          "bbox_height_percent": 39.03,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshMoteBurst, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 19.39,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 38.78,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WallShadowBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 38.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WallShadowBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 FX AshMoteBurst",
+          "visibility": "visible",
+          "center_x_percent": 85.98,
+          "center_y_percent": 16.63,
+          "bbox_width_percent": 28.04,
+          "bbox_height_percent": 33.26,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WallShadowBand, left of SuppressedCrowd, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.89,
+          "center_y_percent": 38.02,
+          "bbox_width_percent": 98.22,
+          "bbox_height_percent": 0.38,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryGateWall, left of AshMoteBurst, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryGateWall covers 100x39 percent at frame 50/19. Left to right: FactoryGateWall, StreetGround, WallShadowBand, AshMoteBurst, SuppressedCrowd."
+    },
+    {
+      "time_seconds": 8.099,
+      "source_frame": "D14_shots/ep18_shot02/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 3.27m to 21.60m across 5 layers; nearest is AshMoteBurst, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-4.53, -9.33, 0.06) on a 35.0mm lens, frame 195 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR SuppressedCrowd",
+          "visibility": "visible",
+          "center_x_percent": 94.76,
+          "center_y_percent": 19.52,
+          "bbox_width_percent": 10.47,
+          "bbox_height_percent": 39.03,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshMoteBurst, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 19.39,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 38.78,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WallShadowBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 38.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WallShadowBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 FX AshMoteBurst",
+          "visibility": "visible",
+          "center_x_percent": 85.41,
+          "center_y_percent": 16.8,
+          "bbox_width_percent": 29.17,
+          "bbox_height_percent": 33.6,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WallShadowBand, left of SuppressedCrowd, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.89,
+          "center_y_percent": 38.02,
+          "bbox_width_percent": 98.22,
+          "bbox_height_percent": 0.38,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryGateWall, left of AshMoteBurst, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryGateWall covers 100x39 percent at frame 50/19. Left to right: FactoryGateWall, StreetGround, WallShadowBand, AshMoteBurst, SuppressedCrowd."
+    },
+    {
+      "time_seconds": 9.719,
+      "source_frame": "D14_shots/ep18_shot02/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 3.27m to 21.60m across 5 layers; nearest is AshMoteBurst, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-4.53, -9.33, 0.06) on a 35.0mm lens, frame 234 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR SuppressedCrowd",
+          "visibility": "visible",
+          "center_x_percent": 94.76,
+          "center_y_percent": 19.52,
+          "bbox_width_percent": 10.47,
+          "bbox_height_percent": 39.03,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshMoteBurst, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 19.39,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 38.78,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WallShadowBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 38.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WallShadowBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 FX AshMoteBurst",
+          "visibility": "visible",
+          "center_x_percent": 85.41,
+          "center_y_percent": 16.8,
+          "bbox_width_percent": 29.17,
+          "bbox_height_percent": 33.6,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WallShadowBand, left of SuppressedCrowd, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.89,
+          "center_y_percent": 38.02,
+          "bbox_width_percent": 98.22,
+          "bbox_height_percent": 0.38,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryGateWall, left of AshMoteBurst, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryGateWall covers 100x39 percent at frame 50/19. Left to right: FactoryGateWall, StreetGround, WallShadowBand, AshMoteBurst, SuppressedCrowd."
+    },
+    {
+      "time_seconds": 11.339,
+      "source_frame": "D14_shots/ep18_shot02/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 3.27m to 21.60m across 5 layers; nearest is AshMoteBurst, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-4.53, -9.33, 0.06) on a 35.0mm lens, frame 273 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR SuppressedCrowd",
+          "visibility": "visible",
+          "center_x_percent": 94.76,
+          "center_y_percent": 19.52,
+          "bbox_width_percent": 10.47,
+          "bbox_height_percent": 39.03,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshMoteBurst, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 19.39,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 38.78,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WallShadowBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 38.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WallShadowBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 FX AshMoteBurst",
+          "visibility": "visible",
+          "center_x_percent": 85.41,
+          "center_y_percent": 16.8,
+          "bbox_width_percent": 29.17,
+          "bbox_height_percent": 33.6,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WallShadowBand, left of SuppressedCrowd, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.89,
+          "center_y_percent": 38.02,
+          "bbox_width_percent": 98.22,
+          "bbox_height_percent": 0.38,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryGateWall, left of AshMoteBurst, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryGateWall covers 100x39 percent at frame 50/19. Left to right: FactoryGateWall, StreetGround, WallShadowBand, AshMoteBurst, SuppressedCrowd."
+    },
+    {
+      "time_seconds": 12.958,
+      "source_frame": "D14_shots/ep18_shot02/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 3.27m to 21.60m across 5 layers; nearest is AshMoteBurst, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-4.53, -9.33, 0.06) on a 35.0mm lens, frame 312 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR SuppressedCrowd",
+          "visibility": "visible",
+          "center_x_percent": 94.76,
+          "center_y_percent": 19.52,
+          "bbox_width_percent": 10.47,
+          "bbox_height_percent": 39.03,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshMoteBurst, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 19.39,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 38.78,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WallShadowBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 38.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WallShadowBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 FX AshMoteBurst",
+          "visibility": "visible",
+          "center_x_percent": 85.41,
+          "center_y_percent": 16.8,
+          "bbox_width_percent": 29.17,
+          "bbox_height_percent": 33.6,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WallShadowBand, left of SuppressedCrowd, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-12",
+          "visibility": "visible",
+          "center_x_percent": 50.89,
+          "center_y_percent": 38.02,
+          "bbox_width_percent": 98.22,
+          "bbox_height_percent": 0.38,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryGateWall, left of AshMoteBurst, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryGateWall covers 100x39 percent at frame 50/19. Left to right: FactoryGateWall, StreetGround, WallShadowBand, AshMoteBurst, SuppressedCrowd."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

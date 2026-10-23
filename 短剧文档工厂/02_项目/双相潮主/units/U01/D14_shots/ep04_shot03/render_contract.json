@@ -1,0 +1,830 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep04_shot03/preview_video.mp4",
+    "duration": 12.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 288,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "A-5_EXT_BattleGround_01",
+      "source_type": "MESH",
+      "root_name": "A-5_EXT_BattleGround_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-5_EXT_BattleGround_01; type=MESH; root=A-5_EXT_BattleGround_01; dimensions=20.000,20.000,0.400",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O003",
+      "source_name": "A-5_FX_AshDust_03",
+      "source_type": "MESH",
+      "root_name": "A-5_FX_AshDust_03",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-5_FX_AshDust_03; type=MESH; root=A-5_FX_AshDust_03; dimensions=0.618,0.767,0.808",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O004",
+      "source_name": "A-5_FX_MistCore_01",
+      "source_type": "MESH",
+      "root_name": "A-5_FX_MistCore_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-5_FX_MistCore_01; type=MESH; root=A-5_FX_MistCore_01; dimensions=0.054,0.054,0.054",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O005",
+      "source_name": "A-5_LGT_GreyFramePanel_01",
+      "source_type": "MESH",
+      "root_name": "A-5_LGT_GreyFramePanel_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-5_LGT_GreyFramePanel_01; type=MESH; root=A-5_LGT_GreyFramePanel_01; dimensions=1.600,0.020,2.200",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O007",
+      "source_name": "A-5_PROP_GroundBreakHole_01",
+      "source_type": "MESH",
+      "root_name": "A-5_PROP_GroundBreakHole_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-5_PROP_GroundBreakHole_01; type=MESH; root=A-5_PROP_GroundBreakHole_01; dimensions=0.500,0.500,0.400",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 ENV A-5",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O001",
+        "O007"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-5 built environment shell enclosing the set: BattleGround, GroundBreakHole",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 02 FX AshDust",
+      "entity_class": "effect",
+      "importance": "context",
+      "source_instance_ids": [
+        "O003"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "grey ash dust cloud",
+      "structural_constraints": "keep the source volume and the attachment point; the effect never detaches from its source surface",
+      "motion_contract": {
+        "mode": "effect_evolution",
+        "action": "develops and drifts as the effect unfolds",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 03 FX MistCore",
+      "entity_class": "effect",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O004"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "cold white mist core grain",
+      "structural_constraints": "keep the source volume and the attachment point; the effect never detaches from its source surface",
+      "motion_contract": {
+        "mode": "effect_evolution",
+        "action": "develops and drifts as the effect unfolds",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 04 PROP A-5",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O005"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-5 set pieces and fittings: GreyFramePanel",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_1501",
+      "source_instance_ids": [
+        "O004"
+      ],
+      "start_seconds": 0.35,
+      "end_seconds": 1.0,
+      "relation": "mist core lifts from the ash and sinks into the open palm",
+      "forbidden_change": "do not leave the core floating or add extra cores"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 12.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 03 FX MistCore",
+        "world_path": "camera travels from (3.60, 4.80, 1.58) to (3.60, 4.80, 1.58) on a 50mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "increase",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 中景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "insect body breaks into grey ash dust, the dust hangs and settles, one mist core lifts out of the ash and sinks into the open palm",
+      "layout_and_occlusion": "5 visible instances. Dominant GreyFramePanel covers 99x91 percent at frame 50/46. Left to right: GroundBreakHole, AshDust, GreyFramePanel, BattleGround, MistCore.",
+      "lighting_spatial_logic": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep04_shot03/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.25m to 10.61m across 5 layers; nearest is GreyFramePanel, furthest is BattleGround"
+      },
+      "camera_relation": "camera at (3.60, 4.80, 1.58) on a 50.0mm lens, frame 1 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 77.09,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 45.82,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of MistCore, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX AshDust",
+          "visibility": "visible",
+          "center_x_percent": 5.74,
+          "center_y_percent": 77.39,
+          "bbox_width_percent": 11.49,
+          "bbox_height_percent": 31.44,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, left of GreyFramePanel, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX MistCore",
+          "visibility": "visible",
+          "center_x_percent": 59.61,
+          "center_y_percent": 56.72,
+          "bbox_width_percent": 3.8,
+          "bbox_height_percent": 1.72,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BattleGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 04 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 49.74,
+          "center_y_percent": 45.72,
+          "bbox_width_percent": 99.48,
+          "bbox_height_percent": 91.44,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshDust, left of BattleGround, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 3.65,
+          "center_y_percent": 85.42,
+          "bbox_width_percent": 7.3,
+          "bbox_height_percent": 14.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of AshDust, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant GreyFramePanel covers 99x91 percent at frame 50/46. Left to right: GroundBreakHole, AshDust, GreyFramePanel, BattleGround, MistCore."
+    },
+    {
+      "time_seconds": 1.495,
+      "source_frame": "D14_shots/ep04_shot03/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.25m to 10.61m across 5 layers; nearest is GreyFramePanel, furthest is BattleGround"
+      },
+      "camera_relation": "camera at (3.60, 4.80, 1.58) on a 50.0mm lens, frame 37 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 77.09,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 45.82,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of MistCore, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX AshDust",
+          "visibility": "visible",
+          "center_x_percent": 7.86,
+          "center_y_percent": 71.05,
+          "bbox_width_percent": 15.71,
+          "bbox_height_percent": 39.71,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, left of GreyFramePanel, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX MistCore",
+          "visibility": "visible",
+          "center_x_percent": 58.07,
+          "center_y_percent": 54.46,
+          "bbox_width_percent": 5.14,
+          "bbox_height_percent": 2.29,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BattleGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 04 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 49.74,
+          "center_y_percent": 45.72,
+          "bbox_width_percent": 99.48,
+          "bbox_height_percent": 91.44,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshDust, left of BattleGround, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 3.65,
+          "center_y_percent": 85.42,
+          "bbox_width_percent": 7.3,
+          "bbox_height_percent": 14.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of AshDust, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant GreyFramePanel covers 99x91 percent at frame 50/46. Left to right: GroundBreakHole, AshDust, GreyFramePanel, BattleGround, MistCore."
+    },
+    {
+      "time_seconds": 2.99,
+      "source_frame": "D14_shots/ep04_shot03/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.25m to 10.61m across 5 layers; nearest is GreyFramePanel, furthest is BattleGround"
+      },
+      "camera_relation": "camera at (3.60, 4.80, 1.58) on a 50.0mm lens, frame 73 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 77.09,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 45.82,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of MistCore, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX AshDust",
+          "visibility": "visible",
+          "center_x_percent": 10.04,
+          "center_y_percent": 64.24,
+          "bbox_width_percent": 20.07,
+          "bbox_height_percent": 48.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, left of GreyFramePanel, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX MistCore",
+          "visibility": "visible",
+          "center_x_percent": 56.5,
+          "center_y_percent": 52.16,
+          "bbox_width_percent": 6.51,
+          "bbox_height_percent": 2.83,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BattleGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 04 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 49.74,
+          "center_y_percent": 45.72,
+          "bbox_width_percent": 99.48,
+          "bbox_height_percent": 91.44,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshDust, left of BattleGround, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 3.65,
+          "center_y_percent": 85.42,
+          "bbox_width_percent": 7.3,
+          "bbox_height_percent": 14.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of AshDust, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant GreyFramePanel covers 99x91 percent at frame 50/46. Left to right: GroundBreakHole, AshDust, GreyFramePanel, BattleGround, MistCore."
+    },
+    {
+      "time_seconds": 4.484,
+      "source_frame": "D14_shots/ep04_shot03/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.25m to 10.61m across 5 layers; nearest is GreyFramePanel, furthest is BattleGround"
+      },
+      "camera_relation": "camera at (3.60, 4.80, 1.58) on a 50.0mm lens, frame 109 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 77.09,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 45.82,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of MistCore, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX AshDust",
+          "visibility": "visible",
+          "center_x_percent": 11.78,
+          "center_y_percent": 57.59,
+          "bbox_width_percent": 23.57,
+          "bbox_height_percent": 58.23,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, left of GreyFramePanel, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX MistCore",
+          "visibility": "visible",
+          "center_x_percent": 54.91,
+          "center_y_percent": 49.83,
+          "bbox_width_percent": 7.9,
+          "bbox_height_percent": 3.37,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BattleGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 04 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 49.74,
+          "center_y_percent": 45.72,
+          "bbox_width_percent": 99.48,
+          "bbox_height_percent": 91.44,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshDust, left of BattleGround, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 3.65,
+          "center_y_percent": 85.42,
+          "bbox_width_percent": 7.3,
+          "bbox_height_percent": 14.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of AshDust, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant GreyFramePanel covers 99x91 percent at frame 50/46. Left to right: GroundBreakHole, AshDust, GreyFramePanel, BattleGround, MistCore."
+    },
+    {
+      "time_seconds": 5.979,
+      "source_frame": "D14_shots/ep04_shot03/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.25m to 10.61m across 5 layers; nearest is GreyFramePanel, furthest is BattleGround"
+      },
+      "camera_relation": "camera at (3.60, 4.80, 1.58) on a 50.0mm lens, frame 144 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 77.09,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 45.82,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of MistCore, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX AshDust",
+          "visibility": "visible",
+          "center_x_percent": 11.79,
+          "center_y_percent": 59.22,
+          "bbox_width_percent": 23.58,
+          "bbox_height_percent": 58.16,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, left of GreyFramePanel, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX MistCore",
+          "visibility": "visible",
+          "center_x_percent": 53.62,
+          "center_y_percent": 48.33,
+          "bbox_width_percent": 8.19,
+          "bbox_height_percent": 3.44,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BattleGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 04 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 49.74,
+          "center_y_percent": 45.72,
+          "bbox_width_percent": 99.48,
+          "bbox_height_percent": 91.44,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshDust, left of BattleGround, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 3.65,
+          "center_y_percent": 85.42,
+          "bbox_width_percent": 7.3,
+          "bbox_height_percent": 14.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of AshDust, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant GreyFramePanel covers 99x91 percent at frame 50/46. Left to right: GroundBreakHole, AshDust, GreyFramePanel, BattleGround, MistCore."
+    },
+    {
+      "time_seconds": 7.474,
+      "source_frame": "D14_shots/ep04_shot03/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.25m to 10.61m across 5 layers; nearest is GreyFramePanel, furthest is BattleGround"
+      },
+      "camera_relation": "camera at (3.60, 4.80, 1.58) on a 50.0mm lens, frame 180 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 77.09,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 45.82,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of MistCore, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX AshDust",
+          "visibility": "visible",
+          "center_x_percent": 11.8,
+          "center_y_percent": 60.9,
+          "bbox_width_percent": 23.59,
+          "bbox_height_percent": 58.09,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, left of GreyFramePanel, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX MistCore",
+          "visibility": "visible",
+          "center_x_percent": 52.73,
+          "center_y_percent": 48.01,
+          "bbox_width_percent": 6.83,
+          "bbox_height_percent": 2.86,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BattleGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 04 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 49.74,
+          "center_y_percent": 45.72,
+          "bbox_width_percent": 99.48,
+          "bbox_height_percent": 91.44,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshDust, left of BattleGround, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 3.65,
+          "center_y_percent": 85.42,
+          "bbox_width_percent": 7.3,
+          "bbox_height_percent": 14.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of AshDust, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant GreyFramePanel covers 99x91 percent at frame 50/46. Left to right: GroundBreakHole, AshDust, GreyFramePanel, BattleGround, MistCore."
+    },
+    {
+      "time_seconds": 8.969,
+      "source_frame": "D14_shots/ep04_shot03/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.25m to 10.61m across 5 layers; nearest is GreyFramePanel, furthest is BattleGround"
+      },
+      "camera_relation": "camera at (3.60, 4.80, 1.58) on a 50.0mm lens, frame 216 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 77.09,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 45.82,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of MistCore, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX AshDust",
+          "visibility": "visible",
+          "center_x_percent": 11.8,
+          "center_y_percent": 62.57,
+          "bbox_width_percent": 23.61,
+          "bbox_height_percent": 58.02,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, left of GreyFramePanel, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX MistCore",
+          "visibility": "visible",
+          "center_x_percent": 51.83,
+          "center_y_percent": 47.69,
+          "bbox_width_percent": 5.46,
+          "bbox_height_percent": 2.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BattleGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 04 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 49.74,
+          "center_y_percent": 45.72,
+          "bbox_width_percent": 99.48,
+          "bbox_height_percent": 91.44,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshDust, left of BattleGround, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 3.65,
+          "center_y_percent": 85.42,
+          "bbox_width_percent": 7.3,
+          "bbox_height_percent": 14.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of AshDust, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant GreyFramePanel covers 99x91 percent at frame 50/46. Left to right: GroundBreakHole, AshDust, GreyFramePanel, BattleGround, MistCore."
+    },
+    {
+      "time_seconds": 10.464,
+      "source_frame": "D14_shots/ep04_shot03/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.25m to 10.61m across 5 layers; nearest is GreyFramePanel, furthest is BattleGround"
+      },
+      "camera_relation": "camera at (3.60, 4.80, 1.58) on a 50.0mm lens, frame 252 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 77.09,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 45.82,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of MistCore, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX AshDust",
+          "visibility": "visible",
+          "center_x_percent": 11.81,
+          "center_y_percent": 64.24,
+          "bbox_width_percent": 23.62,
+          "bbox_height_percent": 57.95,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, left of GreyFramePanel, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX MistCore",
+          "visibility": "visible",
+          "center_x_percent": 50.92,
+          "center_y_percent": 47.37,
+          "bbox_width_percent": 4.07,
+          "bbox_height_percent": 1.69,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BattleGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 04 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 49.74,
+          "center_y_percent": 45.72,
+          "bbox_width_percent": 99.48,
+          "bbox_height_percent": 91.44,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshDust, left of BattleGround, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 3.65,
+          "center_y_percent": 85.42,
+          "bbox_width_percent": 7.3,
+          "bbox_height_percent": 14.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of AshDust, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant GreyFramePanel covers 99x91 percent at frame 50/46. Left to right: GroundBreakHole, AshDust, GreyFramePanel, BattleGround, MistCore."
+    },
+    {
+      "time_seconds": 11.958,
+      "source_frame": "D14_shots/ep04_shot03/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.25m to 10.61m across 5 layers; nearest is GreyFramePanel, furthest is BattleGround"
+      },
+      "camera_relation": "camera at (3.60, 4.80, 1.58) on a 50.0mm lens, frame 288 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 77.09,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 45.82,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX AshDust",
+          "visibility": "visible",
+          "center_x_percent": 11.82,
+          "center_y_percent": 65.91,
+          "bbox_width_percent": 23.63,
+          "bbox_height_percent": 57.89,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, left of GreyFramePanel, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX MistCore",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 47.04,
+          "bbox_width_percent": 2.67,
+          "bbox_height_percent": 1.11,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 04 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 49.74,
+          "center_y_percent": 45.72,
+          "bbox_width_percent": 99.48,
+          "bbox_height_percent": 91.44,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshDust, left of BattleGround, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 3.65,
+          "center_y_percent": 85.42,
+          "bbox_width_percent": 7.3,
+          "bbox_height_percent": 14.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of AshDust, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant GreyFramePanel covers 99x91 percent at frame 50/46. Left to right: GroundBreakHole, AshDust, GreyFramePanel, BattleGround, MistCore."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

@@ -1,0 +1,547 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep03_shot02/preview_video.mp4",
+    "duration": 12.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 288,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "A-4_EXT_FactoryGround_01",
+      "source_type": "MESH",
+      "root_name": "A-4_EXT_FactoryGround_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-4_EXT_FactoryGround_01; type=MESH; root=A-4_EXT_FactoryGround_01; dimensions=32.000,24.000,0.400",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O003",
+      "source_name": "A-4_LGT_GreyFramePanel_01",
+      "source_type": "MESH",
+      "root_name": "A-4_LGT_GreyFramePanel_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-4_LGT_GreyFramePanel_01; type=MESH; root=A-4_LGT_GreyFramePanel_01; dimensions=0.700,0.020,0.950",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O004",
+      "source_name": "A-4_LGT_StreetLamp_06",
+      "source_type": "MESH",
+      "root_name": "A-4_LGT_StreetLamp_06",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-4_LGT_StreetLamp_06; type=MESH; root=A-4_LGT_StreetLamp_06; dimensions=12.600,12.400,8.050",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 ENV A-4",
+      "entity_class": "environment",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-4 built environment shell enclosing the set: FactoryGround",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 PROP A-4",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O003",
+        "O004"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-4 set pieces and fittings: GreyFramePanel, StreetLamp",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    }
+  ],
+  "interaction_contracts": [],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 12.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 02 PROP A-4",
+        "world_path": "camera travels from (1.60, 1.60, 1.68) to (1.60, 1.60, 1.68) on a 50mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "特写 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 特写 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "grey frame panel holds frame centre, bottom ticker scrolls, four numeric readouts appear one after another",
+      "layout_and_occlusion": "3 visible instances. Dominant GreyFramePanel covers 100x100 percent at frame 50/50. Left to right: FactoryGround, GreyFramePanel, StreetLamp.",
+      "lighting_spatial_logic": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep03_shot02/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 1.20m to 15.93m across 3 layers; nearest is GreyFramePanel, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (1.60, 1.60, 1.68) on a 50.0mm lens, frame 1 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.21,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 36.4,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 43.13,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 86.26,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GreyFramePanel covers 100x100 percent at frame 50/50. Left to right: FactoryGround, GreyFramePanel, StreetLamp."
+    },
+    {
+      "time_seconds": 1.495,
+      "source_frame": "D14_shots/ep03_shot02/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 1.20m to 15.93m across 3 layers; nearest is GreyFramePanel, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (1.60, 1.60, 1.68) on a 50.0mm lens, frame 37 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.21,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 36.4,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 43.13,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 86.26,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GreyFramePanel covers 100x100 percent at frame 50/50. Left to right: FactoryGround, GreyFramePanel, StreetLamp."
+    },
+    {
+      "time_seconds": 2.99,
+      "source_frame": "D14_shots/ep03_shot02/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 1.20m to 15.93m across 3 layers; nearest is GreyFramePanel, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (1.60, 1.60, 1.68) on a 50.0mm lens, frame 73 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.21,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 36.4,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 43.13,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 86.26,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GreyFramePanel covers 100x100 percent at frame 50/50. Left to right: FactoryGround, GreyFramePanel, StreetLamp."
+    },
+    {
+      "time_seconds": 4.484,
+      "source_frame": "D14_shots/ep03_shot02/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 1.20m to 15.93m across 3 layers; nearest is GreyFramePanel, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (1.60, 1.60, 1.68) on a 50.0mm lens, frame 109 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.21,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 36.4,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 43.13,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 86.26,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GreyFramePanel covers 100x100 percent at frame 50/50. Left to right: FactoryGround, GreyFramePanel, StreetLamp."
+    },
+    {
+      "time_seconds": 5.979,
+      "source_frame": "D14_shots/ep03_shot02/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 1.20m to 15.93m across 3 layers; nearest is GreyFramePanel, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (1.60, 1.60, 1.68) on a 50.0mm lens, frame 144 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.21,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 36.4,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 43.13,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 86.26,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GreyFramePanel covers 100x100 percent at frame 50/50. Left to right: FactoryGround, GreyFramePanel, StreetLamp."
+    },
+    {
+      "time_seconds": 7.474,
+      "source_frame": "D14_shots/ep03_shot02/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 1.20m to 15.93m across 3 layers; nearest is GreyFramePanel, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (1.60, 1.60, 1.68) on a 50.0mm lens, frame 180 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.21,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 36.4,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 43.13,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 86.26,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GreyFramePanel covers 100x100 percent at frame 50/50. Left to right: FactoryGround, GreyFramePanel, StreetLamp."
+    },
+    {
+      "time_seconds": 8.969,
+      "source_frame": "D14_shots/ep03_shot02/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 1.20m to 15.93m across 3 layers; nearest is GreyFramePanel, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (1.60, 1.60, 1.68) on a 50.0mm lens, frame 216 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.21,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 36.4,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 43.13,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 86.26,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GreyFramePanel covers 100x100 percent at frame 50/50. Left to right: FactoryGround, GreyFramePanel, StreetLamp."
+    },
+    {
+      "time_seconds": 10.464,
+      "source_frame": "D14_shots/ep03_shot02/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 1.20m to 15.93m across 3 layers; nearest is GreyFramePanel, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (1.60, 1.60, 1.68) on a 50.0mm lens, frame 252 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.21,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 36.4,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 43.13,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 86.26,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GreyFramePanel covers 100x100 percent at frame 50/50. Left to right: FactoryGround, GreyFramePanel, StreetLamp."
+    },
+    {
+      "time_seconds": 11.958,
+      "source_frame": "D14_shots/ep03_shot02/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 1.20m to 15.93m across 3 layers; nearest is GreyFramePanel, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (1.60, 1.60, 1.68) on a 50.0mm lens, frame 288 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 76.21,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 36.4,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 43.13,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 86.26,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GreyFramePanel covers 100x100 percent at frame 50/50. Left to right: FactoryGround, GreyFramePanel, StreetLamp."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

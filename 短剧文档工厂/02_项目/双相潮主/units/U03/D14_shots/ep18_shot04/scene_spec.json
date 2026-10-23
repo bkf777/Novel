@@ -1,0 +1,62 @@
+{
+  "scene_code": "B-12",
+  "size_m": [
+    3.0,
+    11.85,
+    1.0
+  ],
+  "ground_center_m": [
+    0.113,
+    -5.85
+  ],
+  "floor_z": 0.01,
+  "props": [
+    {
+      "name": "B-12_CHAR_LuchenHand_02",
+      "kind": "human_proxy",
+      "center_m": [
+        -0.28,
+        -6.05,
+        0.02
+      ],
+      "size_m": [
+        0.1,
+        0.1,
+        0.3
+      ],
+      "role": "primary"
+    },
+    {
+      "name": "B-12_PROP_AshDeposit_03",
+      "kind": "box",
+      "center_m": [
+        0.9,
+        -5.5,
+        0.01
+      ],
+      "size_m": [
+        3.0,
+        11.85,
+        0.02
+      ],
+      "role": "set"
+    },
+    {
+      "name": "B-12_PROP_IdentityPlate_01",
+      "kind": "box",
+      "center_m": [
+        -0.28,
+        -6.0,
+        0.02
+      ],
+      "size_m": [
+        0.22,
+        0.16,
+        0.03
+      ],
+      "role": "set"
+    }
+  ],
+  "walls": [],
+  "wall_thickness_m": 0.15
+}

@@ -1,0 +1,564 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep16_shot03/preview_video.mp4",
+    "duration": 12.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 288,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O002",
+      "source_name": "B-10_CHAR_QueueMember_03",
+      "source_type": "MESH",
+      "root_name": "B-10_CHAR_QueueMember_03",
+      "first_visible_seconds": 4.5,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-10_CHAR_QueueMember_03; type=MESH; root=B-10_CHAR_QueueMember_03; dimensions=0.420,0.320,1.730",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O006",
+      "source_name": "B-10_EXT_FactoryYardGround",
+      "source_type": "MESH",
+      "root_name": "B-10_EXT_FactoryYardGround",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-10_EXT_FactoryYardGround; type=MESH; root=B-10_EXT_FactoryYardGround; dimensions=36.000,48.000,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O013",
+      "source_name": "B-10_PROP_FireLine_01.001",
+      "source_type": "MESH",
+      "root_name": "B-10_PROP_FireLine_01.001",
+      "first_visible_seconds": 10.458,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-10_PROP_FireLine_01.001; type=MESH; root=B-10_PROP_FireLine_01.001; dimensions=4.400,0.600,0.140",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR QueueMember",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O002"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "queue member blockout in silhouette",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV B-10",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O006"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-10 built environment shell enclosing the set: FactoryYardGround",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 03 PROP B-10",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O013"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-10 set pieces and fittings: FireLine_01",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 12.0,
+      "camera_contract": {
+        "motion_type": "tracking",
+        "tracked_target_entity": "none",
+        "world_path": "camera travels from (-14.00, -12.72, 2.09) to (-14.00, -10.72, 2.09) on a 35mm lens, total path length 2.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "variable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not swap the follow move for an orbit or a frontal push; keep the 中景 framing and the 跟 move exactly as blocked out"
+      },
+      "actions": "two steel racks are lifted up across the front of the fire line and a gap is left between them; the trapped people pass through that gap one at a time, the line holding together in the smoke, while the protagonist pulls the last one out of the workshop",
+      "layout_and_occlusion": "1 visible instances. Dominant FactoryYardGround covers 100x1 percent at frame 50/55. Left to right: FactoryYardGround.",
+      "lighting_spatial_logic": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep16_shot03/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 11.47m to 11.47m across 1 layers; nearest is FactoryYardGround, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-14.00, -12.72, 2.09) on a 35.0mm lens, frame 1 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR QueueMember",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 55.05,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.83,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "only visible instance in this frame"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 03 PROP B-10",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "1 visible instances. Dominant FactoryYardGround covers 100x1 percent at frame 50/55. Left to right: FactoryYardGround."
+    },
+    {
+      "time_seconds": 1.495,
+      "source_frame": "D14_shots/ep16_shot03/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 11.55m to 11.55m across 1 layers; nearest is FactoryYardGround, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-14.00, -12.63, 2.09) on a 35.0mm lens, frame 37 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR QueueMember",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 55.11,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.83,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "only visible instance in this frame"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 03 PROP B-10",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "1 visible instances. Dominant FactoryYardGround covers 100x1 percent at frame 50/55. Left to right: FactoryYardGround."
+    },
+    {
+      "time_seconds": 2.99,
+      "source_frame": "D14_shots/ep16_shot03/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 11.77m to 11.77m across 1 layers; nearest is FactoryYardGround, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-14.00, -12.41, 2.09) on a 35.0mm lens, frame 73 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR QueueMember",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 55.28,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.81,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "only visible instance in this frame"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 03 PROP B-10",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "1 visible instances. Dominant FactoryYardGround covers 100x1 percent at frame 50/55. Left to right: FactoryYardGround."
+    },
+    {
+      "time_seconds": 4.484,
+      "source_frame": "D14_shots/ep16_shot03/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.63m to 12.09m across 2 layers; nearest is QueueMember, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-14.00, -12.08, 2.09) on a 35.0mm lens, frame 109 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR QueueMember",
+          "visibility": "visible",
+          "center_x_percent": 97.3,
+          "center_y_percent": 75.49,
+          "bbox_width_percent": 5.41,
+          "bbox_height_percent": 49.01,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 55.54,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.79,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of QueueMember, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 03 PROP B-10",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant QueueMember covers 5x49 percent at frame 97/75. Left to right: FactoryYardGround, QueueMember."
+    },
+    {
+      "time_seconds": 5.979,
+      "source_frame": "D14_shots/ep16_shot03/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.97m to 12.44m across 2 layers; nearest is QueueMember, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-14.00, -11.73, 2.09) on a 35.0mm lens, frame 144 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR QueueMember",
+          "visibility": "visible",
+          "center_x_percent": 94.87,
+          "center_y_percent": 75.17,
+          "bbox_width_percent": 10.27,
+          "bbox_height_percent": 49.66,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 55.85,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.77,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of QueueMember, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 03 PROP B-10",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant QueueMember covers 10x50 percent at frame 95/75. Left to right: FactoryYardGround, QueueMember."
+    },
+    {
+      "time_seconds": 7.474,
+      "source_frame": "D14_shots/ep16_shot03/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.33m to 12.80m across 2 layers; nearest is QueueMember, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-14.00, -11.36, 2.09) on a 35.0mm lens, frame 180 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR QueueMember",
+          "visibility": "visible",
+          "center_x_percent": 92.86,
+          "center_y_percent": 75.0,
+          "bbox_width_percent": 14.28,
+          "bbox_height_percent": 50.01,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.21,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of QueueMember, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 03 PROP B-10",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant QueueMember covers 14x50 percent at frame 93/75. Left to right: FactoryYardGround, QueueMember."
+    },
+    {
+      "time_seconds": 8.969,
+      "source_frame": "D14_shots/ep16_shot03/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.65m to 13.11m across 2 layers; nearest is QueueMember, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-14.00, -11.04, 2.09) on a 35.0mm lens, frame 216 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR QueueMember",
+          "visibility": "visible",
+          "center_x_percent": 91.41,
+          "center_y_percent": 74.71,
+          "bbox_width_percent": 17.18,
+          "bbox_height_percent": 49.68,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.54,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.73,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of QueueMember, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 03 PROP B-10",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant QueueMember covers 17x50 percent at frame 91/75. Left to right: FactoryYardGround, QueueMember."
+    },
+    {
+      "time_seconds": 10.464,
+      "source_frame": "D14_shots/ep16_shot03/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.12m to 13.33m across 3 layers; nearest is FireLine_01, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-14.00, -10.81, 2.09) on a 35.0mm lens, frame 252 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR QueueMember",
+          "visibility": "visible",
+          "center_x_percent": 90.52,
+          "center_y_percent": 73.21,
+          "bbox_width_percent": 18.96,
+          "bbox_height_percent": 46.69,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FireLine_01, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.79,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.72,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FireLine_01, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 03 PROP B-10",
+          "visibility": "visible",
+          "center_x_percent": 68.85,
+          "center_y_percent": 98.54,
+          "bbox_width_percent": 62.3,
+          "bbox_height_percent": 2.91,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of QueueMember, behind all nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant QueueMember covers 19x47 percent at frame 91/73. Left to right: FactoryYardGround, FireLine_01, QueueMember."
+    },
+    {
+      "time_seconds": 11.958,
+      "source_frame": "D14_shots/ep16_shot03/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.20m to 13.42m across 3 layers; nearest is FireLine_01, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-14.00, -10.72, 2.09) on a 35.0mm lens, frame 288 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR QueueMember",
+          "visibility": "visible",
+          "center_x_percent": 90.2,
+          "center_y_percent": 72.71,
+          "bbox_width_percent": 19.59,
+          "bbox_height_percent": 45.65,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FireLine_01, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.88,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.72,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FireLine_01, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 03 PROP B-10",
+          "visibility": "visible",
+          "center_x_percent": 69.03,
+          "center_y_percent": 97.97,
+          "bbox_width_percent": 61.95,
+          "bbox_height_percent": 4.06,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of QueueMember, behind all nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant QueueMember covers 20x46 percent at frame 90/73. Left to right: FactoryYardGround, FireLine_01, QueueMember."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

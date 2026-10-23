@@ -1,0 +1,575 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep22_shot03/preview_video.mp4",
+    "duration": 13.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 312,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "B-16_CHAR_WorkSilhouette_08",
+      "source_type": "MESH",
+      "root_name": "B-16_CHAR_WorkSilhouette_08",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-16_CHAR_WorkSilhouette_08; type=MESH; root=B-16_CHAR_WorkSilhouette_08; dimensions=1.860,1.940,1.750",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O003",
+      "source_name": "B-16_EXT_WellGround",
+      "source_type": "MESH",
+      "root_name": "B-16_EXT_WellGround",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-16_EXT_WellGround; type=MESH; root=B-16_EXT_WellGround; dimensions=36.000,28.000,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O008",
+      "source_name": "B-16_PROP_WellMouth_04",
+      "source_type": "MESH",
+      "root_name": "B-16_PROP_WellMouth_04",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-16_PROP_WellMouth_04; type=MESH; root=B-16_PROP_WellMouth_04; dimensions=2.621,2.621,0.983",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR WorkSilhouette",
+      "entity_class": "articulated",
+      "importance": "context",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "well site worker blockout on the far side of the rig",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV B-16",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O003"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-16 built environment shell enclosing the set: WellGround",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 03 PROP B-16",
+      "entity_class": "rigid",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O008"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-16 set pieces and fittings: WellMouth",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_8701",
+      "source_instance_ids": [
+        "O008"
+      ],
+      "start_seconds": 0.0,
+      "end_seconds": 1.0,
+      "relation": "the well mouth stands empty with the fresh chisel mark still shedding dust and the winch rope wound one layer deeper",
+      "forbidden_change": "do not put workers back and do not unwind the rope"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 13.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 03 PROP B-16",
+        "world_path": "camera travels from (-0.26, -6.55, 0.74) to (-0.26, -6.55, 0.74) on a 35mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中远景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 中远景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "the well is empty and only the derrick and the mist coming back up out of the mouth are left; a fresh chisel mark on the shaft wall is still shedding dust and the rope on the winch has been wound one layer deeper; the people are only outlines at a distance",
+      "layout_and_occlusion": "3 visible instances. Dominant WellGround covers 100x20 percent at frame 50/59. Left to right: WellMouth, WellGround, WorkSilhouette.",
+      "lighting_spatial_logic": "one cold overhead key over the steel table with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the emergency lamps on the gate posts, the residual fire heads, the twin flame and the derrick lamp as the only moving light sources, and the grey fog pressing down over the street with the unlit crossing kept dark"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep22_shot03/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 5.67m to 12.85m across 3 layers; nearest is WellMouth, furthest is WellGround"
+      },
+      "camera_relation": "camera at (-0.26, -6.55, 0.74) on a 35.0mm lens, frame 1 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR WorkSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 76.31,
+          "center_y_percent": 43.9,
+          "bbox_width_percent": 47.38,
+          "bbox_height_percent": 30.0,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WellGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV B-16",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 59.14,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 20.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WellMouth, left of WorkSilhouette, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 PROP B-16",
+          "visibility": "visible",
+          "center_x_percent": 0.62,
+          "center_y_percent": 49.78,
+          "bbox_width_percent": 1.24,
+          "bbox_height_percent": 24.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WellGround, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant WellGround covers 100x20 percent at frame 50/59. Left to right: WellMouth, WellGround, WorkSilhouette."
+    },
+    {
+      "time_seconds": 1.62,
+      "source_frame": "D14_shots/ep22_shot03/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 5.67m to 12.85m across 3 layers; nearest is WellMouth, furthest is WellGround"
+      },
+      "camera_relation": "camera at (-0.26, -6.55, 0.74) on a 35.0mm lens, frame 40 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR WorkSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 76.31,
+          "center_y_percent": 43.9,
+          "bbox_width_percent": 47.38,
+          "bbox_height_percent": 30.0,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WellGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV B-16",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 59.14,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 20.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WellMouth, left of WorkSilhouette, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 PROP B-16",
+          "visibility": "visible",
+          "center_x_percent": 0.62,
+          "center_y_percent": 49.78,
+          "bbox_width_percent": 1.24,
+          "bbox_height_percent": 24.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WellGround, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant WellGround covers 100x20 percent at frame 50/59. Left to right: WellMouth, WellGround, WorkSilhouette."
+    },
+    {
+      "time_seconds": 3.24,
+      "source_frame": "D14_shots/ep22_shot03/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 5.67m to 12.85m across 3 layers; nearest is WellMouth, furthest is WellGround"
+      },
+      "camera_relation": "camera at (-0.26, -6.55, 0.74) on a 35.0mm lens, frame 79 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR WorkSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 76.31,
+          "center_y_percent": 43.9,
+          "bbox_width_percent": 47.38,
+          "bbox_height_percent": 30.0,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WellGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV B-16",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 59.14,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 20.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WellMouth, left of WorkSilhouette, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 PROP B-16",
+          "visibility": "visible",
+          "center_x_percent": 0.62,
+          "center_y_percent": 49.78,
+          "bbox_width_percent": 1.24,
+          "bbox_height_percent": 24.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WellGround, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant WellGround covers 100x20 percent at frame 50/59. Left to right: WellMouth, WellGround, WorkSilhouette."
+    },
+    {
+      "time_seconds": 4.859,
+      "source_frame": "D14_shots/ep22_shot03/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 5.67m to 12.85m across 3 layers; nearest is WellMouth, furthest is WellGround"
+      },
+      "camera_relation": "camera at (-0.26, -6.55, 0.74) on a 35.0mm lens, frame 118 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR WorkSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 76.31,
+          "center_y_percent": 43.9,
+          "bbox_width_percent": 47.38,
+          "bbox_height_percent": 30.0,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WellGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV B-16",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 59.14,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 20.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WellMouth, left of WorkSilhouette, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 PROP B-16",
+          "visibility": "visible",
+          "center_x_percent": 0.62,
+          "center_y_percent": 49.78,
+          "bbox_width_percent": 1.24,
+          "bbox_height_percent": 24.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WellGround, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant WellGround covers 100x20 percent at frame 50/59. Left to right: WellMouth, WellGround, WorkSilhouette."
+    },
+    {
+      "time_seconds": 6.479,
+      "source_frame": "D14_shots/ep22_shot03/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 5.67m to 12.85m across 3 layers; nearest is WellMouth, furthest is WellGround"
+      },
+      "camera_relation": "camera at (-0.26, -6.55, 0.74) on a 35.0mm lens, frame 156 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR WorkSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 76.31,
+          "center_y_percent": 43.9,
+          "bbox_width_percent": 47.38,
+          "bbox_height_percent": 30.0,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WellGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV B-16",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 59.14,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 20.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WellMouth, left of WorkSilhouette, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 PROP B-16",
+          "visibility": "visible",
+          "center_x_percent": 0.62,
+          "center_y_percent": 49.78,
+          "bbox_width_percent": 1.24,
+          "bbox_height_percent": 24.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WellGround, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant WellGround covers 100x20 percent at frame 50/59. Left to right: WellMouth, WellGround, WorkSilhouette."
+    },
+    {
+      "time_seconds": 8.099,
+      "source_frame": "D14_shots/ep22_shot03/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 5.67m to 12.85m across 3 layers; nearest is WellMouth, furthest is WellGround"
+      },
+      "camera_relation": "camera at (-0.26, -6.55, 0.74) on a 35.0mm lens, frame 195 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR WorkSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 76.31,
+          "center_y_percent": 43.9,
+          "bbox_width_percent": 47.38,
+          "bbox_height_percent": 30.0,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WellGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV B-16",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 59.14,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 20.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WellMouth, left of WorkSilhouette, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 PROP B-16",
+          "visibility": "visible",
+          "center_x_percent": 0.62,
+          "center_y_percent": 49.78,
+          "bbox_width_percent": 1.24,
+          "bbox_height_percent": 24.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WellGround, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant WellGround covers 100x20 percent at frame 50/59. Left to right: WellMouth, WellGround, WorkSilhouette."
+    },
+    {
+      "time_seconds": 9.719,
+      "source_frame": "D14_shots/ep22_shot03/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 5.67m to 12.85m across 3 layers; nearest is WellMouth, furthest is WellGround"
+      },
+      "camera_relation": "camera at (-0.26, -6.55, 0.74) on a 35.0mm lens, frame 234 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR WorkSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 76.31,
+          "center_y_percent": 43.9,
+          "bbox_width_percent": 47.38,
+          "bbox_height_percent": 30.0,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WellGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV B-16",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 59.14,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 20.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WellMouth, left of WorkSilhouette, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 PROP B-16",
+          "visibility": "visible",
+          "center_x_percent": 0.62,
+          "center_y_percent": 49.78,
+          "bbox_width_percent": 1.24,
+          "bbox_height_percent": 24.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WellGround, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant WellGround covers 100x20 percent at frame 50/59. Left to right: WellMouth, WellGround, WorkSilhouette."
+    },
+    {
+      "time_seconds": 11.339,
+      "source_frame": "D14_shots/ep22_shot03/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 5.67m to 12.85m across 3 layers; nearest is WellMouth, furthest is WellGround"
+      },
+      "camera_relation": "camera at (-0.26, -6.55, 0.74) on a 35.0mm lens, frame 273 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR WorkSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 76.31,
+          "center_y_percent": 43.9,
+          "bbox_width_percent": 47.38,
+          "bbox_height_percent": 30.0,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WellGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV B-16",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 59.14,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 20.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WellMouth, left of WorkSilhouette, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 PROP B-16",
+          "visibility": "visible",
+          "center_x_percent": 0.62,
+          "center_y_percent": 49.78,
+          "bbox_width_percent": 1.24,
+          "bbox_height_percent": 24.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WellGround, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant WellGround covers 100x20 percent at frame 50/59. Left to right: WellMouth, WellGround, WorkSilhouette."
+    },
+    {
+      "time_seconds": 12.958,
+      "source_frame": "D14_shots/ep22_shot03/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 5.67m to 12.85m across 3 layers; nearest is WellMouth, furthest is WellGround"
+      },
+      "camera_relation": "camera at (-0.26, -6.55, 0.74) on a 35.0mm lens, frame 312 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR WorkSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 76.31,
+          "center_y_percent": 43.9,
+          "bbox_width_percent": 47.38,
+          "bbox_height_percent": 30.0,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WellGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV B-16",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 59.14,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 20.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WellMouth, left of WorkSilhouette, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 PROP B-16",
+          "visibility": "visible",
+          "center_x_percent": 0.62,
+          "center_y_percent": 49.78,
+          "bbox_width_percent": 1.24,
+          "bbox_height_percent": 24.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WellGround, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant WellGround covers 100x20 percent at frame 50/59. Left to right: WellMouth, WellGround, WorkSilhouette."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "project": "双相潮主",
+  "unit": "U02",
+  "checked_at": "2026-10-23T08:02:29.510Z",
+  "docs": [
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D06",
+    "D07",
+    "D08",
+    "D09",
+    "D10",
+    "D11",
+    "D12",
+    "D13",
+    "D14",
+    "D15",
+    "D16",
+    "D17",
+    "D18"
+  ],
+  "unitDocsCount": 10,
+  "rules": [
+    {
+      "id": "V1",
+      "name": "字段完整性与枚举合法性",
+      "scope": "all",
+      "errors": [],
+      "warnings": [],
+      "status": "PASS"
+    },
+    {
+      "id": "V2",
+      "name": "跨文件引用完整性",
+      "scope": "all",
+      "errors": [],
+      "warnings": [],
+      "status": "PASS"
+    },
+    {
+      "id": "V3",
+      "name": "镜号连续与唯一",
+      "scope": "unit",
+      "errors": [],
+      "warnings": [],
+      "status": "PASS"
+    },
+    {
+      "id": "V4",
+      "name": "时长求和与四段制边界",
+      "scope": "unit",
+      "errors": [],
+      "warnings": [],
+      "status": "PASS"
+    },
+    {
+      "id": "V5",
+      "name": "术语收口与禁用同义写法",
+      "scope": "all",
+      "errors": [],
+      "warnings": [],
+      "status": "PASS"
+    },
+    {
+      "id": "V6",
+      "name": "禁词扫描与贬称未成年一票否决",
+      "scope": "all",
+      "errors": [],
+      "warnings": [],
+      "status": "PASS"
+    },
+    {
+      "id": "V7",
+      "name": "D12 角色描述必须出自 D10 锚点表",
+      "scope": "unit",
+      "errors": [],
+      "warnings": [],
+      "status": "PASS"
+    },
+    {
+      "id": "V8",
+      "name": "单元钩子链闭合",
+      "scope": "unit",
+      "errors": [],
+      "warnings": [],
+      "status": "PASS"
+    },
+    {
+      "id": "V9",
+      "name": "字数基础档与合规增量档",
+      "scope": "unit",
+      "errors": [],
+      "warnings": [],
+      "status": "PASS"
+    },
+    {
+      "id": "V10",
+      "name": "伏笔埋收与爽点密度",
+      "scope": "unit",
+      "errors": [],
+      "warnings": [
+        "伏笔 F07: 已埋于本单元，回收登记在 U04（跨单元回收，需在目标单元复核）",
+        "伏笔 F08: 已埋于本单元，回收登记在 U05（跨单元回收，需在目标单元复核）",
+        "伏笔 F09: 已埋于本单元，回收登记在 U03（跨单元回收，需在目标单元复核）"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V11",
+      "name": "D14 逐镜覆盖与逐镜包一致性",
+      "scope": "unit",
+      "errors": [],
+      "warnings": [],
+      "status": "PASS"
+    },
+    {
+      "id": "V12",
+      "name": "白模构图一致性（D11 景别 ↔ 投影占幅）",
+      "scope": "unit",
+      "errors": [
+        "V12 ep11_shot02（ep11 shot2，中远景）：W1 角色完全不在画幅内（占幅 0%）；W3 画面最大对象是 EXT「B-3_EXT_FactoryHallShell.002」（占幅 50.3%），主体让位给环境",
+        "V12 ep12_shot01（ep12 shot1，特写）：W1 角色完全不在画幅内（占幅 0%）；W3 画面最大对象是 EXT「B-5_EXT_OldSheetMetalWall_01」（占幅 100.0%），主体让位给环境",
+        "V12 ep13_shot04（ep13 shot4，中景）：W1 角色完全不在画幅内（占幅 0%）；W3 画面最大对象是 EXT「B-7_EXT_ReinforcedCloister_01」（占幅 100.0%），主体让位给环境",
+        "V12 ep14_shot03（ep14 shot3，中景）：W1 角色完全不在画幅内（占幅 0%）；W3 画面最大对象是 EXT「B-8_EXT_FactoryHallShell」（占幅 100.0%），主体让位给环境",
+        "V12 ep16_shot01（ep16 shot1，中景）：W1 角色完全不在画幅内（占幅 0%）；W3 画面最大对象是 EXT「B-10_EXT_WestPlantShell」（占幅 98.7%），主体让位给环境",
+        "V12 ep16_shot02（ep16 shot2，远景）：W1 角色完全不在画幅内（占幅 0%）；W3 画面最大对象是 EXT「B-10_EXT_WestPlantShell」（占幅 66.4%），主体让位给环境"
+      ],
+      "warnings": [
+        "V12: 已对账 32 镜（D14_shots）"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "id": "V13",
+      "name": "画外音结构化一致性（D15 voice_over ↔ D11 镜次台词）",
+      "scope": "unit",
+      "errors": [],
+      "warnings": [
+        "V13: D15 有 8 条画外音落在金三秒窗口（at_sec ≤ 1.5s）但未声明 vo_type／speaker_in_frame，V13-a／V13-b 未判（缺失不判 error）；建议补齐字段后复跑（样例：ep9/shot1@0.4s、ep10/shot1@0.4s、ep11/shot1@0.4s、ep12/shot1@0.5s、ep13/shot1@0.4s、ep14/shot1@0.4s、ep15/shot1@0.4s、ep16/shot1@0.5s）",
+        "V13: 已检查画外音 30 条（onscreen 对账 0 条，V13-c 反证腿放行 0 条）"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "summary": {
+    "errors": 6,
+    "warnings": 6,
+    "passed": 12,
+    "failed": 1,
+    "missing": 0
+  }
+}

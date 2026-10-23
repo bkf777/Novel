@@ -1,0 +1,44 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated….
+[INSTANCE REGISTRY] I1=<O007>,I2=<O008>,I3=<O009>.
+<Entity 01 ENV B-7>=E1[environment/primary/static] members=I1;n=1;src=B-7 built environment shell enclosing the set…; final=B-7 built environment shell enclosing the set: ReinforcedCloister; finish=worn cement, oxidised steel and sheet metal with cold grey reflections, shadow…; style=world_style_unit_contract.
+<Entity 02 PROP B-7>=E2[rigid/context/static] members=I2-I3;n=2;src=B-7 set pieces and fittings: GreyFramePanel, SteelSafe; final=B-7 set pieces and fittings: GreyFramePanel, SteelSafe; finish=utilitarian material with visible weight, thickness and use marks, cold grey metal…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I3;1:1;n=2.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D… | materials=real skin with pores and slight oil sheen, matte technical fabric… | environment=cement yard plates cut by fire lines, riveted steel frames and… | props=functional utilitarian tooling with real weight and thickness… | light=one cold overhead key over the purification bench with shadow….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_5201@0.000-0.800s I1,I3: rel=the law strip is locked into the reinforced…; ban=do not leave the strip visible and do not open the safe….
+[Shot 1] @0.000-8.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E2;path=camera travels from (7. 00, 19. 60, 1. 55) to (7. 00, 19. 60, 1…;dist=stable;azi=stable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the frame centre band with head…;ban=do not add any camera move, zoom or handheld shake… | Act=the safe door closes and the law strip is locked into the reinforced cloister, the last line of cold light in the door gap going… | Layout=3 visible instances. Dominant ReinforcedCloister covers 100x100 percent at frame 50/50… | Light=one cold overhead key over the purification bench with shadow detail….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 2. 11m to 3. 68m across 3 layers…;Cam=camera at (7. 00, 19. 60, 1. 55) on a 50…;Lay=3 visible instances… V=I2:6/24/13/31,I3:42/68/69/52 D=I1:v/50/50/100/100/o:compact block proxy, near…/m:stationary across this interval/r:right of SteelSafe, in front of…
+@0.995s F=medium;Comp=depth spans 2. 11m to 3. 68m across 3 layers…;Cam=camera at (7. 00, 19. 60, 1. 55) on a 50…;Lay=3 visible instances… V=I2:6/24/13/31,I3:42/68/69/52 D=I1:v/50/50/100/100/o:compact block proxy, near…/m:stationary across this interval/r:right of SteelSafe, in front of…
+@1.990s F=medium;Comp=depth spans 2. 11m to 3. 68m across 3 layers…;Cam=camera at (7. 00, 19. 60, 1. 55) on a 50…;Lay=3 visible instances… V=I2:6/24/13/31,I3:42/68/69/52 D=I1:v/50/50/100/100/o:compact block proxy, near…/m:stationary across this interval/r:right of SteelSafe, in front of…
+@2.984s F=medium;Comp=depth spans 2. 11m to 3. 68m across 3 layers…;Cam=camera at (7. 00, 19. 60, 1. 55) on a 50…;Lay=3 visible instances… V=I2:6/24/13/31,I3:42/68/69/52 D=I1:v/50/50/100/100/o:compact block proxy, near…/m:stationary across this interval/r:right of SteelSafe, in front of…
+@3.979s F=medium;Comp=depth spans 2. 11m to 3. 68m across 3 layers…;Cam=camera at (7. 00, 19. 60, 1. 55) on a 50…;Lay=3 visible instances… V=I2:6/24/13/31,I3:42/68/69/52 D=I1:v/50/50/100/100/o:compact block proxy, near…/m:stationary across this interval/r:right of SteelSafe, in front of…
+@4.974s F=medium;Comp=depth spans 2. 11m to 3. 68m across 3 layers…;Cam=camera at (7. 00, 19. 60, 1. 55) on a 50…;Lay=3 visible instances… V=I2:6/24/13/31,I3:42/68/69/52 D=I1:v/50/50/100/100/o:compact block proxy, near…/m:stationary across this interval/r:right of SteelSafe, in front of…
+@5.969s F=medium;Comp=depth spans 2. 11m to 3. 68m across 3 layers…;Cam=camera at (7. 00, 19. 60, 1. 55) on a 50…;Lay=3 visible instances… V=I2:6/24/13/31,I3:42/68/69/52 D=I1:v/50/50/100/100/o:compact block proxy, near…/m:stationary across this interval/r:right of SteelSafe, in front of…
+@6.964s F=medium;Comp=depth spans 2. 11m to 3. 68m across 3 layers…;Cam=camera at (7. 00, 19. 60, 1. 55) on a 50…;Lay=3 visible instances… V=I2:6/24/13/31,I3:42/68/69/52 D=I1:v/50/50/100/100/o:compact block proxy, near…/m:stationary across this interval/r:right of SteelSafe, in front of…
+@7.958s F=medium;Comp=depth spans 2. 11m to 3. 68m across 3 layers…;Cam=camera at (7. 00, 19. 60, 1. 55) on a 50…;Lay=3 visible instances… V=I2:6/24/13/31,I3:42/68/69/52 D=I1:v/50/50/100/100/o:compact block proxy, near…/m:stationary across this interval/r:right of SteelSafe, in front of…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+a led board scrolling several notices and the metal sound of the safe door closing
+
+non_diegetic_music:
+N/A

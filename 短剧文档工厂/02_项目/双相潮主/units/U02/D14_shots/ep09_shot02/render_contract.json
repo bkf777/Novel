@@ -1,0 +1,695 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep09_shot02/preview_video.mp4",
+    "duration": 13.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 312,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O003",
+      "source_name": "B-1_CHAR_Yehongyi_01",
+      "source_type": "MESH",
+      "root_name": "B-1_CHAR_Yehongyi_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 1.625,
+      "identity_cues": "name=B-1_CHAR_Yehongyi_01; type=MESH; root=B-1_CHAR_Yehongyi_01; dimensions=0.420,0.320,1.730",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O009",
+      "source_name": "B-1_EXT_FactoryYardGround",
+      "source_type": "MESH",
+      "root_name": "B-1_EXT_FactoryYardGround",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-1_EXT_FactoryYardGround; type=MESH; root=B-1_EXT_FactoryYardGround; dimensions=36.000,44.000,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O010",
+      "source_name": "B-1_EXT_WestPlantShell",
+      "source_type": "MESH",
+      "root_name": "B-1_EXT_WestPlantShell",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 12.958,
+      "identity_cues": "name=B-1_EXT_WestPlantShell; type=MESH; root=B-1_EXT_WestPlantShell; dimensions=2.820,9.401,2.935",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O012",
+      "source_name": "B-1_PROP_SideDoor_01",
+      "source_type": "MESH",
+      "root_name": "B-1_PROP_SideDoor_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 3.25,
+      "identity_cues": "name=B-1_PROP_SideDoor_01; type=MESH; root=B-1_PROP_SideDoor_01; dimensions=1.914,1.028,0.506",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR Yehongyi",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O003"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "female fighter character blockout in dark red outfit",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV B-1",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O009",
+        "O010"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-1 built environment shell enclosing the set: FactoryYardGround, WestPlantShell",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 03 PROP B-1",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O012"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-1 set pieces and fittings: SideDoor",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_3401",
+      "source_instance_ids": [
+        "O003",
+        "O012"
+      ],
+      "start_seconds": 0.0,
+      "end_seconds": 1.0,
+      "relation": "the fighter drags the scientist through the side door with the data tablet pressed to her chest",
+      "forbidden_change": "do not release the tablet and do not close the side door before the entry"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 13.0,
+      "camera_contract": {
+        "motion_type": "tracking",
+        "tracked_target_entity": "none",
+        "world_path": "camera travels from (-2.37, 4.90, 0.38) to (-4.37, 2.30, 0.36) on a 35mm lens, total path length 3.28m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "variable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中远景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not swap the follow move for an orbit or a frontal push; keep the 中远景 framing and the 跟 move exactly as blocked out"
+      },
+      "actions": "at the inner face of the factory gate the fighter pushes the side door open and drags the scientist through it, the data tablet pressed flat to her chest with the screen facing out; a third person comes in with the arm and the back of the neck bare and covered in grey-white patches; the three bodies crowd into the door frame",
+      "layout_and_occlusion": "4 visible instances. Dominant WestPlantShell covers 41x20 percent at frame 80/29. Left to right: FactoryYardGround, WestPlantShell, SideDoor, Yehongyi.",
+      "lighting_spatial_logic": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep09_shot02/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 6.07m to 21.49m across 4 layers; nearest is Yehongyi, furthest is WestPlantShell"
+      },
+      "camera_relation": "camera at (-2.37, 4.90, 0.38) on a 35.0mm lens, frame 1 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 98.78,
+          "center_y_percent": 34.8,
+          "bbox_width_percent": 2.44,
+          "bbox_height_percent": 29.22,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SideDoor, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 30.14,
+          "center_y_percent": 45.83,
+          "bbox_width_percent": 60.28,
+          "bbox_height_percent": 3.02,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WestPlantShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 79.53,
+          "center_y_percent": 28.52,
+          "bbox_width_percent": 40.95,
+          "bbox_height_percent": 19.79,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of SideDoor, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 95.93,
+          "center_y_percent": 41.96,
+          "bbox_width_percent": 8.14,
+          "bbox_height_percent": 8.34,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WestPlantShell, left of Yehongyi, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant WestPlantShell covers 41x20 percent at frame 80/29. Left to right: FactoryYardGround, WestPlantShell, SideDoor, Yehongyi."
+    },
+    {
+      "time_seconds": 1.62,
+      "source_frame": "D14_shots/ep09_shot02/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 5.92m to 21.33m across 4 layers; nearest is Yehongyi, furthest is WestPlantShell"
+      },
+      "camera_relation": "camera at (-2.45, 4.79, 0.38) on a 35.0mm lens, frame 40 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 99.42,
+          "center_y_percent": 34.31,
+          "bbox_width_percent": 1.16,
+          "bbox_height_percent": 30.0,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SideDoor, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 30.31,
+          "center_y_percent": 45.6,
+          "bbox_width_percent": 60.62,
+          "bbox_height_percent": 3.05,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WestPlantShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 79.69,
+          "center_y_percent": 28.12,
+          "bbox_width_percent": 40.61,
+          "bbox_height_percent": 20.02,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of SideDoor, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 96.47,
+          "center_y_percent": 41.67,
+          "bbox_width_percent": 7.07,
+          "bbox_height_percent": 8.56,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WestPlantShell, left of Yehongyi, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant WestPlantShell covers 41x20 percent at frame 80/28. Left to right: FactoryYardGround, WestPlantShell, SideDoor, Yehongyi."
+    },
+    {
+      "time_seconds": 3.24,
+      "source_frame": "D14_shots/ep09_shot02/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 6.35m to 20.91m across 3 layers; nearest is SideDoor, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-2.68, 4.49, 0.37) on a 35.0mm lens, frame 79 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 30.76,
+          "center_y_percent": 44.99,
+          "bbox_width_percent": 61.52,
+          "bbox_height_percent": 3.11,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WestPlantShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 80.14,
+          "center_y_percent": 27.07,
+          "bbox_width_percent": 39.72,
+          "bbox_height_percent": 20.64,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of SideDoor, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 97.96,
+          "center_y_percent": 40.88,
+          "bbox_width_percent": 4.09,
+          "bbox_height_percent": 9.18,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WestPlantShell, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant WestPlantShell covers 40x21 percent at frame 80/27. Left to right: FactoryYardGround, WestPlantShell, SideDoor."
+    },
+    {
+      "time_seconds": 4.859,
+      "source_frame": "D14_shots/ep09_shot02/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 20.29m to 20.46m across 2 layers; nearest is WestPlantShell, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-3.00, 4.08, 0.37) on a 35.0mm lens, frame 118 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 31.4,
+          "center_y_percent": 44.13,
+          "bbox_width_percent": 62.79,
+          "bbox_height_percent": 3.21,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WestPlantShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 80.77,
+          "center_y_percent": 25.55,
+          "bbox_width_percent": 38.45,
+          "bbox_height_percent": 21.58,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant WestPlantShell covers 38x22 percent at frame 81/26. Left to right: FactoryYardGround, WestPlantShell."
+    },
+    {
+      "time_seconds": 6.479,
+      "source_frame": "D14_shots/ep09_shot02/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 19.62m to 19.96m across 2 layers; nearest is WestPlantShell, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-3.36, 3.61, 0.37) on a 35.0mm lens, frame 156 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 32.11,
+          "center_y_percent": 43.17,
+          "bbox_width_percent": 64.21,
+          "bbox_height_percent": 3.33,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WestPlantShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 81.48,
+          "center_y_percent": 23.79,
+          "bbox_width_percent": 37.03,
+          "bbox_height_percent": 22.73,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant WestPlantShell covers 37x23 percent at frame 81/24. Left to right: FactoryYardGround, WestPlantShell."
+    },
+    {
+      "time_seconds": 8.099,
+      "source_frame": "D14_shots/ep09_shot02/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 18.92m to 19.44m across 2 layers; nearest is WestPlantShell, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-3.73, 3.13, 0.36) on a 35.0mm lens, frame 195 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 32.84,
+          "center_y_percent": 42.19,
+          "bbox_width_percent": 65.68,
+          "bbox_height_percent": 3.47,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WestPlantShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 82.22,
+          "center_y_percent": 21.9,
+          "bbox_width_percent": 35.57,
+          "bbox_height_percent": 24.05,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant WestPlantShell covers 36x24 percent at frame 82/22. Left to right: FactoryYardGround, WestPlantShell."
+    },
+    {
+      "time_seconds": 9.719,
+      "source_frame": "D14_shots/ep09_shot02/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 18.31m to 18.99m across 2 layers; nearest is WestPlantShell, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-4.05, 2.71, 0.36) on a 35.0mm lens, frame 234 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 33.49,
+          "center_y_percent": 41.34,
+          "bbox_width_percent": 66.98,
+          "bbox_height_percent": 3.59,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WestPlantShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 82.86,
+          "center_y_percent": 20.18,
+          "bbox_width_percent": 34.27,
+          "bbox_height_percent": 25.32,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant WestPlantShell covers 34x25 percent at frame 83/20. Left to right: FactoryYardGround, WestPlantShell."
+    },
+    {
+      "time_seconds": 11.339,
+      "source_frame": "D14_shots/ep09_shot02/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 17.88m to 18.67m across 2 layers; nearest is WestPlantShell, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-4.28, 2.41, 0.36) on a 35.0mm lens, frame 273 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 33.95,
+          "center_y_percent": 40.74,
+          "bbox_width_percent": 67.89,
+          "bbox_height_percent": 3.69,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WestPlantShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 83.32,
+          "center_y_percent": 18.92,
+          "bbox_width_percent": 33.35,
+          "bbox_height_percent": 26.3,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant WestPlantShell covers 33x26 percent at frame 83/19. Left to right: FactoryYardGround, WestPlantShell."
+    },
+    {
+      "time_seconds": 12.958,
+      "source_frame": "D14_shots/ep09_shot02/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 17.72m to 18.54m across 2 layers; nearest is WestPlantShell, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-4.37, 2.30, 0.36) on a 35.0mm lens, frame 312 of 312",
+      "tracked_instances": [
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 34.12,
+          "center_y_percent": 40.51,
+          "bbox_width_percent": 68.24,
+          "bbox_height_percent": 3.73,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WestPlantShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 83.5,
+          "center_y_percent": 18.43,
+          "bbox_width_percent": 33.0,
+          "bbox_height_percent": 26.69,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant WestPlantShell covers 33x27 percent at frame 84/18. Left to right: FactoryYardGround, WestPlantShell."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

@@ -1,0 +1,547 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep05_shot04/preview_video.mp4",
+    "duration": 8.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 192,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O002",
+      "source_name": "A-6_CHAR_Yechengjun_01",
+      "source_type": "MESH",
+      "root_name": "A-6_CHAR_Yechengjun_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=A-6_CHAR_Yechengjun_01; type=MESH; root=A-6_CHAR_Yechengjun_01; dimensions=0.420,0.320,1.730",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O003",
+      "source_name": "A-6_EXT_InnerYard",
+      "source_type": "MESH",
+      "root_name": "A-6_EXT_InnerYard",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=A-6_EXT_InnerYard; type=MESH; root=A-6_EXT_InnerYard; dimensions=36.000,28.000,0.400",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O004",
+      "source_name": "A-6_EXT_PipeRack_05",
+      "source_type": "MESH",
+      "root_name": "A-6_EXT_PipeRack_05",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=A-6_EXT_PipeRack_05; type=MESH; root=A-6_EXT_PipeRack_05; dimensions=22.000,1.250,6.057",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR Yechengjun",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O002"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "male officer antagonist blockout",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV A-6",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O003",
+        "O004"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-6 built environment shell enclosing the set: InnerYard, PipeRack",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    }
+  ],
+  "interaction_contracts": [],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 8.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 01 CHAR Yechengjun",
+        "world_path": "camera travels from (30.21, 1.59, 1.49) to (30.21, 1.59, 1.49) on a 85mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "近景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 近景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "profile of the officer at the terminal, collar buttoned, one eye silver single lens catching cold light, a hand in the dark grips the crowbar and tightens",
+      "layout_and_occlusion": "3 visible instances. Dominant Yechengjun covers 30x70 percent at frame 15/65. Left to right: PipeRack, Yechengjun, InnerYard.",
+      "lighting_spatial_logic": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep05_shot04/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 3.06m to 25.93m across 3 layers; nearest is Yechengjun, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (30.21, 1.59, 1.49) on a 85.0mm lens, frame 1 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yechengjun",
+          "visibility": "visible",
+          "center_x_percent": 15.19,
+          "center_y_percent": 64.98,
+          "bbox_width_percent": 30.37,
+          "bbox_height_percent": 70.04,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of PipeRack, left of InnerYard, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 89.46,
+          "center_y_percent": 66.83,
+          "bbox_width_percent": 21.07,
+          "bbox_height_percent": 11.77,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yechengjun, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 7.63,
+          "center_y_percent": 90.71,
+          "bbox_width_percent": 15.27,
+          "bbox_height_percent": 18.57,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yechengjun, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant Yechengjun covers 30x70 percent at frame 15/65. Left to right: PipeRack, Yechengjun, InnerYard."
+    },
+    {
+      "time_seconds": 0.995,
+      "source_frame": "D14_shots/ep05_shot04/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 3.06m to 25.93m across 3 layers; nearest is Yechengjun, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (30.21, 1.59, 1.49) on a 85.0mm lens, frame 25 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yechengjun",
+          "visibility": "visible",
+          "center_x_percent": 15.19,
+          "center_y_percent": 64.98,
+          "bbox_width_percent": 30.37,
+          "bbox_height_percent": 70.04,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of PipeRack, left of InnerYard, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 89.46,
+          "center_y_percent": 66.83,
+          "bbox_width_percent": 21.07,
+          "bbox_height_percent": 11.77,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yechengjun, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 7.63,
+          "center_y_percent": 90.71,
+          "bbox_width_percent": 15.27,
+          "bbox_height_percent": 18.57,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yechengjun, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant Yechengjun covers 30x70 percent at frame 15/65. Left to right: PipeRack, Yechengjun, InnerYard."
+    },
+    {
+      "time_seconds": 1.99,
+      "source_frame": "D14_shots/ep05_shot04/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 3.06m to 25.93m across 3 layers; nearest is Yechengjun, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (30.21, 1.59, 1.49) on a 85.0mm lens, frame 49 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yechengjun",
+          "visibility": "visible",
+          "center_x_percent": 15.19,
+          "center_y_percent": 64.98,
+          "bbox_width_percent": 30.37,
+          "bbox_height_percent": 70.04,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of PipeRack, left of InnerYard, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 89.46,
+          "center_y_percent": 66.83,
+          "bbox_width_percent": 21.07,
+          "bbox_height_percent": 11.77,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yechengjun, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 7.63,
+          "center_y_percent": 90.71,
+          "bbox_width_percent": 15.27,
+          "bbox_height_percent": 18.57,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yechengjun, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant Yechengjun covers 30x70 percent at frame 15/65. Left to right: PipeRack, Yechengjun, InnerYard."
+    },
+    {
+      "time_seconds": 2.984,
+      "source_frame": "D14_shots/ep05_shot04/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 3.06m to 25.93m across 3 layers; nearest is Yechengjun, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (30.21, 1.59, 1.49) on a 85.0mm lens, frame 73 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yechengjun",
+          "visibility": "visible",
+          "center_x_percent": 15.19,
+          "center_y_percent": 64.98,
+          "bbox_width_percent": 30.37,
+          "bbox_height_percent": 70.04,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of PipeRack, left of InnerYard, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 89.46,
+          "center_y_percent": 66.83,
+          "bbox_width_percent": 21.07,
+          "bbox_height_percent": 11.77,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yechengjun, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 7.63,
+          "center_y_percent": 90.71,
+          "bbox_width_percent": 15.27,
+          "bbox_height_percent": 18.57,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yechengjun, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant Yechengjun covers 30x70 percent at frame 15/65. Left to right: PipeRack, Yechengjun, InnerYard."
+    },
+    {
+      "time_seconds": 3.979,
+      "source_frame": "D14_shots/ep05_shot04/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 3.06m to 25.93m across 3 layers; nearest is Yechengjun, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (30.21, 1.59, 1.49) on a 85.0mm lens, frame 96 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yechengjun",
+          "visibility": "visible",
+          "center_x_percent": 15.19,
+          "center_y_percent": 64.98,
+          "bbox_width_percent": 30.37,
+          "bbox_height_percent": 70.04,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of PipeRack, left of InnerYard, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 89.46,
+          "center_y_percent": 66.83,
+          "bbox_width_percent": 21.07,
+          "bbox_height_percent": 11.77,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yechengjun, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 7.63,
+          "center_y_percent": 90.71,
+          "bbox_width_percent": 15.27,
+          "bbox_height_percent": 18.57,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yechengjun, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant Yechengjun covers 30x70 percent at frame 15/65. Left to right: PipeRack, Yechengjun, InnerYard."
+    },
+    {
+      "time_seconds": 4.974,
+      "source_frame": "D14_shots/ep05_shot04/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 3.06m to 25.93m across 3 layers; nearest is Yechengjun, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (30.21, 1.59, 1.49) on a 85.0mm lens, frame 120 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yechengjun",
+          "visibility": "visible",
+          "center_x_percent": 15.19,
+          "center_y_percent": 64.98,
+          "bbox_width_percent": 30.37,
+          "bbox_height_percent": 70.04,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of PipeRack, left of InnerYard, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 89.46,
+          "center_y_percent": 66.83,
+          "bbox_width_percent": 21.07,
+          "bbox_height_percent": 11.77,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yechengjun, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 7.63,
+          "center_y_percent": 90.71,
+          "bbox_width_percent": 15.27,
+          "bbox_height_percent": 18.57,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yechengjun, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant Yechengjun covers 30x70 percent at frame 15/65. Left to right: PipeRack, Yechengjun, InnerYard."
+    },
+    {
+      "time_seconds": 5.969,
+      "source_frame": "D14_shots/ep05_shot04/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 3.06m to 25.93m across 3 layers; nearest is Yechengjun, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (30.21, 1.59, 1.49) on a 85.0mm lens, frame 144 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yechengjun",
+          "visibility": "visible",
+          "center_x_percent": 15.19,
+          "center_y_percent": 64.98,
+          "bbox_width_percent": 30.37,
+          "bbox_height_percent": 70.04,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of PipeRack, left of InnerYard, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 89.46,
+          "center_y_percent": 66.83,
+          "bbox_width_percent": 21.07,
+          "bbox_height_percent": 11.77,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yechengjun, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 7.63,
+          "center_y_percent": 90.71,
+          "bbox_width_percent": 15.27,
+          "bbox_height_percent": 18.57,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yechengjun, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant Yechengjun covers 30x70 percent at frame 15/65. Left to right: PipeRack, Yechengjun, InnerYard."
+    },
+    {
+      "time_seconds": 6.964,
+      "source_frame": "D14_shots/ep05_shot04/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 3.06m to 25.93m across 3 layers; nearest is Yechengjun, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (30.21, 1.59, 1.49) on a 85.0mm lens, frame 168 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yechengjun",
+          "visibility": "visible",
+          "center_x_percent": 15.19,
+          "center_y_percent": 64.98,
+          "bbox_width_percent": 30.37,
+          "bbox_height_percent": 70.04,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of PipeRack, left of InnerYard, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 89.46,
+          "center_y_percent": 66.83,
+          "bbox_width_percent": 21.07,
+          "bbox_height_percent": 11.77,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yechengjun, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 7.63,
+          "center_y_percent": 90.71,
+          "bbox_width_percent": 15.27,
+          "bbox_height_percent": 18.57,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yechengjun, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant Yechengjun covers 30x70 percent at frame 15/65. Left to right: PipeRack, Yechengjun, InnerYard."
+    },
+    {
+      "time_seconds": 7.958,
+      "source_frame": "D14_shots/ep05_shot04/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 3.06m to 25.93m across 3 layers; nearest is Yechengjun, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (30.21, 1.59, 1.49) on a 85.0mm lens, frame 192 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yechengjun",
+          "visibility": "visible",
+          "center_x_percent": 15.19,
+          "center_y_percent": 64.98,
+          "bbox_width_percent": 30.37,
+          "bbox_height_percent": 70.04,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of PipeRack, left of InnerYard, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 89.46,
+          "center_y_percent": 66.83,
+          "bbox_width_percent": 21.07,
+          "bbox_height_percent": 11.77,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yechengjun, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 7.63,
+          "center_y_percent": 90.71,
+          "bbox_width_percent": 15.27,
+          "bbox_height_percent": 18.57,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yechengjun, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant Yechengjun covers 30x70 percent at frame 15/65. Left to right: PipeRack, Yechengjun, InnerYard."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

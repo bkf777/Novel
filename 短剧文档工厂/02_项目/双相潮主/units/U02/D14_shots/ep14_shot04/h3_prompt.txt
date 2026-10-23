@@ -1,0 +1,45 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O008>,I3=<O013>,I4=<O018>.
+<Entity 01 CHAR Luchen>=E1[articulated/primary/static] members=I1;n=1;src=protagonist blockout in black tactical coat; final=protagonist blockout in black tactical coat; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal…; style=world_style_unit_contract.
+<Entity 02 ENV B-8>=E2[environment/context/static] members=I2-I3;n=2;src=B-8 built environment shell enclosing the set…; final=B-8 built environment shell enclosing the set: MeetingRoomShell; finish=worn cement, oxidised steel and sheet metal with cold grey reflections, shadow…; style=world_style_unit_contract.
+<Entity 03 PROP B-8>=E3[rigid/context/static] members=I4;n=1;src=B-8 set pieces and fittings: SteelTable; final=B-8 set pieces and fittings: SteelTable; finish=utilitarian material with visible weight, thickness and use marks, cold grey metal…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I3;1:1;n=2.
+E3:I4;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D… | materials=real skin with pores and slight oil sheen, matte technical fabric… | environment=cement yard plates cut by fire lines, riveted steel frames and… | props=functional utilitarian tooling with real weight and thickness… | light=one cold overhead key over the purification bench with shadow….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-7.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=none;path=camera travels from (-8. 58, 19. 08, 2. 18) to (-8. 58, 19. 08, 2…;dist=stable;azi=stable;elev=stable;lens=stable;comp=近景 framing in 9:16 vertical, subject held in the frame centre band with head…;ban=do not add any camera move, zoom or handheld shake… | Act=a city defence map lies open at the far end of the meeting table, the machine factory marked on it… | Layout=4 visible instances. Dominant MeetingRoomShell covers 100x59 percent at frame 50/70… | Light=one cold overhead key over the purification bench with shadow detail….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=close;Comp=depth spans 1. 93m to 4. 93m across 4 layers…;Cam=camera at (-8. 58, 19. 08, 2. 18) on a 85…;Lay=4 visible instances… V=I2:50/70/100/59,I3:11/31/23/63,I4:50/76/100/48 D=I1:v/5/65/9/70/o:upright body proxy, head end up/m:stationary across this interval/r:left of MeetingRoomShell, behind all…
+@0.994s F=close;Comp=depth spans 1. 93m to 4. 93m across 4 layers…;Cam=camera at (-8. 58, 19. 08, 2. 18) on a 85…;Lay=4 visible instances… V=I2:50/70/100/59,I3:11/31/23/63,I4:50/76/100/48 D=I1:v/5/65/9/70/o:upright body proxy, head end up/m:stationary across this interval/r:left of MeetingRoomShell, behind all…
+@1.988s F=close;Comp=depth spans 1. 93m to 4. 93m across 4 layers…;Cam=camera at (-8. 58, 19. 08, 2. 18) on a 85…;Lay=4 visible instances… V=I2:50/70/100/59,I3:11/31/23/63,I4:50/76/100/48 D=I1:v/5/65/9/70/o:upright body proxy, head end up/m:stationary across this interval/r:left of MeetingRoomShell, behind all…
+@2.982s F=close;Comp=depth spans 1. 93m to 4. 93m across 4 layers…;Cam=camera at (-8. 58, 19. 08, 2. 18) on a 85…;Lay=4 visible instances… V=I2:50/70/100/59,I3:11/31/23/63,I4:50/76/100/48 D=I1:v/5/65/9/70/o:upright body proxy, head end up/m:stationary across this interval/r:left of MeetingRoomShell, behind all…
+@3.976s F=close;Comp=depth spans 1. 93m to 4. 93m across 4 layers…;Cam=camera at (-8. 58, 19. 08, 2. 18) on a 85…;Lay=4 visible instances… V=I2:50/70/100/59,I3:11/31/23/63,I4:50/76/100/48 D=I1:v/5/65/9/70/o:upright body proxy, head end up/m:stationary across this interval/r:left of MeetingRoomShell, behind all…
+@4.970s F=close;Comp=depth spans 1. 93m to 4. 93m across 4 layers…;Cam=camera at (-8. 58, 19. 08, 2. 18) on a 85…;Lay=4 visible instances… V=I2:50/70/100/59,I3:11/31/23/63,I4:50/76/100/48 D=I1:v/5/65/9/70/o:upright body proxy, head end up/m:stationary across this interval/r:left of MeetingRoomShell, behind all…
+@5.964s F=close;Comp=depth spans 1. 93m to 4. 93m across 4 layers…;Cam=camera at (-8. 58, 19. 08, 2. 18) on a 85…;Lay=4 visible instances… V=I2:50/70/100/59,I3:11/31/23/63,I4:50/76/100/48 D=I1:v/5/65/9/70/o:upright body proxy, head end up/m:stationary across this interval/r:left of MeetingRoomShell, behind all…
+@6.958s F=close;Comp=depth spans 1. 93m to 4. 93m across 4 layers…;Cam=camera at (-8. 58, 19. 08, 2. 18) on a 85…;Lay=4 visible instances… V=I2:50/70/100/59,I3:11/31/23/63,I4:50/76/100/48 D=I1:v/5/65/9/70/o:upright body proxy, head end up/m:stationary across this interval/r:left of MeetingRoomShell, behind all…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+a dull pen tip touching paper with fabric shifting
+
+non_diegetic_music:
+N/A

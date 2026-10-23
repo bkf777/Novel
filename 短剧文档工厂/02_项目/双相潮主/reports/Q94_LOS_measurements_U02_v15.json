@@ -1,0 +1,1129 @@
+{
+ "index": "/tmp/dcc-smoke/los/index_u02.json",
+ "summary": {
+  "?": {
+   "shots": 32,
+   "los_active_shots": 5,
+   "los_fallback_shots": 1,
+   "moved_shots": 23,
+   "w2_in_band": 26,
+   "w3_char_largest": 26,
+   "w2_not_in_band": [
+    42,
+    45,
+    52,
+    55,
+    61,
+    62
+   ],
+   "w3_not_char_largest": [
+    42,
+    45,
+    52,
+    55,
+    61,
+    62
+   ],
+   "los_fallback_gsn": [
+    54
+   ],
+   "delta_mag_max_m": 7.618,
+   "delta_mag_median_m": 0.3,
+   "delta_mag_top5": [
+    7.618,
+    7.396,
+    6.457,
+    5.889,
+    4.605
+   ]
+  }
+ },
+ "shots": [
+  {
+   "unit": "?",
+   "gsn": 33,
+   "ep": 9,
+   "shot_id": 1,
+   "scene_code": "B-1",
+   "shot_size": "中远景",
+   "band": [
+    20,
+    40
+   ],
+   "subject_max": 30.0,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 28.99,
+   "worst_other": "B-1_PROP_MainRollerDoor_01",
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    5.131,
+    6.392,
+    0.37
+   ],
+   "cam_solved": [
+    5.151,
+    6.378,
+    0.37
+   ],
+   "delta_world": [
+    0.02,
+    -0.015,
+    -0.0
+   ],
+   "delta_mag_m": 0.025,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 34,
+   "ep": 9,
+   "shot_id": 2,
+   "scene_code": "B-1",
+   "shot_size": "中远景",
+   "band": [
+    20,
+    40
+   ],
+   "subject_max": 30.0,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 26.69,
+   "worst_other": "B-1_EXT_WestPlantShell",
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    -2.386,
+    4.917,
+    0.376
+   ],
+   "cam_solved": [
+    -2.366,
+    4.902,
+    0.376
+   ],
+   "delta_world": [
+    0.021,
+    -0.014,
+    -0.0
+   ],
+   "delta_mag_m": 0.025,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 35,
+   "ep": 9,
+   "shot_id": 3,
+   "scene_code": "B-1",
+   "shot_size": "近景",
+   "band": [
+    55,
+    85
+   ],
+   "subject_max": 62.96,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 54.83,
+   "worst_other": "B-1_EXT_FactoryYardGround",
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    -6.6,
+    3.6,
+    1.52
+   ],
+   "cam_solved": [
+    -7.501,
+    2.57,
+    1.201
+   ],
+   "delta_world": [
+    -0.901,
+    -1.03,
+    -0.319
+   ],
+   "delta_mag_m": 1.405,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 36,
+   "ep": 9,
+   "shot_id": 4,
+   "scene_code": "B-1",
+   "shot_size": "中景",
+   "band": [
+    35,
+    65
+   ],
+   "subject_max": 50.49,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 50.45,
+   "worst_other": "B-1_PROP_MainRollerDoor_01",
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    0.6,
+    10.4,
+    1.58
+   ],
+   "cam_solved": [
+    1.7,
+    9.061,
+    0.645
+   ],
+   "delta_world": [
+    1.1,
+    -1.339,
+    -0.935
+   ],
+   "delta_mag_m": 1.969,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 37,
+   "ep": 10,
+   "shot_id": 1,
+   "scene_code": "B-2",
+   "shot_size": "中景",
+   "band": [
+    35,
+    65
+   ],
+   "subject_max": 50.0,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 49.85,
+   "worst_other": "B-2_EXT_FactoryYardGround",
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    -4.315,
+    11.387,
+    2.247
+   ],
+   "cam_solved": [
+    -4.315,
+    11.387,
+    2.247
+   ],
+   "delta_world": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "delta_mag_m": 0.0,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 38,
+   "ep": 10,
+   "shot_id": 2,
+   "scene_code": "B-2",
+   "shot_size": "近景",
+   "band": [
+    55,
+    85
+   ],
+   "subject_max": 70.29,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 46.46,
+   "worst_other": "B-2_EXT_FactoryYardGround",
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    -6.3,
+    9.1,
+    1.42
+   ],
+   "cam_solved": [
+    -8.482,
+    8.399,
+    1.201
+   ],
+   "delta_world": [
+    -2.182,
+    -0.702,
+    -0.219
+   ],
+   "delta_mag_m": 2.303,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 39,
+   "ep": 10,
+   "shot_id": 3,
+   "scene_code": "B-2",
+   "shot_size": "近景",
+   "band": [
+    55,
+    85
+   ],
+   "subject_max": 69.76,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 48.61,
+   "worst_other": "B-2_PROP_SteelWorkbench_01",
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    -9.5,
+    9.0,
+    1.38
+   ],
+   "cam_solved": [
+    -8.201,
+    8.964,
+    1.346
+   ],
+   "delta_world": [
+    1.299,
+    -0.036,
+    -0.034
+   ],
+   "delta_mag_m": 1.3,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 40,
+   "ep": 10,
+   "shot_id": 4,
+   "scene_code": "B-2",
+   "shot_size": "近景",
+   "band": [
+    55,
+    85
+   ],
+   "subject_max": 70.01,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 69.33,
+   "worst_other": "B-2_EXT_FactoryYardGround",
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    -4.697,
+    10.937,
+    1.569
+   ],
+   "cam_solved": [
+    -4.52,
+    10.695,
+    1.569
+   ],
+   "delta_world": [
+    0.178,
+    -0.242,
+    -0.0
+   ],
+   "delta_mag_m": 0.3,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 41,
+   "ep": 11,
+   "shot_id": 1,
+   "scene_code": "B-3",
+   "shot_size": "特写",
+   "band": [
+    70,
+    95
+   ],
+   "subject_max": 81.94,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 62.89,
+   "worst_other": "B-3_PROP_SteelTable_01",
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    9.2,
+    10.622,
+    1.217
+   ],
+   "cam_solved": [
+    9.2,
+    10.622,
+    1.217
+   ],
+   "delta_world": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "delta_mag_m": 0.0,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 42,
+   "ep": 11,
+   "shot_id": 2,
+   "scene_code": "B-3",
+   "shot_size": null,
+   "band": null,
+   "subject_max": null,
+   "w2_in_band": null,
+   "w3_char_largest": null,
+   "other_max": null,
+   "worst_other": null,
+   "los_blocked_candidates": null,
+   "los_fallback": null,
+   "cam_d13": null,
+   "cam_solved": null,
+   "delta_world": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "delta_mag_m": 0.0,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 43,
+   "ep": 11,
+   "shot_id": 3,
+   "scene_code": "B-3",
+   "shot_size": "中景",
+   "band": [
+    35,
+    65
+   ],
+   "subject_max": 49.77,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 42.75,
+   "worst_other": "B-3_EXT_FactoryHallShell.002",
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    4.0,
+    10.4,
+    1.58
+   ],
+   "cam_solved": [
+    5.6,
+    9.074,
+    0.409
+   ],
+   "delta_world": [
+    1.6,
+    -1.326,
+    -1.171
+   ],
+   "delta_mag_m": 2.385,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 44,
+   "ep": 11,
+   "shot_id": 4,
+   "scene_code": "B-4",
+   "shot_size": "中景",
+   "band": [
+    35,
+    65
+   ],
+   "subject_max": 50.0,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 37.12,
+   "worst_other": "B-4_EXT_MarketStreetBackdrop.004",
+   "los_blocked_candidates": 64,
+   "los_fallback": false,
+   "cam_d13": [
+    -2.8,
+    2.516,
+    -2.6
+   ],
+   "cam_solved": [
+    -2.8,
+    2.516,
+    -2.6
+   ],
+   "delta_world": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "delta_mag_m": 0.0,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 45,
+   "ep": 12,
+   "shot_id": 1,
+   "scene_code": "B-5",
+   "shot_size": null,
+   "band": null,
+   "subject_max": null,
+   "w2_in_band": null,
+   "w3_char_largest": null,
+   "other_max": null,
+   "worst_other": null,
+   "los_blocked_candidates": null,
+   "los_fallback": null,
+   "cam_d13": null,
+   "cam_solved": null,
+   "delta_world": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "delta_mag_m": 0.0,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 46,
+   "ep": 12,
+   "shot_id": 2,
+   "scene_code": "B-5",
+   "shot_size": "远景",
+   "band": [
+    8,
+    25
+   ],
+   "subject_max": 16.49,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 0.66,
+   "worst_other": "B-5_EXT_FactoryYardGround",
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    0.0,
+    -18.0,
+    1.95
+   ],
+   "cam_solved": [
+    -7.2,
+    -19.438,
+    2.842
+   ],
+   "delta_world": [
+    -7.2,
+    -1.438,
+    0.892
+   ],
+   "delta_mag_m": 7.396,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 47,
+   "ep": 12,
+   "shot_id": 3,
+   "scene_code": "B-5",
+   "shot_size": "中景",
+   "band": [
+    35,
+    65
+   ],
+   "subject_max": 48.75,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 48.59,
+   "worst_other": "B-5_PROP_MainRollerDoor_03",
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    -1.8,
+    3.4,
+    1.55
+   ],
+   "cam_solved": [
+    -4.702,
+    4.683,
+    0.295
+   ],
+   "delta_world": [
+    -2.902,
+    1.283,
+    -1.255
+   ],
+   "delta_mag_m": 3.412,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 48,
+   "ep": 12,
+   "shot_id": 4,
+   "scene_code": "B-5",
+   "shot_size": "中景",
+   "band": [
+    35,
+    65
+   ],
+   "subject_max": 50.1,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 49.66,
+   "worst_other": "B-5_EXT_OldSheetMetalWall_01",
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    3.6,
+    5.6,
+    1.6
+   ],
+   "cam_solved": [
+    3.29,
+    8.846,
+    0.794
+   ],
+   "delta_world": [
+    -0.31,
+    3.246,
+    -0.806
+   ],
+   "delta_mag_m": 3.359,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 49,
+   "ep": 13,
+   "shot_id": 1,
+   "scene_code": "B-6",
+   "shot_size": "中景",
+   "band": [
+    35,
+    65
+   ],
+   "subject_max": 53.14,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 0.0,
+   "worst_other": null,
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    -1.6,
+    3.2,
+    1.55
+   ],
+   "cam_solved": [
+    -1.474,
+    9.083,
+    1.326
+   ],
+   "delta_world": [
+    0.126,
+    5.883,
+    -0.224
+   ],
+   "delta_mag_m": 5.889,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 50,
+   "ep": 13,
+   "shot_id": 2,
+   "scene_code": "B-6",
+   "shot_size": "中远景",
+   "band": [
+    20,
+    40
+   ],
+   "subject_max": 30.0,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 24.27,
+   "worst_other": "B-6_EXT_MarketStreetBackdrop.004",
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    1.097,
+    -0.124,
+    5.264
+   ],
+   "cam_solved": [
+    1.222,
+    -0.122,
+    5.279
+   ],
+   "delta_world": [
+    0.125,
+    0.002,
+    0.015
+   ],
+   "delta_mag_m": 0.126,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 51,
+   "ep": 13,
+   "shot_id": 3,
+   "scene_code": "B-6",
+   "shot_size": "特写",
+   "band": [
+    70,
+    95
+   ],
+   "subject_max": 83.03,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 0.0,
+   "worst_other": null,
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    -3.0,
+    4.94,
+    1.6
+   ],
+   "cam_solved": [
+    -2.4,
+    6.438,
+    1.497
+   ],
+   "delta_world": [
+    0.6,
+    1.498,
+    -0.103
+   ],
+   "delta_mag_m": 1.617,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 52,
+   "ep": 13,
+   "shot_id": 4,
+   "scene_code": "B-7",
+   "shot_size": null,
+   "band": null,
+   "subject_max": null,
+   "w2_in_band": null,
+   "w3_char_largest": null,
+   "other_max": null,
+   "worst_other": null,
+   "los_blocked_candidates": null,
+   "los_fallback": null,
+   "cam_d13": null,
+   "cam_solved": null,
+   "delta_world": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "delta_mag_m": 0.0,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 53,
+   "ep": 14,
+   "shot_id": 1,
+   "scene_code": "B-8",
+   "shot_size": "中景",
+   "band": [
+    35,
+    65
+   ],
+   "subject_max": 49.87,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 46.15,
+   "worst_other": "B-8_EXT_FactoryHallShell.002",
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    -3.0,
+    2.2,
+    1.6
+   ],
+   "cam_solved": [
+    1.25,
+    3.819,
+    2.324
+   ],
+   "delta_world": [
+    4.25,
+    1.619,
+    0.724
+   ],
+   "delta_mag_m": 4.605,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 54,
+   "ep": 14,
+   "shot_id": 2,
+   "scene_code": "B-8",
+   "shot_size": "中景",
+   "band": [
+    35,
+    65
+   ],
+   "subject_max": 50.35,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 11.39,
+   "worst_other": "B-8_EXT_FactoryYardGround",
+   "los_blocked_candidates": 5,
+   "los_fallback": true,
+   "cam_d13": [
+    -4.8,
+    3.2,
+    1.58
+   ],
+   "cam_solved": [
+    -2.481,
+    -0.278,
+    1.976
+   ],
+   "delta_world": [
+    2.319,
+    -3.478,
+    0.396
+   ],
+   "delta_mag_m": 4.199,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 55,
+   "ep": 14,
+   "shot_id": 3,
+   "scene_code": "B-8",
+   "shot_size": null,
+   "band": null,
+   "subject_max": null,
+   "w2_in_band": null,
+   "w3_char_largest": null,
+   "other_max": null,
+   "worst_other": null,
+   "los_blocked_candidates": null,
+   "los_fallback": null,
+   "cam_d13": null,
+   "cam_solved": null,
+   "delta_world": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "delta_mag_m": 0.0,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 56,
+   "ep": 14,
+   "shot_id": 4,
+   "scene_code": "B-8",
+   "shot_size": "近景",
+   "band": [
+    55,
+    85
+   ],
+   "subject_max": 69.97,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 62.59,
+   "worst_other": "B-8_EXT_MeetingRoomShell.006",
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    -8.572,
+    19.122,
+    2.165
+   ],
+   "cam_solved": [
+    -8.579,
+    19.084,
+    2.175
+   ],
+   "delta_world": [
+    -0.007,
+    -0.038,
+    0.01
+   ],
+   "delta_mag_m": 0.04,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 57,
+   "ep": 15,
+   "shot_id": 1,
+   "scene_code": "B-9",
+   "shot_size": "中景",
+   "band": [
+    35,
+    65
+   ],
+   "subject_max": 50.09,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 45.1,
+   "worst_other": "B-9_EXT_CommandCockpitShell.006",
+   "los_blocked_candidates": 1,
+   "los_fallback": false,
+   "cam_d13": [
+    -7.297,
+    18.084,
+    0.724
+   ],
+   "cam_solved": [
+    -7.32,
+    18.074,
+    0.739
+   ],
+   "delta_world": [
+    -0.023,
+    -0.01,
+    0.015
+   ],
+   "delta_mag_m": 0.029,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 58,
+   "ep": 15,
+   "shot_id": 2,
+   "scene_code": "B-9",
+   "shot_size": "远景",
+   "band": [
+    8,
+    25
+   ],
+   "subject_max": 16.82,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 13.2,
+   "worst_other": "B-9_EXT_FactoryYardGround",
+   "los_blocked_candidates": 64,
+   "los_fallback": false,
+   "cam_d13": [
+    2.0,
+    2.0,
+    1.9
+   ],
+   "cam_solved": [
+    5.593,
+    8.716,
+    2.048
+   ],
+   "delta_world": [
+    3.593,
+    6.716,
+    0.148
+   ],
+   "delta_mag_m": 7.618,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 59,
+   "ep": 15,
+   "shot_id": 3,
+   "scene_code": "B-9",
+   "shot_size": "特写",
+   "band": [
+    70,
+    95
+   ],
+   "subject_max": 82.28,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 68.99,
+   "worst_other": "B-9_PROP_DataTablet_01",
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    -5.0,
+    13.25,
+    1.6
+   ],
+   "cam_solved": [
+    -5.0,
+    13.545,
+    1.326
+   ],
+   "delta_world": [
+    0.0,
+    0.295,
+    -0.274
+   ],
+   "delta_mag_m": 0.403,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 60,
+   "ep": 15,
+   "shot_id": 4,
+   "scene_code": "B-9",
+   "shot_size": "中景",
+   "band": [
+    35,
+    65
+   ],
+   "subject_max": 41.59,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 32.28,
+   "worst_other": "B-9_EXT_FactoryHallShell.002",
+   "los_blocked_candidates": 64,
+   "los_fallback": false,
+   "cam_d13": [
+    -1.1,
+    17.319,
+    2.33
+   ],
+   "cam_solved": [
+    -1.2,
+    17.411,
+    2.265
+   ],
+   "delta_world": [
+    -0.1,
+    0.092,
+    -0.065
+   ],
+   "delta_mag_m": 0.151,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 61,
+   "ep": 16,
+   "shot_id": 1,
+   "scene_code": "B-10",
+   "shot_size": null,
+   "band": null,
+   "subject_max": null,
+   "w2_in_band": null,
+   "w3_char_largest": null,
+   "other_max": null,
+   "worst_other": null,
+   "los_blocked_candidates": null,
+   "los_fallback": null,
+   "cam_d13": null,
+   "cam_solved": null,
+   "delta_world": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "delta_mag_m": 0.0,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 62,
+   "ep": 16,
+   "shot_id": 2,
+   "scene_code": "B-10",
+   "shot_size": null,
+   "band": null,
+   "subject_max": null,
+   "w2_in_band": null,
+   "w3_char_largest": null,
+   "other_max": null,
+   "worst_other": null,
+   "los_blocked_candidates": null,
+   "los_fallback": null,
+   "cam_d13": null,
+   "cam_solved": null,
+   "delta_world": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "delta_mag_m": 0.0,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 63,
+   "ep": 16,
+   "shot_id": 3,
+   "scene_code": "B-10",
+   "shot_size": "中景",
+   "band": [
+    35,
+    65
+   ],
+   "subject_max": 50.01,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 4.06,
+   "worst_other": "B-10_PROP_FireLine_01.001",
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    -16.0,
+    -6.6,
+    1.62
+   ],
+   "cam_solved": [
+    -14.0,
+    -12.721,
+    2.095
+   ],
+   "delta_world": [
+    2.0,
+    -6.121,
+    0.474
+   ],
+   "delta_mag_m": 6.457,
+   "reverted": false
+  },
+  {
+   "unit": "?",
+   "gsn": 64,
+   "ep": 16,
+   "shot_id": 4,
+   "scene_code": "B-10",
+   "shot_size": "中景",
+   "band": [
+    35,
+    65
+   ],
+   "subject_max": 50.59,
+   "w2_in_band": true,
+   "w3_char_largest": true,
+   "other_max": 49.25,
+   "worst_other": "B-10_PROP_DarkJunction_02",
+   "los_blocked_candidates": 0,
+   "los_fallback": false,
+   "cam_d13": [
+    1.6,
+    -11.6,
+    1.6
+   ],
+   "cam_solved": [
+    1.651,
+    -9.246,
+    0.194
+   ],
+   "delta_world": [
+    0.051,
+    2.354,
+    -1.406
+   ],
+   "delta_mag_m": 2.742,
+   "reverted": false
+  }
+ ]
+}

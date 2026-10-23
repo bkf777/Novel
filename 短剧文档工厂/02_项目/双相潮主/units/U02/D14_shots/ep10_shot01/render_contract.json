@@ -1,0 +1,938 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep10_shot01/preview_video.mp4",
+    "duration": 11.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 264,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "B-2_CHAR_Luchen_02",
+      "source_type": "MESH",
+      "root_name": "B-2_CHAR_Luchen_02",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 10.958,
+      "identity_cues": "name=B-2_CHAR_Luchen_02; type=MESH; root=B-2_CHAR_Luchen_02; dimensions=0.420,0.320,1.730",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O002",
+      "source_name": "B-2_CHAR_Suqingci_01",
+      "source_type": "MESH",
+      "root_name": "B-2_CHAR_Suqingci_01",
+      "first_visible_seconds": 9.583,
+      "last_visible_seconds": 10.958,
+      "identity_cues": "name=B-2_CHAR_Suqingci_01; type=MESH; root=B-2_CHAR_Suqingci_01; dimensions=0.420,0.320,1.730",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O003",
+      "source_name": "B-2_EXT_FactoryHallShell",
+      "source_type": "MESH",
+      "root_name": "B-2_EXT_FactoryHallShell",
+      "first_visible_seconds": 6.833,
+      "last_visible_seconds": 10.958,
+      "identity_cues": "name=B-2_EXT_FactoryHallShell; type=MESH; root=B-2_EXT_FactoryHallShell; dimensions=0.115,11.040,5.520",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O008",
+      "source_name": "B-2_EXT_FactoryYardGround",
+      "source_type": "MESH",
+      "root_name": "B-2_EXT_FactoryYardGround",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 10.958,
+      "identity_cues": "name=B-2_EXT_FactoryYardGround; type=MESH; root=B-2_EXT_FactoryYardGround; dimensions=18.913,23.116,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O011",
+      "source_name": "B-2_PROP_SteelRack_01",
+      "source_type": "MESH",
+      "root_name": "B-2_PROP_SteelRack",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 10.958,
+      "identity_cues": "name=B-2_PROP_SteelRack_01; type=MESH; root=B-2_PROP_SteelRack; dimensions=2.600,0.600,1.714",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O013",
+      "source_name": "B-2_PROP_SteelWorkbench_01",
+      "source_type": "MESH",
+      "root_name": "B-2_PROP_SteelWorkbench_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 10.958,
+      "identity_cues": "name=B-2_PROP_SteelWorkbench_01; type=MESH; root=B-2_PROP_SteelWorkbench_01; dimensions=2.000,1.200,0.750",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR Luchen",
+      "entity_class": "articulated",
+      "importance": "context",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "protagonist blockout in black tactical coat",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "locomotion",
+        "action": "travels 0.41m across the set during the shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 CHAR Suqingci",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O002"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "female scientist character blockout in white lab coat",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 03 ENV B-2",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O003",
+        "O008"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-2 built environment shell enclosing the set: FactoryHallShell, FactoryYardGround",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 04 PROP B-2",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O011",
+        "O013"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-2 set pieces and fittings: SteelRack, SteelWorkbench",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    }
+  ],
+  "interaction_contracts": [],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 11.0,
+      "camera_contract": {
+        "motion_type": "tracking",
+        "tracked_target_entity": "Entity 02 CHAR Suqingci",
+        "world_path": "camera travels from (-4.32, 11.39, 2.25) to (-4.72, 10.39, 2.23) on a 50mm lens, total path length 1.08m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "clockwise",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not swap the follow move for an orbit or a frontal push; keep the 中景 framing and the 跟 move exactly as blocked out"
+      },
+      "actions": "under the single cold white industrial lamp the scientist walks toward the door with the tablet against the chest, the hem of her white lab coat swinging with the steps; the protagonist does not stop her, he only shifts half a step aside; the two figures hold opposite sides of the frame with a clear aisle between them",
+      "layout_and_occlusion": "4 visible instances. Dominant FactoryYardGround covers 100x42 percent at frame 50/72. Left to right: SteelRack, SteelWorkbench, FactoryYardGround, Luchen.",
+      "lighting_spatial_logic": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep10_shot01/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.74m to 10.67m across 4 layers; nearest is Luchen, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-4.32, 11.39, 2.25) on a 50.0mm lens, frame 1 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 64.63,
+          "center_y_percent": 76.99,
+          "bbox_width_percent": 35.32,
+          "bbox_height_percent": 46.02,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR Suqingci",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 03 ENV B-2",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 72.16,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 42.4,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelWorkbench, left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 30.59,
+          "center_y_percent": 62.74,
+          "bbox_width_percent": 61.18,
+          "bbox_height_percent": 37.89,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of SteelWorkbench, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 04 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 41.77,
+          "center_y_percent": 84.43,
+          "bbox_width_percent": 83.54,
+          "bbox_height_percent": 31.13,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelRack, left of FactoryYardGround, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant FactoryYardGround covers 100x42 percent at frame 50/72. Left to right: SteelRack, SteelWorkbench, FactoryYardGround, Luchen."
+    },
+    {
+      "time_seconds": 1.37,
+      "source_frame": "D14_shots/ep10_shot01/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.73m to 10.56m across 4 layers; nearest is Luchen, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-4.33, 11.34, 2.25) on a 50.0mm lens, frame 34 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 67.08,
+          "center_y_percent": 76.92,
+          "bbox_width_percent": 35.51,
+          "bbox_height_percent": 46.16,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR Suqingci",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 03 ENV B-2",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 73.18,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 44.56,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelWorkbench, left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 29.98,
+          "center_y_percent": 62.76,
+          "bbox_width_percent": 59.96,
+          "bbox_height_percent": 38.19,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of SteelWorkbench, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 04 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 41.45,
+          "center_y_percent": 84.46,
+          "bbox_width_percent": 82.89,
+          "bbox_height_percent": 31.08,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelRack, left of FactoryYardGround, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant FactoryYardGround covers 100x45 percent at frame 50/73. Left to right: SteelRack, SteelWorkbench, FactoryYardGround, Luchen."
+    },
+    {
+      "time_seconds": 2.74,
+      "source_frame": "D14_shots/ep10_shot01/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.67m to 10.28m across 4 layers; nearest is Luchen, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-4.38, 11.23, 2.24) on a 50.0mm lens, frame 67 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 69.39,
+          "center_y_percent": 76.85,
+          "bbox_width_percent": 36.41,
+          "bbox_height_percent": 46.3,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR Suqingci",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 03 ENV B-2",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 75.38,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 49.24,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelWorkbench, left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 28.39,
+          "center_y_percent": 62.84,
+          "bbox_width_percent": 56.77,
+          "bbox_height_percent": 38.98,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of SteelWorkbench, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 04 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 40.64,
+          "center_y_percent": 84.54,
+          "bbox_width_percent": 81.27,
+          "bbox_height_percent": 30.92,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelRack, left of FactoryYardGround, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant FactoryYardGround covers 100x49 percent at frame 50/75. Left to right: SteelRack, SteelWorkbench, FactoryYardGround, Luchen."
+    },
+    {
+      "time_seconds": 4.109,
+      "source_frame": "D14_shots/ep10_shot01/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.57m to 9.88m across 4 layers; nearest is Luchen, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-4.44, 11.07, 2.24) on a 50.0mm lens, frame 100 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 72.03,
+          "center_y_percent": 76.78,
+          "bbox_width_percent": 37.79,
+          "bbox_height_percent": 46.43,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR Suqingci",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 03 ENV B-2",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 75.29,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 49.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelWorkbench, left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 26.18,
+          "center_y_percent": 62.98,
+          "bbox_width_percent": 52.36,
+          "bbox_height_percent": 40.15,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of SteelWorkbench, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 04 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 39.61,
+          "center_y_percent": 84.67,
+          "bbox_width_percent": 79.21,
+          "bbox_height_percent": 30.65,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelRack, left of FactoryYardGround, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant FactoryYardGround covers 100x49 percent at frame 50/75. Left to right: SteelRack, SteelWorkbench, FactoryYardGround, Luchen."
+    },
+    {
+      "time_seconds": 5.479,
+      "source_frame": "D14_shots/ep10_shot01/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.45m to 9.44m across 4 layers; nearest is Luchen, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-4.51, 10.89, 2.24) on a 50.0mm lens, frame 132 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 75.29,
+          "center_y_percent": 76.72,
+          "bbox_width_percent": 39.39,
+          "bbox_height_percent": 46.55,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR Suqingci",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 03 ENV B-2",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 75.21,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 49.59,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelWorkbench, left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 23.82,
+          "center_y_percent": 63.18,
+          "bbox_width_percent": 47.63,
+          "bbox_height_percent": 41.53,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of SteelWorkbench, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 04 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 38.62,
+          "center_y_percent": 84.84,
+          "bbox_width_percent": 77.25,
+          "bbox_height_percent": 30.32,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelRack, left of FactoryYardGround, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant FactoryYardGround covers 100x50 percent at frame 50/75. Left to right: SteelRack, SteelWorkbench, FactoryYardGround, Luchen."
+    },
+    {
+      "time_seconds": 6.849,
+      "source_frame": "D14_shots/ep10_shot01/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.34m to 8.97m across 5 layers; nearest is Luchen, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-4.59, 10.71, 2.23) on a 50.0mm lens, frame 165 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 79.41,
+          "center_y_percent": 76.66,
+          "bbox_width_percent": 41.07,
+          "bbox_height_percent": 46.68,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of FactoryHallShell, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR Suqingci",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 03 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 99.85,
+          "center_y_percent": 10.62,
+          "bbox_width_percent": 0.29,
+          "bbox_height_percent": 21.25,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 75.14,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 49.72,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelWorkbench, left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 21.48,
+          "center_y_percent": 63.44,
+          "bbox_width_percent": 42.95,
+          "bbox_height_percent": 43.05,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of SteelWorkbench, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 04 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 37.8,
+          "center_y_percent": 85.04,
+          "bbox_width_percent": 75.6,
+          "bbox_height_percent": 29.92,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelRack, left of FactoryYardGround, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryYardGround covers 100x50 percent at frame 50/75. Left to right: SteelRack, SteelWorkbench, FactoryYardGround, Luchen, FactoryHallShell."
+    },
+    {
+      "time_seconds": 8.219,
+      "source_frame": "D14_shots/ep10_shot01/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.26m to 8.57m across 5 layers; nearest is Luchen, furthest is FactoryHallShell"
+      },
+      "camera_relation": "camera at (-4.65, 10.54, 2.23) on a 50.0mm lens, frame 198 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 81.35,
+          "center_y_percent": 76.59,
+          "bbox_width_percent": 37.3,
+          "bbox_height_percent": 46.82,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of FactoryHallShell, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR Suqingci",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 03 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 97.48,
+          "center_y_percent": 10.29,
+          "bbox_width_percent": 5.04,
+          "bbox_height_percent": 20.57,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 75.1,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 49.8,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelWorkbench, left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 19.49,
+          "center_y_percent": 63.71,
+          "bbox_width_percent": 38.98,
+          "bbox_height_percent": 44.45,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of SteelWorkbench, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 04 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 37.25,
+          "center_y_percent": 85.23,
+          "bbox_width_percent": 74.49,
+          "bbox_height_percent": 29.53,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelRack, left of FactoryYardGround, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryYardGround covers 100x50 percent at frame 50/75. Left to right: SteelRack, SteelWorkbench, FactoryYardGround, Luchen, FactoryHallShell."
+    },
+    {
+      "time_seconds": 9.589,
+      "source_frame": "D14_shots/ep10_shot01/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.21m to 8.60m across 6 layers; nearest is Luchen, furthest is FactoryHallShell"
+      },
+      "camera_relation": "camera at (-4.70, 10.43, 2.23) on a 50.0mm lens, frame 231 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 83.24,
+          "center_y_percent": 76.5,
+          "bbox_width_percent": 33.52,
+          "bbox_height_percent": 47.0,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of FactoryHallShell, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 97.3,
+          "center_y_percent": 75.11,
+          "bbox_width_percent": 5.4,
+          "bbox_height_percent": 49.78,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryHallShell, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 03 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 95.82,
+          "center_y_percent": 10.04,
+          "bbox_width_percent": 8.36,
+          "bbox_height_percent": 20.09,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, left of Suqingci, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 75.08,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 49.84,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelWorkbench, left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 18.12,
+          "center_y_percent": 63.93,
+          "bbox_width_percent": 36.24,
+          "bbox_height_percent": 45.49,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of SteelWorkbench, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 04 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 36.95,
+          "center_y_percent": 85.38,
+          "bbox_width_percent": 73.9,
+          "bbox_height_percent": 29.23,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelRack, left of FactoryYardGround, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactoryYardGround covers 100x50 percent at frame 50/75. Left to right: SteelRack, SteelWorkbench, FactoryYardGround, Luchen, FactoryHallShell."
+    },
+    {
+      "time_seconds": 10.958,
+      "source_frame": "D14_shots/ep10_shot01/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.22m to 8.61m across 6 layers; nearest is Luchen, furthest is FactoryHallShell"
+      },
+      "camera_relation": "camera at (-4.72, 10.39, 2.23) on a 50.0mm lens, frame 264 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 84.73,
+          "center_y_percent": 76.39,
+          "bbox_width_percent": 30.54,
+          "bbox_height_percent": 47.22,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of Suqingci, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 92.49,
+          "center_y_percent": 75.0,
+          "bbox_width_percent": 15.01,
+          "bbox_height_percent": 50.0,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, left of FactoryHallShell, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 03 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 95.2,
+          "center_y_percent": 9.95,
+          "bbox_width_percent": 9.61,
+          "bbox_height_percent": 19.9,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Suqingci, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 75.08,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 49.85,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelWorkbench, left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 17.61,
+          "center_y_percent": 64.02,
+          "bbox_width_percent": 35.21,
+          "bbox_height_percent": 45.89,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of SteelWorkbench, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 04 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 36.86,
+          "center_y_percent": 85.44,
+          "bbox_width_percent": 73.72,
+          "bbox_height_percent": 29.11,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelRack, left of FactoryYardGround, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactoryYardGround covers 100x50 percent at frame 50/75. Left to right: SteelRack, SteelWorkbench, FactoryYardGround, Luchen, Suqingci."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

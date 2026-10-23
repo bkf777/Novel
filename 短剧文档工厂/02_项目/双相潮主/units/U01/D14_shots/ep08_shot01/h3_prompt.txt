@@ -1,0 +1,44 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city…; grounded industrial realism….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O002>,I3=<O004>,I4=<O005>,I5=<O006>.
+<Entity 01 PROP A-9>=E1[rigid/primary/static] members=I1-I2,I5;n=3;src=A-9 set pieces and…; final=A-9 set pieces and fittings…; finish=utilitarian material with visible…; style=world_style_unit_contract.
+<Entity 02 ENV A-9>=E2[environment/context/static] members=I3-I4;n=2;src=A-9 built environment…; final=A-9 built environment shell…; finish=worn cement, oxidised steel and sheet…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1-I2,I5;1:1;n=3.
+E2:I3-I4;1:1;n=2.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as… | materials=real skin with pores and… | environment=cement yard plates cut by… | props=functional utilitarian… | light=one cold overhead key with….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_2901@0.000-1.000s I5: rel=shadow blade reversed…; ban=do not lift the blade or….
+[Shot 1] @0.000-12.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=none;path=camera travels from (47. 67, -7. 04, 0…;dist=stable;azi=stable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical…;ban=do not add any camera move, zoom… | Act=the captive kneels on one knee on the steel plate, dark red outfit reads dark… | Layout=5 visible instances… | Light=one cold overhead key with shadow….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 3. 58m to 16…;Cam=camera at (47. 67, -7…;Lay=5 visible instances… V=I3:50/35/100/25,I4:50/56/100/48 D=I1:v/9/29/19/51/o:vertical volum…/m:stationary across…/r:right of ShadowBla…,I2:v/1/54/2/13/o:compact block…/m:stationary across…/r:left of ShadowBlad…,I5:v/7/33/6/30/o:vertical volum…/m:stationary across…/r:right of LongStrai…
+@1.495s F=medium;Comp=depth spans 3. 58m to 16…;Cam=camera at (47. 67, -7…;Lay=5 visible instances… V=I3:50/35/100/25,I4:50/56/100/48 D=I1:v/9/29/19/51/o:vertical volum…/m:stationary across…/r:right of ShadowBla…,I2:v/1/54/2/13/o:compact block…/m:stationary across…/r:left of ShadowBlad…,I5:v/7/33/6/30/o:vertical volum…/m:stationary across…/r:right of LongStrai…
+@2.990s F=medium;Comp=depth spans 3. 58m to 16…;Cam=camera at (47. 67, -7…;Lay=5 visible instances… V=I3:50/35/100/25,I4:50/56/100/48 D=I1:v/9/29/19/51/o:vertical volum…/m:stationary across…/r:right of ShadowBla…,I2:v/1/54/2/13/o:compact block…/m:stationary across…/r:left of ShadowBlad…,I5:v/7/33/6/30/o:vertical volum…/m:stationary across…/r:right of LongStrai…
+@4.484s F=medium;Comp=depth spans 3. 58m to 16…;Cam=camera at (47. 67, -7…;Lay=5 visible instances… V=I3:50/35/100/25,I4:50/56/100/48 D=I1:v/9/29/19/51/o:vertical volum…/m:stationary across…/r:right of ShadowBla…,I2:v/1/54/2/13/o:compact block…/m:stationary across…/r:left of ShadowBlad…,I5:v/7/33/6/30/o:vertical volum…/m:stationary across…/r:right of LongStrai…
+@5.979s F=medium;Comp=depth spans 3. 58m to 16…;Cam=camera at (47. 67, -7…;Lay=5 visible instances… V=I3:50/35/100/25,I4:50/56/100/48 D=I1:v/9/29/19/51/o:vertical volum…/m:stationary across…/r:right of ShadowBla…,I2:v/1/54/2/13/o:compact block…/m:stationary across…/r:left of ShadowBlad…,I5:v/7/33/6/30/o:vertical volum…/m:stationary across…/r:right of LongStrai…
+@7.474s F=medium;Comp=depth spans 3. 58m to 16…;Cam=camera at (47. 67, -7…;Lay=5 visible instances… V=I3:50/35/100/25,I4:50/56/100/48 D=I1:v/9/29/19/51/o:vertical volum…/m:stationary across…/r:right of ShadowBla…,I2:v/1/54/2/13/o:compact block…/m:stationary across…/r:left of ShadowBlad…,I5:v/7/33/6/30/o:vertical volum…/m:stationary across…/r:right of LongStrai…
+@8.969s F=medium;Comp=depth spans 3. 58m to 16…;Cam=camera at (47. 67, -7…;Lay=5 visible instances… V=I3:50/35/100/25,I4:50/56/100/48 D=I1:v/9/29/19/51/o:vertical volum…/m:stationary across…/r:right of ShadowBla…,I2:v/1/54/2/13/o:compact block…/m:stationary across…/r:left of ShadowBlad…,I5:v/7/33/6/30/o:vertical volum…/m:stationary across…/r:right of LongStrai…
+@10.464s F=medium;Comp=depth spans 3. 58m to 16…;Cam=camera at (47. 67, -7…;Lay=5 visible instances… V=I3:50/35/100/25,I4:50/56/100/48 D=I1:v/9/29/19/51/o:vertical volum…/m:stationary across…/r:right of ShadowBla…,I2:v/1/54/2/13/o:compact block…/m:stationary across…/r:left of ShadowBlad…,I5:v/7/33/6/30/o:vertical volum…/m:stationary across…/r:right of LongStrai…
+@11.958s F=medium;Comp=depth spans 3. 58m to 16…;Cam=camera at (47. 67, -7…;Lay=5 visible instances… V=I3:50/35/100/25,I4:50/56/100/48 D=I1:v/9/29/19/51/o:vertical volum…/m:stationary across…/r:right of ShadowBla…,I2:v/1/54/2/13/o:compact block…/m:stationary across…/r:left of ShadowBlad…,I5:v/7/33/6/30/o:vertical volum…/m:stationary across…/r:right of LongStrai…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+short metallic sound of the blade…
+
+non_diegetic_music:
+N/A

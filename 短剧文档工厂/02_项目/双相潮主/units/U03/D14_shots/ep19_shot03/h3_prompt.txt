@@ -1,0 +1,46 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with….
+[INSTANCE REGISTRY] I1=<O002>,I2=<O004>,I3=<O005>,I4=<O006>,I5=<O014>.
+<Entity 01 CHAR Suqingci>=E1[articulated/primary/static] members=I1;n=1;src=female scientist character blockout in white…; final=female scientist character blockout in white lab coat; finish=real skin with pores and fine hair, fabric with real drape and wear…; style=world_style_unit_contract.
+<Entity 02 ENV B-13>=E2[environment/context/static] members=I2-I4;n=3;src=B-13 built environment shell enclosing the set…; final=B-13 built environment shell enclosing the set…; finish=worn cement, oxidised steel and sheet metal with cold grey…; style=world_style_unit_contract.
+<Entity 03 PROP B-13>=E3[rigid/context/static] members=I5;n=1;src=B-13 set pieces and fittings: ThresholdStone; final=B-13 set pieces and fittings: ThresholdStone; finish=utilitarian material with visible weight, thickness and use marks…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I4;1:1;n=3.
+E3:I5;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink… | materials=real skin with pores and slight oil sheen, matte… | environment=a brick street cut by wheel ruts in front of a single… | props=functional utilitarian tooling with real weight and… | light=one cold overhead key over the steel table with shadow….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_7501@0.100-0.850s I1: rel=the scientist copies the plate number…; ban=do not let the foreground shoulder cover the….
+[Shot 1] @0.000-13.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=none;path=camera travels from (-1. 88, 2. 82, 0. 74) to (-1. 88, 2. 82, 0…;dist=stable;azi=stable;elev=stable;lens=stable;comp=近景 framing in 9:16 vertical, subject held in the frame centre…;ban=do not add any camera move, zoom or handheld shake… | Act=the scientist copies the plate number into the data tablet and checks it once more… | Layout=5 visible instances. Dominant StreetSideWall covers 100x49 percent at frame 50/25… | Light=one cold overhead key over the steel table with shadow detail….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=close;Comp=depth spans 3. 81m to 24. 34m across 5 layers…;Cam=camera at (-1. 88, 2. 82, 0. 74) on a 85…;Lay=5 visible instances… V=I2:59/25/81/49,I3:50/55/100/34,I4:50/25/100/49,I5:50/78/100/43 D=I1:v/1/35/3/70/o:upright body proxy…/m:stationary across this interval/r:left of StreetGround, in front…
+@1.620s F=close;Comp=depth spans 3. 81m to 24. 34m across 5 layers…;Cam=camera at (-1. 88, 2. 82, 0. 74) on a 85…;Lay=5 visible instances… V=I2:59/25/81/49,I3:50/55/100/34,I4:50/25/100/49,I5:50/78/100/43 D=I1:v/1/35/3/70/o:upright body proxy…/m:stationary across this interval/r:left of StreetGround, in front…
+@3.240s F=close;Comp=depth spans 3. 81m to 24. 34m across 5 layers…;Cam=camera at (-1. 88, 2. 82, 0. 74) on a 85…;Lay=5 visible instances… V=I2:59/25/81/49,I3:50/55/100/34,I4:50/25/100/49,I5:50/78/100/43 D=I1:v/1/35/3/70/o:upright body proxy…/m:stationary across this interval/r:left of StreetGround, in front…
+@4.859s F=close;Comp=depth spans 3. 81m to 24. 34m across 5 layers…;Cam=camera at (-1. 88, 2. 82, 0. 74) on a 85…;Lay=5 visible instances… V=I2:59/25/81/49,I3:50/55/100/34,I4:50/25/100/49,I5:50/78/100/43 D=I1:v/1/35/3/70/o:upright body proxy…/m:stationary across this interval/r:left of StreetGround, in front…
+@6.479s F=close;Comp=depth spans 3. 81m to 24. 34m across 5 layers…;Cam=camera at (-1. 88, 2. 82, 0. 74) on a 85…;Lay=5 visible instances… V=I2:59/25/81/49,I3:50/55/100/34,I4:50/25/100/49,I5:50/78/100/43 D=I1:v/1/35/3/70/o:upright body proxy…/m:stationary across this interval/r:left of StreetGround, in front…
+@8.099s F=close;Comp=depth spans 3. 81m to 24. 34m across 5 layers…;Cam=camera at (-1. 88, 2. 82, 0. 74) on a 85…;Lay=5 visible instances… V=I2:59/25/81/49,I3:50/55/100/34,I4:50/25/100/49,I5:50/78/100/43 D=I1:v/1/35/3/70/o:upright body proxy…/m:stationary across this interval/r:left of StreetGround, in front…
+@9.719s F=close;Comp=depth spans 3. 81m to 24. 34m across 5 layers…;Cam=camera at (-1. 88, 2. 82, 0. 74) on a 85…;Lay=5 visible instances… V=I2:59/25/81/49,I3:50/55/100/34,I4:50/25/100/49,I5:50/78/100/43 D=I1:v/1/35/3/70/o:upright body proxy…/m:stationary across this interval/r:left of StreetGround, in front…
+@11.339s F=close;Comp=depth spans 3. 81m to 24. 34m across 5 layers…;Cam=camera at (-1. 88, 2. 82, 0. 74) on a 85…;Lay=5 visible instances… V=I2:59/25/81/49,I3:50/55/100/34,I4:50/25/100/49,I5:50/78/100/43 D=I1:v/1/35/3/70/o:upright body proxy…/m:stationary across this interval/r:left of StreetGround, in front…
+@12.958s F=close;Comp=depth spans 3. 81m to 24. 34m across 5 layers…;Cam=camera at (-1. 88, 2. 82, 0. 74) on a 85…;Lay=5 visible instances… V=I2:59/25/81/49,I3:50/55/100/34,I4:50/25/100/49,I5:50/78/100/43 D=I1:v/1/35/3/70/o:upright body proxy…/m:stationary across this interval/r:left of StreetGround, in front…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+paper and a stylus tip on a screen with the pen tapping twice
+
+non_diegetic_music:
+N/A

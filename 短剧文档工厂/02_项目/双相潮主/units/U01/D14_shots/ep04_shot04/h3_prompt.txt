@@ -1,0 +1,46 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O003>,I3=<O004>,I4=<O005>,I5=<O006>,I6=<O007>,I7=<O009>,I8=<O010>,I9=<O012>.
+<Entity 01 CHAR Luchen>=E1[articulated/primary/static] members=I1;n=1;src=male protagonist blockout; final=male protagonist blockout; finish=real skin with pores and fine hair, fabric with real…; style=world_style_unit_contract.
+<Entity 02 ENV A-5>=E2[environment/context/static] members=I2,I4,I9;n=3;src=A-5 built environment shell…; final=A-5 built environment shell enclosing…; finish=worn cement, oxidised steel and sheet metal with…; style=world_style_unit_contract.
+<Entity 03 PROP A-5>=E3[rigid/context/static] members=I3,I5-I8;n=5;src=A-5 set pieces and fittings…; final=A-5 set pieces and fittings…; finish=utilitarian material with visible weight, thickness…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2,I4,I9;1:1;n=3.
+E3:I3,I5-I8;1:1;n=5.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global… | materials=real skin with pores and slight oil sheen… | environment=cement yard plates cut by fissures and pit… | props=functional utilitarian tooling with real… | light=one cold overhead key with shadow detail….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-9.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E3;path=camera travels from (3. 84, 13. 10, 0. 60) to (3. 84, 13…;dist=stable;azi=stable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the…;ban=do not add any camera move, zoom or handheld… | Act=panel bottom rolls out a kill notification bar with the protagonist name on top… | Layout=9 visible instances… | Light=one cold overhead key with shadow detail….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 5. 03m to 14…;Cam=camera at (3. 84, 13. 10, 0…;Lay=9 visible instances… V=I2:50/25/100/51,I3:50/56/100/13,I4:50/48/100/6,I5:79/26/42/34,I6:61/23/78/46,I7:68/25/64/49,I8:8/25/16/50,I9:79/15/42/30 D=I1:v/95/32/11/51/o:upright body proxy…/m:stationary across this…/r:right of GreyFramePanel…
+@1.120s F=medium;Comp=depth spans 5. 03m to 14…;Cam=camera at (3. 84, 13. 10, 0…;Lay=9 visible instances… V=I2:50/25/100/51,I3:50/56/100/13,I4:50/48/100/6,I5:79/26/42/34,I6:61/23/78/46,I7:68/25/64/49,I8:8/25/16/50,I9:79/15/42/30 D=I1:v/95/32/11/51/o:upright body proxy…/m:stationary across this…/r:right of GreyFramePanel…
+@2.240s F=medium;Comp=depth spans 5. 03m to 14…;Cam=camera at (3. 84, 13. 10, 0…;Lay=9 visible instances… V=I2:50/25/100/51,I3:50/56/100/13,I4:50/48/100/6,I5:79/26/42/34,I6:61/23/78/46,I7:68/25/64/49,I8:8/25/16/50,I9:79/15/42/30 D=I1:v/95/32/11/51/o:upright body proxy…/m:stationary across this…/r:right of GreyFramePanel…
+@3.359s F=medium;Comp=depth spans 5. 03m to 14…;Cam=camera at (3. 84, 13. 10, 0…;Lay=9 visible instances… V=I2:50/25/100/51,I3:50/56/100/13,I4:50/48/100/6,I5:79/26/42/34,I6:61/23/78/46,I7:68/25/64/49,I8:8/25/16/50,I9:79/15/42/30 D=I1:v/95/32/11/51/o:upright body proxy…/m:stationary across this…/r:right of GreyFramePanel…
+@4.479s F=medium;Comp=depth spans 5. 03m to 14…;Cam=camera at (3. 84, 13. 10, 0…;Lay=9 visible instances… V=I2:50/25/100/51,I3:50/56/100/13,I4:50/48/100/6,I5:79/26/42/34,I6:61/23/78/46,I7:68/25/64/49,I8:8/25/16/50,I9:79/15/42/30 D=I1:v/95/32/11/51/o:upright body proxy…/m:stationary across this…/r:right of GreyFramePanel…
+@5.599s F=medium;Comp=depth spans 5. 03m to 14…;Cam=camera at (3. 84, 13. 10, 0…;Lay=9 visible instances… V=I2:50/25/100/51,I3:50/56/100/13,I4:50/48/100/6,I5:79/26/42/34,I6:61/23/78/46,I7:68/25/64/49,I8:8/25/16/50,I9:79/15/42/30 D=I1:v/95/32/11/51/o:upright body proxy…/m:stationary across this…/r:right of GreyFramePanel…
+@6.719s F=medium;Comp=depth spans 5. 03m to 14…;Cam=camera at (3. 84, 13. 10, 0…;Lay=9 visible instances… V=I2:50/25/100/51,I3:50/56/100/13,I4:50/48/100/6,I5:79/26/42/34,I6:61/23/78/46,I7:68/25/64/49,I8:8/25/16/50,I9:79/15/42/30 D=I1:v/95/32/11/51/o:upright body proxy…/m:stationary across this…/r:right of GreyFramePanel…
+@7.839s F=medium;Comp=depth spans 5. 03m to 14…;Cam=camera at (3. 84, 13. 10, 0…;Lay=9 visible instances… V=I2:50/25/100/51,I3:50/56/100/13,I4:50/48/100/6,I5:79/26/42/34,I6:61/23/78/46,I7:68/25/64/49,I8:8/25/16/50,I9:79/15/42/30 D=I1:v/95/32/11/51/o:upright body proxy…/m:stationary across this…/r:right of GreyFramePanel…
+@8.958s F=medium;Comp=depth spans 5. 03m to 14…;Cam=camera at (3. 84, 13. 10, 0…;Lay=9 visible instances… V=I2:50/25/100/51,I3:50/56/100/13,I4:50/48/100/6,I5:79/26/42/34,I6:61/23/78/46,I7:68/25/64/49,I8:8/25/16/50,I9:79/15/42/30 D=I1:v/95/32/11/51/o:upright body proxy…/m:stationary across this…/r:right of GreyFramePanel…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+one short notification beep with distant engine rumble…
+
+non_diegetic_music:
+N/A

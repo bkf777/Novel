@@ -1,0 +1,46 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O002>,I3=<O012>,I4=<O013>,I5=<O022>.
+<Entity 01 CHAR Luchen>=E1[articulated/primary/locomotion] members=I1;n=1;src=male protagonist blockout; final=male protagonist blockout; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal…; style=world_style_unit_contract.
+<Entity 02 ENV A-1>=E2[environment/context/static] members=I2;n=1;src=A-1 built environment shell enclosing the set: Corridor; final=A-1 built environment shell enclosing the set: Corridor; finish=worn cement, oxidised steel and sheet metal with cold grey reflections, shadow…; style=world_style_unit_contract.
+<Entity 03 PROP A-1>=E3[rigid/context/static] members=I3-I5;n=3;src=A-1 set pieces and fittings: CorridorSensorLight…; final=A-1 set pieces and fittings: CorridorSensorLight, StairwellWindow; finish=utilitarian material with visible weight, thickness and use marks, cold grey metal…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2;1:1;n=1.
+E3:I3-I5;1:1;n=3.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D… | materials=real skin with pores and slight oil sheen, matte technical fabric… | environment=cement yard plates cut by fissures and pit openings, riveted steel… | props=functional utilitarian tooling with real weight and thickness… | light=one cold overhead key with shadow detail retained instead of….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E1:locomotion | Act=travels 1.44m across the set during the shot | Keep=stay inside the source blockout bounds for the full shot | Ban=do not replace, duplicate or remove this instance.
+[STATIC LOCK] E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-7.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=tracking;target=E1;path=camera travels from (-2. 31, -0. 85, 4. 15) to (-2. 31, -4. 85, 4…;dist=stable;azi=counterclockwise;elev=stable;lens=stable;comp=全景 framing in 9:16 vertical, subject held in the frame centre band with head…;ban=do not swap the follow move for an orbit or a frontal push… | Act=room door leaf swings open, protagonist rushes out into the corridor, corridor lamps light one by one, figure climbs the stairs… | Layout=no instance visible in this anchor | Light=one cold overhead key with shadow detail retained instead of crushed black….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=full;Comp=single depth layer visible;Cam=camera at (-2. 31, -0. 85, 4. 15) on a 24…;Lay=no instance visible in this anchor O=I2-I5 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@0.994s F=full;Comp=single depth layer visible;Cam=camera at (-2. 31, -1. 07, 4. 15) on a 24…;Lay=no instance visible in this anchor O=I2-I5 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@1.988s F=full;Comp=single depth layer visible;Cam=camera at (-2. 31, -1. 65, 4. 15) on a 24…;Lay=no instance visible in this anchor O=I2-I5 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@2.982s F=full;Comp=depth spans 4. 45m to 5. 81m across 3 layers…;Cam=camera at (-2. 31, -2. 44, 4. 15) on a 24…;Lay=3 visible instances… V=I2:2/93/4/4,I4:4/72/4/3,I5:3/78/5/8 O=I3 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@3.976s F=full;Comp=depth spans 4. 24m to 5. 64m across 3 layers…;Cam=camera at (-2. 31, -3. 26, 4. 15) on a 24…;Lay=3 visible instances… V=I2:10/95/8/4,I4:19/72/4/3,I5:10/78/20/7 O=I3 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@4.970s F=full;Comp=depth spans 3. 18m to 5. 47m across 4 layers…;Cam=camera at (-2. 31, -4. 05, 4. 15) on a 24…;Lay=4 visible instances… V=I2:16/96/8/4,I4:31/72/3/3,I5:21/78/23/6 O=I3 D=I1:v/4/98/7/3/o:upright body proxy, head end up/m:drifting frame right in this interval/r:left of Corridor, behind all nearer…
+@5.964s F=full;Comp=depth spans 3. 61m to 5. 36m across 5 layers…;Cam=camera at (-2. 31, -4. 62, 4. 15) on a 24…;Lay=5 visible instances… V=I2:19/96/8/4,I3:1/75/1/4,I4:38/73/3/3,I5:28/78/23/6 D=I1:v/18/96/27/9/o:upright body proxy, head end up/m:drifting frame right in this interval/r:right of CorridorSensorLight, left of…
+@6.958s F=full;Comp=depth spans 3. 96m to 5. 34m across 5 layers…;Cam=camera at (-2. 31, -4. 85, 4. 15) on a 24…;Lay=5 visible instances… V=I2:21/96/7/4,I3:3/75/3/4,I4:41/73/3/3,I5:31/78/23/5 D=I1:v/40/94/24/13/o:upright body proxy, head end up/m:stationary across this interval/r:right of StairwellWindow, left of…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+door hinge creak, then footsteps on the stair running from near to far
+
+non_diegetic_music:
+N/A

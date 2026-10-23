@@ -1,0 +1,62 @@
+{
+  "scene_code": "B-7",
+  "size_m": [
+    5.0,
+    4.0,
+    2.6
+  ],
+  "ground_center_m": [
+    7.633,
+    21.23
+  ],
+  "floor_z": 0.6,
+  "props": [
+    {
+      "name": "B-7_EXT_ReinforcedCloister_01",
+      "kind": "box",
+      "center_m": [
+        7.0,
+        19.04,
+        1.3
+      ],
+      "size_m": [
+        5.0,
+        4.0,
+        2.6
+      ],
+      "role": "primary"
+    },
+    {
+      "name": "B-7_LGT_GreyFramePanel_01",
+      "kind": "proxy",
+      "center_m": [
+        7.4,
+        21.8,
+        1.62
+      ],
+      "size_m": [
+        0.6,
+        0.02,
+        0.45
+      ],
+      "role": "set"
+    },
+    {
+      "name": "B-7_PROP_SteelSafe_01",
+      "kind": "box",
+      "center_m": [
+        8.5,
+        22.85,
+        0.6
+      ],
+      "size_m": [
+        0.9,
+        0.45,
+        1.2
+      ],
+      "role": "set"
+    }
+  ],
+  "walls": [],
+  "wall_thickness_m": 0.15
+}

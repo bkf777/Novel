@@ -1,0 +1,77 @@
+{
+  "scene_code": "B-5",
+  "size_m": [
+    7.0,
+    1.45,
+    3.6
+  ],
+  "ground_center_m": [
+    7.2,
+    1.608
+  ],
+  "floor_z": 0.875,
+  "props": [
+    {
+      "name": "B-5_CHAR_CleanedPatient_03",
+      "kind": "human_proxy",
+      "center_m": [
+        6.2,
+        3.6,
+        0.875
+      ],
+      "size_m": [
+        2.9,
+        1.45,
+        1.75
+      ],
+      "role": "primary"
+    },
+    {
+      "name": "B-5_EXT_OldSheetMetalWall_01",
+      "kind": "box",
+      "center_m": [
+        7.5,
+        0.3,
+        1.8
+      ],
+      "size_m": [
+        7.0,
+        0.12,
+        3.6
+      ],
+      "role": "set"
+    },
+    {
+      "name": "B-5_LGT_CitywideNoticeProjection_01",
+      "kind": "proxy",
+      "center_m": [
+        7.5,
+        0.33,
+        1.7
+      ],
+      "size_m": [
+        6.4,
+        0.02,
+        2.4
+      ],
+      "role": "set"
+    },
+    {
+      "name": "B-5_LGT_GreyFramePanel_01",
+      "kind": "proxy",
+      "center_m": [
+        7.6,
+        2.2,
+        1.5
+      ],
+      "size_m": [
+        0.6,
+        0.02,
+        0.45
+      ],
+      "role": "set"
+    }
+  ],
+  "walls": [],
+  "wall_thickness_m": 0.15
+}

@@ -1,0 +1,921 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep05_shot03/preview_video.mp4",
+    "duration": 12.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 288,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "A-6_CHAR_DisposalSilhouette_01",
+      "source_type": "MESH",
+      "root_name": "A-6_CHAR_DisposalSilhouette",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-6_CHAR_DisposalSilhouette_01; type=MESH; root=A-6_CHAR_DisposalSilhouette; dimensions=0.600,0.600,1.750",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O002",
+      "source_name": "A-6_CHAR_DisposalSilhouette_02",
+      "source_type": "MESH",
+      "root_name": "A-6_CHAR_DisposalSilhouette",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-6_CHAR_DisposalSilhouette_02; type=MESH; root=A-6_CHAR_DisposalSilhouette; dimensions=0.600,0.600,1.750",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O003",
+      "source_name": "A-6_CHAR_DisposalSilhouette_03",
+      "source_type": "MESH",
+      "root_name": "A-6_CHAR_DisposalSilhouette",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-6_CHAR_DisposalSilhouette_03; type=MESH; root=A-6_CHAR_DisposalSilhouette; dimensions=0.600,0.600,1.750",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O004",
+      "source_name": "A-6_EXT_InnerYard",
+      "source_type": "MESH",
+      "root_name": "A-6_EXT_InnerYard",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-6_EXT_InnerYard; type=MESH; root=A-6_EXT_InnerYard; dimensions=36.000,28.000,0.400",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O008",
+      "source_name": "A-6_LGT_DisposalLightRing_07",
+      "source_type": "MESH",
+      "root_name": "A-6_LGT_DisposalLightRing_07",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-6_LGT_DisposalLightRing_07; type=MESH; root=A-6_LGT_DisposalLightRing_07; dimensions=0.317,0.317,0.009",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O011",
+      "source_name": "A-6_PROP_DisposalPlatform_01",
+      "source_type": "MESH",
+      "root_name": "A-6_PROP_DisposalPlatform_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-6_PROP_DisposalPlatform_01; type=MESH; root=A-6_PROP_DisposalPlatform_01; dimensions=6.000,3.000,0.300",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR DisposalSilhouette",
+      "entity_class": "articulated",
+      "importance": "context",
+      "source_instance_ids": [
+        "O001",
+        "O002",
+        "O003"
+      ],
+      "instance_count": 3,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "processed person silhouette on the platform",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 02 ENV A-6",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O004",
+        "O011"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-6 built environment shell enclosing the set: InnerYard, DisposalPlatform",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 03 PROP DisposalLightRing",
+      "entity_class": "rigid",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O008"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-6 set pieces and fittings: DisposalLightRing",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 12.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 03 PROP DisposalLightRing",
+        "world_path": "camera travels from (29.90, 3.81, 0.06) to (29.90, 3.81, 0.06) on a 35mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "decrease",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "远景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 远景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "the disposal platform far in frame lights a ring of white lamps, only silhouettes of the processed remain, rim light edges them",
+      "layout_and_occlusion": "6 visible instances. Dominant InnerYard covers 100x13 percent at frame 50/51. Left to right: DisposalSilhouette, DisposalLightRing, DisposalSilhouette, DisposalSilhouette, DisposalPlatform.",
+      "lighting_spatial_logic": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep05_shot03/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 14.00m to 19.92m across 6 layers; nearest is DisposalSilhouette, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (29.90, 3.81, 0.06) on a 35.0mm lens, frame 1 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 7.24,
+          "center_y_percent": 36.14,
+          "bbox_width_percent": 9.69,
+          "bbox_height_percent": 12.7,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalPlatform, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 4.4,
+          "center_y_percent": 36.6,
+          "bbox_width_percent": 8.81,
+          "bbox_height_percent": 11.96,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalLightRing, left of DisposalSilhouette, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 2.94,
+          "center_y_percent": 37.01,
+          "bbox_width_percent": 5.88,
+          "bbox_height_percent": 11.3,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DisposalLightRing, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.57,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 12.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalPlatform, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 PROP DisposalLightRing",
+          "visibility": "visible",
+          "center_x_percent": 3.92,
+          "center_y_percent": 41.25,
+          "bbox_width_percent": 4.59,
+          "bbox_height_percent": 0.14,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalSilhouette, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 16.9,
+          "center_y_percent": 43.36,
+          "bbox_width_percent": 33.8,
+          "bbox_height_percent": 2.5,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of InnerYard, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant InnerYard covers 100x13 percent at frame 50/51. Left to right: DisposalSilhouette, DisposalLightRing, DisposalSilhouette, DisposalSilhouette, DisposalPlatform."
+    },
+    {
+      "time_seconds": 1.495,
+      "source_frame": "D14_shots/ep05_shot03/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 14.00m to 19.92m across 6 layers; nearest is DisposalSilhouette, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (29.90, 3.81, 0.06) on a 35.0mm lens, frame 37 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 7.24,
+          "center_y_percent": 36.14,
+          "bbox_width_percent": 9.69,
+          "bbox_height_percent": 12.7,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalLightRing, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 4.4,
+          "center_y_percent": 36.6,
+          "bbox_width_percent": 8.81,
+          "bbox_height_percent": 11.96,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalSilhouette, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 2.94,
+          "center_y_percent": 37.01,
+          "bbox_width_percent": 5.88,
+          "bbox_height_percent": 11.3,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DisposalSilhouette, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.57,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 12.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalPlatform, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 PROP DisposalLightRing",
+          "visibility": "visible",
+          "center_x_percent": 7.88,
+          "center_y_percent": 41.23,
+          "bbox_width_percent": 15.76,
+          "bbox_height_percent": 0.71,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalPlatform, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 16.9,
+          "center_y_percent": 43.36,
+          "bbox_width_percent": 33.8,
+          "bbox_height_percent": 2.5,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalLightRing, left of InnerYard, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant InnerYard covers 100x13 percent at frame 50/51. Left to right: DisposalSilhouette, DisposalSilhouette, DisposalSilhouette, DisposalLightRing, DisposalPlatform."
+    },
+    {
+      "time_seconds": 2.99,
+      "source_frame": "D14_shots/ep05_shot03/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 14.00m to 19.92m across 6 layers; nearest is DisposalSilhouette, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (29.90, 3.81, 0.06) on a 35.0mm lens, frame 73 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 7.24,
+          "center_y_percent": 36.14,
+          "bbox_width_percent": 9.69,
+          "bbox_height_percent": 12.7,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalLightRing, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 4.4,
+          "center_y_percent": 36.6,
+          "bbox_width_percent": 8.81,
+          "bbox_height_percent": 11.96,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalSilhouette, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 2.94,
+          "center_y_percent": 37.01,
+          "bbox_width_percent": 5.88,
+          "bbox_height_percent": 11.3,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DisposalSilhouette, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.57,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 12.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalPlatform, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 PROP DisposalLightRing",
+          "visibility": "visible",
+          "center_x_percent": 12.74,
+          "center_y_percent": 41.17,
+          "bbox_width_percent": 25.48,
+          "bbox_height_percent": 1.29,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalPlatform, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 16.9,
+          "center_y_percent": 43.36,
+          "bbox_width_percent": 33.8,
+          "bbox_height_percent": 2.5,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalLightRing, left of InnerYard, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant InnerYard covers 100x13 percent at frame 50/51. Left to right: DisposalSilhouette, DisposalSilhouette, DisposalSilhouette, DisposalLightRing, DisposalPlatform."
+    },
+    {
+      "time_seconds": 4.484,
+      "source_frame": "D14_shots/ep05_shot03/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 14.00m to 19.92m across 6 layers; nearest is DisposalSilhouette, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (29.90, 3.81, 0.06) on a 35.0mm lens, frame 109 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 7.24,
+          "center_y_percent": 36.14,
+          "bbox_width_percent": 9.69,
+          "bbox_height_percent": 12.7,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalLightRing, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 4.4,
+          "center_y_percent": 36.6,
+          "bbox_width_percent": 8.81,
+          "bbox_height_percent": 11.96,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalSilhouette, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 2.94,
+          "center_y_percent": 37.01,
+          "bbox_width_percent": 5.88,
+          "bbox_height_percent": 11.3,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DisposalSilhouette, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.57,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 12.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalPlatform, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 PROP DisposalLightRing",
+          "visibility": "visible",
+          "center_x_percent": 15.03,
+          "center_y_percent": 41.13,
+          "bbox_width_percent": 30.06,
+          "bbox_height_percent": 1.56,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalPlatform, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 16.9,
+          "center_y_percent": 43.36,
+          "bbox_width_percent": 33.8,
+          "bbox_height_percent": 2.5,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalLightRing, left of InnerYard, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant InnerYard covers 100x13 percent at frame 50/51. Left to right: DisposalSilhouette, DisposalSilhouette, DisposalSilhouette, DisposalLightRing, DisposalPlatform."
+    },
+    {
+      "time_seconds": 5.979,
+      "source_frame": "D14_shots/ep05_shot03/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 14.00m to 19.92m across 6 layers; nearest is DisposalSilhouette, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (29.90, 3.81, 0.06) on a 35.0mm lens, frame 144 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 7.24,
+          "center_y_percent": 36.14,
+          "bbox_width_percent": 9.69,
+          "bbox_height_percent": 12.7,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalPlatform, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 4.4,
+          "center_y_percent": 36.6,
+          "bbox_width_percent": 8.81,
+          "bbox_height_percent": 11.96,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalSilhouette, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 2.94,
+          "center_y_percent": 37.01,
+          "bbox_width_percent": 5.88,
+          "bbox_height_percent": 11.3,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DisposalSilhouette, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.57,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 12.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalLightRing, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 PROP DisposalLightRing",
+          "visibility": "visible",
+          "center_x_percent": 17.29,
+          "center_y_percent": 41.08,
+          "bbox_width_percent": 34.57,
+          "bbox_height_percent": 1.84,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalPlatform, left of InnerYard, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 16.9,
+          "center_y_percent": 43.36,
+          "bbox_width_percent": 33.8,
+          "bbox_height_percent": 2.5,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalLightRing, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant InnerYard covers 100x13 percent at frame 50/51. Left to right: DisposalSilhouette, DisposalSilhouette, DisposalSilhouette, DisposalPlatform, DisposalLightRing."
+    },
+    {
+      "time_seconds": 7.474,
+      "source_frame": "D14_shots/ep05_shot03/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 14.00m to 19.92m across 6 layers; nearest is DisposalSilhouette, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (29.90, 3.81, 0.06) on a 35.0mm lens, frame 180 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 7.24,
+          "center_y_percent": 36.14,
+          "bbox_width_percent": 9.69,
+          "bbox_height_percent": 12.7,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalPlatform, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 4.4,
+          "center_y_percent": 36.6,
+          "bbox_width_percent": 8.81,
+          "bbox_height_percent": 11.96,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalSilhouette, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 2.94,
+          "center_y_percent": 37.01,
+          "bbox_width_percent": 5.88,
+          "bbox_height_percent": 11.3,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DisposalSilhouette, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.57,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 12.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalLightRing, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 PROP DisposalLightRing",
+          "visibility": "visible",
+          "center_x_percent": 19.64,
+          "center_y_percent": 41.03,
+          "bbox_width_percent": 39.29,
+          "bbox_height_percent": 2.12,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalPlatform, left of InnerYard, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 16.9,
+          "center_y_percent": 43.36,
+          "bbox_width_percent": 33.8,
+          "bbox_height_percent": 2.5,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalLightRing, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant InnerYard covers 100x13 percent at frame 50/51. Left to right: DisposalSilhouette, DisposalSilhouette, DisposalSilhouette, DisposalPlatform, DisposalLightRing."
+    },
+    {
+      "time_seconds": 8.969,
+      "source_frame": "D14_shots/ep05_shot03/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 14.00m to 19.92m across 6 layers; nearest is DisposalSilhouette, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (29.90, 3.81, 0.06) on a 35.0mm lens, frame 216 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 7.24,
+          "center_y_percent": 36.14,
+          "bbox_width_percent": 9.69,
+          "bbox_height_percent": 12.7,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalPlatform, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 4.4,
+          "center_y_percent": 36.6,
+          "bbox_width_percent": 8.81,
+          "bbox_height_percent": 11.96,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalSilhouette, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 2.94,
+          "center_y_percent": 37.01,
+          "bbox_width_percent": 5.88,
+          "bbox_height_percent": 11.3,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DisposalSilhouette, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.57,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 12.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalLightRing, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 PROP DisposalLightRing",
+          "visibility": "visible",
+          "center_x_percent": 22.04,
+          "center_y_percent": 40.97,
+          "bbox_width_percent": 44.08,
+          "bbox_height_percent": 2.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalPlatform, left of InnerYard, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 16.9,
+          "center_y_percent": 43.36,
+          "bbox_width_percent": 33.8,
+          "bbox_height_percent": 2.5,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalLightRing, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant InnerYard covers 100x13 percent at frame 50/51. Left to right: DisposalSilhouette, DisposalSilhouette, DisposalSilhouette, DisposalPlatform, DisposalLightRing."
+    },
+    {
+      "time_seconds": 10.464,
+      "source_frame": "D14_shots/ep05_shot03/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 14.00m to 19.92m across 6 layers; nearest is DisposalSilhouette, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (29.90, 3.81, 0.06) on a 35.0mm lens, frame 252 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 7.24,
+          "center_y_percent": 36.14,
+          "bbox_width_percent": 9.69,
+          "bbox_height_percent": 12.7,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalPlatform, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 4.4,
+          "center_y_percent": 36.6,
+          "bbox_width_percent": 8.81,
+          "bbox_height_percent": 11.96,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalSilhouette, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 2.94,
+          "center_y_percent": 37.01,
+          "bbox_width_percent": 5.88,
+          "bbox_height_percent": 11.3,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DisposalSilhouette, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.57,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 12.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalLightRing, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 PROP DisposalLightRing",
+          "visibility": "visible",
+          "center_x_percent": 24.47,
+          "center_y_percent": 40.9,
+          "bbox_width_percent": 48.95,
+          "bbox_height_percent": 2.73,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalPlatform, left of InnerYard, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 16.9,
+          "center_y_percent": 43.36,
+          "bbox_width_percent": 33.8,
+          "bbox_height_percent": 2.5,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalLightRing, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant InnerYard covers 100x13 percent at frame 50/51. Left to right: DisposalSilhouette, DisposalSilhouette, DisposalSilhouette, DisposalPlatform, DisposalLightRing."
+    },
+    {
+      "time_seconds": 11.958,
+      "source_frame": "D14_shots/ep05_shot03/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 14.00m to 19.92m across 6 layers; nearest is DisposalSilhouette, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (29.90, 3.81, 0.06) on a 35.0mm lens, frame 288 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 7.24,
+          "center_y_percent": 36.14,
+          "bbox_width_percent": 9.69,
+          "bbox_height_percent": 12.7,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalPlatform, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 4.4,
+          "center_y_percent": 36.6,
+          "bbox_width_percent": 8.81,
+          "bbox_height_percent": 11.96,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalSilhouette, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 01 CHAR DisposalSilhouette",
+          "visibility": "visible",
+          "center_x_percent": 2.94,
+          "center_y_percent": 37.01,
+          "bbox_width_percent": 5.88,
+          "bbox_height_percent": 11.3,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DisposalSilhouette, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.57,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 12.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalLightRing, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 PROP DisposalLightRing",
+          "visibility": "visible",
+          "center_x_percent": 26.95,
+          "center_y_percent": 40.81,
+          "bbox_width_percent": 53.9,
+          "bbox_height_percent": 3.06,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalPlatform, left of InnerYard, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 02 ENV A-6",
+          "visibility": "visible",
+          "center_x_percent": 16.9,
+          "center_y_percent": 43.36,
+          "bbox_width_percent": 33.8,
+          "bbox_height_percent": 2.5,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalSilhouette, left of DisposalLightRing, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant InnerYard covers 100x13 percent at frame 50/51. Left to right: DisposalSilhouette, DisposalSilhouette, DisposalSilhouette, DisposalPlatform, DisposalLightRing."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

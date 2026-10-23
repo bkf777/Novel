@@ -1,0 +1,44 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated stylisation….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O005>,I3=<O007>.
+<Entity 01 CHAR EncroachingShadowCrowd>=E1[articulated/primary/static] members=I1;n=1;src=closing shadow crowd blockout in a half circle; final=closing shadow crowd blockout in a half circle; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings…; style=world_style_unit_contract.
+<Entity 02 ENV B-11>=E2[environment/context/static] members=I2-I3;n=2;src=B-11 built environment shell enclosing the set: StreetGround…; final=B-11 built environment shell enclosing the set: StreetGround, StreetSideWall; finish=worn cement, oxidised steel and sheet metal with cold grey reflections, shadow detail kept…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I3;1:1;n=2.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse realism for humans… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D with detail… | materials=real skin with pores and slight oil sheen, matte technical fabric with wear and… | environment=a brick street cut by wheel ruts in front of a single gate with two steel posts… | props=functional utilitarian tooling with real weight and thickness: gate posts… | light=one cold overhead key over the steel table with shadow detail retained instead….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-13.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=none;path=camera travels from (-4. 56, -11. 36, -1. 05) to (-4. 56, -11. 36, -1…;dist=stable;azi=stable;elev=stable;lens=stable;comp=全景 framing in 9:16 vertical, subject held in the frame centre band with head room above…;ban=do not add any camera move, zoom or handheld shake… | Act=the blade sweeps across the brick street and the front row of the half circle disperses one by one into glowing ash motes… | Layout=3 visible instances. Dominant StreetGround covers 59x5 percent at frame 30/17… | Light=one cold overhead key over the steel table with shadow detail retained instead of crushed….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=full;Comp=depth spans 8. 15m to 20. 95m across 3 layers…;Cam=camera at (-4.56, -11.36, -1.05) on a 35.0mm lens, frame 1 of 312;Lay=3 visible instances… V=I2:30/17/59/5,I3:2/7/5/10 D=I1:v/2/6/5/12/o:prone body proxy, long axis lying…/m:stationary across this interval/r:right of StreetSideWall, left of StreetGround…
+@1.620s F=full;Comp=depth spans 8. 15m to 20. 95m across 3 layers…;Cam=camera at (-4. 56, -11. 36, -1. 05) on a 35…;Lay=3 visible instances… V=I2:30/17/59/5,I3:2/7/5/10 D=I1:v/2/6/5/12/o:prone body proxy, long axis lying…/m:stationary across this interval/r:right of StreetSideWall, left of StreetGround…
+@3.240s F=full;Comp=depth spans 8. 15m to 20. 95m across 3 layers…;Cam=camera at (-4. 56, -11. 36, -1. 05) on a 35…;Lay=3 visible instances… V=I2:30/17/59/5,I3:2/7/5/10 D=I1:v/2/6/5/12/o:prone body proxy, long axis lying…/m:stationary across this interval/r:right of StreetSideWall, left of StreetGround…
+@4.859s F=full;Comp=depth spans 8. 15m to 20. 95m across 3 layers…;Cam=camera at (-4. 56, -11. 36, -1. 05) on a 35…;Lay=3 visible instances… V=I2:30/17/59/5,I3:2/7/5/10 D=I1:v/2/6/5/12/o:prone body proxy, long axis lying…/m:stationary across this interval/r:right of StreetSideWall, left of StreetGround…
+@6.479s F=full;Comp=depth spans 8. 15m to 20. 95m across 3 layers…;Cam=camera at (-4. 56, -11. 36, -1. 05) on a 35…;Lay=3 visible instances… V=I2:30/17/59/5,I3:2/7/5/10 D=I1:v/2/6/5/12/o:prone body proxy, long axis lying…/m:stationary across this interval/r:right of StreetSideWall, left of StreetGround…
+@8.099s F=full;Comp=depth spans 8. 15m to 20. 95m across 3 layers…;Cam=camera at (-4. 56, -11. 36, -1. 05) on a 35…;Lay=3 visible instances… V=I2:30/17/59/5,I3:2/7/5/10 D=I1:v/2/6/5/12/o:prone body proxy, long axis lying…/m:stationary across this interval/r:right of StreetSideWall, left of StreetGround…
+@9.719s F=full;Comp=depth spans 8. 15m to 20. 95m across 3 layers…;Cam=camera at (-4. 56, -11. 36, -1. 05) on a 35…;Lay=3 visible instances… V=I2:30/17/59/5,I3:2/7/5/10 D=I1:v/2/6/5/12/o:prone body proxy, long axis lying…/m:stationary across this interval/r:right of StreetSideWall, left of StreetGround…
+@11.339s F=full;Comp=depth spans 8. 15m to 20. 95m across 3 layers…;Cam=camera at (-4. 56, -11. 36, -1. 05) on a 35…;Lay=3 visible instances… V=I2:30/17/59/5,I3:2/7/5/10 D=I1:v/2/6/5/12/o:prone body proxy, long axis lying…/m:stationary across this interval/r:right of StreetSideWall, left of StreetGround…
+@12.958s F=full;Comp=depth spans 8. 15m to 20. 95m across 3 layers…;Cam=camera at (-4. 56, -11. 36, -1. 05) on a 35…;Lay=3 visible instances… V=I2:30/17/59/5,I3:2/7/5/10 D=I1:v/2/6/5/12/o:prone body proxy, long axis lying…/m:stationary across this interval/r:right of StreetSideWall, left of StreetGround…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+a run of breaking sounds that thins out and then goes quiet
+
+non_diegetic_music:
+N/A

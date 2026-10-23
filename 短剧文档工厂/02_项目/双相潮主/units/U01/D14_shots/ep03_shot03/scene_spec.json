@@ -1,0 +1,47 @@
+{
+  "scene_code": "A-4",
+  "size_m": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "ground_center_m": [
+    1.6,
+    0.675
+  ],
+  "floor_z": 0.9,
+  "props": [
+    {
+      "name": "A-4_CHAR_LuchenHand_02",
+      "kind": "human_proxy",
+      "center_m": [
+        1.6,
+        0.25,
+        0.9
+      ],
+      "size_m": [
+        0.1,
+        0.1,
+        0.3
+      ],
+      "role": "primary"
+    },
+    {
+      "name": "A-4_FX_TwinFlame_01",
+      "kind": "proxy",
+      "center_m": [
+        1.6,
+        1.1,
+        1.57
+      ],
+      "size_m": [
+        0.18,
+        0.05,
+        0.3
+      ],
+      "role": "set"
+    }
+  ],
+  "walls": [],
+  "wall_thickness_m": 0.15
+}

@@ -1,0 +1,42 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated stylisation….
+[INSTANCE REGISTRY] I1=<O001>.
+<Entity 01 CHAR MarketQueuer>=E1[articulated/primary/static] members=I1;n=1;src=market queue member blockout in two columns; final=market queue member blockout in two columns; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse realism for humans… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D with detail… | materials=real skin with pores and slight oil sheen, matte technical fabric with wear and… | environment=cement yard plates cut by fire lines, riveted steel frames and steel racks… | props=functional utilitarian tooling with real weight and thickness: welding rigs… | light=one cold overhead key over the purification bench with shadow detail retained….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-11.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=none;path=camera travels from (-2. 40, 6. 44, 1. 50) to (-2. 40, 6. 44, 1. 50) on a 50mm lens, total path length 0…;dist=stable;azi=stable;elev=stable;lens=stable;comp=特写 framing in 9:16 vertical, subject held in the frame centre band with head room above…;ban=do not add any camera move, zoom or handheld shake… | Act=one law strip is pushed up onto the trade counter, the engraved lines holding the cold light with the face of the strip lying fully in frame… | Layout=1 visible instances. Dominant MarketQueuer covers 100x83 percent at frame 50/42. Left to right: MarketQueuer. | Light=one cold overhead key over the purification bench with shadow detail retained instead of….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=extreme_close;Comp=depth spans 2. 08m to 2. 08m across 1 layers…;Cam=camera at (-2.40, 6.44, 1.50) on a 50.0mm lens, frame 1 of 264;Lay=1 visible instances… D=I1:v/50/42/100/83/o:compact body proxy, crouched volume/m:stationary across this interval/r:only visible instance in this frame
+@1.370s F=extreme_close;Comp=depth spans 2. 08m to 2. 08m across 1 layers…;Cam=camera at (-2.40, 6.44, 1.50) on a 50.0mm lens, frame 34 of 264;Lay=1 visible instances… D=I1:v/50/42/100/83/o:compact body proxy, crouched volume/m:stationary across this interval/r:only visible instance in this frame
+@2.740s F=extreme_close;Comp=depth spans 2. 08m to 2. 08m across 1 layers…;Cam=camera at (-2.40, 6.44, 1.50) on a 50.0mm lens, frame 67 of 264;Lay=1 visible instances… D=I1:v/50/42/100/83/o:compact body proxy, crouched volume/m:stationary across this interval/r:only visible instance in this frame
+@4.109s F=extreme_close;Comp=depth spans 2. 08m to 2. 08m across 1 layers…;Cam=camera at (-2.40, 6.44, 1.50) on a 50.0mm lens, frame 100 of 264;Lay=1 visible instances… D=I1:v/50/42/100/83/o:compact body proxy, crouched volume/m:stationary across this interval/r:only visible instance in this frame
+@5.479s F=extreme_close;Comp=depth spans 2. 08m to 2. 08m across 1 layers…;Cam=camera at (-2.40, 6.44, 1.50) on a 50.0mm lens, frame 132 of 264;Lay=1 visible instances… D=I1:v/50/42/100/83/o:compact body proxy, crouched volume/m:stationary across this interval/r:only visible instance in this frame
+@6.849s F=extreme_close;Comp=depth spans 2. 08m to 2. 08m across 1 layers…;Cam=camera at (-2.40, 6.44, 1.50) on a 50.0mm lens, frame 165 of 264;Lay=1 visible instances… D=I1:v/50/42/100/83/o:compact body proxy, crouched volume/m:stationary across this interval/r:only visible instance in this frame
+@8.219s F=extreme_close;Comp=depth spans 2. 08m to 2. 08m across 1 layers…;Cam=camera at (-2.40, 6.44, 1.50) on a 50.0mm lens, frame 198 of 264;Lay=1 visible instances… D=I1:v/50/42/100/83/o:compact body proxy, crouched volume/m:stationary across this interval/r:only visible instance in this frame
+@9.589s F=extreme_close;Comp=depth spans 2. 08m to 2. 08m across 1 layers…;Cam=camera at (-2.40, 6.44, 1.50) on a 50.0mm lens, frame 231 of 264;Lay=1 visible instances… D=I1:v/50/42/100/83/o:compact body proxy, crouched volume/m:stationary across this interval/r:only visible instance in this frame
+@10.958s F=extreme_close;Comp=depth spans 2. 08m to 2. 08m across 1 layers…;Cam=camera at (-2.40, 6.44, 1.50) on a 50.0mm lens, frame 264 of 264;Lay=1 visible instances… D=I1:v/50/42/100/83/o:compact body proxy, crouched volume/m:stationary across this interval/r:only visible instance in this frame
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+a metal piece pressed onto a wooden counter with a fingertip rubbing over the engraved lines
+
+non_diegetic_music:
+N/A

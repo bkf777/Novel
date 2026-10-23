@@ -1,0 +1,1278 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep04_shot04/preview_video.mp4",
+    "duration": 9.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 216,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "A-5_CHAR_Luchen_01",
+      "source_type": "MESH",
+      "root_name": "A-5_CHAR_Luchen_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 8.958,
+      "identity_cues": "name=A-5_CHAR_Luchen_01; type=MESH; root=A-5_CHAR_Luchen_01; dimensions=0.420,0.320,1.730",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O003",
+      "source_name": "A-5_EXT_FactoryEastWall_01",
+      "source_type": "MESH",
+      "root_name": "A-5_EXT_FactoryEastWall_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 8.958,
+      "identity_cues": "name=A-5_EXT_FactoryEastWall_01; type=MESH; root=A-5_EXT_FactoryEastWall_01; dimensions=0.200,18.000,12.000",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O004",
+      "source_name": "A-5_EXT_InteriorWindowBay_01",
+      "source_type": "MESH",
+      "root_name": "A-5_EXT_InteriorWindowBay_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 8.958,
+      "identity_cues": "name=A-5_EXT_InteriorWindowBay_01; type=MESH; root=A-5_EXT_InteriorWindowBay_01; dimensions=4.000,18.000,0.040",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O005",
+      "source_name": "A-5_EXT_ServiceRoad_01",
+      "source_type": "MESH",
+      "root_name": "A-5_EXT_ServiceRoad_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 8.958,
+      "identity_cues": "name=A-5_EXT_ServiceRoad_01; type=MESH; root=A-5_EXT_ServiceRoad_01; dimensions=6.000,30.000,0.040",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O006",
+      "source_name": "A-5_LGT_GreyFramePanel_01",
+      "source_type": "MESH",
+      "root_name": "A-5_LGT_GreyFramePanel_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 8.958,
+      "identity_cues": "name=A-5_LGT_GreyFramePanel_01; type=MESH; root=A-5_LGT_GreyFramePanel_01; dimensions=1.600,0.020,2.200",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O007",
+      "source_name": "A-5_LGT_RoadsideLamp_09",
+      "source_type": "MESH",
+      "root_name": "A-5_LGT_RoadsideLamp_09",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 8.958,
+      "identity_cues": "name=A-5_LGT_RoadsideLamp_09; type=MESH; root=A-5_LGT_RoadsideLamp_09; dimensions=0.600,12.400,8.050",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O009",
+      "source_name": "A-5_PROP_ArmouredVehicle_02",
+      "source_type": "MESH",
+      "root_name": "A-5_PROP_ArmouredVehicle",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 8.958,
+      "identity_cues": "name=A-5_PROP_ArmouredVehicle_02; type=MESH; root=A-5_PROP_ArmouredVehicle; dimensions=6.800,2.600,2.900",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O010",
+      "source_name": "A-5_PROP_ArmouredVehicle_03",
+      "source_type": "MESH",
+      "root_name": "A-5_PROP_ArmouredVehicle",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 8.958,
+      "identity_cues": "name=A-5_PROP_ArmouredVehicle_03; type=MESH; root=A-5_PROP_ArmouredVehicle; dimensions=6.800,2.600,2.900",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O012",
+      "source_name": "A-5_PROP_EastHighWindow_01",
+      "source_type": "MESH",
+      "root_name": "A-5_PROP_EastHighWindow",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 8.958,
+      "identity_cues": "name=A-5_PROP_EastHighWindow_01; type=MESH; root=A-5_PROP_EastHighWindow; dimensions=0.060,1.600,2.400",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR Luchen",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "male protagonist blockout",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV A-5",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O003",
+        "O005",
+        "O012"
+      ],
+      "instance_count": 3,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-5 built environment shell enclosing the set: FactoryEastWall, ServiceRoad, EastHighWindow",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 03 PROP A-5",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O004",
+        "O006",
+        "O007",
+        "O009",
+        "O010"
+      ],
+      "instance_count": 5,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-5 set pieces and fittings: InteriorWindowBay, GreyFramePanel, RoadsideLamp, ArmouredVehicle",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    }
+  ],
+  "interaction_contracts": [],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 9.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 03 PROP A-5",
+        "world_path": "camera travels from (3.84, 13.10, 0.60) to (3.84, 13.10, 0.60) on a 50mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 中景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "panel bottom rolls out a kill notification bar with the protagonist name on top, vehicle headlamps sweep in through the factory window and cross the frame",
+      "layout_and_occlusion": "9 visible instances. Dominant FactoryEastWall covers 100x51 percent at frame 50/25. Left to right: ArmouredVehicle, FactoryEastWall, InteriorWindowBay, ServiceRoad, RoadsideLamp.",
+      "lighting_spatial_logic": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep04_shot04/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 5.03m to 14.52m across 9 layers; nearest is Luchen, furthest is RoadsideLamp"
+      },
+      "camera_relation": "camera at (3.84, 13.10, 0.60) on a 50.0mm lens, frame 1 of 216",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 94.63,
+          "center_y_percent": 31.72,
+          "bbox_width_percent": 10.74,
+          "bbox_height_percent": 50.71,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 25.31,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 50.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.31,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 13.03,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 48.25,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 5.52,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 78.91,
+          "center_y_percent": 26.37,
+          "bbox_width_percent": 42.18,
+          "bbox_height_percent": 33.55,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EastHighWindow, left of Luchen, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 61.21,
+          "center_y_percent": 22.85,
+          "bbox_width_percent": 77.58,
+          "bbox_height_percent": 45.7,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryEastWall, left of ArmouredVehicle, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 68.13,
+          "center_y_percent": 25.2,
+          "bbox_width_percent": 63.73,
+          "bbox_height_percent": 49.23,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RoadsideLamp, left of EastHighWindow, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 8.17,
+          "center_y_percent": 24.98,
+          "bbox_width_percent": 16.35,
+          "bbox_height_percent": 49.96,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactoryEastWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 78.81,
+          "center_y_percent": 14.81,
+          "bbox_width_percent": 42.38,
+          "bbox_height_percent": 29.63,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of GreyFramePanel, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant FactoryEastWall covers 100x51 percent at frame 50/25. Left to right: ArmouredVehicle, FactoryEastWall, InteriorWindowBay, ServiceRoad, RoadsideLamp."
+    },
+    {
+      "time_seconds": 1.12,
+      "source_frame": "D14_shots/ep04_shot04/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 5.03m to 14.52m across 9 layers; nearest is Luchen, furthest is RoadsideLamp"
+      },
+      "camera_relation": "camera at (3.84, 13.10, 0.60) on a 50.0mm lens, frame 28 of 216",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 94.63,
+          "center_y_percent": 31.72,
+          "bbox_width_percent": 10.74,
+          "bbox_height_percent": 50.71,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 25.31,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 50.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.31,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 13.03,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 48.25,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 5.52,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 78.91,
+          "center_y_percent": 26.37,
+          "bbox_width_percent": 42.18,
+          "bbox_height_percent": 33.55,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EastHighWindow, left of Luchen, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 61.21,
+          "center_y_percent": 22.85,
+          "bbox_width_percent": 77.58,
+          "bbox_height_percent": 45.7,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryEastWall, left of ArmouredVehicle, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 68.13,
+          "center_y_percent": 25.2,
+          "bbox_width_percent": 63.73,
+          "bbox_height_percent": 49.23,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RoadsideLamp, left of EastHighWindow, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 8.17,
+          "center_y_percent": 24.98,
+          "bbox_width_percent": 16.35,
+          "bbox_height_percent": 49.96,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactoryEastWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 78.81,
+          "center_y_percent": 14.81,
+          "bbox_width_percent": 42.38,
+          "bbox_height_percent": 29.63,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of GreyFramePanel, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant FactoryEastWall covers 100x51 percent at frame 50/25. Left to right: ArmouredVehicle, FactoryEastWall, InteriorWindowBay, ServiceRoad, RoadsideLamp."
+    },
+    {
+      "time_seconds": 2.24,
+      "source_frame": "D14_shots/ep04_shot04/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 5.03m to 14.52m across 9 layers; nearest is Luchen, furthest is RoadsideLamp"
+      },
+      "camera_relation": "camera at (3.84, 13.10, 0.60) on a 50.0mm lens, frame 55 of 216",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 94.63,
+          "center_y_percent": 31.72,
+          "bbox_width_percent": 10.74,
+          "bbox_height_percent": 50.71,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 25.31,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 50.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.31,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 13.03,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 48.25,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 5.52,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 78.91,
+          "center_y_percent": 26.37,
+          "bbox_width_percent": 42.18,
+          "bbox_height_percent": 33.55,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EastHighWindow, left of Luchen, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 61.21,
+          "center_y_percent": 22.85,
+          "bbox_width_percent": 77.58,
+          "bbox_height_percent": 45.7,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryEastWall, left of ArmouredVehicle, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 68.13,
+          "center_y_percent": 25.2,
+          "bbox_width_percent": 63.73,
+          "bbox_height_percent": 49.23,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RoadsideLamp, left of EastHighWindow, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 8.17,
+          "center_y_percent": 24.98,
+          "bbox_width_percent": 16.35,
+          "bbox_height_percent": 49.96,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactoryEastWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 78.81,
+          "center_y_percent": 14.81,
+          "bbox_width_percent": 42.38,
+          "bbox_height_percent": 29.63,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of GreyFramePanel, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant FactoryEastWall covers 100x51 percent at frame 50/25. Left to right: ArmouredVehicle, FactoryEastWall, InteriorWindowBay, ServiceRoad, RoadsideLamp."
+    },
+    {
+      "time_seconds": 3.359,
+      "source_frame": "D14_shots/ep04_shot04/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 5.03m to 14.52m across 9 layers; nearest is Luchen, furthest is RoadsideLamp"
+      },
+      "camera_relation": "camera at (3.84, 13.10, 0.60) on a 50.0mm lens, frame 82 of 216",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 94.63,
+          "center_y_percent": 31.72,
+          "bbox_width_percent": 10.74,
+          "bbox_height_percent": 50.71,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 25.31,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 50.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.31,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 13.03,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 48.25,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 5.52,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 78.91,
+          "center_y_percent": 26.37,
+          "bbox_width_percent": 42.18,
+          "bbox_height_percent": 33.55,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EastHighWindow, left of Luchen, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 61.21,
+          "center_y_percent": 22.85,
+          "bbox_width_percent": 77.58,
+          "bbox_height_percent": 45.7,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryEastWall, left of ArmouredVehicle, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 68.13,
+          "center_y_percent": 25.2,
+          "bbox_width_percent": 63.73,
+          "bbox_height_percent": 49.23,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RoadsideLamp, left of EastHighWindow, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 8.17,
+          "center_y_percent": 24.98,
+          "bbox_width_percent": 16.35,
+          "bbox_height_percent": 49.96,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactoryEastWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 78.81,
+          "center_y_percent": 14.81,
+          "bbox_width_percent": 42.38,
+          "bbox_height_percent": 29.63,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of GreyFramePanel, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant FactoryEastWall covers 100x51 percent at frame 50/25. Left to right: ArmouredVehicle, FactoryEastWall, InteriorWindowBay, ServiceRoad, RoadsideLamp."
+    },
+    {
+      "time_seconds": 4.479,
+      "source_frame": "D14_shots/ep04_shot04/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 5.03m to 14.52m across 9 layers; nearest is Luchen, furthest is RoadsideLamp"
+      },
+      "camera_relation": "camera at (3.84, 13.10, 0.60) on a 50.0mm lens, frame 108 of 216",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 94.63,
+          "center_y_percent": 31.72,
+          "bbox_width_percent": 10.74,
+          "bbox_height_percent": 50.71,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 25.31,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 50.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.31,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 13.03,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 48.25,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 5.52,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 78.91,
+          "center_y_percent": 26.37,
+          "bbox_width_percent": 42.18,
+          "bbox_height_percent": 33.55,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EastHighWindow, left of Luchen, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 61.21,
+          "center_y_percent": 22.85,
+          "bbox_width_percent": 77.58,
+          "bbox_height_percent": 45.7,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryEastWall, left of ArmouredVehicle, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 68.13,
+          "center_y_percent": 25.2,
+          "bbox_width_percent": 63.73,
+          "bbox_height_percent": 49.23,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RoadsideLamp, left of EastHighWindow, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 8.17,
+          "center_y_percent": 24.98,
+          "bbox_width_percent": 16.35,
+          "bbox_height_percent": 49.96,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactoryEastWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 78.81,
+          "center_y_percent": 14.81,
+          "bbox_width_percent": 42.38,
+          "bbox_height_percent": 29.63,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of GreyFramePanel, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant FactoryEastWall covers 100x51 percent at frame 50/25. Left to right: ArmouredVehicle, FactoryEastWall, InteriorWindowBay, ServiceRoad, RoadsideLamp."
+    },
+    {
+      "time_seconds": 5.599,
+      "source_frame": "D14_shots/ep04_shot04/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 5.03m to 14.52m across 9 layers; nearest is Luchen, furthest is RoadsideLamp"
+      },
+      "camera_relation": "camera at (3.84, 13.10, 0.60) on a 50.0mm lens, frame 135 of 216",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 94.63,
+          "center_y_percent": 31.72,
+          "bbox_width_percent": 10.74,
+          "bbox_height_percent": 50.71,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 25.31,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 50.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.31,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 13.03,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 48.25,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 5.52,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 78.91,
+          "center_y_percent": 26.37,
+          "bbox_width_percent": 42.18,
+          "bbox_height_percent": 33.55,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EastHighWindow, left of Luchen, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 61.21,
+          "center_y_percent": 22.85,
+          "bbox_width_percent": 77.58,
+          "bbox_height_percent": 45.7,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryEastWall, left of ArmouredVehicle, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 68.13,
+          "center_y_percent": 25.2,
+          "bbox_width_percent": 63.73,
+          "bbox_height_percent": 49.23,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RoadsideLamp, left of EastHighWindow, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 8.17,
+          "center_y_percent": 24.98,
+          "bbox_width_percent": 16.35,
+          "bbox_height_percent": 49.96,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactoryEastWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 78.81,
+          "center_y_percent": 14.81,
+          "bbox_width_percent": 42.38,
+          "bbox_height_percent": 29.63,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of GreyFramePanel, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant FactoryEastWall covers 100x51 percent at frame 50/25. Left to right: ArmouredVehicle, FactoryEastWall, InteriorWindowBay, ServiceRoad, RoadsideLamp."
+    },
+    {
+      "time_seconds": 6.719,
+      "source_frame": "D14_shots/ep04_shot04/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 5.03m to 14.52m across 9 layers; nearest is Luchen, furthest is RoadsideLamp"
+      },
+      "camera_relation": "camera at (3.84, 13.10, 0.60) on a 50.0mm lens, frame 162 of 216",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 94.63,
+          "center_y_percent": 31.72,
+          "bbox_width_percent": 10.74,
+          "bbox_height_percent": 50.71,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 25.31,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 50.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.31,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 13.03,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 48.25,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 5.52,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 78.91,
+          "center_y_percent": 26.37,
+          "bbox_width_percent": 42.18,
+          "bbox_height_percent": 33.55,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EastHighWindow, left of Luchen, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 61.21,
+          "center_y_percent": 22.85,
+          "bbox_width_percent": 77.58,
+          "bbox_height_percent": 45.7,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryEastWall, left of ArmouredVehicle, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 68.13,
+          "center_y_percent": 25.2,
+          "bbox_width_percent": 63.73,
+          "bbox_height_percent": 49.23,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RoadsideLamp, left of EastHighWindow, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 8.17,
+          "center_y_percent": 24.98,
+          "bbox_width_percent": 16.35,
+          "bbox_height_percent": 49.96,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactoryEastWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 78.81,
+          "center_y_percent": 14.81,
+          "bbox_width_percent": 42.38,
+          "bbox_height_percent": 29.63,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of GreyFramePanel, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant FactoryEastWall covers 100x51 percent at frame 50/25. Left to right: ArmouredVehicle, FactoryEastWall, InteriorWindowBay, ServiceRoad, RoadsideLamp."
+    },
+    {
+      "time_seconds": 7.839,
+      "source_frame": "D14_shots/ep04_shot04/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 5.03m to 14.52m across 9 layers; nearest is Luchen, furthest is RoadsideLamp"
+      },
+      "camera_relation": "camera at (3.84, 13.10, 0.60) on a 50.0mm lens, frame 189 of 216",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 94.63,
+          "center_y_percent": 31.72,
+          "bbox_width_percent": 10.74,
+          "bbox_height_percent": 50.71,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 25.31,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 50.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.31,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 13.03,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 48.25,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 5.52,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 78.91,
+          "center_y_percent": 26.37,
+          "bbox_width_percent": 42.18,
+          "bbox_height_percent": 33.55,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EastHighWindow, left of Luchen, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 61.21,
+          "center_y_percent": 22.85,
+          "bbox_width_percent": 77.58,
+          "bbox_height_percent": 45.7,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryEastWall, left of ArmouredVehicle, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 68.13,
+          "center_y_percent": 25.2,
+          "bbox_width_percent": 63.73,
+          "bbox_height_percent": 49.23,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RoadsideLamp, left of EastHighWindow, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 8.17,
+          "center_y_percent": 24.98,
+          "bbox_width_percent": 16.35,
+          "bbox_height_percent": 49.96,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactoryEastWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 78.81,
+          "center_y_percent": 14.81,
+          "bbox_width_percent": 42.38,
+          "bbox_height_percent": 29.63,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of GreyFramePanel, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant FactoryEastWall covers 100x51 percent at frame 50/25. Left to right: ArmouredVehicle, FactoryEastWall, InteriorWindowBay, ServiceRoad, RoadsideLamp."
+    },
+    {
+      "time_seconds": 8.958,
+      "source_frame": "D14_shots/ep04_shot04/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 5.03m to 14.52m across 9 layers; nearest is Luchen, furthest is RoadsideLamp"
+      },
+      "camera_relation": "camera at (3.84, 13.10, 0.60) on a 50.0mm lens, frame 216 of 216",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 94.63,
+          "center_y_percent": 31.72,
+          "bbox_width_percent": 10.74,
+          "bbox_height_percent": 50.71,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 25.31,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 50.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 56.31,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 13.03,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 48.25,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 5.52,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of RoadsideLamp, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 78.91,
+          "center_y_percent": 26.37,
+          "bbox_width_percent": 42.18,
+          "bbox_height_percent": 33.55,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EastHighWindow, left of Luchen, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 61.21,
+          "center_y_percent": 22.85,
+          "bbox_width_percent": 77.58,
+          "bbox_height_percent": 45.7,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryEastWall, left of ArmouredVehicle, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 68.13,
+          "center_y_percent": 25.2,
+          "bbox_width_percent": 63.73,
+          "bbox_height_percent": 49.23,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RoadsideLamp, left of EastHighWindow, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 8.17,
+          "center_y_percent": 24.98,
+          "bbox_width_percent": 16.35,
+          "bbox_height_percent": 49.96,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactoryEastWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 78.81,
+          "center_y_percent": 14.81,
+          "bbox_width_percent": 42.38,
+          "bbox_height_percent": 29.63,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ArmouredVehicle, left of GreyFramePanel, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant FactoryEastWall covers 100x51 percent at frame 50/25. Left to right: ArmouredVehicle, FactoryEastWall, InteriorWindowBay, ServiceRoad, RoadsideLamp."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

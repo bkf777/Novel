@@ -1,0 +1,62 @@
+{
+  "scene_code": "B-17",
+  "size_m": [
+    24.0,
+    18.0,
+    6.0
+  ],
+  "ground_center_m": [
+    -2.4,
+    1.867
+  ],
+  "floor_z": 0.0,
+  "props": [
+    {
+      "name": "B-17_CHAR_MessengerSilhouette_01",
+      "kind": "human_proxy",
+      "center_m": [
+        -7.2,
+        5.6,
+        0.15
+      ],
+      "size_m": [
+        0.49,
+        1.82,
+        0.3
+      ],
+      "role": "primary"
+    },
+    {
+      "name": "B-17_EXT_FactoryInnerFloor",
+      "kind": "box",
+      "center_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size_m": [
+        24.0,
+        18.0,
+        0.1
+      ],
+      "role": "set"
+    },
+    {
+      "name": "B-17_EXT_FactoryInnerWall",
+      "kind": "box",
+      "center_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size_m": [
+        0.2,
+        18.0,
+        6.0
+      ],
+      "role": "set"
+    }
+  ],
+  "walls": [],
+  "wall_thickness_m": 0.15
+}

@@ -1,0 +1,44 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O008>.
+<Entity 01 CHAR WorkSilhouette>=E1[articulated/primary/static] members=I1;n=1;src=well site worker blockout on the far side of the rig; final=well site worker blockout on the far side of the rig; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal…; style=world_style_unit_contract.
+<Entity 02 PROP B-16>=E2[rigid/context/static] members=I2;n=1;src=B-16 set pieces and fittings: WellDerrick; final=B-16 set pieces and fittings: WellDerrick; finish=utilitarian material with visible weight, thickness and use marks, cold grey metal…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D… | materials=real skin with pores and slight oil sheen, matte technical fabric… | environment=a brick street cut by wheel ruts in front of a single gate with… | props=functional utilitarian tooling with real weight and thickness… | light=one cold overhead key over the steel table with shadow detail….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-13.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=none;path=camera travels from (3. 30, -2. 35, 2. 78) to (3. 30, -2. 35, 2…;dist=stable;azi=stable;elev=stable;lens=stable;comp=特写 framing in 9:16 vertical, subject held in the frame centre band with head…;ban=do not add any camera move, zoom or handheld shake… | Act=a sustained low frequency comes up on the data tablet and the direction marker points to the outskirts of the city… | Layout=2 visible instances. Dominant WellDerrick covers 24x81 percent at frame 12/59… | Light=one cold overhead key over the steel table with shadow detail retained….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=extreme_close;Comp=depth spans 1. 97m to 3. 60m across 2 layers…;Cam=camera at (3. 30, -2. 35, 2. 78) on a 50…;Lay=2 visible instances… V=I2:12/59/24/81 D=I1:v/93/59/15/83/o:compact body proxy, crouched…/m:stationary across this interval/r:right of WellDerrick, behind all…
+@1.620s F=extreme_close;Comp=depth spans 1. 97m to 3. 60m across 2 layers…;Cam=camera at (3. 30, -2. 35, 2. 78) on a 50…;Lay=2 visible instances… V=I2:12/59/24/81 D=I1:v/93/59/15/83/o:compact body proxy, crouched…/m:stationary across this interval/r:right of WellDerrick, behind all…
+@3.240s F=extreme_close;Comp=depth spans 1. 97m to 3. 60m across 2 layers…;Cam=camera at (3. 30, -2. 35, 2. 78) on a 50…;Lay=2 visible instances… V=I2:12/59/24/81 D=I1:v/93/59/15/83/o:compact body proxy, crouched…/m:stationary across this interval/r:right of WellDerrick, behind all…
+@4.859s F=extreme_close;Comp=depth spans 1. 97m to 3. 60m across 2 layers…;Cam=camera at (3. 30, -2. 35, 2. 78) on a 50…;Lay=2 visible instances… V=I2:12/59/24/81 D=I1:v/93/59/15/83/o:compact body proxy, crouched…/m:stationary across this interval/r:right of WellDerrick, behind all…
+@6.479s F=extreme_close;Comp=depth spans 1. 97m to 3. 60m across 2 layers…;Cam=camera at (3. 30, -2. 35, 2. 78) on a 50…;Lay=2 visible instances… V=I2:12/59/24/81 D=I1:v/93/59/15/83/o:compact body proxy, crouched…/m:stationary across this interval/r:right of WellDerrick, behind all…
+@8.099s F=extreme_close;Comp=depth spans 1. 97m to 3. 60m across 2 layers…;Cam=camera at (3. 30, -2. 35, 2. 78) on a 50…;Lay=2 visible instances… V=I2:12/59/24/81 D=I1:v/93/59/15/83/o:compact body proxy, crouched…/m:stationary across this interval/r:right of WellDerrick, behind all…
+@9.719s F=extreme_close;Comp=depth spans 1. 97m to 3. 60m across 2 layers…;Cam=camera at (3. 30, -2. 35, 2. 78) on a 50…;Lay=2 visible instances… V=I2:12/59/24/81 D=I1:v/93/59/15/83/o:compact body proxy, crouched…/m:stationary across this interval/r:right of WellDerrick, behind all…
+@11.339s F=extreme_close;Comp=depth spans 1. 97m to 3. 60m across 2 layers…;Cam=camera at (3. 30, -2. 35, 2. 78) on a 50…;Lay=2 visible instances… V=I2:12/59/24/81 D=I1:v/93/59/15/83/o:compact body proxy, crouched…/m:stationary across this interval/r:right of WellDerrick, behind all…
+@12.958s F=extreme_close;Comp=depth spans 1. 97m to 3. 60m across 2 layers…;Cam=camera at (3. 30, -2. 35, 2. 78) on a 50…;Lay=2 visible instances… V=I2:12/59/24/81 D=I1:v/93/59/15/83/o:compact body proxy, crouched…/m:stationary across this interval/r:right of WellDerrick, behind all…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+a tablet prompt tone with a sustained low note under it
+
+non_diegetic_music:
+N/A

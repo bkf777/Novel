@@ -1,0 +1,933 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep09_shot01/preview_video.mp4",
+    "duration": 12.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 288,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "B-1_CHAR_WelderWorker_01",
+      "source_type": "MESH",
+      "root_name": "B-1_CHAR_WelderWorker_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.458,
+      "identity_cues": "name=B-1_CHAR_WelderWorker_01; type=MESH; root=B-1_CHAR_WelderWorker_01; dimensions=0.420,0.320,1.730",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O006",
+      "source_name": "B-1_EXT_FactorySouthFacade",
+      "source_type": "MESH",
+      "root_name": "B-1_EXT_FactorySouthFacade",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 5.958,
+      "identity_cues": "name=B-1_EXT_FactorySouthFacade; type=MESH; root=B-1_EXT_FactorySouthFacade; dimensions=8.280,0.069,3.312",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O007",
+      "source_name": "B-1_EXT_FactoryYardGround",
+      "source_type": "MESH",
+      "root_name": "B-1_EXT_FactoryYardGround",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-1_EXT_FactoryYardGround; type=MESH; root=B-1_EXT_FactoryYardGround; dimensions=17.963,21.955,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O008",
+      "source_name": "B-1_EXT_WestPlantShell",
+      "source_type": "MESH",
+      "root_name": "B-1_EXT_WestPlantShell",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-1_EXT_WestPlantShell; type=MESH; root=B-1_EXT_WestPlantShell; dimensions=3.891,12.970,4.050",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O009",
+      "source_name": "B-1_PROP_MainRollerDoor_01",
+      "source_type": "MESH",
+      "root_name": "B-1_PROP_MainRollerDoor_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-1_PROP_MainRollerDoor_01; type=MESH; root=B-1_PROP_MainRollerDoor_01; dimensions=0.217,2.025,0.956",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O014",
+      "source_name": "B-1_PROP_WeldedGate_02",
+      "source_type": "MESH",
+      "root_name": "B-1_PROP_WeldedGate_02",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-1_PROP_WeldedGate_02; type=MESH; root=B-1_PROP_WeldedGate_02; dimensions=0.464,0.014,1.340",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR WelderWorker",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "worker blockout welding the barrier gate",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV B-1",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O006",
+        "O007",
+        "O008"
+      ],
+      "instance_count": 3,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-1 built environment shell enclosing the set: FactorySouthFacade, FactoryYardGround, WestPlantShell",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 03 PROP B-1",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O009",
+        "O014"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-1 set pieces and fittings: MainRollerDoor, WeldedGate",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_3301",
+      "source_instance_ids": [
+        "O001",
+        "O014"
+      ],
+      "start_seconds": 0.0,
+      "end_seconds": 1.0,
+      "relation": "the welding torch stays against the door leaf while the seam grows across the gate bar",
+      "forbidden_change": "do not move the seam off the door leaf and do not add a second welding point"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 12.0,
+      "camera_contract": {
+        "motion_type": "dolly",
+        "tracked_target_entity": "Entity 03 PROP B-1",
+        "world_path": "camera travels from (5.15, 6.38, 0.37) to (3.48, 4.06, 0.19) on a 35mm lens, total path length 2.86m inside the blocked set",
+        "target_distance_trend": "decrease",
+        "azimuth_trend": "clockwise",
+        "elevation_trend": "decrease",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中远景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not convert the linear camera move into an orbit or a zoom; keep the 中远景 framing and the 推 move exactly as blocked out"
+      },
+      "actions": "a welding torch arcs against the rusted roller door leaf and the weld seam grows from nothing into one continuous gate bar; sparks fall on the cement floor leaving a momentary warm point only at the contact spot, the rest of the hall under cold industrial light; steel racks are lifted into a stacked cover and steel stock with the water bucket are piled to the inner ring",
+      "layout_and_occlusion": "6 visible instances. Dominant FactorySouthFacade covers 100x9 percent at frame 50/4. Left to right: FactorySouthFacade, FactoryYardGround, WeldedGate, MainRollerDoor, WestPlantShell.",
+      "lighting_spatial_logic": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep09_shot01/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 7.87m to 27.19m across 6 layers; nearest is WelderWorker, furthest is WestPlantShell"
+      },
+      "camera_relation": "camera at (5.15, 6.38, 0.37) on a 35.0mm lens, frame 1 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR WelderWorker",
+          "visibility": "visible",
+          "center_x_percent": 93.11,
+          "center_y_percent": 37.5,
+          "bbox_width_percent": 12.54,
+          "bbox_height_percent": 22.24,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WestPlantShell, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 4.29,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 8.57,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WeldedGate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 49.04,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 7.11,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WeldedGate, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 87.75,
+          "center_y_percent": 31.62,
+          "bbox_width_percent": 24.51,
+          "bbox_height_percent": 20.41,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MainRollerDoor, left of WelderWorker, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 74.37,
+          "center_y_percent": 18.41,
+          "bbox_width_percent": 17.43,
+          "bbox_height_percent": 25.53,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WeldedGate, left of WestPlantShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 63.6,
+          "center_y_percent": 34.7,
+          "bbox_width_percent": 8.12,
+          "bbox_height_percent": 16.99,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of MainRollerDoor, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactorySouthFacade covers 100x9 percent at frame 50/4. Left to right: FactorySouthFacade, FactoryYardGround, WeldedGate, MainRollerDoor, WestPlantShell."
+    },
+    {
+      "time_seconds": 1.495,
+      "source_frame": "D14_shots/ep09_shot01/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 7.75m to 27.06m across 6 layers; nearest is WelderWorker, furthest is WestPlantShell"
+      },
+      "camera_relation": "camera at (5.08, 6.28, 0.36) on a 35.0mm lens, frame 37 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR WelderWorker",
+          "visibility": "visible",
+          "center_x_percent": 93.71,
+          "center_y_percent": 37.29,
+          "bbox_width_percent": 12.58,
+          "bbox_height_percent": 22.61,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WestPlantShell, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 4.05,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 8.1,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WeldedGate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 49.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 7.2,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WeldedGate, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 87.8,
+          "center_y_percent": 31.52,
+          "bbox_width_percent": 24.41,
+          "bbox_height_percent": 20.55,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MainRollerDoor, left of WelderWorker, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 74.73,
+          "center_y_percent": 17.94,
+          "bbox_width_percent": 17.68,
+          "bbox_height_percent": 25.95,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WeldedGate, left of WestPlantShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 63.82,
+          "center_y_percent": 34.45,
+          "bbox_width_percent": 8.24,
+          "bbox_height_percent": 17.27,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of MainRollerDoor, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactorySouthFacade covers 100x8 percent at frame 50/4. Left to right: FactorySouthFacade, FactoryYardGround, WeldedGate, MainRollerDoor, WestPlantShell."
+    },
+    {
+      "time_seconds": 2.99,
+      "source_frame": "D14_shots/ep09_shot01/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 7.42m to 26.74m across 6 layers; nearest is WelderWorker, furthest is WestPlantShell"
+      },
+      "camera_relation": "camera at (4.89, 6.01, 0.34) on a 35.0mm lens, frame 73 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR WelderWorker",
+          "visibility": "visible",
+          "center_x_percent": 94.52,
+          "center_y_percent": 36.71,
+          "bbox_width_percent": 10.95,
+          "bbox_height_percent": 23.65,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WestPlantShell, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 3.4,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 6.79,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WeldedGate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 49.12,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 7.44,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WeldedGate, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 87.93,
+          "center_y_percent": 31.24,
+          "bbox_width_percent": 24.14,
+          "bbox_height_percent": 20.93,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MainRollerDoor, left of WelderWorker, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 75.72,
+          "center_y_percent": 16.62,
+          "bbox_width_percent": 18.36,
+          "bbox_height_percent": 27.13,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WeldedGate, left of WestPlantShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 64.42,
+          "center_y_percent": 33.76,
+          "bbox_width_percent": 8.59,
+          "bbox_height_percent": 18.07,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of MainRollerDoor, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactoryYardGround covers 100x7 percent at frame 50/49. Left to right: FactorySouthFacade, FactoryYardGround, WeldedGate, MainRollerDoor, WestPlantShell."
+    },
+    {
+      "time_seconds": 4.484,
+      "source_frame": "D14_shots/ep09_shot01/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 6.96m to 26.28m across 6 layers; nearest is WelderWorker, furthest is WestPlantShell"
+      },
+      "camera_relation": "camera at (4.62, 5.64, 0.31) on a 35.0mm lens, frame 109 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR WelderWorker",
+          "visibility": "visible",
+          "center_x_percent": 95.8,
+          "center_y_percent": 35.79,
+          "bbox_width_percent": 8.41,
+          "bbox_height_percent": 25.29,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WestPlantShell, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 2.41,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 4.81,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WeldedGate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 49.22,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 7.84,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WeldedGate, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 88.13,
+          "center_y_percent": 30.84,
+          "bbox_width_percent": 23.75,
+          "bbox_height_percent": 21.5,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MainRollerDoor, left of WelderWorker, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 77.25,
+          "center_y_percent": 14.56,
+          "bbox_width_percent": 19.41,
+          "bbox_height_percent": 28.99,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WeldedGate, left of WestPlantShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 65.37,
+          "center_y_percent": 32.67,
+          "bbox_width_percent": 9.14,
+          "bbox_height_percent": 19.32,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of MainRollerDoor, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactoryYardGround covers 100x8 percent at frame 50/49. Left to right: FactorySouthFacade, FactoryYardGround, WeldedGate, MainRollerDoor, WestPlantShell."
+    },
+    {
+      "time_seconds": 5.979,
+      "source_frame": "D14_shots/ep09_shot01/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 6.45m to 25.76m across 6 layers; nearest is WelderWorker, furthest is WestPlantShell"
+      },
+      "camera_relation": "camera at (4.32, 5.22, 0.28) on a 35.0mm lens, frame 144 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR WelderWorker",
+          "visibility": "visible",
+          "center_x_percent": 97.42,
+          "center_y_percent": 34.6,
+          "bbox_width_percent": 5.16,
+          "bbox_height_percent": 27.41,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WestPlantShell, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 1.19,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 2.38,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WeldedGate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 49.37,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 8.37,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WeldedGate, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 88.35,
+          "center_y_percent": 30.38,
+          "bbox_width_percent": 23.3,
+          "bbox_height_percent": 22.16,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MainRollerDoor, left of WelderWorker, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 79.19,
+          "center_y_percent": 13.82,
+          "bbox_width_percent": 20.73,
+          "bbox_height_percent": 27.64,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WeldedGate, left of WestPlantShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 66.59,
+          "center_y_percent": 31.27,
+          "bbox_width_percent": 9.83,
+          "bbox_height_percent": 20.93,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of MainRollerDoor, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactoryYardGround covers 100x8 percent at frame 50/49. Left to right: FactorySouthFacade, FactoryYardGround, WeldedGate, MainRollerDoor, WestPlantShell."
+    },
+    {
+      "time_seconds": 7.474,
+      "source_frame": "D14_shots/ep09_shot01/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 5.92m to 25.23m across 5 layers; nearest is WelderWorker, furthest is WestPlantShell"
+      },
+      "camera_relation": "camera at (4.01, 4.80, 0.25) on a 35.0mm lens, frame 180 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR WelderWorker",
+          "visibility": "visible",
+          "center_x_percent": 99.38,
+          "center_y_percent": 33.15,
+          "bbox_width_percent": 1.23,
+          "bbox_height_percent": 30.0,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WestPlantShell, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 49.6,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.05,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WeldedGate, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 88.59,
+          "center_y_percent": 29.87,
+          "bbox_width_percent": 22.82,
+          "bbox_height_percent": 22.88,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MainRollerDoor, left of WelderWorker, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 81.5,
+          "center_y_percent": 12.99,
+          "bbox_width_percent": 22.29,
+          "bbox_height_percent": 25.97,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WeldedGate, left of WestPlantShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 68.06,
+          "center_y_percent": 29.57,
+          "bbox_width_percent": 10.66,
+          "bbox_height_percent": 22.9,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of MainRollerDoor, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryYardGround covers 100x9 percent at frame 50/50. Left to right: FactoryYardGround, WeldedGate, MainRollerDoor, WestPlantShell, WelderWorker."
+    },
+    {
+      "time_seconds": 8.969,
+      "source_frame": "D14_shots/ep09_shot01/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 5.47m to 24.77m across 4 layers; nearest is WeldedGate, furthest is WestPlantShell"
+      },
+      "camera_relation": "camera at (3.74, 4.42, 0.22) on a 35.0mm lens, frame 216 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR WelderWorker",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 49.87,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.83,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WeldedGate, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 88.81,
+          "center_y_percent": 29.41,
+          "bbox_width_percent": 22.39,
+          "bbox_height_percent": 23.55,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MainRollerDoor, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 83.83,
+          "center_y_percent": 12.15,
+          "bbox_width_percent": 23.86,
+          "bbox_height_percent": 24.3,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WeldedGate, left of WestPlantShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 69.57,
+          "center_y_percent": 27.81,
+          "bbox_width_percent": 11.51,
+          "bbox_height_percent": 24.95,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of MainRollerDoor, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant FactoryYardGround covers 100x10 percent at frame 50/50. Left to right: FactoryYardGround, WeldedGate, MainRollerDoor, WestPlantShell."
+    },
+    {
+      "time_seconds": 10.464,
+      "source_frame": "D14_shots/ep09_shot01/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 5.14m to 24.45m across 4 layers; nearest is WeldedGate, furthest is WestPlantShell"
+      },
+      "camera_relation": "camera at (3.55, 4.16, 0.20) on a 35.0mm lens, frame 252 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR WelderWorker",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.14,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 10.52,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WeldedGate, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 88.96,
+          "center_y_percent": 29.07,
+          "bbox_width_percent": 22.07,
+          "bbox_height_percent": 24.05,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MainRollerDoor, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 85.71,
+          "center_y_percent": 11.48,
+          "bbox_width_percent": 25.1,
+          "bbox_height_percent": 22.96,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WeldedGate, left of WestPlantShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 70.81,
+          "center_y_percent": 26.38,
+          "bbox_width_percent": 12.2,
+          "bbox_height_percent": 26.63,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of MainRollerDoor, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant FactoryYardGround covers 100x11 percent at frame 50/50. Left to right: FactoryYardGround, WeldedGate, MainRollerDoor, WestPlantShell."
+    },
+    {
+      "time_seconds": 11.958,
+      "source_frame": "D14_shots/ep09_shot01/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 5.02m to 24.32m across 4 layers; nearest is WeldedGate, furthest is WestPlantShell"
+      },
+      "camera_relation": "camera at (3.48, 4.06, 0.19) on a 35.0mm lens, frame 288 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR WelderWorker",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.26,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 10.83,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of WeldedGate, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 89.02,
+          "center_y_percent": 28.94,
+          "bbox_width_percent": 21.95,
+          "bbox_height_percent": 24.24,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MainRollerDoor, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 86.48,
+          "center_y_percent": 11.21,
+          "bbox_width_percent": 25.61,
+          "bbox_height_percent": 22.42,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WeldedGate, left of WestPlantShell, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 03 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 71.32,
+          "center_y_percent": 25.78,
+          "bbox_width_percent": 12.48,
+          "bbox_height_percent": 27.33,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of MainRollerDoor, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant FactoryYardGround covers 100x11 percent at frame 50/50. Left to right: FactoryYardGround, WeldedGate, MainRollerDoor, WestPlantShell."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

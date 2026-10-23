@@ -1,0 +1,921 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep03_shot01/preview_video.mp4",
+    "duration": 12.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 288,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "A-4_EXT_FactoryGround_01",
+      "source_type": "MESH",
+      "root_name": "A-4_EXT_FactoryGround_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-4_EXT_FactoryGround_01; type=MESH; root=A-4_EXT_FactoryGround_01; dimensions=32.000,24.000,0.400",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O002",
+      "source_name": "A-4_EXT_FactorySouthWall_01",
+      "source_type": "MESH",
+      "root_name": "A-4_EXT_FactorySouthWall_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-4_EXT_FactorySouthWall_01; type=MESH; root=A-4_EXT_FactorySouthWall_01; dimensions=26.000,0.200,12.000",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O003",
+      "source_name": "A-4_FX_TwinGreyVapour_07",
+      "source_type": "MESH",
+      "root_name": "A-4_FX_TwinGreyVapour_07",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-4_FX_TwinGreyVapour_07; type=MESH; root=A-4_FX_TwinGreyVapour_07; dimensions=0.930,1.950,0.026",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O004",
+      "source_name": "A-4_LGT_StreetLamp_06",
+      "source_type": "MESH",
+      "root_name": "A-4_LGT_StreetLamp_06",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-4_LGT_StreetLamp_06; type=MESH; root=A-4_LGT_StreetLamp_06; dimensions=12.600,12.400,8.050",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O006",
+      "source_name": "A-4_PROP_GroundBreakHole_03",
+      "source_type": "MESH",
+      "root_name": "A-4_PROP_GroundBreakHole_03",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-4_PROP_GroundBreakHole_03; type=MESH; root=A-4_PROP_GroundBreakHole_03; dimensions=0.500,0.500,0.400",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O007",
+      "source_name": "A-4_PROP_GroundFissure_02",
+      "source_type": "MESH",
+      "root_name": "A-4_PROP_GroundFissure_02",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-4_PROP_GroundFissure_02; type=MESH; root=A-4_PROP_GroundFissure_02; dimensions=18.300,0.300,0.060",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 ENV A-4",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O001",
+        "O002",
+        "O006",
+        "O007"
+      ],
+      "instance_count": 4,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-4 built environment shell enclosing the set: FactoryGround, FactorySouthWall, GroundBreakHole, GroundFissure",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 02 FX TwinGreyVapour",
+      "entity_class": "effect",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O003"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "twin grey-blue vapour mass over the fissure",
+      "structural_constraints": "keep the source volume and the attachment point; the effect never detaches from its source surface",
+      "motion_contract": {
+        "mode": "effect_evolution",
+        "action": "develops and drifts as the effect unfolds",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 03 PROP A-4",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O004"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-4 set pieces and fittings: StreetLamp",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 12.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 02 FX TwinGreyVapour",
+        "world_path": "camera travels from (-3.00, 5.40, 10.80) to (-3.00, 5.40, 10.80) on a 24mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "decrease",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "远景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 远景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "twin grey vapour rises out of the ground fissure and spreads flat across the yard, street lamps reduce to diffuse glow discs, vapour keeps pushing outward",
+      "layout_and_occlusion": "6 visible instances. Dominant FactorySouthWall covers 100x100 percent at frame 50/50. Left to right: GroundBreakHole, GroundFissure, TwinGreyVapour, FactoryGround, FactorySouthWall.",
+      "lighting_spatial_logic": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep03_shot01/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 4.83m to 15.37m across 6 layers; nearest is FactorySouthWall, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (-3.00, 5.40, 10.80) on a 24.0mm lens, frame 1 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 65.62,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.76,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX TwinGreyVapour",
+          "visibility": "visible",
+          "center_x_percent": 42.37,
+          "center_y_percent": 57.22,
+          "bbox_width_percent": 11.09,
+          "bbox_height_percent": 6.58,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundFissure, left of FactoryGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 59.23,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 81.54,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 31.84,
+          "center_y_percent": 79.02,
+          "bbox_width_percent": 7.04,
+          "bbox_height_percent": 4.54,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GroundFissure, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 32.88,
+          "center_y_percent": 70.0,
+          "bbox_width_percent": 65.77,
+          "bbox_height_percent": 60.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, left of TwinGreyVapour, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactorySouthWall covers 100x100 percent at frame 50/50. Left to right: GroundBreakHole, GroundFissure, TwinGreyVapour, FactoryGround, FactorySouthWall."
+    },
+    {
+      "time_seconds": 1.495,
+      "source_frame": "D14_shots/ep03_shot01/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 4.83m to 15.37m across 6 layers; nearest is FactorySouthWall, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (-3.00, 5.40, 10.80) on a 24.0mm lens, frame 37 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 65.62,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.76,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX TwinGreyVapour",
+          "visibility": "visible",
+          "center_x_percent": 42.6,
+          "center_y_percent": 57.28,
+          "bbox_width_percent": 15.77,
+          "bbox_height_percent": 9.5,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundFissure, left of FactoryGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 59.23,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 81.54,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 31.84,
+          "center_y_percent": 79.02,
+          "bbox_width_percent": 7.04,
+          "bbox_height_percent": 4.54,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GroundFissure, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 32.88,
+          "center_y_percent": 70.0,
+          "bbox_width_percent": 65.77,
+          "bbox_height_percent": 60.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, left of TwinGreyVapour, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactorySouthWall covers 100x100 percent at frame 50/50. Left to right: GroundBreakHole, GroundFissure, TwinGreyVapour, FactoryGround, FactorySouthWall."
+    },
+    {
+      "time_seconds": 2.99,
+      "source_frame": "D14_shots/ep03_shot01/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 4.83m to 15.37m across 6 layers; nearest is FactorySouthWall, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (-3.00, 5.40, 10.80) on a 24.0mm lens, frame 73 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 65.62,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.76,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX TwinGreyVapour",
+          "visibility": "visible",
+          "center_x_percent": 42.74,
+          "center_y_percent": 57.4,
+          "bbox_width_percent": 20.45,
+          "bbox_height_percent": 12.43,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundFissure, left of FactoryGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 59.23,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 81.54,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 31.84,
+          "center_y_percent": 79.02,
+          "bbox_width_percent": 7.04,
+          "bbox_height_percent": 4.54,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GroundFissure, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 32.88,
+          "center_y_percent": 70.0,
+          "bbox_width_percent": 65.77,
+          "bbox_height_percent": 60.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, left of TwinGreyVapour, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactorySouthWall covers 100x100 percent at frame 50/50. Left to right: GroundBreakHole, GroundFissure, TwinGreyVapour, FactoryGround, FactorySouthWall."
+    },
+    {
+      "time_seconds": 4.484,
+      "source_frame": "D14_shots/ep03_shot01/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 4.83m to 15.37m across 6 layers; nearest is FactorySouthWall, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (-3.00, 5.40, 10.80) on a 24.0mm lens, frame 109 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 65.62,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.76,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX TwinGreyVapour",
+          "visibility": "visible",
+          "center_x_percent": 42.77,
+          "center_y_percent": 57.59,
+          "bbox_width_percent": 24.85,
+          "bbox_height_percent": 15.28,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundFissure, left of FactoryGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 59.23,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 81.54,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 31.84,
+          "center_y_percent": 79.02,
+          "bbox_width_percent": 7.04,
+          "bbox_height_percent": 4.54,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GroundFissure, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 32.88,
+          "center_y_percent": 70.0,
+          "bbox_width_percent": 65.77,
+          "bbox_height_percent": 60.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, left of TwinGreyVapour, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactorySouthWall covers 100x100 percent at frame 50/50. Left to right: GroundBreakHole, GroundFissure, TwinGreyVapour, FactoryGround, FactorySouthWall."
+    },
+    {
+      "time_seconds": 5.979,
+      "source_frame": "D14_shots/ep03_shot01/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 4.83m to 15.37m across 6 layers; nearest is FactorySouthWall, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (-3.00, 5.40, 10.80) on a 24.0mm lens, frame 144 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 65.62,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.76,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX TwinGreyVapour",
+          "visibility": "visible",
+          "center_x_percent": 42.68,
+          "center_y_percent": 57.81,
+          "bbox_width_percent": 28.14,
+          "bbox_height_percent": 17.74,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundFissure, left of FactoryGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 59.23,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 81.54,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 31.84,
+          "center_y_percent": 79.02,
+          "bbox_width_percent": 7.04,
+          "bbox_height_percent": 4.54,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GroundFissure, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 32.88,
+          "center_y_percent": 70.0,
+          "bbox_width_percent": 65.77,
+          "bbox_height_percent": 60.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, left of TwinGreyVapour, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactorySouthWall covers 100x100 percent at frame 50/50. Left to right: GroundBreakHole, GroundFissure, TwinGreyVapour, FactoryGround, FactorySouthWall."
+    },
+    {
+      "time_seconds": 7.474,
+      "source_frame": "D14_shots/ep03_shot01/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 4.83m to 15.37m across 6 layers; nearest is FactorySouthWall, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (-3.00, 5.40, 10.80) on a 24.0mm lens, frame 180 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 65.62,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.76,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX TwinGreyVapour",
+          "visibility": "visible",
+          "center_x_percent": 42.52,
+          "center_y_percent": 58.09,
+          "bbox_width_percent": 31.53,
+          "bbox_height_percent": 20.3,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundFissure, left of FactoryGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 59.23,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 81.54,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 31.84,
+          "center_y_percent": 79.02,
+          "bbox_width_percent": 7.04,
+          "bbox_height_percent": 4.54,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GroundFissure, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 32.88,
+          "center_y_percent": 70.0,
+          "bbox_width_percent": 65.77,
+          "bbox_height_percent": 60.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, left of TwinGreyVapour, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactorySouthWall covers 100x100 percent at frame 50/50. Left to right: GroundBreakHole, GroundFissure, TwinGreyVapour, FactoryGround, FactorySouthWall."
+    },
+    {
+      "time_seconds": 8.969,
+      "source_frame": "D14_shots/ep03_shot01/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 4.83m to 15.37m across 6 layers; nearest is FactorySouthWall, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (-3.00, 5.40, 10.80) on a 24.0mm lens, frame 216 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 65.62,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.76,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX TwinGreyVapour",
+          "visibility": "visible",
+          "center_x_percent": 42.31,
+          "center_y_percent": 58.41,
+          "bbox_width_percent": 34.96,
+          "bbox_height_percent": 22.89,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundFissure, left of FactoryGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 59.23,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 81.54,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 31.84,
+          "center_y_percent": 79.02,
+          "bbox_width_percent": 7.04,
+          "bbox_height_percent": 4.54,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GroundFissure, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 32.88,
+          "center_y_percent": 70.0,
+          "bbox_width_percent": 65.77,
+          "bbox_height_percent": 60.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, left of TwinGreyVapour, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactorySouthWall covers 100x100 percent at frame 50/50. Left to right: GroundBreakHole, GroundFissure, TwinGreyVapour, FactoryGround, FactorySouthWall."
+    },
+    {
+      "time_seconds": 10.464,
+      "source_frame": "D14_shots/ep03_shot01/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 4.83m to 15.37m across 6 layers; nearest is FactorySouthWall, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (-3.00, 5.40, 10.80) on a 24.0mm lens, frame 252 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 65.62,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.76,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX TwinGreyVapour",
+          "visibility": "visible",
+          "center_x_percent": 42.07,
+          "center_y_percent": 58.7,
+          "bbox_width_percent": 37.44,
+          "bbox_height_percent": 24.98,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundFissure, left of FactoryGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 59.23,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 81.54,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 31.84,
+          "center_y_percent": 79.02,
+          "bbox_width_percent": 7.04,
+          "bbox_height_percent": 4.54,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GroundFissure, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 32.88,
+          "center_y_percent": 70.0,
+          "bbox_width_percent": 65.77,
+          "bbox_height_percent": 60.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, left of TwinGreyVapour, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactorySouthWall covers 100x100 percent at frame 50/50. Left to right: GroundBreakHole, GroundFissure, TwinGreyVapour, FactoryGround, FactorySouthWall."
+    },
+    {
+      "time_seconds": 11.958,
+      "source_frame": "D14_shots/ep03_shot01/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 4.83m to 15.37m across 6 layers; nearest is FactorySouthWall, furthest is FactoryGround"
+      },
+      "camera_relation": "camera at (-3.00, 5.40, 10.80) on a 24.0mm lens, frame 288 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 65.62,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.76,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 100.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 FX TwinGreyVapour",
+          "visibility": "visible",
+          "center_x_percent": 41.79,
+          "center_y_percent": 59.03,
+          "bbox_width_percent": 39.94,
+          "bbox_height_percent": 27.09,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundFissure, left of FactoryGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-4",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 59.23,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 81.54,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of TwinGreyVapour, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 31.84,
+          "center_y_percent": 79.02,
+          "bbox_width_percent": 7.04,
+          "bbox_height_percent": 4.54,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GroundFissure, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV A-4",
+          "visibility": "visible",
+          "center_x_percent": 32.88,
+          "center_y_percent": 70.0,
+          "bbox_width_percent": 65.77,
+          "bbox_height_percent": 60.0,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GroundBreakHole, left of TwinGreyVapour, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactorySouthWall covers 100x100 percent at frame 50/50. Left to right: GroundBreakHole, GroundFissure, TwinGreyVapour, FactoryGround, FactorySouthWall."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

@@ -1,0 +1,949 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep07_shot01/preview_video.mp4",
+    "duration": 12.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 288,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O002",
+      "source_name": "A-8_CHAR_Yehongyi_02",
+      "source_type": "MESH",
+      "root_name": "A-8_CHAR_Yehongyi_02",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-8_CHAR_Yehongyi_02; type=MESH; root=A-8_CHAR_Yehongyi_02; dimensions=0.420,0.330,1.160",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O003",
+      "source_name": "A-8_EXT_InnerYard",
+      "source_type": "MESH",
+      "root_name": "A-8_EXT_InnerYard",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-8_EXT_InnerYard; type=MESH; root=A-8_EXT_InnerYard; dimensions=36.000,28.000,0.400",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O004",
+      "source_name": "A-8_FX_AshPatch_01",
+      "source_type": "MESH",
+      "root_name": "A-8_FX_AshPatch_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 1.5,
+      "identity_cues": "name=A-8_FX_AshPatch_01; type=MESH; root=A-8_FX_AshPatch_01; dimensions=0.120,0.100,0.020",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O005",
+      "source_name": "A-8_PROP_DeepPit_02",
+      "source_type": "MESH",
+      "root_name": "A-8_PROP_DeepPit_02",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 3.0,
+      "identity_cues": "name=A-8_PROP_DeepPit_02; type=MESH; root=A-8_PROP_DeepPit_02; dimensions=6.500,3.300,2.300",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O006",
+      "source_name": "A-8_PROP_DisposalPlatform_01",
+      "source_type": "MESH",
+      "root_name": "A-8_PROP_DisposalPlatform_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-8_PROP_DisposalPlatform_01; type=MESH; root=A-8_PROP_DisposalPlatform_01; dimensions=6.000,3.000,0.300",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O008",
+      "source_name": "A-8_PROP_WristRestraint_01",
+      "source_type": "MESH",
+      "root_name": "A-8_PROP_WristRestraint_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 0.0,
+      "identity_cues": "name=A-8_PROP_WristRestraint_01; type=MESH; root=A-8_PROP_WristRestraint_01; dimensions=0.075,0.075,0.040",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR Yehongyi",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O002"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "female captive character blockout",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV A-8",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O003",
+        "O005",
+        "O006"
+      ],
+      "instance_count": 3,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-8 built environment shell enclosing the set: InnerYard, DeepPit, DisposalPlatform",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 03 FX AshPatch",
+      "entity_class": "effect",
+      "importance": "context",
+      "source_instance_ids": [
+        "O004"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "grey white patch on the captive forearm",
+      "structural_constraints": "keep the source volume and the attachment point; the effect never detaches from its source surface",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 04 PROP A-8",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O008"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-8 set pieces and fittings: WristRestraint",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_2501",
+      "source_instance_ids": [
+        "O002"
+      ],
+      "start_seconds": 0.0,
+      "end_seconds": 1.0,
+      "relation": "protagonist walks up to the kneeling captive at the pit floor",
+      "forbidden_change": "do not move the captive out of the pit or swap their positions"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 12.0,
+      "camera_contract": {
+        "motion_type": "tracking",
+        "tracked_target_entity": "none",
+        "world_path": "camera travels from (42.27, 4.74, 0.26) to (43.07, 1.34, 1.91) on a 35mm lens, total path length 3.86m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "variable",
+        "elevation_trend": "increase",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not swap the follow move for an orbit or a frontal push; keep the 中景 framing and the 跟 move exactly as blocked out"
+      },
+      "actions": "protagonist lands at the pit floor and walks along the platform side wall to the captive, she raises her head and props herself up on one hand",
+      "layout_and_occlusion": "6 visible instances. Dominant DeepPit covers 100x25 percent at frame 50/88. Left to right: InnerYard, DeepPit, DisposalPlatform, Yehongyi, AshPatch.",
+      "lighting_spatial_logic": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep07_shot01/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.95m to 10.58m across 6 layers; nearest is DeepPit, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (42.27, 4.74, 0.26) on a 35.0mm lens, frame 1 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 86.91,
+          "center_y_percent": 57.87,
+          "bbox_width_percent": 20.66,
+          "bbox_height_percent": 23.81,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of InnerYard, left of AshPatch, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 83.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 23.01,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yehongyi, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX AshPatch",
+          "visibility": "visible",
+          "center_x_percent": 92.42,
+          "center_y_percent": 54.46,
+          "bbox_width_percent": 5.55,
+          "bbox_height_percent": 0.89,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, left of WristRestraint, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 87.68,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 24.63,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yehongyi, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 75.51,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 13.32,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yehongyi, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP A-8",
+          "visibility": "visible",
+          "center_x_percent": 99.43,
+          "center_y_percent": 62.32,
+          "bbox_width_percent": 1.15,
+          "bbox_height_percent": 1.01,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of AshPatch, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant DeepPit covers 100x25 percent at frame 50/88. Left to right: InnerYard, DeepPit, DisposalPlatform, Yehongyi, AshPatch."
+    },
+    {
+      "time_seconds": 1.495,
+      "source_frame": "D14_shots/ep07_shot01/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.86m to 10.43m across 5 layers; nearest is DeepPit, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (42.31, 4.59, 0.33) on a 35.0mm lens, frame 37 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 89.57,
+          "center_y_percent": 57.44,
+          "bbox_width_percent": 20.86,
+          "bbox_height_percent": 24.48,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of InnerYard, left of AshPatch, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 85.13,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 29.73,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yehongyi, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX AshPatch",
+          "visibility": "visible",
+          "center_x_percent": 95.55,
+          "center_y_percent": 53.86,
+          "bbox_width_percent": 5.79,
+          "bbox_height_percent": 0.89,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 87.6,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 24.81,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yehongyi, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 77.22,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 15.73,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yehongyi, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP A-8",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant InnerYard covers 100x30 percent at frame 50/85. Left to right: InnerYard, DeepPit, DisposalPlatform, Yehongyi, AshPatch."
+    },
+    {
+      "time_seconds": 2.99,
+      "source_frame": "D14_shots/ep07_shot01/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.63m to 10.04m across 4 layers; nearest is DeepPit, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (42.40, 4.21, 0.52) on a 35.0mm lens, frame 73 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 92.77,
+          "center_y_percent": 56.75,
+          "bbox_width_percent": 14.47,
+          "bbox_height_percent": 26.97,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of InnerYard, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 83.46,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 33.08,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yehongyi, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX AshPatch",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 87.48,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 25.04,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yehongyi, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 82.61,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 29.98,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yehongyi, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP A-8",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant InnerYard covers 100x33 percent at frame 50/83. Left to right: InnerYard, DeepPit, DisposalPlatform, Yehongyi."
+    },
+    {
+      "time_seconds": 4.484,
+      "source_frame": "D14_shots/ep07_shot01/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.81m to 15.45m across 3 layers; nearest is Yehongyi, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (42.53, 3.66, 0.79) on a 35.0mm lens, frame 109 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 96.67,
+          "center_y_percent": 57.09,
+          "bbox_width_percent": 6.65,
+          "bbox_height_percent": 31.38,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalPlatform, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 31.83,
+          "center_y_percent": 69.9,
+          "bbox_width_percent": 63.66,
+          "bbox_height_percent": 15.21,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DisposalPlatform, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX AshPatch",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 82.78,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 34.44,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of InnerYard, left of Yehongyi, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP A-8",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant DisposalPlatform covers 100x34 percent at frame 50/83. Left to right: InnerYard, DisposalPlatform, Yehongyi."
+    },
+    {
+      "time_seconds": 5.979,
+      "source_frame": "D14_shots/ep07_shot01/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.20m to 15.86m across 3 layers; nearest is Yehongyi, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (42.67, 3.05, 1.08) on a 35.0mm lens, frame 144 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 99.66,
+          "center_y_percent": 60.11,
+          "bbox_width_percent": 0.68,
+          "bbox_height_percent": 37.61,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalPlatform, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 39.14,
+          "center_y_percent": 64.37,
+          "bbox_width_percent": 78.28,
+          "bbox_height_percent": 14.14,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DisposalPlatform, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX AshPatch",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 81.92,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 36.15,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of InnerYard, left of Yehongyi, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP A-8",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant DisposalPlatform covers 100x36 percent at frame 50/82. Left to right: InnerYard, DisposalPlatform, Yehongyi."
+    },
+    {
+      "time_seconds": 7.474,
+      "source_frame": "D14_shots/ep07_shot01/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.66m to 16.19m across 3 layers; nearest is Yehongyi, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (42.82, 2.42, 1.39) on a 35.0mm lens, frame 180 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 99.77,
+          "center_y_percent": 67.42,
+          "bbox_width_percent": 0.46,
+          "bbox_height_percent": 45.35,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DisposalPlatform, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 46.79,
+          "center_y_percent": 58.75,
+          "bbox_width_percent": 93.57,
+          "bbox_height_percent": 12.84,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DisposalPlatform, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX AshPatch",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 81.4,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 37.2,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of InnerYard, left of Yehongyi, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP A-8",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant DisposalPlatform covers 100x37 percent at frame 50/81. Left to right: InnerYard, DisposalPlatform, Yehongyi."
+    },
+    {
+      "time_seconds": 8.969,
+      "source_frame": "D14_shots/ep07_shot01/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.26m to 16.39m across 3 layers; nearest is Yehongyi, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (42.95, 1.88, 1.65) on a 35.0mm lens, frame 216 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 96.08,
+          "center_y_percent": 75.0,
+          "bbox_width_percent": 7.84,
+          "bbox_height_percent": 50.0,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of InnerYard, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 53.92,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 11.58,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yehongyi, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX AshPatch",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 81.25,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 37.5,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yehongyi, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP A-8",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant DisposalPlatform covers 100x38 percent at frame 50/81. Left to right: InnerYard, DisposalPlatform, Yehongyi."
+    },
+    {
+      "time_seconds": 10.464,
+      "source_frame": "D14_shots/ep07_shot01/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 2.03m to 16.49m across 3 layers; nearest is Yehongyi, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (43.04, 1.49, 1.84) on a 35.0mm lens, frame 252 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 90.87,
+          "center_y_percent": 77.91,
+          "bbox_width_percent": 18.26,
+          "bbox_height_percent": 44.18,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of InnerYard, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.55,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 10.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yehongyi, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX AshPatch",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 81.31,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 37.38,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yehongyi, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP A-8",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant DisposalPlatform covers 100x37 percent at frame 50/81. Left to right: InnerYard, DisposalPlatform, Yehongyi."
+    },
+    {
+      "time_seconds": 11.958,
+      "source_frame": "D14_shots/ep07_shot01/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.96m to 16.52m across 3 layers; nearest is Yehongyi, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (43.07, 1.34, 1.91) on a 35.0mm lens, frame 288 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 88.28,
+          "center_y_percent": 79.36,
+          "bbox_width_percent": 23.45,
+          "bbox_height_percent": 41.28,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of InnerYard, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 49.28,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 10.22,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yehongyi, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 FX AshPatch",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV A-8",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 81.37,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 37.27,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Yehongyi, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP A-8",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant DisposalPlatform covers 100x37 percent at frame 50/81. Left to right: InnerYard, DisposalPlatform, Yehongyi."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "scene_code": "B-1",
+  "size_m": [
+    36.0,
+    44.0,
+    2.935
+  ],
+  "ground_center_m": [
+    -4.0,
+    0.25
+  ],
+  "floor_z": 0.0,
+  "props": [
+    {
+      "name": "B-1_CHAR_Yehongyi_01",
+      "kind": "human_proxy",
+      "center_m": [
+        -7.5,
+        1.0,
+        0.0
+      ],
+      "size_m": [
+        0.42,
+        0.32,
+        1.73
+      ],
+      "role": "primary"
+    },
+    {
+      "name": "B-1_EXT_FactoryYardGround",
+      "kind": "box",
+      "center_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size_m": [
+        36.0,
+        44.0,
+        0.1
+      ],
+      "role": "set"
+    },
+    {
+      "name": "B-1_EXT_WestPlantShell",
+      "kind": "box",
+      "center_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size_m": [
+        2.82,
+        9.401,
+        2.935
+      ],
+      "role": "set"
+    },
+    {
+      "name": "B-1_PROP_SideDoor_01",
+      "kind": "box",
+      "center_m": [
+        -8.5,
+        0.0,
+        3.6
+      ],
+      "size_m": [
+        1.914,
+        1.028,
+        0.506
+      ],
+      "role": "set"
+    }
+  ],
+  "walls": [],
+  "wall_thickness_m": 0.15
+}

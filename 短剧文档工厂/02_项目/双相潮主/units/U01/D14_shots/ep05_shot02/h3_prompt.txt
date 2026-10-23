@@ -1,0 +1,46 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O002>,I3=<O004>,I4=<O006>,I5=<O007>.
+<Entity 01 CHAR Yechengjun>=E1[articulated/primary/static] members=I1;n=1;src=male officer antagonist blockout; final=male officer antagonist blockout; finish=real skin with pores and fine hair, fabric with real drape and wear…; style=world_style_unit_contract.
+<Entity 02 ENV A-6>=E2[environment/context/static] members=I2-I3;n=2;src=A-6 built environment shell enclosing the set…; final=A-6 built environment shell enclosing the set…; finish=worn cement, oxidised steel and sheet metal with cold grey…; style=world_style_unit_contract.
+<Entity 03 PROP A-6>=E3[rigid/context/static] members=I4-I5;n=2;src=A-6 set pieces and fittings: ApprovalConsole…; final=A-6 set pieces and fittings: ApprovalConsole…; finish=utilitarian material with visible weight, thickness and use marks…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I3;1:1;n=2.
+E3:I4-I5;1:1;n=2.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink… | materials=real skin with pores and slight oil sheen, matte… | environment=cement yard plates cut by fissures and pit openings… | props=functional utilitarian tooling with real weight and… | light=one cold overhead key with shadow detail retained….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-13.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E3;path=camera travels from (33. 69, 4. 94, 0. 44) to (33. 69, 4. 94, 0…;dist=stable;azi=stable;elev=stable;lens=stable;comp=近景 framing in 9:16 vertical, subject held in the frame centre…;ban=do not add any camera move, zoom or handheld shake… | Act=over the shoulder of the officer toward the approval terminal, one red reject key lit, a column of… | Layout=5 visible instances. Dominant SteelFenceWest covers 100x65 percent at frame 50/33… | Light=one cold overhead key with shadow detail retained instead of….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=close;Comp=depth spans 2. 43m to 10. 75m across 5 layers…;Cam=camera at (33. 69, 4. 94, 0. 44) on a 50…;Lay=5 visible instances… V=I2:50/65/100/43,I3:50/33/100/65,I4:34/37/69/39,I5:20/12/40/25 D=I1:v/27/34/53/68/o:upright body proxy…/m:stationary across this interval/r:right of ApprovalTerminal…
+@1.620s F=close;Comp=depth spans 2. 43m to 10. 75m across 5 layers…;Cam=camera at (33. 69, 4. 94, 0. 44) on a 50…;Lay=5 visible instances… V=I2:50/65/100/43,I3:50/33/100/65,I4:34/37/69/39,I5:20/12/40/25 D=I1:v/27/34/53/68/o:upright body proxy…/m:stationary across this interval/r:right of ApprovalTerminal…
+@3.240s F=close;Comp=depth spans 2. 43m to 10. 75m across 5 layers…;Cam=camera at (33. 69, 4. 94, 0. 44) on a 50…;Lay=5 visible instances… V=I2:50/65/100/43,I3:50/33/100/65,I4:34/37/69/39,I5:20/12/40/25 D=I1:v/27/34/53/68/o:upright body proxy…/m:stationary across this interval/r:right of ApprovalTerminal…
+@4.859s F=close;Comp=depth spans 2. 43m to 10. 75m across 5 layers…;Cam=camera at (33. 69, 4. 94, 0. 44) on a 50…;Lay=5 visible instances… V=I2:50/65/100/43,I3:50/33/100/65,I4:34/37/69/39,I5:20/12/40/25 D=I1:v/27/34/53/68/o:upright body proxy…/m:stationary across this interval/r:right of ApprovalTerminal…
+@6.479s F=close;Comp=depth spans 2. 43m to 10. 75m across 5 layers…;Cam=camera at (33. 69, 4. 94, 0. 44) on a 50…;Lay=5 visible instances… V=I2:50/65/100/43,I3:50/33/100/65,I4:34/37/69/39,I5:20/12/40/25 D=I1:v/27/34/53/68/o:upright body proxy…/m:stationary across this interval/r:right of ApprovalTerminal…
+@8.099s F=close;Comp=depth spans 2. 43m to 10. 75m across 5 layers…;Cam=camera at (33. 69, 4. 94, 0. 44) on a 50…;Lay=5 visible instances… V=I2:50/65/100/43,I3:50/33/100/65,I4:34/37/69/39,I5:20/12/40/25 D=I1:v/27/34/53/68/o:upright body proxy…/m:stationary across this interval/r:right of ApprovalTerminal…
+@9.719s F=close;Comp=depth spans 2. 43m to 10. 75m across 5 layers…;Cam=camera at (33. 69, 4. 94, 0. 44) on a 50…;Lay=5 visible instances… V=I2:50/65/100/43,I3:50/33/100/65,I4:34/37/69/39,I5:20/12/40/25 D=I1:v/27/34/53/68/o:upright body proxy…/m:stationary across this interval/r:right of ApprovalTerminal…
+@11.339s F=close;Comp=depth spans 2. 43m to 10. 75m across 5 layers…;Cam=camera at (33. 69, 4. 94, 0. 44) on a 50…;Lay=5 visible instances… V=I2:50/65/100/43,I3:50/33/100/65,I4:34/37/69/39,I5:20/12/40/25 D=I1:v/27/34/53/68/o:upright body proxy…/m:stationary across this interval/r:right of ApprovalTerminal…
+@12.958s F=close;Comp=depth spans 2. 43m to 10. 75m across 5 layers…;Cam=camera at (33. 69, 4. 94, 0. 44) on a 50…;Lay=5 visible instances… V=I2:50/65/100/43,I3:50/33/100/65,I4:34/37/69/39,I5:20/12/40/25 D=I1:v/27/34/53/68/o:upright body proxy…/m:stationary across this interval/r:right of ApprovalTerminal…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+short electronic confirm from the terminal over a continuing diesel growl
+
+non_diegetic_music:
+N/A

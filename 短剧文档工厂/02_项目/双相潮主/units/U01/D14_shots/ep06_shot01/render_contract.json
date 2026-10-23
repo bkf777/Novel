@@ -1,0 +1,802 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep06_shot01/preview_video.mp4",
+    "duration": 11.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 264,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "A-7_CHAR_Luchen_01",
+      "source_type": "MESH",
+      "root_name": "A-7_CHAR_Luchen_01",
+      "first_visible_seconds": 4.125,
+      "last_visible_seconds": 10.958,
+      "identity_cues": "name=A-7_CHAR_Luchen_01; type=MESH; root=A-7_CHAR_Luchen_01; dimensions=0.420,0.323,1.630",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O002",
+      "source_name": "A-7_EXT_InnerYard",
+      "source_type": "MESH",
+      "root_name": "A-7_EXT_InnerYard",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 10.958,
+      "identity_cues": "name=A-7_EXT_InnerYard; type=MESH; root=A-7_EXT_InnerYard; dimensions=36.000,28.000,0.400",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O004",
+      "source_name": "A-7_PROP_ApprovalConsole_01",
+      "source_type": "MESH",
+      "root_name": "A-7_PROP_ApprovalConsole_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 10.958,
+      "identity_cues": "name=A-7_PROP_ApprovalConsole_01; type=MESH; root=A-7_PROP_ApprovalConsole_01; dimensions=2.400,0.800,1.050",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O005",
+      "source_name": "A-7_PROP_ApprovalTerminal_01",
+      "source_type": "MESH",
+      "root_name": "A-7_PROP_ApprovalTerminal_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 10.958,
+      "identity_cues": "name=A-7_PROP_ApprovalTerminal_01; type=MESH; root=A-7_PROP_ApprovalTerminal_01; dimensions=1.000,0.200,0.700",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O007",
+      "source_name": "A-7_PROP_SteelCrowbar_01",
+      "source_type": "MESH",
+      "root_name": "A-7_PROP_SteelCrowbar_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 10.958,
+      "identity_cues": "name=A-7_PROP_SteelCrowbar_01; type=MESH; root=A-7_PROP_SteelCrowbar_01; dimensions=0.035,0.035,1.200",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR Luchen",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "male protagonist blockout",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "locomotion",
+        "action": "travels 2.20m across the set during the shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV A-7",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O002"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-7 built environment shell enclosing the set: InnerYard",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 03 PROP A-7",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O004",
+        "O005",
+        "O007"
+      ],
+      "instance_count": 3,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-7 set pieces and fittings: ApprovalConsole, ApprovalTerminal, SteelCrowbar",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    }
+  ],
+  "interaction_contracts": [],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 11.0,
+      "camera_contract": {
+        "motion_type": "handheld",
+        "tracked_target_entity": "Entity 01 CHAR Luchen",
+        "world_path": "camera travels from (27.47, 5.66, 0.69) to (27.39, 5.73, 0.69) on a 35mm lens, total path length 0.10m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "counterclockwise",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not stabilise the handheld rig or move onto the face; keep the 中景 framing and the 手持 move exactly as blocked out"
+      },
+      "actions": "a silhouette in the dark plant bursts out and charges, tactical coat hem swinging, the crowbar drags a spark line across the concrete",
+      "layout_and_occlusion": "4 visible instances. Dominant ApprovalConsole covers 80x26 percent at frame 60/49. Left to right: InnerYard, ApprovalConsole, ApprovalTerminal, SteelCrowbar.",
+      "lighting_spatial_logic": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep06_shot01/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.82m to 20.26m across 4 layers; nearest is ApprovalTerminal, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (27.47, 5.66, 0.69) on a 35.0mm lens, frame 1 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-7",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.45,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 7.0,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ApprovalConsole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 60.05,
+          "center_y_percent": 49.08,
+          "bbox_width_percent": 79.9,
+          "bbox_height_percent": 26.48,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of InnerYard, left of ApprovalTerminal, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 62.0,
+          "center_y_percent": 30.0,
+          "bbox_width_percent": 34.63,
+          "bbox_height_percent": 16.54,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ApprovalConsole, left of SteelCrowbar, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 73.24,
+          "center_y_percent": 37.03,
+          "bbox_width_percent": 1.53,
+          "bbox_height_percent": 18.73,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ApprovalTerminal, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant ApprovalConsole covers 80x26 percent at frame 60/49. Left to right: InnerYard, ApprovalConsole, ApprovalTerminal, SteelCrowbar."
+    },
+    {
+      "time_seconds": 1.37,
+      "source_frame": "D14_shots/ep06_shot01/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.81m to 20.25m across 4 layers; nearest is ApprovalTerminal, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (27.47, 5.65, 0.67) on a 35.0mm lens, frame 34 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-7",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.34,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 6.9,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ApprovalConsole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 59.89,
+          "center_y_percent": 48.56,
+          "bbox_width_percent": 80.21,
+          "bbox_height_percent": 26.55,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of InnerYard, left of ApprovalTerminal, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 61.74,
+          "center_y_percent": 29.56,
+          "bbox_width_percent": 34.67,
+          "bbox_height_percent": 16.64,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ApprovalConsole, left of SteelCrowbar, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 73.06,
+          "center_y_percent": 36.7,
+          "bbox_width_percent": 1.54,
+          "bbox_height_percent": 18.76,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ApprovalTerminal, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant ApprovalConsole covers 80x27 percent at frame 60/49. Left to right: InnerYard, ApprovalConsole, ApprovalTerminal, SteelCrowbar."
+    },
+    {
+      "time_seconds": 2.74,
+      "source_frame": "D14_shots/ep06_shot01/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.82m to 20.25m across 4 layers; nearest is ApprovalTerminal, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (27.46, 5.65, 0.70) on a 35.0mm lens, frame 67 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-7",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.49,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 7.04,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ApprovalConsole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 59.77,
+          "center_y_percent": 49.23,
+          "bbox_width_percent": 80.47,
+          "bbox_height_percent": 26.51,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of InnerYard, left of ApprovalTerminal, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 61.42,
+          "center_y_percent": 30.12,
+          "bbox_width_percent": 34.61,
+          "bbox_height_percent": 16.53,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ApprovalConsole, left of SteelCrowbar, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 72.81,
+          "center_y_percent": 37.12,
+          "bbox_width_percent": 1.53,
+          "bbox_height_percent": 18.74,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ApprovalTerminal, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant ApprovalConsole covers 80x27 percent at frame 60/49. Left to right: InnerYard, ApprovalConsole, ApprovalTerminal, SteelCrowbar."
+    },
+    {
+      "time_seconds": 4.109,
+      "source_frame": "D14_shots/ep06_shot01/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.45m to 20.27m across 5 layers; nearest is Luchen, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (27.44, 5.66, 0.71) on a 35.0mm lens, frame 100 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 94.49,
+          "center_y_percent": 41.33,
+          "bbox_width_percent": 11.02,
+          "bbox_height_percent": 49.97,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelCrowbar, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-7",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.54,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 7.08,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ApprovalConsole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 59.69,
+          "center_y_percent": 49.47,
+          "bbox_width_percent": 80.63,
+          "bbox_height_percent": 26.4,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of InnerYard, left of ApprovalTerminal, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 61.11,
+          "center_y_percent": 30.37,
+          "bbox_width_percent": 34.47,
+          "bbox_height_percent": 16.44,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ApprovalConsole, left of SteelCrowbar, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 72.54,
+          "center_y_percent": 37.3,
+          "bbox_width_percent": 1.53,
+          "bbox_height_percent": 18.69,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ApprovalTerminal, left of Luchen, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant ApprovalConsole covers 81x26 percent at frame 60/49. Left to right: InnerYard, ApprovalConsole, ApprovalTerminal, SteelCrowbar, Luchen."
+    },
+    {
+      "time_seconds": 5.479,
+      "source_frame": "D14_shots/ep06_shot01/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.01m to 20.29m across 5 layers; nearest is Luchen, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (27.42, 5.67, 0.67) on a 35.0mm lens, frame 132 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 80.79,
+          "center_y_percent": 39.8,
+          "bbox_width_percent": 23.79,
+          "bbox_height_percent": 45.12,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelCrowbar, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-7",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.36,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 6.9,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ApprovalConsole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 59.66,
+          "center_y_percent": 48.68,
+          "bbox_width_percent": 80.68,
+          "bbox_height_percent": 26.27,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of InnerYard, left of ApprovalTerminal, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 60.87,
+          "center_y_percent": 29.82,
+          "bbox_width_percent": 34.3,
+          "bbox_height_percent": 16.46,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ApprovalConsole, left of SteelCrowbar, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 72.33,
+          "center_y_percent": 36.85,
+          "bbox_width_percent": 1.52,
+          "bbox_height_percent": 18.63,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ApprovalTerminal, left of Luchen, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant ApprovalConsole covers 81x26 percent at frame 60/49. Left to right: InnerYard, ApprovalConsole, ApprovalTerminal, SteelCrowbar, Luchen."
+    },
+    {
+      "time_seconds": 6.849,
+      "source_frame": "D14_shots/ep06_shot01/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.35m to 20.32m across 5 layers; nearest is Luchen, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (27.41, 5.69, 0.68) on a 35.0mm lens, frame 165 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 69.47,
+          "center_y_percent": 40.31,
+          "bbox_width_percent": 21.37,
+          "bbox_height_percent": 41.29,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ApprovalTerminal, left of SteelCrowbar, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-7",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.36,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 6.9,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ApprovalConsole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 59.69,
+          "center_y_percent": 48.7,
+          "bbox_width_percent": 80.62,
+          "bbox_height_percent": 26.09,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of InnerYard, left of ApprovalTerminal, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 60.71,
+          "center_y_percent": 29.94,
+          "bbox_width_percent": 34.1,
+          "bbox_height_percent": 16.35,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ApprovalConsole, left of Luchen, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 72.16,
+          "center_y_percent": 36.91,
+          "bbox_width_percent": 1.51,
+          "bbox_height_percent": 18.56,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant ApprovalConsole covers 81x26 percent at frame 60/49. Left to right: InnerYard, ApprovalConsole, ApprovalTerminal, Luchen, SteelCrowbar."
+    },
+    {
+      "time_seconds": 8.219,
+      "source_frame": "D14_shots/ep06_shot01/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.70m to 20.34m across 5 layers; nearest is Luchen, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (27.39, 5.71, 0.71) on a 35.0mm lens, frame 198 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 59.93,
+          "center_y_percent": 41.35,
+          "bbox_width_percent": 19.39,
+          "bbox_height_percent": 38.06,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ApprovalConsole, left of ApprovalTerminal, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-7",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.52,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 7.04,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ApprovalConsole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 59.76,
+          "center_y_percent": 49.42,
+          "bbox_width_percent": 80.48,
+          "bbox_height_percent": 25.92,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of InnerYard, left of Luchen, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 60.66,
+          "center_y_percent": 30.62,
+          "bbox_width_percent": 33.93,
+          "bbox_height_percent": 16.17,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, left of SteelCrowbar, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 72.08,
+          "center_y_percent": 37.4,
+          "bbox_width_percent": 1.51,
+          "bbox_height_percent": 18.48,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ApprovalTerminal, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant ApprovalConsole covers 80x26 percent at frame 60/49. Left to right: InnerYard, ApprovalConsole, Luchen, ApprovalTerminal, SteelCrowbar."
+    },
+    {
+      "time_seconds": 9.589,
+      "source_frame": "D14_shots/ep06_shot01/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.92m to 20.35m across 5 layers; nearest is ApprovalTerminal, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (27.39, 5.73, 0.69) on a 35.0mm lens, frame 231 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 51.72,
+          "center_y_percent": 41.34,
+          "bbox_width_percent": 17.89,
+          "bbox_height_percent": 35.39,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of InnerYard, left of ApprovalConsole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-7",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.43,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 6.96,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Luchen, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 59.84,
+          "center_y_percent": 49.07,
+          "bbox_width_percent": 80.31,
+          "bbox_height_percent": 25.84,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, left of ApprovalTerminal, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 60.71,
+          "center_y_percent": 30.39,
+          "bbox_width_percent": 33.84,
+          "bbox_height_percent": 16.15,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ApprovalConsole, left of SteelCrowbar, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 72.1,
+          "center_y_percent": 37.21,
+          "bbox_width_percent": 1.5,
+          "bbox_height_percent": 18.44,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ApprovalTerminal, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant ApprovalConsole covers 80x26 percent at frame 60/49. Left to right: InnerYard, Luchen, ApprovalConsole, ApprovalTerminal, SteelCrowbar."
+    },
+    {
+      "time_seconds": 10.958,
+      "source_frame": "D14_shots/ep06_shot01/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.92m to 20.35m across 5 layers; nearest is ApprovalTerminal, furthest is InnerYard"
+      },
+      "camera_relation": "camera at (27.39, 5.73, 0.69) on a 35.0mm lens, frame 264 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 44.44,
+          "center_y_percent": 41.58,
+          "bbox_width_percent": 16.65,
+          "bbox_height_percent": 33.16,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of InnerYard, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-7",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.43,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 6.96,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, left of ApprovalConsole, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 59.84,
+          "center_y_percent": 49.07,
+          "bbox_width_percent": 80.31,
+          "bbox_height_percent": 25.84,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of InnerYard, left of ApprovalTerminal, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 60.71,
+          "center_y_percent": 30.39,
+          "bbox_width_percent": 33.84,
+          "bbox_height_percent": 16.15,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ApprovalConsole, left of SteelCrowbar, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP A-7",
+          "visibility": "visible",
+          "center_x_percent": 72.1,
+          "center_y_percent": 37.21,
+          "bbox_width_percent": 1.5,
+          "bbox_height_percent": 18.44,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ApprovalTerminal, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant ApprovalConsole covers 80x26 percent at frame 60/49. Left to right: Luchen, InnerYard, ApprovalConsole, ApprovalTerminal, SteelCrowbar."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

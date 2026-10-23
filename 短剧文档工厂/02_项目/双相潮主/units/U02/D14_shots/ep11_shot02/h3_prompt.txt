@@ -1,0 +1,46 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and….
+[INSTANCE REGISTRY] I1=<O002>,I2=<O004>,I3=<O006>,I4=<O007>,I5=<O008>,I6=<O009>,I7=<O010>,I8=<O011>,I9=<O012>,I10=<O013>,I11=<O014>.
+<Entity 01 ENV B-3>=E1[environment/context/static] members=I1-I3;n=3;src=B-3 built environment shell…; final=B-3 built environment shell enclosing…; finish=worn cement, oxidised steel and sheet metal with…; style=world_style_unit_contract.
+<Entity 02 PROP B-3>=E2[rigid/context/static] members=I4-I5,I7-I11;n=7;src=B-3 set pieces and fittings…; final=B-3 set pieces and fittings: PlywoodWall…; finish=utilitarian material with visible weight, thickness…; style=world_style_unit_contract.
+<Entity 03 PROP EnergyBlock>=E3[rigid/primary/static] members=I6;n=1;src=B-3 set pieces and fittings…; final=B-3 set pieces and fittings: EnergyBlock; finish=utilitarian material with visible weight, thickness…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1-I3;1:1;n=3.
+E2:I4-I5,I7-I11;1:1;n=7.
+E3:I6;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global… | materials=real skin with pores and slight oil sheen… | environment=cement yard plates cut by fire lines… | props=functional utilitarian tooling with real… | light=one cold overhead key over the….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_4201@0.200-1.000s I6,I7,I8,I11: rel=the press slot compacts a…; ban=do not break the chain into….
+[Shot 1] @0.000-14.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=dolly;target=E2;path=camera travels from (5. 00, 2. 60, 1. 70) to (7. 20, 2…;dist=decrease;azi=counterclockwise;elev=stable;lens=stable;comp=中远景 framing in 9:16 vertical, subject held in the…;ban=do not convert the linear camera move into an… | Act=the blueprint is pinned to the plyboard wall and the steel racks are rearranged… | Layout=10 visible instances… | Light=one cold overhead key over the purification….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium_full;Comp=depth spans 5. 18m to 22…;Cam=camera at (5. 00, 2. 60, 1…;Lay=10 visible instances… V=I1:50/23/100/46,I3:50/45/100/3,I4:75/40/50/19,I5:80/37/8/0,I7:77/62/46/20,I8:14/58/28/22,I9:70/44/58/24,I10:72/43/47/19,I11:90/59/19/30 O=I2 D=I6:v/82/52/4/2/o:compact block…/m:stationary across this…/r:right of DefenseBlueprint…
+@1.745s F=medium_full;Comp=depth spans 5. 17m to 22…;Cam=camera at (5. 10, 2. 60, 1…;Lay=10 visible instances… V=I1:50/23/100/46,I3:50/45/100/3,I4:76/40/48/19,I5:81/37/8/0,I7:76/62/47/21,I8:14/58/28/22,I9:71/44/58/24,I10:73/43/47/20,I11:90/59/20/30 O=I2 D=I6:v/81/51/6/3/o:compact block…/m:stationary across this…/r:right of DefenseBlueprint…
+@3.490s F=medium_full;Comp=depth spans 5. 14m to 23…;Cam=camera at (5. 35, 2. 60, 1…;Lay=10 visible instances… V=I1:50/23/100/47,I3:50/46/100/3,I4:78/41/44/19,I5:85/37/9/0,I7:76/62/49/21,I8:14/58/29/22,I9:72/44/56/24,I10:77/43/47/20,I11:89/60/22/31 O=I2 D=I6:v/80/51/9/3/o:compact block…/m:stationary across this…/r:right of PlywoodWall…
+@5.234s F=medium_full;Comp=depth spans 5. 11m to 23…;Cam=camera at (5. 70, 2. 60, 1…;Lay=10 visible instances… V=I1:50/24/100/47,I3:50/46/100/4,I4:81/41/39/19,I5:91/37/9/0,I7:75/62/50/21,I8:15/57/30/21,I9:74/45/52/24,I10:79/43/42/20,I11:88/60/24/31 O=I2 D=I6:v/79/50/11/4/o:compact block…/m:stationary across this…/r:right of OutfeedTable…
+@6.979s F=medium_full;Comp=depth spans 5. 11m to 23…;Cam=camera at (6. 10, 2. 60, 1…;Lay=11 visible instances… V=I1:50/24/100/48,I2:50/0/100/1,I3:50/46/100/5,I4:84/41/32/20,I5:96/38/7/0,I7:74/62/52/21,I8:16/57/31/20,I9:76/45/48/25,I10:81/44/37/20,I11:87/61/27/32 D=I6:v/77/49/14/5/o:compact block…/m:stationary across this…/r:right of SteelRack…
+@8.724s F=medium_full;Comp=depth spans 5. 13m to 23…;Cam=camera at (6. 50, 2. 60, 1…;Lay=11 visible instances… V=I1:50/24/100/49,I2:50/1/100/2,I3:50/47/100/5,I4:87/42/26/20,I5:100/38/1/0,I7:74/62/53/21,I8:17/57/33/20,I9:78/45/43/25,I10:84/44/31/20,I11:86/61/29/32 D=I6:v/76/50/15/5/o:compact block…/m:stationary across this…/r:right of OutfeedTable…
+@10.469s F=medium_full;Comp=depth spans 5. 18m to 24…;Cam=camera at (6. 85, 2. 60, 1…;Lay=10 visible instances… V=I1:50/25/100/50,I2:50/2/100/4,I3:50/47/100/6,I4:90/42/20/21,I7:74/62/53/21,I8:18/56/35/19,I9:80/46/39/25,I10:87/44/26/20,I11:85/62/30/33 O=I5 D=I6:v/76/51/15/5/o:compact block…/m:stationary across this…/r:right of OutfeedTable…
+@12.214s F=medium_full;Comp=depth spans 5. 22m to 24…;Cam=camera at (7. 10, 2. 60, 1…;Lay=10 visible instances… V=I1:50/25/100/50,I2:50/2/100/4,I3:50/47/100/7,I4:92/42/16/21,I7:74/62/53/20,I8:18/56/37/18,I9:82/46/36/25,I10:89/45/23/20,I11:85/62/31/33 O=I5 D=I6:v/76/52/15/5/o:compact block…/m:stationary across this…/r:right of OutfeedTable…
+@13.958s F=medium_full;Comp=depth spans 5. 24m to 24…;Cam=camera at (7. 20, 2. 60, 1…;Lay=10 visible instances… V=I1:50/25/100/50,I2:50/2/100/5,I3:50/48/100/7,I4:93/42/14/21,I7:74/62/52/20,I8:19/56/38/18,I9:82/46/35/25,I10:89/45/21/20,I11:85/62/31/33 O=I5 D=I6:v/76/53/15/5/o:compact block…/m:stationary across this…/r:right of OutfeedTable…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+steel racks dragging across the floor and a dull drop…
+
+non_diegetic_music:
+N/A

@@ -1,0 +1,49 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O002>,I3=<O005>,I4=<O006>,I5=<O007>,I6=<O008>,I7=<O013>.
+<Entity 01 CHAR Luchen>=E1[articulated/primary/locomotion] members=I1;n=1;src=male protagonist blockout; final=male protagonist blockout; finish=real skin with pores and fine hair, fabric with real…; style=world_style_unit_contract.
+<Entity 02 ENV A-5>=E2[environment/context/static] members=I2;n=1;src=A-5 built environment shell…; final=A-5 built environment shell enclosing…; finish=worn cement, oxidised steel and sheet metal with…; style=world_style_unit_contract.
+<Entity 03 FX ConcreteDebris>=E3[effect/context/static] members=I3-I6;n=4;src=concrete debris chunks; final=concrete debris chunks; finish=stylised energy surface in the two permitted flame…; style=world_style_unit_contract.
+<Entity 04 PROP A-5>=E4[rigid/context/static] members=I7;n=1;src=A-5 set pieces and fittings…; final=A-5 set pieces and fittings: SteelCrowbar; finish=utilitarian material with visible weight, thickness…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2;1:1;n=1.
+E3:I3-I6;1:1;n=4.
+E4:I7;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global… | materials=real skin with pores and slight oil sheen… | environment=cement yard plates cut by fissures and pit… | props=functional utilitarian tooling with real… | light=one cold overhead key with shadow detail….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3,E4=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E1:locomotion | Act=travels 1.80m across the set during the shot | Keep=stay inside the source blockout bounds for the full shot | Ban=do not replace, duplicate or remove this instance.
+[STATIC LOCK] E2,E3,E4 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_1301@0.450-1.000s I1,I7: rel=crowbar held in the protagonist…; ban=do not drop the crowbar or move it….
+[Shot 1] @0.000-12.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=tracking;target=E1;path=camera travels from (2. 97, -0. 23, 1. 28) to (2. 97, -0…;dist=increase;azi=stable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the…;ban=do not swap the follow move for an orbit or a… | Act=tentacle whips out of the break hole and drags gravel, cutting a long gouge… | Layout=7 visible instances… | Light=one cold overhead key with shadow detail….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 1. 99m to 11…;Cam=camera at (2. 97, -0. 23, 1…;Lay=7 visible instances… V=I2:35/55/70/19,I3:33/81/10/5,I4:42/85/11/6,I5:53/91/13/7,I6:67/97/15/7,I7:49/40/3/43 D=I1:v/58/49/26/50/o:upright body proxy…/m:stationary across this…/r:right of ConcreteDebris…
+@1.495s F=medium;Comp=depth spans 1. 99m to 11…;Cam=camera at (2. 97, -0. 23, 1…;Lay=7 visible instances… V=I2:35/55/70/19,I3:33/81/10/5,I4:42/85/11/6,I5:53/91/13/7,I6:67/97/15/7,I7:49/40/3/43 D=I1:v/56/48/23/45/o:upright body proxy…/m:stationary across this…/r:right of ConcreteDebris…
+@2.990s F=medium;Comp=depth spans 1. 99m to 11…;Cam=camera at (2. 97, -0. 23, 1…;Lay=7 visible instances… V=I2:35/55/70/19,I3:33/81/10/5,I4:42/85/11/6,I5:53/91/13/7,I6:67/97/15/7,I7:49/40/3/43 D=I1:v/55/47/21/41/o:upright body proxy…/m:stationary across this…/r:right of ConcreteDebris…
+@4.484s F=medium;Comp=depth spans 1. 99m to 11…;Cam=camera at (2. 97, -0. 23, 1…;Lay=7 visible instances… V=I2:35/55/70/19,I3:33/81/10/5,I4:42/85/11/6,I5:53/91/13/7,I6:67/97/15/7,I7:49/40/3/43 D=I1:v/54/46/20/38/o:upright body proxy…/m:stationary across this…/r:right of ConcreteDebris…
+@5.979s F=medium;Comp=depth spans 1. 99m to 11…;Cam=camera at (2. 97, -0. 23, 1…;Lay=7 visible instances… V=I2:35/55/70/19,I3:33/81/10/5,I4:42/85/11/6,I5:53/91/13/7,I6:67/97/15/7,I7:49/40/3/43 D=I1:v/54/45/18/35/o:upright body proxy…/m:stationary across this…/r:right of ConcreteDebris…
+@7.474s F=medium;Comp=depth spans 1. 99m to 11…;Cam=camera at (2. 97, -0. 23, 1…;Lay=7 visible instances… V=I2:35/55/70/19,I3:33/81/10/5,I4:42/85/11/6,I5:53/91/13/7,I6:67/97/15/7,I7:49/40/3/43 D=I1:v/52/45/17/34/o:upright body proxy…/m:stationary across this…/r:right of SteelCrowbar…
+@8.969s F=medium;Comp=depth spans 1. 99m to 11…;Cam=camera at (2. 97, -0. 23, 1…;Lay=7 visible instances… V=I2:35/55/70/19,I3:33/81/10/5,I4:42/85/11/6,I5:53/91/13/7,I6:67/97/15/7,I7:49/40/3/43 D=I1:v/49/45/17/34/o:upright body proxy…/m:stationary across this…/r:right of ConcreteDebris…
+@10.464s F=medium;Comp=depth spans 1. 99m to 11…;Cam=camera at (2. 97, -0. 23, 1…;Lay=7 visible instances… V=I2:35/55/70/19,I3:33/81/10/5,I4:42/85/11/6,I5:53/91/13/7,I6:67/97/15/7,I7:49/40/3/43 D=I1:v/46/45/17/33/o:upright body proxy…/m:stationary across this…/r:right of ConcreteDebris…
+@11.958s F=medium;Comp=depth spans 1. 99m to 11…;Cam=camera at (2. 97, -0. 23, 1…;Lay=7 visible instances… V=I2:35/55/70/19,I3:33/81/10/5,I4:42/85/11/6,I5:53/91/13/7,I6:67/97/15/7,I7:49/40/3/43 D=I1:v/43/45/17/33/o:upright body proxy…/m:stationary across this…/r:right of ConcreteDebris…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+hard whipping impact with gravel rolling away
+
+non_diegetic_music:
+N/A

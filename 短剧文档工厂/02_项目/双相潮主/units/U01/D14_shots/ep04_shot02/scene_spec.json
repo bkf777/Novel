@@ -1,0 +1,92 @@
+{
+  "scene_code": "A-5",
+  "size_m": [
+    1.326,
+    1.326,
+    1.2
+  ],
+  "ground_center_m": [
+    0.385,
+    0.671
+  ],
+  "floor_z": -0.2,
+  "props": [
+    {
+      "name": "A-5_CHAR_LuchenHand_01",
+      "kind": "human_proxy",
+      "center_m": [
+        0.726,
+        1.254,
+        0.654
+      ],
+      "size_m": [
+        0.1,
+        0.1,
+        0.3
+      ],
+      "role": "primary"
+    },
+    {
+      "name": "A-5_EXT_BattleGround_01",
+      "kind": "box",
+      "center_m": [
+        0.0,
+        0.0,
+        -0.2
+      ],
+      "size_m": [
+        1.326,
+        1.326,
+        0.021
+      ],
+      "role": "set"
+    },
+    {
+      "name": "A-5_FX_ConcreteDebris",
+      "kind": "proxy",
+      "center_m": [
+        0.6,
+        0.9,
+        0.06
+      ],
+      "size_m": [
+        0.12,
+        0.12,
+        0.08
+      ],
+      "role": "set"
+    },
+    {
+      "name": "A-5_PROP_GroundBreakHole_01",
+      "kind": "box",
+      "center_m": [
+        0.0,
+        0.0,
+        -0.2
+      ],
+      "size_m": [
+        0.5,
+        0.5,
+        0.4
+      ],
+      "role": "set"
+    },
+    {
+      "name": "A-5_PROP_SteelCrowbar_01",
+      "kind": "box",
+      "center_m": [
+        0.6,
+        1.2,
+        1.2
+      ],
+      "size_m": [
+        0.035,
+        0.035,
+        1.2
+      ],
+      "role": "set"
+    }
+  ],
+  "walls": [],
+  "wall_thickness_m": 0.15
+}

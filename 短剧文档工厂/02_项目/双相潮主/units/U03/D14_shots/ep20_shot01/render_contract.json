@@ -1,0 +1,1189 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep20_shot01/preview_video.mp4",
+    "duration": 12.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 288,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "B-14_CHAR_GateGuard_02",
+      "source_type": "MESH",
+      "root_name": "B-14_CHAR_GateGuard_02",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-14_CHAR_GateGuard_02; type=MESH; root=B-14_CHAR_GateGuard_02; dimensions=7.660,0.340,1.750",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O002",
+      "source_name": "B-14_CHAR_QueueColumns_01",
+      "source_type": "MESH",
+      "root_name": "B-14_CHAR_QueueColumns_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-14_CHAR_QueueColumns_01; type=MESH; root=B-14_CHAR_QueueColumns_01; dimensions=2.060,4.060,1.750",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O003",
+      "source_name": "B-14_EXT_FactoryGateWall",
+      "source_type": "MESH",
+      "root_name": "B-14_EXT_FactoryGateWall",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-14_EXT_FactoryGateWall; type=MESH; root=B-14_EXT_FactoryGateWall; dimensions=40.000,0.400,4.800",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O004",
+      "source_name": "B-14_EXT_JunctionBlock",
+      "source_type": "MESH",
+      "root_name": "B-14_EXT_JunctionBlock",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-14_EXT_JunctionBlock; type=MESH; root=B-14_EXT_JunctionBlock; dimensions=40.000,4.400,8.000",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O005",
+      "source_name": "B-14_EXT_StreetGround",
+      "source_type": "MESH",
+      "root_name": "B-14_EXT_StreetGround",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-14_EXT_StreetGround; type=MESH; root=B-14_EXT_StreetGround; dimensions=4.651,4.186,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O006",
+      "source_name": "B-14_EXT_StreetSideWall",
+      "source_type": "MESH",
+      "root_name": "B-14_EXT_StreetSideWall",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-14_EXT_StreetSideWall; type=MESH; root=B-14_EXT_StreetSideWall; dimensions=4.612,2.740,3.220",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O007",
+      "source_name": "B-14_PROP_DistantShedBand_04",
+      "source_type": "MESH",
+      "root_name": "B-14_PROP_DistantShedBand_04",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-14_PROP_DistantShedBand_04; type=MESH; root=B-14_PROP_DistantShedBand_04; dimensions=26.000,2.000,3.200",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O008",
+      "source_name": "B-14_PROP_WheelRut_03",
+      "source_type": "MESH",
+      "root_name": "B-14_PROP_WheelRut_03",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-14_PROP_WheelRut_03; type=MESH; root=B-14_PROP_WheelRut_03; dimensions=3.236,4.532,0.020",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR GateGuard",
+      "entity_class": "articulated",
+      "importance": "context",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "gate guard blockout on the two queue lanes",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 CHAR QueueColumns",
+      "entity_class": "articulated",
+      "importance": "context",
+      "source_instance_ids": [
+        "O002"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "queue column blockout at the triage table",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 03 ENV B-14",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O003",
+        "O004",
+        "O005",
+        "O006",
+        "O007"
+      ],
+      "instance_count": 5,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-14 built environment shell enclosing the set: FactoryGateWall, JunctionBlock, StreetGround, StreetSideWall, DistantShedBand",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 04 PROP B-14",
+      "entity_class": "rigid",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O008"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-14 set pieces and fittings: WheelRut",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_7701",
+      "source_instance_ids": [
+        "O001",
+        "O002",
+        "O008"
+      ],
+      "start_seconds": 0.0,
+      "end_seconds": 1.0,
+      "relation": "the line runs from the gate to the crossing along the ruts and the guards hold the two queue lanes beside the gate",
+      "forbidden_change": "do not close the queue lanes and do not build the shed area"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 12.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 02 CHAR QueueColumns",
+        "world_path": "camera travels from (-3.58, -0.12, 21.07) to (-3.58, -0.12, 21.07) on a 24mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "远景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 远景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "the queue runs from the factory gate all the way to the crossing and the wheel ruts are pressed into the grey fog with one set of prints laid over another; the queued people are silhouettes and the line turns deeper into the fog; a queue lane is kept on each side of the gate and the caller never enters the frame",
+      "layout_and_occlusion": "8 visible instances. Dominant JunctionBlock covers 100x9 percent at frame 50/5. Left to right: QueueColumns, GateGuard, StreetSideWall, StreetGround, WheelRut.",
+      "lighting_spatial_logic": "one cold overhead key over the steel table with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the emergency lamps on the gate posts, the residual fire heads, the twin flame and the derrick lamp as the only moving light sources, and the grey fog pressing down over the street with the unlit crossing kept dark"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep20_shot01/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 17.82m to 26.19m across 8 layers; nearest is FactoryGateWall, furthest is DistantShedBand"
+      },
+      "camera_relation": "camera at (-3.58, -0.12, 21.07) on a 24.0mm lens, frame 1 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GateGuard",
+          "visibility": "visible",
+          "center_x_percent": 27.6,
+          "center_y_percent": 64.45,
+          "bbox_width_percent": 48.0,
+          "bbox_height_percent": 1.67,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueColumns, left of StreetSideWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR QueueColumns",
+          "visibility": "visible",
+          "center_x_percent": 0.99,
+          "center_y_percent": 79.17,
+          "bbox_width_percent": 1.98,
+          "bbox_height_percent": 16.5,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GateGuard, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 70.94,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.8,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DistantShedBand, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 4.71,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.43,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DistantShedBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 30.27,
+          "center_y_percent": 51.85,
+          "bbox_width_percent": 26.34,
+          "bbox_height_percent": 12.36,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetSideWall, left of WheelRut, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 28.79,
+          "center_y_percent": 31.21,
+          "bbox_width_percent": 29.49,
+          "bbox_height_percent": 13.14,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GateGuard, left of StreetGround, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 47.92,
+          "center_y_percent": 3.58,
+          "bbox_width_percent": 95.84,
+          "bbox_height_percent": 7.16,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WheelRut, left of FactoryGateWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP B-14",
+          "visibility": "visible",
+          "center_x_percent": 31.1,
+          "center_y_percent": 43.34,
+          "bbox_width_percent": 17.99,
+          "bbox_height_percent": 12.34,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of DistantShedBand, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "8 visible instances. Dominant JunctionBlock covers 100x9 percent at frame 50/5. Left to right: QueueColumns, GateGuard, StreetSideWall, StreetGround, WheelRut."
+    },
+    {
+      "time_seconds": 1.495,
+      "source_frame": "D14_shots/ep20_shot01/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 17.82m to 26.19m across 8 layers; nearest is FactoryGateWall, furthest is DistantShedBand"
+      },
+      "camera_relation": "camera at (-3.58, -0.12, 21.07) on a 24.0mm lens, frame 37 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GateGuard",
+          "visibility": "visible",
+          "center_x_percent": 27.6,
+          "center_y_percent": 64.45,
+          "bbox_width_percent": 48.0,
+          "bbox_height_percent": 1.67,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueColumns, left of StreetSideWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR QueueColumns",
+          "visibility": "visible",
+          "center_x_percent": 0.99,
+          "center_y_percent": 79.17,
+          "bbox_width_percent": 1.98,
+          "bbox_height_percent": 16.5,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GateGuard, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 70.94,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.8,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DistantShedBand, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 4.71,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.43,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DistantShedBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 30.27,
+          "center_y_percent": 51.85,
+          "bbox_width_percent": 26.34,
+          "bbox_height_percent": 12.36,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetSideWall, left of WheelRut, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 28.79,
+          "center_y_percent": 31.21,
+          "bbox_width_percent": 29.49,
+          "bbox_height_percent": 13.14,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GateGuard, left of StreetGround, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 47.92,
+          "center_y_percent": 3.58,
+          "bbox_width_percent": 95.84,
+          "bbox_height_percent": 7.16,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WheelRut, left of FactoryGateWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP B-14",
+          "visibility": "visible",
+          "center_x_percent": 31.1,
+          "center_y_percent": 43.34,
+          "bbox_width_percent": 17.99,
+          "bbox_height_percent": 12.34,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of DistantShedBand, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "8 visible instances. Dominant JunctionBlock covers 100x9 percent at frame 50/5. Left to right: QueueColumns, GateGuard, StreetSideWall, StreetGround, WheelRut."
+    },
+    {
+      "time_seconds": 2.99,
+      "source_frame": "D14_shots/ep20_shot01/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 17.82m to 26.19m across 8 layers; nearest is FactoryGateWall, furthest is DistantShedBand"
+      },
+      "camera_relation": "camera at (-3.58, -0.12, 21.07) on a 24.0mm lens, frame 73 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GateGuard",
+          "visibility": "visible",
+          "center_x_percent": 27.6,
+          "center_y_percent": 64.45,
+          "bbox_width_percent": 48.0,
+          "bbox_height_percent": 1.67,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueColumns, left of StreetSideWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR QueueColumns",
+          "visibility": "visible",
+          "center_x_percent": 0.99,
+          "center_y_percent": 79.17,
+          "bbox_width_percent": 1.98,
+          "bbox_height_percent": 16.5,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GateGuard, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 70.94,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.8,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DistantShedBand, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 4.71,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.43,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DistantShedBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 30.27,
+          "center_y_percent": 51.85,
+          "bbox_width_percent": 26.34,
+          "bbox_height_percent": 12.36,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetSideWall, left of WheelRut, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 28.79,
+          "center_y_percent": 31.21,
+          "bbox_width_percent": 29.49,
+          "bbox_height_percent": 13.14,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GateGuard, left of StreetGround, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 47.92,
+          "center_y_percent": 3.58,
+          "bbox_width_percent": 95.84,
+          "bbox_height_percent": 7.16,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WheelRut, left of FactoryGateWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP B-14",
+          "visibility": "visible",
+          "center_x_percent": 31.1,
+          "center_y_percent": 43.34,
+          "bbox_width_percent": 17.99,
+          "bbox_height_percent": 12.34,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of DistantShedBand, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "8 visible instances. Dominant JunctionBlock covers 100x9 percent at frame 50/5. Left to right: QueueColumns, GateGuard, StreetSideWall, StreetGround, WheelRut."
+    },
+    {
+      "time_seconds": 4.484,
+      "source_frame": "D14_shots/ep20_shot01/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 17.82m to 26.19m across 8 layers; nearest is FactoryGateWall, furthest is DistantShedBand"
+      },
+      "camera_relation": "camera at (-3.58, -0.12, 21.07) on a 24.0mm lens, frame 109 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GateGuard",
+          "visibility": "visible",
+          "center_x_percent": 27.6,
+          "center_y_percent": 64.45,
+          "bbox_width_percent": 48.0,
+          "bbox_height_percent": 1.67,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueColumns, left of StreetSideWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR QueueColumns",
+          "visibility": "visible",
+          "center_x_percent": 0.99,
+          "center_y_percent": 79.17,
+          "bbox_width_percent": 1.98,
+          "bbox_height_percent": 16.5,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GateGuard, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 70.94,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.8,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DistantShedBand, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 4.71,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.43,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DistantShedBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 30.27,
+          "center_y_percent": 51.85,
+          "bbox_width_percent": 26.34,
+          "bbox_height_percent": 12.36,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetSideWall, left of WheelRut, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 28.79,
+          "center_y_percent": 31.21,
+          "bbox_width_percent": 29.49,
+          "bbox_height_percent": 13.14,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GateGuard, left of StreetGround, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 47.92,
+          "center_y_percent": 3.58,
+          "bbox_width_percent": 95.84,
+          "bbox_height_percent": 7.16,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WheelRut, left of FactoryGateWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP B-14",
+          "visibility": "visible",
+          "center_x_percent": 31.1,
+          "center_y_percent": 43.34,
+          "bbox_width_percent": 17.99,
+          "bbox_height_percent": 12.34,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of DistantShedBand, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "8 visible instances. Dominant JunctionBlock covers 100x9 percent at frame 50/5. Left to right: QueueColumns, GateGuard, StreetSideWall, StreetGround, WheelRut."
+    },
+    {
+      "time_seconds": 5.979,
+      "source_frame": "D14_shots/ep20_shot01/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 17.82m to 26.19m across 8 layers; nearest is FactoryGateWall, furthest is DistantShedBand"
+      },
+      "camera_relation": "camera at (-3.58, -0.12, 21.07) on a 24.0mm lens, frame 144 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GateGuard",
+          "visibility": "visible",
+          "center_x_percent": 27.6,
+          "center_y_percent": 64.45,
+          "bbox_width_percent": 48.0,
+          "bbox_height_percent": 1.67,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueColumns, left of StreetSideWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR QueueColumns",
+          "visibility": "visible",
+          "center_x_percent": 0.99,
+          "center_y_percent": 79.17,
+          "bbox_width_percent": 1.98,
+          "bbox_height_percent": 16.5,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GateGuard, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 70.94,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.8,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DistantShedBand, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 4.71,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.43,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DistantShedBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 30.27,
+          "center_y_percent": 51.85,
+          "bbox_width_percent": 26.34,
+          "bbox_height_percent": 12.36,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetSideWall, left of WheelRut, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 28.79,
+          "center_y_percent": 31.21,
+          "bbox_width_percent": 29.49,
+          "bbox_height_percent": 13.14,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GateGuard, left of StreetGround, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 47.92,
+          "center_y_percent": 3.58,
+          "bbox_width_percent": 95.84,
+          "bbox_height_percent": 7.16,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WheelRut, left of FactoryGateWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP B-14",
+          "visibility": "visible",
+          "center_x_percent": 31.1,
+          "center_y_percent": 43.34,
+          "bbox_width_percent": 17.99,
+          "bbox_height_percent": 12.34,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of DistantShedBand, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "8 visible instances. Dominant JunctionBlock covers 100x9 percent at frame 50/5. Left to right: QueueColumns, GateGuard, StreetSideWall, StreetGround, WheelRut."
+    },
+    {
+      "time_seconds": 7.474,
+      "source_frame": "D14_shots/ep20_shot01/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 17.82m to 26.19m across 8 layers; nearest is FactoryGateWall, furthest is DistantShedBand"
+      },
+      "camera_relation": "camera at (-3.58, -0.12, 21.07) on a 24.0mm lens, frame 180 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GateGuard",
+          "visibility": "visible",
+          "center_x_percent": 27.6,
+          "center_y_percent": 64.45,
+          "bbox_width_percent": 48.0,
+          "bbox_height_percent": 1.67,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueColumns, left of StreetSideWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR QueueColumns",
+          "visibility": "visible",
+          "center_x_percent": 0.99,
+          "center_y_percent": 79.17,
+          "bbox_width_percent": 1.98,
+          "bbox_height_percent": 16.5,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GateGuard, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 70.94,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.8,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DistantShedBand, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 4.71,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.43,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DistantShedBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 30.27,
+          "center_y_percent": 51.85,
+          "bbox_width_percent": 26.34,
+          "bbox_height_percent": 12.36,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetSideWall, left of WheelRut, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 28.79,
+          "center_y_percent": 31.21,
+          "bbox_width_percent": 29.49,
+          "bbox_height_percent": 13.14,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GateGuard, left of StreetGround, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 47.92,
+          "center_y_percent": 3.58,
+          "bbox_width_percent": 95.84,
+          "bbox_height_percent": 7.16,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WheelRut, left of FactoryGateWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP B-14",
+          "visibility": "visible",
+          "center_x_percent": 31.1,
+          "center_y_percent": 43.34,
+          "bbox_width_percent": 17.99,
+          "bbox_height_percent": 12.34,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of DistantShedBand, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "8 visible instances. Dominant JunctionBlock covers 100x9 percent at frame 50/5. Left to right: QueueColumns, GateGuard, StreetSideWall, StreetGround, WheelRut."
+    },
+    {
+      "time_seconds": 8.969,
+      "source_frame": "D14_shots/ep20_shot01/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 17.82m to 26.19m across 8 layers; nearest is FactoryGateWall, furthest is DistantShedBand"
+      },
+      "camera_relation": "camera at (-3.58, -0.12, 21.07) on a 24.0mm lens, frame 216 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GateGuard",
+          "visibility": "visible",
+          "center_x_percent": 27.6,
+          "center_y_percent": 64.45,
+          "bbox_width_percent": 48.0,
+          "bbox_height_percent": 1.67,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueColumns, left of StreetSideWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR QueueColumns",
+          "visibility": "visible",
+          "center_x_percent": 0.99,
+          "center_y_percent": 79.17,
+          "bbox_width_percent": 1.98,
+          "bbox_height_percent": 16.5,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GateGuard, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 70.94,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.8,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DistantShedBand, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 4.71,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.43,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DistantShedBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 30.27,
+          "center_y_percent": 51.85,
+          "bbox_width_percent": 26.34,
+          "bbox_height_percent": 12.36,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetSideWall, left of WheelRut, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 28.79,
+          "center_y_percent": 31.21,
+          "bbox_width_percent": 29.49,
+          "bbox_height_percent": 13.14,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GateGuard, left of StreetGround, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 47.92,
+          "center_y_percent": 3.58,
+          "bbox_width_percent": 95.84,
+          "bbox_height_percent": 7.16,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WheelRut, left of FactoryGateWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP B-14",
+          "visibility": "visible",
+          "center_x_percent": 31.1,
+          "center_y_percent": 43.34,
+          "bbox_width_percent": 17.99,
+          "bbox_height_percent": 12.34,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of DistantShedBand, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "8 visible instances. Dominant JunctionBlock covers 100x9 percent at frame 50/5. Left to right: QueueColumns, GateGuard, StreetSideWall, StreetGround, WheelRut."
+    },
+    {
+      "time_seconds": 10.464,
+      "source_frame": "D14_shots/ep20_shot01/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 17.82m to 26.19m across 8 layers; nearest is FactoryGateWall, furthest is DistantShedBand"
+      },
+      "camera_relation": "camera at (-3.58, -0.12, 21.07) on a 24.0mm lens, frame 252 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GateGuard",
+          "visibility": "visible",
+          "center_x_percent": 27.6,
+          "center_y_percent": 64.45,
+          "bbox_width_percent": 48.0,
+          "bbox_height_percent": 1.67,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueColumns, left of StreetSideWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR QueueColumns",
+          "visibility": "visible",
+          "center_x_percent": 0.99,
+          "center_y_percent": 79.17,
+          "bbox_width_percent": 1.98,
+          "bbox_height_percent": 16.5,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GateGuard, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 70.94,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.8,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DistantShedBand, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 4.71,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.43,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DistantShedBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 30.27,
+          "center_y_percent": 51.85,
+          "bbox_width_percent": 26.34,
+          "bbox_height_percent": 12.36,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetSideWall, left of WheelRut, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 28.79,
+          "center_y_percent": 31.21,
+          "bbox_width_percent": 29.49,
+          "bbox_height_percent": 13.14,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GateGuard, left of StreetGround, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 47.92,
+          "center_y_percent": 3.58,
+          "bbox_width_percent": 95.84,
+          "bbox_height_percent": 7.16,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WheelRut, left of FactoryGateWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP B-14",
+          "visibility": "visible",
+          "center_x_percent": 31.1,
+          "center_y_percent": 43.34,
+          "bbox_width_percent": 17.99,
+          "bbox_height_percent": 12.34,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of DistantShedBand, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "8 visible instances. Dominant JunctionBlock covers 100x9 percent at frame 50/5. Left to right: QueueColumns, GateGuard, StreetSideWall, StreetGround, WheelRut."
+    },
+    {
+      "time_seconds": 11.958,
+      "source_frame": "D14_shots/ep20_shot01/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 17.82m to 26.19m across 8 layers; nearest is FactoryGateWall, furthest is DistantShedBand"
+      },
+      "camera_relation": "camera at (-3.58, -0.12, 21.07) on a 24.0mm lens, frame 288 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GateGuard",
+          "visibility": "visible",
+          "center_x_percent": 27.6,
+          "center_y_percent": 64.45,
+          "bbox_width_percent": 48.0,
+          "bbox_height_percent": 1.67,
+          "orientation": "prone body proxy, long axis lying across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueColumns, left of StreetSideWall, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR QueueColumns",
+          "visibility": "visible",
+          "center_x_percent": 0.99,
+          "center_y_percent": 79.17,
+          "bbox_width_percent": 1.98,
+          "bbox_height_percent": 16.5,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GateGuard, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O003",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 70.94,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.8,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DistantShedBand, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 4.71,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.43,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DistantShedBand, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 30.27,
+          "center_y_percent": 51.85,
+          "bbox_width_percent": 26.34,
+          "bbox_height_percent": 12.36,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetSideWall, left of WheelRut, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 28.79,
+          "center_y_percent": 31.21,
+          "bbox_width_percent": 29.49,
+          "bbox_height_percent": 13.14,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GateGuard, left of StreetGround, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-14",
+          "visibility": "visible",
+          "center_x_percent": 47.92,
+          "center_y_percent": 3.58,
+          "bbox_width_percent": 95.84,
+          "bbox_height_percent": 7.16,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WheelRut, left of FactoryGateWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP B-14",
+          "visibility": "visible",
+          "center_x_percent": 31.1,
+          "center_y_percent": 43.34,
+          "bbox_width_percent": 17.99,
+          "bbox_height_percent": 12.34,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of DistantShedBand, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "8 visible instances. Dominant JunctionBlock covers 100x9 percent at frame 50/5. Left to right: QueueColumns, GateGuard, StreetSideWall, StreetGround, WheelRut."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

@@ -1,0 +1,503 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep02_shot04/preview_video.mp4",
+    "duration": 5.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 120,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O002",
+      "source_name": "A-3_CHAR_LuchenHand_02",
+      "source_type": "MESH",
+      "root_name": "A-3_CHAR_LuchenHand_02",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 4.958,
+      "identity_cues": "name=A-3_CHAR_LuchenHand_02; type=MESH; root=A-3_CHAR_LuchenHand_02; dimensions=0.100,0.100,0.300",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O004",
+      "source_name": "A-3_EXT_OuterGravelGround_01",
+      "source_type": "MESH",
+      "root_name": "A-3_EXT_OuterGravelGround_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 4.958,
+      "identity_cues": "name=A-3_EXT_OuterGravelGround_01; type=MESH; root=A-3_EXT_OuterGravelGround_01; dimensions=6.000,22.000,0.040",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O006",
+      "source_name": "A-3_EXT_RoadShoulder_01",
+      "source_type": "MESH",
+      "root_name": "A-3_EXT_RoadShoulder_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 4.958,
+      "identity_cues": "name=A-3_EXT_RoadShoulder_01; type=MESH; root=A-3_EXT_RoadShoulder_01; dimensions=6.000,20.000,0.040",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O012",
+      "source_name": "A-3_PROP_ClockTower_01",
+      "source_type": "MESH",
+      "root_name": "A-3_PROP_ClockTower_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 4.958,
+      "identity_cues": "name=A-3_PROP_ClockTower_01; type=MESH; root=A-3_PROP_ClockTower_01; dimensions=8.000,8.000,40.000",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR LuchenHand",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O002"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "protagonist raised hand blockout",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV A-3",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O004",
+        "O006"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-3 built environment shell enclosing the set: OuterGravelGround, RoadShoulder",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 03 PROP A-3",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O012"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-3 set pieces and fittings: ClockTower",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 5.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "none",
+        "world_path": "camera travels from (20.90, 5.06, 0.63) to (20.90, 5.06, 0.63) on a 24mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "远景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 远景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "protagonist raises the wrist, the watch dial lights against the night, distant clock tower silhouette stands against the cold sky",
+      "layout_and_occlusion": "4 visible instances. Dominant RoadShoulder covers 64x4 percent at frame 32/72. Left to right: RoadShoulder, ClockTower, OuterGravelGround, LuchenHand.",
+      "lighting_spatial_logic": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep02_shot04/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 1.37m to 170.74m across 4 layers; nearest is LuchenHand, furthest is ClockTower"
+      },
+      "camera_relation": "camera at (20.90, 5.06, 0.63) on a 24.0mm lens, frame 1 of 120",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 99.53,
+          "center_y_percent": 33.23,
+          "bbox_width_percent": 0.94,
+          "bbox_height_percent": 16.58,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of OuterGravelGround, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-3",
+          "visibility": "visible",
+          "center_x_percent": 96.33,
+          "center_y_percent": 72.35,
+          "bbox_width_percent": 7.34,
+          "bbox_height_percent": 4.13,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ClockTower, left of LuchenHand, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV A-3",
+          "visibility": "visible",
+          "center_x_percent": 32.25,
+          "center_y_percent": 71.89,
+          "bbox_width_percent": 64.5,
+          "bbox_height_percent": 3.67,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ClockTower, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-3",
+          "visibility": "visible",
+          "center_x_percent": 50.44,
+          "center_y_percent": 57.42,
+          "bbox_width_percent": 7.98,
+          "bbox_height_percent": 16.13,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RoadShoulder, left of OuterGravelGround, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant RoadShoulder covers 64x4 percent at frame 32/72. Left to right: RoadShoulder, ClockTower, OuterGravelGround, LuchenHand."
+    },
+    {
+      "time_seconds": 0.992,
+      "source_frame": "D14_shots/ep02_shot04/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 1.38m to 170.74m across 4 layers; nearest is LuchenHand, furthest is ClockTower"
+      },
+      "camera_relation": "camera at (20.90, 5.06, 0.63) on a 24.0mm lens, frame 25 of 120",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 99.43,
+          "center_y_percent": 32.11,
+          "bbox_width_percent": 1.13,
+          "bbox_height_percent": 16.57,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of OuterGravelGround, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-3",
+          "visibility": "visible",
+          "center_x_percent": 96.33,
+          "center_y_percent": 72.35,
+          "bbox_width_percent": 7.34,
+          "bbox_height_percent": 4.13,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ClockTower, left of LuchenHand, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV A-3",
+          "visibility": "visible",
+          "center_x_percent": 32.25,
+          "center_y_percent": 71.89,
+          "bbox_width_percent": 64.5,
+          "bbox_height_percent": 3.67,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ClockTower, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-3",
+          "visibility": "visible",
+          "center_x_percent": 50.44,
+          "center_y_percent": 57.42,
+          "bbox_width_percent": 7.98,
+          "bbox_height_percent": 16.13,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RoadShoulder, left of OuterGravelGround, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant RoadShoulder covers 64x4 percent at frame 32/72. Left to right: RoadShoulder, ClockTower, OuterGravelGround, LuchenHand."
+    },
+    {
+      "time_seconds": 1.983,
+      "source_frame": "D14_shots/ep02_shot04/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 1.39m to 170.74m across 4 layers; nearest is LuchenHand, furthest is ClockTower"
+      },
+      "camera_relation": "camera at (20.90, 5.06, 0.63) on a 24.0mm lens, frame 49 of 120",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 99.26,
+          "center_y_percent": 30.06,
+          "bbox_width_percent": 1.49,
+          "bbox_height_percent": 16.55,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "rising in this interval",
+          "spatial_relations": "right of OuterGravelGround, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-3",
+          "visibility": "visible",
+          "center_x_percent": 96.33,
+          "center_y_percent": 72.35,
+          "bbox_width_percent": 7.34,
+          "bbox_height_percent": 4.13,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ClockTower, left of LuchenHand, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV A-3",
+          "visibility": "visible",
+          "center_x_percent": 32.25,
+          "center_y_percent": 71.89,
+          "bbox_width_percent": 64.5,
+          "bbox_height_percent": 3.67,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ClockTower, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-3",
+          "visibility": "visible",
+          "center_x_percent": 50.44,
+          "center_y_percent": 57.42,
+          "bbox_width_percent": 7.98,
+          "bbox_height_percent": 16.13,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RoadShoulder, left of OuterGravelGround, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant RoadShoulder covers 64x4 percent at frame 32/72. Left to right: RoadShoulder, ClockTower, OuterGravelGround, LuchenHand."
+    },
+    {
+      "time_seconds": 2.975,
+      "source_frame": "D14_shots/ep02_shot04/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 1.40m to 170.74m across 4 layers; nearest is LuchenHand, furthest is ClockTower"
+      },
+      "camera_relation": "camera at (20.90, 5.06, 0.63) on a 24.0mm lens, frame 72 of 120",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 99.09,
+          "center_y_percent": 28.12,
+          "bbox_width_percent": 1.83,
+          "bbox_height_percent": 16.53,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "rising in this interval",
+          "spatial_relations": "right of OuterGravelGround, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-3",
+          "visibility": "visible",
+          "center_x_percent": 96.33,
+          "center_y_percent": 72.35,
+          "bbox_width_percent": 7.34,
+          "bbox_height_percent": 4.13,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ClockTower, left of LuchenHand, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV A-3",
+          "visibility": "visible",
+          "center_x_percent": 32.25,
+          "center_y_percent": 71.89,
+          "bbox_width_percent": 64.5,
+          "bbox_height_percent": 3.67,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ClockTower, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-3",
+          "visibility": "visible",
+          "center_x_percent": 50.44,
+          "center_y_percent": 57.42,
+          "bbox_width_percent": 7.98,
+          "bbox_height_percent": 16.13,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RoadShoulder, left of OuterGravelGround, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant RoadShoulder covers 64x4 percent at frame 32/72. Left to right: RoadShoulder, ClockTower, OuterGravelGround, LuchenHand."
+    },
+    {
+      "time_seconds": 3.967,
+      "source_frame": "D14_shots/ep02_shot04/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 1.40m to 170.74m across 4 layers; nearest is LuchenHand, furthest is ClockTower"
+      },
+      "camera_relation": "camera at (20.90, 5.06, 0.63) on a 24.0mm lens, frame 96 of 120",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 99.0,
+          "center_y_percent": 27.13,
+          "bbox_width_percent": 2.0,
+          "bbox_height_percent": 16.52,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of OuterGravelGround, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-3",
+          "visibility": "visible",
+          "center_x_percent": 96.33,
+          "center_y_percent": 72.35,
+          "bbox_width_percent": 7.34,
+          "bbox_height_percent": 4.13,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ClockTower, left of LuchenHand, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV A-3",
+          "visibility": "visible",
+          "center_x_percent": 32.25,
+          "center_y_percent": 71.89,
+          "bbox_width_percent": 64.5,
+          "bbox_height_percent": 3.67,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ClockTower, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-3",
+          "visibility": "visible",
+          "center_x_percent": 50.44,
+          "center_y_percent": 57.42,
+          "bbox_width_percent": 7.98,
+          "bbox_height_percent": 16.13,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RoadShoulder, left of OuterGravelGround, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant RoadShoulder covers 64x4 percent at frame 32/72. Left to right: RoadShoulder, ClockTower, OuterGravelGround, LuchenHand."
+    },
+    {
+      "time_seconds": 4.958,
+      "source_frame": "D14_shots/ep02_shot04/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 1.40m to 170.74m across 4 layers; nearest is LuchenHand, furthest is ClockTower"
+      },
+      "camera_relation": "camera at (20.90, 5.06, 0.63) on a 24.0mm lens, frame 120 of 120",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 99.0,
+          "center_y_percent": 27.13,
+          "bbox_width_percent": 2.0,
+          "bbox_height_percent": 16.52,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of OuterGravelGround, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV A-3",
+          "visibility": "visible",
+          "center_x_percent": 96.33,
+          "center_y_percent": 72.35,
+          "bbox_width_percent": 7.34,
+          "bbox_height_percent": 4.13,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ClockTower, left of LuchenHand, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV A-3",
+          "visibility": "visible",
+          "center_x_percent": 32.25,
+          "center_y_percent": 71.89,
+          "bbox_width_percent": 64.5,
+          "bbox_height_percent": 3.67,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ClockTower, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP A-3",
+          "visibility": "visible",
+          "center_x_percent": 50.44,
+          "center_y_percent": 57.42,
+          "bbox_width_percent": 7.98,
+          "bbox_height_percent": 16.13,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RoadShoulder, left of OuterGravelGround, in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant RoadShoulder covers 64x4 percent at frame 32/72. Left to right: RoadShoulder, ClockTower, OuterGravelGround, LuchenHand."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

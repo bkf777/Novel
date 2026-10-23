@@ -1,0 +1,439 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep03_shot03/preview_video.mp4",
+    "duration": 12.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 288,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O002",
+      "source_name": "A-4_CHAR_LuchenHand_02",
+      "source_type": "MESH",
+      "root_name": "A-4_CHAR_LuchenHand_02",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 3.0,
+      "identity_cues": "name=A-4_CHAR_LuchenHand_02; type=MESH; root=A-4_CHAR_LuchenHand_02; dimensions=0.100,0.100,0.300",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O005",
+      "source_name": "A-4_FX_TwinFlame_01",
+      "source_type": "MESH",
+      "root_name": "A-4_FX_TwinFlame_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-4_FX_TwinFlame_01; type=MESH; root=A-4_FX_TwinFlame_01; dimensions=0.180,0.050,0.300",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR LuchenHand",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O002"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "protagonist raised hand blockout",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "locomotion",
+        "action": "travels 0.27m across the set during the shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 FX TwinFlame",
+      "entity_class": "effect",
+      "importance": "context",
+      "source_instance_ids": [
+        "O005"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "black and white twin flame on the wrist",
+      "structural_constraints": "keep the source volume and the attachment point; the effect never detaches from its source surface",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_1101",
+      "source_instance_ids": [
+        "O005"
+      ],
+      "start_seconds": 0.0,
+      "end_seconds": 1.0,
+      "relation": "bone pattern and twin flame stay bound to the right wrist skin",
+      "forbidden_change": "do not move the pattern off the wrist or add flame to the body"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 12.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 01 CHAR LuchenHand",
+        "world_path": "camera travels from (1.70, 1.27, 1.51) to (1.70, 1.27, 1.51) on a 85mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "increase",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "近景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 近景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "first black and white bone line creeps from wrist toward the back of the hand, twin flame ignites at the wrist, raised wrist tilts and the flame leans sideways",
+      "layout_and_occlusion": "2 visible instances. Dominant LuchenHand covers 40x70 percent at frame 80/36. Left to right: LuchenHand, TwinFlame.",
+      "lighting_spatial_logic": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep03_shot03/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 0.13m to 1.12m across 2 layers; nearest is TwinFlame, furthest is LuchenHand"
+      },
+      "camera_relation": "camera at (1.70, 1.27, 1.51) on a 85.0mm lens, frame 1 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 80.19,
+          "center_y_percent": 36.33,
+          "bbox_width_percent": 39.61,
+          "bbox_height_percent": 70.0,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of TwinFlame, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 FX TwinFlame",
+          "visibility": "visible",
+          "center_x_percent": 84.67,
+          "center_y_percent": 32.92,
+          "bbox_width_percent": 30.65,
+          "bbox_height_percent": 65.83,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LuchenHand, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant LuchenHand covers 40x70 percent at frame 80/36. Left to right: LuchenHand, TwinFlame."
+    },
+    {
+      "time_seconds": 1.495,
+      "source_frame": "D14_shots/ep03_shot03/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 0.13m to 1.06m across 2 layers; nearest is TwinFlame, furthest is LuchenHand"
+      },
+      "camera_relation": "camera at (1.70, 1.27, 1.51) on a 85.0mm lens, frame 37 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 80.48,
+          "center_y_percent": 23.1,
+          "bbox_width_percent": 39.04,
+          "bbox_height_percent": 46.21,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of TwinFlame, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 FX TwinFlame",
+          "visibility": "visible",
+          "center_x_percent": 84.67,
+          "center_y_percent": 32.92,
+          "bbox_width_percent": 30.65,
+          "bbox_height_percent": 65.83,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LuchenHand, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant TwinFlame covers 31x66 percent at frame 85/33. Left to right: LuchenHand, TwinFlame."
+    },
+    {
+      "time_seconds": 2.99,
+      "source_frame": "D14_shots/ep03_shot03/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 0.13m to 1.00m across 2 layers; nearest is TwinFlame, furthest is LuchenHand"
+      },
+      "camera_relation": "camera at (1.70, 1.27, 1.51) on a 85.0mm lens, frame 73 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "visible",
+          "center_x_percent": 80.79,
+          "center_y_percent": 8.99,
+          "bbox_width_percent": 38.41,
+          "bbox_height_percent": 17.99,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of TwinFlame, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 FX TwinFlame",
+          "visibility": "visible",
+          "center_x_percent": 84.67,
+          "center_y_percent": 32.92,
+          "bbox_width_percent": 30.65,
+          "bbox_height_percent": 65.83,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of LuchenHand, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant TwinFlame covers 31x66 percent at frame 85/33. Left to right: LuchenHand, TwinFlame."
+    },
+    {
+      "time_seconds": 4.484,
+      "source_frame": "D14_shots/ep03_shot03/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 0.13m to 0.13m across 1 layers; nearest is TwinFlame, furthest is TwinFlame"
+      },
+      "camera_relation": "camera at (1.70, 1.27, 1.51) on a 85.0mm lens, frame 109 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 FX TwinFlame",
+          "visibility": "visible",
+          "center_x_percent": 84.67,
+          "center_y_percent": 32.92,
+          "bbox_width_percent": 30.65,
+          "bbox_height_percent": 65.83,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "only visible instance in this frame"
+        }
+      ],
+      "key_layout_and_occlusion": "1 visible instances. Dominant TwinFlame covers 31x66 percent at frame 85/33. Left to right: TwinFlame."
+    },
+    {
+      "time_seconds": 5.979,
+      "source_frame": "D14_shots/ep03_shot03/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 0.13m to 0.13m across 1 layers; nearest is TwinFlame, furthest is TwinFlame"
+      },
+      "camera_relation": "camera at (1.70, 1.27, 1.51) on a 85.0mm lens, frame 144 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 FX TwinFlame",
+          "visibility": "visible",
+          "center_x_percent": 84.67,
+          "center_y_percent": 32.92,
+          "bbox_width_percent": 30.65,
+          "bbox_height_percent": 65.83,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "only visible instance in this frame"
+        }
+      ],
+      "key_layout_and_occlusion": "1 visible instances. Dominant TwinFlame covers 31x66 percent at frame 85/33. Left to right: TwinFlame."
+    },
+    {
+      "time_seconds": 7.474,
+      "source_frame": "D14_shots/ep03_shot03/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 0.13m to 0.13m across 1 layers; nearest is TwinFlame, furthest is TwinFlame"
+      },
+      "camera_relation": "camera at (1.70, 1.27, 1.51) on a 85.0mm lens, frame 180 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 FX TwinFlame",
+          "visibility": "visible",
+          "center_x_percent": 84.67,
+          "center_y_percent": 32.92,
+          "bbox_width_percent": 30.65,
+          "bbox_height_percent": 65.83,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "only visible instance in this frame"
+        }
+      ],
+      "key_layout_and_occlusion": "1 visible instances. Dominant TwinFlame covers 31x66 percent at frame 85/33. Left to right: TwinFlame."
+    },
+    {
+      "time_seconds": 8.969,
+      "source_frame": "D14_shots/ep03_shot03/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 0.13m to 0.13m across 1 layers; nearest is TwinFlame, furthest is TwinFlame"
+      },
+      "camera_relation": "camera at (1.70, 1.27, 1.51) on a 85.0mm lens, frame 216 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 FX TwinFlame",
+          "visibility": "visible",
+          "center_x_percent": 84.67,
+          "center_y_percent": 32.92,
+          "bbox_width_percent": 30.65,
+          "bbox_height_percent": 65.83,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "only visible instance in this frame"
+        }
+      ],
+      "key_layout_and_occlusion": "1 visible instances. Dominant TwinFlame covers 31x66 percent at frame 85/33. Left to right: TwinFlame."
+    },
+    {
+      "time_seconds": 10.464,
+      "source_frame": "D14_shots/ep03_shot03/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 0.13m to 0.13m across 1 layers; nearest is TwinFlame, furthest is TwinFlame"
+      },
+      "camera_relation": "camera at (1.70, 1.27, 1.51) on a 85.0mm lens, frame 252 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 FX TwinFlame",
+          "visibility": "visible",
+          "center_x_percent": 84.67,
+          "center_y_percent": 32.92,
+          "bbox_width_percent": 30.65,
+          "bbox_height_percent": 65.83,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "only visible instance in this frame"
+        }
+      ],
+      "key_layout_and_occlusion": "1 visible instances. Dominant TwinFlame covers 31x66 percent at frame 85/33. Left to right: TwinFlame."
+    },
+    {
+      "time_seconds": 11.958,
+      "source_frame": "D14_shots/ep03_shot03/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 0.13m to 0.13m across 1 layers; nearest is TwinFlame, furthest is TwinFlame"
+      },
+      "camera_relation": "camera at (1.70, 1.27, 1.51) on a 85.0mm lens, frame 288 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR LuchenHand",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 02 FX TwinFlame",
+          "visibility": "visible",
+          "center_x_percent": 84.67,
+          "center_y_percent": 32.92,
+          "bbox_width_percent": 30.65,
+          "bbox_height_percent": 65.83,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "only visible instance in this frame"
+        }
+      ],
+      "key_layout_and_occlusion": "1 visible instances. Dominant TwinFlame covers 31x66 percent at frame 85/33. Left to right: TwinFlame."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

@@ -1,0 +1,43 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated stylisation….
+[INSTANCE REGISTRY] I1=<O002>,I2=<O004>,I3=<O006>.
+<Entity 01 CHAR MessengerSilhouette>=E1[articulated/primary/static] members=I1;n=1;src=captured messenger blockout lying on the floor; final=captured messenger blockout lying on the floor; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings…; style=world_style_unit_contract.
+<Entity 02 ENV B-17>=E2[environment/context/static] members=I2-I3;n=2;src=B-17 built environment shell enclosing the set: FactoryInnerFloor…; final=B-17 built environment shell enclosing the set: FactoryInnerFloor…; finish=worn cement, oxidised steel and sheet metal with cold grey reflections, shadow detail kept…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I3;1:1;n=2.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse realism for humans… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D with detail… | materials=real skin with pores and slight oil sheen, matte technical fabric with wear and… | environment=a brick street cut by wheel ruts in front of a single gate with two steel posts… | props=functional utilitarian tooling with real weight and thickness: gate posts… | light=one cold overhead key over the steel table with shadow detail retained instead….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-7.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=none;path=camera travels from (-6. 63, 6. 29, 0. 26) to (-6. 63, 6. 29, 0. 26) on a 50mm lens, total path length 0…;dist=stable;azi=stable;elev=stable;lens=stable;comp=特写 framing in 9:16 vertical, subject held in the frame centre band with head room above…;ban=do not add any camera move, zoom or handheld shake… | Act=inside the factory a messenger dragged back from the west side still has his terminal lit… | Layout=3 visible instances. Dominant FactoryInnerWall covers 100x47 percent at frame 50/23… | Light=one cold overhead key over the steel table with shadow detail retained instead of crushed….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=extreme_close;Comp=depth spans 0. 58m to 8. 70m across 3 layers…;Cam=camera at (-6.63, 6.29, 0.26) on a 50.0mm lens, frame 1 of 168;Lay=3 visible instances… V=I2:50/44/100/13,I3:50/23/100/47 D=I1:v/26/60/52/81/o:compact body proxy, crouched volume/m:stationary across this interval/r:left of FactoryInnerFloor, behind all nearer…
+@0.994s F=extreme_close;Comp=depth spans 0. 58m to 8. 70m across 3 layers…;Cam=camera at (-6.63, 6.29, 0.26) on a 50.0mm lens, frame 25 of 168;Lay=3 visible instances… V=I2:50/44/100/13,I3:50/23/100/47 D=I1:v/26/60/52/81/o:compact body proxy, crouched volume/m:stationary across this interval/r:left of FactoryInnerFloor, behind all nearer…
+@1.988s F=extreme_close;Comp=depth spans 0. 58m to 8. 70m across 3 layers…;Cam=camera at (-6.63, 6.29, 0.26) on a 50.0mm lens, frame 49 of 168;Lay=3 visible instances… V=I2:50/44/100/13,I3:50/23/100/47 D=I1:v/26/60/52/81/o:compact body proxy, crouched volume/m:stationary across this interval/r:left of FactoryInnerFloor, behind all nearer…
+@2.982s F=extreme_close;Comp=depth spans 0. 58m to 8. 70m across 3 layers…;Cam=camera at (-6.63, 6.29, 0.26) on a 50.0mm lens, frame 73 of 168;Lay=3 visible instances… V=I2:50/44/100/13,I3:50/23/100/47 D=I1:v/26/60/52/81/o:compact body proxy, crouched volume/m:stationary across this interval/r:left of FactoryInnerFloor, behind all nearer…
+@3.976s F=extreme_close;Comp=depth spans 0. 58m to 8. 70m across 3 layers…;Cam=camera at (-6.63, 6.29, 0.26) on a 50.0mm lens, frame 96 of 168;Lay=3 visible instances… V=I2:50/44/100/13,I3:50/23/100/47 D=I1:v/26/60/52/81/o:compact body proxy, crouched volume/m:stationary across this interval/r:left of FactoryInnerFloor, behind all nearer…
+@4.970s F=extreme_close;Comp=depth spans 0. 58m to 8. 70m across 3 layers…;Cam=camera at (-6.63, 6.29, 0.26) on a 50.0mm lens, frame 120 of 168;Lay=3 visible instances… V=I2:50/44/100/13,I3:50/23/100/47 D=I1:v/26/60/52/81/o:compact body proxy, crouched volume/m:stationary across this interval/r:left of FactoryInnerFloor, behind all nearer…
+@5.964s F=extreme_close;Comp=depth spans 0. 58m to 8. 70m across 3 layers…;Cam=camera at (-6.63, 6.29, 0.26) on a 50.0mm lens, frame 144 of 168;Lay=3 visible instances… V=I2:50/44/100/13,I3:50/23/100/47 D=I1:v/26/60/52/81/o:compact body proxy, crouched volume/m:stationary across this interval/r:left of FactoryInnerFloor, behind all nearer…
+@6.958s F=extreme_close;Comp=depth spans 0. 58m to 8. 70m across 3 layers…;Cam=camera at (-6.63, 6.29, 0.26) on a 50.0mm lens, frame 168 of 168;Lay=3 visible instances… V=I2:50/44/100/13,I3:50/23/100/47 D=I1:v/26/60/52/81/o:compact body proxy, crouched volume/m:stationary across this interval/r:left of FactoryInnerFloor, behind all nearer…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+a terminal prompt tone with paper friction on a hard floor
+
+non_diegetic_music:
+N/A

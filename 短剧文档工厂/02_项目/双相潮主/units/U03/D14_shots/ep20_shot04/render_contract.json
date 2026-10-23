@@ -1,0 +1,404 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep20_shot04/preview_video.mp4",
+    "duration": 7.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 168,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "B-14_CHAR_Yehongyi_01",
+      "source_type": "MESH",
+      "root_name": "B-14_CHAR_Yehongyi_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-14_CHAR_Yehongyi_01; type=MESH; root=B-14_CHAR_Yehongyi_01; dimensions=0.420,0.320,1.730",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O008",
+      "source_name": "B-14_PROP_ShadowBlade_01",
+      "source_type": "MESH",
+      "root_name": "B-14_PROP_ShadowBlade_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-14_PROP_ShadowBlade_01; type=MESH; root=B-14_PROP_ShadowBlade_01; dimensions=1.600,0.050,0.030",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR Yehongyi",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "female fighter character blockout in dark red outfit",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 PROP B-14",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O008"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-14 set pieces and fittings: ShadowBlade",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_8001",
+      "source_instance_ids": [
+        "O001",
+        "O008"
+      ],
+      "start_seconds": 0.0,
+      "end_seconds": 1.0,
+      "relation": "the blade stays in the fighter's hand while the watch changes and the corner readout stays lit",
+      "forbidden_change": "do not let the blade leave the hand and do not clear the fog"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 7.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 01 CHAR Yehongyi",
+        "world_path": "camera travels from (0.44, -4.16, 0.25) to (0.44, -4.16, 0.25) on a 50mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 中景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "the gate watch is changed to two shifts and the blade never leaves the fighter's hand; when it gets light the grey fog has not lifted and the street is still grey; a readout field in one corner shows the normalisation readout at 1.4%",
+      "layout_and_occlusion": "2 visible instances. Dominant Yehongyi covers 35x49 percent at frame 59/25. Left to right: Yehongyi, ShadowBlade.",
+      "lighting_spatial_logic": "one cold overhead key over the steel table with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the emergency lamps on the gate posts, the residual fire heads, the twin flame and the derrick lamp as the only moving light sources, and the grey fog pressing down over the street with the unlit crossing kept dark"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep20_shot04/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.39m to 3.69m across 2 layers; nearest is ShadowBlade, furthest is Yehongyi"
+      },
+      "camera_relation": "camera at (0.44, -4.16, 0.25) on a 50.0mm lens, frame 1 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 58.94,
+          "center_y_percent": 24.73,
+          "bbox_width_percent": 35.39,
+          "bbox_height_percent": 49.46,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ShadowBlade, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-14",
+          "visibility": "visible",
+          "center_x_percent": 64.66,
+          "center_y_percent": 9.93,
+          "bbox_width_percent": 70.68,
+          "bbox_height_percent": 10.25,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant Yehongyi covers 35x49 percent at frame 59/25. Left to right: Yehongyi, ShadowBlade."
+    },
+    {
+      "time_seconds": 0.994,
+      "source_frame": "D14_shots/ep20_shot04/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.39m to 3.69m across 2 layers; nearest is ShadowBlade, furthest is Yehongyi"
+      },
+      "camera_relation": "camera at (0.44, -4.16, 0.25) on a 50.0mm lens, frame 25 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 58.94,
+          "center_y_percent": 24.73,
+          "bbox_width_percent": 35.39,
+          "bbox_height_percent": 49.46,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ShadowBlade, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-14",
+          "visibility": "visible",
+          "center_x_percent": 64.66,
+          "center_y_percent": 9.93,
+          "bbox_width_percent": 70.68,
+          "bbox_height_percent": 10.25,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant Yehongyi covers 35x49 percent at frame 59/25. Left to right: Yehongyi, ShadowBlade."
+    },
+    {
+      "time_seconds": 1.988,
+      "source_frame": "D14_shots/ep20_shot04/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.39m to 3.69m across 2 layers; nearest is ShadowBlade, furthest is Yehongyi"
+      },
+      "camera_relation": "camera at (0.44, -4.16, 0.25) on a 50.0mm lens, frame 49 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 58.94,
+          "center_y_percent": 24.73,
+          "bbox_width_percent": 35.39,
+          "bbox_height_percent": 49.46,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ShadowBlade, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-14",
+          "visibility": "visible",
+          "center_x_percent": 64.66,
+          "center_y_percent": 9.93,
+          "bbox_width_percent": 70.68,
+          "bbox_height_percent": 10.25,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant Yehongyi covers 35x49 percent at frame 59/25. Left to right: Yehongyi, ShadowBlade."
+    },
+    {
+      "time_seconds": 2.982,
+      "source_frame": "D14_shots/ep20_shot04/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.39m to 3.69m across 2 layers; nearest is ShadowBlade, furthest is Yehongyi"
+      },
+      "camera_relation": "camera at (0.44, -4.16, 0.25) on a 50.0mm lens, frame 73 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 58.94,
+          "center_y_percent": 24.73,
+          "bbox_width_percent": 35.39,
+          "bbox_height_percent": 49.46,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ShadowBlade, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-14",
+          "visibility": "visible",
+          "center_x_percent": 64.66,
+          "center_y_percent": 9.93,
+          "bbox_width_percent": 70.68,
+          "bbox_height_percent": 10.25,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant Yehongyi covers 35x49 percent at frame 59/25. Left to right: Yehongyi, ShadowBlade."
+    },
+    {
+      "time_seconds": 3.976,
+      "source_frame": "D14_shots/ep20_shot04/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.39m to 3.69m across 2 layers; nearest is ShadowBlade, furthest is Yehongyi"
+      },
+      "camera_relation": "camera at (0.44, -4.16, 0.25) on a 50.0mm lens, frame 96 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 58.94,
+          "center_y_percent": 24.73,
+          "bbox_width_percent": 35.39,
+          "bbox_height_percent": 49.46,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ShadowBlade, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-14",
+          "visibility": "visible",
+          "center_x_percent": 64.66,
+          "center_y_percent": 9.93,
+          "bbox_width_percent": 70.68,
+          "bbox_height_percent": 10.25,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant Yehongyi covers 35x49 percent at frame 59/25. Left to right: Yehongyi, ShadowBlade."
+    },
+    {
+      "time_seconds": 4.97,
+      "source_frame": "D14_shots/ep20_shot04/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.39m to 3.69m across 2 layers; nearest is ShadowBlade, furthest is Yehongyi"
+      },
+      "camera_relation": "camera at (0.44, -4.16, 0.25) on a 50.0mm lens, frame 120 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 58.94,
+          "center_y_percent": 24.73,
+          "bbox_width_percent": 35.39,
+          "bbox_height_percent": 49.46,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ShadowBlade, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-14",
+          "visibility": "visible",
+          "center_x_percent": 64.66,
+          "center_y_percent": 9.93,
+          "bbox_width_percent": 70.68,
+          "bbox_height_percent": 10.25,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant Yehongyi covers 35x49 percent at frame 59/25. Left to right: Yehongyi, ShadowBlade."
+    },
+    {
+      "time_seconds": 5.964,
+      "source_frame": "D14_shots/ep20_shot04/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.39m to 3.69m across 2 layers; nearest is ShadowBlade, furthest is Yehongyi"
+      },
+      "camera_relation": "camera at (0.44, -4.16, 0.25) on a 50.0mm lens, frame 144 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 58.94,
+          "center_y_percent": 24.73,
+          "bbox_width_percent": 35.39,
+          "bbox_height_percent": 49.46,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ShadowBlade, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-14",
+          "visibility": "visible",
+          "center_x_percent": 64.66,
+          "center_y_percent": 9.93,
+          "bbox_width_percent": 70.68,
+          "bbox_height_percent": 10.25,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant Yehongyi covers 35x49 percent at frame 59/25. Left to right: Yehongyi, ShadowBlade."
+    },
+    {
+      "time_seconds": 6.958,
+      "source_frame": "D14_shots/ep20_shot04/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.39m to 3.69m across 2 layers; nearest is ShadowBlade, furthest is Yehongyi"
+      },
+      "camera_relation": "camera at (0.44, -4.16, 0.25) on a 50.0mm lens, frame 168 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 58.94,
+          "center_y_percent": 24.73,
+          "bbox_width_percent": 35.39,
+          "bbox_height_percent": 49.46,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of ShadowBlade, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 PROP B-14",
+          "visibility": "visible",
+          "center_x_percent": 64.66,
+          "center_y_percent": 9.93,
+          "bbox_width_percent": 70.68,
+          "bbox_height_percent": 10.25,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant Yehongyi covers 35x49 percent at frame 59/25. Left to right: Yehongyi, ShadowBlade."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

@@ -1,0 +1,47 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O002>,I3=<O004>,I4=<O007>,I5=<O008>,I6=<O009>,I7=<O010>,I8=<O011>,I9=<O012>.
+<Entity 01 CHAR RutQueue>=E1[articulated/context/static] members=I1;n=1;src=queue blockout along the wheel ruts…; final=queue blockout along the wheel ruts…; finish=real skin with pores and fine hair, fabric with real…; style=world_style_unit_contract.
+<Entity 02 ENV B-13>=E2[environment/context/static] members=I2-I3;n=2;src=B-13 built environment shell…; final=B-13 built environment shell enclosing…; finish=worn cement, oxidised steel and sheet metal with…; style=world_style_unit_contract.
+<Entity 03 PROP GreyFramePanel>=E3[rigid/primary/static] members=I4;n=1;src=B-13 set pieces and fittings…; final=B-13 set pieces and fittings…; finish=utilitarian material with visible weight, thickness…; style=world_style_unit_contract.
+<Entity 04 PROP B-13>=E4[rigid/context/static] members=I5-I9;n=5;src=B-13 set pieces and fittings…; final=B-13 set pieces and fittings: Flagpole…; finish=utilitarian material with visible weight, thickness…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I3;1:1;n=2.
+E3:I4;1:1;n=1.
+E4:I5-I9;1:1;n=5.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global… | materials=real skin with pores and slight oil sheen… | environment=a brick street cut by wheel ruts in front… | props=functional utilitarian tooling with real… | light=one cold overhead key over the steel table….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3,E4=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3,E4 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_7601@0.000-1.000s I1,I4,I9: rel=the queue holds along the wheel…; ban=do not give any queued person a….
+[Shot 1] @0.000-7.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=dolly;target=E1;path=camera travels from (-8. 44, -23. 66, 1. 91) to (-6…;dist=decrease;azi=counterclockwise;elev=decrease;lens=stable;comp=远景 framing in 9:16 vertical, subject held in the…;ban=do not convert the linear camera move into an… | Act=in the grey fog outside the factory gate the wheel ruts press in from all sides… | Layout=9 visible instances… | Light=one cold overhead key over the steel table with….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=wide;Comp=depth spans 16. 87m to 27…;Cam=camera at (-8. 44, -23. 66, 1…;Lay=9 visible instances… V=I1:66/43/69/10,I2:37/36/72/11,I3:50/45/100/9,I5:57/36/3/12,I6:30/37/3/12,I7:53/36/3/12,I8:43/43/38/2,I9:67/45/58/4 D=I4:v/60/38/0/0/o:compact block…/m:stationary across this…/r:right of Flagpole, left…
+@0.994s F=wide;Comp=depth spans 16. 61m to 27…;Cam=camera at (-8. 33, -23. 43, 1…;Lay=9 visible instances… V=I1:66/43/69/10,I2:37/35/73/11,I3:50/45/100/9,I5:57/36/3/12,I6:29/37/4/12,I7:53/36/3/12,I8:43/43/38/2,I9:68/45/59/4 D=I4:v/60/38/1/0/o:compact block…/m:stationary across this…/r:right of Flagpole, left…
+@1.988s F=wide;Comp=depth spans 15. 93m to 26…;Cam=camera at (-8. 07, -22. 81, 1…;Lay=9 visible instances… V=I1:65/43/70/11,I2:37/35/74/11,I3:50/45/100/9,I5:57/36/3/12,I6:29/36/4/12,I7:53/36/3/13,I8:42/42/39/2,I9:69/45/62/4 D=I4:v/61/37/1/0/o:compact block…/m:stationary across this…/r:right of Flagpole, left…
+@2.982s F=wide;Comp=depth spans 15. 00m to 25…;Cam=camera at (-7. 71, -21. 98, 1…;Lay=9 visible instances… V=I1:65/42/70/12,I2:38/34/75/12,I3:50/45/100/10,I5:58/35/4/13,I6:28/36/4/13,I7:54/35/3/13,I8:42/42/41/2,I9:68/45/63/4 D=I4:v/61/37/2/1/o:compact block…/m:stationary across this…/r:right of Flagpole, left…
+@3.976s F=wide;Comp=depth spans 14. 03m to 24…;Cam=camera at (-7. 33, -21. 11, 1…;Lay=9 visible instances… V=I1:64/41/71/13,I2:38/33/76/13,I3:50/44/100/10,I5:58/35/4/14,I6:27/35/4/13,I7:54/35/3/14,I8:42/42/43/2,I9:68/45/64/5 D=I4:v/62/36/2/1/o:compact block…/m:stationary across this…/r:right of Flagpole, left…
+@4.970s F=wide;Comp=depth spans 13. 11m to 23…;Cam=camera at (-6. 97, -20. 27, 1…;Lay=9 visible instances… V=I1:64/40/73/15,I2:39/33/77/13,I3:50/44/100/10,I5:58/34/4/14,I6:26/34/4/14,I7:54/34/3/14,I8:41/41/45/2,I9:68/44/65/5 D=I4:v/62/36/2/1/o:compact block…/m:stationary across this…/r:right of Flagpole, left…
+@5.964s F=wide;Comp=depth spans 12. 43m to 23…;Cam=camera at (-6. 70, -19. 66, 1…;Lay=9 visible instances… V=I1:63/39/73/16,I2:39/32/78/14,I3:50/44/100/10,I5:59/33/4/15,I6:25/34/4/15,I7:54/33/4/15,I8:41/41/46/2,I9:67/44/65/5 D=I4:v/63/35/2/1/o:compact block…/m:stationary across this…/r:right of Flagpole, left…
+@6.958s F=wide;Comp=depth spans 12. 16m to 22…;Cam=camera at (-6. 60, -19. 42, 1…;Lay=9 visible instances… V=I1:63/39/74/16,I2:39/32/78/14,I3:50/44/100/10,I5:59/33/4/15,I6:24/34/4/15,I7:54/33/4/15,I8:41/41/47/2,I9:67/44/66/5 D=I4:v/63/35/2/1/o:compact block…/m:stationary across this…/r:right of Flagpole, left…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+a distant broadcast hum with many footsteps on a packed…
+
+non_diegetic_music:
+N/A

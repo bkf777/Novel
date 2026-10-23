@@ -1,0 +1,666 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep16_shot01/preview_video.mp4",
+    "duration": 12.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 288,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O006",
+      "source_name": "B-10_EXT_FactoryYardGround",
+      "source_type": "MESH",
+      "root_name": "B-10_EXT_FactoryYardGround",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-10_EXT_FactoryYardGround; type=MESH; root=B-10_EXT_FactoryYardGround; dimensions=36.000,48.000,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O007",
+      "source_name": "B-10_EXT_PerimeterWall",
+      "source_type": "MESH",
+      "root_name": "B-10_EXT_PerimeterWall",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-10_EXT_PerimeterWall; type=MESH; root=B-10_EXT_PerimeterWall; dimensions=0.120,20.000,2.200",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O008",
+      "source_name": "B-10_EXT_WestPlantShell",
+      "source_type": "MESH",
+      "root_name": "B-10_EXT_WestPlantShell",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-10_EXT_WestPlantShell; type=MESH; root=B-10_EXT_WestPlantShell; dimensions=6.000,20.000,6.245",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O009",
+      "source_name": "B-10_LGT_GreyFramePanel_01",
+      "source_type": "MESH",
+      "root_name": "B-10_LGT_GreyFramePanel_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=B-10_LGT_GreyFramePanel_01; type=MESH; root=B-10_LGT_GreyFramePanel_01; dimensions=0.130,0.003,0.085",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 ENV B-10",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O006",
+        "O007",
+        "O008"
+      ],
+      "instance_count": 3,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-10 built environment shell enclosing the set: FactoryYardGround, PerimeterWall, WestPlantShell",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 02 PROP GreyFramePanel",
+      "entity_class": "rigid",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O009"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-10 set pieces and fittings: GreyFramePanel",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 12.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 02 PROP GreyFramePanel",
+        "world_path": "camera travels from (-13.40, 4.50, 1.62) to (-13.40, 4.50, 1.62) on a 50mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "decrease",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 中景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "a panel floats in the centre of the protagonist's view and two lines of Chinese text light up one line after another, the archive deadline of fourteen days and the line stating that untreated grey patches begin to change; below the panel a corner of the factory hall sits and the first fire light rises in the far distance",
+      "layout_and_occlusion": "4 visible instances. Dominant WestPlantShell covers 89x99 percent at frame 55/49. Left to right: FactoryYardGround, GreyFramePanel, WestPlantShell, PerimeterWall.",
+      "lighting_spatial_logic": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep16_shot01/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.20m to 25.04m across 4 layers; nearest is GreyFramePanel, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-13.40, 4.50, 1.62) on a 50.0mm lens, frame 1 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 28.79,
+          "center_y_percent": 63.13,
+          "bbox_width_percent": 57.58,
+          "bbox_height_percent": 4.16,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreyFramePanel, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 84.02,
+          "center_y_percent": 64.61,
+          "bbox_width_percent": 31.95,
+          "bbox_height_percent": 46.78,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WestPlantShell, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 55.46,
+          "center_y_percent": 49.34,
+          "bbox_width_percent": 89.09,
+          "bbox_height_percent": 98.68,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of PerimeterWall, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP GreyFramePanel",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 10.04,
+          "bbox_height_percent": 3.69,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of WestPlantShell, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant WestPlantShell covers 89x99 percent at frame 55/49. Left to right: FactoryYardGround, GreyFramePanel, WestPlantShell, PerimeterWall."
+    },
+    {
+      "time_seconds": 1.495,
+      "source_frame": "D14_shots/ep16_shot01/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.20m to 25.04m across 4 layers; nearest is GreyFramePanel, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-13.40, 4.50, 1.62) on a 50.0mm lens, frame 37 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 28.79,
+          "center_y_percent": 63.13,
+          "bbox_width_percent": 57.58,
+          "bbox_height_percent": 4.16,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreyFramePanel, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 84.02,
+          "center_y_percent": 64.61,
+          "bbox_width_percent": 31.95,
+          "bbox_height_percent": 46.78,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WestPlantShell, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 55.46,
+          "center_y_percent": 49.34,
+          "bbox_width_percent": 89.09,
+          "bbox_height_percent": 98.68,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of PerimeterWall, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP GreyFramePanel",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.0,
+          "bbox_width_percent": 35.32,
+          "bbox_height_percent": 12.97,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of WestPlantShell, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant WestPlantShell covers 89x99 percent at frame 55/49. Left to right: FactoryYardGround, GreyFramePanel, WestPlantShell, PerimeterWall."
+    },
+    {
+      "time_seconds": 2.99,
+      "source_frame": "D14_shots/ep16_shot01/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.20m to 25.04m across 4 layers; nearest is GreyFramePanel, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-13.40, 4.50, 1.62) on a 50.0mm lens, frame 73 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 28.79,
+          "center_y_percent": 63.13,
+          "bbox_width_percent": 57.58,
+          "bbox_height_percent": 4.16,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreyFramePanel, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 84.02,
+          "center_y_percent": 64.61,
+          "bbox_width_percent": 31.95,
+          "bbox_height_percent": 46.78,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WestPlantShell, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 55.46,
+          "center_y_percent": 49.34,
+          "bbox_width_percent": 89.09,
+          "bbox_height_percent": 98.68,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of PerimeterWall, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP GreyFramePanel",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.01,
+          "bbox_width_percent": 60.7,
+          "bbox_height_percent": 22.27,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of WestPlantShell, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant WestPlantShell covers 89x99 percent at frame 55/49. Left to right: FactoryYardGround, GreyFramePanel, WestPlantShell, PerimeterWall."
+    },
+    {
+      "time_seconds": 4.484,
+      "source_frame": "D14_shots/ep16_shot01/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.20m to 25.04m across 4 layers; nearest is GreyFramePanel, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-13.40, 4.50, 1.62) on a 50.0mm lens, frame 109 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 28.79,
+          "center_y_percent": 63.13,
+          "bbox_width_percent": 57.58,
+          "bbox_height_percent": 4.16,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreyFramePanel, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 84.02,
+          "center_y_percent": 64.61,
+          "bbox_width_percent": 31.95,
+          "bbox_height_percent": 46.78,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WestPlantShell, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 55.46,
+          "center_y_percent": 49.34,
+          "bbox_width_percent": 89.09,
+          "bbox_height_percent": 98.68,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of PerimeterWall, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP GreyFramePanel",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.03,
+          "bbox_width_percent": 86.19,
+          "bbox_height_percent": 31.6,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of WestPlantShell, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant WestPlantShell covers 89x99 percent at frame 55/49. Left to right: FactoryYardGround, GreyFramePanel, WestPlantShell, PerimeterWall."
+    },
+    {
+      "time_seconds": 5.979,
+      "source_frame": "D14_shots/ep16_shot01/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.20m to 25.04m across 4 layers; nearest is GreyFramePanel, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-13.40, 4.50, 1.62) on a 50.0mm lens, frame 144 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 28.79,
+          "center_y_percent": 63.13,
+          "bbox_width_percent": 57.58,
+          "bbox_height_percent": 4.16,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreyFramePanel, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 84.02,
+          "center_y_percent": 64.61,
+          "bbox_width_percent": 31.95,
+          "bbox_height_percent": 46.78,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WestPlantShell, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 55.46,
+          "center_y_percent": 49.34,
+          "bbox_width_percent": 89.09,
+          "bbox_height_percent": 98.68,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of PerimeterWall, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP GreyFramePanel",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.05,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 37.05,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of WestPlantShell, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant WestPlantShell covers 89x99 percent at frame 55/49. Left to right: FactoryYardGround, GreyFramePanel, WestPlantShell, PerimeterWall."
+    },
+    {
+      "time_seconds": 7.474,
+      "source_frame": "D14_shots/ep16_shot01/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.20m to 25.04m across 4 layers; nearest is GreyFramePanel, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-13.40, 4.50, 1.62) on a 50.0mm lens, frame 180 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 28.79,
+          "center_y_percent": 63.13,
+          "bbox_width_percent": 57.58,
+          "bbox_height_percent": 4.16,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreyFramePanel, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 84.02,
+          "center_y_percent": 64.61,
+          "bbox_width_percent": 31.95,
+          "bbox_height_percent": 46.78,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WestPlantShell, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 55.46,
+          "center_y_percent": 49.34,
+          "bbox_width_percent": 89.09,
+          "bbox_height_percent": 98.68,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of PerimeterWall, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP GreyFramePanel",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.05,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 37.05,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of WestPlantShell, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant WestPlantShell covers 89x99 percent at frame 55/49. Left to right: FactoryYardGround, GreyFramePanel, WestPlantShell, PerimeterWall."
+    },
+    {
+      "time_seconds": 8.969,
+      "source_frame": "D14_shots/ep16_shot01/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.20m to 25.04m across 4 layers; nearest is GreyFramePanel, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-13.40, 4.50, 1.62) on a 50.0mm lens, frame 216 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 28.79,
+          "center_y_percent": 63.13,
+          "bbox_width_percent": 57.58,
+          "bbox_height_percent": 4.16,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreyFramePanel, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 84.02,
+          "center_y_percent": 64.61,
+          "bbox_width_percent": 31.95,
+          "bbox_height_percent": 46.78,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WestPlantShell, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 55.46,
+          "center_y_percent": 49.34,
+          "bbox_width_percent": 89.09,
+          "bbox_height_percent": 98.68,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of PerimeterWall, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP GreyFramePanel",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.05,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 37.05,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of WestPlantShell, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant WestPlantShell covers 89x99 percent at frame 55/49. Left to right: FactoryYardGround, GreyFramePanel, WestPlantShell, PerimeterWall."
+    },
+    {
+      "time_seconds": 10.464,
+      "source_frame": "D14_shots/ep16_shot01/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.20m to 25.04m across 4 layers; nearest is GreyFramePanel, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-13.40, 4.50, 1.62) on a 50.0mm lens, frame 252 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 28.79,
+          "center_y_percent": 63.13,
+          "bbox_width_percent": 57.58,
+          "bbox_height_percent": 4.16,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreyFramePanel, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 84.02,
+          "center_y_percent": 64.61,
+          "bbox_width_percent": 31.95,
+          "bbox_height_percent": 46.78,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WestPlantShell, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 55.46,
+          "center_y_percent": 49.34,
+          "bbox_width_percent": 89.09,
+          "bbox_height_percent": 98.68,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of PerimeterWall, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP GreyFramePanel",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.05,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 37.05,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of WestPlantShell, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant WestPlantShell covers 89x99 percent at frame 55/49. Left to right: FactoryYardGround, GreyFramePanel, WestPlantShell, PerimeterWall."
+    },
+    {
+      "time_seconds": 11.958,
+      "source_frame": "D14_shots/ep16_shot01/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.20m to 25.04m across 4 layers; nearest is GreyFramePanel, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (-13.40, 4.50, 1.62) on a 50.0mm lens, frame 288 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 28.79,
+          "center_y_percent": 63.13,
+          "bbox_width_percent": 57.58,
+          "bbox_height_percent": 4.16,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreyFramePanel, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 84.02,
+          "center_y_percent": 64.61,
+          "bbox_width_percent": 31.95,
+          "bbox_height_percent": 46.78,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WestPlantShell, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 01 ENV B-10",
+          "visibility": "visible",
+          "center_x_percent": 55.46,
+          "center_y_percent": 49.34,
+          "bbox_width_percent": 89.09,
+          "bbox_height_percent": 98.68,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of PerimeterWall, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP GreyFramePanel",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 50.05,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 37.05,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryYardGround, left of WestPlantShell, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "4 visible instances. Dominant WestPlantShell covers 89x99 percent at frame 55/49. Left to right: FactoryYardGround, GreyFramePanel, WestPlantShell, PerimeterWall."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

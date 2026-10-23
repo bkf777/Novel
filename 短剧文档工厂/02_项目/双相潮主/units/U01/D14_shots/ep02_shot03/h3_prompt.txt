@@ -1,0 +1,47 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O002>,I3=<O003>,I4=<O004>,I5=<O005>,I6=<O006>,I7=<O007>,I8=<O009>,I9=<O010>,I10=<O011>.
+<Entity 01 CHAR Luchen>=E1[articulated/primary/locomotion] members=I1;n=1;src=male protagonist blockout; final=male protagonist blockout; finish=real skin with pores and fine hair, fabric with real…; style=world_style_unit_contract.
+<Entity 02 ENV A-3>=E2[environment/context/static] members=I2-I7,I10;n=7;src=A-3 built environment shell…; final=A-3 built environment shell enclosing…; finish=worn cement, oxidised steel and sheet metal with…; style=world_style_unit_contract.
+<Entity 03 PROP A-3>=E3[rigid/context/static] members=I8-I9;n=2;src=A-3 set pieces and fittings…; final=A-3 set pieces and fittings…; finish=utilitarian material with visible weight, thickness…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I7,I10;1:1;n=7.
+E3:I8-I9;1:1;n=2.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global… | materials=real skin with pores and slight oil sheen… | environment=cement yard plates cut by fissures and pit… | props=functional utilitarian tooling with real… | light=one cold overhead key with shadow detail….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E1:locomotion | Act=travels 3.05m across the set during the shot | Keep=stay inside the source blockout bounds for the full shot | Ban=do not replace, duplicate or remove this instance.
+[STATIC LOCK] E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-12.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=tracking;target=E1;path=camera travels from (13. 81, 4. 42, 3. 14) to (20. 81, 4…;dist=increase;azi=counterclockwise;elev=stable;lens=stable;comp=中远景 framing in 9:16 vertical, subject held in the…;ban=do not swap the follow move for an orbit or a… | Act=protagonist walks along the fence line once, pauses at the pipe rack and the gate… | Layout=10 visible instances… | Light=one cold overhead key with shadow detail….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium_full;Comp=depth spans 4. 43m to 31…;Cam=camera at (13. 81, 4. 42, 3…;Lay=10 visible instances… V=I2:67/53/67/7,I3:54/74/92/8,I4:8/75/17/15,I5:50/92/100/1,I6:58/58/84/11,I7:55/59/5/11,I8:24/45/4/15,I9:46/51/16/11,I10:55/54/13/6 D=I1:v/22/65/8/16/o:upright body proxy…/m:stationary across this…/r:right of PipeRack, left…
+@1.495s F=medium_full;Comp=depth spans 4. 19m to 31…;Cam=camera at (14. 12, 4. 42, 3…;Lay=10 visible instances… V=I2:66/52/67/7,I3:53/73/94/9,I4:8/74/17/15,I5:50/94/100/1,I6:57/57/85/12,I7:55/58/5/12,I8:24/43/4/15,I9:46/50/17/11,I10:55/52/13/6 D=I1:v/10/62/8/15/o:upright body proxy…/m:stationary across this…/r:right of PipeRack, left…
+@2.990s F=medium_full;Comp=depth spans 3. 55m to 30…;Cam=camera at (14. 92, 4. 42, 3…;Lay=10 visible instances… V=I2:66/49/68/7,I3:50/73/99/10,I4:8/71/16/15,I5:50/99/100/1,I6:56/54/88/13,I7:55/56/5/12,I8:23/39/5/16,I9:46/46/18/11,I10:55/49/14/6 D=I1:v/1/59/1/16/o:upright body proxy…/m:stationary across this…/r:left of PipeRack, in…
+@4.484s F=medium_full;Comp=depth spans 5. 57m to 29…;Cam=camera at (16. 04, 4. 42, 3…;Lay=8 visible instances… V=I2:66/44/69/8,I3:50/74/100/14,I4:8/67/15/16,I6:53/50/94/14,I7:56/52/6/14,I8:21/34/6/17,I9:45/41/19/12,I10:55/44/14/7 O=I5 D=I1:o/o/o:off screen at…/m:offscreen at this anchor/r:leaves the frame before…
+@5.979s F=medium_full;Comp=depth spans 4. 53m to 27…;Cam=camera at (17. 30, 4. 42, 3…;Lay=8 visible instances… V=I2:65/38/70/9,I3:50/79/100/22,I4:7/63/14/17,I6:50/47/100/16,I7:57/49/7/16,I8:19/27/7/19,I9:45/36/22/14,I10:55/38/15/7 O=I5 D=I1:o/o/o:off screen at…/m:offscreen at this anchor/r:leaves the frame before…
+@7.474s F=medium_full;Comp=depth spans 3. 50m to 25…;Cam=camera at (18. 59, 4. 42, 3…;Lay=8 visible instances… V=I2:64/33/73/11,I3:50/86/100/28,I4:6/59/13/19,I6:50/45/100/20,I7:59/48/9/19,I8:16/20/9/22,I9:44/30/25/16,I10:56/32/16/8 O=I5 D=I1:o/o/o:off screen at…/m:offscreen at this anchor/r:leaves the frame before…
+@8.969s F=medium_full;Comp=depth spans 2. 66m to 24…;Cam=camera at (19. 71, 4. 42, 3…;Lay=9 visible instances… V=I2:63/28/75/12,I3:50/91/100/19,I4:5/55/11/21,I6:50/45/100/23,I7:61/48/12/23,I8:12/13/11/25,I9:43/25/28/18,I10:56/27/18/9 O=I5 D=I1:v/9/51/17/26/o:upright body proxy…/m:stationary across this…/r:right of PipeRack, left…
+@10.464s F=medium_full;Comp=depth spans 2. 10m to 23…;Cam=camera at (20. 51, 4. 42, 3…;Lay=9 visible instances… V=I2:62/24/77/14,I3:50/96/100/8,I4:5/53/10/22,I6:50/46/100/26,I7:63/50/15/26,I8:10/11/14/21,I9:43/21/31/20,I10:57/23/19/10 O=I5 D=I1:v/57/54/18/30/o:upright body proxy…/m:stationary across this…/r:right of DeepPit, left…
+@11.958s F=medium_full;Comp=depth spans 1. 90m to 22…;Cam=camera at (20. 81, 4. 42, 3…;Lay=8 visible instances… V=I2:61/22/77/14,I3:50/99/100/2,I4:5/52/9/23,I6:50/47/100/27,I7:64/51/16/28,I8:8/10/14/20,I9:42/20/32/21,I10:57/21/19/10 O=I5 D=I1:o/o/o:off screen at…/m:offscreen at this anchor/r:leaves the frame before…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+fine crunch of gravel under boots with distant machine…
+
+non_diegetic_music:
+N/A

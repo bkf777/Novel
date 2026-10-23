@@ -1,0 +1,42 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated stylisation….
+[INSTANCE REGISTRY] I1=<O001>.
+<Entity 01 CHAR MarketQueuer>=E1[articulated/primary/static] members=I1;n=1;src=market queue member blockout in two columns; final=market queue member blockout in two columns; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse realism for humans… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D with detail… | materials=real skin with pores and slight oil sheen, matte technical fabric with wear and… | environment=cement yard plates cut by fire lines, riveted steel frames and steel racks… | props=functional utilitarian tooling with real weight and thickness: welding rigs… | light=one cold overhead key over the purification bench with shadow detail retained….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_4901@0.100-1.000s I1: rel=the trader sets the stall up with the written board at the…; ban=do not give the trader or the line a face and do not blank the board.
+[Shot 1] @0.000-12.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=none;path=camera travels from (-1. 47, 9. 08, 1. 33) to (-1. 47, 9. 08, 1. 33) on a 50mm lens, total path length 0…;dist=stable;azi=stable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the frame centre band with head room above…;ban=do not add any camera move, zoom or handheld shake… | Act=the market stall is set up and four characters are pressed below the led board… | Layout=1 visible instances. Dominant MarketQueuer covers 41x53 percent at frame 21/73. Left to right: MarketQueuer. | Light=one cold overhead key over the purification bench with shadow detail retained instead of….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 1. 11m to 1. 11m across 1 layers…;Cam=camera at (-1.47, 9.08, 1.33) on a 50.0mm lens, frame 1 of 288;Lay=1 visible instances… D=I1:v/21/73/41/53/o:compact body proxy, crouched volume/m:stationary across this interval/r:only visible instance in this frame
+@1.495s F=medium;Comp=depth spans 1. 11m to 1. 11m across 1 layers…;Cam=camera at (-1.47, 9.08, 1.33) on a 50.0mm lens, frame 37 of 288;Lay=1 visible instances… D=I1:v/21/73/41/53/o:compact body proxy, crouched volume/m:stationary across this interval/r:only visible instance in this frame
+@2.990s F=medium;Comp=depth spans 1. 11m to 1. 11m across 1 layers…;Cam=camera at (-1.47, 9.08, 1.33) on a 50.0mm lens, frame 73 of 288;Lay=1 visible instances… D=I1:v/21/73/41/53/o:compact body proxy, crouched volume/m:stationary across this interval/r:only visible instance in this frame
+@4.484s F=medium;Comp=depth spans 1. 11m to 1. 11m across 1 layers…;Cam=camera at (-1.47, 9.08, 1.33) on a 50.0mm lens, frame 109 of 288;Lay=1 visible instances… D=I1:v/21/73/41/53/o:compact body proxy, crouched volume/m:stationary across this interval/r:only visible instance in this frame
+@5.979s F=medium;Comp=depth spans 1. 11m to 1. 11m across 1 layers…;Cam=camera at (-1.47, 9.08, 1.33) on a 50.0mm lens, frame 144 of 288;Lay=1 visible instances… D=I1:v/21/73/41/53/o:compact body proxy, crouched volume/m:stationary across this interval/r:only visible instance in this frame
+@7.474s F=medium;Comp=depth spans 1. 11m to 1. 11m across 1 layers…;Cam=camera at (-1.47, 9.08, 1.33) on a 50.0mm lens, frame 180 of 288;Lay=1 visible instances… D=I1:v/21/73/41/53/o:compact body proxy, crouched volume/m:stationary across this interval/r:only visible instance in this frame
+@8.969s F=medium;Comp=depth spans 1. 11m to 1. 11m across 1 layers…;Cam=camera at (-1.47, 9.08, 1.33) on a 50.0mm lens, frame 216 of 288;Lay=1 visible instances… D=I1:v/21/73/41/53/o:compact body proxy, crouched volume/m:stationary across this interval/r:only visible instance in this frame
+@10.464s F=medium;Comp=depth spans 1. 11m to 1. 11m across 1 layers…;Cam=camera at (-1.47, 9.08, 1.33) on a 50.0mm lens, frame 252 of 288;Lay=1 visible instances… D=I1:v/21/73/41/53/o:compact body proxy, crouched volume/m:stationary across this interval/r:only visible instance in this frame
+@11.958s F=medium;Comp=depth spans 1. 11m to 1. 11m across 1 layers…;Cam=camera at (-1.47, 9.08, 1.33) on a 50.0mm lens, frame 288 of 288;Lay=1 visible instances… D=I1:v/21/73/41/53/o:compact body proxy, crouched volume/m:stationary across this interval/r:only visible instance in this frame
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+the rattle of a stall frame being set up with street noise around it
+
+non_diegetic_music:
+N/A

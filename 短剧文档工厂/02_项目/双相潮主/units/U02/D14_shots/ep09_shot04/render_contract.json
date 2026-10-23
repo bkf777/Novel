@@ -1,0 +1,866 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep09_shot04/preview_video.mp4",
+    "duration": 7.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 168,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "B-1_CHAR_QueueMember_05",
+      "source_type": "MESH",
+      "root_name": "B-1_CHAR_QueueMember_05",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-1_CHAR_QueueMember_05; type=MESH; root=B-1_CHAR_QueueMember_05; dimensions=2.325,0.450,1.750",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O002",
+      "source_name": "B-1_CHAR_Suqingci_01",
+      "source_type": "MESH",
+      "root_name": "B-1_CHAR_Suqingci_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-1_CHAR_Suqingci_01; type=MESH; root=B-1_CHAR_Suqingci_01; dimensions=0.420,0.320,1.730",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O007",
+      "source_name": "B-1_EXT_FactorySouthFacade",
+      "source_type": "MESH",
+      "root_name": "B-1_EXT_FactorySouthFacade",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-1_EXT_FactorySouthFacade; type=MESH; root=B-1_EXT_FactorySouthFacade; dimensions=30.000,0.250,12.000",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O008",
+      "source_name": "B-1_EXT_FactoryYardGround",
+      "source_type": "MESH",
+      "root_name": "B-1_EXT_FactoryYardGround",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-1_EXT_FactoryYardGround; type=MESH; root=B-1_EXT_FactoryYardGround; dimensions=36.000,44.000,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O011",
+      "source_name": "B-1_PROP_MainRollerDoor_01",
+      "source_type": "MESH",
+      "root_name": "B-1_PROP_MainRollerDoor_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-1_PROP_MainRollerDoor_01; type=MESH; root=B-1_PROP_MainRollerDoor_01; dimensions=0.550,5.125,4.320",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O014",
+      "source_name": "B-1_PROP_WeldedGate_02",
+      "source_type": "MESH",
+      "root_name": "B-1_PROP_WeldedGate_02",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-1_PROP_WeldedGate_02; type=MESH; root=B-1_PROP_WeldedGate_02; dimensions=4.000,0.120,2.200",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR QueueMember",
+      "entity_class": "articulated",
+      "importance": "context",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "queue member blockout in silhouette",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 CHAR Suqingci",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O002"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "female scientist character blockout in white lab coat",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 03 ENV B-1",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O007",
+        "O008"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-1 built environment shell enclosing the set: FactorySouthFacade, FactoryYardGround",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 04 PROP B-1",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O011",
+        "O014"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-1 set pieces and fittings: MainRollerDoor, WeldedGate",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_3601",
+      "source_instance_ids": [
+        "O001",
+        "O002"
+      ],
+      "start_seconds": 0.1,
+      "end_seconds": 1.0,
+      "relation": "the scientist backs behind the steel rack with the tablet held to the chest while the queue stands holding steel rods in the depth",
+      "forbidden_change": "do not give any queue member a face and do not bring the queue forward out of the depth"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 7.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 02 CHAR Suqingci",
+        "world_path": "camera travels from (1.70, 9.06, 0.65) to (1.70, 9.06, 0.65) on a 35mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 中景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "the scientist backs away behind the steel rack with the tablet held to the chest and turns the head from the welded gate to the silent queue holding steel rods; the queue stands still in the depth with the faces kept out of frame and only the outlines cut out by the hall light",
+      "layout_and_occlusion": "6 visible instances. Dominant FactorySouthFacade covers 100x50 percent at frame 50/25. Left to right: QueueMember, FactorySouthFacade, FactoryYardGround, MainRollerDoor, WeldedGate.",
+      "lighting_spatial_logic": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep09_shot04/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.62m to 29.04m across 6 layers; nearest is Suqingci, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (1.70, 9.06, 0.65) on a 35.0mm lens, frame 1 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR QueueMember",
+          "visibility": "visible",
+          "center_x_percent": 15.27,
+          "center_y_percent": 39.54,
+          "bbox_width_percent": 30.55,
+          "bbox_height_percent": 27.78,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactorySouthFacade, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 98.59,
+          "center_y_percent": 36.49,
+          "bbox_width_percent": 2.83,
+          "bbox_height_percent": 50.49,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WeldedGate, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 25.17,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 50.34,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueMember, left of MainRollerDoor, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 45.65,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.34,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueMember, left of MainRollerDoor, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 70.3,
+          "center_y_percent": 25.23,
+          "bbox_width_percent": 59.4,
+          "bbox_height_percent": 50.45,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of WeldedGate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 04 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 71.98,
+          "center_y_percent": 38.08,
+          "bbox_width_percent": 56.05,
+          "bbox_height_percent": 24.88,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MainRollerDoor, left of Suqingci, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactorySouthFacade covers 100x50 percent at frame 50/25. Left to right: QueueMember, FactorySouthFacade, FactoryYardGround, MainRollerDoor, WeldedGate."
+    },
+    {
+      "time_seconds": 0.994,
+      "source_frame": "D14_shots/ep09_shot04/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.62m to 29.04m across 6 layers; nearest is Suqingci, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (1.70, 9.06, 0.65) on a 35.0mm lens, frame 25 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR QueueMember",
+          "visibility": "visible",
+          "center_x_percent": 15.27,
+          "center_y_percent": 39.54,
+          "bbox_width_percent": 30.55,
+          "bbox_height_percent": 27.78,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactorySouthFacade, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 98.59,
+          "center_y_percent": 36.49,
+          "bbox_width_percent": 2.83,
+          "bbox_height_percent": 50.49,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WeldedGate, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 25.17,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 50.34,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueMember, left of MainRollerDoor, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 45.65,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.34,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueMember, left of MainRollerDoor, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 70.3,
+          "center_y_percent": 25.23,
+          "bbox_width_percent": 59.4,
+          "bbox_height_percent": 50.45,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of WeldedGate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 04 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 71.98,
+          "center_y_percent": 38.08,
+          "bbox_width_percent": 56.05,
+          "bbox_height_percent": 24.88,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MainRollerDoor, left of Suqingci, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactorySouthFacade covers 100x50 percent at frame 50/25. Left to right: QueueMember, FactorySouthFacade, FactoryYardGround, MainRollerDoor, WeldedGate."
+    },
+    {
+      "time_seconds": 1.988,
+      "source_frame": "D14_shots/ep09_shot04/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.62m to 29.04m across 6 layers; nearest is Suqingci, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (1.70, 9.06, 0.65) on a 35.0mm lens, frame 49 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR QueueMember",
+          "visibility": "visible",
+          "center_x_percent": 15.27,
+          "center_y_percent": 39.54,
+          "bbox_width_percent": 30.55,
+          "bbox_height_percent": 27.78,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactorySouthFacade, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 98.59,
+          "center_y_percent": 36.49,
+          "bbox_width_percent": 2.83,
+          "bbox_height_percent": 50.49,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WeldedGate, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 25.17,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 50.34,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueMember, left of MainRollerDoor, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 45.65,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.34,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueMember, left of MainRollerDoor, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 70.3,
+          "center_y_percent": 25.23,
+          "bbox_width_percent": 59.4,
+          "bbox_height_percent": 50.45,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of WeldedGate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 04 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 71.98,
+          "center_y_percent": 38.08,
+          "bbox_width_percent": 56.05,
+          "bbox_height_percent": 24.88,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MainRollerDoor, left of Suqingci, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactorySouthFacade covers 100x50 percent at frame 50/25. Left to right: QueueMember, FactorySouthFacade, FactoryYardGround, MainRollerDoor, WeldedGate."
+    },
+    {
+      "time_seconds": 2.982,
+      "source_frame": "D14_shots/ep09_shot04/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.62m to 29.04m across 6 layers; nearest is Suqingci, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (1.70, 9.06, 0.65) on a 35.0mm lens, frame 73 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR QueueMember",
+          "visibility": "visible",
+          "center_x_percent": 15.27,
+          "center_y_percent": 39.54,
+          "bbox_width_percent": 30.55,
+          "bbox_height_percent": 27.78,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactorySouthFacade, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 98.59,
+          "center_y_percent": 36.49,
+          "bbox_width_percent": 2.83,
+          "bbox_height_percent": 50.49,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WeldedGate, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 25.17,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 50.34,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueMember, left of MainRollerDoor, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 45.65,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.34,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueMember, left of MainRollerDoor, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 70.3,
+          "center_y_percent": 25.23,
+          "bbox_width_percent": 59.4,
+          "bbox_height_percent": 50.45,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of WeldedGate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 04 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 71.98,
+          "center_y_percent": 38.08,
+          "bbox_width_percent": 56.05,
+          "bbox_height_percent": 24.88,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MainRollerDoor, left of Suqingci, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactorySouthFacade covers 100x50 percent at frame 50/25. Left to right: QueueMember, FactorySouthFacade, FactoryYardGround, MainRollerDoor, WeldedGate."
+    },
+    {
+      "time_seconds": 3.976,
+      "source_frame": "D14_shots/ep09_shot04/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.62m to 29.04m across 6 layers; nearest is Suqingci, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (1.70, 9.06, 0.65) on a 35.0mm lens, frame 96 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR QueueMember",
+          "visibility": "visible",
+          "center_x_percent": 15.27,
+          "center_y_percent": 39.54,
+          "bbox_width_percent": 30.55,
+          "bbox_height_percent": 27.78,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactorySouthFacade, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 98.59,
+          "center_y_percent": 36.49,
+          "bbox_width_percent": 2.83,
+          "bbox_height_percent": 50.49,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WeldedGate, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 25.17,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 50.34,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueMember, left of MainRollerDoor, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 45.65,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.34,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueMember, left of MainRollerDoor, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 70.3,
+          "center_y_percent": 25.23,
+          "bbox_width_percent": 59.4,
+          "bbox_height_percent": 50.45,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of WeldedGate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 04 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 71.98,
+          "center_y_percent": 38.08,
+          "bbox_width_percent": 56.05,
+          "bbox_height_percent": 24.88,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MainRollerDoor, left of Suqingci, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactorySouthFacade covers 100x50 percent at frame 50/25. Left to right: QueueMember, FactorySouthFacade, FactoryYardGround, MainRollerDoor, WeldedGate."
+    },
+    {
+      "time_seconds": 4.97,
+      "source_frame": "D14_shots/ep09_shot04/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.62m to 29.04m across 6 layers; nearest is Suqingci, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (1.70, 9.06, 0.65) on a 35.0mm lens, frame 120 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR QueueMember",
+          "visibility": "visible",
+          "center_x_percent": 15.27,
+          "center_y_percent": 39.54,
+          "bbox_width_percent": 30.55,
+          "bbox_height_percent": 27.78,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactorySouthFacade, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 98.59,
+          "center_y_percent": 36.49,
+          "bbox_width_percent": 2.83,
+          "bbox_height_percent": 50.49,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WeldedGate, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 25.17,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 50.34,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueMember, left of MainRollerDoor, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 45.65,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.34,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueMember, left of MainRollerDoor, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 70.3,
+          "center_y_percent": 25.23,
+          "bbox_width_percent": 59.4,
+          "bbox_height_percent": 50.45,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of WeldedGate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 04 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 71.98,
+          "center_y_percent": 38.08,
+          "bbox_width_percent": 56.05,
+          "bbox_height_percent": 24.88,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MainRollerDoor, left of Suqingci, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactorySouthFacade covers 100x50 percent at frame 50/25. Left to right: QueueMember, FactorySouthFacade, FactoryYardGround, MainRollerDoor, WeldedGate."
+    },
+    {
+      "time_seconds": 5.964,
+      "source_frame": "D14_shots/ep09_shot04/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.62m to 29.04m across 6 layers; nearest is Suqingci, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (1.70, 9.06, 0.65) on a 35.0mm lens, frame 144 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR QueueMember",
+          "visibility": "visible",
+          "center_x_percent": 15.27,
+          "center_y_percent": 39.54,
+          "bbox_width_percent": 30.55,
+          "bbox_height_percent": 27.78,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactorySouthFacade, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 98.59,
+          "center_y_percent": 36.49,
+          "bbox_width_percent": 2.83,
+          "bbox_height_percent": 50.49,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WeldedGate, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 25.17,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 50.34,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueMember, left of MainRollerDoor, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 45.65,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.34,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueMember, left of MainRollerDoor, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 70.3,
+          "center_y_percent": 25.23,
+          "bbox_width_percent": 59.4,
+          "bbox_height_percent": 50.45,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of WeldedGate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 04 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 71.98,
+          "center_y_percent": 38.08,
+          "bbox_width_percent": 56.05,
+          "bbox_height_percent": 24.88,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MainRollerDoor, left of Suqingci, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactorySouthFacade covers 100x50 percent at frame 50/25. Left to right: QueueMember, FactorySouthFacade, FactoryYardGround, MainRollerDoor, WeldedGate."
+    },
+    {
+      "time_seconds": 6.958,
+      "source_frame": "D14_shots/ep09_shot04/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 3.62m to 29.04m across 6 layers; nearest is Suqingci, furthest is FactoryYardGround"
+      },
+      "camera_relation": "camera at (1.70, 9.06, 0.65) on a 35.0mm lens, frame 168 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR QueueMember",
+          "visibility": "visible",
+          "center_x_percent": 15.27,
+          "center_y_percent": 39.54,
+          "bbox_width_percent": 30.55,
+          "bbox_height_percent": 27.78,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactorySouthFacade, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 98.59,
+          "center_y_percent": 36.49,
+          "bbox_width_percent": 2.83,
+          "bbox_height_percent": 50.49,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of WeldedGate, behind all nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 25.17,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 50.34,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueMember, left of MainRollerDoor, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 ENV B-1",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 45.65,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 0.34,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of QueueMember, left of MainRollerDoor, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 70.3,
+          "center_y_percent": 25.23,
+          "bbox_width_percent": 59.4,
+          "bbox_height_percent": 50.45,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of WeldedGate, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O014",
+          "entity_label": "Entity 04 PROP B-1",
+          "visibility": "visible",
+          "center_x_percent": 71.98,
+          "center_y_percent": 38.08,
+          "bbox_width_percent": 56.05,
+          "bbox_height_percent": 24.88,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of MainRollerDoor, left of Suqingci, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "6 visible instances. Dominant FactorySouthFacade covers 100x50 percent at frame 50/25. Left to right: QueueMember, FactorySouthFacade, FactoryYardGround, MainRollerDoor, WeldedGate."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

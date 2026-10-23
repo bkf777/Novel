@@ -1,0 +1,47 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O004>,I3=<O007>,I4=<O008>,I5=<O010>,I6=<O011>.
+<Entity 01 CHAR Yehongyi>=E1[articulated/primary/articulation] members=I1;n=1;src=female fighter character blockout in…; final=female fighter character blockout in…; finish=real skin with pores and fine hair, fabric with real…; style=world_style_unit_contract.
+<Entity 02 ENV B-13>=E2[environment/context/static] members=I2;n=1;src=B-13 built environment shell…; final=B-13 built environment shell enclosing…; finish=worn cement, oxidised steel and sheet metal with…; style=world_style_unit_contract.
+<Entity 03 PROP B-13>=E3[rigid/context/static] members=I3-I6;n=4;src=B-13 set pieces and fittings…; final=B-13 set pieces and fittings: FlagCloth…; finish=utilitarian material with visible weight, thickness…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2;1:1;n=1.
+E3:I3-I6;1:1;n=4.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global… | materials=real skin with pores and slight oil sheen… | environment=a brick street cut by wheel ruts in front… | props=functional utilitarian tooling with real… | light=one cold overhead key over the steel table….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E1:articulation | Act=lowers from a standing posture into a crouch or… | Keep=stay inside the source blockout bounds for the full shot | Ban=do not replace, duplicate or remove this instance.
+[STATIC LOCK] E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_7401@0.000-0.700s I1,I4,I6: rel=the fighter presses the pole…; ban=do not close the seam and do not….
+[Shot 1] @0.000-13.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=crane;target=E3;path=camera travels from (0. 34, -3. 70, -2. 22) to (0. 34, -3…;dist=increase;azi=stable;elev=increase;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the…;ban=do not hold a fixed high angle… | Act=the fighter presses the flagpole down into the seam of the threshold stone, the… | Layout=6 visible instances… | Light=one cold overhead key over the steel table with….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 3. 69m to 12…;Cam=camera at (0. 34, -3. 70, -2…;Lay=6 visible instances… V=I2:50/91/100/19,I3:78/0/44/1,I4:92/47/15/37,I5:63/49/19/38,I6:29/56/58/48 D=I1:v/85/47/30/49/o:upright body proxy…/m:stationary across this…/r:right of FlagCloth…
+@1.620s F=medium;Comp=depth spans 3. 66m to 12…;Cam=camera at (0. 34, -3. 70, -2…;Lay=6 visible instances… V=I2:50/91/100/18,I3:78/0/44/0,I4:92/47/15/38,I5:63/49/19/38,I6:29/56/58/48 D=I1:v/85/47/30/48/o:upright body proxy…/m:stationary across this…/r:right of FlagCloth…
+@3.240s F=medium;Comp=depth spans 3. 58m to 12…;Cam=camera at (0. 34, -3. 70, -2…;Lay=5 visible instances… V=I2:50/91/100/18,I4:93/47/15/38,I5:63/49/19/39,I6:29/58/58/47 O=I3 D=I1:v/85/48/30/46/o:upright body proxy…/m:stationary across this…/r:right of SteelGatePost…
+@4.859s F=medium;Comp=depth spans 3. 47m to 12…;Cam=camera at (0. 34, -3. 70, -1…;Lay=5 visible instances… V=I2:50/92/100/17,I4:93/47/14/40,I5:64/49/20/41,I6:29/60/58/45 O=I3 D=I1:v/85/49/29/46/o:upright body proxy…/m:stationary across this…/r:right of SteelGatePost…
+@6.479s F=medium;Comp=depth spans 3. 36m to 12…;Cam=camera at (0. 34, -3. 70, -1…;Lay=5 visible instances… V=I2:50/92/100/15,I4:94/46/13/41,I5:64/49/20/42,I6:29/63/58/43 O=I3 D=I1:v/86/51/28/45/o:upright body proxy…/m:stationary across this…/r:right of SteelGatePost…
+@8.099s F=medium;Comp=depth spans 3. 26m to 12…;Cam=camera at (0. 34, -3. 70, -1…;Lay=5 visible instances… V=I2:50/93/100/13,I4:94/46/12/43,I5:64/49/21/44,I6:29/67/58/40 O=I3 D=I1:v/86/53/27/45/o:upright body proxy…/m:stationary across this…/r:right of SteelGatePost…
+@9.719s F=medium;Comp=depth spans 3. 17m to 12…;Cam=camera at (0. 34, -3. 70, -1…;Lay=5 visible instances… V=I2:50/94/100/12,I4:94/46/11/44,I5:65/49/21/45,I6:29/71/58/36 O=I3 D=I1:v/87/54/26/47/o:upright body proxy…/m:stationary across this…/r:right of SteelGatePost…
+@11.339s F=medium;Comp=depth spans 3. 12m to 12…;Cam=camera at (0. 34, -3. 70, -1…;Lay=5 visible instances… V=I2:50/95/100/11,I4:95/46/11/45,I5:65/50/21/46,I6:29/74/59/34 O=I3 D=I1:v/87/55/26/49/o:upright body proxy…/m:stationary across this…/r:right of SteelGatePost…
+@12.958s F=medium;Comp=depth spans 3. 10m to 12…;Cam=camera at (0. 34, -3. 70, -1…;Lay=5 visible instances… V=I2:50/95/100/10,I4:95/47/10/46,I5:65/50/21/47,I6:29/76/59/32 O=I3 D=I1:v/88/54/25/50/o:upright body proxy…/m:stationary across this…/r:right of SteelGatePost…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+the pole settling into the stone seam with cloth opening…
+
+non_diegetic_music:
+N/A

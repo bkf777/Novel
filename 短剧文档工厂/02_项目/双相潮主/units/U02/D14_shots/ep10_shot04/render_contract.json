@@ -1,0 +1,814 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep10_shot04/preview_video.mp4",
+    "duration": 8.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 192,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O002",
+      "source_name": "B-2_CHAR_Suqingci_02",
+      "source_type": "MESH",
+      "root_name": "B-2_CHAR_Suqingci_02",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=B-2_CHAR_Suqingci_02; type=MESH; root=B-2_CHAR_Suqingci_02; dimensions=0.420,0.340,1.110",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O007",
+      "source_name": "B-2_EXT_FactorySouthFacade",
+      "source_type": "MESH",
+      "root_name": "B-2_EXT_FactorySouthFacade",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=B-2_EXT_FactorySouthFacade; type=MESH; root=B-2_EXT_FactorySouthFacade; dimensions=30.000,0.250,12.000",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O008",
+      "source_name": "B-2_EXT_FactoryYardGround",
+      "source_type": "MESH",
+      "root_name": "B-2_EXT_FactoryYardGround",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=B-2_EXT_FactoryYardGround; type=MESH; root=B-2_EXT_FactoryYardGround; dimensions=15.341,18.750,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O011",
+      "source_name": "B-2_PROP_DataTablet_01",
+      "source_type": "MESH",
+      "root_name": "B-2_PROP_DataTablet_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=B-2_PROP_DataTablet_01; type=MESH; root=B-2_PROP_DataTablet_01; dimensions=0.300,0.020,0.220",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O012",
+      "source_name": "B-2_PROP_SteelWorkbench_01",
+      "source_type": "MESH",
+      "root_name": "B-2_PROP_SteelWorkbench_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=B-2_PROP_SteelWorkbench_01; type=MESH; root=B-2_PROP_SteelWorkbench_01; dimensions=2.000,1.200,0.750",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR Suqingci",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O002"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "female scientist character blockout in white lab coat",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "locomotion",
+        "action": "travels 0.35m across the set during the shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV B-2",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O007",
+        "O008"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-2 built environment shell enclosing the set: FactorySouthFacade, FactoryYardGround",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 03 PROP B-2",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O011",
+        "O012"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-2 set pieces and fittings: DataTablet, SteelWorkbench",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_4001",
+      "source_instance_ids": [
+        "O002",
+        "O011"
+      ],
+      "start_seconds": 0.3,
+      "end_seconds": 1.0,
+      "relation": "the scientist crouches and picks the tablet up while the bone pattern reaches the elbow",
+      "forbidden_change": "do not shorten the pattern and do not hide the corner readout"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 8.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "none",
+        "world_path": "camera travels from (-4.52, 10.70, 1.57) to (-4.52, 10.70, 1.57) on a 85mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "近景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 近景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "the black and white bone pattern runs from the wrist bone across the forearm and climbs all the way to the elbow, the two colours surfacing flat against the skin; a readout field in one corner shows the normalisation readout at 1.0%; the scientist crouches and wipes the old conclusion off the tablet screen",
+      "layout_and_occlusion": "5 visible instances. Dominant FactoryYardGround covers 100x69 percent at frame 50/61. Left to right: FactorySouthFacade, DataTablet, Suqingci, FactoryYardGround, SteelWorkbench.",
+      "lighting_spatial_logic": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep10_shot04/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 4.09m to 14.42m across 5 layers; nearest is Suqingci, furthest is FactorySouthFacade"
+      },
+      "camera_relation": "camera at (-4.52, 10.70, 1.57) on a 85.0mm lens, frame 1 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 43.91,
+          "center_y_percent": 64.01,
+          "bbox_width_percent": 55.76,
+          "bbox_height_percent": 70.01,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, left of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 1.8,
+          "center_y_percent": 13.67,
+          "bbox_width_percent": 3.61,
+          "bbox_height_percent": 27.34,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DataTablet, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 60.62,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 69.33,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Suqingci, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 41.54,
+          "center_y_percent": 62.65,
+          "bbox_width_percent": 18.0,
+          "bbox_height_percent": 14.03,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of Suqingci, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 69.05,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 61.9,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Suqingci, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryYardGround covers 100x69 percent at frame 50/61. Left to right: FactorySouthFacade, DataTablet, Suqingci, FactoryYardGround, SteelWorkbench."
+    },
+    {
+      "time_seconds": 0.995,
+      "source_frame": "D14_shots/ep10_shot04/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 4.13m to 14.42m across 5 layers; nearest is Suqingci, furthest is FactorySouthFacade"
+      },
+      "camera_relation": "camera at (-4.52, 10.70, 1.57) on a 85.0mm lens, frame 25 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 43.27,
+          "center_y_percent": 63.36,
+          "bbox_width_percent": 55.15,
+          "bbox_height_percent": 69.23,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, left of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 1.8,
+          "center_y_percent": 13.67,
+          "bbox_width_percent": 3.61,
+          "bbox_height_percent": 27.34,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DataTablet, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 60.62,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 69.33,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Suqingci, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 41.54,
+          "center_y_percent": 62.65,
+          "bbox_width_percent": 18.0,
+          "bbox_height_percent": 14.03,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of Suqingci, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 69.05,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 61.9,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Suqingci, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryYardGround covers 100x69 percent at frame 50/61. Left to right: FactorySouthFacade, DataTablet, Suqingci, FactoryYardGround, SteelWorkbench."
+    },
+    {
+      "time_seconds": 1.99,
+      "source_frame": "D14_shots/ep10_shot04/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 4.18m to 14.42m across 5 layers; nearest is Suqingci, furthest is FactorySouthFacade"
+      },
+      "camera_relation": "camera at (-4.52, 10.70, 1.57) on a 85.0mm lens, frame 49 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 42.65,
+          "center_y_percent": 62.72,
+          "bbox_width_percent": 54.55,
+          "bbox_height_percent": 68.47,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, left of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 1.8,
+          "center_y_percent": 13.67,
+          "bbox_width_percent": 3.61,
+          "bbox_height_percent": 27.34,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DataTablet, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 60.62,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 69.33,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Suqingci, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 41.54,
+          "center_y_percent": 62.65,
+          "bbox_width_percent": 18.0,
+          "bbox_height_percent": 14.03,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of Suqingci, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 69.05,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 61.9,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Suqingci, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryYardGround covers 100x69 percent at frame 50/61. Left to right: FactorySouthFacade, DataTablet, Suqingci, FactoryYardGround, SteelWorkbench."
+    },
+    {
+      "time_seconds": 2.984,
+      "source_frame": "D14_shots/ep10_shot04/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 4.22m to 14.42m across 5 layers; nearest is Suqingci, furthest is FactorySouthFacade"
+      },
+      "camera_relation": "camera at (-4.52, 10.70, 1.57) on a 85.0mm lens, frame 73 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 42.04,
+          "center_y_percent": 62.1,
+          "bbox_width_percent": 53.97,
+          "bbox_height_percent": 67.72,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "drifting frame left in this interval",
+          "spatial_relations": "right of DataTablet, left of FactoryYardGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 1.8,
+          "center_y_percent": 13.67,
+          "bbox_width_percent": 3.61,
+          "bbox_height_percent": 27.34,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of DataTablet, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 60.62,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 69.33,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Suqingci, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 41.54,
+          "center_y_percent": 62.65,
+          "bbox_width_percent": 18.0,
+          "bbox_height_percent": 14.03,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of Suqingci, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 69.05,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 61.9,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Suqingci, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryYardGround covers 100x69 percent at frame 50/61. Left to right: FactorySouthFacade, DataTablet, Suqingci, FactoryYardGround, SteelWorkbench."
+    },
+    {
+      "time_seconds": 3.979,
+      "source_frame": "D14_shots/ep10_shot04/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 4.26m to 14.42m across 5 layers; nearest is Suqingci, furthest is FactorySouthFacade"
+      },
+      "camera_relation": "camera at (-4.52, 10.70, 1.57) on a 85.0mm lens, frame 96 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 41.46,
+          "center_y_percent": 61.51,
+          "bbox_width_percent": 53.41,
+          "bbox_height_percent": 67.02,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "drifting frame left in this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of DataTablet, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 1.8,
+          "center_y_percent": 13.67,
+          "bbox_width_percent": 3.61,
+          "bbox_height_percent": 27.34,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Suqingci, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 60.62,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 69.33,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 41.54,
+          "center_y_percent": 62.65,
+          "bbox_width_percent": 18.0,
+          "bbox_height_percent": 14.03,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Suqingci, left of FactoryYardGround, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 69.05,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 61.9,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryYardGround covers 100x69 percent at frame 50/61. Left to right: FactorySouthFacade, Suqingci, DataTablet, FactoryYardGround, SteelWorkbench."
+    },
+    {
+      "time_seconds": 4.974,
+      "source_frame": "D14_shots/ep10_shot04/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 4.30m to 14.42m across 5 layers; nearest is Suqingci, furthest is FactorySouthFacade"
+      },
+      "camera_relation": "camera at (-4.52, 10.70, 1.57) on a 85.0mm lens, frame 120 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 40.88,
+          "center_y_percent": 60.91,
+          "bbox_width_percent": 52.85,
+          "bbox_height_percent": 66.31,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "drifting frame left in this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of DataTablet, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 1.8,
+          "center_y_percent": 13.67,
+          "bbox_width_percent": 3.61,
+          "bbox_height_percent": 27.34,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Suqingci, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 60.62,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 69.33,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 41.54,
+          "center_y_percent": 62.65,
+          "bbox_width_percent": 18.0,
+          "bbox_height_percent": 14.03,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Suqingci, left of FactoryYardGround, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 69.05,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 61.9,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryYardGround covers 100x69 percent at frame 50/61. Left to right: FactorySouthFacade, Suqingci, DataTablet, FactoryYardGround, SteelWorkbench."
+    },
+    {
+      "time_seconds": 5.969,
+      "source_frame": "D14_shots/ep10_shot04/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 4.35m to 14.42m across 5 layers; nearest is Suqingci, furthest is FactorySouthFacade"
+      },
+      "camera_relation": "camera at (-4.52, 10.70, 1.57) on a 85.0mm lens, frame 144 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 40.3,
+          "center_y_percent": 60.33,
+          "bbox_width_percent": 52.3,
+          "bbox_height_percent": 65.61,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "drifting frame left in this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of DataTablet, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 1.8,
+          "center_y_percent": 13.67,
+          "bbox_width_percent": 3.61,
+          "bbox_height_percent": 27.34,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Suqingci, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 60.62,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 69.33,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 41.54,
+          "center_y_percent": 62.65,
+          "bbox_width_percent": 18.0,
+          "bbox_height_percent": 14.03,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Suqingci, left of FactoryYardGround, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 69.05,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 61.9,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryYardGround covers 100x69 percent at frame 50/61. Left to right: FactorySouthFacade, Suqingci, DataTablet, FactoryYardGround, SteelWorkbench."
+    },
+    {
+      "time_seconds": 6.964,
+      "source_frame": "D14_shots/ep10_shot04/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 4.39m to 14.42m across 5 layers; nearest is Suqingci, furthest is FactorySouthFacade"
+      },
+      "camera_relation": "camera at (-4.52, 10.70, 1.57) on a 85.0mm lens, frame 168 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 39.74,
+          "center_y_percent": 59.75,
+          "bbox_width_percent": 51.76,
+          "bbox_height_percent": 64.92,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "drifting frame left in this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of DataTablet, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 1.8,
+          "center_y_percent": 13.67,
+          "bbox_width_percent": 3.61,
+          "bbox_height_percent": 27.34,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Suqingci, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 60.62,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 69.33,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 41.54,
+          "center_y_percent": 62.65,
+          "bbox_width_percent": 18.0,
+          "bbox_height_percent": 14.03,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Suqingci, left of FactoryYardGround, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 69.05,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 61.9,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryYardGround covers 100x69 percent at frame 50/61. Left to right: FactorySouthFacade, Suqingci, DataTablet, FactoryYardGround, SteelWorkbench."
+    },
+    {
+      "time_seconds": 7.958,
+      "source_frame": "D14_shots/ep10_shot04/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "close",
+        "frame_balance_and_depth": "depth spans 4.43m to 14.42m across 5 layers; nearest is Suqingci, furthest is FactorySouthFacade"
+      },
+      "camera_relation": "camera at (-4.52, 10.70, 1.57) on a 85.0mm lens, frame 192 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 01 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 39.19,
+          "center_y_percent": 59.19,
+          "bbox_width_percent": 51.23,
+          "bbox_height_percent": 64.25,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactorySouthFacade, left of DataTablet, behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 1.8,
+          "center_y_percent": 13.67,
+          "bbox_width_percent": 3.61,
+          "bbox_height_percent": 27.34,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Suqingci, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 60.62,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 69.33,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 41.54,
+          "center_y_percent": 62.65,
+          "bbox_width_percent": 18.0,
+          "bbox_height_percent": 14.03,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Suqingci, left of FactoryYardGround, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 03 PROP B-2",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 69.05,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 61.9,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "5 visible instances. Dominant FactoryYardGround covers 100x69 percent at frame 50/61. Left to right: FactorySouthFacade, Suqingci, DataTablet, FactoryYardGround, SteelWorkbench."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

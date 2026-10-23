@@ -1,0 +1,39 @@
+{
+  "schema_version": 6,
+  "watched_references": true,
+  "style_source_summary": "World style is taken from the shared unit style contract: cold industrial post-collapse realism for humans and props with a separated stylisation layer for bone pattern, twin flame, grey fog and altered bodies. No external appearance reference image was supplied for this unit, so no reference route is registered and every entity is styled from the world style alone.",
+  "reference_routes": [],
+  "global_style_bible": {
+    "world_and_era": "post-collapse industrial city ruins; a walled factory district turned into a survival compound and the bone market street running beside it; ration queues, pinned duty rosters and projected notices govern daily life; human survivors and ceramic-pale altered beings share the same cold daylight and fog; no readable signage and no modern branding",
+    "visual_language": "grounded industrial realism for humans and props with a separated stylisation layer for the bone pattern, the black and white twin flame, white smoke, fire heads and projected interface text; stylised elements never spill across into the human layer and every body surface stays intact",
+    "palette": "grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D with detail kept in the darks, plaster white #C6C2B8 for ceramic shells, pure-fire white #F5F7F8 and black #0B0B0C for the twin colour bone pattern, weld and fire orange #E07B39 as the only warm accent, dark red #7A2027 reserved for the fighter's outfit and never for any liquid",
+    "material_language": "real skin with pores and slight oil sheen, matte technical fabric with wear and dust, oxidised steel with dull reflections, cold ceramic shells on altered bodies; every surface stays intact and no red liquid appears anywhere in the frame",
+    "environment_design": "cement yard plates cut by fire lines, riveted steel frames and steel racks, sheet metal and plyboard walls carrying pinned drawings and duty rosters, a single cold ceiling tube over the purification bench, market stall rows under a led board along a fog covered street, and one unlit stretch of road outside the factory gate",
+    "prop_design": "functional utilitarian tooling with real weight and thickness: welding rigs, steel racks, extraction lines and press slots, frosted energy blocks, duty rosters, nailed wooden boards, written notices, sealed safes and an unlit shadow blade; all carry visible use marks",
+    "lighting_and_atmosphere": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+  },
+  "entity_appearances": {
+    "Entity 01 CHAR Yehongyi": {
+      "semantic_target": "female fighter character blockout in dark red outfit",
+      "final_materials_and_detail": "real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings, contact shadow under the body",
+      "style_route": "world_style_unit_contract",
+      "source_visual_policy": "spatiotemporal_evidence_only",
+      "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+      "source_unsupported_additions": []
+    },
+    "Entity 02 ENV B-10": {
+      "semantic_target": "B-10 built environment shell enclosing the set: FactoryHallShell, FactoryYardGround, DarkJunction",
+      "final_materials_and_detail": "worn cement, oxidised steel and sheet metal with cold grey reflections, shadow detail kept readable in the dark areas",
+      "style_route": "world_style_unit_contract",
+      "source_visual_policy": "spatiotemporal_evidence_only",
+      "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+      "source_unsupported_additions": []
+    }
+  },
+  "blockout_rejection": {
+    "all_visible_entities_must_be_finished": true,
+    "forbidden_final_look": "source construction proxy, default viewport material, incomplete proxy geometry, or any visibly unart-directed placeholder",
+    "ambiguous_proxy_fallback": "Choose a plausible finished World Style design inside the exact source bounds; never leave it semantically or materially generic."
+  },
+  "sound": "distant fire bursts with a light metallic slide of a blade drawn half and pushed back"
+}

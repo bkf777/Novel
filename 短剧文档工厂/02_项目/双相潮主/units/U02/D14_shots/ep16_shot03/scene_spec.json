@@ -1,0 +1,62 @@
+{
+  "scene_code": "B-10",
+  "size_m": [
+    36.0,
+    48.0,
+    1.73
+  ],
+  "ground_center_m": [
+    -10.333,
+    -9.45
+  ],
+  "floor_z": 0.0,
+  "props": [
+    {
+      "name": "B-10_CHAR_QueueMember_03",
+      "kind": "human_proxy",
+      "center_m": [
+        -15.0,
+        -14.6,
+        0.0
+      ],
+      "size_m": [
+        0.42,
+        0.32,
+        1.73
+      ],
+      "role": "primary"
+    },
+    {
+      "name": "B-10_EXT_FactoryYardGround",
+      "kind": "box",
+      "center_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size_m": [
+        36.0,
+        48.0,
+        0.1
+      ],
+      "role": "set"
+    },
+    {
+      "name": "B-10_PROP_FireLine_01.001",
+      "kind": "box",
+      "center_m": [
+        -16.0,
+        -13.75,
+        0.07
+      ],
+      "size_m": [
+        4.4,
+        0.6,
+        0.14
+      ],
+      "role": "set"
+    }
+  ],
+  "walls": [],
+  "wall_thickness_m": 0.15
+}

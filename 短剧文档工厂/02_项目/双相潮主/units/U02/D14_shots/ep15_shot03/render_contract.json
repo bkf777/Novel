@@ -1,0 +1,428 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep15_shot03/preview_video.mp4",
+    "duration": 11.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 264,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "B-9_CHAR_Suqingci_01",
+      "source_type": "MESH",
+      "root_name": "B-9_CHAR_Suqingci_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 10.958,
+      "identity_cues": "name=B-9_CHAR_Suqingci_01; type=MESH; root=B-9_CHAR_Suqingci_01; dimensions=0.100,0.100,0.300",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O009",
+      "source_name": "B-9_PROP_DataTablet_01",
+      "source_type": "MESH",
+      "root_name": "B-9_PROP_DataTablet_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 10.958,
+      "identity_cues": "name=B-9_PROP_DataTablet_01; type=MESH; root=B-9_PROP_DataTablet_01; dimensions=0.400,0.030,0.300",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR Suqingci",
+      "entity_class": "articulated",
+      "importance": "context",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "female scientist character blockout in white lab coat",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 PROP B-9",
+      "entity_class": "rigid",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O009"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-9 set pieces and fittings: DataTablet",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 11.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 02 PROP B-9",
+        "world_path": "camera travels from (-5.00, 13.54, 1.33) to (-5.00, 13.54, 1.33) on a 50mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "特写 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 特写 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "the data tablet is supported in the palm of the scientist and the spectrum on its screen jumps with uneven noise, the peaks spaced irregularly; her fingertips are reflected along the edge of the screen and press on the rim of the board",
+      "layout_and_occlusion": "2 visible instances. Dominant DataTablet covers 100x69 percent at frame 50/34. Left to right: DataTablet, Suqingci.",
+      "lighting_spatial_logic": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep15_shot03/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 0.53m to 0.55m across 2 layers; nearest is DataTablet, furthest is Suqingci"
+      },
+      "camera_relation": "camera at (-5.00, 13.54, 1.33) on a 50.0mm lens, frame 1 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 50.4,
+          "center_y_percent": 43.97,
+          "bbox_width_percent": 74.81,
+          "bbox_height_percent": 82.27,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 34.5,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.99,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Suqingci, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant DataTablet covers 100x69 percent at frame 50/34. Left to right: DataTablet, Suqingci."
+    },
+    {
+      "time_seconds": 1.37,
+      "source_frame": "D14_shots/ep15_shot03/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 0.53m to 0.55m across 2 layers; nearest is DataTablet, furthest is Suqingci"
+      },
+      "camera_relation": "camera at (-5.00, 13.54, 1.33) on a 50.0mm lens, frame 34 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 50.4,
+          "center_y_percent": 43.97,
+          "bbox_width_percent": 74.81,
+          "bbox_height_percent": 82.27,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 34.5,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.99,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Suqingci, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant DataTablet covers 100x69 percent at frame 50/34. Left to right: DataTablet, Suqingci."
+    },
+    {
+      "time_seconds": 2.74,
+      "source_frame": "D14_shots/ep15_shot03/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 0.53m to 0.55m across 2 layers; nearest is DataTablet, furthest is Suqingci"
+      },
+      "camera_relation": "camera at (-5.00, 13.54, 1.33) on a 50.0mm lens, frame 67 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 50.4,
+          "center_y_percent": 43.97,
+          "bbox_width_percent": 74.81,
+          "bbox_height_percent": 82.27,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 34.5,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.99,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Suqingci, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant DataTablet covers 100x69 percent at frame 50/34. Left to right: DataTablet, Suqingci."
+    },
+    {
+      "time_seconds": 4.109,
+      "source_frame": "D14_shots/ep15_shot03/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 0.53m to 0.55m across 2 layers; nearest is DataTablet, furthest is Suqingci"
+      },
+      "camera_relation": "camera at (-5.00, 13.54, 1.33) on a 50.0mm lens, frame 100 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 50.4,
+          "center_y_percent": 43.97,
+          "bbox_width_percent": 74.81,
+          "bbox_height_percent": 82.27,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 34.5,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.99,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Suqingci, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant DataTablet covers 100x69 percent at frame 50/34. Left to right: DataTablet, Suqingci."
+    },
+    {
+      "time_seconds": 5.479,
+      "source_frame": "D14_shots/ep15_shot03/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 0.53m to 0.55m across 2 layers; nearest is DataTablet, furthest is Suqingci"
+      },
+      "camera_relation": "camera at (-5.00, 13.54, 1.33) on a 50.0mm lens, frame 132 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 50.4,
+          "center_y_percent": 43.97,
+          "bbox_width_percent": 74.81,
+          "bbox_height_percent": 82.27,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 34.5,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.99,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Suqingci, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant DataTablet covers 100x69 percent at frame 50/34. Left to right: DataTablet, Suqingci."
+    },
+    {
+      "time_seconds": 6.849,
+      "source_frame": "D14_shots/ep15_shot03/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 0.53m to 0.55m across 2 layers; nearest is DataTablet, furthest is Suqingci"
+      },
+      "camera_relation": "camera at (-5.00, 13.54, 1.33) on a 50.0mm lens, frame 165 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 50.4,
+          "center_y_percent": 43.97,
+          "bbox_width_percent": 74.81,
+          "bbox_height_percent": 82.27,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 34.5,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.99,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Suqingci, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant DataTablet covers 100x69 percent at frame 50/34. Left to right: DataTablet, Suqingci."
+    },
+    {
+      "time_seconds": 8.219,
+      "source_frame": "D14_shots/ep15_shot03/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 0.53m to 0.55m across 2 layers; nearest is DataTablet, furthest is Suqingci"
+      },
+      "camera_relation": "camera at (-5.00, 13.54, 1.33) on a 50.0mm lens, frame 198 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 50.4,
+          "center_y_percent": 43.97,
+          "bbox_width_percent": 74.81,
+          "bbox_height_percent": 82.27,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 34.5,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.99,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Suqingci, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant DataTablet covers 100x69 percent at frame 50/34. Left to right: DataTablet, Suqingci."
+    },
+    {
+      "time_seconds": 9.589,
+      "source_frame": "D14_shots/ep15_shot03/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 0.53m to 0.55m across 2 layers; nearest is DataTablet, furthest is Suqingci"
+      },
+      "camera_relation": "camera at (-5.00, 13.54, 1.33) on a 50.0mm lens, frame 231 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 50.4,
+          "center_y_percent": 43.97,
+          "bbox_width_percent": 74.81,
+          "bbox_height_percent": 82.27,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 34.5,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.99,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Suqingci, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant DataTablet covers 100x69 percent at frame 50/34. Left to right: DataTablet, Suqingci."
+    },
+    {
+      "time_seconds": 10.958,
+      "source_frame": "D14_shots/ep15_shot03/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "extreme_close",
+        "frame_balance_and_depth": "depth spans 0.53m to 0.55m across 2 layers; nearest is DataTablet, furthest is Suqingci"
+      },
+      "camera_relation": "camera at (-5.00, 13.54, 1.33) on a 50.0mm lens, frame 264 of 264",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Suqingci",
+          "visibility": "visible",
+          "center_x_percent": 50.4,
+          "center_y_percent": 43.97,
+          "bbox_width_percent": 74.81,
+          "bbox_height_percent": 82.27,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of DataTablet, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 34.5,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 68.99,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Suqingci, behind all nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant DataTablet covers 100x69 percent at frame 50/34. Left to right: DataTablet, Suqingci."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

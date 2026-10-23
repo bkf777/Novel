@@ -1,0 +1,44 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated….
+[INSTANCE REGISTRY] I1=<O003>,I2=<O006>.
+<Entity 01 CHAR PassingPatient>=E1[articulated/primary/static] members=I1;n=1;src=passing patient blockout walking around the overdue ones; final=passing patient blockout walking around the overdue ones; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal…; style=world_style_unit_contract.
+<Entity 02 ENV B-15>=E2[environment/context/static] members=I2;n=1;src=B-15 built environment shell enclosing the set: StreetGround; final=B-15 built environment shell enclosing the set: StreetGround; finish=worn cement, oxidised steel and sheet metal with cold grey reflections, shadow…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D… | materials=real skin with pores and slight oil sheen, matte technical fabric… | environment=a brick street cut by wheel ruts in front of a single gate with… | props=functional utilitarian tooling with real weight and thickness… | light=one cold overhead key over the steel table with shadow detail….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_8201@0.000-1.000s I1: rel=the late ones slow down and the others walk…; ban=do not give an altered figure a face and do not let the….
+[Shot 1] @0.000-13.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=none;path=camera travels from (4. 66, -1. 95, 2. 20) to (4. 66, -1. 95, 2…;dist=stable;azi=stable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the frame centre band with head…;ban=do not add any camera move, zoom or handheld shake… | Act=the people who were treated late slow down and the grey patch spreads outward from its edge while the others on the street walk… | Layout=2 visible instances. Dominant PassingPatient covers 62x48 percent at frame 69/76… | Light=one cold overhead key over the steel table with shadow detail retained….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 1. 57m to 20. 84m across 2 layers…;Cam=camera at (4. 66, -1. 95, 2. 20) on a 50…;Lay=2 visible instances… V=I2:51/45/0/1 D=I1:v/69/76/62/48/o:compact body proxy, crouched…/m:stationary across this interval/r:right of StreetGround, behind all…
+@1.620s F=medium;Comp=depth spans 1. 57m to 20. 84m across 2 layers…;Cam=camera at (4. 66, -1. 95, 2. 20) on a 50…;Lay=2 visible instances… V=I2:51/45/0/1 D=I1:v/69/76/62/48/o:compact body proxy, crouched…/m:stationary across this interval/r:right of StreetGround, behind all…
+@3.240s F=medium;Comp=depth spans 1. 57m to 20. 84m across 2 layers…;Cam=camera at (4. 66, -1. 95, 2. 20) on a 50…;Lay=2 visible instances… V=I2:51/45/0/1 D=I1:v/69/76/62/48/o:compact body proxy, crouched…/m:stationary across this interval/r:right of StreetGround, behind all…
+@4.859s F=medium;Comp=depth spans 1. 57m to 20. 84m across 2 layers…;Cam=camera at (4. 66, -1. 95, 2. 20) on a 50…;Lay=2 visible instances… V=I2:51/45/0/1 D=I1:v/69/76/62/48/o:compact body proxy, crouched…/m:stationary across this interval/r:right of StreetGround, behind all…
+@6.479s F=medium;Comp=depth spans 1. 57m to 20. 84m across 2 layers…;Cam=camera at (4. 66, -1. 95, 2. 20) on a 50…;Lay=2 visible instances… V=I2:51/45/0/1 D=I1:v/69/76/62/48/o:compact body proxy, crouched…/m:stationary across this interval/r:right of StreetGround, behind all…
+@8.099s F=medium;Comp=depth spans 1. 57m to 20. 84m across 2 layers…;Cam=camera at (4. 66, -1. 95, 2. 20) on a 50…;Lay=2 visible instances… V=I2:51/45/0/1 D=I1:v/69/76/62/48/o:compact body proxy, crouched…/m:stationary across this interval/r:right of StreetGround, behind all…
+@9.719s F=medium;Comp=depth spans 1. 57m to 20. 84m across 2 layers…;Cam=camera at (4. 66, -1. 95, 2. 20) on a 50…;Lay=2 visible instances… V=I2:51/45/0/1 D=I1:v/69/76/62/48/o:compact body proxy, crouched…/m:stationary across this interval/r:right of StreetGround, behind all…
+@11.339s F=medium;Comp=depth spans 1. 57m to 20. 84m across 2 layers…;Cam=camera at (4. 66, -1. 95, 2. 20) on a 50…;Lay=2 visible instances… V=I2:51/45/0/1 D=I1:v/69/76/62/48/o:compact body proxy, crouched…/m:stationary across this interval/r:right of StreetGround, behind all…
+@12.958s F=medium;Comp=depth spans 1. 57m to 20. 84m across 2 layers…;Cam=camera at (4. 66, -1. 95, 2. 20) on a 50…;Lay=2 visible instances… V=I2:51/45/0/1 D=I1:v/69/76/62/48/o:compact body proxy, crouched…/m:stationary across this interval/r:right of StreetGround, behind all…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+slow dragging footsteps with the others stepping around them
+
+non_diegetic_music:
+N/A

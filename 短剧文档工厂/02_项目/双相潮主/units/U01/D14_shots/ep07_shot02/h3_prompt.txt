@@ -1,0 +1,58 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial…; grounded industrial….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O002>,I3=<O003>,I4=<O004>,I5=<O005>,I6=<O006>,I7=<O007>,I8=<O008>,I9=<O009>.
+<Entity 01 CHAR Luchen>=E1[articulated/context/static] members=I1;n=1;src=male protagonis…; final=male protagonist…; finish=real skin with pores…; style=world_style_u….
+<Entity 02 CHAR LuchenHand>=E2[articulated/primary/locomotion] members=I2;n=1;src=protagonist rai…; final=protagonist raise…; finish=real skin with pores…; style=world_style_u….
+<Entity 03 CHAR Yehongyi>=E3[articulated/context/static] members=I3;n=1;src=female captive…; final=female captive…; finish=real skin with pores…; style=world_style_u….
+<Entity 04 ENV A-8>=E4[environment/context/static] members=I4,I8;n=2;src=A-8 built envir…; final=A-8 built environ…; finish=worn cement, oxidised…; style=world_style_u….
+<Entity 05 FX AshPatch>=E5[effect/context/static] members=I5;n=1;src=grey white patc…; final=grey white patch…; finish=stylised energy…; style=world_style_u….
+<Entity 06 FX TwinFlame>=E6[effect/context/static] members=I6;n=1;src=black and white…; final=black and white…; finish=stylised energy…; style=world_style_u….
+<Entity 07 FX WhiteSmoke>=E7[effect/context/effect_evolution] members=I7;n=1;src=white smoke ris…; final=white smoke risin…; finish=stylised energy…; style=world_style_u….
+<Entity 08 PROP A-8>=E8[rigid/context/static] members=I9;n=1;src=A-8 set pieces…; final=A-8 set pieces…; finish=utilitarian material…; style=world_style_u….
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2;1:1;n=1.
+E3:I3;1:1;n=1.
+E4:I4,I8;1:1;n=2.
+E5:I5;1:1;n=1.
+E6:I6;1:1;n=1.
+E7:I7;1:1;n=1.
+E8:I9;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey… | materials=real skin with pores and… | environment=cement yard plates cut by… | props=functional utilitarian… | light=one cold overhead key….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3,E4,E5,E6,E7,E8=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E2:locomotion | Act=travels 0… | Keep=stay inside the source… | Ban=do not replace….
+E7:effect_evolution | Act=develops and drifts… | Keep=stay inside the source… | Ban=do not replace….
+[STATIC LOCK] E1,E3,E4,E5,E6,E8 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_2601@0.000-1.000s I1,I3,I6: rel=protagonist wrist…; ban=do not break the….
+[Shot 1] @0.000-13.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E2;path=camera travels from (40…;dist=stable;azi=stable;elev=stable;lens=stable;comp=近景 framing in 9:16…;ban=do not add any camera… | Act=protagonist presses the right wrist close to her forearm, twin flame touches… | Layout=8 visible instances… | Light=one cold overhead key with….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=close;Comp=depth spans 5…;Cam=camera at (4…;Lay=8 visible in… V=I3:20/45/35/47,I4:50/69/100/62,I5:9/39/10/1,I6:5/28/10/12,I8:50/76/100/48,I9:2/55/4/2 O=I1 D=I2:v/12/39/10/13/o:uprigh…/m:stationa…/r:right of…,I7:v/6/31/7/7/o:vertic…/m:stationa…/r:right of…
+@1.620s F=close;Comp=depth spans 5…;Cam=camera at (4…;Lay=8 visible in… V=I3:20/45/35/47,I4:50/69/100/62,I5:9/39/10/1,I6:5/28/10/12,I8:50/76/100/48,I9:2/55/4/2 O=I1 D=I2:v/12/39/10/13/o:uprigh…/m:stationa…/r:right of…,I7:v/6/27/10/10/o:vertic…/m:stationa…/r:right of…
+@3.240s F=close;Comp=depth spans 5…;Cam=camera at (4…;Lay=8 visible in… V=I3:20/45/35/47,I4:50/69/100/62,I5:9/39/10/1,I6:5/28/10/12,I8:50/76/100/48,I9:2/55/4/2 O=I1 D=I2:v/12/38/10/12/o:uprigh…/m:stationa…/r:right of…,I7:v/7/23/13/13/o:vertic…/m:stationa…/r:right of…
+@4.859s F=close;Comp=depth spans 5…;Cam=camera at (4…;Lay=9 visible in… V=I1:1/36/2/70,I3:20/45/35/47,I4:50/69/100/62,I5:9/39/10/1,I6:5/28/10/12,I8:50/76/100/48,I9:2/55/4/2 D=I2:v/11/38/10/12/o:uprigh…/m:stationa…/r:right of…,I7:v/8/20/15/16/o:vertic…/m:stationa…/r:right of…
+@6.479s F=close;Comp=depth spans 5…;Cam=camera at (4…;Lay=9 visible in… V=I1:3/35/6/70,I3:20/45/35/47,I4:50/69/100/62,I5:9/39/10/1,I6:5/28/10/12,I8:50/76/100/48,I9:2/55/4/2 D=I2:v/11/38/10/12/o:uprigh…/m:stationa…/r:right of…,I7:v/9/16/17/19/o:vertic…/m:stationa…/r:right of…
+@8.099s F=close;Comp=depth spans 5…;Cam=camera at (4…;Lay=9 visible in… V=I1:3/35/6/70,I3:20/45/35/47,I4:50/69/100/62,I5:9/39/10/1,I6:5/28/10/12,I8:50/76/100/48,I9:2/55/4/2 D=I2:v/11/37/10/12/o:uprigh…/m:stationa…/r:right of…,I7:v/9/13/19/21/o:vertic…/m:stationa…/r:right of…
+@9.719s F=close;Comp=depth spans 6…;Cam=camera at (4…;Lay=9 visible in… V=I1:3/35/6/70,I3:20/45/35/47,I4:50/69/100/62,I5:9/39/10/1,I6:5/28/10/12,I8:50/76/100/48,I9:2/55/4/2 D=I2:v/11/37/10/12/o:uprigh…/m:stationa…/r:right of…,I7:v/10/11/20/22/o:vertic…/m:stationa…/r:right of…
+@11.339s F=close;Comp=depth spans 6…;Cam=camera at (4…;Lay=9 visible in… V=I1:3/35/6/70,I3:20/45/35/47,I4:50/69/100/62,I5:9/39/10/1,I6:5/28/10/12,I8:50/76/100/48,I9:2/55/4/2 D=I2:v/11/37/10/12/o:uprigh…/m:stationa…/r:right of…,I7:v/10/10/20/20/o:vertic…/m:stationa…/r:right of…
+@12.958s F=close;Comp=depth spans 6…;Cam=camera at (4…;Lay=9 visible in… V=I1:3/35/6/70,I3:20/45/35/47,I4:50/69/100/62,I5:9/39/10/1,I6:5/28/10/12,I8:50/76/100/48,I9:2/55/4/2 D=I2:v/11/37/10/12/o:uprigh…/m:stationa…/r:right of…,I7:v/10/9/21/18/o:vertic…/m:stationa…/r:right of…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+low breath of the twin flame with a…
+
+non_diegetic_music:
+N/A

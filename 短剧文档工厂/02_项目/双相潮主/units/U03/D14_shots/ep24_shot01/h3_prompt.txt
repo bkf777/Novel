@@ -1,0 +1,44 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated….
+[INSTANCE REGISTRY] I1=<O010>,I2=<O012>,I3=<O013>,I4=<O014>.
+<Entity 01 FX PurifyFirePit>=E1[effect/primary/static] members=I1;n=1;src=purification fire pit of the net fire; final=purification fire pit of the net fire; finish=stylised energy surface in the two permitted flame colours, or grey-white ceramic…; style=world_style_unit_contract.
+<Entity 02 PROP B-19>=E2[rigid/context/static] members=I2-I4;n=3;src=B-19 set pieces and fittings: SteelTable, TradeClauseSheet…; final=B-19 set pieces and fittings: SteelTable, TradeClauseSheet…; finish=utilitarian material with visible weight, thickness and use marks, cold grey metal…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I4;1:1;n=3.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D… | materials=real skin with pores and slight oil sheen, matte technical fabric… | environment=a brick street cut by wheel ruts in front of a single gate with… | props=functional utilitarian tooling with real weight and thickness… | light=one cold overhead key over the steel table with shadow detail….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_9301@0.000-1.000s I2,I3,I4: rel=the trade clauses and the well drilling progress…; ban=do not add a third object and do not let the two sheets….
+[Shot 1] @0.000-12.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E2;path=camera travels from (-2. 10, 9. 40, 1. 74) to (-2. 10, 9. 40, 1…;dist=stable;azi=stable;elev=stable;lens=stable;comp=特写 framing in 9:16 vertical, subject held in the frame centre band with head…;ban=do not add any camera move, zoom or handheld shake… | Act=two things lie side by side on the steel table, the trade clauses and the progress of the well drilling… | Layout=4 visible instances. Dominant SteelTable covers 100x65 percent at frame 50/68… | Light=one cold overhead key over the steel table with shadow detail retained….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=extreme_close;Comp=depth spans 1. 89m to 8. 12m across 4 layers…;Cam=camera at (-2. 10, 9. 40, 1. 74) on a 50…;Lay=4 visible instances… V=I2:50/68/100/65,I3:13/51/26/17,I4:87/51/26/17 D=I1:v/5/4/11/8/o:horizontal volume proxy, long…/m:stationary across this interval/r:left of TradeClauseSheet, in front of…
+@1.495s F=extreme_close;Comp=depth spans 1. 89m to 8. 12m across 4 layers…;Cam=camera at (-2. 10, 9. 40, 1. 74) on a 50…;Lay=4 visible instances… V=I2:50/68/100/65,I3:13/51/26/17,I4:87/51/26/17 D=I1:v/5/4/11/8/o:horizontal volume proxy, long…/m:stationary across this interval/r:left of TradeClauseSheet, in front of…
+@2.990s F=extreme_close;Comp=depth spans 1. 89m to 8. 12m across 4 layers…;Cam=camera at (-2. 10, 9. 40, 1. 74) on a 50…;Lay=4 visible instances… V=I2:50/68/100/65,I3:13/51/26/17,I4:87/51/26/17 D=I1:v/5/4/11/8/o:horizontal volume proxy, long…/m:stationary across this interval/r:left of TradeClauseSheet, in front of…
+@4.484s F=extreme_close;Comp=depth spans 1. 89m to 8. 12m across 4 layers…;Cam=camera at (-2. 10, 9. 40, 1. 74) on a 50…;Lay=4 visible instances… V=I2:50/68/100/65,I3:13/51/26/17,I4:87/51/26/17 D=I1:v/5/4/11/8/o:horizontal volume proxy, long…/m:stationary across this interval/r:left of TradeClauseSheet, in front of…
+@5.979s F=extreme_close;Comp=depth spans 1. 89m to 8. 12m across 4 layers…;Cam=camera at (-2. 10, 9. 40, 1. 74) on a 50…;Lay=4 visible instances… V=I2:50/68/100/65,I3:13/51/26/17,I4:87/51/26/17 D=I1:v/5/4/11/8/o:horizontal volume proxy, long…/m:stationary across this interval/r:left of TradeClauseSheet, in front of…
+@7.474s F=extreme_close;Comp=depth spans 1. 89m to 8. 12m across 4 layers…;Cam=camera at (-2. 10, 9. 40, 1. 74) on a 50…;Lay=4 visible instances… V=I2:50/68/100/65,I3:13/51/26/17,I4:87/51/26/17 D=I1:v/5/4/11/8/o:horizontal volume proxy, long…/m:stationary across this interval/r:left of TradeClauseSheet, in front of…
+@8.969s F=extreme_close;Comp=depth spans 1. 89m to 8. 12m across 4 layers…;Cam=camera at (-2. 10, 9. 40, 1. 74) on a 50…;Lay=4 visible instances… V=I2:50/68/100/65,I3:13/51/26/17,I4:87/51/26/17 D=I1:v/5/4/11/8/o:horizontal volume proxy, long…/m:stationary across this interval/r:left of TradeClauseSheet, in front of…
+@10.464s F=extreme_close;Comp=depth spans 1. 89m to 8. 12m across 4 layers…;Cam=camera at (-2. 10, 9. 40, 1. 74) on a 50…;Lay=4 visible instances… V=I2:50/68/100/65,I3:13/51/26/17,I4:87/51/26/17 D=I1:v/5/4/11/8/o:horizontal volume proxy, long…/m:stationary across this interval/r:left of TradeClauseSheet, in front of…
+@11.958s F=extreme_close;Comp=depth spans 1. 89m to 8. 12m across 4 layers…;Cam=camera at (-2. 10, 9. 40, 1. 74) on a 50…;Lay=4 visible instances… V=I2:50/68/100/65,I3:13/51/26/17,I4:87/51/26/17 D=I1:v/5/4/11/8/o:horizontal volume proxy, long…/m:stationary across this interval/r:left of TradeClauseSheet, in front of…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+paper pages turning with the fire of the purification zone in the distance
+
+non_diegetic_music:
+N/A

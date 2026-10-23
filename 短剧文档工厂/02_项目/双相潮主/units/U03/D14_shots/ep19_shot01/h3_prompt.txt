@@ -1,0 +1,44 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with….
+[INSTANCE REGISTRY] I1=<O003>,I2=<O006>,I3=<O007>,I4=<O008>,I5=<O010>,I6=<O011>.
+<Entity 01 ENV B-13>=E1[environment/primary/static] members=I1;n=1;src=B-13 built environment shell enclosing the set…; final=B-13 built environment shell enclosing the set…; finish=worn cement, oxidised steel and sheet metal with cold grey…; style=world_style_unit_contract.
+<Entity 02 PROP B-13>=E2[rigid/context/static] members=I2-I6;n=5;src=B-13 set pieces and fittings: EnemyChiefEmblem…; final=B-13 set pieces and fittings: EnemyChiefEmblem…; finish=utilitarian material with visible weight, thickness and use marks…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I6;1:1;n=5.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink… | materials=real skin with pores and slight oil sheen, matte… | environment=a brick street cut by wheel ruts in front of a single… | props=functional utilitarian tooling with real weight and… | light=one cold overhead key over the steel table with shadow….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_7301@0.000-1.000s I2,I4,I5: rel=the two metal pieces hang flat on the…; ban=do not hang a third object and do not put a….
+[Shot 1] @0.000-12.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E2;path=camera travels from (1. 30, -3. 40, 1. 55) to (1. 30, -3. 40, 1…;dist=stable;azi=stable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the frame centre…;ban=do not add any camera move, zoom or handheld shake… | Act=the identity plate and the enemy chief emblem are hung on the steel gate post, only these two metal… | Layout=6 visible instances. Dominant SteelGatePost covers 41x100 percent at frame 46/50… | Light=one cold overhead key over the steel table with shadow detail….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 2. 51m to 13. 76m across 6 layers…;Cam=camera at (1. 30, -3. 40, 1. 55) on a 50…;Lay=6 visible instances… V=I2:53/55/23/1,I3:89/50/23/100,I4:52/41/19/2,I5:46/50/41/100,I6:50/99/100/1 D=I1:v/50/76/100/26/o:compact block proxy…/m:stationary across this interval/r:right of SteelGatePost, left…
+@1.495s F=medium;Comp=depth spans 2. 51m to 13. 76m across 6 layers…;Cam=camera at (1. 30, -3. 40, 1. 55) on a 50…;Lay=6 visible instances… V=I2:53/55/23/1,I3:89/50/23/100,I4:52/41/19/2,I5:46/50/41/100,I6:50/99/100/1 D=I1:v/50/76/100/26/o:compact block proxy…/m:stationary across this interval/r:right of SteelGatePost, left…
+@2.990s F=medium;Comp=depth spans 2. 51m to 13. 76m across 6 layers…;Cam=camera at (1. 30, -3. 40, 1. 55) on a 50…;Lay=6 visible instances… V=I2:53/55/23/1,I3:89/50/23/100,I4:52/41/19/2,I5:46/50/41/100,I6:50/99/100/1 D=I1:v/50/76/100/26/o:compact block proxy…/m:stationary across this interval/r:right of SteelGatePost, left…
+@4.484s F=medium;Comp=depth spans 2. 51m to 13. 76m across 6 layers…;Cam=camera at (1. 30, -3. 40, 1. 55) on a 50…;Lay=6 visible instances… V=I2:53/55/23/1,I3:89/50/23/100,I4:52/41/19/2,I5:46/50/41/100,I6:50/99/100/1 D=I1:v/50/76/100/26/o:compact block proxy…/m:stationary across this interval/r:right of SteelGatePost, left…
+@5.979s F=medium;Comp=depth spans 2. 51m to 13. 76m across 6 layers…;Cam=camera at (1. 30, -3. 40, 1. 55) on a 50…;Lay=6 visible instances… V=I2:53/55/23/1,I3:89/50/23/100,I4:52/41/19/2,I5:46/50/41/100,I6:50/99/100/1 D=I1:v/50/76/100/26/o:compact block proxy…/m:stationary across this interval/r:right of SteelGatePost, left…
+@7.474s F=medium;Comp=depth spans 2. 51m to 13. 76m across 6 layers…;Cam=camera at (1. 30, -3. 40, 1. 55) on a 50…;Lay=6 visible instances… V=I2:53/55/23/1,I3:89/50/23/100,I4:52/41/19/2,I5:46/50/41/100,I6:50/99/100/1 D=I1:v/50/76/100/26/o:compact block proxy…/m:stationary across this interval/r:right of SteelGatePost, left…
+@8.969s F=medium;Comp=depth spans 2. 51m to 13. 76m across 6 layers…;Cam=camera at (1. 30, -3. 40, 1. 55) on a 50…;Lay=6 visible instances… V=I2:53/55/23/1,I3:89/50/23/100,I4:52/41/19/2,I5:46/50/41/100,I6:50/99/100/1 D=I1:v/50/76/100/26/o:compact block proxy…/m:stationary across this interval/r:right of SteelGatePost, left…
+@10.464s F=medium;Comp=depth spans 2. 51m to 13. 76m across 6 layers…;Cam=camera at (1. 30, -3. 40, 1. 55) on a 50…;Lay=6 visible instances… V=I2:53/55/23/1,I3:89/50/23/100,I4:52/41/19/2,I5:46/50/41/100,I6:50/99/100/1 D=I1:v/50/76/100/26/o:compact block proxy…/m:stationary across this interval/r:right of SteelGatePost, left…
+@11.958s F=medium;Comp=depth spans 2. 51m to 13. 76m across 6 layers…;Cam=camera at (1. 30, -3. 40, 1. 55) on a 50…;Lay=6 visible instances… V=I2:53/55/23/1,I3:89/50/23/100,I4:52/41/19/2,I5:46/50/41/100,I6:50/99/100/1 D=I1:v/50/76/100/26/o:compact block proxy…/m:stationary across this interval/r:right of SteelGatePost, left…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+metal pieces settling against a steel post with wind across the gate
+
+non_diegetic_music:
+N/A

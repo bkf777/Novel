@@ -1,0 +1,1069 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep04_shot01/preview_video.mp4",
+    "duration": 12.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 288,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "A-5_CHAR_Luchen_01",
+      "source_type": "MESH",
+      "root_name": "A-5_CHAR_Luchen_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-5_CHAR_Luchen_01; type=MESH; root=A-5_CHAR_Luchen_01; dimensions=0.420,0.320,1.730",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O002",
+      "source_name": "A-5_EXT_BattleGround_01",
+      "source_type": "MESH",
+      "root_name": "A-5_EXT_BattleGround_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-5_EXT_BattleGround_01; type=MESH; root=A-5_EXT_BattleGround_01; dimensions=20.000,20.000,0.400",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O005",
+      "source_name": "A-5_FX_ConcreteDebris_01",
+      "source_type": "MESH",
+      "root_name": "A-5_FX_ConcreteDebris",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-5_FX_ConcreteDebris_01; type=MESH; root=A-5_FX_ConcreteDebris; dimensions=0.120,0.120,0.080",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O006",
+      "source_name": "A-5_FX_ConcreteDebris_02",
+      "source_type": "MESH",
+      "root_name": "A-5_FX_ConcreteDebris",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-5_FX_ConcreteDebris_02; type=MESH; root=A-5_FX_ConcreteDebris; dimensions=0.120,0.120,0.080",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O007",
+      "source_name": "A-5_FX_ConcreteDebris_03",
+      "source_type": "MESH",
+      "root_name": "A-5_FX_ConcreteDebris",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-5_FX_ConcreteDebris_03; type=MESH; root=A-5_FX_ConcreteDebris; dimensions=0.120,0.120,0.080",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O008",
+      "source_name": "A-5_FX_ConcreteDebris_04",
+      "source_type": "MESH",
+      "root_name": "A-5_FX_ConcreteDebris",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-5_FX_ConcreteDebris_04; type=MESH; root=A-5_FX_ConcreteDebris; dimensions=0.120,0.120,0.080",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O013",
+      "source_name": "A-5_PROP_SteelCrowbar_01",
+      "source_type": "MESH",
+      "root_name": "A-5_PROP_SteelCrowbar_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 11.958,
+      "identity_cues": "name=A-5_PROP_SteelCrowbar_01; type=MESH; root=A-5_PROP_SteelCrowbar_01; dimensions=0.035,0.035,1.200",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR Luchen",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "male protagonist blockout",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "locomotion",
+        "action": "travels 1.80m across the set during the shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV A-5",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O002"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-5 built environment shell enclosing the set: BattleGround",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 03 FX ConcreteDebris",
+      "entity_class": "effect",
+      "importance": "context",
+      "source_instance_ids": [
+        "O005",
+        "O006",
+        "O007",
+        "O008"
+      ],
+      "instance_count": 4,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "concrete debris chunks",
+      "structural_constraints": "keep the source volume and the attachment point; the effect never detaches from its source surface",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 04 PROP A-5",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O013"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "A-5 set pieces and fittings: SteelCrowbar",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_1301",
+      "source_instance_ids": [
+        "O001",
+        "O013"
+      ],
+      "start_seconds": 0.45,
+      "end_seconds": 1.0,
+      "relation": "crowbar held in the protagonist hand during the sidestep",
+      "forbidden_change": "do not drop the crowbar or move it to another hand"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 12.0,
+      "camera_contract": {
+        "motion_type": "tracking",
+        "tracked_target_entity": "Entity 01 CHAR Luchen",
+        "world_path": "camera travels from (2.97, -0.23, 1.28) to (2.97, -0.23, 1.28) on a 35mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "increase",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not swap the follow move for an orbit or a frontal push; keep the 中景 framing and the 跟 move exactly as blocked out"
+      },
+      "actions": "tentacle whips out of the break hole and drags gravel, cutting a long gouge, protagonist sidesteps clear and grips the crowbar",
+      "layout_and_occlusion": "7 visible instances. Dominant BattleGround covers 70x19 percent at frame 35/55. Left to right: ConcreteDebris, BattleGround, ConcreteDebris, SteelCrowbar, ConcreteDebris.",
+      "lighting_spatial_logic": "one cold overhead key with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the black and white twin flame as the only moving light source, and industrial weld sparks as the only warm light in the frame"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep04_shot01/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.99m to 11.27m across 7 layers; nearest is ConcreteDebris, furthest is BattleGround"
+      },
+      "camera_relation": "camera at (2.97, -0.23, 1.28) on a 35.0mm lens, frame 1 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 57.74,
+          "center_y_percent": 48.71,
+          "bbox_width_percent": 25.76,
+          "bbox_height_percent": 49.99,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 35.08,
+          "center_y_percent": 54.62,
+          "bbox_width_percent": 70.16,
+          "bbox_height_percent": 19.41,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 32.63,
+          "center_y_percent": 80.93,
+          "bbox_width_percent": 10.19,
+          "bbox_height_percent": 5.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of BattleGround, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 41.75,
+          "center_y_percent": 85.37,
+          "bbox_width_percent": 11.32,
+          "bbox_height_percent": 6.09,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BattleGround, left of SteelCrowbar, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 52.94,
+          "center_y_percent": 90.81,
+          "bbox_width_percent": 12.79,
+          "bbox_height_percent": 7.15,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelCrowbar, left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 66.97,
+          "center_y_percent": 96.68,
+          "bbox_width_percent": 14.74,
+          "bbox_height_percent": 6.64,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 04 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 48.61,
+          "center_y_percent": 39.65,
+          "bbox_width_percent": 3.1,
+          "bbox_height_percent": 42.86,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "7 visible instances. Dominant BattleGround covers 70x19 percent at frame 35/55. Left to right: ConcreteDebris, BattleGround, ConcreteDebris, SteelCrowbar, ConcreteDebris."
+    },
+    {
+      "time_seconds": 1.495,
+      "source_frame": "D14_shots/ep04_shot01/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.99m to 11.27m across 7 layers; nearest is ConcreteDebris, furthest is BattleGround"
+      },
+      "camera_relation": "camera at (2.97, -0.23, 1.28) on a 35.0mm lens, frame 37 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 56.45,
+          "center_y_percent": 47.65,
+          "bbox_width_percent": 23.27,
+          "bbox_height_percent": 45.11,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 35.08,
+          "center_y_percent": 54.62,
+          "bbox_width_percent": 70.16,
+          "bbox_height_percent": 19.41,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 32.63,
+          "center_y_percent": 80.93,
+          "bbox_width_percent": 10.19,
+          "bbox_height_percent": 5.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of BattleGround, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 41.75,
+          "center_y_percent": 85.37,
+          "bbox_width_percent": 11.32,
+          "bbox_height_percent": 6.09,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BattleGround, left of SteelCrowbar, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 52.94,
+          "center_y_percent": 90.81,
+          "bbox_width_percent": 12.79,
+          "bbox_height_percent": 7.15,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelCrowbar, left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 66.97,
+          "center_y_percent": 96.68,
+          "bbox_width_percent": 14.74,
+          "bbox_height_percent": 6.64,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 04 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 48.61,
+          "center_y_percent": 39.65,
+          "bbox_width_percent": 3.1,
+          "bbox_height_percent": 42.86,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "7 visible instances. Dominant BattleGround covers 70x19 percent at frame 35/55. Left to right: ConcreteDebris, BattleGround, ConcreteDebris, SteelCrowbar, ConcreteDebris."
+    },
+    {
+      "time_seconds": 2.99,
+      "source_frame": "D14_shots/ep04_shot01/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.99m to 11.27m across 7 layers; nearest is ConcreteDebris, furthest is BattleGround"
+      },
+      "camera_relation": "camera at (2.97, -0.23, 1.28) on a 35.0mm lens, frame 73 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 55.38,
+          "center_y_percent": 46.77,
+          "bbox_width_percent": 21.23,
+          "bbox_height_percent": 41.11,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 35.08,
+          "center_y_percent": 54.62,
+          "bbox_width_percent": 70.16,
+          "bbox_height_percent": 19.41,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 32.63,
+          "center_y_percent": 80.93,
+          "bbox_width_percent": 10.19,
+          "bbox_height_percent": 5.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of BattleGround, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 41.75,
+          "center_y_percent": 85.37,
+          "bbox_width_percent": 11.32,
+          "bbox_height_percent": 6.09,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BattleGround, left of SteelCrowbar, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 52.94,
+          "center_y_percent": 90.81,
+          "bbox_width_percent": 12.79,
+          "bbox_height_percent": 7.15,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelCrowbar, left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 66.97,
+          "center_y_percent": 96.68,
+          "bbox_width_percent": 14.74,
+          "bbox_height_percent": 6.64,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 04 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 48.61,
+          "center_y_percent": 39.65,
+          "bbox_width_percent": 3.1,
+          "bbox_height_percent": 42.86,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "7 visible instances. Dominant BattleGround covers 70x19 percent at frame 35/55. Left to right: ConcreteDebris, BattleGround, ConcreteDebris, SteelCrowbar, ConcreteDebris."
+    },
+    {
+      "time_seconds": 4.484,
+      "source_frame": "D14_shots/ep04_shot01/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.99m to 11.27m across 7 layers; nearest is ConcreteDebris, furthest is BattleGround"
+      },
+      "camera_relation": "camera at (2.97, -0.23, 1.28) on a 35.0mm lens, frame 109 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 54.49,
+          "center_y_percent": 46.03,
+          "bbox_width_percent": 19.51,
+          "bbox_height_percent": 37.75,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 35.08,
+          "center_y_percent": 54.62,
+          "bbox_width_percent": 70.16,
+          "bbox_height_percent": 19.41,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 32.63,
+          "center_y_percent": 80.93,
+          "bbox_width_percent": 10.19,
+          "bbox_height_percent": 5.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of BattleGround, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 41.75,
+          "center_y_percent": 85.37,
+          "bbox_width_percent": 11.32,
+          "bbox_height_percent": 6.09,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BattleGround, left of SteelCrowbar, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 52.94,
+          "center_y_percent": 90.81,
+          "bbox_width_percent": 12.79,
+          "bbox_height_percent": 7.15,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelCrowbar, left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 66.97,
+          "center_y_percent": 96.68,
+          "bbox_width_percent": 14.74,
+          "bbox_height_percent": 6.64,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 04 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 48.61,
+          "center_y_percent": 39.65,
+          "bbox_width_percent": 3.1,
+          "bbox_height_percent": 42.86,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "7 visible instances. Dominant BattleGround covers 70x19 percent at frame 35/55. Left to right: ConcreteDebris, BattleGround, ConcreteDebris, SteelCrowbar, ConcreteDebris."
+    },
+    {
+      "time_seconds": 5.979,
+      "source_frame": "D14_shots/ep04_shot01/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.99m to 11.27m across 7 layers; nearest is ConcreteDebris, furthest is BattleGround"
+      },
+      "camera_relation": "camera at (2.97, -0.23, 1.28) on a 35.0mm lens, frame 144 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 53.75,
+          "center_y_percent": 45.41,
+          "bbox_width_percent": 18.09,
+          "bbox_height_percent": 34.98,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 35.08,
+          "center_y_percent": 54.62,
+          "bbox_width_percent": 70.16,
+          "bbox_height_percent": 19.41,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 32.63,
+          "center_y_percent": 80.93,
+          "bbox_width_percent": 10.19,
+          "bbox_height_percent": 5.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of BattleGround, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 41.75,
+          "center_y_percent": 85.37,
+          "bbox_width_percent": 11.32,
+          "bbox_height_percent": 6.09,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BattleGround, left of SteelCrowbar, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 52.94,
+          "center_y_percent": 90.81,
+          "bbox_width_percent": 12.79,
+          "bbox_height_percent": 7.15,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelCrowbar, left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 66.97,
+          "center_y_percent": 96.68,
+          "bbox_width_percent": 14.74,
+          "bbox_height_percent": 6.64,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 04 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 48.61,
+          "center_y_percent": 39.65,
+          "bbox_width_percent": 3.1,
+          "bbox_height_percent": 42.86,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "7 visible instances. Dominant BattleGround covers 70x19 percent at frame 35/55. Left to right: ConcreteDebris, BattleGround, ConcreteDebris, SteelCrowbar, ConcreteDebris."
+    },
+    {
+      "time_seconds": 7.474,
+      "source_frame": "D14_shots/ep04_shot01/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.99m to 11.27m across 7 layers; nearest is ConcreteDebris, furthest is BattleGround"
+      },
+      "camera_relation": "camera at (2.97, -0.23, 1.28) on a 35.0mm lens, frame 180 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 51.59,
+          "center_y_percent": 45.15,
+          "bbox_width_percent": 17.44,
+          "bbox_height_percent": 33.81,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelCrowbar, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 35.08,
+          "center_y_percent": 54.62,
+          "bbox_width_percent": 70.16,
+          "bbox_height_percent": 19.41,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 32.63,
+          "center_y_percent": 80.93,
+          "bbox_width_percent": 10.19,
+          "bbox_height_percent": 5.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of BattleGround, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 41.75,
+          "center_y_percent": 85.37,
+          "bbox_width_percent": 11.32,
+          "bbox_height_percent": 6.09,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BattleGround, left of SteelCrowbar, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 52.94,
+          "center_y_percent": 90.81,
+          "bbox_width_percent": 12.79,
+          "bbox_height_percent": 7.15,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, left of ConcreteDebris, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 66.97,
+          "center_y_percent": 96.68,
+          "bbox_width_percent": 14.74,
+          "bbox_height_percent": 6.64,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 04 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 48.61,
+          "center_y_percent": 39.65,
+          "bbox_width_percent": 3.1,
+          "bbox_height_percent": 42.86,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of Luchen, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "7 visible instances. Dominant BattleGround covers 70x19 percent at frame 35/55. Left to right: ConcreteDebris, BattleGround, ConcreteDebris, SteelCrowbar, Luchen."
+    },
+    {
+      "time_seconds": 8.969,
+      "source_frame": "D14_shots/ep04_shot01/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.99m to 11.27m across 7 layers; nearest is ConcreteDebris, furthest is BattleGround"
+      },
+      "camera_relation": "camera at (2.97, -0.23, 1.28) on a 35.0mm lens, frame 216 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 48.54,
+          "center_y_percent": 45.09,
+          "bbox_width_percent": 17.24,
+          "bbox_height_percent": 33.53,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of SteelCrowbar, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 35.08,
+          "center_y_percent": 54.62,
+          "bbox_width_percent": 70.16,
+          "bbox_height_percent": 19.41,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 32.63,
+          "center_y_percent": 80.93,
+          "bbox_width_percent": 10.19,
+          "bbox_height_percent": 5.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of BattleGround, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 41.75,
+          "center_y_percent": 85.37,
+          "bbox_width_percent": 11.32,
+          "bbox_height_percent": 6.09,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BattleGround, left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 52.94,
+          "center_y_percent": 90.81,
+          "bbox_width_percent": 12.79,
+          "bbox_height_percent": 7.15,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelCrowbar, left of ConcreteDebris, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 66.97,
+          "center_y_percent": 96.68,
+          "bbox_width_percent": 14.74,
+          "bbox_height_percent": 6.64,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 04 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 48.61,
+          "center_y_percent": 39.65,
+          "bbox_width_percent": 3.1,
+          "bbox_height_percent": 42.86,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, left of ConcreteDebris, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "7 visible instances. Dominant BattleGround covers 70x19 percent at frame 35/55. Left to right: ConcreteDebris, BattleGround, ConcreteDebris, Luchen, SteelCrowbar."
+    },
+    {
+      "time_seconds": 10.464,
+      "source_frame": "D14_shots/ep04_shot01/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.99m to 11.27m across 7 layers; nearest is ConcreteDebris, furthest is BattleGround"
+      },
+      "camera_relation": "camera at (2.97, -0.23, 1.28) on a 35.0mm lens, frame 252 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 45.53,
+          "center_y_percent": 45.03,
+          "bbox_width_percent": 17.03,
+          "bbox_height_percent": 33.26,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of SteelCrowbar, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 35.08,
+          "center_y_percent": 54.62,
+          "bbox_width_percent": 70.16,
+          "bbox_height_percent": 19.41,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 32.63,
+          "center_y_percent": 80.93,
+          "bbox_width_percent": 10.19,
+          "bbox_height_percent": 5.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of BattleGround, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 41.75,
+          "center_y_percent": 85.37,
+          "bbox_width_percent": 11.32,
+          "bbox_height_percent": 6.09,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BattleGround, left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 52.94,
+          "center_y_percent": 90.81,
+          "bbox_width_percent": 12.79,
+          "bbox_height_percent": 7.15,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelCrowbar, left of ConcreteDebris, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 66.97,
+          "center_y_percent": 96.68,
+          "bbox_width_percent": 14.74,
+          "bbox_height_percent": 6.64,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 04 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 48.61,
+          "center_y_percent": 39.65,
+          "bbox_width_percent": 3.1,
+          "bbox_height_percent": 42.86,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, left of ConcreteDebris, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "7 visible instances. Dominant BattleGround covers 70x19 percent at frame 35/55. Left to right: ConcreteDebris, BattleGround, ConcreteDebris, Luchen, SteelCrowbar."
+    },
+    {
+      "time_seconds": 11.958,
+      "source_frame": "D14_shots/ep04_shot01/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 1.99m to 11.27m across 7 layers; nearest is ConcreteDebris, furthest is BattleGround"
+      },
+      "camera_relation": "camera at (2.97, -0.23, 1.28) on a 35.0mm lens, frame 288 of 288",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 42.57,
+          "center_y_percent": 44.97,
+          "bbox_width_percent": 16.83,
+          "bbox_height_percent": 32.99,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of SteelCrowbar, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV A-5",
+          "visibility": "visible",
+          "center_x_percent": 35.08,
+          "center_y_percent": 54.62,
+          "bbox_width_percent": 70.16,
+          "bbox_height_percent": 19.41,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, left of ConcreteDebris, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O005",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 32.63,
+          "center_y_percent": 80.93,
+          "bbox_width_percent": 10.19,
+          "bbox_height_percent": 5.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of BattleGround, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 41.75,
+          "center_y_percent": 85.37,
+          "bbox_width_percent": 11.32,
+          "bbox_height_percent": 6.09,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of BattleGround, left of Luchen, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 52.94,
+          "center_y_percent": 90.81,
+          "bbox_width_percent": 12.79,
+          "bbox_height_percent": 7.15,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelCrowbar, left of ConcreteDebris, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 03 FX ConcreteDebris",
+          "visibility": "visible",
+          "center_x_percent": 66.97,
+          "center_y_percent": 96.68,
+          "bbox_width_percent": 14.74,
+          "bbox_height_percent": 6.64,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ConcreteDebris, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O013",
+          "entity_label": "Entity 04 PROP A-5",
+          "visibility": "visible",
+          "center_x_percent": 48.61,
+          "center_y_percent": 39.65,
+          "bbox_width_percent": 3.1,
+          "bbox_height_percent": 42.86,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Luchen, left of ConcreteDebris, in front of nearer elements, upper frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "7 visible instances. Dominant BattleGround covers 70x19 percent at frame 35/55. Left to right: ConcreteDebris, BattleGround, ConcreteDebris, Luchen, SteelCrowbar."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

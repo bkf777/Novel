@@ -1,0 +1,3448 @@
+{
+  "ep": 9,
+  "global_shot_no": 35,
+  "shot_id": 3,
+  "scene_code": "B-1",
+  "duration_sec": 13,
+  "package_path": "D14_shots/ep09_shot03/package.json",
+  "preflight": {
+    "schema_version": 4,
+    "source": {
+      "path": "D14_shots/ep09_shot03/preview_video.mp4",
+      "duration": 13.0,
+      "fps": 24.0,
+      "width": 1080,
+      "height": 1920,
+      "aspect_ratio": 0.5625,
+      "frames": 312,
+      "has_audio": false
+    },
+    "manifest_path": "D14_shots/ep09_shot03/manifest.json",
+    "timeline_plan": {
+      "source": {
+        "path": "D14_shots/ep09_shot03/preview_video.mp4",
+        "duration": 13.0,
+        "fps": 24.0,
+        "width": 1080,
+        "height": 1920,
+        "aspect_ratio": 0.5625,
+        "frames": 312,
+        "has_audio": false
+      },
+      "h3_fps": 24,
+      "num_frames": 311,
+      "generation_duration": 12.958333333333334,
+      "duration_delta": -0.041666666666666075,
+      "retime_percent": -0.3205128205128194,
+      "prepare_setpts_factor": 0.9967948717948718,
+      "conform_setpts_factor": 1.0032154340836013,
+      "requires_disclosure": true,
+      "strict_single_pass_recommended": true
+    },
+    "source_cut_candidates": [],
+    "structure_evidence_available": true,
+    "blender_structure_evidence": {
+      "camera_samples": [
+        {
+          "frame": 1,
+          "lens_mm": 50.0,
+          "location": [
+            -7.5014,
+            2.5699,
+            1.2006
+          ],
+          "rotation_quaternion_wxyz": [
+            0.26552,
+            0.23068,
+            0.61394,
+            0.70666
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 40,
+          "lens_mm": 50.0,
+          "location": [
+            -7.5014,
+            2.5699,
+            1.2006
+          ],
+          "rotation_quaternion_wxyz": [
+            0.26552,
+            0.23068,
+            0.61394,
+            0.70666
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 79,
+          "lens_mm": 50.0,
+          "location": [
+            -7.5014,
+            2.5699,
+            1.2006
+          ],
+          "rotation_quaternion_wxyz": [
+            0.26552,
+            0.23068,
+            0.61394,
+            0.70666
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 118,
+          "lens_mm": 50.0,
+          "location": [
+            -7.5014,
+            2.5699,
+            1.2006
+          ],
+          "rotation_quaternion_wxyz": [
+            0.26552,
+            0.23068,
+            0.61394,
+            0.70666
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 156,
+          "lens_mm": 50.0,
+          "location": [
+            -7.5014,
+            2.5699,
+            1.2006
+          ],
+          "rotation_quaternion_wxyz": [
+            0.26552,
+            0.23068,
+            0.61394,
+            0.70666
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 195,
+          "lens_mm": 50.0,
+          "location": [
+            -7.5014,
+            2.5699,
+            1.2006
+          ],
+          "rotation_quaternion_wxyz": [
+            0.26552,
+            0.23068,
+            0.61394,
+            0.70666
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 234,
+          "lens_mm": 50.0,
+          "location": [
+            -7.5014,
+            2.5699,
+            1.2006
+          ],
+          "rotation_quaternion_wxyz": [
+            0.26552,
+            0.23068,
+            0.61394,
+            0.70666
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 273,
+          "lens_mm": 50.0,
+          "location": [
+            -7.5014,
+            2.5699,
+            1.2006
+          ],
+          "rotation_quaternion_wxyz": [
+            0.26552,
+            0.23068,
+            0.61394,
+            0.70666
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame": 312,
+          "lens_mm": 50.0,
+          "location": [
+            -7.5014,
+            2.5699,
+            1.2006
+          ],
+          "rotation_quaternion_wxyz": [
+            0.26552,
+            0.23068,
+            0.61394,
+            0.70666
+          ],
+          "sensor_width_mm": 36.0,
+          "shift_xy": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "objects": [
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "B-1_CHAR_LuchenHand_01",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-1_CHAR_LuchenHand_01",
+          "samples": [
+            {
+              "depth": 0.73451,
+              "frame": 1,
+              "pose": "hand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -91.186
+              ],
+              "screen_bbox_percent": {
+                "center_x": 77.15,
+                "center_y": 35.87,
+                "height": 62.96,
+                "width": 45.71
+              },
+              "world_dimensions": [
+                0.1,
+                0.1,
+                0.3
+              ],
+              "world_location": [
+                -8.05,
+                2.07,
+                1.02
+              ]
+            },
+            {
+              "depth": 0.73451,
+              "frame": 40,
+              "pose": "hand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -91.186
+              ],
+              "screen_bbox_percent": {
+                "center_x": 77.15,
+                "center_y": 35.87,
+                "height": 62.96,
+                "width": 45.71
+              },
+              "world_dimensions": [
+                0.1,
+                0.1,
+                0.3
+              ],
+              "world_location": [
+                -8.05,
+                2.07,
+                1.02
+              ]
+            },
+            {
+              "depth": 0.73451,
+              "frame": 79,
+              "pose": "hand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -91.186
+              ],
+              "screen_bbox_percent": {
+                "center_x": 77.15,
+                "center_y": 35.87,
+                "height": 62.96,
+                "width": 45.71
+              },
+              "world_dimensions": [
+                0.1,
+                0.1,
+                0.3
+              ],
+              "world_location": [
+                -8.05,
+                2.07,
+                1.02
+              ]
+            },
+            {
+              "depth": 0.73451,
+              "frame": 118,
+              "pose": "hand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -91.186
+              ],
+              "screen_bbox_percent": {
+                "center_x": 77.15,
+                "center_y": 35.87,
+                "height": 62.96,
+                "width": 45.71
+              },
+              "world_dimensions": [
+                0.1,
+                0.1,
+                0.3
+              ],
+              "world_location": [
+                -8.05,
+                2.07,
+                1.02
+              ]
+            },
+            {
+              "depth": 0.73451,
+              "frame": 156,
+              "pose": "hand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -91.186
+              ],
+              "screen_bbox_percent": {
+                "center_x": 77.15,
+                "center_y": 35.87,
+                "height": 62.96,
+                "width": 45.71
+              },
+              "world_dimensions": [
+                0.1,
+                0.1,
+                0.3
+              ],
+              "world_location": [
+                -8.05,
+                2.07,
+                1.02
+              ]
+            },
+            {
+              "depth": 0.73451,
+              "frame": 195,
+              "pose": "hand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -91.186
+              ],
+              "screen_bbox_percent": {
+                "center_x": 77.15,
+                "center_y": 35.87,
+                "height": 62.96,
+                "width": 45.71
+              },
+              "world_dimensions": [
+                0.1,
+                0.1,
+                0.3
+              ],
+              "world_location": [
+                -8.05,
+                2.07,
+                1.02
+              ]
+            },
+            {
+              "depth": 0.73451,
+              "frame": 234,
+              "pose": "hand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -91.186
+              ],
+              "screen_bbox_percent": {
+                "center_x": 77.15,
+                "center_y": 35.87,
+                "height": 62.96,
+                "width": 45.71
+              },
+              "world_dimensions": [
+                0.1,
+                0.1,
+                0.3
+              ],
+              "world_location": [
+                -8.05,
+                2.07,
+                1.02
+              ]
+            },
+            {
+              "depth": 0.73451,
+              "frame": 273,
+              "pose": "hand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -91.186
+              ],
+              "screen_bbox_percent": {
+                "center_x": 77.15,
+                "center_y": 35.87,
+                "height": 62.96,
+                "width": 45.71
+              },
+              "world_dimensions": [
+                0.1,
+                0.1,
+                0.3
+              ],
+              "world_location": [
+                -8.05,
+                2.07,
+                1.02
+              ]
+            },
+            {
+              "depth": 0.73451,
+              "frame": 312,
+              "pose": "hand",
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -91.186
+              ],
+              "screen_bbox_percent": {
+                "center_x": 77.15,
+                "center_y": 35.87,
+                "height": 62.96,
+                "width": 45.71
+              },
+              "world_dimensions": [
+                0.1,
+                0.1,
+                0.3
+              ],
+              "world_location": [
+                -8.05,
+                2.07,
+                1.02
+              ]
+            }
+          ],
+          "source_id": "O001"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-1_EXT_FactoryHallShell",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-1_EXT_FactoryHallShell",
+          "samples": [
+            {
+              "depth": 6.78596,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.25,
+                24.0,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.78596,
+              "frame": 40,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.25,
+                24.0,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.78596,
+              "frame": 79,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.25,
+                24.0,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.78596,
+              "frame": 118,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.25,
+                24.0,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.78596,
+              "frame": 156,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.25,
+                24.0,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.78596,
+              "frame": 195,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.25,
+                24.0,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.78596,
+              "frame": 234,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.25,
+                24.0,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.78596,
+              "frame": 273,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.25,
+                24.0,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.78596,
+              "frame": 312,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.25,
+                24.0,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O002"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-1_EXT_FactoryHallShell.002",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-1_EXT_FactoryHallShell.002",
+          "samples": [
+            {
+              "depth": null,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 40,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 79,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 118,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 156,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 195,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 234,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 273,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 312,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O003"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-1_EXT_FactoryHallShell.003",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-1_EXT_FactoryHallShell.003",
+          "samples": [
+            {
+              "depth": null,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.25,
+                24.0,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 40,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.25,
+                24.0,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 79,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.25,
+                24.0,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 118,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.25,
+                24.0,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 156,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.25,
+                24.0,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 195,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.25,
+                24.0,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 234,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.25,
+                24.0,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 273,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.25,
+                24.0,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": null,
+              "frame": 312,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                0.25,
+                24.0,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O004"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-1_EXT_FactoryHallShell.004",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-1_EXT_FactoryHallShell.004",
+          "samples": [
+            {
+              "depth": 6.27597,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.5,
+                24.5,
+                0.3
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.27597,
+              "frame": 40,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.5,
+                24.5,
+                0.3
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.27597,
+              "frame": 79,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.5,
+                24.5,
+                0.3
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.27597,
+              "frame": 118,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.5,
+                24.5,
+                0.3
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.27597,
+              "frame": 156,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.5,
+                24.5,
+                0.3
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.27597,
+              "frame": 195,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.5,
+                24.5,
+                0.3
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.27597,
+              "frame": 234,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.5,
+                24.5,
+                0.3
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.27597,
+              "frame": 273,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.5,
+                24.5,
+                0.3
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.27597,
+              "frame": 312,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.5,
+                24.5,
+                0.3
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O005"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": false,
+          "name": "B-1_EXT_FactorySouthFacade",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-1_EXT_FactorySouthFacade",
+          "samples": [
+            {
+              "depth": 6.78596,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.78596,
+              "frame": 40,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.78596,
+              "frame": 79,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.78596,
+              "frame": 118,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.78596,
+              "frame": 156,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.78596,
+              "frame": 195,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.78596,
+              "frame": 234,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.78596,
+              "frame": 273,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 6.78596,
+              "frame": 312,
+              "pose": null,
+              "projected_visible": false,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": null,
+              "world_dimensions": [
+                30.0,
+                0.25,
+                12.0
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O006"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "B-1_EXT_FactoryYardGround",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-1_EXT_FactoryYardGround",
+          "samples": [
+            {
+              "depth": 14.71063,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 6.56,
+                "center_y": 64.19,
+                "height": 54.83,
+                "width": 13.12
+              },
+              "world_dimensions": [
+                36.0,
+                44.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 14.71063,
+              "frame": 40,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 6.56,
+                "center_y": 64.19,
+                "height": 54.83,
+                "width": 13.12
+              },
+              "world_dimensions": [
+                36.0,
+                44.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 14.71063,
+              "frame": 79,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 6.56,
+                "center_y": 64.19,
+                "height": 54.83,
+                "width": 13.12
+              },
+              "world_dimensions": [
+                36.0,
+                44.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 14.71063,
+              "frame": 118,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 6.56,
+                "center_y": 64.19,
+                "height": 54.83,
+                "width": 13.12
+              },
+              "world_dimensions": [
+                36.0,
+                44.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 14.71063,
+              "frame": 156,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 6.56,
+                "center_y": 64.19,
+                "height": 54.83,
+                "width": 13.12
+              },
+              "world_dimensions": [
+                36.0,
+                44.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 14.71063,
+              "frame": 195,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 6.56,
+                "center_y": 64.19,
+                "height": 54.83,
+                "width": 13.12
+              },
+              "world_dimensions": [
+                36.0,
+                44.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 14.71063,
+              "frame": 234,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 6.56,
+                "center_y": 64.19,
+                "height": 54.83,
+                "width": 13.12
+              },
+              "world_dimensions": [
+                36.0,
+                44.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 14.71063,
+              "frame": 273,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 6.56,
+                "center_y": 64.19,
+                "height": 54.83,
+                "width": 13.12
+              },
+              "world_dimensions": [
+                36.0,
+                44.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 14.71063,
+              "frame": 312,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 6.56,
+                "center_y": 64.19,
+                "height": 54.83,
+                "width": 13.12
+              },
+              "world_dimensions": [
+                36.0,
+                44.0,
+                0.1
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O007"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "B-1_EXT_WestPlantShell",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-1_EXT_WestPlantShell",
+          "samples": [
+            {
+              "depth": 16.59609,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 26.24,
+                "height": 52.49,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                6.0,
+                20.0,
+                6.245
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 16.59609,
+              "frame": 40,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 26.24,
+                "height": 52.49,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                6.0,
+                20.0,
+                6.245
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 16.59609,
+              "frame": 79,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 26.24,
+                "height": 52.49,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                6.0,
+                20.0,
+                6.245
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 16.59609,
+              "frame": 118,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 26.24,
+                "height": 52.49,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                6.0,
+                20.0,
+                6.245
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 16.59609,
+              "frame": 156,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 26.24,
+                "height": 52.49,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                6.0,
+                20.0,
+                6.245
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 16.59609,
+              "frame": 195,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 26.24,
+                "height": 52.49,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                6.0,
+                20.0,
+                6.245
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 16.59609,
+              "frame": 234,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 26.24,
+                "height": 52.49,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                6.0,
+                20.0,
+                6.245
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 16.59609,
+              "frame": 273,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 26.24,
+                "height": 52.49,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                6.0,
+                20.0,
+                6.245
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "depth": 16.59609,
+              "frame": 312,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 50.0,
+                "center_y": 26.24,
+                "height": 52.49,
+                "width": 100.0
+              },
+              "world_dimensions": [
+                6.0,
+                20.0,
+                6.245
+              ],
+              "world_location": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "source_id": "O008"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "B-1_LGT_GreyFramePanel_01",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-1_LGT_GreyFramePanel_01",
+          "samples": [
+            {
+              "depth": 1.01256,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -46.849
+              ],
+              "screen_bbox_percent": {
+                "center_x": 51.04,
+                "center_y": 11.68,
+                "height": 23.36,
+                "width": 97.92
+              },
+              "world_dimensions": [
+                0.6,
+                0.02,
+                0.45
+              ],
+              "world_location": [
+                -8.28,
+                1.84,
+                1.48
+              ]
+            },
+            {
+              "depth": 1.01256,
+              "frame": 40,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -46.849
+              ],
+              "screen_bbox_percent": {
+                "center_x": 51.04,
+                "center_y": 11.68,
+                "height": 23.36,
+                "width": 97.92
+              },
+              "world_dimensions": [
+                0.6,
+                0.02,
+                0.45
+              ],
+              "world_location": [
+                -8.28,
+                1.84,
+                1.48
+              ]
+            },
+            {
+              "depth": 1.01256,
+              "frame": 79,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -46.849
+              ],
+              "screen_bbox_percent": {
+                "center_x": 51.04,
+                "center_y": 11.68,
+                "height": 23.36,
+                "width": 97.92
+              },
+              "world_dimensions": [
+                0.6,
+                0.02,
+                0.45
+              ],
+              "world_location": [
+                -8.28,
+                1.84,
+                1.48
+              ]
+            },
+            {
+              "depth": 1.01256,
+              "frame": 118,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -46.849
+              ],
+              "screen_bbox_percent": {
+                "center_x": 51.04,
+                "center_y": 11.68,
+                "height": 23.36,
+                "width": 97.92
+              },
+              "world_dimensions": [
+                0.6,
+                0.02,
+                0.45
+              ],
+              "world_location": [
+                -8.28,
+                1.84,
+                1.48
+              ]
+            },
+            {
+              "depth": 1.01256,
+              "frame": 156,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -46.849
+              ],
+              "screen_bbox_percent": {
+                "center_x": 51.04,
+                "center_y": 11.68,
+                "height": 23.36,
+                "width": 97.92
+              },
+              "world_dimensions": [
+                0.6,
+                0.02,
+                0.45
+              ],
+              "world_location": [
+                -8.28,
+                1.84,
+                1.48
+              ]
+            },
+            {
+              "depth": 1.01256,
+              "frame": 195,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -46.849
+              ],
+              "screen_bbox_percent": {
+                "center_x": 51.04,
+                "center_y": 11.68,
+                "height": 23.36,
+                "width": 97.92
+              },
+              "world_dimensions": [
+                0.6,
+                0.02,
+                0.45
+              ],
+              "world_location": [
+                -8.28,
+                1.84,
+                1.48
+              ]
+            },
+            {
+              "depth": 1.01256,
+              "frame": 234,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -46.849
+              ],
+              "screen_bbox_percent": {
+                "center_x": 51.04,
+                "center_y": 11.68,
+                "height": 23.36,
+                "width": 97.92
+              },
+              "world_dimensions": [
+                0.6,
+                0.02,
+                0.45
+              ],
+              "world_location": [
+                -8.28,
+                1.84,
+                1.48
+              ]
+            },
+            {
+              "depth": 1.01256,
+              "frame": 273,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -46.849
+              ],
+              "screen_bbox_percent": {
+                "center_x": 51.04,
+                "center_y": 11.68,
+                "height": 23.36,
+                "width": 97.92
+              },
+              "world_dimensions": [
+                0.6,
+                0.02,
+                0.45
+              ],
+              "world_location": [
+                -8.28,
+                1.84,
+                1.48
+              ]
+            },
+            {
+              "depth": 1.01256,
+              "frame": 312,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                -46.849
+              ],
+              "screen_bbox_percent": {
+                "center_x": 51.04,
+                "center_y": 11.68,
+                "height": 23.36,
+                "width": 97.92
+              },
+              "world_dimensions": [
+                0.6,
+                0.02,
+                0.45
+              ],
+              "world_location": [
+                -8.28,
+                1.84,
+                1.48
+              ]
+            }
+          ],
+          "source_id": "O009"
+        },
+        {
+          "collection_names": [
+            "Scene Collection"
+          ],
+          "ever_projected_visible": true,
+          "name": "B-1_PROP_DataTablet_01",
+          "object_type": "MESH",
+          "parent_name": null,
+          "root_name": "B-1_PROP_DataTablet_01",
+          "samples": [
+            {
+              "depth": 0.7415,
+              "frame": 1,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 44.85,
+                "center_y": 20.65,
+                "height": 41.29,
+                "width": 82.53
+              },
+              "world_dimensions": [
+                0.3,
+                0.02,
+                0.22
+              ],
+              "world_location": [
+                -8.0,
+                2.0,
+                1.26
+              ]
+            },
+            {
+              "depth": 0.7415,
+              "frame": 40,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 44.85,
+                "center_y": 20.65,
+                "height": 41.29,
+                "width": 82.53
+              },
+              "world_dimensions": [
+                0.3,
+                0.02,
+                0.22
+              ],
+              "world_location": [
+                -8.0,
+                2.0,
+                1.26
+              ]
+            },
+            {
+              "depth": 0.7415,
+              "frame": 79,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 44.85,
+                "center_y": 20.65,
+                "height": 41.29,
+                "width": 82.53
+              },
+              "world_dimensions": [
+                0.3,
+                0.02,
+                0.22
+              ],
+              "world_location": [
+                -8.0,
+                2.0,
+                1.26
+              ]
+            },
+            {
+              "depth": 0.7415,
+              "frame": 118,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 44.85,
+                "center_y": 20.65,
+                "height": 41.29,
+                "width": 82.53
+              },
+              "world_dimensions": [
+                0.3,
+                0.02,
+                0.22
+              ],
+              "world_location": [
+                -8.0,
+                2.0,
+                1.26
+              ]
+            },
+            {
+              "depth": 0.7415,
+              "frame": 156,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 44.85,
+                "center_y": 20.65,
+                "height": 41.29,
+                "width": 82.53
+              },
+              "world_dimensions": [
+                0.3,
+                0.02,
+                0.22
+              ],
+              "world_location": [
+                -8.0,
+                2.0,
+                1.26
+              ]
+            },
+            {
+              "depth": 0.7415,
+              "frame": 195,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 44.85,
+                "center_y": 20.65,
+                "height": 41.29,
+                "width": 82.53
+              },
+              "world_dimensions": [
+                0.3,
+                0.02,
+                0.22
+              ],
+              "world_location": [
+                -8.0,
+                2.0,
+                1.26
+              ]
+            },
+            {
+              "depth": 0.7415,
+              "frame": 234,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 44.85,
+                "center_y": 20.65,
+                "height": 41.29,
+                "width": 82.53
+              },
+              "world_dimensions": [
+                0.3,
+                0.02,
+                0.22
+              ],
+              "world_location": [
+                -8.0,
+                2.0,
+                1.26
+              ]
+            },
+            {
+              "depth": 0.7415,
+              "frame": 273,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 44.85,
+                "center_y": 20.65,
+                "height": 41.29,
+                "width": 82.53
+              },
+              "world_dimensions": [
+                0.3,
+                0.02,
+                0.22
+              ],
+              "world_location": [
+                -8.0,
+                2.0,
+                1.26
+              ]
+            },
+            {
+              "depth": 0.7415,
+              "frame": 312,
+              "pose": null,
+              "projected_visible": true,
+              "rotation_euler_deg": [
+                0.0,
+                -0.0,
+                0.0
+              ],
+              "screen_bbox_percent": {
+                "center_x": 44.85,
+                "center_y": 20.65,
+                "height": 41.29,
+                "width": 82.53
+              },
+              "world_dimensions": [
+                0.3,
+                0.02,
+                0.22
+              ],
+              "world_location": [
+                -8.0,
+                2.0,
+                1.26
+              ]
+            }
+          ],
+          "source_id": "O010"
+        }
+      ],
+      "sample_frames": [
+        1,
+        40,
+        79,
+        118,
+        156,
+        195,
+        234,
+        273,
+        312
+      ],
+      "schema_version": 1
+    },
+    "requires_m3_cut_review": false,
+    "rule": "Cut candidates are evidence only; M3 decides real shot boundaries after full-video review."
+  },
+  "render_contract": {
+    "schema_version": 4,
+    "source": {
+      "path": "D14_shots/ep09_shot03/preview_video.mp4",
+      "duration": 13.0,
+      "fps": 24.0,
+      "width": 1080,
+      "height": 1920,
+      "aspect_ratio": 0.5625,
+      "frames": 312,
+      "has_audio": false
+    },
+    "watched_full_source": true,
+    "shot_count": 1,
+    "source_inventory": [
+      {
+        "source_id": "O001",
+        "source_name": "B-1_CHAR_LuchenHand_01",
+        "source_type": "MESH",
+        "root_name": "B-1_CHAR_LuchenHand_01",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 12.958,
+        "identity_cues": "name=B-1_CHAR_LuchenHand_01; type=MESH; root=B-1_CHAR_LuchenHand_01; dimensions=0.100,0.100,0.300",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O007",
+        "source_name": "B-1_EXT_FactoryYardGround",
+        "source_type": "MESH",
+        "root_name": "B-1_EXT_FactoryYardGround",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 12.958,
+        "identity_cues": "name=B-1_EXT_FactoryYardGround; type=MESH; root=B-1_EXT_FactoryYardGround; dimensions=36.000,44.000,0.100",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O008",
+        "source_name": "B-1_EXT_WestPlantShell",
+        "source_type": "MESH",
+        "root_name": "B-1_EXT_WestPlantShell",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 12.958,
+        "identity_cues": "name=B-1_EXT_WestPlantShell; type=MESH; root=B-1_EXT_WestPlantShell; dimensions=6.000,20.000,6.245",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O009",
+        "source_name": "B-1_LGT_GreyFramePanel_01",
+        "source_type": "MESH",
+        "root_name": "B-1_LGT_GreyFramePanel_01",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 12.958,
+        "identity_cues": "name=B-1_LGT_GreyFramePanel_01; type=MESH; root=B-1_LGT_GreyFramePanel_01; dimensions=0.600,0.020,0.450",
+        "evidence_origin": "blender_manifest"
+      },
+      {
+        "source_id": "O010",
+        "source_name": "B-1_PROP_DataTablet_01",
+        "source_type": "MESH",
+        "root_name": "B-1_PROP_DataTablet_01",
+        "first_visible_seconds": 0.0,
+        "last_visible_seconds": 12.958,
+        "identity_cues": "name=B-1_PROP_DataTablet_01; type=MESH; root=B-1_PROP_DataTablet_01; dimensions=0.300,0.020,0.220",
+        "evidence_origin": "blender_manifest"
+      }
+    ],
+    "entities": [
+      {
+        "label": "Entity 01 CHAR LuchenHand",
+        "entity_class": "articulated",
+        "importance": "primary",
+        "source_instance_ids": [
+          "O001"
+        ],
+        "instance_count": 1,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "protagonist raised hand blockout",
+        "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+        "motion_contract": {
+          "mode": "static",
+          "action": "holds its source position for the whole shot",
+          "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+          "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+        }
+      },
+      {
+        "label": "Entity 02 ENV B-1",
+        "entity_class": "environment",
+        "importance": "context",
+        "source_instance_ids": [
+          "O007",
+          "O008"
+        ],
+        "instance_count": 2,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "B-1 built environment shell enclosing the set: FactoryYardGround, WestPlantShell",
+        "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+        "motion_contract": {
+          "mode": "static",
+          "action": "holds its source position for the whole shot",
+          "continuity_requirement": "keep every instance and the column order exactly as in the source",
+          "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+        }
+      },
+      {
+        "label": "Entity 03 PROP B-1",
+        "entity_class": "rigid",
+        "importance": "context",
+        "source_instance_ids": [
+          "O009",
+          "O010"
+        ],
+        "instance_count": 2,
+        "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+        "source_role": "B-1 set pieces and fittings: GreyFramePanel, DataTablet",
+        "structural_constraints": "each member keeps its own source footprint, size and placement",
+        "motion_contract": {
+          "mode": "static",
+          "action": "holds its source position for the whole shot",
+          "continuity_requirement": "keep every instance and the column order exactly as in the source",
+          "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+        }
+      }
+    ],
+    "interaction_contracts": [
+      {
+        "interaction_id": "IX_3501",
+        "source_instance_ids": [
+          "O001",
+          "O010"
+        ],
+        "start_seconds": 0.15,
+        "end_seconds": 0.55,
+        "relation": "the knuckles knock twice on the back panel of the tablet while the screen stays lit",
+        "forbidden_change": "do not knock on the screen face and do not drop the tablet"
+      }
+    ],
+    "shots": [
+      {
+        "shot_id": 1,
+        "start_seconds": 0.0,
+        "end_seconds": 13.0,
+        "camera_contract": {
+          "motion_type": "static",
+          "tracked_target_entity": "Entity 01 CHAR LuchenHand",
+          "world_path": "camera travels from (-7.50, 2.57, 1.20) to (-7.50, 2.57, 1.20) on a 50mm lens, total path length 0.00m inside the blocked set",
+          "target_distance_trend": "stable",
+          "azimuth_trend": "stable",
+          "elevation_trend": "stable",
+          "focal_length_trend": "stable",
+          "screen_composition_rule": "近景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+          "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 近景 framing and the 固定 move exactly as blocked out"
+        },
+        "actions": "the protagonist takes the tablet without looking at any face and knocks twice on its back panel with his knuckles, the screen staying lit; a readout field in one corner shows the normalisation readout at 0.7%, and the bone pattern on his right wrist stays stopped at the wrist side without reaching the forearm",
+        "layout_and_occlusion": "5 visible instances. Dominant WestPlantShell covers 100x52 percent at frame 50/26. Left to right: FactoryYardGround, DataTablet, WestPlantShell, GreyFramePanel, LuchenHand.",
+        "lighting_spatial_logic": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+      }
+    ],
+    "anchors": [
+      {
+        "time_seconds": 0.0,
+        "source_frame": "D14_shots/ep09_shot03/source_anchor_frames/anchor_01.jpg",
+        "composition": {
+          "shot_scale": "close",
+          "frame_balance_and_depth": "depth spans 0.73m to 16.60m across 5 layers; nearest is LuchenHand, furthest is WestPlantShell"
+        },
+        "camera_relation": "camera at (-7.50, 2.57, 1.20) on a 50.0mm lens, frame 1 of 312",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR LuchenHand",
+            "visibility": "visible",
+            "center_x_percent": 77.15,
+            "center_y_percent": 35.87,
+            "bbox_width_percent": 45.71,
+            "bbox_height_percent": 62.96,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GreyFramePanel, behind all nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 02 ENV B-1",
+            "visibility": "visible",
+            "center_x_percent": 6.56,
+            "center_y_percent": 64.19,
+            "bbox_width_percent": 13.12,
+            "bbox_height_percent": 54.83,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of DataTablet, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 02 ENV B-1",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 26.24,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 52.49,
+            "orientation": "horizontal volume proxy, long axis running into depth",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of DataTablet, left of GreyFramePanel, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 03 PROP B-1",
+            "visibility": "visible",
+            "center_x_percent": 51.04,
+            "center_y_percent": 11.68,
+            "bbox_width_percent": 97.92,
+            "bbox_height_percent": 23.36,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WestPlantShell, left of LuchenHand, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O010",
+            "entity_label": "Entity 03 PROP B-1",
+            "visibility": "visible",
+            "center_x_percent": 44.85,
+            "center_y_percent": 20.65,
+            "bbox_width_percent": 82.53,
+            "bbox_height_percent": 41.29,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of FactoryYardGround, left of WestPlantShell, in front of nearer elements, upper frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "5 visible instances. Dominant WestPlantShell covers 100x52 percent at frame 50/26. Left to right: FactoryYardGround, DataTablet, WestPlantShell, GreyFramePanel, LuchenHand."
+      },
+      {
+        "time_seconds": 1.62,
+        "source_frame": "D14_shots/ep09_shot03/source_anchor_frames/anchor_02.jpg",
+        "composition": {
+          "shot_scale": "close",
+          "frame_balance_and_depth": "depth spans 0.73m to 16.60m across 5 layers; nearest is LuchenHand, furthest is WestPlantShell"
+        },
+        "camera_relation": "camera at (-7.50, 2.57, 1.20) on a 50.0mm lens, frame 40 of 312",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR LuchenHand",
+            "visibility": "visible",
+            "center_x_percent": 77.15,
+            "center_y_percent": 35.87,
+            "bbox_width_percent": 45.71,
+            "bbox_height_percent": 62.96,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GreyFramePanel, behind all nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 02 ENV B-1",
+            "visibility": "visible",
+            "center_x_percent": 6.56,
+            "center_y_percent": 64.19,
+            "bbox_width_percent": 13.12,
+            "bbox_height_percent": 54.83,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of DataTablet, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 02 ENV B-1",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 26.24,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 52.49,
+            "orientation": "horizontal volume proxy, long axis running into depth",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of DataTablet, left of GreyFramePanel, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 03 PROP B-1",
+            "visibility": "visible",
+            "center_x_percent": 51.04,
+            "center_y_percent": 11.68,
+            "bbox_width_percent": 97.92,
+            "bbox_height_percent": 23.36,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WestPlantShell, left of LuchenHand, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O010",
+            "entity_label": "Entity 03 PROP B-1",
+            "visibility": "visible",
+            "center_x_percent": 44.85,
+            "center_y_percent": 20.65,
+            "bbox_width_percent": 82.53,
+            "bbox_height_percent": 41.29,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of FactoryYardGround, left of WestPlantShell, in front of nearer elements, upper frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "5 visible instances. Dominant WestPlantShell covers 100x52 percent at frame 50/26. Left to right: FactoryYardGround, DataTablet, WestPlantShell, GreyFramePanel, LuchenHand."
+      },
+      {
+        "time_seconds": 3.24,
+        "source_frame": "D14_shots/ep09_shot03/source_anchor_frames/anchor_03.jpg",
+        "composition": {
+          "shot_scale": "close",
+          "frame_balance_and_depth": "depth spans 0.73m to 16.60m across 5 layers; nearest is LuchenHand, furthest is WestPlantShell"
+        },
+        "camera_relation": "camera at (-7.50, 2.57, 1.20) on a 50.0mm lens, frame 79 of 312",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR LuchenHand",
+            "visibility": "visible",
+            "center_x_percent": 77.15,
+            "center_y_percent": 35.87,
+            "bbox_width_percent": 45.71,
+            "bbox_height_percent": 62.96,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GreyFramePanel, behind all nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 02 ENV B-1",
+            "visibility": "visible",
+            "center_x_percent": 6.56,
+            "center_y_percent": 64.19,
+            "bbox_width_percent": 13.12,
+            "bbox_height_percent": 54.83,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of DataTablet, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 02 ENV B-1",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 26.24,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 52.49,
+            "orientation": "horizontal volume proxy, long axis running into depth",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of DataTablet, left of GreyFramePanel, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 03 PROP B-1",
+            "visibility": "visible",
+            "center_x_percent": 51.04,
+            "center_y_percent": 11.68,
+            "bbox_width_percent": 97.92,
+            "bbox_height_percent": 23.36,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WestPlantShell, left of LuchenHand, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O010",
+            "entity_label": "Entity 03 PROP B-1",
+            "visibility": "visible",
+            "center_x_percent": 44.85,
+            "center_y_percent": 20.65,
+            "bbox_width_percent": 82.53,
+            "bbox_height_percent": 41.29,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of FactoryYardGround, left of WestPlantShell, in front of nearer elements, upper frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "5 visible instances. Dominant WestPlantShell covers 100x52 percent at frame 50/26. Left to right: FactoryYardGround, DataTablet, WestPlantShell, GreyFramePanel, LuchenHand."
+      },
+      {
+        "time_seconds": 4.859,
+        "source_frame": "D14_shots/ep09_shot03/source_anchor_frames/anchor_04.jpg",
+        "composition": {
+          "shot_scale": "close",
+          "frame_balance_and_depth": "depth spans 0.73m to 16.60m across 5 layers; nearest is LuchenHand, furthest is WestPlantShell"
+        },
+        "camera_relation": "camera at (-7.50, 2.57, 1.20) on a 50.0mm lens, frame 118 of 312",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR LuchenHand",
+            "visibility": "visible",
+            "center_x_percent": 77.15,
+            "center_y_percent": 35.87,
+            "bbox_width_percent": 45.71,
+            "bbox_height_percent": 62.96,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GreyFramePanel, behind all nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 02 ENV B-1",
+            "visibility": "visible",
+            "center_x_percent": 6.56,
+            "center_y_percent": 64.19,
+            "bbox_width_percent": 13.12,
+            "bbox_height_percent": 54.83,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of DataTablet, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 02 ENV B-1",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 26.24,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 52.49,
+            "orientation": "horizontal volume proxy, long axis running into depth",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of DataTablet, left of GreyFramePanel, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 03 PROP B-1",
+            "visibility": "visible",
+            "center_x_percent": 51.04,
+            "center_y_percent": 11.68,
+            "bbox_width_percent": 97.92,
+            "bbox_height_percent": 23.36,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WestPlantShell, left of LuchenHand, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O010",
+            "entity_label": "Entity 03 PROP B-1",
+            "visibility": "visible",
+            "center_x_percent": 44.85,
+            "center_y_percent": 20.65,
+            "bbox_width_percent": 82.53,
+            "bbox_height_percent": 41.29,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of FactoryYardGround, left of WestPlantShell, in front of nearer elements, upper frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "5 visible instances. Dominant WestPlantShell covers 100x52 percent at frame 50/26. Left to right: FactoryYardGround, DataTablet, WestPlantShell, GreyFramePanel, LuchenHand."
+      },
+      {
+        "time_seconds": 6.479,
+        "source_frame": "D14_shots/ep09_shot03/source_anchor_frames/anchor_05.jpg",
+        "composition": {
+          "shot_scale": "close",
+          "frame_balance_and_depth": "depth spans 0.73m to 16.60m across 5 layers; nearest is LuchenHand, furthest is WestPlantShell"
+        },
+        "camera_relation": "camera at (-7.50, 2.57, 1.20) on a 50.0mm lens, frame 156 of 312",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR LuchenHand",
+            "visibility": "visible",
+            "center_x_percent": 77.15,
+            "center_y_percent": 35.87,
+            "bbox_width_percent": 45.71,
+            "bbox_height_percent": 62.96,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GreyFramePanel, behind all nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 02 ENV B-1",
+            "visibility": "visible",
+            "center_x_percent": 6.56,
+            "center_y_percent": 64.19,
+            "bbox_width_percent": 13.12,
+            "bbox_height_percent": 54.83,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of DataTablet, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 02 ENV B-1",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 26.24,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 52.49,
+            "orientation": "horizontal volume proxy, long axis running into depth",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of DataTablet, left of GreyFramePanel, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 03 PROP B-1",
+            "visibility": "visible",
+            "center_x_percent": 51.04,
+            "center_y_percent": 11.68,
+            "bbox_width_percent": 97.92,
+            "bbox_height_percent": 23.36,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WestPlantShell, left of LuchenHand, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O010",
+            "entity_label": "Entity 03 PROP B-1",
+            "visibility": "visible",
+            "center_x_percent": 44.85,
+            "center_y_percent": 20.65,
+            "bbox_width_percent": 82.53,
+            "bbox_height_percent": 41.29,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of FactoryYardGround, left of WestPlantShell, in front of nearer elements, upper frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "5 visible instances. Dominant WestPlantShell covers 100x52 percent at frame 50/26. Left to right: FactoryYardGround, DataTablet, WestPlantShell, GreyFramePanel, LuchenHand."
+      },
+      {
+        "time_seconds": 8.099,
+        "source_frame": "D14_shots/ep09_shot03/source_anchor_frames/anchor_06.jpg",
+        "composition": {
+          "shot_scale": "close",
+          "frame_balance_and_depth": "depth spans 0.73m to 16.60m across 5 layers; nearest is LuchenHand, furthest is WestPlantShell"
+        },
+        "camera_relation": "camera at (-7.50, 2.57, 1.20) on a 50.0mm lens, frame 195 of 312",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR LuchenHand",
+            "visibility": "visible",
+            "center_x_percent": 77.15,
+            "center_y_percent": 35.87,
+            "bbox_width_percent": 45.71,
+            "bbox_height_percent": 62.96,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GreyFramePanel, behind all nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 02 ENV B-1",
+            "visibility": "visible",
+            "center_x_percent": 6.56,
+            "center_y_percent": 64.19,
+            "bbox_width_percent": 13.12,
+            "bbox_height_percent": 54.83,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of DataTablet, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 02 ENV B-1",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 26.24,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 52.49,
+            "orientation": "horizontal volume proxy, long axis running into depth",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of DataTablet, left of GreyFramePanel, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 03 PROP B-1",
+            "visibility": "visible",
+            "center_x_percent": 51.04,
+            "center_y_percent": 11.68,
+            "bbox_width_percent": 97.92,
+            "bbox_height_percent": 23.36,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WestPlantShell, left of LuchenHand, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O010",
+            "entity_label": "Entity 03 PROP B-1",
+            "visibility": "visible",
+            "center_x_percent": 44.85,
+            "center_y_percent": 20.65,
+            "bbox_width_percent": 82.53,
+            "bbox_height_percent": 41.29,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of FactoryYardGround, left of WestPlantShell, in front of nearer elements, upper frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "5 visible instances. Dominant WestPlantShell covers 100x52 percent at frame 50/26. Left to right: FactoryYardGround, DataTablet, WestPlantShell, GreyFramePanel, LuchenHand."
+      },
+      {
+        "time_seconds": 9.719,
+        "source_frame": "D14_shots/ep09_shot03/source_anchor_frames/anchor_07.jpg",
+        "composition": {
+          "shot_scale": "close",
+          "frame_balance_and_depth": "depth spans 0.73m to 16.60m across 5 layers; nearest is LuchenHand, furthest is WestPlantShell"
+        },
+        "camera_relation": "camera at (-7.50, 2.57, 1.20) on a 50.0mm lens, frame 234 of 312",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR LuchenHand",
+            "visibility": "visible",
+            "center_x_percent": 77.15,
+            "center_y_percent": 35.87,
+            "bbox_width_percent": 45.71,
+            "bbox_height_percent": 62.96,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GreyFramePanel, behind all nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 02 ENV B-1",
+            "visibility": "visible",
+            "center_x_percent": 6.56,
+            "center_y_percent": 64.19,
+            "bbox_width_percent": 13.12,
+            "bbox_height_percent": 54.83,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of DataTablet, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 02 ENV B-1",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 26.24,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 52.49,
+            "orientation": "horizontal volume proxy, long axis running into depth",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of DataTablet, left of GreyFramePanel, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 03 PROP B-1",
+            "visibility": "visible",
+            "center_x_percent": 51.04,
+            "center_y_percent": 11.68,
+            "bbox_width_percent": 97.92,
+            "bbox_height_percent": 23.36,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WestPlantShell, left of LuchenHand, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O010",
+            "entity_label": "Entity 03 PROP B-1",
+            "visibility": "visible",
+            "center_x_percent": 44.85,
+            "center_y_percent": 20.65,
+            "bbox_width_percent": 82.53,
+            "bbox_height_percent": 41.29,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of FactoryYardGround, left of WestPlantShell, in front of nearer elements, upper frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "5 visible instances. Dominant WestPlantShell covers 100x52 percent at frame 50/26. Left to right: FactoryYardGround, DataTablet, WestPlantShell, GreyFramePanel, LuchenHand."
+      },
+      {
+        "time_seconds": 11.339,
+        "source_frame": "D14_shots/ep09_shot03/source_anchor_frames/anchor_08.jpg",
+        "composition": {
+          "shot_scale": "close",
+          "frame_balance_and_depth": "depth spans 0.73m to 16.60m across 5 layers; nearest is LuchenHand, furthest is WestPlantShell"
+        },
+        "camera_relation": "camera at (-7.50, 2.57, 1.20) on a 50.0mm lens, frame 273 of 312",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR LuchenHand",
+            "visibility": "visible",
+            "center_x_percent": 77.15,
+            "center_y_percent": 35.87,
+            "bbox_width_percent": 45.71,
+            "bbox_height_percent": 62.96,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GreyFramePanel, behind all nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 02 ENV B-1",
+            "visibility": "visible",
+            "center_x_percent": 6.56,
+            "center_y_percent": 64.19,
+            "bbox_width_percent": 13.12,
+            "bbox_height_percent": 54.83,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of DataTablet, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 02 ENV B-1",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 26.24,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 52.49,
+            "orientation": "horizontal volume proxy, long axis running into depth",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of DataTablet, left of GreyFramePanel, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 03 PROP B-1",
+            "visibility": "visible",
+            "center_x_percent": 51.04,
+            "center_y_percent": 11.68,
+            "bbox_width_percent": 97.92,
+            "bbox_height_percent": 23.36,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WestPlantShell, left of LuchenHand, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O010",
+            "entity_label": "Entity 03 PROP B-1",
+            "visibility": "visible",
+            "center_x_percent": 44.85,
+            "center_y_percent": 20.65,
+            "bbox_width_percent": 82.53,
+            "bbox_height_percent": 41.29,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of FactoryYardGround, left of WestPlantShell, in front of nearer elements, upper frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "5 visible instances. Dominant WestPlantShell covers 100x52 percent at frame 50/26. Left to right: FactoryYardGround, DataTablet, WestPlantShell, GreyFramePanel, LuchenHand."
+      },
+      {
+        "time_seconds": 12.958,
+        "source_frame": "D14_shots/ep09_shot03/source_anchor_frames/anchor_09.jpg",
+        "composition": {
+          "shot_scale": "close",
+          "frame_balance_and_depth": "depth spans 0.73m to 16.60m across 5 layers; nearest is LuchenHand, furthest is WestPlantShell"
+        },
+        "camera_relation": "camera at (-7.50, 2.57, 1.20) on a 50.0mm lens, frame 312 of 312",
+        "tracked_instances": [
+          {
+            "source_id": "O001",
+            "entity_label": "Entity 01 CHAR LuchenHand",
+            "visibility": "visible",
+            "center_x_percent": 77.15,
+            "center_y_percent": 35.87,
+            "bbox_width_percent": 45.71,
+            "bbox_height_percent": 62.96,
+            "orientation": "upright body proxy, head end up",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of GreyFramePanel, behind all nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O007",
+            "entity_label": "Entity 02 ENV B-1",
+            "visibility": "visible",
+            "center_x_percent": 6.56,
+            "center_y_percent": 64.19,
+            "bbox_width_percent": 13.12,
+            "bbox_height_percent": 54.83,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "left of DataTablet, in front of nearer elements, lower frame band"
+          },
+          {
+            "source_id": "O008",
+            "entity_label": "Entity 02 ENV B-1",
+            "visibility": "visible",
+            "center_x_percent": 50.0,
+            "center_y_percent": 26.24,
+            "bbox_width_percent": 100.0,
+            "bbox_height_percent": 52.49,
+            "orientation": "horizontal volume proxy, long axis running into depth",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of DataTablet, left of GreyFramePanel, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O009",
+            "entity_label": "Entity 03 PROP B-1",
+            "visibility": "visible",
+            "center_x_percent": 51.04,
+            "center_y_percent": 11.68,
+            "bbox_width_percent": 97.92,
+            "bbox_height_percent": 23.36,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of WestPlantShell, left of LuchenHand, in front of nearer elements, upper frame band"
+          },
+          {
+            "source_id": "O010",
+            "entity_label": "Entity 03 PROP B-1",
+            "visibility": "visible",
+            "center_x_percent": 44.85,
+            "center_y_percent": 20.65,
+            "bbox_width_percent": 82.53,
+            "bbox_height_percent": 41.29,
+            "orientation": "compact block proxy, near cubic volume",
+            "motion_state": "stationary across this interval",
+            "spatial_relations": "right of FactoryYardGround, left of WestPlantShell, in front of nearer elements, upper frame band"
+          }
+        ],
+        "key_layout_and_occlusion": "5 visible instances. Dominant WestPlantShell covers 100x52 percent at frame 50/26. Left to right: FactoryYardGround, DataTablet, WestPlantShell, GreyFramePanel, LuchenHand."
+      }
+    ],
+    "m3_cut_review": {
+      "candidate_times": [],
+      "confirmed_real_cuts": [],
+      "reasoning": "No source cut candidate requires review."
+    }
+  },
+  "appearance": {
+    "schema_version": 6,
+    "watched_references": true,
+    "style_source_summary": "World style is taken from the shared unit style contract: cold industrial post-collapse realism for humans and props with a separated stylisation layer for bone pattern, twin flame, grey fog and altered bodies. No external appearance reference image was supplied for this unit, so no reference route is registered and every entity is styled from the world style alone.",
+    "reference_routes": [],
+    "global_style_bible": {
+      "world_and_era": "post-collapse industrial city ruins; a walled factory district turned into a survival compound and the bone market street running beside it; ration queues, pinned duty rosters and projected notices govern daily life; human survivors and ceramic-pale altered beings share the same cold daylight and fog; no readable signage and no modern branding",
+      "visual_language": "grounded industrial realism for humans and props with a separated stylisation layer for the bone pattern, the black and white twin flame, white smoke, fire heads and projected interface text; stylised elements never spill across into the human layer and every body surface stays intact",
+      "palette": "grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D with detail kept in the darks, plaster white #C6C2B8 for ceramic shells, pure-fire white #F5F7F8 and black #0B0B0C for the twin colour bone pattern, weld and fire orange #E07B39 as the only warm accent, dark red #7A2027 reserved for the fighter's outfit and never for any liquid",
+      "material_language": "real skin with pores and slight oil sheen, matte technical fabric with wear and dust, oxidised steel with dull reflections, cold ceramic shells on altered bodies; every surface stays intact and no red liquid appears anywhere in the frame",
+      "environment_design": "cement yard plates cut by fire lines, riveted steel frames and steel racks, sheet metal and plyboard walls carrying pinned drawings and duty rosters, a single cold ceiling tube over the purification bench, market stall rows under a led board along a fog covered street, and one unlit stretch of road outside the factory gate",
+      "prop_design": "functional utilitarian tooling with real weight and thickness: welding rigs, steel racks, extraction lines and press slots, frosted energy blocks, duty rosters, nailed wooden boards, written notices, sealed safes and an unlit shadow blade; all carry visible use marks",
+      "lighting_and_atmosphere": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+    },
+    "entity_appearances": {
+      "Entity 01 CHAR LuchenHand": {
+        "semantic_target": "protagonist raised hand blockout",
+        "final_materials_and_detail": "real skin with pores and fine hair, fabric with real drape and wear, matte metal fittings, contact shadow under the body",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      },
+      "Entity 02 ENV B-1": {
+        "semantic_target": "B-1 built environment shell enclosing the set: FactoryYardGround, WestPlantShell",
+        "final_materials_and_detail": "worn cement, oxidised steel and sheet metal with cold grey reflections, shadow detail kept readable in the dark areas",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      },
+      "Entity 03 PROP B-1": {
+        "semantic_target": "B-1 set pieces and fittings: GreyFramePanel, DataTablet",
+        "final_materials_and_detail": "utilitarian material with visible weight, thickness and use marks, cold grey metal and dull plastic, no gloss hero finish",
+        "style_route": "world_style_unit_contract",
+        "source_visual_policy": "spatiotemporal_evidence_only",
+        "silhouette_policy": "stay_within_source_bounds_and_articulation_envelope",
+        "source_unsupported_additions": []
+      }
+    },
+    "blockout_rejection": {
+      "all_visible_entities_must_be_finished": true,
+      "forbidden_final_look": "source construction proxy, default viewport material, incomplete proxy geometry, or any visibly unart-directed placeholder",
+      "ambiguous_proxy_fallback": "Choose a plausible finished World Style design inside the exact source bounds; never leave it semantically or materially generic."
+    },
+    "sound": "two dull knocks of knuckles on the back of a tablet with the engine noise fading outside the door"
+  },
+  "h3_prompt": {
+    "path": "D14_shots/ep09_shot03/h3_prompt.txt",
+    "char_count": 6316,
+    "within_budget": true,
+    "protected_content_valid": true,
+    "ready_to_submit": true
+  }
+}

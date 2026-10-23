@@ -1,0 +1,1188 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep19_shot04/preview_video.mp4",
+    "duration": 7.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 168,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "B-13_CHAR_RutQueue_06",
+      "source_type": "MESH",
+      "root_name": "B-13_CHAR_RutQueue_06",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-13_CHAR_RutQueue_06; type=MESH; root=B-13_CHAR_RutQueue_06; dimensions=5.460,11.340,1.750",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O002",
+      "source_name": "B-13_EXT_FactoryGateWall",
+      "source_type": "MESH",
+      "root_name": "B-13_EXT_FactoryGateWall",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-13_EXT_FactoryGateWall; type=MESH; root=B-13_EXT_FactoryGateWall; dimensions=15.331,0.153,3.415",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O004",
+      "source_name": "B-13_EXT_StreetGround",
+      "source_type": "MESH",
+      "root_name": "B-13_EXT_StreetGround",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-13_EXT_StreetGround; type=MESH; root=B-13_EXT_StreetGround; dimensions=40.000,36.000,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O007",
+      "source_name": "B-13_LGT_GreyFramePanel_01",
+      "source_type": "MESH",
+      "root_name": "B-13_LGT_GreyFramePanel_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-13_LGT_GreyFramePanel_01; type=MESH; root=B-13_LGT_GreyFramePanel_01; dimensions=0.034,0.002,0.024",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O008",
+      "source_name": "B-13_PROP_Flagpole_01",
+      "source_type": "MESH",
+      "root_name": "B-13_PROP_Flagpole_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-13_PROP_Flagpole_01; type=MESH; root=B-13_PROP_Flagpole_01; dimensions=0.500,0.500,4.455",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O009",
+      "source_name": "B-13_PROP_SteelGatePost_01",
+      "source_type": "MESH",
+      "root_name": "B-13_PROP_SteelGatePost",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-13_PROP_SteelGatePost_01; type=MESH; root=B-13_PROP_SteelGatePost; dimensions=0.460,0.460,4.028",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O010",
+      "source_name": "B-13_PROP_SteelGatePost_02",
+      "source_type": "MESH",
+      "root_name": "B-13_PROP_SteelGatePost",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-13_PROP_SteelGatePost_02; type=MESH; root=B-13_PROP_SteelGatePost; dimensions=0.460,0.460,4.484",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O011",
+      "source_name": "B-13_PROP_ThresholdStone_02",
+      "source_type": "MESH",
+      "root_name": "B-13_PROP_ThresholdStone_02",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-13_PROP_ThresholdStone_02; type=MESH; root=B-13_PROP_ThresholdStone_02; dimensions=8.200,0.600,0.300",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O012",
+      "source_name": "B-13_PROP_WheelRut_05",
+      "source_type": "MESH",
+      "root_name": "B-13_PROP_WheelRut_05",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-13_PROP_WheelRut_05; type=MESH; root=B-13_PROP_WheelRut_05; dimensions=5.158,7.225,0.020",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR RutQueue",
+      "entity_class": "articulated",
+      "importance": "context",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "queue blockout along the wheel ruts outside the gate",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV B-13",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O002",
+        "O004"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-13 built environment shell enclosing the set: FactoryGateWall, StreetGround",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 03 PROP GreyFramePanel",
+      "entity_class": "rigid",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O007"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-13 set pieces and fittings: GreyFramePanel",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 04 PROP B-13",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O008",
+        "O009",
+        "O010",
+        "O011",
+        "O012"
+      ],
+      "instance_count": 5,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-13 set pieces and fittings: Flagpole, SteelGatePost, ThresholdStone, WheelRut",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_7601",
+      "source_instance_ids": [
+        "O001",
+        "O007",
+        "O012"
+      ],
+      "start_seconds": 0.0,
+      "end_seconds": 1.0,
+      "relation": "the queue holds along the wheel ruts that press in from all sides while the corner readout stays lit",
+      "forbidden_change": "do not give any queued person a face and do not remove the ruts"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 7.0,
+      "camera_contract": {
+        "motion_type": "dolly",
+        "tracked_target_entity": "Entity 01 CHAR RutQueue",
+        "world_path": "camera travels from (-8.44, -23.66, 1.91) to (-6.60, -19.42, 1.03) on a 24mm lens, total path length 4.71m inside the blocked set",
+        "target_distance_trend": "decrease",
+        "azimuth_trend": "counterclockwise",
+        "elevation_trend": "decrease",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "远景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not convert the linear camera move into an orbit or a zoom; keep the 远景 framing and the 推 move exactly as blocked out"
+      },
+      "actions": "in the grey fog outside the factory gate the wheel ruts press in from all sides and a queue has already formed along them up to the gate; the queued people are silhouettes all the way; a readout field in one corner shows the normalisation readout at 1.4%",
+      "layout_and_occlusion": "9 visible instances. Dominant StreetGround covers 100x9 percent at frame 50/45. Left to right: SteelGatePost, FactoryGateWall, ThresholdStone, StreetGround, SteelGatePost.",
+      "lighting_spatial_logic": "one cold overhead key over the steel table with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the emergency lamps on the gate posts, the residual fire heads, the twin flame and the derrick lamp as the only moving light sources, and the grey fog pressing down over the street with the unlit crossing kept dark"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep19_shot04/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 16.87m to 27.60m across 9 layers; nearest is WheelRut, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-8.44, -23.66, 1.91) on a 24.0mm lens, frame 1 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR RutQueue",
+          "visibility": "visible",
+          "center_x_percent": 65.66,
+          "center_y_percent": 42.9,
+          "bbox_width_percent": 68.68,
+          "bbox_height_percent": 10.3,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of WheelRut, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 37.41,
+          "center_y_percent": 35.67,
+          "bbox_width_percent": 72.18,
+          "bbox_height_percent": 10.84,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of ThresholdStone, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 44.87,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.2,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ThresholdStone, left of SteelGatePost, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP GreyFramePanel",
+          "visibility": "visible",
+          "center_x_percent": 60.28,
+          "center_y_percent": 37.92,
+          "bbox_width_percent": 0.18,
+          "bbox_height_percent": 0.07,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Flagpole, left of RutQueue, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 57.09,
+          "center_y_percent": 36.35,
+          "bbox_width_percent": 3.34,
+          "bbox_height_percent": 11.96,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of GreyFramePanel, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 29.55,
+          "center_y_percent": 36.9,
+          "bbox_width_percent": 3.49,
+          "bbox_height_percent": 11.75,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactoryGateWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 53.29,
+          "center_y_percent": 36.31,
+          "bbox_width_percent": 2.94,
+          "bbox_height_percent": 12.07,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of Flagpole, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 42.76,
+          "center_y_percent": 42.65,
+          "bbox_width_percent": 37.79,
+          "bbox_height_percent": 1.61,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryGateWall, left of StreetGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 67.23,
+          "center_y_percent": 45.47,
+          "bbox_width_percent": 58.05,
+          "bbox_height_percent": 4.2,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RutQueue, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant StreetGround covers 100x9 percent at frame 50/45. Left to right: SteelGatePost, FactoryGateWall, ThresholdStone, StreetGround, SteelGatePost."
+    },
+    {
+      "time_seconds": 0.994,
+      "source_frame": "D14_shots/ep19_shot04/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 16.61m to 27.33m across 9 layers; nearest is WheelRut, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-8.33, -23.43, 1.86) on a 24.0mm lens, frame 25 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR RutQueue",
+          "visibility": "visible",
+          "center_x_percent": 65.55,
+          "center_y_percent": 42.81,
+          "bbox_width_percent": 68.9,
+          "bbox_height_percent": 10.39,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of WheelRut, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 37.22,
+          "center_y_percent": 35.49,
+          "bbox_width_percent": 73.03,
+          "bbox_height_percent": 10.98,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of ThresholdStone, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 44.84,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.24,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ThresholdStone, left of SteelGatePost, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP GreyFramePanel",
+          "visibility": "visible",
+          "center_x_percent": 60.4,
+          "center_y_percent": 37.78,
+          "bbox_width_percent": 0.7,
+          "bbox_height_percent": 0.28,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Flagpole, left of RutQueue, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 57.17,
+          "center_y_percent": 36.2,
+          "bbox_width_percent": 3.38,
+          "bbox_height_percent": 12.09,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of GreyFramePanel, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 29.32,
+          "center_y_percent": 36.75,
+          "bbox_width_percent": 3.53,
+          "bbox_height_percent": 11.89,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactoryGateWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 53.33,
+          "center_y_percent": 36.16,
+          "bbox_width_percent": 2.97,
+          "bbox_height_percent": 12.2,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of Flagpole, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 42.67,
+          "center_y_percent": 42.57,
+          "bbox_width_percent": 38.21,
+          "bbox_height_percent": 1.62,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryGateWall, left of StreetGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 67.57,
+          "center_y_percent": 45.4,
+          "bbox_width_percent": 59.06,
+          "bbox_height_percent": 4.24,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RutQueue, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant StreetGround covers 100x9 percent at frame 50/45. Left to right: SteelGatePost, FactoryGateWall, ThresholdStone, StreetGround, SteelGatePost."
+    },
+    {
+      "time_seconds": 1.988,
+      "source_frame": "D14_shots/ep19_shot04/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 15.93m to 26.66m across 9 layers; nearest is WheelRut, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-8.07, -22.81, 1.73) on a 24.0mm lens, frame 49 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR RutQueue",
+          "visibility": "visible",
+          "center_x_percent": 65.24,
+          "center_y_percent": 42.53,
+          "bbox_width_percent": 69.51,
+          "bbox_height_percent": 10.7,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of WheelRut, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 37.17,
+          "center_y_percent": 35.0,
+          "bbox_width_percent": 74.34,
+          "bbox_height_percent": 11.36,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of ThresholdStone, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 44.74,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.36,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ThresholdStone, left of SteelGatePost, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP GreyFramePanel",
+          "visibility": "visible",
+          "center_x_percent": 60.73,
+          "center_y_percent": 37.4,
+          "bbox_width_percent": 1.27,
+          "bbox_height_percent": 0.5,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Flagpole, left of RutQueue, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 57.36,
+          "center_y_percent": 35.82,
+          "bbox_width_percent": 3.48,
+          "bbox_height_percent": 12.44,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of GreyFramePanel, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 28.7,
+          "center_y_percent": 36.34,
+          "bbox_width_percent": 3.65,
+          "bbox_height_percent": 12.26,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactoryGateWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 53.42,
+          "center_y_percent": 35.77,
+          "bbox_width_percent": 3.06,
+          "bbox_height_percent": 12.56,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of Flagpole, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 42.43,
+          "center_y_percent": 42.36,
+          "bbox_width_percent": 39.32,
+          "bbox_height_percent": 1.63,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryGateWall, left of StreetGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 68.52,
+          "center_y_percent": 45.21,
+          "bbox_width_percent": 61.85,
+          "bbox_height_percent": 4.32,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RutQueue, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant StreetGround covers 100x9 percent at frame 50/45. Left to right: SteelGatePost, FactoryGateWall, ThresholdStone, StreetGround, SteelGatePost."
+    },
+    {
+      "time_seconds": 2.982,
+      "source_frame": "D14_shots/ep19_shot04/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 15.00m to 25.73m across 9 layers; nearest is WheelRut, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-7.71, -21.98, 1.56) on a 24.0mm lens, frame 73 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR RutQueue",
+          "visibility": "visible",
+          "center_x_percent": 64.79,
+          "center_y_percent": 41.83,
+          "bbox_width_percent": 70.42,
+          "bbox_height_percent": 11.71,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of WheelRut, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 37.62,
+          "center_y_percent": 34.29,
+          "bbox_width_percent": 75.24,
+          "bbox_height_percent": 11.92,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of ThresholdStone, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 44.6,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.53,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ThresholdStone, left of SteelGatePost, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP GreyFramePanel",
+          "visibility": "visible",
+          "center_x_percent": 61.2,
+          "center_y_percent": 36.84,
+          "bbox_width_percent": 1.89,
+          "bbox_height_percent": 0.75,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Flagpole, left of RutQueue, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 57.65,
+          "center_y_percent": 35.25,
+          "bbox_width_percent": 3.63,
+          "bbox_height_percent": 12.95,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of GreyFramePanel, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 27.79,
+          "center_y_percent": 35.75,
+          "bbox_width_percent": 3.83,
+          "bbox_height_percent": 12.82,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactoryGateWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 53.56,
+          "center_y_percent": 35.2,
+          "bbox_width_percent": 3.19,
+          "bbox_height_percent": 13.07,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of Flagpole, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 42.08,
+          "center_y_percent": 42.05,
+          "bbox_width_percent": 40.94,
+          "bbox_height_percent": 1.65,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryGateWall, left of StreetGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 68.46,
+          "center_y_percent": 44.93,
+          "bbox_width_percent": 63.07,
+          "bbox_height_percent": 4.42,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RutQueue, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant StreetGround covers 100x10 percent at frame 50/45. Left to right: SteelGatePost, FactoryGateWall, ThresholdStone, StreetGround, SteelGatePost."
+    },
+    {
+      "time_seconds": 3.976,
+      "source_frame": "D14_shots/ep19_shot04/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 14.03m to 24.76m across 9 layers; nearest is WheelRut, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-7.33, -21.11, 1.38) on a 24.0mm lens, frame 96 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR RutQueue",
+          "visibility": "visible",
+          "center_x_percent": 64.28,
+          "center_y_percent": 40.95,
+          "bbox_width_percent": 71.45,
+          "bbox_height_percent": 13.0,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of WheelRut, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 38.12,
+          "center_y_percent": 33.47,
+          "bbox_width_percent": 76.24,
+          "bbox_height_percent": 12.57,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of ThresholdStone, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 44.44,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.69,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ThresholdStone, left of SteelGatePost, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP GreyFramePanel",
+          "visibility": "visible",
+          "center_x_percent": 61.75,
+          "center_y_percent": 36.2,
+          "bbox_width_percent": 2.06,
+          "bbox_height_percent": 0.82,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Flagpole, left of RutQueue, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 57.98,
+          "center_y_percent": 34.61,
+          "bbox_width_percent": 3.79,
+          "bbox_height_percent": 13.53,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of GreyFramePanel, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 26.75,
+          "center_y_percent": 35.07,
+          "bbox_width_percent": 4.04,
+          "bbox_height_percent": 13.45,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactoryGateWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 53.71,
+          "center_y_percent": 34.56,
+          "bbox_width_percent": 3.33,
+          "bbox_height_percent": 13.66,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of Flagpole, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 41.67,
+          "center_y_percent": 41.7,
+          "bbox_width_percent": 42.79,
+          "bbox_height_percent": 1.66,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryGateWall, left of StreetGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 68.08,
+          "center_y_percent": 44.6,
+          "bbox_width_percent": 63.85,
+          "bbox_height_percent": 4.53,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RutQueue, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant StreetGround covers 100x10 percent at frame 50/44. Left to right: SteelGatePost, FactoryGateWall, ThresholdStone, StreetGround, SteelGatePost."
+    },
+    {
+      "time_seconds": 4.97,
+      "source_frame": "D14_shots/ep19_shot04/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 13.11m to 23.84m across 9 layers; nearest is WheelRut, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-6.97, -20.27, 1.20) on a 24.0mm lens, frame 120 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR RutQueue",
+          "visibility": "visible",
+          "center_x_percent": 63.73,
+          "center_y_percent": 39.9,
+          "bbox_width_percent": 72.54,
+          "bbox_height_percent": 14.52,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of WheelRut, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 38.64,
+          "center_y_percent": 32.6,
+          "bbox_width_percent": 77.28,
+          "bbox_height_percent": 13.26,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of ThresholdStone, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 44.28,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.85,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ThresholdStone, left of SteelGatePost, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP GreyFramePanel",
+          "visibility": "visible",
+          "center_x_percent": 62.32,
+          "center_y_percent": 35.53,
+          "bbox_width_percent": 2.16,
+          "bbox_height_percent": 0.86,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Flagpole, left of RutQueue, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 58.32,
+          "center_y_percent": 33.95,
+          "bbox_width_percent": 3.97,
+          "bbox_height_percent": 14.14,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of GreyFramePanel, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 25.66,
+          "center_y_percent": 34.35,
+          "bbox_width_percent": 4.25,
+          "bbox_height_percent": 14.11,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactoryGateWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 53.87,
+          "center_y_percent": 33.89,
+          "bbox_width_percent": 3.48,
+          "bbox_height_percent": 14.28,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of Flagpole, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 41.25,
+          "center_y_percent": 41.34,
+          "bbox_width_percent": 44.72,
+          "bbox_height_percent": 1.67,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryGateWall, left of StreetGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 67.66,
+          "center_y_percent": 44.23,
+          "bbox_width_percent": 64.68,
+          "bbox_height_percent": 4.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RutQueue, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant RutQueue covers 73x15 percent at frame 64/40. Left to right: SteelGatePost, FactoryGateWall, ThresholdStone, StreetGround, SteelGatePost."
+    },
+    {
+      "time_seconds": 5.964,
+      "source_frame": "D14_shots/ep19_shot04/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 12.43m to 23.16m across 9 layers; nearest is WheelRut, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-6.70, -19.66, 1.08) on a 24.0mm lens, frame 144 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR RutQueue",
+          "visibility": "visible",
+          "center_x_percent": 63.29,
+          "center_y_percent": 38.96,
+          "bbox_width_percent": 73.42,
+          "bbox_height_percent": 15.89,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of WheelRut, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 39.05,
+          "center_y_percent": 31.9,
+          "bbox_width_percent": 78.1,
+          "bbox_height_percent": 13.82,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of ThresholdStone, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 44.15,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.95,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ThresholdStone, left of SteelGatePost, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP GreyFramePanel",
+          "visibility": "visible",
+          "center_x_percent": 62.77,
+          "center_y_percent": 35.0,
+          "bbox_width_percent": 2.24,
+          "bbox_height_percent": 0.9,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Flagpole, left of RutQueue, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 58.59,
+          "center_y_percent": 33.42,
+          "bbox_width_percent": 4.11,
+          "bbox_height_percent": 14.62,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of GreyFramePanel, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 24.8,
+          "center_y_percent": 33.78,
+          "bbox_width_percent": 4.43,
+          "bbox_height_percent": 14.64,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactoryGateWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 53.99,
+          "center_y_percent": 33.36,
+          "bbox_width_percent": 3.6,
+          "bbox_height_percent": 14.76,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of Flagpole, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 40.9,
+          "center_y_percent": 41.05,
+          "bbox_width_percent": 46.26,
+          "bbox_height_percent": 1.67,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryGateWall, left of StreetGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 67.32,
+          "center_y_percent": 43.92,
+          "bbox_width_percent": 65.36,
+          "bbox_height_percent": 4.65,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RutQueue, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant RutQueue covers 73x16 percent at frame 63/39. Left to right: SteelGatePost, FactoryGateWall, ThresholdStone, StreetGround, SteelGatePost."
+    },
+    {
+      "time_seconds": 6.958,
+      "source_frame": "D14_shots/ep19_shot04/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "wide",
+        "frame_balance_and_depth": "depth spans 12.16m to 22.89m across 9 layers; nearest is WheelRut, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-6.60, -19.42, 1.03) on a 24.0mm lens, frame 168 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR RutQueue",
+          "visibility": "visible",
+          "center_x_percent": 63.11,
+          "center_y_percent": 38.55,
+          "bbox_width_percent": 73.78,
+          "bbox_height_percent": 16.49,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of WheelRut, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O002",
+          "entity_label": "Entity 02 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 39.21,
+          "center_y_percent": 31.61,
+          "bbox_width_percent": 78.43,
+          "bbox_height_percent": 14.04,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of ThresholdStone, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-13",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 44.09,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.99,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of ThresholdStone, left of SteelGatePost, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O007",
+          "entity_label": "Entity 03 PROP GreyFramePanel",
+          "visibility": "visible",
+          "center_x_percent": 62.96,
+          "center_y_percent": 34.78,
+          "bbox_width_percent": 2.27,
+          "bbox_height_percent": 0.91,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Flagpole, left of RutQueue, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 58.7,
+          "center_y_percent": 33.21,
+          "bbox_width_percent": 4.17,
+          "bbox_height_percent": 14.81,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of SteelGatePost, left of GreyFramePanel, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 24.45,
+          "center_y_percent": 33.55,
+          "bbox_width_percent": 4.5,
+          "bbox_height_percent": 14.86,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of FactoryGateWall, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 54.04,
+          "center_y_percent": 33.14,
+          "bbox_width_percent": 3.64,
+          "bbox_height_percent": 14.96,
+          "orientation": "vertical volume proxy, long axis standing up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, left of Flagpole, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 40.76,
+          "center_y_percent": 40.94,
+          "bbox_width_percent": 46.88,
+          "bbox_height_percent": 1.67,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of FactoryGateWall, left of StreetGround, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O012",
+          "entity_label": "Entity 04 PROP B-13",
+          "visibility": "visible",
+          "center_x_percent": 67.18,
+          "center_y_percent": 43.79,
+          "bbox_width_percent": 65.65,
+          "bbox_height_percent": 4.66,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of RutQueue, behind all nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "9 visible instances. Dominant RutQueue covers 74x16 percent at frame 63/39. Left to right: SteelGatePost, FactoryGateWall, ThresholdStone, StreetGround, SteelGatePost."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

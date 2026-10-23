@@ -1,0 +1,403 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep17_shot04/preview_video.mp4",
+    "duration": 7.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 168,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "B-11_CHAR_Luchen_01",
+      "source_type": "MESH",
+      "root_name": "B-11_CHAR_Luchen_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 3.0,
+      "identity_cues": "name=B-11_CHAR_Luchen_01; type=MESH; root=B-11_CHAR_Luchen_01; dimensions=0.420,0.320,1.730",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O004",
+      "source_name": "B-11_EXT_StreetGround",
+      "source_type": "MESH",
+      "root_name": "B-11_EXT_StreetGround",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-11_EXT_StreetGround; type=MESH; root=B-11_EXT_StreetGround; dimensions=40.000,36.000,0.100",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR Luchen",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "protagonist blockout in black tactical coat",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "locomotion",
+        "action": "travels 0.52m across the set during the shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV B-11",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O004"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-11 built environment shell enclosing the set: StreetGround",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_6801",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "start_seconds": 0.0,
+      "end_seconds": 1.0,
+      "relation": "the figure walks out of the gate shadow and the corner readout stays legible beside him",
+      "forbidden_change": "do not hide the corner readout and do not build a face for the figure"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 7.0,
+      "camera_contract": {
+        "motion_type": "crane",
+        "tracked_target_entity": "Entity 01 CHAR Luchen",
+        "world_path": "camera travels from (-2.59, -5.04, 1.09) to (-2.59, -5.04, 2.09) on a 50mm lens, total path length 1.00m inside the blocked set",
+        "target_distance_trend": "increase",
+        "azimuth_trend": "stable",
+        "elevation_trend": "increase",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not hold a fixed high angle; the vertical travel must remain; keep the 中景 framing and the 升降 move exactly as blocked out"
+      },
+      "actions": "one figure walks out of the gate shadow and the black and white bone pattern on the right wrist bone lights up all the way along the forearm; the whole street is held down under it and a readout field in one corner shows the normalisation readout at 1.4%; the pattern stays flat on the skin surface and never breaks the body",
+      "layout_and_occlusion": "2 visible instances. Dominant StreetGround covers 100x10 percent at frame 50/85. Left to right: StreetGround, Luchen.",
+      "lighting_spatial_logic": "one cold overhead key over the steel table with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the emergency lamps on the gate posts, the residual fire heads, the twin flame and the derrick lamp as the only moving light sources, and the grey fog pressing down over the street with the unlit crossing kept dark"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep17_shot04/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.92m to 16.51m across 2 layers; nearest is Luchen, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-2.59, -5.04, 1.09) on a 50.0mm lens, frame 1 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 91.57,
+          "center_y_percent": 77.23,
+          "bbox_width_percent": 16.87,
+          "bbox_height_percent": 45.54,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-11",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 84.91,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 10.25,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Luchen, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant StreetGround covers 100x10 percent at frame 50/85. Left to right: StreetGround, Luchen."
+    },
+    {
+      "time_seconds": 0.994,
+      "source_frame": "D14_shots/ep17_shot04/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.77m to 16.56m across 2 layers; nearest is Luchen, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-2.59, -5.04, 1.15) on a 50.0mm lens, frame 25 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 93.55,
+          "center_y_percent": 76.67,
+          "bbox_width_percent": 12.89,
+          "bbox_height_percent": 46.66,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-11",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 83.21,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 10.63,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Luchen, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant StreetGround covers 100x11 percent at frame 50/83. Left to right: StreetGround, Luchen."
+    },
+    {
+      "time_seconds": 1.988,
+      "source_frame": "D14_shots/ep17_shot04/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.63m to 16.68m across 2 layers; nearest is Luchen, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-2.59, -5.04, 1.29) on a 50.0mm lens, frame 49 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 95.72,
+          "center_y_percent": 75.82,
+          "bbox_width_percent": 8.57,
+          "bbox_height_percent": 48.35,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of StreetGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-11",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 78.87,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 11.61,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Luchen, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant StreetGround covers 100x12 percent at frame 50/79. Left to right: StreetGround, Luchen."
+    },
+    {
+      "time_seconds": 2.982,
+      "source_frame": "D14_shots/ep17_shot04/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.50m to 16.82m across 2 layers; nearest is Luchen, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-2.59, -5.04, 1.49) on a 50.0mm lens, frame 73 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "visible",
+          "center_x_percent": 98.05,
+          "center_y_percent": 74.98,
+          "bbox_width_percent": 3.91,
+          "bbox_height_percent": 50.04,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "drifting down frame in this interval",
+          "spatial_relations": "right of StreetGround, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-11",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 73.02,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 12.93,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of Luchen, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "2 visible instances. Dominant StreetGround covers 100x13 percent at frame 50/73. Left to right: StreetGround, Luchen."
+    },
+    {
+      "time_seconds": 3.976,
+      "source_frame": "D14_shots/ep17_shot04/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 16.93m to 16.93m across 1 layers; nearest is StreetGround, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-2.59, -5.04, 1.70) on a 50.0mm lens, frame 96 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-11",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 66.99,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 14.3,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "only visible instance in this frame"
+        }
+      ],
+      "key_layout_and_occlusion": "1 visible instances. Dominant StreetGround covers 100x14 percent at frame 50/67. Left to right: StreetGround."
+    },
+    {
+      "time_seconds": 4.97,
+      "source_frame": "D14_shots/ep17_shot04/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 17.01m to 17.01m across 1 layers; nearest is StreetGround, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-2.59, -5.04, 1.89) on a 50.0mm lens, frame 120 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-11",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 61.26,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 15.62,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "only visible instance in this frame"
+        }
+      ],
+      "key_layout_and_occlusion": "1 visible instances. Dominant StreetGround covers 100x16 percent at frame 50/61. Left to right: StreetGround."
+    },
+    {
+      "time_seconds": 5.964,
+      "source_frame": "D14_shots/ep17_shot04/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 17.05m to 17.05m across 1 layers; nearest is StreetGround, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-2.59, -5.04, 2.04) on a 50.0mm lens, frame 144 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-11",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 57.07,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 16.59,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "only visible instance in this frame"
+        }
+      ],
+      "key_layout_and_occlusion": "1 visible instances. Dominant StreetGround covers 100x17 percent at frame 50/57. Left to right: StreetGround."
+    },
+    {
+      "time_seconds": 6.958,
+      "source_frame": "D14_shots/ep17_shot04/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 17.06m to 17.06m across 1 layers; nearest is StreetGround, furthest is StreetGround"
+      },
+      "camera_relation": "camera at (-2.59, -5.04, 2.09) on a 50.0mm lens, frame 168 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Luchen",
+          "visibility": "offscreen",
+          "center_x_percent": null,
+          "center_y_percent": null,
+          "bbox_width_percent": null,
+          "bbox_height_percent": null,
+          "orientation": "off screen at this anchor",
+          "motion_state": "offscreen at this anchor",
+          "spatial_relations": "leaves the frame before this anchor"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-11",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 55.44,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 16.98,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "only visible instance in this frame"
+        }
+      ],
+      "key_layout_and_occlusion": "1 visible instances. Dominant StreetGround covers 100x17 percent at frame 50/55. Left to right: StreetGround."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

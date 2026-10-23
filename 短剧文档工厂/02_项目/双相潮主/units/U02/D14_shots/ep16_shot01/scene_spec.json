@@ -1,0 +1,77 @@
+{
+  "scene_code": "B-10",
+  "size_m": [
+    36.0,
+    48.0,
+    6.245
+  ],
+  "ground_center_m": [
+    -3.558,
+    0.352
+  ],
+  "floor_z": 0.0,
+  "props": [
+    {
+      "name": "B-10_EXT_FactoryYardGround",
+      "kind": "box",
+      "center_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size_m": [
+        36.0,
+        48.0,
+        0.1
+      ],
+      "role": "primary"
+    },
+    {
+      "name": "B-10_EXT_PerimeterWall",
+      "kind": "box",
+      "center_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size_m": [
+        0.12,
+        20.0,
+        2.2
+      ],
+      "role": "set"
+    },
+    {
+      "name": "B-10_EXT_WestPlantShell",
+      "kind": "box",
+      "center_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size_m": [
+        6.0,
+        20.0,
+        6.245
+      ],
+      "role": "set"
+    },
+    {
+      "name": "B-10_LGT_GreyFramePanel_01",
+      "kind": "proxy",
+      "center_m": [
+        -14.23,
+        1.41,
+        1.7
+      ],
+      "size_m": [
+        0.13,
+        0.003,
+        0.085
+      ],
+      "role": "set"
+    }
+  ],
+  "walls": [],
+  "wall_thickness_m": 0.15
+}

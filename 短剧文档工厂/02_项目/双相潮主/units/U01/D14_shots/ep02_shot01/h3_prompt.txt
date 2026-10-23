@@ -1,0 +1,45 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O020>,I3=<O026>.
+<Entity 01 CHAR Luchen>=E1[articulated/primary/locomotion] members=I1;n=1;src=male protagonist blockout; final=male protagonist blockout; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal…; style=world_style_unit_contract.
+<Entity 02 PROP A-2>=E2[rigid/context/static] members=I2-I3;n=2;src=A-2 set pieces and fittings: Crowbar, SteelRack; final=A-2 set pieces and fittings: Crowbar, SteelRack; finish=utilitarian material with visible weight, thickness and use marks, cold grey metal…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I3;1:1;n=2.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D… | materials=real skin with pores and slight oil sheen, matte technical fabric… | environment=cement yard plates cut by fissures and pit openings, riveted steel… | props=functional utilitarian tooling with real weight and thickness… | light=one cold overhead key with shadow detail retained instead of….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E1:locomotion | Act=travels 2.32m across the set during the shot | Keep=stay inside the source blockout bounds for the full shot | Ban=do not replace, duplicate or remove this instance.
+[STATIC LOCK] E2 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-13.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E1;path=camera travels from (6. 36, 11. 15, -0. 71) to (6. 36, 11. 15, -0…;dist=increase;azi=stable;elev=stable;lens=stable;comp=中远景 framing in 9:16 vertical, subject held in the frame centre band with head…;ban=do not add any camera move, zoom or handheld shake… | Act=protagonist squeezes sideways through the pried roller door gap, hauls steel racks and cable reels across the floor, then cranks… | Layout=3 visible instances. Dominant SteelRack covers 35x28 percent at frame 18/14. Left to right: Luchen, SteelRack, Crowbar. | Light=one cold overhead key with shadow detail retained instead of crushed black….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium_full;Comp=depth spans 3. 00m to 5. 78m across 3 layers…;Cam=camera at (6. 36, 11. 15, -0. 71) on a 35…;Lay=3 visible instances… V=I2:43/13/1/26,I3:18/14/35/28 D=I1:v/16/15/21/30/o:upright body proxy, head end up/m:stationary across this interval/r:left of SteelRack, in front of nearer…
+@1.620s F=medium_full;Comp=depth spans 3. 00m to 5. 78m across 3 layers…;Cam=camera at (6. 36, 11. 15, -0. 71) on a 35…;Lay=3 visible instances… V=I2:43/13/1/26,I3:18/14/35/28 D=I1:v/31/13/28/25/o:upright body proxy, head end up/m:stationary across this interval/r:right of SteelRack, left of Crowbar…
+@3.240s F=medium_full;Comp=depth spans 2. 10m to 5. 78m across 3 layers…;Cam=camera at (6. 36, 11. 15, -0. 71) on a 35…;Lay=3 visible instances… V=I2:43/13/1/26,I3:18/14/35/28 D=I1:v/65/8/44/16/o:upright body proxy, head end up/m:stationary across this interval/r:right of Crowbar, behind all nearer…
+@4.859s F=medium_full;Comp=depth spans 3. 00m to 5. 78m across 2 layers…;Cam=camera at (6. 36, 11. 15, -0. 71) on a 35…;Lay=2 visible instances… V=I2:43/13/1/26,I3:18/14/35/28 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@6.479s F=medium_full;Comp=depth spans 3. 00m to 5. 78m across 2 layers…;Cam=camera at (6. 36, 11. 15, -0. 71) on a 35…;Lay=2 visible instances… V=I2:43/13/1/26,I3:18/14/35/28 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@8.099s F=medium_full;Comp=depth spans 3. 00m to 5. 78m across 2 layers…;Cam=camera at (6. 36, 11. 15, -0. 71) on a 35…;Lay=2 visible instances… V=I2:43/13/1/26,I3:18/14/35/28 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@9.719s F=medium_full;Comp=depth spans 3. 00m to 5. 78m across 2 layers…;Cam=camera at (6. 36, 11. 15, -0. 71) on a 35…;Lay=2 visible instances… V=I2:43/13/1/26,I3:18/14/35/28 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@11.339s F=medium_full;Comp=depth spans 3. 00m to 5. 78m across 2 layers…;Cam=camera at (6. 36, 11. 15, -0. 71) on a 35…;Lay=2 visible instances… V=I2:43/13/1/26,I3:18/14/35/28 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@12.958s F=medium_full;Comp=depth spans 3. 00m to 5. 78m across 2 layers…;Cam=camera at (6. 36, 11. 15, -0. 71) on a 35…;Lay=2 visible instances… V=I2:43/13/1/26,I3:18/14/35/28 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+metal scraping friction with distant wind
+
+non_diegetic_music:
+N/A

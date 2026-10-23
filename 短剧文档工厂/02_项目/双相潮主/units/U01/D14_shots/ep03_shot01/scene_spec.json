@@ -1,0 +1,107 @@
+{
+  "scene_code": "A-4",
+  "size_m": [
+    32.0,
+    24.0,
+    12.0
+  ],
+  "ground_center_m": [
+    -2.733,
+    -2.667
+  ],
+  "floor_z": -0.23,
+  "props": [
+    {
+      "name": "A-4_EXT_FactoryGround_01",
+      "kind": "box",
+      "center_m": [
+        -4.0,
+        -6.0,
+        -0.2
+      ],
+      "size_m": [
+        32.0,
+        24.0,
+        0.4
+      ],
+      "role": "primary"
+    },
+    {
+      "name": "A-4_EXT_FactorySouthWall_01",
+      "kind": "box",
+      "center_m": [
+        -1.0,
+        6.0,
+        6.0
+      ],
+      "size_m": [
+        26.0,
+        0.2,
+        12.0
+      ],
+      "role": "set"
+    },
+    {
+      "name": "A-4_FX_TwinGreyVapour_07",
+      "kind": "proxy",
+      "center_m": [
+        0.45,
+        -5.0,
+        0.15
+      ],
+      "size_m": [
+        0.93,
+        1.95,
+        0.026
+      ],
+      "role": "set"
+    },
+    {
+      "name": "A-4_LGT_StreetLamp_06",
+      "kind": "proxy",
+      "center_m": [
+        -12.0,
+        -6.0,
+        0.1
+      ],
+      "size_m": [
+        12.6,
+        12.4,
+        8.05
+      ],
+      "role": "set"
+    },
+    {
+      "name": "A-4_PROP_GroundBreakHole_03",
+      "kind": "box",
+      "center_m": [
+        0.0,
+        0.0,
+        -0.2
+      ],
+      "size_m": [
+        0.5,
+        0.5,
+        0.4
+      ],
+      "role": "set"
+    },
+    {
+      "name": "A-4_PROP_GroundFissure_02",
+      "kind": "box",
+      "center_m": [
+        0.15,
+        -5.0,
+        -0.23
+      ],
+      "size_m": [
+        18.3,
+        0.3,
+        0.06
+      ],
+      "role": "set"
+    }
+  ],
+  "walls": [],
+  "wall_thickness_m": 0.15
+}

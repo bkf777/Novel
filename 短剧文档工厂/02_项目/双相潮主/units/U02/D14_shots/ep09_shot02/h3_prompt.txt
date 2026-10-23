@@ -1,0 +1,46 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated….
+[INSTANCE REGISTRY] I1=<O003>,I2=<O009>,I3=<O010>,I4=<O012>.
+<Entity 01 CHAR Yehongyi>=E1[articulated/primary/static] members=I1;n=1;src=female fighter character blockout in dark red outfit; final=female fighter character blockout in dark red outfit; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal…; style=world_style_unit_contract.
+<Entity 02 ENV B-1>=E2[environment/context/static] members=I2-I3;n=2;src=B-1 built environment shell enclosing the set…; final=B-1 built environment shell enclosing the set: FactoryYardGround…; finish=worn cement, oxidised steel and sheet metal with cold grey reflections, shadow…; style=world_style_unit_contract.
+<Entity 03 PROP B-1>=E3[rigid/context/static] members=I4;n=1;src=B-1 set pieces and fittings: SideDoor; final=B-1 set pieces and fittings: SideDoor; finish=utilitarian material with visible weight, thickness and use marks, cold grey metal…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I3;1:1;n=2.
+E3:I4;1:1;n=1.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D… | materials=real skin with pores and slight oil sheen, matte technical fabric… | environment=cement yard plates cut by fire lines, riveted steel frames and… | props=functional utilitarian tooling with real weight and thickness… | light=one cold overhead key over the purification bench with shadow….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_3401@0.000-1.000s I1,I4: rel=the fighter drags the scientist through the side…; ban=do not release the tablet and do not close the side door….
+[Shot 1] @0.000-13.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=tracking;target=none;path=camera travels from (-2. 37, 4. 90, 0. 38) to (-4. 37, 2. 30, 0…;dist=stable;azi=variable;elev=stable;lens=stable;comp=中远景 framing in 9:16 vertical, subject held in the frame centre band with head…;ban=do not swap the follow move for an orbit or a frontal push… | Act=at the inner face of the factory gate the fighter pushes the side door open and drags the scientist through it, the data tablet… | Layout=4 visible instances. Dominant WestPlantShell covers 41x20 percent at frame 80/29… | Light=one cold overhead key over the purification bench with shadow detail….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium_full;Comp=depth spans 6. 07m to 21. 49m across 4 layers…;Cam=camera at (-2. 37, 4. 90, 0. 38) on a 35…;Lay=4 visible instances… V=I2:30/46/60/3,I3:80/29/41/20,I4:96/42/8/8 D=I1:v/99/35/2/29/o:upright body proxy, head end up/m:stationary across this interval/r:right of SideDoor, behind all nearer…
+@1.620s F=medium_full;Comp=depth spans 5. 92m to 21. 33m across 4 layers…;Cam=camera at (-2. 45, 4. 79, 0. 38) on a 35…;Lay=4 visible instances… V=I2:30/46/61/3,I3:80/28/41/20,I4:96/42/7/9 D=I1:v/99/34/1/30/o:upright body proxy, head end up/m:stationary across this interval/r:right of SideDoor, behind all nearer…
+@3.240s F=medium_full;Comp=depth spans 6. 35m to 20. 91m across 3 layers…;Cam=camera at (-2. 68, 4. 49, 0. 37) on a 35…;Lay=3 visible instances… V=I2:31/45/62/3,I3:80/27/40/21,I4:98/41/4/9 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@4.859s F=medium_full;Comp=depth spans 20. 29m to 20. 46m across 2 layers…;Cam=camera at (-3. 00, 4. 08, 0. 37) on a 35…;Lay=2 visible instances… V=I2:31/44/63/3,I3:81/26/38/22 O=I4 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@6.479s F=medium_full;Comp=depth spans 19. 62m to 19. 96m across 2 layers…;Cam=camera at (-3. 36, 3. 61, 0. 37) on a 35…;Lay=2 visible instances… V=I2:32/43/64/3,I3:81/24/37/23 O=I4 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@8.099s F=medium_full;Comp=depth spans 18. 92m to 19. 44m across 2 layers…;Cam=camera at (-3. 73, 3. 13, 0. 36) on a 35…;Lay=2 visible instances… V=I2:33/42/66/3,I3:82/22/36/24 O=I4 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@9.719s F=medium_full;Comp=depth spans 18. 31m to 18. 99m across 2 layers…;Cam=camera at (-4. 05, 2. 71, 0. 36) on a 35…;Lay=2 visible instances… V=I2:33/41/67/4,I3:83/20/34/25 O=I4 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@11.339s F=medium_full;Comp=depth spans 17. 88m to 18. 67m across 2 layers…;Cam=camera at (-4. 28, 2. 41, 0. 36) on a 35…;Lay=2 visible instances… V=I2:34/41/68/4,I3:83/19/33/26 O=I4 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+@12.958s F=medium_full;Comp=depth spans 17. 72m to 18. 54m across 2 layers…;Cam=camera at (-4. 37, 2. 30, 0. 36) on a 35…;Lay=2 visible instances… V=I2:34/41/68/4,I3:84/18/33/27 O=I4 D=I1:o/o/o:off screen at this anchor/m:offscreen at this anchor/r:leaves the frame before this anchor
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+distant engine noise coming closer, tyres over broken brick and one iron door pushed open
+
+non_diegetic_music:
+N/A

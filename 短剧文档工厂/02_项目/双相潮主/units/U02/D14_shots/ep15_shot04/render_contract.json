@@ -1,0 +1,1068 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep15_shot04/preview_video.mp4",
+    "duration": 8.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 192,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "B-9_CHAR_Yehongyi_01",
+      "source_type": "MESH",
+      "root_name": "B-9_CHAR_Yehongyi_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=B-9_CHAR_Yehongyi_01; type=MESH; root=B-9_CHAR_Yehongyi_01; dimensions=0.420,0.320,1.730",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O004",
+      "source_name": "B-9_EXT_FactoryHallShell.002",
+      "source_type": "MESH",
+      "root_name": "B-9_EXT_FactoryHallShell.002",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=B-9_EXT_FactoryHallShell.002; type=MESH; root=B-9_EXT_FactoryHallShell.002; dimensions=13.597,0.113,5.439",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O008",
+      "source_name": "B-9_EXT_FactoryYardGround",
+      "source_type": "MESH",
+      "root_name": "B-9_EXT_FactoryYardGround",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=B-9_EXT_FactoryYardGround; type=MESH; root=B-9_EXT_FactoryYardGround; dimensions=36.000,44.000,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O009",
+      "source_name": "B-9_EXT_PerimeterWall_02",
+      "source_type": "MESH",
+      "root_name": "B-9_EXT_PerimeterWall_02",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=B-9_EXT_PerimeterWall_02; type=MESH; root=B-9_EXT_PerimeterWall_02; dimensions=36.120,44.060,2.200",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O010",
+      "source_name": "B-9_LGT_EmergencyLamp_01",
+      "source_type": "MESH",
+      "root_name": "B-9_LGT_EmergencyLamp_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=B-9_LGT_EmergencyLamp_01; type=MESH; root=B-9_LGT_EmergencyLamp_01; dimensions=0.300,0.200,0.180",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O011",
+      "source_name": "B-9_LGT_GreyFramePanel_01",
+      "source_type": "MESH",
+      "root_name": "B-9_LGT_GreyFramePanel_01",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=B-9_LGT_GreyFramePanel_01; type=MESH; root=B-9_LGT_GreyFramePanel_01; dimensions=0.600,0.020,0.450",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O016",
+      "source_name": "B-9_PROP_UnexpectedShadow_03",
+      "source_type": "MESH",
+      "root_name": "B-9_PROP_UnexpectedShadow_03",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 7.958,
+      "identity_cues": "name=B-9_PROP_UnexpectedShadow_03; type=MESH; root=B-9_PROP_UnexpectedShadow_03; dimensions=0.418,0.004,0.160",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR Yehongyi",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "female fighter character blockout in dark red outfit",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV B-9",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O004",
+        "O008",
+        "O009"
+      ],
+      "instance_count": 3,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-9 built environment shell enclosing the set: FactoryHallShell, FactoryYardGround, PerimeterWall",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 03 PROP B-9",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O010",
+        "O011"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-9 set pieces and fittings: EmergencyLamp, GreyFramePanel",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    },
+    {
+      "label": "Entity 04 PROP UnexpectedShadow",
+      "entity_class": "rigid",
+      "importance": "context",
+      "source_instance_ids": [
+        "O016"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-9 set pieces and fittings: UnexpectedShadow",
+      "structural_constraints": "each member keeps its own source footprint, size and placement",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_6001",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "start_seconds": 0.4,
+      "end_seconds": 1.0,
+      "relation": "the shadow blade is drawn half out and pushed back into its sheath at the wall",
+      "forbidden_change": "do not light the blade edge and do not leave the blade drawn"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 8.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 04 PROP UnexpectedShadow",
+        "world_path": "camera travels from (-1.20, 17.41, 2.26) to (-1.20, 17.41, 2.26) on a 35mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "decrease",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 中景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "after the lights are cut the factory yard keeps only the low level of the emergency lamps and an extra row of shadows that should not be there appears on the perimeter wall, countable at a glance; steel rods and ammunition are issued to the wall posts, and the fighter walks the wall alone with the shadow blade half drawn and pushed back; a corner readout shows the normalisation readout at 1.3%",
+      "layout_and_occlusion": "7 visible instances. Dominant FactoryHallShell covers 100x32 percent at frame 50/16. Left to right: Yehongyi, UnexpectedShadow, GreyFramePanel, EmergencyLamp, FactoryHallShell.",
+      "lighting_spatial_logic": "one cold overhead key over the purification bench with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the welding arc, the twin flame and the fire heads as the only moving light sources, and the emergency lamp as the sole light after the yard lights are cut"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep15_shot04/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.41m to 6.68m across 7 layers; nearest is Yehongyi, furthest is PerimeterWall"
+      },
+      "camera_relation": "camera at (-1.20, 17.41, 2.26) on a 35.0mm lens, frame 1 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 1.98,
+          "center_y_percent": 79.21,
+          "bbox_width_percent": 3.95,
+          "bbox_height_percent": 41.59,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of UnexpectedShadow, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 16.14,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 32.28,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 81.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.45,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 64.1,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 31.88,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 27.95,
+          "center_y_percent": 50.56,
+          "bbox_width_percent": 8.96,
+          "bbox_height_percent": 2.89,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 23.36,
+          "center_y_percent": 62.47,
+          "bbox_width_percent": 20.24,
+          "bbox_height_percent": 8.69,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of UnexpectedShadow, left of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O016",
+          "entity_label": "Entity 04 PROP UnexpectedShadow",
+          "visibility": "visible",
+          "center_x_percent": 3.19,
+          "center_y_percent": 63.06,
+          "bbox_width_percent": 6.37,
+          "bbox_height_percent": 2.38,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, left of GreyFramePanel, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "7 visible instances. Dominant FactoryHallShell covers 100x32 percent at frame 50/16. Left to right: Yehongyi, UnexpectedShadow, GreyFramePanel, EmergencyLamp, FactoryHallShell."
+    },
+    {
+      "time_seconds": 0.995,
+      "source_frame": "D14_shots/ep15_shot04/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.41m to 6.68m across 7 layers; nearest is Yehongyi, furthest is PerimeterWall"
+      },
+      "camera_relation": "camera at (-1.20, 17.41, 2.26) on a 35.0mm lens, frame 25 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 1.98,
+          "center_y_percent": 79.21,
+          "bbox_width_percent": 3.95,
+          "bbox_height_percent": 41.59,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of UnexpectedShadow, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 16.14,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 32.28,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 81.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.45,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 64.1,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 31.88,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 27.95,
+          "center_y_percent": 50.56,
+          "bbox_width_percent": 8.96,
+          "bbox_height_percent": 2.89,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 23.36,
+          "center_y_percent": 62.47,
+          "bbox_width_percent": 20.24,
+          "bbox_height_percent": 8.69,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of UnexpectedShadow, left of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O016",
+          "entity_label": "Entity 04 PROP UnexpectedShadow",
+          "visibility": "visible",
+          "center_x_percent": 15.19,
+          "center_y_percent": 63.06,
+          "bbox_width_percent": 30.37,
+          "bbox_height_percent": 7.79,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, left of GreyFramePanel, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "7 visible instances. Dominant FactoryHallShell covers 100x32 percent at frame 50/16. Left to right: Yehongyi, UnexpectedShadow, GreyFramePanel, EmergencyLamp, FactoryHallShell."
+    },
+    {
+      "time_seconds": 1.99,
+      "source_frame": "D14_shots/ep15_shot04/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.41m to 6.68m across 7 layers; nearest is Yehongyi, furthest is PerimeterWall"
+      },
+      "camera_relation": "camera at (-1.20, 17.41, 2.26) on a 35.0mm lens, frame 49 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 1.98,
+          "center_y_percent": 79.21,
+          "bbox_width_percent": 3.95,
+          "bbox_height_percent": 41.59,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreyFramePanel, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 16.14,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 32.28,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 81.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.45,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 64.1,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 31.88,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 27.95,
+          "center_y_percent": 50.56,
+          "bbox_width_percent": 8.96,
+          "bbox_height_percent": 2.89,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of UnexpectedShadow, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 23.36,
+          "center_y_percent": 62.47,
+          "bbox_width_percent": 20.24,
+          "bbox_height_percent": 8.69,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, left of UnexpectedShadow, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O016",
+          "entity_label": "Entity 04 PROP UnexpectedShadow",
+          "visibility": "visible",
+          "center_x_percent": 27.17,
+          "center_y_percent": 63.06,
+          "bbox_width_percent": 54.34,
+          "bbox_height_percent": 13.2,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of EmergencyLamp, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "7 visible instances. Dominant FactoryHallShell covers 100x32 percent at frame 50/16. Left to right: Yehongyi, GreyFramePanel, UnexpectedShadow, EmergencyLamp, FactoryHallShell."
+    },
+    {
+      "time_seconds": 2.984,
+      "source_frame": "D14_shots/ep15_shot04/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.41m to 6.68m across 7 layers; nearest is Yehongyi, furthest is PerimeterWall"
+      },
+      "camera_relation": "camera at (-1.20, 17.41, 2.26) on a 35.0mm lens, frame 73 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 1.98,
+          "center_y_percent": 79.21,
+          "bbox_width_percent": 3.95,
+          "bbox_height_percent": 41.59,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreyFramePanel, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 16.14,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 32.28,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of UnexpectedShadow, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 81.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.45,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of UnexpectedShadow, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 64.1,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 31.88,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of UnexpectedShadow, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 27.95,
+          "center_y_percent": 50.56,
+          "bbox_width_percent": 8.96,
+          "bbox_height_percent": 2.89,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of UnexpectedShadow, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 23.36,
+          "center_y_percent": 62.47,
+          "bbox_width_percent": 20.24,
+          "bbox_height_percent": 8.69,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, left of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O016",
+          "entity_label": "Entity 04 PROP UnexpectedShadow",
+          "visibility": "visible",
+          "center_x_percent": 39.23,
+          "center_y_percent": 63.06,
+          "bbox_width_percent": 78.46,
+          "bbox_height_percent": 18.61,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, left of FactoryHallShell, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "7 visible instances. Dominant FactoryHallShell covers 100x32 percent at frame 50/16. Left to right: Yehongyi, GreyFramePanel, EmergencyLamp, UnexpectedShadow, FactoryHallShell."
+    },
+    {
+      "time_seconds": 3.979,
+      "source_frame": "D14_shots/ep15_shot04/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.41m to 6.68m across 7 layers; nearest is Yehongyi, furthest is PerimeterWall"
+      },
+      "camera_relation": "camera at (-1.20, 17.41, 2.26) on a 35.0mm lens, frame 96 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 1.98,
+          "center_y_percent": 79.21,
+          "bbox_width_percent": 3.95,
+          "bbox_height_percent": 41.59,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreyFramePanel, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 16.14,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 32.28,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 81.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.45,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 64.1,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 31.88,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 27.95,
+          "center_y_percent": 50.56,
+          "bbox_width_percent": 8.96,
+          "bbox_height_percent": 2.89,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 23.36,
+          "center_y_percent": 62.47,
+          "bbox_width_percent": 20.24,
+          "bbox_height_percent": 8.69,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, left of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O016",
+          "entity_label": "Entity 04 PROP UnexpectedShadow",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 63.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 23.79,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "7 visible instances. Dominant FactoryHallShell covers 100x32 percent at frame 50/16. Left to right: Yehongyi, GreyFramePanel, EmergencyLamp, FactoryHallShell, FactoryYardGround."
+    },
+    {
+      "time_seconds": 4.974,
+      "source_frame": "D14_shots/ep15_shot04/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.41m to 6.68m across 7 layers; nearest is Yehongyi, furthest is PerimeterWall"
+      },
+      "camera_relation": "camera at (-1.20, 17.41, 2.26) on a 35.0mm lens, frame 120 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 1.98,
+          "center_y_percent": 79.21,
+          "bbox_width_percent": 3.95,
+          "bbox_height_percent": 41.59,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreyFramePanel, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 16.14,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 32.28,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 81.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.45,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 64.1,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 31.88,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 27.95,
+          "center_y_percent": 50.56,
+          "bbox_width_percent": 8.96,
+          "bbox_height_percent": 2.89,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 23.36,
+          "center_y_percent": 62.47,
+          "bbox_width_percent": 20.24,
+          "bbox_height_percent": 8.69,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, left of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O016",
+          "entity_label": "Entity 04 PROP UnexpectedShadow",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 63.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 23.79,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "7 visible instances. Dominant FactoryHallShell covers 100x32 percent at frame 50/16. Left to right: Yehongyi, GreyFramePanel, EmergencyLamp, FactoryHallShell, FactoryYardGround."
+    },
+    {
+      "time_seconds": 5.969,
+      "source_frame": "D14_shots/ep15_shot04/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.41m to 6.68m across 7 layers; nearest is Yehongyi, furthest is PerimeterWall"
+      },
+      "camera_relation": "camera at (-1.20, 17.41, 2.26) on a 35.0mm lens, frame 144 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 1.98,
+          "center_y_percent": 79.21,
+          "bbox_width_percent": 3.95,
+          "bbox_height_percent": 41.59,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreyFramePanel, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 16.14,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 32.28,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 81.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.45,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 64.1,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 31.88,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 27.95,
+          "center_y_percent": 50.56,
+          "bbox_width_percent": 8.96,
+          "bbox_height_percent": 2.89,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 23.36,
+          "center_y_percent": 62.47,
+          "bbox_width_percent": 20.24,
+          "bbox_height_percent": 8.69,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, left of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O016",
+          "entity_label": "Entity 04 PROP UnexpectedShadow",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 63.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 23.79,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "7 visible instances. Dominant FactoryHallShell covers 100x32 percent at frame 50/16. Left to right: Yehongyi, GreyFramePanel, EmergencyLamp, FactoryHallShell, FactoryYardGround."
+    },
+    {
+      "time_seconds": 6.964,
+      "source_frame": "D14_shots/ep15_shot04/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.41m to 6.68m across 7 layers; nearest is Yehongyi, furthest is PerimeterWall"
+      },
+      "camera_relation": "camera at (-1.20, 17.41, 2.26) on a 35.0mm lens, frame 168 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 1.98,
+          "center_y_percent": 79.21,
+          "bbox_width_percent": 3.95,
+          "bbox_height_percent": 41.59,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreyFramePanel, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 16.14,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 32.28,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 81.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.45,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 64.1,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 31.88,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 27.95,
+          "center_y_percent": 50.56,
+          "bbox_width_percent": 8.96,
+          "bbox_height_percent": 2.89,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 23.36,
+          "center_y_percent": 62.47,
+          "bbox_width_percent": 20.24,
+          "bbox_height_percent": 8.69,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, left of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O016",
+          "entity_label": "Entity 04 PROP UnexpectedShadow",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 63.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 23.79,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "7 visible instances. Dominant FactoryHallShell covers 100x32 percent at frame 50/16. Left to right: Yehongyi, GreyFramePanel, EmergencyLamp, FactoryHallShell, FactoryYardGround."
+    },
+    {
+      "time_seconds": 7.958,
+      "source_frame": "D14_shots/ep15_shot04/source_anchor_frames/anchor_09.jpg",
+      "composition": {
+        "shot_scale": "medium",
+        "frame_balance_and_depth": "depth spans 4.41m to 6.68m across 7 layers; nearest is Yehongyi, furthest is PerimeterWall"
+      },
+      "camera_relation": "camera at (-1.20, 17.41, 2.26) on a 35.0mm lens, frame 192 of 192",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR Yehongyi",
+          "visibility": "visible",
+          "center_x_percent": 1.98,
+          "center_y_percent": 79.21,
+          "bbox_width_percent": 3.95,
+          "bbox_height_percent": 41.59,
+          "orientation": "upright body proxy, head end up",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "left of GreyFramePanel, behind all nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 16.14,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 32.28,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, upper frame band"
+        },
+        {
+          "source_id": "O008",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 81.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 1.45,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O009",
+          "entity_label": "Entity 02 ENV B-9",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 64.1,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 31.88,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O010",
+          "entity_label": "Entity 03 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 27.95,
+          "center_y_percent": 50.56,
+          "bbox_width_percent": 8.96,
+          "bbox_height_percent": 2.89,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of GreyFramePanel, left of FactoryHallShell, in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O011",
+          "entity_label": "Entity 03 PROP B-9",
+          "visibility": "visible",
+          "center_x_percent": 23.36,
+          "center_y_percent": 62.47,
+          "bbox_width_percent": 20.24,
+          "bbox_height_percent": 8.69,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of Yehongyi, left of EmergencyLamp, in front of nearer elements, lower frame band"
+        },
+        {
+          "source_id": "O016",
+          "entity_label": "Entity 04 PROP UnexpectedShadow",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 63.06,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 23.79,
+          "orientation": "horizontal volume proxy, long axis running across frame",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "right of EmergencyLamp, in front of nearer elements, lower frame band"
+        }
+      ],
+      "key_layout_and_occlusion": "7 visible instances. Dominant FactoryHallShell covers 100x32 percent at frame 50/16. Left to right: Yehongyi, GreyFramePanel, EmergencyLamp, FactoryHallShell, FactoryYardGround."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

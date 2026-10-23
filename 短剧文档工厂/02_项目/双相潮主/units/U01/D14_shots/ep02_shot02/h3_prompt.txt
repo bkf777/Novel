@@ -1,0 +1,47 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O003>,I3=<O007>,I4=<O015>,I5=<O020>,I6=<O021>,I7=<O022>,I8=<O027>,I9=<O028>,I10=<O029>.
+<Entity 01 CHAR Luchen>=E1[articulated/primary/locomotion] members=I1;n=1;src=male protagonist blockout; final=male protagonist blockout; finish=real skin with pores and fine hair, fabric with real…; style=world_style_unit_contract.
+<Entity 02 ENV A-2>=E2[environment/context/static] members=I2-I3;n=2;src=A-2 built environment shell…; final=A-2 built environment shell enclosing…; finish=worn cement, oxidised steel and sheet metal with…; style=world_style_unit_contract.
+<Entity 03 PROP A-2>=E3[rigid/context/static] members=I4-I10;n=7;src=A-2 set pieces and fittings…; final=A-2 set pieces and fittings…; finish=utilitarian material with visible weight, thickness…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I3;1:1;n=2.
+E3:I4-I10;1:1;n=7.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global… | materials=real skin with pores and slight oil sheen… | environment=cement yard plates cut by fissures and pit… | props=functional utilitarian tooling with real… | light=one cold overhead key with shadow detail….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+E1:locomotion | Act=travels 0.81m across the set during the shot | Keep=stay inside the source blockout bounds for the full shot | Ban=do not replace, duplicate or remove this instance.
+[STATIC LOCK] E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+No source interaction; do not invent contact, carrying, attachment, support, or manipulation.
+[Shot 1] @0.000-15.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E1;path=camera travels from (-7. 78, 8. 15, 1. 86) to (-7. 78, 8…;dist=decrease;azi=stable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the…;ban=do not add any camera move, zoom or handheld… | Act=protagonist carries a steel rack sideways and stacks it under the window, then… | Layout=10 visible instances… | Light=one cold overhead key with shadow detail….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 5. 10m to 9…;Cam=camera at (-7. 78, 8. 15, 1…;Lay=10 visible instances… V=I2:50/79/100/43,I3:56/8/88/16,I4:18/78/27/13,I5:27/59/54/43,I6:86/56/28/48,I7:86/17/28/34,I8:18/87/25/12,I9:34/65/62/42,I10:89/30/22/40 D=I1:v/34/64/22/43/o:upright body proxy…/m:stationary across this…/r:right of WeldedGate…
+@1.870s F=medium;Comp=depth spans 5. 10m to 9…;Cam=camera at (-7. 78, 8. 15, 1…;Lay=10 visible instances… V=I2:50/79/100/43,I3:56/8/88/16,I4:18/78/27/13,I5:27/59/54/43,I6:86/56/28/48,I7:86/17/28/34,I8:18/87/25/12,I9:34/65/62/42,I10:89/30/22/40 D=I1:v/58/62/21/40/o:upright body proxy…/m:stationary across this…/r:right of FactoryHall…
+@3.740s F=medium;Comp=depth spans 5. 10m to 9…;Cam=camera at (-7. 78, 8. 15, 1…;Lay=10 visible instances… V=I2:50/79/100/43,I3:56/8/88/16,I4:18/78/27/13,I5:27/59/54/43,I6:86/56/28/48,I7:86/17/28/34,I8:18/87/25/12,I9:34/65/62/42,I10:89/30/22/40 D=I1:v/78/60/20/37/o:upright body proxy…/m:stationary across this…/r:right of FactoryHall…
+@5.609s F=medium;Comp=depth spans 5. 10m to 9…;Cam=camera at (-7. 78, 8. 15, 1…;Lay=10 visible instances… V=I2:50/79/100/43,I3:56/8/88/16,I4:18/78/27/13,I5:27/59/54/43,I6:86/56/28/48,I7:86/17/28/34,I8:18/87/25/12,I9:34/65/62/42,I10:89/30/22/40 D=I1:v/93/59/14/34/o:upright body proxy…/m:stationary across this…/r:right of WestHighWindow…
+@7.479s F=medium;Comp=depth spans 5. 10m to 9…;Cam=camera at (-7. 78, 8. 15, 1…;Lay=9 visible instances… V=I2:50/79/100/43,I3:56/8/88/16,I4:18/78/27/13,I5:27/59/54/43,I6:86/56/28/48,I7:86/17/28/34,I8:18/87/25/12,I9:34/65/62/42,I10:89/30/22/40 D=I1:o/o/o:off screen at…/m:offscreen at this anchor/r:leaves the frame before…
+@9.349s F=medium;Comp=depth spans 5. 10m to 9…;Cam=camera at (-7. 78, 8. 15, 1…;Lay=10 visible instances… V=I2:50/79/100/43,I3:56/8/88/16,I4:18/78/27/13,I5:27/59/54/43,I6:86/56/28/48,I7:86/17/28/34,I8:18/87/25/12,I9:34/65/62/42,I10:89/30/22/40 D=I1:v/98/58/5/33/o:upright body proxy…/m:stationary across this…/r:right of WestHighWindow…
+@11.219s F=medium;Comp=depth spans 5. 10m to 9…;Cam=camera at (-7. 78, 8. 15, 1…;Lay=10 visible instances… V=I2:50/79/100/43,I3:56/8/88/16,I4:18/78/27/13,I5:27/59/54/43,I6:86/56/28/48,I7:86/17/28/34,I8:18/87/25/12,I9:34/65/62/42,I10:89/30/22/40 D=I1:v/82/61/20/37/o:upright body proxy…/m:stationary across this…/r:right of FactoryHall…
+@13.089s F=medium;Comp=depth spans 5. 10m to 9…;Cam=camera at (-7. 78, 8. 15, 1…;Lay=10 visible instances… V=I2:50/79/100/43,I3:56/8/88/16,I4:18/78/27/13,I5:27/59/54/43,I6:86/56/28/48,I7:86/17/28/34,I8:18/87/25/12,I9:34/65/62/42,I10:89/30/22/40 D=I1:v/54/64/22/43/o:upright body proxy…/m:stationary across this…/r:right of FactoryHall…
+@14.958s F=medium;Comp=depth spans 5. 05m to 9…;Cam=camera at (-7. 78, 8. 15, 1…;Lay=10 visible instances… V=I2:50/79/100/43,I3:56/8/88/16,I4:18/78/27/13,I5:27/59/54/43,I6:86/56/28/48,I7:86/17/28/34,I8:18/87/25/12,I9:34/65/62/42,I10:89/30/22/40 D=I1:v/16/68/25/50/o:upright body proxy…/m:stationary across this…/r:left of HalfRationBox…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+short welding arc burst and steel dragging over concrete
+
+non_diegetic_music:
+N/A

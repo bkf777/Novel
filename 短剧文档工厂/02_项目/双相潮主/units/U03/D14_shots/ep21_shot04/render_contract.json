@@ -1,0 +1,510 @@
+{
+  "schema_version": 4,
+  "source": {
+    "path": "D14_shots/ep21_shot04/preview_video.mp4",
+    "duration": 7.0,
+    "fps": 24.0,
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": 0.5625,
+    "frames": 168,
+    "has_audio": false
+  },
+  "watched_full_source": true,
+  "shot_count": 1,
+  "source_inventory": [
+    {
+      "source_id": "O001",
+      "source_name": "B-15_CHAR_GeometryBadgeColumn_04",
+      "source_type": "MESH",
+      "root_name": "B-15_CHAR_GeometryBadgeColumn_04",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-15_CHAR_GeometryBadgeColumn_04; type=MESH; root=B-15_CHAR_GeometryBadgeColumn_04; dimensions=0.460,5.340,1.750",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O004",
+      "source_name": "B-15_EXT_StreetGround",
+      "source_type": "MESH",
+      "root_name": "B-15_EXT_StreetGround",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-15_EXT_StreetGround; type=MESH; root=B-15_EXT_StreetGround; dimensions=40.000,36.000,0.100",
+      "evidence_origin": "blender_manifest"
+    },
+    {
+      "source_id": "O006",
+      "source_name": "B-15_EXT_StreetSideWall.002",
+      "source_type": "MESH",
+      "root_name": "B-15_EXT_StreetSideWall.002",
+      "first_visible_seconds": 0.0,
+      "last_visible_seconds": 6.958,
+      "identity_cues": "name=B-15_EXT_StreetSideWall.002; type=MESH; root=B-15_EXT_StreetSideWall.002; dimensions=0.400,24.000,4.800",
+      "evidence_origin": "blender_manifest"
+    }
+  ],
+  "entities": [
+    {
+      "label": "Entity 01 CHAR GeometryBadgeColumn",
+      "entity_class": "articulated",
+      "importance": "primary",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "instance_count": 1,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "badge column blockout walking through the street corner",
+      "structural_constraints": "keep the source joint envelope and floor contact; the body stays inside the blocked volume",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "stay inside the source blockout bounds for the full shot",
+        "forbidden_substitutions": "do not replace, duplicate or remove this instance"
+      }
+    },
+    {
+      "label": "Entity 02 ENV B-15",
+      "entity_class": "environment",
+      "importance": "context",
+      "source_instance_ids": [
+        "O004",
+        "O006"
+      ],
+      "instance_count": 2,
+      "conservation_rule": "one_to_one_no_merge_split_delete_or_replace",
+      "source_role": "B-15 built environment shell enclosing the set: StreetGround, StreetSideWall",
+      "structural_constraints": "all shell geometry keeps the blocked set footprint and clear height",
+      "motion_contract": {
+        "mode": "static",
+        "action": "holds its source position for the whole shot",
+        "continuity_requirement": "keep every instance and the column order exactly as in the source",
+        "forbidden_substitutions": "do not merge, split, drop or reorder the instances"
+      }
+    }
+  ],
+  "interaction_contracts": [
+    {
+      "interaction_id": "IX_8401",
+      "source_instance_ids": [
+        "O001"
+      ],
+      "start_seconds": 0.0,
+      "end_seconds": 1.0,
+      "relation": "the column walks through the corner in step while the corner readout stays lit",
+      "forbidden_change": "do not put a religious symbol on the badges and do not break the column order"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": 1,
+      "start_seconds": 0.0,
+      "end_seconds": 7.0,
+      "camera_contract": {
+        "motion_type": "static",
+        "tracked_target_entity": "Entity 01 CHAR GeometryBadgeColumn",
+        "world_path": "camera travels from (-0.97, -1.13, 2.09) to (-0.97, -1.13, 2.09) on a 35mm lens, total path length 0.00m inside the blocked set",
+        "target_distance_trend": "stable",
+        "azimuth_trend": "stable",
+        "elevation_trend": "stable",
+        "focal_length_trend": "stable",
+        "screen_composition_rule": "中远景 framing in 9:16 vertical, subject held in the frame centre band with head room above, foreground occlusion kept under one third of frame, and the AI badge corner left clear of the subject",
+        "forbidden_reinterpretations": "do not add any camera move, zoom or handheld shake; keep the 中远景 framing and the 固定 move exactly as blocked out"
+      },
+      "actions": "a column of people walks through the street corner with steps in time like a column; the badges on their cuffs are abstract geometry and no religious symbol can be read in them; a readout field in one corner shows the normalisation readout at 1.4%",
+      "layout_and_occlusion": "3 visible instances. Dominant GeometryBadgeColumn covers 100x30 percent at frame 50/62. Left to right: GeometryBadgeColumn, StreetGround, StreetSideWall.",
+      "lighting_spatial_logic": "one cold overhead key over the steel table with shadow detail retained instead of crushed black, cold grey bounce from concrete and steel, the emergency lamps on the gate posts, the residual fire heads, the twin flame and the derrick lamp as the only moving light sources, and the grey fog pressing down over the street with the unlit crossing kept dark"
+    }
+  ],
+  "anchors": [
+    {
+      "time_seconds": 0.0,
+      "source_frame": "D14_shots/ep21_shot04/source_anchor_frames/anchor_01.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 7.36m to 23.53m across 3 layers; nearest is GeometryBadgeColumn, furthest is StreetSideWall"
+      },
+      "camera_relation": "camera at (-0.97, -1.13, 2.09) on a 35.0mm lens, frame 1 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GeometryBadgeColumn",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 61.57,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 29.97,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-15",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 54.5,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.39,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-15",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 40.98,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 26.04,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GeometryBadgeColumn covers 100x30 percent at frame 50/62. Left to right: GeometryBadgeColumn, StreetGround, StreetSideWall."
+    },
+    {
+      "time_seconds": 0.994,
+      "source_frame": "D14_shots/ep21_shot04/source_anchor_frames/anchor_02.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 7.36m to 23.53m across 3 layers; nearest is GeometryBadgeColumn, furthest is StreetSideWall"
+      },
+      "camera_relation": "camera at (-0.97, -1.13, 2.09) on a 35.0mm lens, frame 25 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GeometryBadgeColumn",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 61.57,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 29.97,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-15",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 54.5,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.39,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-15",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 40.98,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 26.04,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GeometryBadgeColumn covers 100x30 percent at frame 50/62. Left to right: GeometryBadgeColumn, StreetGround, StreetSideWall."
+    },
+    {
+      "time_seconds": 1.988,
+      "source_frame": "D14_shots/ep21_shot04/source_anchor_frames/anchor_03.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 7.36m to 23.53m across 3 layers; nearest is GeometryBadgeColumn, furthest is StreetSideWall"
+      },
+      "camera_relation": "camera at (-0.97, -1.13, 2.09) on a 35.0mm lens, frame 49 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GeometryBadgeColumn",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 61.57,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 29.97,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-15",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 54.5,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.39,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-15",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 40.98,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 26.04,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GeometryBadgeColumn covers 100x30 percent at frame 50/62. Left to right: GeometryBadgeColumn, StreetGround, StreetSideWall."
+    },
+    {
+      "time_seconds": 2.982,
+      "source_frame": "D14_shots/ep21_shot04/source_anchor_frames/anchor_04.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 7.36m to 23.53m across 3 layers; nearest is GeometryBadgeColumn, furthest is StreetSideWall"
+      },
+      "camera_relation": "camera at (-0.97, -1.13, 2.09) on a 35.0mm lens, frame 73 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GeometryBadgeColumn",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 61.57,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 29.97,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-15",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 54.5,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.39,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-15",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 40.98,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 26.04,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GeometryBadgeColumn covers 100x30 percent at frame 50/62. Left to right: GeometryBadgeColumn, StreetGround, StreetSideWall."
+    },
+    {
+      "time_seconds": 3.976,
+      "source_frame": "D14_shots/ep21_shot04/source_anchor_frames/anchor_05.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 7.36m to 23.53m across 3 layers; nearest is GeometryBadgeColumn, furthest is StreetSideWall"
+      },
+      "camera_relation": "camera at (-0.97, -1.13, 2.09) on a 35.0mm lens, frame 96 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GeometryBadgeColumn",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 61.57,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 29.97,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-15",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 54.5,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.39,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-15",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 40.98,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 26.04,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GeometryBadgeColumn covers 100x30 percent at frame 50/62. Left to right: GeometryBadgeColumn, StreetGround, StreetSideWall."
+    },
+    {
+      "time_seconds": 4.97,
+      "source_frame": "D14_shots/ep21_shot04/source_anchor_frames/anchor_06.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 7.36m to 23.53m across 3 layers; nearest is GeometryBadgeColumn, furthest is StreetSideWall"
+      },
+      "camera_relation": "camera at (-0.97, -1.13, 2.09) on a 35.0mm lens, frame 120 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GeometryBadgeColumn",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 61.57,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 29.97,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-15",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 54.5,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.39,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-15",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 40.98,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 26.04,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GeometryBadgeColumn covers 100x30 percent at frame 50/62. Left to right: GeometryBadgeColumn, StreetGround, StreetSideWall."
+    },
+    {
+      "time_seconds": 5.964,
+      "source_frame": "D14_shots/ep21_shot04/source_anchor_frames/anchor_07.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 7.36m to 23.53m across 3 layers; nearest is GeometryBadgeColumn, furthest is StreetSideWall"
+      },
+      "camera_relation": "camera at (-0.97, -1.13, 2.09) on a 35.0mm lens, frame 144 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GeometryBadgeColumn",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 61.57,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 29.97,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-15",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 54.5,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.39,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-15",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 40.98,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 26.04,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GeometryBadgeColumn covers 100x30 percent at frame 50/62. Left to right: GeometryBadgeColumn, StreetGround, StreetSideWall."
+    },
+    {
+      "time_seconds": 6.958,
+      "source_frame": "D14_shots/ep21_shot04/source_anchor_frames/anchor_08.jpg",
+      "composition": {
+        "shot_scale": "medium_full",
+        "frame_balance_and_depth": "depth spans 7.36m to 23.53m across 3 layers; nearest is GeometryBadgeColumn, furthest is StreetSideWall"
+      },
+      "camera_relation": "camera at (-0.97, -1.13, 2.09) on a 35.0mm lens, frame 168 of 168",
+      "tracked_instances": [
+        {
+          "source_id": "O001",
+          "entity_label": "Entity 01 CHAR GeometryBadgeColumn",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 61.57,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 29.97,
+          "orientation": "compact body proxy, crouched volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "behind all nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O004",
+          "entity_label": "Entity 02 ENV B-15",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 54.5,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 9.39,
+          "orientation": "compact block proxy, near cubic volume",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        },
+        {
+          "source_id": "O006",
+          "entity_label": "Entity 02 ENV B-15",
+          "visibility": "visible",
+          "center_x_percent": 50.0,
+          "center_y_percent": 40.98,
+          "bbox_width_percent": 100.0,
+          "bbox_height_percent": 26.04,
+          "orientation": "horizontal volume proxy, long axis running into depth",
+          "motion_state": "stationary across this interval",
+          "spatial_relations": "in front of nearer elements, middle frame height"
+        }
+      ],
+      "key_layout_and_occlusion": "3 visible instances. Dominant GeometryBadgeColumn covers 100x30 percent at frame 50/62. Left to right: GeometryBadgeColumn, StreetGround, StreetSideWall."
+    }
+  ],
+  "m3_cut_review": {
+    "candidate_times": [],
+    "confirmed_real_cuts": [],
+    "reasoning": "No source cut candidate requires review."
+  }
+}

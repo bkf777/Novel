@@ -1,0 +1,92 @@
+{
+  "scene_code": "B-13",
+  "size_m": [
+    40.4,
+    36.0,
+    8.0
+  ],
+  "ground_center_m": [
+    0.25,
+    -0.22
+  ],
+  "floor_z": -0.03,
+  "props": [
+    {
+      "name": "B-13_CHAR_Suqingci_02",
+      "kind": "human_proxy",
+      "center_m": [
+        1.7,
+        -0.85,
+        0.0
+      ],
+      "size_m": [
+        0.42,
+        0.32,
+        1.73
+      ],
+      "role": "primary"
+    },
+    {
+      "name": "B-13_EXT_JunctionBlock",
+      "kind": "box",
+      "center_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size_m": [
+        40.0,
+        4.4,
+        8.0
+      ],
+      "role": "set"
+    },
+    {
+      "name": "B-13_EXT_StreetGround",
+      "kind": "box",
+      "center_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size_m": [
+        40.0,
+        36.0,
+        0.1
+      ],
+      "role": "set"
+    },
+    {
+      "name": "B-13_EXT_StreetSideWall",
+      "kind": "box",
+      "center_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size_m": [
+        40.4,
+        24.0,
+        4.8
+      ],
+      "role": "set"
+    },
+    {
+      "name": "B-13_PROP_ThresholdStone_02",
+      "kind": "box",
+      "center_m": [
+        -0.45,
+        -0.25,
+        -0.03
+      ],
+      "size_m": [
+        8.2,
+        0.6,
+        0.3
+      ],
+      "role": "set"
+    }
+  ],
+  "walls": [],
+  "wall_thickness_m": 0.15
+}

@@ -1,0 +1,46 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O002>,I3=<O007>,I4=<O014>,I5=<O015>.
+<Entity 01 CHAR Yechengjun>=E1[articulated/primary/static] members=I1;n=1;src=male officer antagonist blockout in ivory short…; final=male officer antagonist blockout in ivory short jacket; finish=real skin with pores and fine hair, fabric with real drape and wear…; style=world_style_unit_contract.
+<Entity 02 ENV B-9>=E2[environment/context/static] members=I2-I3;n=2;src=B-9 built environment shell enclosing the set…; final=B-9 built environment shell enclosing the set…; finish=worn cement, oxidised steel and sheet metal with cold grey…; style=world_style_unit_contract.
+<Entity 03 PROP B-9>=E3[rigid/context/static] members=I4-I5;n=2;src=B-9 set pieces and fittings: EntryRoster…; final=B-9 set pieces and fittings: EntryRoster, SteelTable; finish=utilitarian material with visible weight, thickness and use marks…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I3;1:1;n=2.
+E3:I4-I5;1:1;n=2.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink… | materials=real skin with pores and slight oil sheen, matte… | environment=cement yard plates cut by fire lines, riveted steel… | props=functional utilitarian tooling with real weight and… | light=one cold overhead key over the purification bench with….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2,E3=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2,E3 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_5701@0.350-1.000s I1,I4: rel=the officer's fingertip presses on the…; ban=do not make the names legible and do not raise….
+[Shot 1] @0.000-13.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E3;path=camera travels from (-7. 32, 18. 07, 0. 74) to (-7. 32, 18. 07, 0…;dist=stable;azi=stable;elev=stable;lens=stable;comp=中景 framing in 9:16 vertical, subject held in the frame centre…;ban=do not add any camera move, zoom or handheld shake… | Act=the entry roster and the entry order lie open on the steel table of the sealed command room with the… | Layout=5 visible instances. Dominant CommandCockpitShell covers 100x45 percent at frame 50/23… | Light=one cold overhead key over the purification bench with shadow….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=medium;Comp=depth spans 3. 81m to 5. 48m across 5 layers…;Cam=camera at (-7. 32, 18. 07, 0. 74) on a 50…;Lay=5 visible instances… V=I2:50/55/100/27,I3:50/23/100/45,I4:12/25/25/1,I5:45/46/89/40 D=I1:v/10/25/19/50/o:upright body proxy…/m:stationary across this interval/r:left of EntryRoster, in front…
+@1.620s F=medium;Comp=depth spans 3. 81m to 5. 48m across 5 layers…;Cam=camera at (-7. 32, 18. 07, 0. 74) on a 50…;Lay=5 visible instances… V=I2:50/55/100/27,I3:50/23/100/45,I4:12/25/25/1,I5:45/46/89/40 D=I1:v/10/25/19/50/o:upright body proxy…/m:stationary across this interval/r:left of EntryRoster, in front…
+@3.240s F=medium;Comp=depth spans 3. 81m to 5. 48m across 5 layers…;Cam=camera at (-7. 32, 18. 07, 0. 74) on a 50…;Lay=5 visible instances… V=I2:50/55/100/27,I3:50/23/100/45,I4:12/25/25/1,I5:45/46/89/40 D=I1:v/10/25/19/50/o:upright body proxy…/m:stationary across this interval/r:left of EntryRoster, in front…
+@4.859s F=medium;Comp=depth spans 3. 81m to 5. 48m across 5 layers…;Cam=camera at (-7. 32, 18. 07, 0. 74) on a 50…;Lay=5 visible instances… V=I2:50/55/100/27,I3:50/23/100/45,I4:12/25/25/1,I5:45/46/89/40 D=I1:v/10/25/19/50/o:upright body proxy…/m:stationary across this interval/r:left of EntryRoster, in front…
+@6.479s F=medium;Comp=depth spans 3. 81m to 5. 48m across 5 layers…;Cam=camera at (-7. 32, 18. 07, 0. 74) on a 50…;Lay=5 visible instances… V=I2:50/55/100/27,I3:50/23/100/45,I4:12/25/25/1,I5:45/46/89/40 D=I1:v/10/25/19/50/o:upright body proxy…/m:stationary across this interval/r:left of EntryRoster, in front…
+@8.099s F=medium;Comp=depth spans 3. 81m to 5. 48m across 5 layers…;Cam=camera at (-7. 32, 18. 07, 0. 74) on a 50…;Lay=5 visible instances… V=I2:50/55/100/27,I3:50/23/100/45,I4:12/25/25/1,I5:45/46/89/40 D=I1:v/10/25/19/50/o:upright body proxy…/m:stationary across this interval/r:left of EntryRoster, in front…
+@9.719s F=medium;Comp=depth spans 3. 81m to 5. 48m across 5 layers…;Cam=camera at (-7. 32, 18. 07, 0. 74) on a 50…;Lay=5 visible instances… V=I2:50/55/100/27,I3:50/23/100/45,I4:12/25/25/1,I5:45/46/89/40 D=I1:v/10/25/19/50/o:upright body proxy…/m:stationary across this interval/r:left of EntryRoster, in front…
+@11.339s F=medium;Comp=depth spans 3. 81m to 5. 48m across 5 layers…;Cam=camera at (-7. 32, 18. 07, 0. 74) on a 50…;Lay=5 visible instances… V=I2:50/55/100/27,I3:50/23/100/45,I4:12/25/25/1,I5:45/46/89/40 D=I1:v/10/25/19/50/o:upright body proxy…/m:stationary across this interval/r:left of EntryRoster, in front…
+@12.958s F=medium;Comp=depth spans 3. 81m to 5. 48m across 5 layers…;Cam=camera at (-7. 32, 18. 07, 0. 74) on a 50…;Lay=5 visible instances… V=I2:50/55/100/27,I3:50/23/100/45,I4:12/25/25/1,I5:45/46/89/40 D=I1:v/10/25/19/50/o:upright body proxy…/m:stationary across this interval/r:left of EntryRoster, in front…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+a faint steel table sound with a pen tip running across paper
+
+non_diegetic_music:
+N/A

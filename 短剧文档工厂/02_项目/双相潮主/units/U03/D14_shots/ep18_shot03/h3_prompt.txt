@@ -1,0 +1,44 @@
+subject_definitions:
+<Video 1>: authority for time, shots, camera, motion, layout, visibility, and occlusion.
+<World Style>: post-collapse industrial city ruins…; grounded industrial realism for humans and props with a separated….
+[INSTANCE REGISTRY] I1=<O001>,I2=<O007>,I3=<O008>,I4=<O009>.
+<Entity 01 CHAR Suqingci>=E1[articulated/primary/static] members=I1;n=1;src=female scientist character blockout in white lab coat; final=female scientist character blockout in white lab coat; finish=real skin with pores and fine hair, fabric with real drape and wear, matte metal…; style=world_style_unit_contract.
+<Entity 02 PROP B-12>=E2[rigid/context/static] members=I2-I4;n=3;src=B-12 set pieces and fittings: AshDeposit, DataTablet…; final=B-12 set pieces and fittings: AshDeposit, DataTablet, SteelCrate; finish=utilitarian material with visible weight, thickness and use marks, cold grey metal…; style=world_style_unit_contract.
+
+summary:
+[video editing] Restyle <Video 1>; preserve its complete spatiotemporal structure.
+
+retention_analysis:
+<Video 1>: preserve all spatiotemporal structure and light direction.
+E1:I1;1:1;n=1.
+E2:I2-I4;1:1;n=3.
+
+detailed_description:
+[STYLE ROUTING] World style is taken from the shared unit style contract: cold industrial post-collapse… | No external reference; use user direction and <World Style>.
+[WORLD] palette=grey fog cyan-grey #4A5A5C as the global base, ink shadow #171B1D… | materials=real skin with pores and slight oil sheen, matte technical fabric… | environment=a brick street cut by wheel ruts in front of a single gate with… | props=functional utilitarian tooling with real weight and thickness… | light=one cold overhead key over the steel table with shadow detail….
+[RENDER OBLIGATION] Finish every I#; proxies supply structure only. No raw, default, incomplete, or unart-directed look.
+[SOURCE POLICY] All E1,E2=spatiotemporal_evidence_only;shape=stay_within_source_bounds_and_articulation_envelope;new=none.
+[ENTITY CONSERVATION] Keep every registered I# 1:1: exact count, bounds, placement, visibility, and occlusion; no merge, split, delete, replace, regroup, or new entity.
+[MOTION LOCKS]
+[SCREEN-SPACE LOCK] Match tracked I# metrics, orientation, motion, relations, shot scale, source camera/framing, composition, and depth.
+[STATIC LOCK] E1,E2 stay source-fixed at all times; no motion, replacement, or regrouping.
+[INTERACTIONS]
+IX_7101@0.150-1.000s I1,I3,I4: rel=the scientist rests the tablet on the crate top…; ban=do not turn the screen away and do not put a second….
+[Shot 1] @0.000-13.000s ONE TAKE; no cuts, angle jumps, inserts, or transitions | Cam=static;target=E2;path=camera travels from (-0. 20, -1. 53, 2. 32) to (-0. 20, -1. 53, 2…;dist=stable;azi=stable;elev=stable;lens=stable;comp=特写 framing in 9:16 vertical, subject held in the frame centre band with head…;ban=do not add any camera move, zoom or handheld shake… | Act=the scientist rests the data tablet on a steel crate and the spectrum on the screen flattens line by line until no extra… | Layout=4 visible instances. Dominant Suqingci covers 47x82 percent at frame 24/41… | Light=one cold overhead key over the steel table with shadow detail retained….
+[ANCHORS exact t; V/P=I:x/y/w/h%; O=offscreen ranges; D=I:state/x/y/w/h/o/m/r]
+@0.000s F=extreme_close;Comp=depth spans 2. 75m to 8. 76m across 4 layers…;Cam=camera at (-0. 20, -1. 53, 2. 32) on a 50…;Lay=4 visible instances… V=I2:72/28/56/56,I3:100/50/1/13,I4:78/68/44/55 D=I1:v/24/41/47/82/o:upright body proxy, head end up/m:stationary across this interval/r:left of AshDeposit, behind all nearer…
+@1.620s F=extreme_close;Comp=depth spans 2. 75m to 8. 76m across 4 layers…;Cam=camera at (-0. 20, -1. 53, 2. 32) on a 50…;Lay=4 visible instances… V=I2:72/28/56/56,I3:100/50/1/13,I4:78/68/44/55 D=I1:v/24/41/47/82/o:upright body proxy, head end up/m:stationary across this interval/r:left of AshDeposit, behind all nearer…
+@3.240s F=extreme_close;Comp=depth spans 2. 75m to 8. 76m across 4 layers…;Cam=camera at (-0. 20, -1. 53, 2. 32) on a 50…;Lay=4 visible instances… V=I2:72/28/56/56,I3:100/50/1/13,I4:78/68/44/55 D=I1:v/24/41/47/82/o:upright body proxy, head end up/m:stationary across this interval/r:left of AshDeposit, behind all nearer…
+@4.859s F=extreme_close;Comp=depth spans 2. 75m to 8. 76m across 4 layers…;Cam=camera at (-0. 20, -1. 53, 2. 32) on a 50…;Lay=4 visible instances… V=I2:72/28/56/56,I3:100/50/1/13,I4:78/68/44/55 D=I1:v/24/41/47/82/o:upright body proxy, head end up/m:stationary across this interval/r:left of AshDeposit, behind all nearer…
+@6.479s F=extreme_close;Comp=depth spans 2. 75m to 8. 76m across 4 layers…;Cam=camera at (-0. 20, -1. 53, 2. 32) on a 50…;Lay=4 visible instances… V=I2:72/28/56/56,I3:100/50/1/13,I4:78/68/44/55 D=I1:v/24/41/47/82/o:upright body proxy, head end up/m:stationary across this interval/r:left of AshDeposit, behind all nearer…
+@8.099s F=extreme_close;Comp=depth spans 2. 75m to 8. 76m across 4 layers…;Cam=camera at (-0. 20, -1. 53, 2. 32) on a 50…;Lay=4 visible instances… V=I2:72/28/56/56,I3:100/50/1/13,I4:78/68/44/55 D=I1:v/24/41/47/82/o:upright body proxy, head end up/m:stationary across this interval/r:left of AshDeposit, behind all nearer…
+@9.719s F=extreme_close;Comp=depth spans 2. 75m to 8. 76m across 4 layers…;Cam=camera at (-0. 20, -1. 53, 2. 32) on a 50…;Lay=4 visible instances… V=I2:72/28/56/56,I3:100/50/1/13,I4:78/68/44/55 D=I1:v/24/41/47/82/o:upright body proxy, head end up/m:stationary across this interval/r:left of AshDeposit, behind all nearer…
+@11.339s F=extreme_close;Comp=depth spans 2. 75m to 8. 76m across 4 layers…;Cam=camera at (-0. 20, -1. 53, 2. 32) on a 50…;Lay=4 visible instances… V=I2:72/28/56/56,I3:100/50/1/13,I4:78/68/44/55 D=I1:v/24/41/47/82/o:upright body proxy, head end up/m:stationary across this interval/r:left of AshDeposit, behind all nearer…
+@12.958s F=extreme_close;Comp=depth spans 2. 75m to 8. 76m across 4 layers…;Cam=camera at (-0. 20, -1. 53, 2. 32) on a 50…;Lay=4 visible instances… V=I2:72/28/56/56,I3:100/50/1/13,I4:78/68/44/55 D=I1:v/24/41/47/82/o:upright body proxy, head end up/m:stationary across this interval/r:left of AshDeposit, behind all nearer…
+[NEGATIVE] No new shot, camera, focus, entity, action, contact, text, motion reset, proxy, merge, or disappearance. Appearance only.
+
+overall_soundscape:
+a tablet prompt tone with a fine hiss of ash being pushed by the wind
+
+non_diegetic_music:
+N/A
