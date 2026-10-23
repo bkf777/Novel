@@ -1,0 +1,187 @@
+{
+  "_note": "硬校验规则参数表。由 validate.mjs 读取，改这里即改阈值，不改代码。",
+  "word_count": {
+    "base_min": 180,
+    "base_max": 240,
+    "total_max": 330,
+    "_note": "Q13=B 严形态：基础字数（剔除标记 compliance_added 的段）∈[180,240]；合规增量单列；总量 ≤330。",
+    "_derived_note": "Q82（企划合规 2026-10-23 2026-10-23 09:08 裁定）：`word_count`（base／compliance_add／total）是**派生量**，**权威来源＝生成脚本 `scripts/build_D08.py` 的 `count_words()`**（口径＝汉字数 ＋ 英文/数字单词数，**标点与空白不计**，与 `scripts/fix-wordcount.mjs` 一致）；**D08 JSON 内的 `word_count` 禁手工改动** —— 手工改的值会在脚本重跑时被覆盖，且因 diff 工具把派生量/元数据与内容改动分开计，**手工改动会静默逃过内容 diff**（无告警、无痕迹）。**正确改法＝改生成脚本后重跑**（Q40 同型）。**字数判定一律以本口径为准**，报数时须注明所用口径（Q59 同型：先归一化再比对）。"
+  },
+  "density": {
+    "min_shock_points_per_unit": 3,
+    "_note": "每 8 集单元至少 3 个「爽点」beat。"
+  },
+  "forbidden_words": [
+    "血肉模糊",
+    "血肉横飞",
+    "断肢",
+    "残肢",
+    "内脏",
+    "器官",
+    "开膛",
+    "剖开胸膛",
+    "喷溅",
+    "血浆",
+    "脑浆",
+    "白骨露",
+    "尸体堆",
+    "肢解",
+    "掏心",
+    "剖胸",
+    "开瓢",
+    "血肉",
+    "血糊",
+    "残肢断臂",
+    "碎尸",
+    "尸块",
+    "阎王",
+    "阴曹",
+    "地府",
+    "鬼差",
+    "投胎"
+  ],
+  "_forbidden_words_note": "零血腥标准（Q 确认沿用）：D11 画面描述与 D08 台词不得出现。命中即 error。｜另加民间信仰词 5 个（D03 R15，2026-10-23）：台词禁用「阎王／阴曹／地府／鬼差／投胎」，依据同厂《掌中有深渊》D03 §L-02 + 《微短剧发展管理办法》第 25 条 A1-5（五）。扫描面：D11 的 visual_facts/dialogue/sfx ＋ **D08 剧本正文全文 ＋ D09 对白行与口头禅**（台词是内容源头，只拦下游 D11 等于让返工发生在最后一环）。",
+  "derogatory_terms": [
+    "废物",
+    "垃圾",
+    "蠢货",
+    "贱",
+    "杂种",
+    "狗东西",
+    "死鬼",
+    "废物东西"
+  ],
+  "_derogatory_terms_note": "Q14=C：贬称禁令仅当台词指向未成年角色时一票否决。V6 依据 D04.minor 与 D09.subtext 判定；D09 缺失时保守从严。",
+  "minor_age_threshold": 18,
+  "quad_segments": {
+    "count": 4,
+    "_note": "45 秒四段制：每集固定 4 段，边界连续无缝，合计 = 集时长。段内可并行交叉剪辑，但必须显式标注。"
+  },
+  "unit": {
+    "episode_count": 8,
+    "_note": "单元制滚动：每 8 集一单元（U01–U20）。"
+  },
+  "term_scan_exempt": {
+    "D03": [
+      "word_replacements",
+      "red_lines",
+      "beat_risk_map",
+      "derogation_rule"
+    ],
+    "D18": [
+      "unit_checks",
+      "global_checks",
+      "open_issues"
+    ],
+    "D12": [
+      "cards[].negatives"
+    ],
+    "D08": [
+      "episodes[].compliance_notes",
+      "episodes[].body[].compliance_reason"
+    ]
+  },
+  "_term_scan_exempt_note": "字段级豁免：V5 全文扫描禁用同义词、V6 扫描 forbidden_words 时跳过这些字段。写法支持两种：①顶层键名（如 D03 的 word_replacements）——匹配该键任意深度；②精确路径（如 D12 的 cards[].negatives）——只跳过该路径子树，同名字段若出现在 image_prompt/params 等正文性字段仍会被扫描并报错。改动前请确认豁免的是「按设计就含旧词的清单字段」，而不是「被污染的正文」。｜D08 豁免 `episodes[].compliance_notes` 与 `episodes[].body[].compliance_reason`＝这两处是**合规理由/裁决留痕**（逐字引用 D03 红线原文以说明「当时查到什么」，属正当留痕）；**body[].text 与 body[].emotion 一律不豁免**——剧本正文里写「阎王」「喷溅」必须报错。",
+  "d14_shot_coverage": {
+    "require_package_file": true,
+    "validate_package_schema": true,
+    "_note": "V11「D14 逐镜覆盖与逐镜包一致性」开关。D14.shots 的 (ep, shot_id) 集合必须恰好覆盖 D11 全部镜头（不多不少不缺），且 global_shot_no / scene_code / duration_sec 须与 D11 对应镜一致，否则报 error。require_package_file=true 时逐镜交接包文件必须真实存在（package_path 先相对 units/<UNIT>/ 解析，其次相对项目根）；validate_package_schema=true 时该文件须通过 schema.json#/definitions/D14ShotPackage 校验。"
+  },
+  "term_first_use": [
+    {
+      "term": "律条",
+      "first_use_ep": 13,
+      "forbidden_until_ep": 40,
+      "forbidden_faces": [
+        "dialogue",
+        "subtitle"
+      ],
+      "basis": "D05 v1.3 glossary['律条'].first_use_ep=13 ＋ definition「ep013–ep040 台词与字幕不得出现「律条」三字（画面描述可用）」"
+    }
+  ],
+  "_term_first_use_note": "术语「首用集前禁用」轴 —— 机器判定「某术语在首用集之前不得出现在台词面与字幕面」。**依据**：D05 词条的 `first_use_ep` ＋ definition 里的显式禁用区间（例：「ep013–ep040 台词与字幕不得出现「律条」三字（画面描述可用）」）。**受检面**：`dialogue`＝D11 `shots[].dialogue` ＋ D08 `body[].text`（**仅 `type=dialogue` 的条目**；`type=action` 属画面描述面，不查）；`subtitle`＝D16 `subtitle_style.lines[].text`。**不查面**：画面描述面（D08 `type=action`／D11 `visual_facts`／D12 `image_prompt`）—— D05 明文允许。**实现落点**：V5 术语收口扫描**内扩展**（**不新增规则编号**，全台账「11/11」不受影响）。⚠️ **禁用写法面不在此轴**：自造档位修饰语（如「低阶律条」）属**字面禁用同义词**，走 D05 词条的 `forbidden_synonyms`（V5 既有机制），**本轴不重复承载**。改动前请确认词条已结构化（`first_use_ep` 为整数）并核对 `basis` 与 D05 原文一致。",
+  "white_model_framing": {
+    "enabled": true,
+    "shot_size_bands": {
+      "远景": [
+        8,
+        25
+      ],
+      "全景": [
+        5,
+        20
+      ],
+      "中远景": [
+        20,
+        40
+      ],
+      "中景": [
+        35,
+        65
+      ],
+      "中近景": [
+        45,
+        75
+      ],
+      "近景": [
+        55,
+        85
+      ],
+      "特写": [
+        70,
+        95
+      ],
+      "大特写": [
+        80,
+        98
+      ]
+    },
+    "empty_shot_pattern": "空镜|画面无人|无人在场|空画面",
+    "max_rotation_jump_deg": 30,
+    "require_subject_is_largest": true,
+    "_note": "V12「白模构图一致性（D11 景别 ↔ 投影占幅）」参数表。背景：工厂此前**没有任何一条规则**把 D11 的 shot_size 与白模投影占幅绑定，实测 U01/U02 共 64 镜几何严重失真却一路校验全绿 —— 24 镜（37.5%）角色完全不在画幅内、画面最大对象是角色的仅 10 镜（15.6%）、特写实测占幅中位仅 42%（应 70–95%）、全景占 90%（应 5–20%）。shot_size_bands 的取值＝竖屏 45s 漫剧中「主体占画幅高」的合理区间，用于约束白模取景。empty_shot_pattern 只用于豁免 D11 画面事实里明写空镜的镜头，豁免清单会在 V12 warning 里逐条列出以便人工复核。max_rotation_jump_deg 用于判定姿态翻滚（相邻采样帧角色旋转跳变上限）。",
+    "pose_vocabulary": [
+      "stand",
+      "crouch",
+      "kneel",
+      "seated",
+      "situp",
+      "lie",
+      "lieflat",
+      "run",
+      "reach",
+      "hand"
+    ],
+    "_pose_note": "白模层姿态词表（施工图 C2）。历史上 POSE_SIZE 缺 `run`，导致 CHAR_ANIM 写 `run` 时静默回退 stand；V12 的 W5 据此判非法姿态。**`lieflat` 是 U02 已验证的正确躺姿**（截面 0.45×1.80×0.35，长轴沿 Y，**不旋转**）——构建器只对 `lie` 加 -90° 旋转，`lieflat` 天然绕开该缺陷；U01 的 `lie` 必须改为等价的不旋转躺姿，**不得保留会触发 rotation 的 `lie`**。"
+  },
+  "voice_over_structure": {
+    "_note": "V13 画外音结构化判定的阈值与取值真源（Q108 · 2026-10-23 总控明派 · 企划合规 R-028h-r2 落地）。\u26d4 禁在脚本里硬编码（Q110\u2463）——改这里即改判据，不改代码。",
+    "enabled": true,
+    "golden_window_sec": 1.5,
+    "vo_type_field": "vo_type",
+    "speaker_in_frame_field": "speaker_in_frame",
+    "at_field": "at_sec",
+    "vo_type_enum": [
+      "onscreen",
+      "offscreen"
+    ],
+    "_note_missing": "字段缺失策略：\u26d4 **缺失不判 error**（存量三单元 D15 的 voice_over[] 无 vo_type/speaker_in_frame，判 error 即全红且属规则缺陷）——只在金三秒窗口内聚合成一条 warning 提示补字段。口径（Q104\u2460 收口，2026-10-23 企划合规裁定）：speaker_in_frame 判「说话人**身体实体**（含局部身体/剪影/背影）是否在画幅内」，**不是**「脸是否在画」。三档映射：身份不出画 \u21d2 true/onscreen；人物不出画、主观声 \u21d2 false/offscreen。"
+  },
+  "unit_required_deliverables": {
+    "_note": "Q109（Chief 12:01 裁决书）· 单元必交交付物清单 —— 缺件计 error，不再只 warning。\n清单真源＝《团队章程》§三·五 第 1 条「单元内 10 份交付物 JSON 齐全」。\n**shared 层 8 份（D01/D02/D03/D04/D05/D10/D17/D18）不计入单元必交** —— 它们是跨单元共享层，\n在 --unit 单跑时以 shared 形式进入 ctx.files，缺它们不代表本单元缺件。\n⚠ 判据实现只许有一处（Q110②）—— 唯一实现点＝04_工具/lib/rules.mjs 的 missingRequiredDeliverables()，\n   V1 与 V11 两处缺件判定均调用它，禁止各写一份。\n⚠ 改动本清单即改闸门语义：新增必交项会让所有未产出该件的单元 error +1。",
+    "deliverables": [
+      "D06",
+      "D07",
+      "D08",
+      "D09",
+      "D11",
+      "D12",
+      "D13",
+      "D14",
+      "D15",
+      "D16"
+    ],
+    "missing_is_error": true,
+    "_missing_is_error_note": "true ＝ 缺件报 error（Q109①）。false ＝ 退回旧行为（缺件仅 warning）。\n设 false 可用于「按单元滚动、尚未开到的交付物暂不拦截」的场景，但**单元锁判定不得依赖它**。"
+  }
+}

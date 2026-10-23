@@ -1,0 +1,2833 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "sxs-factory/schemas",
+  "title": "AI短剧文档工厂 · 18 份交付物 JSON Schema",
+  "definitions": {
+    "docId": {
+      "type": "string",
+      "pattern": "^D(0[1-9]|1[0-8])$"
+    },
+    "nonEmpty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "in_review",
+        "approved",
+        "locked",
+        "archived"
+      ]
+    },
+    "charId": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9-]{1,15}$"
+    },
+    "epNo": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 160
+    },
+    "shotSize": {
+      "enum": [
+        "远景",
+        "全景",
+        "中远景",
+        "中景",
+        "中近景",
+        "近景",
+        "特写",
+        "大特写"
+      ]
+    },
+    "cameraAngle": {
+      "enum": [
+        "平视",
+        "俯视",
+        "仰视",
+        "顶视",
+        "过肩",
+        "主观视角",
+        "客观跟拍"
+      ]
+    },
+    "movement": {
+      "enum": [
+        "固定",
+        "推",
+        "拉",
+        "摇",
+        "移",
+        "跟",
+        "升降",
+        "环绕",
+        "手持",
+        "变焦"
+      ]
+    },
+    "unitId": {
+      "type": "string",
+      "pattern": "^U(0[1-9]|1[0-9]|20)$"
+    },
+    "beatType": {
+      "enum": [
+        "转折",
+        "爽点",
+        "伏笔",
+        "铺垫",
+        "回收"
+      ]
+    },
+    "segmentMode": {
+      "enum": [
+        "串行",
+        "并行"
+      ]
+    },
+    "D14ShotPackage": {
+      "type": "object",
+      "required": [
+        "ep",
+        "global_shot_no",
+        "shot_id",
+        "scene_code",
+        "duration_sec",
+        "package_path",
+        "preflight",
+        "render_contract",
+        "appearance",
+        "h3_prompt"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "ep": {
+          "$ref": "#/definitions/epNo"
+        },
+        "global_shot_no": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "shot_id": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "scene_code": {
+          "type": "string",
+          "pattern": "^[A-Z]-\\d+$"
+        },
+        "duration_sec": {
+          "type": "number",
+          "minimum": 0
+        },
+        "package_path": {
+          "$ref": "#/definitions/nonEmpty"
+        },
+        "preflight": {
+          "type": "object"
+        },
+        "render_contract": {
+          "type": "object",
+          "required": [
+            "schema_version",
+            "source",
+            "watched_full_source",
+            "shot_count",
+            "source_inventory",
+            "entities",
+            "interaction_contracts",
+            "shots",
+            "anchors",
+            "m3_cut_review"
+          ],
+          "properties": {
+            "schema_version": {
+              "const": 4
+            },
+            "source": {
+              "type": "object"
+            },
+            "watched_full_source": {
+              "const": true
+            },
+            "shot_count": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "source_inventory": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": [
+                  "source_id",
+                  "source_name",
+                  "source_type",
+                  "root_name",
+                  "first_visible_seconds",
+                  "last_visible_seconds",
+                  "identity_cues",
+                  "evidence_origin"
+                ],
+                "properties": {
+                  "source_id": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "source_name": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "source_type": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "root_name": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "first_visible_seconds": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "last_visible_seconds": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "identity_cues": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "evidence_origin": {
+                    "enum": [
+                      "blender_manifest",
+                      "visual_review"
+                    ]
+                  }
+                }
+              }
+            },
+            "entities": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": [
+                  "label",
+                  "entity_class",
+                  "importance",
+                  "source_instance_ids",
+                  "instance_count",
+                  "conservation_rule",
+                  "source_role",
+                  "structural_constraints",
+                  "motion_contract"
+                ],
+                "properties": {
+                  "label": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "entity_class": {
+                    "enum": [
+                      "living",
+                      "articulated",
+                      "rigid",
+                      "environment",
+                      "effect",
+                      "other"
+                    ]
+                  },
+                  "importance": {
+                    "enum": [
+                      "primary",
+                      "context"
+                    ]
+                  },
+                  "source_instance_ids": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "$ref": "#/definitions/nonEmpty"
+                    }
+                  },
+                  "instance_count": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "conservation_rule": {
+                    "const": "one_to_one_no_merge_split_delete_or_replace"
+                  },
+                  "source_role": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "structural_constraints": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "motion_contract": {
+                    "type": "object",
+                    "required": [
+                      "mode",
+                      "action",
+                      "continuity_requirement",
+                      "forbidden_substitutions"
+                    ],
+                    "properties": {
+                      "mode": {
+                        "enum": [
+                          "locomotion",
+                          "rigid_travel",
+                          "articulation",
+                          "manipulation",
+                          "deformation",
+                          "effect_evolution",
+                          "static",
+                          "camera_only"
+                        ]
+                      },
+                      "action": {
+                        "$ref": "#/definitions/nonEmpty"
+                      },
+                      "continuity_requirement": {
+                        "$ref": "#/definitions/nonEmpty"
+                      },
+                      "forbidden_substitutions": {
+                        "$ref": "#/definitions/nonEmpty"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "interaction_contracts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "interaction_id",
+                  "source_instance_ids",
+                  "start_seconds",
+                  "end_seconds",
+                  "relation",
+                  "forbidden_change"
+                ],
+                "properties": {
+                  "interaction_id": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "source_instance_ids": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "$ref": "#/definitions/nonEmpty"
+                    }
+                  },
+                  "start_seconds": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "end_seconds": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "relation": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "forbidden_change": {
+                    "$ref": "#/definitions/nonEmpty"
+                  }
+                }
+              }
+            },
+            "shots": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": [
+                  "shot_id",
+                  "start_seconds",
+                  "end_seconds",
+                  "actions",
+                  "layout_and_occlusion",
+                  "lighting_spatial_logic",
+                  "camera_contract"
+                ],
+                "properties": {
+                  "shot_id": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "start_seconds": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "end_seconds": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "actions": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "layout_and_occlusion": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "lighting_spatial_logic": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "camera_contract": {
+                    "type": "object",
+                    "required": [
+                      "motion_type",
+                      "tracked_target_entity",
+                      "world_path",
+                      "target_distance_trend",
+                      "azimuth_trend",
+                      "elevation_trend",
+                      "focal_length_trend",
+                      "screen_composition_rule",
+                      "forbidden_reinterpretations"
+                    ],
+                    "properties": {
+                      "motion_type": {
+                        "enum": [
+                          "static",
+                          "tracking",
+                          "dolly",
+                          "orbit",
+                          "pan_tilt",
+                          "crane",
+                          "handheld",
+                          "compound"
+                        ]
+                      },
+                      "tracked_target_entity": {
+                        "type": "string"
+                      },
+                      "world_path": {
+                        "$ref": "#/definitions/nonEmpty"
+                      },
+                      "target_distance_trend": {
+                        "enum": [
+                          "stable",
+                          "increase",
+                          "decrease",
+                          "variable"
+                        ]
+                      },
+                      "azimuth_trend": {
+                        "enum": [
+                          "stable",
+                          "clockwise",
+                          "counterclockwise",
+                          "variable"
+                        ]
+                      },
+                      "elevation_trend": {
+                        "enum": [
+                          "stable",
+                          "increase",
+                          "decrease",
+                          "variable"
+                        ]
+                      },
+                      "focal_length_trend": {
+                        "enum": [
+                          "stable",
+                          "increase",
+                          "decrease",
+                          "variable"
+                        ]
+                      },
+                      "screen_composition_rule": {
+                        "$ref": "#/definitions/nonEmpty"
+                      },
+                      "forbidden_reinterpretations": {
+                        "$ref": "#/definitions/nonEmpty"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "anchors": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "type": "object",
+                "required": [
+                  "time_seconds",
+                  "source_frame",
+                  "composition",
+                  "camera_relation",
+                  "tracked_instances",
+                  "key_layout_and_occlusion"
+                ],
+                "properties": {
+                  "time_seconds": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "source_frame": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "composition": {
+                    "type": "object",
+                    "required": [
+                      "shot_scale",
+                      "frame_balance_and_depth"
+                    ],
+                    "properties": {
+                      "shot_scale": {
+                        "enum": [
+                          "extreme_wide",
+                          "wide",
+                          "full",
+                          "medium_full",
+                          "medium",
+                          "close",
+                          "extreme_close"
+                        ]
+                      },
+                      "frame_balance_and_depth": {
+                        "$ref": "#/definitions/nonEmpty"
+                      }
+                    }
+                  },
+                  "camera_relation": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "tracked_instances": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "source_id",
+                        "entity_label",
+                        "visibility",
+                        "center_x_percent",
+                        "center_y_percent",
+                        "bbox_width_percent",
+                        "bbox_height_percent",
+                        "orientation",
+                        "motion_state",
+                        "spatial_relations"
+                      ],
+                      "properties": {
+                        "source_id": {
+                          "$ref": "#/definitions/nonEmpty"
+                        },
+                        "entity_label": {
+                          "$ref": "#/definitions/nonEmpty"
+                        },
+                        "visibility": {
+                          "enum": [
+                            "visible",
+                            "partially_occluded",
+                            "offscreen"
+                          ]
+                        },
+                        "center_x_percent": {
+                          "type": [
+                            "number",
+                            "null"
+                          ]
+                        },
+                        "center_y_percent": {
+                          "type": [
+                            "number",
+                            "null"
+                          ]
+                        },
+                        "bbox_width_percent": {
+                          "type": [
+                            "number",
+                            "null"
+                          ]
+                        },
+                        "bbox_height_percent": {
+                          "type": [
+                            "number",
+                            "null"
+                          ]
+                        },
+                        "orientation": {
+                          "$ref": "#/definitions/nonEmpty"
+                        },
+                        "motion_state": {
+                          "$ref": "#/definitions/nonEmpty"
+                        },
+                        "spatial_relations": {
+                          "$ref": "#/definitions/nonEmpty"
+                        }
+                      }
+                    }
+                  },
+                  "key_layout_and_occlusion": {
+                    "$ref": "#/definitions/nonEmpty"
+                  }
+                }
+              }
+            },
+            "m3_cut_review": {
+              "type": "object",
+              "required": [
+                "candidate_times",
+                "confirmed_real_cuts",
+                "reasoning"
+              ],
+              "properties": {
+                "candidate_times": {
+                  "type": "array"
+                },
+                "confirmed_real_cuts": {
+                  "type": "array"
+                },
+                "reasoning": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "appearance": {
+          "type": "object",
+          "required": [
+            "schema_version",
+            "watched_references",
+            "style_source_summary",
+            "reference_routes",
+            "global_style_bible",
+            "entity_appearances",
+            "blockout_rejection",
+            "sound"
+          ],
+          "properties": {
+            "schema_version": {
+              "const": 6
+            },
+            "watched_references": {
+              "const": true
+            },
+            "style_source_summary": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "reference_routes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "reference_id",
+                  "scope",
+                  "target_entities",
+                  "safe_style_attributes",
+                  "reference_structure_review",
+                  "structure_transfer_policy"
+                ],
+                "properties": {
+                  "reference_id": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "scope": {
+                    "enum": [
+                      "global_world",
+                      "entity_set",
+                      "environment_only",
+                      "materials_only",
+                      "lighting_only"
+                    ]
+                  },
+                  "target_entities": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/definitions/nonEmpty"
+                    }
+                  },
+                  "safe_style_attributes": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 6,
+                    "items": {
+                      "$ref": "#/definitions/nonEmpty"
+                    }
+                  },
+                  "reference_structure_review": {
+                    "type": "object",
+                    "required": [
+                      "risk_flags",
+                      "blocked_reference_details",
+                      "mitigation_applied"
+                    ],
+                    "properties": {
+                      "risk_flags": {
+                        "type": "array",
+                        "items": {
+                          "enum": [
+                            "explicit_pose",
+                            "camera_or_framing",
+                            "environment_layout",
+                            "held_or_attached_elements",
+                            "large_deforming_or_occluding_elements",
+                            "source_unsupported_entities",
+                            "text_or_branding"
+                          ]
+                        }
+                      },
+                      "blocked_reference_details": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/definitions/nonEmpty"
+                        }
+                      },
+                      "mitigation_applied": {
+                        "const": true
+                      }
+                    }
+                  },
+                  "structure_transfer_policy": {
+                    "const": "appearance_only_no_pose_framing_motion_layout_or_new_elements"
+                  }
+                }
+              }
+            },
+            "global_style_bible": {
+              "type": "object",
+              "required": [
+                "world_and_era",
+                "visual_language",
+                "palette",
+                "material_language",
+                "environment_design",
+                "prop_design",
+                "lighting_and_atmosphere"
+              ],
+              "properties": {
+                "world_and_era": {
+                  "$ref": "#/definitions/nonEmpty"
+                },
+                "visual_language": {
+                  "$ref": "#/definitions/nonEmpty"
+                },
+                "palette": {
+                  "$ref": "#/definitions/nonEmpty"
+                },
+                "material_language": {
+                  "$ref": "#/definitions/nonEmpty"
+                },
+                "environment_design": {
+                  "$ref": "#/definitions/nonEmpty"
+                },
+                "prop_design": {
+                  "$ref": "#/definitions/nonEmpty"
+                },
+                "lighting_and_atmosphere": {
+                  "$ref": "#/definitions/nonEmpty"
+                }
+              }
+            },
+            "entity_appearances": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "required": [
+                  "semantic_target",
+                  "final_materials_and_detail",
+                  "style_route",
+                  "source_visual_policy",
+                  "silhouette_policy",
+                  "source_unsupported_additions"
+                ],
+                "properties": {
+                  "semantic_target": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "final_materials_and_detail": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "style_route": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "source_visual_policy": {
+                    "const": "spatiotemporal_evidence_only"
+                  },
+                  "silhouette_policy": {
+                    "const": "stay_within_source_bounds_and_articulation_envelope"
+                  },
+                  "source_unsupported_additions": {
+                    "type": "array",
+                    "maxItems": 0
+                  }
+                }
+              }
+            },
+            "blockout_rejection": {
+              "type": "object",
+              "required": [
+                "all_visible_entities_must_be_finished",
+                "forbidden_final_look",
+                "ambiguous_proxy_fallback"
+              ],
+              "properties": {
+                "all_visible_entities_must_be_finished": {
+                  "const": true
+                },
+                "forbidden_final_look": {
+                  "$ref": "#/definitions/nonEmpty"
+                },
+                "ambiguous_proxy_fallback": {
+                  "$ref": "#/definitions/nonEmpty"
+                }
+              }
+            },
+            "sound": {
+              "$ref": "#/definitions/nonEmpty"
+            }
+          }
+        },
+        "h3_prompt": {
+          "type": "object",
+          "required": [
+            "path",
+            "char_count",
+            "within_budget",
+            "protected_content_valid",
+            "ready_to_submit"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "char_count": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 6500
+            },
+            "within_budget": {
+              "const": true
+            },
+            "protected_content_valid": {
+              "const": true
+            },
+            "ready_to_submit": {
+              "const": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "D01": {
+    "type": "object",
+    "required": [
+      "doc_id",
+      "title",
+      "version",
+      "status",
+      "logline",
+      "genre",
+      "platform",
+      "episode_count",
+      "episode_duration_sec",
+      "unit_size",
+      "audience",
+      "hard_boundaries",
+      "commercial",
+      "gaps"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "doc_id": {
+        "const": "D01"
+      },
+      "title": {
+        "$ref": "#/definitions/nonEmpty"
+      },
+      "version": {
+        "type": "string",
+        "pattern": "^v[0-9]+\\.[0-9]+$"
+      },
+      "status": {
+        "$ref": "#/definitions/status"
+      },
+      "logline": {
+        "type": "string",
+        "minLength": 20
+      },
+      "premise": {
+        "type": "string"
+      },
+      "genre": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "$ref": "#/definitions/nonEmpty"
+        }
+      },
+      "platform": {
+        "$ref": "#/definitions/nonEmpty"
+      },
+      "episode_count": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 160
+      },
+      "episode_duration_sec": {
+        "type": "integer",
+        "minimum": 15,
+        "maximum": 300
+      },
+      "unit_size": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 20
+      },
+      "audience": {
+        "$ref": "#/definitions/nonEmpty"
+      },
+      "references": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/nonEmpty"
+        }
+      },
+      "hard_boundaries": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "$ref": "#/definitions/nonEmpty"
+        }
+      },
+      "commercial": {
+        "type": "object",
+        "required": [
+          "monetization_model",
+          "paywall_points",
+          "confirmed_by_user"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "monetization_model": {
+            "$ref": "#/definitions/nonEmpty"
+          },
+          "paywall_points": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "confirmed_by_user": {
+            "type": "boolean"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      },
+      "gaps": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "question",
+            "status",
+            "owner"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "question": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "status": {
+              "enum": [
+                "待用户确认",
+                "已拍板",
+                "已由上游消解"
+              ]
+            },
+            "proposal": {
+              "type": "string"
+            },
+            "resolution": {
+              "type": "string"
+            },
+            "owner": {
+              "enum": [
+                "用户",
+                "企划合规",
+                "故事架构",
+                "已消解"
+              ]
+            }
+          }
+        }
+      },
+      "facts_source": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/nonEmpty"
+        }
+      }
+    }
+  },
+  "D02": {
+    "type": "object",
+    "required": [
+      "doc_id",
+      "title",
+      "version",
+      "status",
+      "positioning",
+      "selling_points",
+      "rhythm_model",
+      "monetization",
+      "risks"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "doc_id": {
+        "const": "D02"
+      },
+      "title": {
+        "$ref": "#/definitions/nonEmpty"
+      },
+      "version": {
+        "type": "string",
+        "pattern": "^v[0-9]+\\.[0-9]+$"
+      },
+      "status": {
+        "$ref": "#/definitions/status"
+      },
+      "positioning": {
+        "$ref": "#/definitions/nonEmpty"
+      },
+      "selling_points": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "$ref": "#/definitions/nonEmpty"
+        }
+      },
+      "rhythm_model": {
+        "$ref": "#/definitions/nonEmpty"
+      },
+      "monetization": {
+        "$ref": "#/definitions/nonEmpty"
+      },
+      "risks": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/nonEmpty"
+        }
+      },
+      "compliance_dependency": {
+        "type": "string"
+      }
+    }
+  },
+  "D03": {
+    "type": "object",
+    "required": [
+      "doc_id",
+      "title",
+      "version",
+      "status",
+      "scale_policy",
+      "red_lines",
+      "derogation_rule",
+      "word_replacements",
+      "ai_disclosure",
+      "upstream_precedence"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "doc_id": {
+        "const": "D03"
+      },
+      "title": {
+        "$ref": "#/definitions/nonEmpty"
+      },
+      "version": {
+        "type": "string",
+        "pattern": "^v[0-9]+\\.[0-9]+$"
+      },
+      "status": {
+        "$ref": "#/definitions/status"
+      },
+      "scale_policy": {
+        "enum": [
+          "zero_gore",
+          "graded",
+          "lore_safe"
+        ]
+      },
+      "red_lines": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "trigger",
+            "forbid",
+            "rewrite_rule",
+            "severity"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "trigger": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "forbid": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "rewrite_rule": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "severity": {
+              "enum": [
+                "一票否决",
+                "强制替换",
+                "提示"
+              ]
+            }
+          }
+        }
+      },
+      "derogation_rule": {
+        "type": "object",
+        "required": [
+          "minor_only",
+          "terms"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "minor_only": {
+            "const": true
+          },
+          "terms": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/definitions/nonEmpty"
+            }
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      },
+      "word_replacements": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "from",
+            "to"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "from": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "to": {
+              "$ref": "#/definitions/nonEmpty"
+            }
+          }
+        }
+      },
+      "ai_disclosure": {
+        "$ref": "#/definitions/nonEmpty"
+      },
+      "beat_risk_map": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "upstream_precedence": {
+        "const": true
+      }
+    }
+  },
+  "D04": {
+    "type": "object",
+    "required": [
+      "doc_id",
+      "title",
+      "version",
+      "status",
+      "characters"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "doc_id": {
+        "const": "D04"
+      },
+      "title": {
+        "$ref": "#/definitions/nonEmpty"
+      },
+      "version": {
+        "type": "string",
+        "pattern": "^v[0-9]+\\.[0-9]+$"
+      },
+      "status": {
+        "$ref": "#/definitions/status"
+      },
+      "characters": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "role",
+            "age",
+            "age_band",
+            "identity",
+            "appearance",
+            "personality_tags",
+            "desire",
+            "fear",
+            "secret",
+            "arc",
+            "relations",
+            "catchphrase",
+            "minor"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "$ref": "#/definitions/charId"
+            },
+            "name": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "role": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "age": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 120
+            },
+            "age_band": {
+              "enum": [
+                "未成年",
+                "成年",
+                "青年",
+                "中年",
+                "老年"
+              ]
+            },
+            "identity": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "minor": {
+              "type": "boolean"
+            },
+            "appearance": {
+              "type": "object",
+              "required": [
+                "face",
+                "body",
+                "hair",
+                "voice",
+                "markers"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "face": {
+                  "$ref": "#/definitions/nonEmpty"
+                },
+                "body": {
+                  "$ref": "#/definitions/nonEmpty"
+                },
+                "hair": {
+                  "$ref": "#/definitions/nonEmpty"
+                },
+                "voice": {
+                  "$ref": "#/definitions/nonEmpty"
+                },
+                "markers": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/nonEmpty"
+                  }
+                },
+                "costume": {
+                  "type": "string"
+                }
+              }
+            },
+            "personality_tags": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/definitions/nonEmpty"
+              }
+            },
+            "desire": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "fear": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "secret": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "arc": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "relations": {
+              "type": "object"
+            },
+            "catchphrase": {
+              "type": "string"
+            },
+            "ref_image": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "ref_image_status": {
+              "type": "string"
+            },
+            "voice_lock": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "terminology_refs": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/nonEmpty"
+        }
+      }
+    }
+  },
+  "D05": {
+    "type": "object",
+    "required": [
+      "doc_id",
+      "title",
+      "version",
+      "status",
+      "world",
+      "power_system",
+      "resources",
+      "locations",
+      "factions",
+      "glossary",
+      "timelines"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "doc_id": {
+        "const": "D05"
+      },
+      "title": {
+        "$ref": "#/definitions/nonEmpty"
+      },
+      "version": {
+        "type": "string",
+        "pattern": "^v[0-9]+\\.[0-9]+$"
+      },
+      "status": {
+        "$ref": "#/definitions/status"
+      },
+      "world": {
+        "type": "object"
+      },
+      "power_system": {
+        "type": "object"
+      },
+      "resources": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "locations": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "factions": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "glossary": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": [
+            "term",
+            "definition",
+            "forbidden_synonyms"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "term": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "definition": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "forbidden_synonyms": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/nonEmpty"
+              }
+            },
+            "first_use_ep": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 160
+            }
+          }
+        }
+      },
+      "timelines": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "motifs": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      }
+    }
+  },
+  "D06": {
+    "type": "object",
+    "required": [
+      "doc_id",
+      "unit",
+      "version",
+      "status",
+      "episodes"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "doc_id": {
+        "const": "D06"
+      },
+      "unit": {
+        "$ref": "#/definitions/unitId"
+      },
+      "version": {
+        "type": "string",
+        "pattern": "^v[0-9]+\\.[0-9]+$"
+      },
+      "status": {
+        "$ref": "#/definitions/status"
+      },
+      "episodes": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": [
+            "ep",
+            "title",
+            "logline",
+            "beats",
+            "hook_in",
+            "hook_out",
+            "emotion_goal",
+            "must_happen",
+            "locations",
+            "characters",
+            "duration_sec"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "ep": {
+              "$ref": "#/definitions/epNo"
+            },
+            "title": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "logline": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "beats": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/definitions/beatType"
+              }
+            },
+            "beat_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^B[0-9]{2}$"
+              }
+            },
+            "hook_in": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "hook_out": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "emotion_goal": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "must_happen": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/definitions/nonEmpty"
+              }
+            },
+            "locations": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/nonEmpty"
+              }
+            },
+            "characters": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/charId"
+              }
+            },
+            "duration_sec": {
+              "type": "integer",
+              "minimum": 15,
+              "maximum": 300
+            },
+            "foreshadow": {
+              "type": "object",
+              "required": [
+                "plant",
+                "payoff"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "plant": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "payoff": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "pending_unit": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            },
+            "hook_type": {
+              "type": "string",
+              "enum": [
+                "悬念",
+                "反转",
+                "情绪",
+                "信息",
+                "危机"
+              ],
+              "description": "本集结尾钩子类型（short-drama skill 的 5 类）。可选字段；配比参考：情绪 30-40%、悬念 20-30%、危机 10-20%、信息 10-20%、反转 5-15%。"
+            },
+            "hook_type_reason": {
+              "type": "string",
+              "description": "钩子类型判定依据：为什么这一集的结尾靠这个钩子留住观众。"
+            }
+          }
+        }
+      }
+    }
+  },
+  "D07": {
+    "type": "object",
+    "required": [
+      "doc_id",
+      "unit",
+      "version",
+      "status",
+      "episodes"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "doc_id": {
+        "const": "D07"
+      },
+      "unit": {
+        "$ref": "#/definitions/unitId"
+      },
+      "version": {
+        "type": "string",
+        "pattern": "^v[0-9]+\\.[0-9]+$"
+      },
+      "status": {
+        "$ref": "#/definitions/status"
+      },
+      "episodes": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": [
+            "ep",
+            "story_time",
+            "present_characters",
+            "carry_over",
+            "answer",
+            "must_happen",
+            "cost",
+            "emotion_goal",
+            "scenes",
+            "duration_sum_sec",
+            "quad_segments",
+            "scene_needs"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "ep": {
+              "$ref": "#/definitions/epNo"
+            },
+            "story_time": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "present_characters": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": [
+                  "char_id",
+                  "role",
+                  "minor"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "char_id": {
+                    "$ref": "#/definitions/charId"
+                  },
+                  "role": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "minor": {
+                    "type": "boolean"
+                  },
+                  "voice_only": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            },
+            "carry_over": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "answer": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "must_happen": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/definitions/nonEmpty"
+              }
+            },
+            "cost": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "emotion_goal": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "scenes": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": [
+                  "code",
+                  "location",
+                  "time",
+                  "duration_sec"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "code": {
+                    "type": "string",
+                    "pattern": "^[A-Z]-\\d+$"
+                  },
+                  "location": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "time": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "duration_sec": {
+                    "type": "number",
+                    "minimum": 0
+                  }
+                }
+              }
+            },
+            "duration_sum_sec": {
+              "type": "number",
+              "minimum": 0
+            },
+            "quad_segments": {
+              "type": "array",
+              "minItems": 4,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "required": [
+                  "index",
+                  "name",
+                  "start_sec",
+                  "end_sec",
+                  "mode",
+                  "note"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "index": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 4
+                  },
+                  "name": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "start_sec": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "end_sec": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "mode": {
+                    "$ref": "#/definitions/segmentMode"
+                  },
+                  "note": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "scene_needs": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "open_questions": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "D08": {
+    "type": "object",
+    "required": [
+      "doc_id",
+      "unit",
+      "version",
+      "status",
+      "episodes"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "doc_id": {
+        "const": "D08"
+      },
+      "unit": {
+        "$ref": "#/definitions/unitId"
+      },
+      "version": {
+        "type": "string",
+        "pattern": "^v[0-9]+\\.[0-9]+$"
+      },
+      "status": {
+        "$ref": "#/definitions/status"
+      },
+      "episodes": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": [
+            "ep",
+            "title",
+            "duration_sec",
+            "scene_heading",
+            "body",
+            "word_count",
+            "compliance_notes"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "ep": {
+              "$ref": "#/definitions/epNo"
+            },
+            "title": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "duration_sec": {
+              "type": "integer",
+              "minimum": 15,
+              "maximum": 300
+            },
+            "scene_heading": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "present_characters": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/charId"
+              }
+            },
+            "body": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": [
+                  "type",
+                  "text"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "type": {
+                    "enum": [
+                      "action",
+                      "dialogue",
+                      "sfx",
+                      "subtitle"
+                    ]
+                  },
+                  "char_id": {
+                    "$ref": "#/definitions/charId"
+                  },
+                  "text": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "emotion": {
+                    "type": "string"
+                  },
+                  "sfx": {
+                    "type": "string"
+                  },
+                  "compliance_added": {
+                    "type": "boolean"
+                  },
+                  "compliance_reason": {
+                    "type": "string"
+                  },
+                  "shot_intent": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "word_count": {
+              "type": "object",
+              "required": [
+                "base",
+                "compliance_add",
+                "total"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "base": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "compliance_add": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "total": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            },
+            "compliance_notes": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/nonEmpty"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "D09": {
+    "type": "object",
+    "required": [
+      "doc_id",
+      "unit",
+      "version",
+      "status",
+      "lines",
+      "voice_cards"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "doc_id": {
+        "const": "D09"
+      },
+      "unit": {
+        "$ref": "#/definitions/unitId"
+      },
+      "version": {
+        "type": "string",
+        "pattern": "^v[0-9]+\\.[0-9]+$"
+      },
+      "status": {
+        "$ref": "#/definitions/status"
+      },
+      "lines": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": [
+            "ep",
+            "idx",
+            "char_id",
+            "text",
+            "tone",
+            "subtext"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "ep": {
+              "$ref": "#/definitions/epNo"
+            },
+            "idx": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "char_id": {
+              "$ref": "#/definitions/charId"
+            },
+            "text": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "tone": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "subtext": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "voice_cards": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": [
+            "char_id",
+            "tone_rules"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "char_id": {
+              "$ref": "#/definitions/charId"
+            },
+            "tone_rules": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/definitions/nonEmpty"
+              }
+            },
+            "catchphrases": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/nonEmpty"
+              }
+            },
+            "forbidden_words": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/nonEmpty"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "D10": {
+    "type": "object",
+    "required": [
+      "doc_id",
+      "title",
+      "version",
+      "status",
+      "style",
+      "palette",
+      "materials",
+      "lighting",
+      "camera_language",
+      "character_anchors",
+      "motifs",
+      "negatives",
+      "consistency_rules"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "doc_id": {
+        "const": "D10"
+      },
+      "title": {
+        "$ref": "#/definitions/nonEmpty"
+      },
+      "version": {
+        "type": "string",
+        "pattern": "^v[0-9]+\\.[0-9]+$"
+      },
+      "status": {
+        "$ref": "#/definitions/status"
+      },
+      "style": {
+        "type": "object",
+        "required": [
+          "realism_layer",
+          "stylization_layer"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "realism_layer": {
+            "$ref": "#/definitions/nonEmpty"
+          },
+          "stylization_layer": {
+            "$ref": "#/definitions/nonEmpty"
+          },
+          "aspect_ratio": {
+            "type": "string"
+          },
+          "overall_tone": {
+            "type": "string"
+          }
+        }
+      },
+      "palette": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object"
+        }
+      },
+      "materials": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "lighting": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "camera_language": {
+        "type": "object"
+      },
+      "character_anchors": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": [
+            "char_id",
+            "anchor_text",
+            "markers",
+            "negatives"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "char_id": {
+              "$ref": "#/definitions/charId"
+            },
+            "anchor_text": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "markers": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/nonEmpty"
+              }
+            },
+            "negatives": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/nonEmpty"
+              }
+            },
+            "ref_image_route": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "source_of_truth": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "motifs": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "negatives": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/nonEmpty"
+        }
+      },
+      "consistency_rules": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "$ref": "#/definitions/nonEmpty"
+        }
+      },
+      "anchor_source_of_truth": {
+        "type": "string"
+      }
+    }
+  },
+  "D11": {
+    "type": "object",
+    "required": [
+      "doc_id",
+      "unit",
+      "version",
+      "status",
+      "episodes"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "doc_id": {
+        "const": "D11"
+      },
+      "unit": {
+        "$ref": "#/definitions/unitId"
+      },
+      "version": {
+        "type": "string",
+        "pattern": "^v[0-9]+\\.[0-9]+$"
+      },
+      "status": {
+        "$ref": "#/definitions/status"
+      },
+      "episodes": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": [
+            "ep",
+            "duration_sec",
+            "shots",
+            "duration_sum_sec",
+            "continuity"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "ep": {
+              "$ref": "#/definitions/epNo"
+            },
+            "duration_sec": {
+              "type": "integer",
+              "minimum": 15,
+              "maximum": 300
+            },
+            "shots": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": [
+                  "shot_id",
+                  "global_shot_no",
+                  "scene_code",
+                  "shot_size",
+                  "camera_angle",
+                  "lens_mm",
+                  "movement",
+                  "duration_sec",
+                  "visual_facts",
+                  "dialogue",
+                  "sfx",
+                  "needs_image",
+                  "minor_present"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "shot_id": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "global_shot_no": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "scene_code": {
+                    "type": "string",
+                    "pattern": "^[A-Z]-\\d+$"
+                  },
+                  "shot_size": {
+                    "$ref": "#/definitions/shotSize"
+                  },
+                  "camera_angle": {
+                    "$ref": "#/definitions/cameraAngle"
+                  },
+                  "lens_mm": {
+                    "type": "integer",
+                    "minimum": 8,
+                    "maximum": 300
+                  },
+                  "movement": {
+                    "$ref": "#/definitions/movement"
+                  },
+                  "duration_sec": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "visual_facts": {
+                    "$ref": "#/definitions/nonEmpty"
+                  },
+                  "dialogue": {
+                    "type": "string"
+                  },
+                  "sfx": {
+                    "type": "string"
+                  },
+                  "note": {
+                    "type": "string"
+                  },
+                  "needs_image": {
+                    "type": "boolean"
+                  },
+                  "minor_present": {
+                    "type": "boolean"
+                  },
+                  "quad_segment": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 4
+                  },
+                  "parallel_with": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            },
+            "duration_sum_sec": {
+              "type": "number",
+              "minimum": 0
+            },
+            "continuity": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "D12": {
+    "type": "object",
+    "required": [
+      "doc_id",
+      "unit",
+      "version",
+      "status",
+      "cards"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "doc_id": {
+        "const": "D12"
+      },
+      "unit": {
+        "$ref": "#/definitions/unitId"
+      },
+      "version": {
+        "type": "string",
+        "pattern": "^v[0-9]+\\.[0-9]+$"
+      },
+      "status": {
+        "$ref": "#/definitions/status"
+      },
+      "cards": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": [
+            "card_id",
+            "ep",
+            "shot_id",
+            "image_prompt",
+            "video_prompt",
+            "negatives",
+            "params",
+            "consistency_refs"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "card_id": {
+              "type": "string",
+              "pattern": "^[A-Z]+-[0-9]+$"
+            },
+            "ep": {
+              "$ref": "#/definitions/epNo"
+            },
+            "shot_id": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "image_prompt": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "video_prompt": {
+              "type": "string"
+            },
+            "negatives": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/definitions/nonEmpty"
+              }
+            },
+            "params": {
+              "type": "object",
+              "required": [
+                "model",
+                "aspect",
+                "seed_strategy"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "model": {
+                  "$ref": "#/definitions/nonEmpty"
+                },
+                "aspect": {
+                  "$ref": "#/definitions/nonEmpty"
+                },
+                "seed_strategy": {
+                  "$ref": "#/definitions/nonEmpty"
+                },
+                "steps": {
+                  "type": "integer"
+                },
+                "guidance": {
+                  "type": "number"
+                },
+                "duration_sec": {
+                  "type": "number"
+                }
+              }
+            },
+            "consistency_refs": {
+              "type": "object",
+              "required": [
+                "char_ids",
+                "motifs",
+                "palette"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "char_ids": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/charId"
+                  }
+                },
+                "motifs": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/nonEmpty"
+                  }
+                },
+                "palette": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/nonEmpty"
+                  }
+                }
+              }
+            },
+            "char_descriptions": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/nonEmpty"
+              }
+            },
+            "source": {
+              "enum": [
+                "image",
+                "video",
+                "both"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "D13": {
+    "type": "object",
+    "required": [
+      "doc_id",
+      "unit",
+      "version",
+      "status",
+      "scenes"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "doc_id": {
+        "const": "D13"
+      },
+      "unit": {
+        "$ref": "#/definitions/unitId"
+      },
+      "version": {
+        "type": "string",
+        "pattern": "^v[0-9]+\\.[0-9]+$"
+      },
+      "status": {
+        "$ref": "#/definitions/status"
+      },
+      "scenes": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": [
+            "scene_code",
+            "ep",
+            "plan",
+            "props",
+            "entrances",
+            "camera_positions",
+            "sightlines",
+            "scale_limits"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "scene_code": {
+              "type": "string",
+              "pattern": "^[A-Z]-\\d+$"
+            },
+            "ep": {
+              "$ref": "#/definitions/epNo"
+            },
+            "plan": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "props": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "entrances": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "camera_positions": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "sightlines": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "scale_limits": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/nonEmpty"
+              }
+            },
+            "lighting_setup": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "D14": {
+    "type": "object",
+    "required": [
+      "doc_id",
+      "unit",
+      "version",
+      "status",
+      "shots",
+      "commands",
+      "check_results"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "doc_id": {
+        "const": "D14"
+      },
+      "unit": {
+        "$ref": "#/definitions/unitId"
+      },
+      "version": {
+        "type": "string",
+        "pattern": "^v[0-9]+\\.[0-9]+$"
+      },
+      "status": {
+        "$ref": "#/definitions/status"
+      },
+      "shots": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "$ref": "#/definitions/D14ShotPackage"
+        }
+      },
+      "commands": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/nonEmpty"
+        }
+      },
+      "check_results": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      }
+    }
+  },
+  "D15": {
+    "type": "object",
+    "required": [
+      "doc_id",
+      "unit",
+      "version",
+      "status",
+      "episodes"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "doc_id": {
+        "const": "D15"
+      },
+      "unit": {
+        "$ref": "#/definitions/unitId"
+      },
+      "version": {
+        "type": "string",
+        "pattern": "^v[0-9]+\\.[0-9]+$"
+      },
+      "status": {
+        "$ref": "#/definitions/status"
+      },
+      "episodes": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": [
+            "ep",
+            "bgm_curve",
+            "sfx",
+            "foley",
+            "mix_notes"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "ep": {
+              "$ref": "#/definitions/epNo"
+            },
+            "bgm_curve": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "sfx": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "description": "成片声层条目：{shot_id,global_shot_no,at_sec,dur_sec,event,type,level_db,mix?}。与 foley[] 的同事件并存属分层分工（拟音层录物理声＋音效层录成片声），非重复记账；带 mix 预铺位声明者不得在同层或跨层重复登记。口径见 03_规格/字段规格表.md D15 段（Q89）。"
+              }
+            },
+            "foley": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "description": "拟音录制层条目：{shot_id,global_shot_no,at_sec,dur_sec,event,type,level_db}，type 固定「拟音」。可与 sfx[] 同事件并存＝分层分工（非重复记账）；同一层内同事件双记、或与带 mix 预铺位声明的条目重复，才属重复记账需合并。口径见 03_规格/字段规格表.md D15 段（Q89）。"
+              }
+            },
+            "voice_over": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "description": "画外音条目：{char_id,ep,line_ref,shot_id,at_sec,dur_sec,voice_lock,pace,tone,level_db,mix?,avoid?,delivery?}。画外音结构化判定字段（V13 \u00b7 Q108）：vo_type（枚举 onscreen/offscreen，\u26d4 可选，缺失不判 error）、speaker_in_frame（bool，\u26d4 可选，缺失不判 error）。口径见 03_规格/字段规格表.md D15 段（Q104/Q108/V13）。",
+                "properties": {
+                  "vo_type": {
+                    "enum": [
+                      "onscreen",
+                      "offscreen"
+                    ]
+                  },
+                  "speaker_in_frame": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            },
+            "mix_notes": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/nonEmpty"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "D16": {
+    "type": "object",
+    "required": [
+      "doc_id",
+      "unit",
+      "version",
+      "status",
+      "episodes"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "doc_id": {
+        "const": "D16"
+      },
+      "unit": {
+        "$ref": "#/definitions/unitId"
+      },
+      "version": {
+        "type": "string",
+        "pattern": "^v[0-9]+\\.[0-9]+$"
+      },
+      "status": {
+        "$ref": "#/definitions/status"
+      },
+      "episodes": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": [
+            "ep",
+            "cuts",
+            "transitions",
+            "subtitle_style",
+            "title_card",
+            "paywall_point"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "ep": {
+              "$ref": "#/definitions/epNo"
+            },
+            "cuts": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object"
+              }
+            },
+            "transitions": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "subtitle_style": {
+              "type": "object",
+              "properties": {
+                "golden3s_first_line": {
+                  "type": "object",
+                  "properties": {
+                    "vo_type": {
+                      "enum": [
+                        "onscreen",
+                        "offscreen"
+                      ]
+                    },
+                    "speaker_in_frame": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              }
+            },
+            "title_card": {
+              "type": "object"
+            },
+            "paywall_point": {
+              "type": [
+                "object",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "D17": {
+    "type": "object",
+    "required": [
+      "doc_id",
+      "title",
+      "version",
+      "status",
+      "units",
+      "totals",
+      "external_outsourcing"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "doc_id": {
+        "const": "D17"
+      },
+      "title": {
+        "$ref": "#/definitions/nonEmpty"
+      },
+      "version": {
+        "type": "string",
+        "pattern": "^v[0-9]+\\.[0-9]+$"
+      },
+      "status": {
+        "$ref": "#/definitions/status"
+      },
+      "units": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object"
+        }
+      },
+      "totals": {
+        "type": "object"
+      },
+      "external_outsourcing": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "parallel_plan": {
+        "type": "object"
+      }
+    }
+  },
+  "D18": {
+    "type": "object",
+    "required": [
+      "doc_id",
+      "title",
+      "version",
+      "status",
+      "unit_checks",
+      "global_checks",
+      "open_issues"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "doc_id": {
+        "const": "D18"
+      },
+      "title": {
+        "$ref": "#/definitions/nonEmpty"
+      },
+      "version": {
+        "type": "string",
+        "pattern": "^v[0-9]+\\.[0-9]+$"
+      },
+      "status": {
+        "$ref": "#/definitions/status"
+      },
+      "unit_checks": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "global_checks": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "open_issues": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "updated_at": {
+        "type": "string",
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}[ T]\\d{2}:\\d{2}(:\\d{2})?$",
+        "description": "台账根级时标：D18 最后一次写盘时刻（YYYY-MM-DD HH:MM:SS 或 ISO）"
+      }
+    }
+  }
+}
